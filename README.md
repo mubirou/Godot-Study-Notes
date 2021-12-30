@@ -18,8 +18,8 @@
     1. VSCode を起動
     1. [表示]-[外観]-[アクティビティバーを表示する]
     1. 左側アイコンの一番下を選択
-    1. [Marketplaceで機能拡張を検索] で "Godot" を検索
-    1. "godot-tolls" をインストール
+    1. [Marketplaceで機能拡張を検索] で **Godot** を検索
+    1. **godot-tolls** をインストール
 
 * Visual Studo Code ショートカットキー
 
