@@ -2,7 +2,7 @@
 
 ### <b>index</b>
 
-| [外部スクリプトエディタ](#2112001) | [XXXXX](#XXX) |
+| [外部スクリプトエディタ](#2112001) | [Androidビルド](#2112002) | [XXXXX](#XXX) |
 ***
 
 <a name="2112001"></a>
@@ -33,6 +33,24 @@
 実行環境：Ubuntu 20.04 LTS、Godot 3.4.2、VSCode 1.63.2  
 作成者：夢寐郎  
 作成日：2021年12月30日  
+[[TOP]](#TOP)
+
+
+<a name="2112002"></a>
+# <b>Androidビルド</b>
+
+1. XXX
+    ```c#
+    XXXX
+    ```
+    * XXX
+    * XXXX
+
+※[参考サイト](https://qiita.com/2dgames_jp/items/3d0a318d2a483ced9db1)
+
+実行環境：Ubuntu 20.04 LTS、Godot 3.4.2、Xiaomi Redmi Note 9T (Android 11)   
+作成者：夢寐郎  
+作成日：2021年12月XX日   
 [[TOP]](#TOP)
 
 
