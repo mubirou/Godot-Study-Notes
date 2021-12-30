@@ -8,11 +8,18 @@
 <a name="2112001"></a>
 ## <b>外部スクリプトエディタ</b>
 
-1. [エディタ]-[エディター設定]-[Text Editor]-[External] を開き次の通り設定  
-    * [Use External Editor] : ✔
-    * Exec Path] : **/usr/bin/code**
+1. Godot の設定
+    1. [エディタ]-[エディター設定]-[Text Editor]-[External] を開く
+    1. 次の通り設定  
+        * [Use External Editor] : ✔
+        * Exec Path] : **/usr/bin/code**
 
-1. Visual Studio Code を起動し [表示]-[外観]-[アクティビティバーを表示する] で現れる左側アイコンの一番下を選択 ➡ [Marketplaceで機能拡張を検索] に "Godot" を検索 ➡ "godot-tolls" をインストール
+1. Visual Studio Code の設定  
+    1. VSCode を起動
+    1. [表示]-[外観]-[アクティビティバーを表示する]
+    1. 左側アイコンの一番下を選択
+    1. [Marketplaceで機能拡張を検索] で "Godot" を検索
+    1. "godot-tolls" をインストール
 
 * Visual Studo Code ショートカットキー
 
