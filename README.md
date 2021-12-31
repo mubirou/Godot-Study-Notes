@@ -45,14 +45,14 @@
   https://developer.android.com/studio?hl=ja&gclid=EAIaIQobChMI4bb4moON9QIVTkNgCh14cABREAAYASAAEgKsUvD_BwE&gclsrc=aw.ds  
   C:\Program Files\Android\Android Studio にインストール
 1. OpenJDKをインストール  
-  (1) ダウンロード(8u262-b10 .zip) ←要注意
+  ➀ ダウンロード(8u262-b10 .zip) ←要注意
   https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=416&field_operating_system_target_id=436&field_architecture_target_id=391&field_java_package_target_id=396   
-  (1) 解凍
-  (2) binフィルダを開く  
-  (3) アドレス上で「cmd」と入力（コマンドプロンプトが開く）    
-  (4) keytoolコマンドを実行  
+  ➁ 解凍
+  ➂ binフィルダを開く  
+  ➃ アドレス上で「cmd」と入力（コマンドプロンプトが開く）    
+  ➄ keytoolコマンドを実行  
   C:\Users\Owner\Desktop\openlogic-openjdk-8u262-b10-windows-x64\openlogic-openjdk-8u262-b10-win-64\bin>keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12  
-  (5) binフォルダに**debug.keystore**が生成されたことを確認  
+  ➅ binフォルダに**debug.keystore**が生成されたことを確認  
 
 1. XXX
     ```c#
