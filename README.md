@@ -40,10 +40,9 @@
 # <b>Androidビルド</b>
 
 * 既にビルドを試みて問題が生じている場合は初めに以下の作業を行って下さい
-  * Android Studio のアンインストール
+  * Android Studio のアンインストール [[参考サイト](https://godotengine.org/qa/111977/apksigner-returned-with-error-%231)]
   * JDKフォルダの削除
   * .keystore ファイルの削除  
-  [[参考サイト](https://godotengine.org/qa/111977/apksigner-returned-with-error-%231)]
 
 1. [Godot]-[プロジェクト]-[Androidビルドテンプレートのインストール]  
   [[参考サイト](https://qiita.com/2dgames_jp/items/3d0a318d2a483ced9db1)]
