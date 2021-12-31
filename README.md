@@ -48,7 +48,7 @@
   [[参考サイト](https://qiita.com/2dgames_jp/items/3d0a318d2a483ced9db1)]
 
 1. **Android Studio** (2020.3.1) のインストール  
-  （注意）Android SDK ツールではありません  
+  （注意）Android SDK ツールではない  
   https://developer.android.com/studio?hl=ja&gclid=EAIaIQobChMI4bb4moON9QIVTkNgCh14cABREAAYASAAEgKsUvD_BwE&gclsrc=aw.ds  
   C:\Program Files\Android\Android Studio にインストール
 
@@ -57,18 +57,17 @@
   https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=416&field_operating_system_target_id=436&field_architecture_target_id=391&field_java_package_target_id=396  
   JAVA VERSION : **8u262-b10**（Java 11ではない）  
   DOWNLOAD : .zip  
-  ➋ 解凍(今回はデスクトップ上)  
+  ➋ 解凍(今回は C:\OpenJDK とする)  
   ➌ binフィルダを開く  
   ➍ アドレス上で cmd と入力（コマンドプロンプトが開く）    
   ➎ keytool コマンドを実行  
-  C:\Users\XXXXX\Desktop\openlogic-openjdk-8u262-b10-windows-x64\openlogic-openjdk-8u262-b10-win-64\bin>**keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12**  
-  （要確認）[コマンドプロンプト]-[右クリック]-[その他]-[管理者として実行]  
-  ➏ C:\Users\XXXXX\Desktop\openlogic-openjdk-8u262-b10-windows-x64\openlogic-openjdk-8u262-b10-win-64\bin> フォルダに **debug.keystore** が生成されたことを確認  
+  C:\OpenJDK\openlogic-openjdk-8u262-b10-win-64\bin>**keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12**   
+  ➏ C:\OpenJDK\openlogic-openjdk-8u262-b10-win-64\bin> フォルダに **debug.keystore** が生成されたことを確認  
   [[参考サイト](https://godotengine.org/qa/111977/apksigner-returned-with-error-%231)]
 
 1. Godot（エディター）の設定  
   ➊ [エディター]-[エディター設定]-[Export]-[Android] を下記の通り設定  
-  ・Android Sdk Path : C:/Users/XXXXX/AppData/Local/Android/**Sdk**  
+  ・Android Sdk Path : C:/Users/XXXXX/AppData/Local/Android/**Sdk**（手打ち）  
   ・Debug Keystore : C:/Users/XXXXX/Desktop/openlogic-openjdk-8u262-b10-windows-x64/openlogic-openjdk-8u262-b10-win-64/bin/**debug.keystore**（上記➏と同じ）  
   ・Debug Keystore User : **androiddebugkey**  
   ・Debug Keystore Pass : **android**  
@@ -76,8 +75,11 @@
 
 1. **.apk** エクスポート  
   ➊ [プロジェクト]-[エクスポート]-[追加]-[Android]  
-  ➋ エクスポート先のパス : ……/XXXXX.apk
-  ➌ [プロジェクトのエクスポート] を選択 → [ファイルを保存]-[保存]
+  ➋ エクスポート先のパス : ……/XXXXX.apk  
+  ➌ [Cumtom Template] を次の通りに設定  
+  ・Debug : C:/Users/Owner/AppData/Roaming/Godot/templates/3.4.2.stable.mono/**android_debug.apk**  
+  ・Release : C:/Users/Owner/AppData/Roaming/Godot/templates/3.4.2.stable.mono/**android_release.apk**  
+   [プロジェクトのエクスポート] を選択 → [ファイルを保存]-[保存]
 
 1. スマホの開発者向け設定  
   ➊ [設定]-[デバイス情報]-[すべての仕様]-[MIMUバージョン] を8回連打  
