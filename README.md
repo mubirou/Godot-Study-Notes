@@ -39,6 +39,11 @@
 <a name="2112002"></a>
 # <b>Androidビルド</b>
 
+* 既にビルドを試みて問題が生じている場合は初めに以下の作業を行って下さい
+  * Android Studio のアンインストール
+  * JDKフォルダの削除
+  * .keystore ファイルの削除
+
 1. [Godot]-[プロジェクト]-[Androidビルドテンプレートのインストール]  
   [[参考サイト](https://qiita.com/2dgames_jp/items/3d0a318d2a483ced9db1)]
 
