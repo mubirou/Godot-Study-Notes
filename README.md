@@ -39,8 +39,8 @@
 <a name="2112002"></a>
 # <b>Androidビルド</b>
 
-* 既にビルドを試みて問題が生じている場合は初めに以下の作業を行って下さい
-  * Android Studio のアンインストール [[参考サイト](https://godotengine.org/qa/111977/apksigner-returned-with-error-%231)]
+* 既にビルドを試みて問題が生じている場合は初めに以下の作業を行って下さい [[参考サイト](https://godotengine.org/qa/111977/apksigner-returned-with-error-%231)]  
+  * Android Studio のアンインストール  
   * JDKフォルダの削除
   * .keystore ファイルの削除  
 
