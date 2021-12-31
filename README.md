@@ -77,8 +77,8 @@
   ➊ [プロジェクト]-[エクスポート]-[追加]-[Android]  
   ➋ エクスポート先のパス : ……/XXXXX.apk  
   ➌ [Cumtom Template] を次の通りに設定  
-  ・Debug : C:/Users/Owner/AppData/Roaming/Godot/templates/3.4.2.stable.mono/**android_debug.apk**  
-  ・Release : C:/Users/Owner/AppData/Roaming/Godot/templates/3.4.2.stable.mono/**android_release.apk**  
+  ・Debug : C:/Users/XXXXX/AppData/Roaming/Godot/templates/3.4.2.stable.mono/**android_debug.apk**  
+  ・Release : C:/Users/XXXXX/AppData/Roaming/Godot/templates/3.4.2.stable.mono/**android_release.apk**  
    [プロジェクトのエクスポート] を選択 → [ファイルを保存]-[保存]
 
 1. スマホの開発者向け設定  
