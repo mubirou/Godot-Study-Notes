@@ -48,6 +48,7 @@
   [[参考サイト](https://qiita.com/2dgames_jp/items/3d0a318d2a483ced9db1)]
 
 1. **Android Studio** (2020.3.1) のインストール  
+  （注意）Android SDK ツールではありません  
   https://developer.android.com/studio?hl=ja&gclid=EAIaIQobChMI4bb4moON9QIVTkNgCh14cABREAAYASAAEgKsUvD_BwE&gclsrc=aw.ds  
   C:\Program Files\Android\Android Studio にインストール
 
