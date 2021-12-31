@@ -57,6 +57,7 @@
   ➄ **keytool** コマンドを実行  
   C:\Users\Owner\Desktop\openlogic-openjdk-8u262-b10-windows-x64\openlogic-openjdk-8u262-b10-win-64\bin>**keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12**  
   ➅ binフォルダに**debug.keystore**が生成されたことを確認  
+  [参考サイト](https://godotengine.org/qa/111977/apksigner-returned-with-error-%231)
 
 1. XXX
     ```c#
