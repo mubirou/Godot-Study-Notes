@@ -51,8 +51,8 @@
   (2) binフィルダを開く  
   (3) アドレス上で「cmd」と入力（コマンドプロンプトが開く）    
   (4) keytoolコマンドを実行  
-  C:\Users\Owner\Desktop\openlogic-openjdk-8u262-b10-windows-x64\openlogic-openjdk-8u262-b10-win-64\bin>keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12
-  (5) binフォルダに「debug.keystore」が生成されたことを確認  
+  C:\Users\Owner\Desktop\openlogic-openjdk-8u262-b10-windows-x64\openlogic-openjdk-8u262-b10-win-64\bin>keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12  
+  (5) binフォルダに**debug.keystore**が生成されたことを確認  
 
 1. XXX
     ```c#
