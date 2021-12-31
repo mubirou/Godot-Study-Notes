@@ -45,9 +45,11 @@
   https://developer.android.com/studio?hl=ja&gclid=EAIaIQobChMI4bb4moON9QIVTkNgCh14cABREAAYASAAEgKsUvD_BwE&gclsrc=aw.ds  
   C:\Program Files\Android\Android Studio にインストール
 1. OpenJDKをインストール  
-  ➀ ダウンロード(8u262-b10 .zip) ←要注意
+  ➀ ダウンロード
+  JAVA VERSION : 8u262-b10（Java 11ではない）  
+  DOWNLOAD : .zip  
   https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=416&field_operating_system_target_id=436&field_architecture_target_id=391&field_java_package_target_id=396   
-  ➁ 解凍
+  ➁ 解凍  
   ➂ binフィルダを開く  
   ➃ アドレス上で「cmd」と入力（コマンドプロンプトが開く）    
   ➄ keytoolコマンドを実行  
