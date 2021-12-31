@@ -41,9 +41,11 @@
 
 1. Androidビルドテンプレートのインストール  
   [プロジェクト]-[Androidビルドテンプレートのインストール]
+
 1. **Android Studio** (2020.3.1) のインストール  
   https://developer.android.com/studio?hl=ja&gclid=EAIaIQobChMI4bb4moON9QIVTkNgCh14cABREAAYASAAEgKsUvD_BwE&gclsrc=aw.ds  
   C:\Program Files\Android\Android Studio にインストール
+
 1. **OpenJDK** をインストール  
   ➀ ダウンロード  
   JAVA VERSION : **8u262-b10**（Java 11ではない）  
