@@ -60,7 +60,9 @@
   [[参考サイト](https://godotengine.org/qa/111977/apksigner-returned-with-error-%231)]
 
 1. Godot（エディター）の設定  
-  ➊
+  ➊ [エディター]-[エディター設定]-[Export]-[Android] を下記の通り設定  
+  * Android Sdk Path : C:/Users/XXXXX/AppData/Local/Android/**Sdk**  
+  * Debug Keystore : C:/Users/XXXXX/Desktop/Godot_001/openlogic-openjdk-8u262-b10-windows-x64/openlogic-openjdk-8u262-b10-win-64/bin/**debug.keystore** 
 
 * https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=406&field_operating_system_target_id=436&field_architecture_target_id=391&field_java_package_target_id=396&fbclid=IwAR3v0jY1ja4q4oJ16tAEBe8j7k3ZnOfmdZi-PKdO4r0yg_dRzvWB5K-fbCQ  
 * JAVA VERSION : 11
