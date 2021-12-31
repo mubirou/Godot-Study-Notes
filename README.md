@@ -46,7 +46,108 @@
     * XXX
     * XXXX
 
-※[参考サイト](https://qiita.com/2dgames_jp/items/3d0a318d2a483ced9db1)
+* https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=406&field_operating_system_target_id=436&field_architecture_target_id=391&field_java_package_target_id=396&fbclid=IwAR3v0jY1ja4q4oJ16tAEBe8j7k3ZnOfmdZi-PKdO4r0yg_dRzvWB5K-fbCQ  
+* JAVA VERSION : 11
+* OPERATION SYSTEM : Windows
+* ARCHITECTURE : x86 64-bit
+* JAVA PACKAGE : JDK
+
+* [11.0.8+10]-[.zip]
+
+
+
+* Android Sdk Path : C:/Users/*****/AppData/Local/Android/Sdk  
+* Debug keystore : C:/Program Files (x86)/Java/jre1.8.0_311/bin/debug.keystore  
+
+or  
+
+* C:\Users\Owner\.android\debug.keystore  
+
+
+* Debug Keystore User : mubirou
+* Debug Keystore Pass : ********
+
+[OpenJDKインストール](https://adoptium.net/?variant=openjdk11)  
+
+※[参考サイト](https://qiita.com/2dgames_jp/items/3d0a318d2a483ced9db1)  
+※[keytoolの使い方](https://androyer.blogspot.com/2014/01/keytool.html)  
+C:\Program Files (x86)\Java\jre1.8.0_311\bin>  
+
+[コマンドプロンプト]-[右クリック]-[その他]-[管理者として実行]
+```
+C:\WINDOWS\system32>cd \
+C:\>
+C:\>cd Program Files (x86)
+C:\Program Files (x86)>cd Java
+C:\Program Files (x86)\Java>
+C:\Program Files (x86)\Java>cd jre1.8.0_311
+C:\Program Files (x86)\Java\jre1.8.0_311>cd bin
+C:\Program Files (x86)\Java\jre1.8.0_311\bin>keytool -genkey -v -keystore debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000
+```
+
+恐らくこちらが正しい  
+[コマンドプロンプト]-[右クリック]-[その他]-[管理者として実行]
+```
+C:\WINDOWS\system32>cd \
+C:\>
+C:\>cd Program Files
+C:\Program Files>
+C:\Program Files>cd Eclipse Adoptium
+C:\Program Files\Eclipse Adoptium>
+C:\Program Files\Eclipse Adoptium>cd jdk-11.0.13.8-hotspot
+C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot>
+C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot>cd bin
+C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot\bin>
+C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot\bin>keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12
+```
+※[参考](https://docs.godotengine.org/en/stable/getting_started/workflow/export/exporting_for_android.html) 
+
+```
+C:\>cd Program Files (x86)
+C:\Program Files (x86)>cd Java
+C:\Program Files (x86)\Java>
+C:\Program Files (x86)\Java>cd jre1.8.0_311
+C:\Program Files (x86)\Java\jre1.8.0_311>cd bin
+C:\Program Files (x86)\Java\jre1.8.0_311\bin>keytool -genkey -v -keystore debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000
+```
+
+※[Javaインストール](https://www.java.com/ja/download/manual.jsp)  
+
+```
+キーストアのパスワードを入力してください:  ********
+新規パスワードを再入力してください:  ********
+姓名は何ですか。
+  [Unknown]:  mubirou
+組織単位名は何ですか。
+  [Unknown]:  mubirou
+組織名は何ですか。
+  [Unknown]:  mubirou
+都市名または地域名は何ですか。
+  [Unknown]:  Shinjuku-ku
+都道府県名または州名は何ですか。
+  [Unknown]:  Tokyo
+この単位に該当する2文字の国コードは何ですか。
+  [Unknown]:  JP
+CN=Wataru Yamada, OU=app team, O=org yamacraft, L=Musashino-shi, ST=Tokyo, C=JPでよろしいですか。
+  [いいえ]:  y
+
+10,000日間有効な2,048ビットのRSAのキー・ペアと自己署名型証明書(SHA256withRSA)を生成しています
+        ディレクトリ名: CN=mubirou, OU=mubirou, O=mubirou, L=Shinkuku-ku, ST=Tokyo, C=JP
+<androiddebugkey>のキー・パスワードを入力してください
+        (キーストアのパスワードと同じ場合はRETURNを押してください): [RETURN]
+
+[debug.keystoreを格納中]
+
+Warning:
+JKSキーストアは独自の形式を使用しています。"keytool -importkeystore -srckeystore debug.keystore -destkeystore debug.keystore -deststoretype pkcs12"を使用する業界標準の形式であるPKCS12に移行することをお薦めします。
+```
+C:\Program Files (x86)\Java\jre1.8.0_311\bin\debug.keystore に生成  
+
+<書き出し>  
+1. [プロジェクト]-[エクスポート]-[追加]-[Android]
+1. [Custom Template]  
+    * Debug : C:/Users/Owner/AppData/Roaming/Godot/templates/3.4.2.stable.mono/android_debug.apk
+    * Release : C:/Users/Owner/AppData/Roaming/Godot/templates/3.4.2.stable.mono/android_release.apk
 
 実行環境：Ubuntu 20.04 LTS、Godot 3.4.2、Xiaomi Redmi Note 9T (Android 11)   
 作成者：夢寐郎  
