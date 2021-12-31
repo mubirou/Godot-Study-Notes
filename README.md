@@ -56,145 +56,39 @@
   ➍ アドレス上で cmd と入力（コマンドプロンプトが開く）    
   ➎ keytool コマンドを実行  
   C:\Users\XXXXX\Desktop\openlogic-openjdk-8u262-b10-windows-x64\openlogic-openjdk-8u262-b10-win-64\bin>**keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12**  
+  （要確認）[コマンドプロンプト]-[右クリック]-[その他]-[管理者として実行]  
   ➏ C:\Users\XXXXX\Desktop\openlogic-openjdk-8u262-b10-windows-x64\openlogic-openjdk-8u262-b10-win-64\bin> フォルダに **debug.keystore** が生成されたことを確認  
   [[参考サイト](https://godotengine.org/qa/111977/apksigner-returned-with-error-%231)]
 
 1. Godot（エディター）の設定  
   ➊ [エディター]-[エディター設定]-[Export]-[Android] を下記の通り設定  
-  Android Sdk Path : C:/Users/XXXXX/AppData/Local/Android/**Sdk**  
-  Debug Keystore : C:/Users/XXXXX/Desktop/Godot_001/openlogic-openjdk-8u262-b10-windows-x64/openlogic-openjdk-8u262-b10-win-64/bin/**debug.keystore** 
+  ・Android Sdk Path : C:/Users/XXXXX/AppData/Local/Android/**Sdk**  
+  ・Debug Keystore : C:/Users/XXXXX/Desktop/openlogic-openjdk-8u262-b10-windows-x64/openlogic-openjdk-8u262-b10-win-64/bin/**debug.keystore**（上記➏と同じ）  
+  ・Debug Keystore User : **androiddebugkey**  
+  ・Debug Keystore Pass : **android**  
+  [[参考サイト](https://godotengine.org/qa/111977/apksigner-returned-with-error-%231)]
 
-* https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=406&field_operating_system_target_id=436&field_architecture_target_id=391&field_java_package_target_id=396&fbclid=IwAR3v0jY1ja4q4oJ16tAEBe8j7k3ZnOfmdZi-PKdO4r0yg_dRzvWB5K-fbCQ  
-* JAVA VERSION : 11
-* OPERATION SYSTEM : Windows
-* ARCHITECTURE : x86 64-bit
-* JAVA PACKAGE : JDK
+1. **.apk** エクスポート  
+  ➊ [プロジェクト]-[エクスポート]-[追加]-[Android]  
+  ➋ エクスポート先のパス : ……/XXXXX.apk
+  ➌ [プロジェクトのエクスポート] を選択 → [ファイルを保存]-[保存]
 
-* [11.0.8+10]-[.zip]
+1. スマホの開発者向け設定
+  ➊ [設定]-[デバイス情報]-[すべての仕様]-[MIMUバージョン] を8回連打  
+  ➋ [設定]-[追加設定]-[開発者向けオプション]-[USBデバッグ]と[USB経由でインストール] を ON  
+  ➌ [✓私は起こりうるリスクを認識し、その結果として起こりうる結果を自発的に受け入れます]-[OK]  
 
+1. スマホと PC を接続  
+  ➊ USB ケーブルで接続  
+  ➋ [ファイル転送/Android Auto] を ✓  
 
-
-* Android Sdk Path : C:/Users/*****/AppData/Local/Android/Sdk  
-* Debug keystore : C:/Program Files (x86)/Java/jre1.8.0_311/bin/debug.keystore  
-
-or  
-
-* C:\Users\Owner\.android\debug.keystore  
-
-
-* Debug Keystore User : mubirou
-* Debug Keystore Pass : ********
-
-[OpenJDKインストール](https://adoptium.net/?variant=openjdk11)  
-
-※[参考サイト](https://qiita.com/2dgames_jp/items/3d0a318d2a483ced9db1)  
-※[keytoolの使い方](https://androyer.blogspot.com/2014/01/keytool.html)  
-C:\Program Files (x86)\Java\jre1.8.0_311\bin>  
-
-[コマンドプロンプト]-[右クリック]-[その他]-[管理者として実行]
-```
-C:\WINDOWS\system32>cd \
-C:\>
-C:\>cd Program Files (x86)
-C:\Program Files (x86)>cd Java
-C:\Program Files (x86)\Java>
-C:\Program Files (x86)\Java>cd jre1.8.0_311
-C:\Program Files (x86)\Java\jre1.8.0_311>cd bin
-C:\Program Files (x86)\Java\jre1.8.0_311\bin>keytool -genkey -v -keystore debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000
-```
-
-恐らくこちらが正しい  
-[コマンドプロンプト]-[右クリック]-[その他]-[管理者として実行]
-```
-C:\WINDOWS\system32>cd \
-C:\>
-C:\>cd Program Files
-C:\Program Files>
-C:\Program Files>cd Eclipse Adoptium
-C:\Program Files\Eclipse Adoptium>
-C:\Program Files\Eclipse Adoptium>cd jdk-11.0.13.8-hotspot
-C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot>
-C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot>cd bin
-C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot\bin>
-C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot\bin>keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12
-```
-※[参考](https://docs.godotengine.org/en/stable/getting_started/workflow/export/exporting_for_android.html) 
-
-```
-C:\>cd Program Files (x86)
-C:\Program Files (x86)>cd Java
-C:\Program Files (x86)\Java>
-C:\Program Files (x86)\Java>cd jre1.8.0_311
-C:\Program Files (x86)\Java\jre1.8.0_311>cd bin
-C:\Program Files (x86)\Java\jre1.8.0_311\bin>keytool -genkey -v -keystore debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000
-```
-
-※[Javaインストール](https://www.java.com/ja/download/manual.jsp)  
-
-```
-キーストアのパスワードを入力してください:  ********
-新規パスワードを再入力してください:  ********
-姓名は何ですか。
-  [Unknown]:  mubirou
-組織単位名は何ですか。
-  [Unknown]:  mubirou
-組織名は何ですか。
-  [Unknown]:  mubirou
-都市名または地域名は何ですか。
-  [Unknown]:  Shinjuku-ku
-都道府県名または州名は何ですか。
-  [Unknown]:  Tokyo
-この単位に該当する2文字の国コードは何ですか。
-  [Unknown]:  JP
-CN=Wataru Yamada, OU=app team, O=org yamacraft, L=Musashino-shi, ST=Tokyo, C=JPでよろしいですか。
-  [いいえ]:  y
-
-10,000日間有効な2,048ビットのRSAのキー・ペアと自己署名型証明書(SHA256withRSA)を生成しています
-        ディレクトリ名: CN=mubirou, OU=mubirou, O=mubirou, L=Shinkuku-ku, ST=Tokyo, C=JP
-<androiddebugkey>のキー・パスワードを入力してください
-        (キーストアのパスワードと同じ場合はRETURNを押してください): [RETURN]
-
-[debug.keystoreを格納中]
-
-Warning:
-JKSキーストアは独自の形式を使用しています。"keytool -importkeystore -srckeystore debug.keystore -destkeystore debug.keystore -deststoretype pkcs12"を使用する業界標準の形式であるPKCS12に移行することをお薦めします。
-```
-C:\Program Files (x86)\Java\jre1.8.0_311\bin\debug.keystore に生成  
-
-<書き出し>  
-1. [プロジェクト]-[エクスポート]-[追加]-[Android]
-1. [Custom Template]  
-    * Debug : C:/Users/Owner/AppData/Roaming/Godot/templates/3.4.2.stable.mono/android_debug.apk
-    * Release : C:/Users/Owner/AppData/Roaming/Godot/templates/3.4.2.stable.mono/android_release.apk
-
-### 解決法
-
-1. Android Studio 2020.3.1  
-  * https://developer.android.com/studio?hl=ja&gclid=EAIaIQobChMI4bb4moON9QIVTkNgCh14cABREAAYASAAEgKsUvD_BwE&gclsrc=aw.ds
-  * C:\Program Files\Android\Android Studio にインストール
-
-1. OpenJDK 8u262-b10(.zip)  
-  * https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=416&field_operating_system_target_id=436&field_architecture_target_id=391&field_java_package_target_id=396
-  * 解凍（デスクトップでよい）
-  * binフィルダを開く
-  * アドレス上で「cmd」と入力（コマンドプロンプトが開く）  
-    C:\Users\Owner\Desktop\openlogic-openjdk-8u262-b10-windows-x64\openlogic-openjdk-8u262-b10-win-64\bin>  
-  * keytoolコマンドを実行
-    ```
-    C:\Users\Owner\Desktop\openlogic-openjdk-8u262-b10-windows-x64\openlogic-openjdk-8u262-b10-win-64\bin>keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12
-    ```
-  * binフォルダに「debug.keystore」が生成されたことを確認
-
-1.   
-  * Debug : C:\Users\Owner\AppData\Roaming\Godot\templates\3.4.2.stable.mono/android_debug.apk
-    * Release : C:\Users\Owner\AppData\Roaming\Godot\templates\3.4.2.stable.mono/android_release.apk  
-  
-[参考](https://godotengine.org/qa/111977/apksigner-returned-with-error-%231)
-
+1. アプリのインストール  
+  ➊ スマホの任意のフォルダに上記で作成した XXXXX.apk をコピー  
+  ➋ スマホ上で XXXXX.apk を選択してインストール
 
 実行環境：Ubuntu 20.04 LTS、Godot 3.4.2、Xiaomi Redmi Note 9T (Android 11)   
 作成者：夢寐郎  
-作成日：2021年12月XX日   
+作成日：2021年12月31日   
 [[TOP]](#TOP)
 
 
