@@ -149,6 +149,31 @@ C:\Program Files (x86)\Java\jre1.8.0_311\bin\debug.keystore に生成
     * Debug : C:/Users/Owner/AppData/Roaming/Godot/templates/3.4.2.stable.mono/android_debug.apk
     * Release : C:/Users/Owner/AppData/Roaming/Godot/templates/3.4.2.stable.mono/android_release.apk
 
+### 解決法
+
+1. Android Studio 2020.3.1  
+  * https://developer.android.com/studio?hl=ja&gclid=EAIaIQobChMI4bb4moON9QIVTkNgCh14cABREAAYASAAEgKsUvD_BwE&gclsrc=aw.ds
+  * C:\Program Files\Android\Android Studio にインストール
+
+1. OpenJDK 8u262-b10(.zip)  
+  * https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=416&field_operating_system_target_id=436&field_architecture_target_id=391&field_java_package_target_id=396
+  * 解凍（デスクトップでよい）
+  * binフィルダを開く
+  * アドレス上で「cmd」と入力（コマンドプロンプトが開く）  
+    C:\Users\Owner\Desktop\openlogic-openjdk-8u262-b10-windows-x64\openlogic-openjdk-8u262-b10-win-64\bin>  
+  * keytoolコマンドを実行
+    ```
+    C:\Users\Owner\Desktop\openlogic-openjdk-8u262-b10-windows-x64\openlogic-openjdk-8u262-b10-win-64\bin>keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12
+    ```
+  * binフォルダに「debug.keystore」が生成されたことを確認
+
+1.   
+  * Debug : C:\Users\Owner\AppData\Roaming\Godot\templates\3.4.2.stable.mono/android_debug.apk
+    * Release : C:\Users\Owner\AppData\Roaming\Godot\templates\3.4.2.stable.mono/android_release.apk  
+  
+[参考](https://godotengine.org/qa/111977/apksigner-returned-with-error-%231)
+
+
 実行環境：Ubuntu 20.04 LTS、Godot 3.4.2、Xiaomi Redmi Note 9T (Android 11)   
 作成者：夢寐郎  
 作成日：2021年12月XX日   
