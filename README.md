@@ -94,7 +94,7 @@
   ➊ スマホの任意のフォルダに上記で作成した XXXXX.apk をコピー  
   ➋ スマホ上で XXXXX.apk を選択してインストール
 
-実行環境：Windows 10、Godot 3.4.2
+実行環境：Windows 10、Godot 3.4.2  
 Xiaomi Redmi Note 9T (Android 11)   
 作成者：夢寐郎  
 作成日：2021年12月31日   
