@@ -47,24 +47,20 @@
   C:\Program Files\Android\Android Studio にインストール
 
 1. **OpenJDK** をインストール  
-  ➀ ダウンロード  
+  ➊ ダウンロード  
   https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=416&field_operating_system_target_id=436&field_architecture_target_id=391&field_java_package_target_id=396  
   JAVA VERSION : **8u262-b10**（Java 11ではない）  
   DOWNLOAD : .zip  
-  ➁ 解凍  
-  ➂ binフィルダを開く  
-  ➃ アドレス上で **cmd** と入力（コマンドプロンプトが開く）    
-  ➄ **keytool** コマンドを実行  
+  ➋ 解凍  
+  ➌ binフィルダを開く  
+  ➍ アドレス上で **cmd** と入力（コマンドプロンプトが開く）    
+  ➎ **keytool** コマンドを実行  
   C:\Users\Owner\Desktop\openlogic-openjdk-8u262-b10-windows-x64\openlogic-openjdk-8u262-b10-win-64\bin>**keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12**  
-  ➅ binフォルダに**debug.keystore**が生成されたことを確認  
+  ➏ binフォルダに**debug.keystore**が生成されたことを確認  
   [参考サイト](https://godotengine.org/qa/111977/apksigner-returned-with-error-%231)
 
-1. XXX
-    ```c#
-    XXXX
-    ```
-    * XXX
-    * XXXX
+1. Godot（エディター）の設定  
+  ➊
 
 * https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=406&field_operating_system_target_id=436&field_architecture_target_id=391&field_java_package_target_id=396&fbclid=IwAR3v0jY1ja4q4oJ16tAEBe8j7k3ZnOfmdZi-PKdO4r0yg_dRzvWB5K-fbCQ  
 * JAVA VERSION : 11
