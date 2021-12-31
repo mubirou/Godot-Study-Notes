@@ -51,12 +51,12 @@
   https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=416&field_operating_system_target_id=436&field_architecture_target_id=391&field_java_package_target_id=396  
   JAVA VERSION : **8u262-b10**（Java 11ではない）  
   DOWNLOAD : .zip  
-  ➋ 解凍  
+  ➋ 解凍(今回はデスクトップ上)  
   ➌ binフィルダを開く  
   ➍ アドレス上で cmd と入力（コマンドプロンプトが開く）    
   ➎ keytool コマンドを実行  
-  C:\Users\Owner\Desktop\openlogic-openjdk-8u262-b10-windows-x64\openlogic-openjdk-8u262-b10-win-64\bin>**keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12**  
-  ➏ binフォルダに**debug.keystore**が生成されたことを確認  
+  C:\Users\XXXXX\Desktop\openlogic-openjdk-8u262-b10-windows-x64\openlogic-openjdk-8u262-b10-win-64\bin>**keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12**  
+  ➏ C:\Users\XXXXX\Desktop\openlogic-openjdk-8u262-b10-windows-x64\openlogic-openjdk-8u262-b10-win-64\bin> フォルダに**debug.keystore**が生成されたことを確認  
   [[参考サイト](https://godotengine.org/qa/111977/apksigner-returned-with-error-%231)]
 
 1. Godot（エディター）の設定  
