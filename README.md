@@ -39,7 +39,8 @@
 <a name="2112002"></a>
 # <b>Androidビルド</b>
 
-1. [Godot]-[プロジェクト]-[Androidビルドテンプレートのインストール]
+1. [Godot]-[プロジェクト]-[Androidビルドテンプレートのインストール]  
+  [[参考サイト](https://qiita.com/2dgames_jp/items/3d0a318d2a483ced9db1)]
 
 1. **Android Studio** (2020.3.1) のインストール  
   https://developer.android.com/studio?hl=ja&gclid=EAIaIQobChMI4bb4moON9QIVTkNgCh14cABREAAYASAAEgKsUvD_BwE&gclsrc=aw.ds  
