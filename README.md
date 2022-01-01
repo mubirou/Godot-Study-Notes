@@ -12,7 +12,7 @@
     1. [エディタ]-[エディター設定]-[Text Editor]-[External] を開く
     1. 次の通り設定  
         * [Use External Editor] : ✔
-        * Exec Path] : **/usr/bin/code**
+        * Exec Path] : C:/Users/Owner/AppData/Local/Programs/Microsoft VS Code/Code.exe  
 
 1. Visual Studio Code の設定  
     1. VSCode を起動
