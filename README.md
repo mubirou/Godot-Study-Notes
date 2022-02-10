@@ -2,7 +2,7 @@
 
 ### <b>index</b>
 
-| [基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md) | [外部スクリプトエディタ](#2112001) | [Androidビルド](#2112002) | [XXXXX](#XXX) |
+| [GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md) | [外部スクリプトエディタ](#2112001) | [Androidビルド](#2112002) | [XXXXX](#XXX) |
 ***
 
 <a name="2112001"></a>
