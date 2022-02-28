@@ -104,16 +104,16 @@
 # <b>プリミティブ</b>
 
 1. [シーン]タブ-[+]で"**MeshInstance**"を検索し[作成]
-1. [インスペクタ]-[Mesh]を以下の中から選択  
-* ArrayMesh
-* CapsuleMesh（カプセル＝物理挙動テスト）
-* CubeMesh（立方体＝壁･柱･箱･階段）
-* CylinderMesh（円柱）
-* PlaneMesh（平面）
-* PointMesh
-* PrismMesh（プリズム＝三角柱）
-* QuadMesh（画像表示･動画再生用）
-* SphereMesh（球＝星･弾丸）
+1. [インスペクタ]-[Mesh]を以下の中から選択
+  * ArrayMesh
+  * CapsuleMesh（カプセル＝物理挙動テスト）
+  * CubeMesh（立方体＝壁･柱･箱･階段）
+  * CylinderMesh（円柱）
+  * PlaneMesh（平面）
+  * PointMesh
+  * PrismMesh（プリズム＝三角柱）
+  * QuadMesh（画像表示･動画再生用）
+  * SphereMesh（球＝星･弾丸）
 
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
