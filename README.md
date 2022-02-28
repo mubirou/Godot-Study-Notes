@@ -128,6 +128,7 @@
 1. [インスペクタ]で各種設定  
   *   
 
+参考：[Hatena Blog](https://ore2wakaru2.hatenablog.com/entry/2018/03/04/232635)  
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
