@@ -159,7 +159,7 @@
   _ufo.transform.origin.y += 0.01
 
   # 指定した値だけ移動
-  _ufo.translate(Vector3(0, 0.01, 0)) # Scaleに依存（要注意）
+  _ufo.translate(Vector3(0, 0.01, 0)) # Scaleに依存
   ```
 
 実行環境：Windows 10、Godot 3.4.2  
