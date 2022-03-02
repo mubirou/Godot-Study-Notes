@@ -139,7 +139,7 @@
 <a name="ノードの移動"></a>
 # <b>ノードの移動</b>
 
-* [Spatialノード](https://docs.godotengine.org/ja/stable/tutorials/3d/introduction_to_3d.html#spatial-node)（3Dオブジェクト）の移動   
+* [Spatialノード](https://docs.godotengine.org/ja/stable/tutorials/3d/introduction_to_3d.html#spatial-node)（3D）の移動   
   ```GDScript
   #test.gd
   extends Spatial #2Dの場合はNode2D
@@ -152,7 +152,7 @@
   func _process(_delta): # 繰り返し実行
     _ufo.translation.y += 0.01
   ```
-  上記を含め３つの方法で可能  
+  上記を含め次の３つの方法で可能  
   ```GDScript
   # 指定位置に移動
   _ufo.translation.y += 0.01
