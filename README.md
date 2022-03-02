@@ -155,11 +155,11 @@
   上記を含め３つの方法で可能  
   ```GDScript
   # 指定位置に移動
-	_ufo.translation.y += 0.01
-	_ufo.transform.origin.y += 0.01
-	
-	# 指定した値だけ移動
-	_ufo.translate(Vector3(0, 0.01, 0)) # Scaleに依存（要注意）
+  _ufo.translation.y += 0.01
+  _ufo.transform.origin.y += 0.01
+
+  # 指定した値だけ移動
+  _ufo.translate(Vector3(0, 0.01, 0)) # Scaleに依存（要注意）
   ```
 
 実行環境：Windows 10、Godot 3.4.2  
