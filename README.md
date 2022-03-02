@@ -2,7 +2,7 @@
 
 ### <b>index</b>
 
-| [GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#2112001) | [Androidビルド](#2112002) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [XXXXX](#XXX) |
+| [GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#XXX) | [XXXXX](#XXX) |
 ***
 
 <a name="2112001"></a>
@@ -129,7 +129,7 @@
   *   
 
 参考：[Hatena Blog](https://ore2wakaru2.hatenablog.com/entry/2018/03/04/232635)  
-実行環境：Windows 10、Godot 3.4.2  
+実行環境：Windows 10、Godot 3.4.3  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
 更新日：202X年XX月XX日  
@@ -146,7 +146,7 @@
     * XXX
     * XXXX
 
-実行環境：Windows 10、Godot 3.4.2  
+実行環境：Windows 10、Godot 3.4.3  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
 更新日：202X年XX月XX日  
