@@ -2,10 +2,10 @@
 
 ### <b>index</b>
 
-| [GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#XXX) | [XXXXX](#XXX) |
+| [GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [XXXXX](#XXX) |
 ***
 
-<a name="2112001"></a>
+<a name="外部スクリプトエディタ"></a>
 # <b>外部スクリプトエディタ</b>
 
 1. Godot の設定
@@ -36,7 +36,7 @@
 [[TOP]](#TOP)
 
 
-<a name="2112002"></a>
+<a name="Androidビルド"></a>
 # <b>Androidビルド</b>
 
 * 既にビルドを試みて問題が生じている場合は先ず以下の作業を行う [[参考サイト](https://godotengine.org/qa/111977/apksigner-returned-with-error-%231)]  
@@ -133,6 +133,30 @@
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
 更新日：202X年XX月XX日  
+[[TOP]](#TOP)
+
+
+<a name="ノードの移動"></a>
+# <b>ノードの移動</b>
+
+1. [Spatialノード](https://docs.godotengine.org/ja/stable/tutorials/3d/introduction_to_3d.html#spatial-node)の移動  
+  *  
+  ```GDScript
+    #test.gd
+  extends Spatial #2Dの場合はNode2D
+
+  var _ufo
+
+  func _ready(): # 最初に一度だけ実行される
+    _ufo = get_node("UFO")
+
+  func _process(_delta):
+    _ufo.translation.y += 0.01
+  ```
+
+実行環境：Windows 10、Godot 3.4.2  
+作成者：夢寐郎  
+作成日：2022年03月03日  
 [[TOP]](#TOP)
 
 
