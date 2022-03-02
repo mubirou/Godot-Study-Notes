@@ -150,11 +150,15 @@
   func _process(_delta): # 繰り返し実行
     _ufo.translation.y += 0.01
   ```
-  上記を含め次の３つの方法で可能  
+  上記を含め次の方法で可能  
   ```GDScript
-  # 指定位置に移動
+  # 指定位置に移動➀
   _ufo.translation.y += 0.01
+  _ufo.translation += Vector3(0, 0.01, 0)
+
+  # 指定位置に移動➁
   _ufo.transform.origin.y += 0.01
+  _ufo.transform.origin += Vector3(0, 0.01, 0)
 
   # 指定した値だけ移動
   _ufo.translate(Vector3(0, 0.01, 0)) # Scaleに依存
