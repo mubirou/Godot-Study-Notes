@@ -141,7 +141,7 @@
 
 * [Spatialノード](https://docs.godotengine.org/ja/stable/tutorials/3d/introduction_to_3d.html#spatial-node)の移動   
   ```GDScript
-    #test.gd
+  #test.gd
   extends Spatial #2Dの場合はNode2D
 
   var _ufo
@@ -149,7 +149,7 @@
   func _ready(): # 最初に一度だけ実行される
     _ufo = get_node("UFO")
 
-  func _process(_delta):
+  func _process(_delta): # 繰り返し実行
     _ufo.translation.y += 0.01
   ```
 
