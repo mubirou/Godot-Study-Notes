@@ -178,7 +178,7 @@
     _ufo.position.x += 1
   ```
   上記を含め次の方法で可能
-  ```
+  ```GDScript
   # 指定位置に移動➀
 	_ufo.position.x += 1
 	_ufo.position += Vector2(1, 0)
