@@ -137,7 +137,7 @@
 <a name="ノードの移動"></a>
 # <b>ノードの移動</b>
 
-* [Spatialノード](https://docs.godotengine.org/ja/stable/tutorials/3d/introduction_to_3d.html#spatial-node)（3D）の移動   
+* [Spatialノード](https://docs.godotengine.org/ja/stable/tutorials/3d/introduction_to_3d.html#spatial-node)（3Dモデル）の移動   
   ```GDScript
   #Main.gd
   extends Spatial # 2Dの場合はNode2D
@@ -164,7 +164,7 @@
   _ufo.translate(Vector3(0, 0.01, 0)) # Scaleに依存
   ```
 
-* [Node2D](https://docs.godotengine.org/ja/stable/classes/class_node2d.html#node2d)（2D）の移動
+* [Node2D](https://docs.godotengine.org/ja/stable/classes/class_node2d.html#node2d)（2Dスプライト）の移動
   ```GDScript
   # Main.gd
   extends Node2D
