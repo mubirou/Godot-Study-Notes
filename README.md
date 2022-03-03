@@ -139,8 +139,8 @@
 
 * [Spatialノード](https://docs.godotengine.org/ja/stable/tutorials/3d/introduction_to_3d.html#spatial-node)（3D）の移動   
   ```GDScript
-  #test.gd
-  extends Spatial #2Dの場合はNode2D
+  #Main.gd
+  extends Spatial # 2Dの場合はNode2D
 
   var _ufo
 
@@ -164,9 +164,33 @@
   _ufo.translate(Vector3(0, 0.01, 0)) # Scaleに依存
   ```
 
+* [Node2D](https://docs.godotengine.org/ja/stable/classes/class_node2d.html#node2d)（2D）の移動
+  ```GDScript
+  # Main.gd
+  extends Node2D
+
+  var _ufo
+
+  func _ready(): # 最初に一度だけ実行される
+    _ufo = get_node("UFO")
+    
+  func _process(_delta): # 繰り返し実行
+    _ufo.position.x += 1
+  ```
+  上記を含め次の方法で可能
+  ```
+  # 指定位置に移動➀
+	_ufo.position.x += 1
+	_ufo.position += Vector2(1, 0)
+	
+	# 指定した値だけ移動
+	ufo.translate(Vector2(1, 0))
+  ```
+
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
 作成日：2022年03月03日  
+更新日：2022年03月04日 Node2D版を追加  
 [[TOP]](#TOP)
 
 
