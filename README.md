@@ -179,12 +179,12 @@
   ```
   上記を含め次の方法で可能
   ```GDScript
-  # 指定位置に移動➀
-	_ufo.position.x += 1
-	_ufo.position += Vector2(1, 0)
+  # 指定位置に移動
+  _ufo.position.x += 1
+  _ufo.position += Vector2(1, 0)
 	
 	# 指定した値だけ移動
-	ufo.translate(Vector2(1, 0))
+  ufo.translate(Vector2(1, 0))
   ```
 
 実行環境：Windows 10、Godot 3.4.2  
