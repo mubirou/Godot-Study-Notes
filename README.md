@@ -175,7 +175,7 @@
     _ufo = get_node("UFO")
     
   func _process(_delta): # 繰り返し実行
-    _ufo.position.x += 1
+    _ufo.position.x += 1 # 1ピクセル移動
   ```
   上記を含め次の方法で可能
   ```GDScript
