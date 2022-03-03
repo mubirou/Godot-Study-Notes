@@ -148,7 +148,7 @@
     _ufo = get_node("UFO")
 
   func _process(_delta): # 繰り返し実行
-    _ufo.translation.y += 0.01
+    _ufo.translation.y += 0.01 # 0.01m移動
   ```
   上記を含め次の方法で可能  
   ```GDScript
