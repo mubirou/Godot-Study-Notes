@@ -164,7 +164,7 @@
   _ufo.translate(Vector3(0, 0.01, 0)) # Scaleに依存
   ```
 
-* [Node2Dノード](https://docs.godotengine.org/ja/stable/classes/class_node2d.html#node2d)（2Dスプライト）の移動
+* [Node2D](https://docs.godotengine.org/ja/stable/classes/class_node2d.html#node2d)ノード（2Dスプライト）の移動
   ```GDScript
   # Main.gd
   extends Node2D
