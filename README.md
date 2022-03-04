@@ -189,6 +189,30 @@
   ufo.translate(Vector2(1, 0))
   ```
 
+### 【C#版】 
+* [Spatialノード](https://docs.godotengine.org/ja/stable/tutorials/3d/introduction_to_3d.html#spatial-node)（3Dモデル）の移動  
+```c#
+// Main.cs
+using Godot;
+
+public class Main : Spatial { // 2Dの場合はGodot.Node2Dを継承
+	private Spatial _ufo;
+	
+	// 最初に一度だけ実行される
+	public override void _Ready() {
+		_ufo = GetNode("UFO") as Spatial;
+		GD.Print(_ufo.Translation.y);
+	}
+
+	// 繰り返し実行される
+	public override void _Process(float _delta) {
+		Vector3 _ufoPos =  _ufo.Translation;
+		_ufoPos.y += 0.01f;
+		_ufo.Translation = _ufoPos;
+	}
+}
+```
+
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
 作成日：2022年03月03日  
