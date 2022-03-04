@@ -214,7 +214,7 @@ public class Main : Spatial {
 ```
 上記を含め次の方法で可能  
 ```c#
-// 指定位置に移動
+// 指定位置に移動➀
 Vector3 _ufoPos =  _ufo.Translation;
 _ufoPos.y += 0.01f;
 _ufo.Translation = _ufoPos;
