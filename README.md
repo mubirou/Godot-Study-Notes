@@ -226,6 +226,28 @@
   _ufo.Translate(new Vector3(0f, 0.01f, 0f)); // Scaleに依存
   ```
 
+  * [Node2D](https://docs.godotengine.org/ja/stable/classes/class_node2d.html#node2d)ノード（2Dスプライト）の移動
+  ```c#
+  // Main.cs
+  using Godot;
+
+  public class Main : Node2D {
+    private Node2D _ufo;
+
+    // 最初に一度だけ実行される
+    public override void _Ready() {
+      _ufo = GetNode("UFO") as Node2D;
+    }
+    
+    // 繰り返し実行される
+    public override void _Process(float _delta) {
+      Vector2 _ufoPos = _ufo.Position;
+      _ufoPos.x += 1; // 1ピクセル移動
+      _ufo.Position = _ufoPos;
+    }
+  }
+    ```
+
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
 作成日：2022年03月03日  
