@@ -191,40 +191,40 @@
 
 ### 【C#版】 
 * [Spatialノード](https://docs.godotengine.org/ja/stable/tutorials/3d/introduction_to_3d.html#spatial-node)（3Dモデル）の移動  
-```c#
-// Main.cs
-using Godot;
+  ```c#
+  // Main.cs
+  using Godot;
 
-public class Main : Spatial {
-	private Spatial _ufo;
-	
-	// 最初に一度だけ実行される
-	public override void _Ready() {
-		_ufo = GetNode("UFO") as Spatial;
-		GD.Print(_ufo.Translation.y);
-	}
+  public class Main : Spatial {
+    private Spatial _ufo;
+    
+    // 最初に一度だけ実行される
+    public override void _Ready() {
+      _ufo = GetNode("UFO") as Spatial;
+      GD.Print(_ufo.Translation.y);
+    }
 
-	// 繰り返し実行される
-	public override void _Process(float _delta) {
-		Vector3 _ufoPos =  _ufo.Translation;
-		_ufoPos.y += 0.01f;
-		_ufo.Translation = _ufoPos;
-	}
-}
-```
-上記を含め次の方法で可能  
-```c#
-// 指定位置に移動➀
-Vector3 _ufoPos =  _ufo.Translation;
-_ufoPos.y += 0.01f;
-_ufo.Translation = _ufoPos;
+    // 繰り返し実行される
+    public override void _Process(float _delta) {
+      Vector3 _ufoPos =  _ufo.Translation;
+      _ufoPos.y += 0.01f;
+      _ufo.Translation = _ufoPos;
+    }
+  }
+  ```
+  上記を含め次の方法で可能  
+  ```c#
+  // 指定位置に移動➀
+  Vector3 _ufoPos =  _ufo.Translation;
+  _ufoPos.y += 0.01f;
+  _ufo.Translation = _ufoPos;
 
-// 指定位置に移動➁
-_ufo.Translation += new Vector3(0f, 0.01f, 0f);
+  // 指定位置に移動➁
+  _ufo.Translation += new Vector3(0f, 0.01f, 0f);
 
-// 指定した値だけ移動
-_ufo.Translate(new Vector3(0f, 0.01f, 0f)); // Scaleに依存
-```
+  // 指定した値だけ移動
+  _ufo.Translate(new Vector3(0f, 0.01f, 0f)); // Scaleに依存
+  ```
 
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
