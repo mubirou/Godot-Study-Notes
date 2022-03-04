@@ -246,12 +246,25 @@
       _ufo.Position = _ufoPos;
     }
   }
-    ```
+  ```
+  上記を含め次の方法で可能  
+  ```c#
+  // 指定位置に移動➀
+  Vector2 _ufoPos = _ufo.Position;
+  _ufoPos.x += 1; // 1ピクセル移動
+  _ufo.Position = _ufoPos;
+
+  // 指定位置に移動
+  _ufo.Position += new Vector2(1, 0);
+
+  // 指定した値だけ移動
+  _ufo.Translate(new Vector2(1, 0));
+  ```
 
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
 作成日：2022年03月03日  
-更新日：2022年03月04日 Node2D版を追加  
+更新日：2022年03月05日 C#版を追加  
 [[TOP]](#TOP)
 
 
