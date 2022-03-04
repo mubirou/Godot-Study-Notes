@@ -137,8 +137,9 @@
 <a name="ノードの移動"></a>
 # <b>ノードの移動</b>
 
-* [Spatialノード](https://docs.godotengine.org/ja/stable/tutorials/3d/introduction_to_3d.html#spatial-node)（3Dモデル）の移動   
-  GDScript版  
+### GDScript版 
+
+* [Spatialノード](https://docs.godotengine.org/ja/stable/tutorials/3d/introduction_to_3d.html#spatial-node)（3Dモデル）の移動  
   ```GDScript
   #Main.gd
   extends Spatial # 2Dの場合はNode2D
