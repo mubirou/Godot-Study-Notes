@@ -254,7 +254,7 @@
   _ufoPos.x += 1; // 1ピクセル移動
   _ufo.Position = _ufoPos;
 
-  // 指定位置に移動
+  // 指定位置に移動➁
   _ufo.Position += new Vector2(1, 0);
 
   // 指定した値だけ移動
