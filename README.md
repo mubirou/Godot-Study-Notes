@@ -226,7 +226,7 @@
   _ufo.Translate(new Vector3(0f, 0.01f, 0f)); // Scaleに依存
   ```
 
-  * [Node2D](https://docs.godotengine.org/ja/stable/classes/class_node2d.html#node2d)ノード（2Dスプライト）の移動
+* [Node2D](https://docs.godotengine.org/ja/stable/classes/class_node2d.html#node2d)ノード（2Dスプライト）の移動
   ```c#
   // Main.cs
   using Godot;
