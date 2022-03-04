@@ -222,8 +222,8 @@
   // 指定位置に移動➁
   _ufo.Translation += new Vector3(0f, 0.01f, 0f);
 
-  // 指定した値だけ移動
-  _ufo.Translate(new Vector3(0f, 0.01f, 0f)); // Scaleに依存
+  // 指定した値だけ移動（Scaleに依存）
+  _ufo.Translate(new Vector3(0f, 0.01f, 0f));
   ```
 
 * [Node2D](https://docs.godotengine.org/ja/stable/classes/class_node2d.html#node2d)ノード（2Dスプライト）の移動
