@@ -195,7 +195,7 @@
 // Main.cs
 using Godot;
 
-public class Main : Spatial { // 2Dの場合はGodot.Node2Dを継承
+public class Main : Spatial {
 	private Spatial _ufo;
 	
 	// 最初に一度だけ実行される
