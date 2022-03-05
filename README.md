@@ -272,13 +272,38 @@
 # <b>XXXXX</b>
 
 1. XXX
+    ```GDScript
+    # Main.gd
+    extends Node2D
+
+    var _ufo
+
+    func _ready(): # 最初に一度だけ実行される
+      _ufo = get_node("UFO")
+      
+    func _process(_delta): # 繰り返し実行
+      _ufo.position.x = get_viewport().get_mouse_position().x
+      _ufo.position.y = get_viewport().get_mouse_position().y
+    ```
+
+実行環境：Windows 10、Godot 3.4.2  
+作成者：夢寐郎  
+作成日：2022年XX月XX日  
+更新日：202X年XX月XX日  
+[[TOP]](#TOP)
+
+
+<a name="XXX"></a>
+# <b>XXXXX</b>
+
+1. XXX
     ```c#
     XXXX
     ```
     * XXX
     * XXXX
 
-実行環境：Windows 10、Godot 3.4.3  
+実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
 更新日：202X年XX月XX日  
