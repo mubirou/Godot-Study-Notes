@@ -282,8 +282,10 @@
       _ufo = get_node("UFO")
       
     func _process(_delta): # 繰り返し実行
-      _ufo.position.x = get_viewport().get_mouse_position().x
-      _ufo.position.y = get_viewport().get_mouse_position().y
+      var _mouseX = get_viewport().get_mouse_position().x
+      var _mouseY = get_viewport().get_mouse_position().y
+      _ufo.position.x = _mouseX
+      _ufo.position.y = _mouseY
     ```
 
 実行環境：Windows 10、Godot 3.4.2  
