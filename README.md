@@ -315,7 +315,12 @@
 
     func _input(_event): # 入力イベント
       if _event is InputEventMouseMotion: # マウスを動かしている時
-        print(_event.position)
+        print(_event.position) #-> (48, 425)
+        print(_event.position.x) #-> 48
+        print(_event.position.y) #-> 425
+    ```
+    👇入力座標位置  
+    ```GDScript
     ```
 
 実行環境：Windows 10、Godot 3.4.2  
