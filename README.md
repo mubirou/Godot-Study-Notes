@@ -316,7 +316,7 @@
         _ufo.position.y = get_viewport().get_mouse_position().y
     ```
     👇入力座標位置  
-    ```GDScript
+    ```python
     # Main.gd
     extends Node2D
       
@@ -333,7 +333,7 @@
 
  * 3D（Spatialノード）版  
   👇マウスの位置
-    ```GDScript
+    ```c#
     // Main.cs
     using Godot;
 
@@ -348,7 +348,7 @@
     }
     ```
     👇入力座標位置  
-    ```GDScript
+    ```c#
     // Main.cs
     using Godot;
 
@@ -369,7 +369,19 @@
 
  * 2D（Node2Dノード）版  
   👇マウスの位置
-    ```GDScript
+    ```c#
+    // Main.cs
+    using Godot;
+
+    public class Main : Node2D {
+      public override void _Input(InputEvent _event) {
+        if (_event is InputEventMouseMotion _mouseEvent) {
+          GD.Print(_mouseEvent.Position); //-> (337, 309)
+          GD.Print(_mouseEvent.Position.x); //-> 337
+          GD.Print(_mouseEvent.Position.y); //-> 309
+        }
+      }
+    }
     ```
     👇入力座標位置  
     ```GDScript
