@@ -347,6 +347,22 @@
     ```
     👇入力座標位置  
     ```GDScript
+    // Main.cs
+    using Godot;
+
+    public class Main : Spatial {
+      public override void _Input(InputEvent _event) {
+        if (_event is InputEventMouseButton _mouseEvent) {
+          if (_mouseEvent.ButtonIndex == 1) {
+            if (_mouseEvent.Pressed) {
+              GD.Print(_mouseEvent.Position); //-> (282, 254)
+              GD.Print(_mouseEvent.Position.x); //-> 282
+              GD.Print(_mouseEvent.Position.y); //-> 254
+            }	
+          }
+        }
+      }
+    }
     ```
 
  * 2D（Node2Dノード）版  
