@@ -384,7 +384,23 @@
     }
     ```
     👇入力座標位置  
-    ```GDScript
+    ```C#
+    // Main.cs
+    using Godot;
+
+    public class Main : Node2D {
+      public override void _Input(InputEvent _event) {
+        if (_event is InputEventMouseButton _mouseEvent) {
+          if (_mouseEvent.ButtonIndex == 1) {
+            if (_mouseEvent.Pressed) {
+              GD.Print(_mouseEvent.Position); //-> (357, 277)
+              GD.Print(_mouseEvent.Position.x); //-> 357
+              GD.Print(_mouseEvent.Position.y); //-> 277
+            }
+          }
+        }
+      }
+    }
     ```
 
 実行環境：Windows 10、Godot 3.4.2  
