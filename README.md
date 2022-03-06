@@ -302,6 +302,22 @@
             print(_event.position.y) #-> 232
     ```
 
+ * 3D（Spatialノード）版  
+  👇マウスの位置
+  ```GDScript
+  #Main.gd
+  extends Spatial #2Dの場合はNode2D
+
+  var _ufo
+
+  func _ready(): # 最初に一度だけ実行される
+    _ufo = get_node("UFO")
+
+  func _input(_event): # 入力イベント
+    if _event is InputEventMouseMotion: # マウスを動かしている時
+      print(_event.position)
+  ```
+
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
 作成日：2022年03月XX日  
