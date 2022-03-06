@@ -337,8 +337,7 @@
     // Main.cs
     using Godot;
 
-    public class Main : Spatial { // 2Dの場合はGodot.Node2Dを継承
-      // 繰り返し実行される
+    public class Main : Spatial {
       public override void _Input(InputEvent _event) {
         if (_event is InputEventMouseMotion _mouseEvent) {
           GD.Print(_mouseEvent.Position);
