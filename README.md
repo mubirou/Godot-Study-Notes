@@ -329,6 +329,24 @@
             print(_event.position.y) #-> 232
     ```
 
+### 【C#版】 
+
+ * 3D（Spatialノード）版  
+  👇マウスの位置
+    ```GDScript
+    ```
+    👇入力座標位置  
+    ```GDScript
+    ```
+
+ * 2D（Node2Dノード）版  
+  👇マウスの位置
+    ```GDScript
+    ```
+    👇入力座標位置  
+    ```GDScript
+    ```
+
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
 作成日：2022年03月06日  
