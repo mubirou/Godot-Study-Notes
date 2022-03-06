@@ -288,7 +288,7 @@
         _ufo.position.x = get_viewport().get_mouse_position().x
         _ufo.position.y = get_viewport().get_mouse_position().y
     ```
-    👇入力座標位置  
+  👇入力座標位置  
     ```GDScript
     # Main.gd
     extends Node2D
@@ -307,11 +307,6 @@
     ```GDScript
     #Main.gd
     extends Spatial #2Dの場合はNode2D
-
-    var _ufo
-
-    func _ready(): # 最初に一度だけ実行される
-      _ufo = get_node("UFO")
 
     func _input(_event): # 入力イベント
       if _event is InputEventMouseMotion: # マウスを動かしている時
