@@ -272,6 +272,33 @@
 # <b>マウス座標</b>
 
 ### 【GDScript版】 
+
+ * 3D（Spatialノード）版  
+  👇マウスの位置
+    ```GDScript
+    #Main.gd
+    extends Spatial #2Dの場合はNode2D
+
+    func _input(_event): # 入力イベント
+      if _event is InputEventMouseMotion: # マウスを動かしている時
+        print(_event.position) #-> (48, 425)
+        print(_event.position.x) #-> 48
+        print(_event.position.y) #-> 425
+    ```
+    👇入力座標位置  
+    ```GDScript
+    #Main.gd
+    extends Spatial #2Dの場合はNode2D
+
+    func _input(_event): # 入力イベント
+      if _event is InputEventMouseButton: # マウスボタンを押した時
+        if _event.button_index == 1: # マウスの左ボタン
+          if _event.pressed: # 押している
+            print(_event.position) #-> (48, 425)
+            print(_event.position.x) #-> 48
+            print(_event.position.y) #-> 425
+    ```
+
  * 2D（Node2Dノード）版  
   👇マウスの位置
     ```GDScript
@@ -300,32 +327,6 @@
             print(_event.position) #-> (216, 232)
             print(_event.position.x) #-> 216
             print(_event.position.y) #-> 232
-    ```
-
- * 3D（Spatialノード）版  
-  👇マウスの位置
-    ```GDScript
-    #Main.gd
-    extends Spatial #2Dの場合はNode2D
-
-    func _input(_event): # 入力イベント
-      if _event is InputEventMouseMotion: # マウスを動かしている時
-        print(_event.position) #-> (48, 425)
-        print(_event.position.x) #-> 48
-        print(_event.position.y) #-> 425
-    ```
-    👇入力座標位置  
-    ```GDScript
-    #Main.gd
-    extends Spatial #2Dの場合はNode2D
-
-    func _input(_event): # 入力イベント
-      if _event is InputEventMouseButton: # マウスボタンを押した時
-        if _event.button_index == 1: # マウスの左ボタン
-          if _event.pressed: # 押している
-            print(_event.position) #-> (48, 425)
-            print(_event.position.x) #-> 48
-            print(_event.position.y) #-> 425
     ```
 
 実行環境：Windows 10、Godot 3.4.2  
