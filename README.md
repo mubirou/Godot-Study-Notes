@@ -319,8 +319,9 @@
         print(_event.position.x) #-> 48
         print(_event.position.y) #-> 425
     ```
-    👇入力座標位置  
+  👇入力座標位置  
     ```GDScript
+    var _hoge
     ```
 
 実行環境：Windows 10、Godot 3.4.2  
