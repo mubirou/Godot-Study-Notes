@@ -303,7 +303,7 @@
     ```
 
  * 3D（Spatialノード）版  
-  👇マウスの位置
+  👇マウスの位置  
   ```GDScript
   #Main.gd
   extends Spatial #2Dの場合はNode2D
