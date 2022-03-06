@@ -272,38 +272,36 @@
 # <b>マウス座標</b>
 
 ### 【GDScript版】 
+  #### Node2D（2D）版
+  * マウスの位置
+    ```GDScript
+    # Main.gd
+    extends Node2D
 
-* マウスの位置
-  ```GDScript
-  # Main.gd
-  extends Node2D
+    var _ufo
 
-  var _ufo
+    func _ready(): # 最初に一度だけ実行される
+      _ufo = get_node("UFO")
+      
+    func _input(_event): # 入力イベント
+      if _event is InputEventMouseMotion: # マウスを動かしている時
+        _ufo.position.x = get_viewport().get_mouse_position().x
+        _ufo.position.y = get_viewport().get_mouse_position().y
+    ```
 
-  func _ready(): # 最初に一度だけ実行される
-    _ufo = get_node("UFO")
-    
-  func _input(_event): # 入力イベント
-    if _event is InputEventMouseMotion: # マウスを動かしている時
-      _ufo.position.x = get_viewport().get_mouse_position().x
-      _ufo.position.y = get_viewport().get_mouse_position().y
-  ```
-
-* 入力座標位置
-  ```GDScript
-  # Main.gd
-  extends Node2D
-    
-  func _input(_event): # 入力イベント
-    if _event is InputEventMouseButton: # マウスボタンを押した時
-      if _event.button_index == 1: # マウスの左ボタン
-        if _event.pressed: # 押している
-          print(_event.position) #-> (216, 232)
-          print(_event.position.x) #-> 216
-          print(_event.position.y) #-> 232
-  ```
-
-  参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_inputeventmousebutton.html#inputeventmousebutton)  
+  * 入力座標位置
+    ```GDScript
+    # Main.gd
+    extends Node2D
+      
+    func _input(_event): # 入力イベント
+      if _event is InputEventMouseButton: # マウスボタンを押した時
+        if _event.button_index == 1: # マウスの左ボタン
+          if _event.pressed: # 押している
+            print(_event.position) #-> (216, 232)
+            print(_event.position.x) #-> 216
+            print(_event.position.y) #-> 232
+    ```
 
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
