@@ -340,7 +340,9 @@
     public class Main : Spatial {
       public override void _Input(InputEvent _event) {
         if (_event is InputEventMouseMotion _mouseEvent) {
-          GD.Print(_mouseEvent.Position);
+          GD.Print(_mouseEvent.Position); //-> (423, 281)
+          GD.Print(_mouseEvent.Position); //-> 423
+          GD.Print(_mouseEvent.Position); //-> 281
         }
       }
     }
