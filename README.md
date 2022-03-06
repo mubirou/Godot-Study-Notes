@@ -272,7 +272,7 @@
 # <b>マウス座標</b>
 
 ### 【GDScript版】 
- * Node2D（2D）版  
+ * 2D（Node2Dノード）版  
   👇マウスの位置
     ```GDScript
     # Main.gd
