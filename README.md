@@ -271,7 +271,9 @@
 <a name="XXX"></a>
 # <b>XXXXX</b>
 
-1. XXX
+### 【GDScript版】 
+
+* マウスの位置
   ```GDScript
   # Main.gd
   extends Node2D
@@ -287,7 +289,7 @@
       _ufo.position.y = get_viewport().get_mouse_position().y
   ```
 
-1. XXX
+* 入力座標位置
   ```GDScript
   # Main.gd
   extends Node2D
