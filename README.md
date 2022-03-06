@@ -272,8 +272,8 @@
 # <b>マウス座標</b>
 
 ### 【GDScript版】 
-  #### Node2D（2D）版
-  * マウスの位置
+ * Node2D（2D）版  
+  マウスの位置
     ```GDScript
     # Main.gd
     extends Node2D
@@ -288,8 +288,7 @@
         _ufo.position.x = get_viewport().get_mouse_position().x
         _ufo.position.y = get_viewport().get_mouse_position().y
     ```
-
-  * 入力座標位置
+    入力座標位置  
     ```GDScript
     # Main.gd
     extends Node2D
