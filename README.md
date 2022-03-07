@@ -412,7 +412,7 @@
 <a name="画面サイズ"></a>
 # <b>画面サイズ</b>
 
- [プロジェクト]-[プロジェクト設定…]-[Display]-[Window]で以下の通りに設定  
+ [プロジェクト]-[プロジェクト設定…]-[**Display**]-[**Window**]で以下の通りに設定  
   * Size
     * **Width** : 1920（初期値:1024）
     * **Height** : 1080（初期値:600）
@@ -432,8 +432,8 @@
 <a name="背景色"></a>
 # <b>背景色</b>
 
-* [プロジェクト]-[プロジェクト設定…]-[Rendering]-[Environment]で以下の通りに設定
-  * Default Clear Color : ffcc00（初期値:4d4d4d）
+* [プロジェクト]-[プロジェクト設定…]-[**Rendering**]-[**Environment**]で以下の通りに設定
+  * **Default Clear Color** : ffcc00（初期値:4d4d4d）
 
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
