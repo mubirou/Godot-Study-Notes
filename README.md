@@ -414,18 +414,18 @@
 
  [プロジェクト]-[プロジェクト設定…]-[Display]-[Window]で以下の通りに設定  
   * Size
-    * Width : 1920（初期値:1024）
-    * Height : 1080（初期値:600）
+    * **Width** : 1920（初期値:1024）
+    * **Height** : 1080（初期値:600）
     * Resizable : ✓オン（初期値）
-    * Fullscreen : ✓オン（初期値:オフ）
+    * **Fullscreen** : **✓**オン（初期値:オフ）
   * Dpi
-    * Allow Hidpi : ✓オン（初期値:オフ）
+    * **Allow Hidpi** : **✓**オン（初期値:オフ）
   * Handheld
     * Orientation : landscape（初期値）
 
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
+作成日：2022年03月07日  
 [[TOP]](#TOP)
 
 
