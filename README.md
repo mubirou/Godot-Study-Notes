@@ -443,7 +443,7 @@
 
 <a name="ルーレット"></a>
 # <b>ルーレット</b>
-『Unityの教科書』(https://amzn.to/3hU5s5Z)]のChapter3のGodot版  
+[『Unityの教科書』](https://amzn.to/3hU5s5Z)のChapter3のGodot版  
 
 ```GDScript
 # Roullette.gd
