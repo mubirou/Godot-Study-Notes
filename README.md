@@ -443,7 +443,7 @@
 
 <a name="ルーレット"></a>
 # <b>ルーレット</b>
-[『Unityの教科書』](https://amzn.to/3hU5s5Z)のChapter3のGodot版  
+[『Unityの教科書』](https://amzn.to/3hU5s5Z)のChapter3（オブジェクトの配置と動かし方）のGodot版  
 
 ```GDScript
 # Roullette.gd
@@ -466,8 +466,7 @@ func _input(_event): # 入力イベント
 
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2022年03月10日  
 [[TOP]](#TOP)
 
 
