@@ -2,7 +2,7 @@
 
 ### <b>index</b>
 
-| [GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [XXXXX](#XXX) |
+| [GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [ルーレット](#ルーレット) | [XXXXX](#XXX) |
 ***
 
 <a name="外部スクリプトエディタ"></a>
@@ -438,6 +438,36 @@
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
 作成日：2022年03月07日  
+[[TOP]](#TOP)
+
+
+<a name="ルーレット"></a>
+# <b>ルーレット</b>
+『Unityの教科書』(https://amzn.to/3hU5s5Z)]のChapter3のGodot版  
+
+```GDScript
+# Roullette.gd
+extends Sprite
+
+var _rotSpeed = 0 # 回転速度
+	
+func _process(_delta): # 繰り返し実行
+	# 回転速度ぶんルーレットを回転させる
+	rotation += _rotSpeed
+	_rotSpeed *= 0.98 # ルーレットを減速させる
+
+# マウスが押されたら回転速度を設定する
+func _input(_event): # 入力イベント
+	if _event is InputEventMouseButton: # マウスを押したら
+		if _event.button_index == 1: # マウスの左ボタン
+			if _event.pressed: # 押している
+				_rotSpeed = 3;
+```
+
+実行環境：Windows 10、Godot 3.4.2  
+作成者：夢寐郎  
+作成日：202X年XX月XX日  
+更新日：202X年XX月XX日  
 [[TOP]](#TOP)
 
 
