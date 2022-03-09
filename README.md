@@ -445,6 +445,7 @@
 # <b>ルーレット</b>
 [『Unityの教科書』](https://amzn.to/3hU5s5Z)のChapter3（オブジェクトの配置と動かし方）のGodot版  
 
+### 【GDScript版  
 ```GDScript
 # Roullette.gd
 extends Sprite
