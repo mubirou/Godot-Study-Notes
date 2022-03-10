@@ -449,7 +449,7 @@
 ルーレット画像（Sprite）に以下のスクリプトをアタッチ
 ```GDScript
 # Roullette.gd
-extends Sprite # 要注意!!
+extends Sprite # 要注意！
 
 var _rotSpeed = 0 # 回転速度
 	
@@ -477,20 +477,20 @@ public class Roulette : Sprite {
     // 繰り返し実行される
     public override void _Process(float _delta) {
         // 回転速度ぶんルーレットを回転させる
-		Rotation += _rotSpeed;
-		_rotSpeed *= 0.98f; // ルーレットを減速させる
+        Rotation += _rotSpeed;
+        _rotSpeed *= 0.98f; // ルーレットを減速させる
     }
-    
+
     // マウスが押されたら回転速度を設定する
     public override void _Input(InputEvent _event) {
         if (_event is InputEventMouseButton _mouseEvent) {
             if (_mouseEvent.ButtonIndex == 1) { // 左ボタン
                 if (_mouseEvent.Pressed) {
-					_rotSpeed = 3f;
+                    _rotSpeed = 3f;
                 }
-			}
-		}
-	}
+            }
+        }
+    }
 }
 ```
 
