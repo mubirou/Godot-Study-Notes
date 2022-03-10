@@ -446,9 +446,10 @@
 [『Unityの教科書』](https://amzn.to/3hU5s5Z)のChapter3（オブジェクトの配置と動かし方）のGodot版  
 
 ### 【GDScript版】  
+ルーレット画像（Sprite）にアタッチ
 ```GDScript
 # Roullette.gd
-extends Sprite
+extends Sprite # 要注意!!
 
 var _rotSpeed = 0 # 回転速度
 	
