@@ -471,7 +471,7 @@ func _input(_event): # 入力イベント
 // Roulette.cs
 using Godot;
 
-public class Roulette : Sprite {
+public class Roulette : Sprite { // 要注意！
     private float _rotSpeed = 0f; // 回転速度
 
     // 繰り返し実行される
