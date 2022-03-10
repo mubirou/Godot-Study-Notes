@@ -480,7 +480,7 @@ public class Roulette : Sprite {
 		Rotation += _rotSpeed;
 		_rotSpeed *= 0.98f; // ルーレットを減速させる
     }
-
+    
     // マウスが押されたら回転速度を設定する
     public override void _Input(InputEvent _event) {
         if (_event is InputEventMouseButton _mouseEvent) {
