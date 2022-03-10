@@ -446,7 +446,7 @@
 [『Unityの教科書』](https://amzn.to/3hU5s5Z)のChapter3（オブジェクトの配置と動かし方）のGodot版  
 
 ### 【GDScript版】  
-ルーレット画像（Sprite）にアタッチ
+ルーレット画像（Sprite）に以下のスクリプトをアタッチ
 ```GDScript
 # Roullette.gd
 extends Sprite # 要注意!!
@@ -464,6 +464,34 @@ func _input(_event): # 入力イベント
 		if _event.button_index == 1: # マウスの左ボタン
 			if _event.pressed: # 押している
 				_rotSpeed = 3;
+```
+
+### 【C#版】  
+```c#
+// Roulette.cs
+using Godot;
+
+public class Roulette : Sprite {
+    private float _rotSpeed = 0f; // 回転速度
+
+    // 繰り返し実行される
+    public override void _Process(float _delta) {
+        // 回転速度ぶんルーレットを回転させる
+		Rotation += _rotSpeed;
+		_rotSpeed *= 0.98f; // ルーレットを減速させる
+    }
+
+	// マウスが押されたら回転速度を設定する
+    public override void _Input(InputEvent _event) {
+        if (_event is InputEventMouseButton _mouseEvent) {
+            if (_mouseEvent.ButtonIndex == 1) { // 左ボタン
+                if (_mouseEvent.Pressed) {
+					_rotSpeed = 3f;
+                }
+			}
+		}
+	}
+}
 ```
 
 実行環境：Windows 10、Godot 3.4.2  
