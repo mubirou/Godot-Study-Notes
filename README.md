@@ -549,7 +549,7 @@ func _input(_event):
 				_speed = _disX / 20
 				$AudioStreamPlayer2D.play() # 効果音は.wav
 ```
-
+参考：[小数点以下2桁表示](https://docs.godotengine.org/ja/stable/tutorials/scripting/gdscript/gdscript_format_string.html#padding)  
 参考ファイル：[Roulette.zip](https://mubirou.github.io/Godot/zip/SwipeCar.zip)  
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
