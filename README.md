@@ -2,7 +2,7 @@
 
 ### <b>index</b>
 
-| [GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [ルーレット](#ルーレット) | [XXXXX](#XXX) |
+| [GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム]](#SwipeCarゲーム) | [XXXXX](#XXX) |
 ***
 
 <a name="外部スクリプトエディタ"></a>
@@ -441,8 +441,8 @@
 [[TOP]](#TOP)
 
 
-<a name="ルーレット"></a>
-# <b>ルーレット</b>
+<a name="Rouletteゲーム"></a>
+# <b>Rouletteゲーム</b>
 [『Unityの教科書』](https://amzn.to/3hU5s5Z)のChapter3（オブジェクトの配置と動かし方）のGodot版  
 
 ### 【GDScript版】  
@@ -498,6 +498,62 @@ public class Roulette : Sprite { // 要注意！
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
 作成日：2022年03月10日  
+[[TOP]](#TOP)
+
+
+<a name="SwipeCarゲーム"></a>
+# <b>SwipeCarゲーム</b>
+[『Unityの教科書』](https://amzn.to/3hU5s5Z)のChapter4（UIと監督オブジェクト）のGodot版  
+
+### 【GDScript版】  
+メインシーン（Main.tscn）に以下のスクリプトをアタッチ
+```GDScript
+# Main.gd
+extends Node2D
+
+var _car
+var _flag
+
+func _ready():
+	_car = get_node("Car")
+	_flag = get_node("Flag")
+
+func _process(_delta):
+	var _distance = _flag.position.x - _car.position.x
+	if _distance > 0 :
+		_distance = "%10.2f" % (round(_distance)/20) # 少数点2桁表示
+		$Label.text = str(_distance) + " m to the GOAL"
+	else:
+		$Label.text = "GAME OVER"
+```
+
+車（Sprite）に以下のスクリプトをアタッチ
+```GDScript
+# Car.gd
+extends Sprite
+
+var _speed = 0
+var _startX
+	
+func _process(_delta):
+	translate(Vector2(_speed, 0))
+	_speed *= 0.98
+
+func _input(_event):
+	if _event is InputEventMouseButton:
+		if _event.button_index == 1:
+			if _event.pressed: # MouseDown
+				_startX = _event.position.x
+			else: # MouseUp
+				var _disX = _event.position.x - _startX
+				_speed = _disX / 20
+				$AudioStreamPlayer2D.play() # 効果音は.wav
+```
+
+参考ファイル：[Roulette.zip](https://mubirou.github.io/Godot/zip/SwipeCar.zip)  
+実行環境：Windows 10、Godot 3.4.2  
+作成者：夢寐郎  
+作成日：2022年03月23日  
 [[TOP]](#TOP)
 
 
