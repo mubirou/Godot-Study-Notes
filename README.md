@@ -494,7 +494,7 @@ public class Roulette : Sprite { // 要注意！
 }
 ```
 
-参考ファイル：[Roulette.zip](https://mubirou.github.io/Godot/zip/Roulette.zip)  
+参考ファイル：[Roulette.zip](https://github.com/mubirou/Godot/blob/main/zip/Roulette.zip)  
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
 作成日：2022年03月10日  
