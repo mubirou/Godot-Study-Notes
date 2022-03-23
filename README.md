@@ -549,11 +549,78 @@ func _input(_event):
 				_speed = _disX / 20
 				$AudioStreamPlayer2D.play() # 効果音は.wav
 ```
+
+### 【C#版】  
+メインシーン（Main.tscn）に以下のスクリプトをアタッチ
+```c#
+// Main.cs
+using Godot;
+
+public class Main : Node2D {
+    private Node2D _car;
+    private Node2D _flag;
+    private Label _label;
+
+    public override void _Ready() {
+        _car = GetNode("Car") as Node2D;
+        _flag = GetNode("Flag") as Node2D;
+        _label = GetNode<Label>("Label");
+    }
+
+    public override void _Process(float _delta) {
+        float _distance = _flag.Position.x - _car.Position.x;
+        if (_distance > 0) {
+            string _distanceText = (_distance/20).ToString("F2");
+            _label.Text = _distanceText + " m to the GOAL";
+        } else {
+            _label.Text = "GAME OVER";
+        }
+    }
+}
+```
+
+車（Sprite）に以下のスクリプトをアタッチ
+```c#
+// Car.cs
+using Godot;
+
+public class Car : Sprite {
+    private float _speed = 0f;
+    private float _startX;
+    private AudioStreamPlayer2D _se;
+
+    public override void _Ready() {
+        _se = GetNode<AudioStreamPlayer2D>("AudioStreamPlayer2D");
+    }
+
+    public override void _Process(float _delta) {
+        Translate(new Vector2(_speed, 0));
+        _speed *= 0.98f;
+    }
+
+    public override void _Input(InputEvent _event) {
+        if (_event is InputEventMouseButton _mouseEvent) {
+            if (_mouseEvent.ButtonIndex == 1) {
+                if (_mouseEvent.Pressed) { // MouseDown
+                    _startX = _mouseEvent.Position.x;
+                } else { // MouseUp
+                    float _disX = _mouseEvent.Position.x - _startX;
+                    _speed = _disX / 20;
+                    _se.Play(); // SEは.wav
+                }
+            }
+        }
+    }
+}
+```
+
+
 参考：[小数点以下2桁表示](https://docs.godotengine.org/ja/stable/tutorials/scripting/gdscript/gdscript_format_string.html#padding)、[外部フォント](https://note.com/doromaito/n/n60e16bdaa1be)、[効果音](http://blawat2015.no-ip.com/~mieki256/diary/202010211.html)  
 参考ファイル：[SwipeCar.zip](https://mubirou.github.io/Godot/zip/SwipeCar.zip)  
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
 作成日：2022年03月23日  
+更新日：2022年03月24日 C#版追加
 [[TOP]](#TOP)
 
 
