@@ -634,7 +634,10 @@ public class Car : Sprite {
 1. [シーン]-[シーンを保存]（名前は "Main.tscn" で [保存] ）
 1. [ファイルシステム]-[res://]-[addons]-[godot-openxr]-[scenes]-[**first_person_controller_vr.tscn**] を上記の [シーン]-[Main] 上にドラッグ＆ドロップ  
 1. [プロジェクト]-[プロジェクト設定]-[一般]-[Display]-[Window]-[**Use Vsync**] の ✓オン を外す（フレームレートを向上させるため）
-1. [プリミティブ](#プリミティブ) など何かオブジェクトを配置（任意）
+1. [プリミティブ](#プリミティブ) など何かオブジェクトを配置（任意）  
+  Main  
+　  ├ FPController（VR用カメラなど）  
+　  └ MeshInstance（任意のオブジェクト）  
 1. [**Oclus Linkの準備**](https://github.com/mubirou/Unity3D/tree/master/study-notes#oculus-link%E3%81%AE%E6%BA%96%E5%82%99) をする
 1. Godot の [▶] を押して Quest + Godot が同時再生されれば成功！
 
