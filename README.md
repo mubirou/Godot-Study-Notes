@@ -635,7 +635,7 @@ public class Car : Sprite {
 1. [ファイルシステム]-[res://]-[addons]-[godot-openxr]-[scenes]-[**first_person_controller_vr.tscn**] を上記の [シーン]-[Main] 上にドラッグ＆ドロップ  
 1. [プロジェクト]-[プロジェクト設定]-[一般]-[Display]-[Window]-[**Use Vsync**] の ✓オン を外す（フレームレートを向上させるため）
 1. [プリミティブ](#プリミティブ) など何かオブジェクトを配置（任意）
-1. [**Oclus Link**](https://github.com/mubirou/Unity3D/tree/master/study-notes#oculus-link%E3%81%AE%E6%BA%96%E5%82%99) を準備する
+1. [**Oclus Linkの準備**](https://github.com/mubirou/Unity3D/tree/master/study-notes#oculus-link%E3%81%AE%E6%BA%96%E5%82%99) をする
 1. Godot の [▶] を押して Quest + Godot と同時されれば成功！
 
 参考：[framesynthesis.jp](https://framesynthesis.jp/tech/godot/vr/)  
