@@ -625,16 +625,21 @@ public class Car : Sprite {
 
 
 <a name="240430"></a>
-# <b>XXXX</b>
+# <b>Quest</b>
 
 1. [Godot Standard version 64-bit(x86_64)](https://godotengine.org/download/windows) をダウンロード
 1. [新規プロジェクト]（レンダラー：**OpenGL ES 2.0**）を作成
 1. [AssetLib] から "**OpenXR Plugin**"（v.1.2.0）を [ダウンロード] ＆ [インストール]
 1. [3Dシーン] を作成（名前を"Main"に変更）
 1. [シーン]-[シーンを保存]（名前は "Main.tscn" で [保存] ）
+1. [ファイルシステム]-[res://]-[addons]-[godot-openxr]-[scenes]-[**first_person_controller_vr.tscn**] を上記の [シーン]-[Main] 上にドラッグ＆ドロップ  
+1. [プロジェクト]-[プロジェクト設定]-[一般]-[Display]-[Window]-[**Use Vsync**] の ✓オン を外す（フレームレートを向上させるため）
+1. [プリミティブ](#プリミティブ) など何かオブジェクトを配置（任意）
+1. [**Oclus Link**](https://github.com/mubirou/Unity3D/tree/master/study-notes#oculus-link%E3%81%AE%E6%BA%96%E5%82%99) を準備する
+1. Godot の [▶] を押して Quest + Godot と同時されれば成功！
 
 参考：[framesynthesis.jp](https://framesynthesis.jp/tech/godot/vr/)  
-実行環境：Windows 10、Godot 3.4.4 Standard  
+実行環境：Windows 10、Godot 3.4.4 Standard、Quest（初代）v.39.0
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
 [[TOP]](#TOP)
