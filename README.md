@@ -628,7 +628,8 @@ public class Car : Sprite {
 # <b>XXXX</b>
 
 1. [Godot Standard version 64-bit(x86_64)](https://godotengine.org/download/windows) をダウンロード
-1. 
+1. [新規プロジェクト]（レンダラー:OpenGL ES 3.0）を作成
+1. [AssetLib] から "OpenXR Plugin"（v.1.2.0）をダウンロード＆インストール
 
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
