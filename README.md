@@ -639,9 +639,10 @@ public class Car : Sprite {
 1. Godot の [▶] を押して Quest + Godot が同時再生されれば成功！
 
 参考：[framesynthesis.jp](https://framesynthesis.jp/tech/godot/vr/)  
-実行環境：Windows 10、Godot 3.4.4 Standard、Quest（初代）v.39.0
+実行環境：Windows 10、Godot 3.4.4 Standard  
+Meta Quest（初代）v.39.0、Oculusアプリ v.39.0  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
+作成日：202X年05月01日  
 [[TOP]](#TOP)
 
 
