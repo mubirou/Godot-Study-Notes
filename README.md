@@ -636,7 +636,7 @@ public class Car : Sprite {
 1. [プロジェクト]-[プロジェクト設定]-[一般]-[Display]-[Window]-[**Use Vsync**] の ✓オン を外す（フレームレートを向上させるため）
 1. [プリミティブ](#プリミティブ) など何かオブジェクトを配置（任意）
 1. [**Oclus Linkの準備**](https://github.com/mubirou/Unity3D/tree/master/study-notes#oculus-link%E3%81%AE%E6%BA%96%E5%82%99) をする
-1. Godot の [▶] を押して Quest + Godot と同時されれば成功！
+1. Godot の [▶] を押して Quest + Godot が同時再生されれば成功！
 
 参考：[framesynthesis.jp](https://framesynthesis.jp/tech/godot/vr/)  
 実行環境：Windows 10、Godot 3.4.4 Standard、Quest（初代）v.39.0
