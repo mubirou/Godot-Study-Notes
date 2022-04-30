@@ -645,7 +645,7 @@ public class Car : Sprite {
 実行環境：Windows 10、Godot 3.4.4 Standard  
 Meta Quest（初代）v.39.0、Oculusアプリ v.39.0  
 作成者：夢寐郎  
-作成日：202X年05月01日  
+作成日：2022年05月01日  
 [[TOP]](#TOP)
 
 
