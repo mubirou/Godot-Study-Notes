@@ -652,6 +652,31 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 <a name="XXX"></a>
 # <b>XXXXX</b>
 
+1. [AssetLib]-[OpenXR Plugin]
+
+
+1. [AssetLib]-[Oculus VR Plugin]
+
+1. [シーン]-[+]-[ARVROrigin]
+1. [シーン]-[+]-[ARVRCamera]
+1. [シーン]-[+]-[DirectionalLight]
+
+1. [シーン]-[+]-[MeshInstance]-[新規 PlaneMesh]
+
+＜メモ＞
+1. [AssetLib] で "Oculus Quest VR Toolkit"（0.4.2）
+
+
+実行環境：Windows 10、Godot 3.4.2  
+作成者：夢寐郎  
+作成日：202X年XX月XX日  
+更新日：202X年XX月XX日  
+[[TOP]](#TOP)
+
+
+<a name="XXX"></a>
+# <b>XXXXX</b>
+
 1. XXX
     ```c#
     XXXX
