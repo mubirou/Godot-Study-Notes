@@ -2,7 +2,7 @@
 
 ### <b>index</b>
 
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#240501) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#240501) | [Questコントローラー表示](#240502) |
 ***
 
 <a name="外部スクリプトエディタ"></a>
@@ -649,28 +649,19 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 [[TOP]](#TOP)
 
 
-<a name="XXX"></a>
-# <b>XXXXX</b>
+<a name="240502"></a>
+# <b>Questコントローラー表示</b>
 
-1. [AssetLib]-[OpenXR Plugin]
+1. [Quest + Oculus Link](#240501) の設定をおこなう
+1. 最上段にある [AssetLib] から "**Oculus Quest VR Toolkit**"（v.0.4.2）を [ダウンロード] ＆ [インストール]
+1. [シーン]-[Main]-[**FPController**]-[エディターで開く]
+1. [ファイルシステム]-[res://]-[OQ_Toolkit]-[OQ_ARVRController]-[**Feature_Quest1ControllerModel_Left.tscn**] を上記で開いた [FPController]-[LeftHandController] 上にドラッグ＆ドロップ
+1. 同様に [**Feature_Quest1ControllerModel_Right.tscn**] を [RightHandController] 上にドラッグ＆ドロップ
+1. [Main] シーンに戻ってから [▶] を押して Quest + Godot が同時再生されコントローラーが表示されれば成功！（ボタン類は動かない）
 
-
-1. [AssetLib]-[Oculus VR Plugin]
-
-1. [シーン]-[+]-[ARVROrigin]
-1. [シーン]-[+]-[ARVRCamera]
-1. [シーン]-[+]-[DirectionalLight]
-
-1. [シーン]-[+]-[MeshInstance]-[新規 PlaneMesh]
-
-＜メモ＞
-1. [AssetLib] で "Oculus Quest VR Toolkit"（0.4.2）
-
-
-実行環境：Windows 10、Godot 3.4.2  
+実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2022年05月05日  
 [[TOP]](#TOP)
 
 
@@ -684,7 +675,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
     * XXX
     * XXXX
 
-実行環境：Windows 10、Godot 3.4.2  
+実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
 更新日：202X年XX月XX日  
