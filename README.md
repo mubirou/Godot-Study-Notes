@@ -630,7 +630,7 @@ public class Car : Sprite {
 1. [Godot Standard version 64-bit(x86_64)](https://godotengine.org/download/windows) をダウンロード
 1. [新規プロジェクト]（レンダラー：**OpenGL ES 2.0**）を作成
 1. 最上段にある [AssetLib] から "**OpenXR Plugin**"（v.1.2.0）を [ダウンロード] ＆ [インストール]
-1. [3Dシーン] を作成
+1. [3Dシーン] を作成 
 1. [シーン]-[シーンを保存]
 1. [ファイルシステム]-[res://]-[addons]-[godot-openxr]-[scenes]-[**first_person_controller_vr.tscn**] を上記の [シーン]-[Main] 上にドラッグ＆ドロップ  
 1. [プロジェクト]-[プロジェクト設定]-[一般]-[Display]-[Window]-[**Use Vsync**] の ✓オン を外す（フレームレートを向上させるため）
