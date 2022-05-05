@@ -655,9 +655,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 ### この項目は書きかけです
 
 1. [Quest + Oculus Link](#240501) の設定をおこなう
-1. 最上段にある [AssetLib] から "**Oculus Quest VR Toolkit**"（v.0.4.2）を [ダウンロード] し [res://]-[OQ_Toolkit]-[OQ_ARVRController] にある次の２つを [インストール]  
-  ➀ **Feature_Quest1ControllerModel_Left.tscn**  
-  ➁ **Feature_Quest1ControllerModel_Right.tscn**  
+1. 最上段にある [AssetLib] から "**Oculus Quest VR Toolkit**"（v.0.4.2）を [ダウンロード] ＆ [インストール]
 1. [シーン]-[Main]-[**FPController**]-[エディターで開く]
 1. [ファイルシステム]-[res://]-[OQ_Toolkit]-[OQ_ARVRController]-[**Feature_Quest1ControllerModel_Left.tscn**] を上記で開いた [FPController]-[LeftHandController] 上にドラッグ＆ドロップ
 1. 同様に [**Feature_Quest1ControllerModel_Right.tscn**] を [RightHandController] 上にドラッグ＆ドロップ
