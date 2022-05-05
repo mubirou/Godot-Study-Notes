@@ -652,6 +652,8 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 <a name="240502"></a>
 # <b>Questコントローラー表示</b>
 
+### この項目は書きかけです
+
 1. [Quest + Oculus Link](#240501) の設定をおこなう
 1. 最上段にある [AssetLib] から "**Oculus Quest VR Toolkit**"（v.0.4.2）を [ダウンロード] ＆ [インストール]
 1. [シーン]-[Main]-[**FPController**]-[エディターで開く]
@@ -659,9 +661,14 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 1. 同様に [**Feature_Quest1ControllerModel_Right.tscn**] を [RightHandController] 上にドラッグ＆ドロップ
 1. [Main] シーンに戻ってから [▶] を押して Quest + Godot が同時再生されコントローラーが表示されれば成功！（ボタン類は動かない）
 
+＜Unity Asset Store の利用＞
+1. [Questコントローラー表示](https://github.com/mubirou/Unity3D/tree/master/study-notes#quest%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E8%A1%A8%E7%A4%BA)で必要な作業をおこなう
+1. Unity の [Assets]-[Oculus]-[VR]-[Meshes]-[OculusTouchForQuestAndRiftS]-[**OculusTouchForQuestAndRiftS_Left.fbx**] および [**OculusTouchForQuestAndRiftS_Right.fbx**] を Godot のプロジェクトフォルダ内にコピー
+1. 
+
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
-作成日：2022年05月05日  
+作成日：2022年05月XX日  
 [[TOP]](#TOP)
 
 
