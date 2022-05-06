@@ -676,7 +676,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 1. [Main]-[RightHandController] → "ARVRController_Right" に変更  
   Main（Node3D）  
 　  ├ ARVROrigin  
-　  │   ├　Configuration（OpenXRConfig.gdns付空のNode）   
+　  │   ├　Configuration（OpenXRConfig.gdns付のNode）   
 　  │   ├　ARVRCamera   
 　  │   ├　LeftHandController（**ARVRController**）  
 　  │   │　　└ OculusQuestTouchController_Left（glTFファイル）  
