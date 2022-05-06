@@ -663,9 +663,9 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 　  ├ FPController（**ARVROrigin**）  
 　  │   ├　**ARVRCamera**   
 　  │   ├　LeftHandController（**ARVRController**）  
-　  │   │    └ Feature_Quest1ControllerModel_Left（Node3D）  
+　  │   │   └ Feature_Quest1ControllerModel_Left（Node3D）  
 　  │   └ RightHandController（**ARVRController**）  
-　  │        └  Feature_Quest1ControllerModel_Left（Node3D）    
+　  │       └  Feature_Quest1ControllerModel_Left（Node3D）    
 　  └ MeshInstance（任意のオブジェクト）  
 1. [Main] シーンに戻ってから [▶] を押して Quest + Godot が同時再生されコントローラーが表示されれば成功！（ボタン類は動かない）
 
