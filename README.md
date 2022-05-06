@@ -660,7 +660,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 1. [ファイルシステム]-[res://]-[OQ_Toolkit]-[OQ_ARVRController]-[**Feature_Quest1ControllerModel_Left.tscn**] を上記で開いた [FPController]-[LeftHandController] 上にドラッグ＆ドロップ
 1. 同様に [**Feature_Quest1ControllerModel_Right.tscn**] を [RightHandController] 上にドラッグ＆ドロップ  
   Spatial（Node3D）  
-　  ├ FPController（ARVROrigin）  
+　  ├ FPController（**ARVROrigin**）  
 　  │   ├　ARVRCamera   
 　  │   ├　LeftHandController（ARVRController）  
 　  │   │    └ Feature_Quest1ControllerModel_Left（Node3D）  
