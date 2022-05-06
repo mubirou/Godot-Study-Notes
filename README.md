@@ -657,15 +657,15 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 1. [Quest + Oculus Link](#240501) の設定をおこなう
 1. 最上段にある [AssetLib] から "**Oculus Quest VR Toolkit**"（v.0.4.2）を [ダウンロード] ＆ [インストール]
 1. [シーン]-[Main]-[**FPController**] を選択し右クリックし [編集可能な子] を [✓]
-1. [ファイルシステム]-[res://]-[OQ_Toolkit]-[OQ_ARVRController]-[Models3d]-[**OculusQuestHand_Left.glft**] を上記で開いた [FPController]-[LeftHandController] 上にドラッグ＆ドロップ
-1. 同様に [**OculusQuestHand_Right.glft**] を [RightHandController] 上にドラッグ＆ドロップ  
+1. [ファイルシステム]-[res://]-[OQ_Toolkit]-[OQ_ARVRController]-[Models3d]-[**OculusQuestTouchController_Left.glft**] を上記で開いた [FPController]-[LeftHandController] 上にドラッグ＆ドロップ
+1. 同様に [**OculusQuestTouchController_Right.glft**] を [RightHandController] 上にドラッグ＆ドロップ  
   Spatial（Node3D）  
 　  ├ FPController（**ARVROrigin**）  
 　  │   ├　**ARVRCamera**   
 　  │   ├　LeftHandController（**ARVRController**）  
-　  │   │　　└ OculusQuestHand_Left.glft（glTFファイル）  
+　  │   │　　└ OculusQuestTouchController_Left（glTFファイル）  
 　  │   └ RightHandController（**ARVRController**）  
-　  │　　└  Feature_Quest1ControllerModel_Left（glTFファイル）    
+　  │　　└  OculusQuestTouchController_Right（glTFファイル）    
 　  └ MeshInstance（任意のオブジェクト）  
 1. [Main] シーンに戻ってから [▶] を押して Quest + Godot が同時再生されコントローラーが表示されれば成功！（ボタン類は動かない）
 
