@@ -676,13 +676,15 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 1. [Main]-[RightHandController] → "ARVRController_Right" に変更  
   Main（Node3D）  
 　  ├ **ARVROrigin**  
-　  │   ├ Configuration（OpenXRConfig**.gdns**付のNode）   
+　  │   ├ Configuration（OpenXRConfig.gdns付のNode）   
 　  │   ├ **ARVRCamera**   
 　  │   ├ ARVRController_Left（**ARVRController**）  
-　  │   │　　└ OculusQuestTouchController_Left（**.glTF**）  
+　  │   │　　└ OculusQuestTouchController_Left（.glTF）  
 　  │   └ ARVRController_Right（**ARVRController**）  
-　  │　　└ OculusQuestTouchController_Right（**.glTF**）    
+　  │　　└ OculusQuestTouchController_Right（.glTF）    
 　  └ MeshInstance（任意のオブジェクト）  
+
+参考：[docs.godotengine.org](https://docs.godotengine.org/ja/stable/tutorials/vr/xr_primer.html#new-ar-vr-nodes)
 
 ＜参考：Unity Asset Store の利用＞  
 1. [Questコントローラー表示](https://github.com/mubirou/Unity3D/tree/master/study-notes#quest%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E8%A1%A8%E7%A4%BA)で必要な作業をおこなう
