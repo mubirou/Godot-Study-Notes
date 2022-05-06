@@ -682,7 +682,8 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 　  │   │　　└ OculusQuestTouchController_Left（.glTF）  
 　  │   └ ARVRController_Right（**ARVRController**）  
 　  │　　└ OculusQuestTouchController_Right（.glTF）    
-　  └ MeshInstance（任意のオブジェクト）  
+　  ├ Floor（MeshInstance/PlaneMesh）  
+　  └ Floor（MeshInstance/PlaneMesh）  
 
 参考：[docs.godotengine.org](https://docs.godotengine.org/ja/stable/tutorials/vr/xr_primer.html#new-ar-vr-nodes)
 
@@ -694,6 +695,19 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
 作成日：2022年05月XX日  
+[[TOP]](#TOP)
+
+
+<a name="XXX"></a>
+# <b>XXXXX</b>
+
+* Mesh の色付け  
+Mesh の [インスペクター]-[MeshInstance]-[Material]-]新規SpatialMaterial]-[Albedo]-[Color] で #XXXXXX を指定
+
+実行環境：Windows 10、Godot 3.4.4  
+作成者：夢寐郎  
+作成日：202X年XX月XX日  
+更新日：202X年XX月XX日  
 [[TOP]](#TOP)
 
 
