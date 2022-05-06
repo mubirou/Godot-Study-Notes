@@ -658,7 +658,15 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 1. 最上段にある [AssetLib] から "**Oculus Quest VR Toolkit**"（v.0.4.2）を [ダウンロード] ＆ [インストール]
 1. [シーン]-[Main]-[**FPController**]-[エディターで開く]
 1. [ファイルシステム]-[res://]-[OQ_Toolkit]-[OQ_ARVRController]-[**Feature_Quest1ControllerModel_Left.tscn**] を上記で開いた [FPController]-[LeftHandController] 上にドラッグ＆ドロップ
-1. 同様に [**Feature_Quest1ControllerModel_Right.tscn**] を [RightHandController] 上にドラッグ＆ドロップ
+1. 同様に [**Feature_Quest1ControllerModel_Right.tscn**] を [RightHandController] 上にドラッグ＆ドロップ  
+  Spatial（Node3D）  
+　  ├ FPController（ARVROrigin）  
+　  │   ├　ARVRCamera   
+　  │   ├　LeftHandController（ARVRController）  
+　  │   │    └ Feature_Quest1ControllerModel_Left（Node3D）  
+　  │   └ RightHandController（ARVRController）  
+　  │        └  Feature_Quest1ControllerModel_Left（Node3D）    
+　  └ MeshInstance（任意のオブジェクト）  
 1. [Main] シーンに戻ってから [▶] を押して Quest + Godot が同時再生されコントローラーが表示されれば成功！（ボタン類は動かない）
 
 ＜Unity Asset Store の利用＞
