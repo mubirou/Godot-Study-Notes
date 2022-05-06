@@ -673,6 +673,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 ＜テスト中＞  
 1. [Main]-[FPController] → "ARVROrigin" に変更
 1. [Main]-[LeftHandController] → "ARVRControllerLeft" に変更
+1. [Main]-[RightHandController] → "ARVRControllerRight" に変更
 
 参考：Unity Asset Store の利用  
 1. [Questコントローラー表示](https://github.com/mubirou/Unity3D/tree/master/study-notes#quest%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E8%A1%A8%E7%A4%BA)で必要な作業をおこなう
