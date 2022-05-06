@@ -657,6 +657,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 1. [Quest + Oculus Link](#240501) の設定をおこなう
 1. 最上段にある [AssetLib] から "**Oculus Quest VR Toolkit**"（v.0.4.2）を [ダウンロード] ＆ [インストール]
 1. [シーン]-[Main]-[**FPController**] を選択し右クリックし [編集可能な子] を [✓]
+1. 同様に [ローカルにする] を選択
 1. [ファイルシステム]-[res://]-[OQ_Toolkit]-[OQ_ARVRController]-[Models3d]-[**OculusQuestTouchController_Left.glft**] を上記で開いた [FPController]-[LeftHandController] 上にドラッグ＆ドロップ
 1. 同様に [**OculusQuestTouchController_Right.glft**] を [RightHandController] 上にドラッグ＆ドロップ  
   Spatial（Node3D）  
@@ -669,7 +670,11 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 　  └ MeshInstance（任意のオブジェクト）  
 1. [Main] シーンに戻ってから [▶] を押して Quest + Godot が同時再生されコントローラーが表示されれば成功！（ボタン類は動かない）
 
-＜Unity Asset Store の利用＞
+＜テスト中＞  
+1. [Main]-[FPController] → "ARVROrigin" に変更
+1. [Main]-[LeftHandController] → "ARVRControllerLeft" に変更
+
+参考：Unity Asset Store の利用  
 1. [Questコントローラー表示](https://github.com/mubirou/Unity3D/tree/master/study-notes#quest%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E8%A1%A8%E7%A4%BA)で必要な作業をおこなう
 1. Unity の [Assets]-[Oculus]-[VR]-[Meshes]-[OculusTouchForQuestAndRiftS]-[**OculusTouchForQuestAndRiftS_Left.fbx**] および [**OculusTouchForQuestAndRiftS_Right.fbx**] を Godot のプロジェクトフォルダ内にコピー
 1. 
