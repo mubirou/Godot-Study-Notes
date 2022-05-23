@@ -1,11 +1,11 @@
-# Godot Study Notes<a name="TOP"></a>
+# Godot Study Notes<a id="TOP"></a>
 
 ### <b>index</b>
 
 [GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) |
 ***
 
-<a name="外部スクリプトエディタ"></a>
+<a id="外部スクリプトエディタ"></a>
 # <b>外部スクリプトエディタ</b>
 
 1. Godot の設定
@@ -36,7 +36,7 @@
 [[TOP]](#TOP)
 
 
-<a name="Androidビルド"></a>
+<a id="Androidビルド"></a>
 # <b>Androidビルド</b>
 
 * 既にビルドを試みて問題が生じている場合は先ず以下の作業を行う [[参考サイト](https://godotengine.org/qa/111977/apksigner-returned-with-error-%231)]  
@@ -59,9 +59,9 @@
   DOWNLOAD : .zip  
   ➋ 解凍(今回は C:\OpenJDK とする)  
   ➌ binフィルダを開く  
-  ➍ アドレス上で cmd と入力（コマンドプロンプトが開く）    
+  ➍ アドレス上で cmd と入力（コマンドプロンプトが開く）  
   ➎ keytool コマンドを実行  
-  C:\OpenJDK\openlogic-openjdk-8u262-b10-win-64\bin>**keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12**   
+  C:\OpenJDK\openlogic-openjdk-8u262-b10-win-64\bin>**keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12**  
   ➏ C:\OpenJDK\openlogic-openjdk-8u262-b10-win-64\bin> フォルダに **debug.keystore** が生成されたことを確認  
   [[参考サイト](https://godotengine.org/qa/111977/apksigner-returned-with-error-%231)]
 
@@ -94,13 +94,13 @@
   ➊ スマホの任意のフォルダに上記で作成した XXXXX.apk をコピー  
   ➋ スマホ上で XXXXX.apk を選択してインストール
 
-実行環境：Windows 10、Godot 3.4.2、Xiaomi Redmi Note 9T (Android 11)   
+実行環境：Windows 10、Godot 3.4.2、Xiaomi Redmi Note 9T (Android 11)  
 作成者：夢寐郎  
-作成日：2021年12月31日   
-[[TOP]](#TOP)
+作成日：2021年12月31日  
+[[TOP]](#TOP)  
 
 
-<a name="プリミティブ"></a>
+<a id="プリミティブ"></a>
 # <b>プリミティブ</b>
 
 1. [シーン]タブ-[+]で"**MeshInstance**"を検索し[作成]
@@ -121,7 +121,7 @@
 [[TOP]](#TOP)
 
 
-<a name="カメラ"></a>
+<a id="カメラ"></a>
 # <b>カメラ</b>
 
 1. [シーン]タブ-[+]で"**Camera**"を検索し[作成]
@@ -134,7 +134,7 @@
 [[TOP]](#TOP)
 
 
-<a name="ノードの移動"></a>
+<a id="ノードの移動"></a>
 # <b>ノードの移動</b>
 
 ### 【GDScript版】 
@@ -268,7 +268,7 @@
 [[TOP]](#TOP)
 
 
-<a name="マウス座標"></a>
+<a id="マウス座標"></a>
 # <b>マウス座標</b>
 
 ### 【GDScript版】 
@@ -409,7 +409,7 @@
 [[TOP]](#TOP)
 
 
-<a name="画面サイズ"></a>
+<a id="画面サイズ"></a>
 # <b>画面サイズ</b>
 
  [プロジェクト]-[プロジェクト設定…]-[**Display**]-[**Window**]で以下の通りに設定  
@@ -429,7 +429,7 @@
 [[TOP]](#TOP)
 
 
-<a name="背景色"></a>
+<a id="背景色"></a>
 # <b>背景色</b>
 
 * [プロジェクト]-[プロジェクト設定…]-[**Rendering**]-[**Environment**]で以下の通りに設定
@@ -441,7 +441,7 @@
 [[TOP]](#TOP)
 
 
-<a name="Rouletteゲーム"></a>
+<a id="Rouletteゲーム"></a>
 # <b>Rouletteゲーム</b>
 [『Unityの教科書』](https://amzn.to/3hU5s5Z)のChapter3（オブジェクトの配置と動かし方）のGodot版  
 
@@ -501,7 +501,7 @@ public class Roulette : Sprite { // 要注意！
 [[TOP]](#TOP)
 
 
-<a name="SwipeCarゲーム"></a>
+<a id="SwipeCarゲーム"></a>
 # <b>SwipeCarゲーム</b>
 [『Unityの教科書』](https://amzn.to/3hU5s5Z)のChapter4（UIと監督オブジェクト）のGodot版  
 
@@ -624,7 +624,7 @@ public class Car : Sprite {
 [[TOP]](#TOP)
 
 
-<a name="220501"></a>
+<a id="220501"></a>
 # <b>Quest + Oculus Link</b>
 
 1. [Godot Standard version 64-bit(x86_64)](https://godotengine.org/download/windows) をダウンロード
@@ -649,7 +649,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 [[TOP]](#TOP)
 
 
-<a name="220502"></a>
+<a id="220502"></a>
 # <b>Questコントローラー表示</b>
 
 1. [Quest + Oculus Link](#220501) の設定をおこなう
@@ -680,7 +680,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 [[TOP]](#TOP)
 
 
-<a name="220503"></a>
+<a id="220503"></a>
 # <b>is_button_pressed()</b>
 
 1. [検証用コード](#220503_1)
@@ -688,7 +688,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 1. [実践編](#220503_3)
 1. [応用編（Down/Hold/Up）](#220503_4)
 
-<a name="220503_1"></a>
+<a id="220503_1"></a>
 
 ### 検証用コード
 [Questコントローラー](#220502)の LeftHandController または RightHandController にアタッチ済の controller.gd の _process(delta) 関数内に追加
@@ -741,7 +741,7 @@ if is_button_pressed(16777216): print("16777216")
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_@globalscope.html#globalscope)  
 ["is_button_pressed()" TOP](#220503)  
 
-<a name="220503_2"></a>
+<a id="220503_2"></a>
 
 ### 検証結果  
   [Questコントローラー](#220502)の LeftHandController または RightHandController にアタッチ済の controller.gd の _process(delta) 関数内に追加
@@ -788,7 +788,7 @@ if is_button_pressed(16777216): print("16777216")
   参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_@globalscope.html#globalscope)  
   ["is_button_pressed()" TOP](#220503)  
 
-<a name="220503_3"></a>
+<a id="220503_3"></a>
 
 ### 実践編  
 1. [Questコントローラー表示](#220502)の設定を行う
@@ -845,7 +845,7 @@ func RTriggerDownHandler():
 ["is_button_pressed()" TOP](#220503)  
 
 
-<a name="220503_4"></a>
+<a id="220503_4"></a>
 
 ### 応用編（Down/Hold/Up）
 
@@ -879,7 +879,7 @@ else:
 [[TOP]](#TOP)
 
 
-<a name="XXX"></a>
+<a id="XXX"></a>
 # <b>XXXXX</b>
 
 * Mesh の色付け  
@@ -892,7 +892,7 @@ Mesh の [インスペクター]-[MeshInstance]-[Material]-]新規SpatialMateria
 [[TOP]](#TOP)
 
 
-<a name="XXX"></a>
+<a id="XXX"></a>
 # <b>XXXXX</b>
 
 1. XXX
