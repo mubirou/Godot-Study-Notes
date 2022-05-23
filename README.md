@@ -684,6 +684,12 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 <a name="220503"></a>
 # <b>is_button_pressed()</b>
 
+1. [検証用コード](#220503_1)
+1. [検証結果](#220503_2)
+1. [実践編](#220503_3)
+
+<a name="220503_1"></a>
+
 ### 検証用コード  
   ```gdscript
   if is_button_pressed(0):
@@ -817,6 +823,8 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
   ```
   参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_@globalscope.html#globalscope)  
 
+<a name="220503_2"></a>
+
 ### 検証結果  
   [Questコントローラー](#220502)の LeftHandController または RightHandController にアタッチ済の controller.gd の _process(delta) 関数内に追加
   ```gdscript
@@ -860,6 +868,8 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
     if get_controller_id() == 2: print("右人差し指トリガーにタッチ_10％")
   ```
   参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_@globalscope.html#globalscope)  
+
+<a name="220503_3"></a>
 
 ### 実践編  
 1. [Questコントローラー表示](#220502)の設定を行う
