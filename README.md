@@ -840,6 +840,7 @@ func LTriggerDownHandler():
 func RTriggerDownHandler():
   print("RTriggerDown")
 ```
+["is_button_pressed()" TOP](#220503)  
 
 ### 応用編（Down/Hold/Up）
 
