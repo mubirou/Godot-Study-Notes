@@ -701,9 +701,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 <a name="240503"></a>
 # <b>is_button_pressed()</b>
 
-1. XXX
-    ```GDScript
-    # /root/Main/FPController/XXXHandController/controller.gd
+```GDScript
 extends ARVRController
 
 signal activated
