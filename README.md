@@ -876,55 +876,55 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 ### 実践編  
 1. [Questコントローラー表示](#220502)の設定を行う
 2. LeftHandController または RightHandController にアタッチ済の controller.gd を以下の通り変更
-  ```gdscript
-  # controller.gd
-  extends ARVRController
+```gdscript
+# controller.gd
+extends ARVRController
 
-  signal activated
-  signal deactivated
+signal activated
+signal deactivated
 
-  signal LTriggerDown
-  signal RTriggerDown
+signal LTriggerDown
+signal RTriggerDown
 
-  func _process(delta):
-    if get_is_active():
-      if !visible:
-        visible = true
-        print("Activated " + name)
-        emit_signal("activated")
-    elif visible:
-      visible = false
-      print("Deactivated " + name)
-      emit_signal("deactivated")
-      
-    if is_button_pressed(JOY_VR_TRIGGER): # 15
-      if get_controller_id() == 1:
-        emit_signal("LTriggerDown")
-      if get_controller_id() == 2:
-        emit_signal("RTriggerDown")
-  ```
-3. 大元の Spatial ノードの名前を Main に変更しスクリプト（Main.gd）をアタッチし以下の通りに記述  
-  ```gdscript
-  # Main.gd
-  extends Spatial
-
-  var _LController
-  var _RController
-
-  func _ready():
-    _LController = get_node("/root/Main/FPController/LeftHandController")
-    _RController = get_node("/root/Main/FPController/RightHandController")
-    # $"/root/Main/FPController/〇〇HandController" でも可
+func _process(delta):
+  if get_is_active():
+    if !visible:
+      visible = true
+      print("Activated " + name)
+      emit_signal("activated")
+  elif visible:
+    visible = false
+    print("Deactivated " + name)
+    emit_signal("deactivated")
     
-    _LController.connect("LTriggerDown", self, "LTriggerDownHandler")
-    _RController.connect("RTriggerDown", self, "RTriggerDownHandler")
+  if is_button_pressed(JOY_VR_TRIGGER): # 15
+    if get_controller_id() == 1:
+      emit_signal("LTriggerDown")
+    if get_controller_id() == 2:
+      emit_signal("RTriggerDown")
+```
+3. 大元の Spatial ノードの名前を Main に変更しスクリプト（Main.gd）をアタッチし以下の通りに記述  
+```gdscript
+# Main.gd
+extends Spatial
 
-  func LTriggerDownHandler():
-    print("LTriggerDown")
+var _LController
+var _RController
 
-  func RTriggerDownHandler():
-    print("RTriggerDown")
-  ```
+func _ready():
+  _LController = get_node("/root/Main/FPController/LeftHandController")
+  _RController = get_node("/root/Main/FPController/RightHandController")
+  # $"/root/Main/FPController/〇〇HandController" でも可
+  
+  _LController.connect("LTriggerDown", self, "LTriggerDownHandler")
+  _RController.connect("RTriggerDown", self, "RTriggerDownHandler")
+
+func LTriggerDownHandler():
+  print("LTriggerDown")
+
+func RTriggerDownHandler():
+  print("RTriggerDown")
+```
 
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
