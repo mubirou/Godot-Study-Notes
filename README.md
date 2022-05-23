@@ -2,7 +2,7 @@
 
 ### <b>index</b>
 
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#240501) | [Questコントローラー表示](#240502) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#240501) | [Questコントローラー表示](#240502) | [is_button_pressed()](#240503) |
 ***
 
 <a name="外部スクリプトエディタ"></a>
@@ -695,6 +695,75 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
 作成日：2022年05月XX日  
+[[TOP]](#TOP)
+
+
+<a name="240503"></a>
+# <b>is_button_pressed()</b>
+
+1. XXX
+    ```GDScript
+    # /root/Main/FPController/XXXHandController/controller.gd
+extends ARVRController
+
+signal activated
+signal deactivated
+
+func _process(delta):
+	if get_is_active():
+		if !visible:
+			visible = true
+			print("Activated " + name)
+			emit_signal("activated")
+	elif visible:
+		visible = false
+		print("Deactivated " + name)
+		emit_signal("deactivated")
+			
+	if is_button_pressed(1):
+		if get_controller_id() == 1: print("Yを押した")
+		if get_controller_id() == 2: print("Bを押した")
+
+	if is_button_pressed(2):
+		if get_controller_id() == 1: print("左中指トリガーを押した_50％")
+		if get_controller_id() == 2: print("右中指トリガーを押した_50％")
+		
+	if is_button_pressed(3):
+		print("MENUを押した")
+		
+	if is_button_pressed(5):
+		if get_controller_id() == 1: print("Xにタッチ")
+		if get_controller_id() == 2: print("Aにタッチ")
+
+	if is_button_pressed(6):
+		if get_controller_id() == 1: print("Yにタッチ")
+		if get_controller_id() == 2: print("Bにタッチ")
+		
+	if is_button_pressed(7):
+		if get_controller_id() == 1: print("Xを押した")
+		if get_controller_id() == 2: print("Aを押した")
+	
+	if is_button_pressed(12):
+		if get_controller_id() == 1: print("左アナログスティックにタッチ")
+		if get_controller_id() == 2: print("右アナログスティックにタッチ")
+		
+	if is_button_pressed(14):
+		if get_controller_id() == 1: print("左アナログスティックを押し込んだ")
+		if get_controller_id() == 2: print("右アナログスティックを押し込んだ")
+		
+	if is_button_pressed(15):
+		if get_controller_id() == 1: print("左人差し指トリガーを押した_70％")
+		if get_controller_id() == 2: print("右人差し指トリガーを押した_70％")
+	
+	if is_button_pressed(16):
+		if get_controller_id() == 1: print("左人差し指トリガーにタッチ_10％")
+		if get_controller_id() == 2: print("右人差し指トリガーにタッチ_10％")
+    ```
+
+実行環境：Windows 10、Godot 3.4.4  
+作成者：夢寐郎  
+作成日：202X年XX月XX日  
+更新日：202X年XX月XX日  
 [[TOP]](#TOP)
 
 
