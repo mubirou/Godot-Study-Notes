@@ -841,6 +841,31 @@ func RTriggerDownHandler():
   print("RTriggerDown")
 ```
 
+### 応用編（Down/Hold/Up）
+
+[Questコントローラー](#220502)の LeftHandController または RightHandController にアタッチ済の controller.gd の _process(delta) 関数内に追加
+
+```gdscript
+if is_button_pressed(JOY_VR_TRIGGER): # 15
+		if get_controller_id() == 1:
+			if !_isLTriggerDown:
+				print("左人差し指トリガーを押した")
+				_isLTriggerDown = true
+			else: print("左人差し指トリガーを押し続けている") # 省略すると（downのみ）	
+		if get_controller_id() == 2:
+			if !_isRTriggerDown:
+				print("右人差し指トリガーを押した")
+				_isRTriggerDown = true
+			else: print("右人差し指トリガーを押し続けている") # 省略すると（downのみ）
+	else:
+		if _isLTriggerDown:
+			_isLTriggerDown = false
+			print("左人差し指トリガーを離した")
+		if _isRTriggerDown:
+			_isRTriggerDown = false
+			print("右人差し指トリガーを離した")
+```
+
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
 作成日：202X年05月23日  
