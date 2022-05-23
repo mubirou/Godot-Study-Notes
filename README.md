@@ -756,7 +756,7 @@ func _process(delta):
 	if is_button_pressed(16):
 		if get_controller_id() == 1: print("左人差し指トリガーにタッチ_10％")
 		if get_controller_id() == 2: print("右人差し指トリガーにタッチ_10％")
-    ```
+```
 
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
