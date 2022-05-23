@@ -9,7 +9,7 @@
 # <b>外部スクリプトエディタ</b>
 
 1. Godot の設定
-    1. [エディタ]-[エディター設定]-[Text Editor]-[External] を開く
+    1. [エディター]-[エディター設定]-[Text Editor]-[External] を開く
     1. 次の通り設定  
         * [Use External Editor] : ✔
         * Exec Path] : C:/Users/XXXXX/AppData/Local/Programs/Microsoft VS Code/**Code.exe**  
