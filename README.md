@@ -684,52 +684,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 <a name="220503"></a>
 # <b>is_button_pressed()</b>
 
-### 検証結果  
-  [Questコントローラー](#220502)の LeftHandController または RightHandController にアタッチ済の controller.gd の _process(delta) 関数内に追加
-  ```gdscript
-  if is_button_pressed(1):
-    if get_controller_id() == 1: print("Yを押した")
-    if get_controller_id() == 2: print("Bを押した")
-
-  if is_button_pressed(2):
-    if get_controller_id() == 1: print("左中指トリガーを押した_50％")
-    if get_controller_id() == 2: print("右中指トリガーを押した_50％")
-    
-  if is_button_pressed(3):
-    print("MENUを押した")
-    
-  if is_button_pressed(5):
-    if get_controller_id() == 1: print("Xにタッチ")
-    if get_controller_id() == 2: print("Aにタッチ")
-
-  if is_button_pressed(6):
-    if get_controller_id() == 1: print("Yにタッチ")
-    if get_controller_id() == 2: print("Bにタッチ")
-    
-  if is_button_pressed(7):
-    if get_controller_id() == 1: print("Xを押した")
-    if get_controller_id() == 2: print("Aを押した")
-  
-  if is_button_pressed(12):
-    if get_controller_id() == 1: print("左アナログスティックにタッチ")
-    if get_controller_id() == 2: print("右アナログスティックにタッチ")
-    
-  if is_button_pressed(14):
-    if get_controller_id() == 1: print("左アナログスティックを押し込んだ")
-    if get_controller_id() == 2: print("右アナログスティックを押し込んだ")
-    
-  if is_button_pressed(15):
-    if get_controller_id() == 1: print("左人差し指トリガーを押した_70％")
-    if get_controller_id() == 2: print("右人差し指トリガーを押した_70％")
-  
-  if is_button_pressed(16):
-    if get_controller_id() == 1: print("左人差し指トリガーにタッチ_10％")
-    if get_controller_id() == 2: print("右人差し指トリガーにタッチ_10％")
-  ```
-  参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_@globalscope.html#globalscope)  
-
 ### 検証用コード  
-  新しいコントローラーの検証用コード  
   ```gdscript
   if is_button_pressed(0):
 		print("0")
@@ -859,6 +814,50 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 		
 	if is_button_pressed(16777216):
 		print("16777216")
+  ```
+  参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_@globalscope.html#globalscope)  
+
+### 検証結果  
+  [Questコントローラー](#220502)の LeftHandController または RightHandController にアタッチ済の controller.gd の _process(delta) 関数内に追加
+  ```gdscript
+  if is_button_pressed(1):
+    if get_controller_id() == 1: print("Yを押した")
+    if get_controller_id() == 2: print("Bを押した")
+
+  if is_button_pressed(2):
+    if get_controller_id() == 1: print("左中指トリガーを押した_50％")
+    if get_controller_id() == 2: print("右中指トリガーを押した_50％")
+    
+  if is_button_pressed(3):
+    print("MENUを押した")
+    
+  if is_button_pressed(5):
+    if get_controller_id() == 1: print("Xにタッチ")
+    if get_controller_id() == 2: print("Aにタッチ")
+
+  if is_button_pressed(6):
+    if get_controller_id() == 1: print("Yにタッチ")
+    if get_controller_id() == 2: print("Bにタッチ")
+    
+  if is_button_pressed(7):
+    if get_controller_id() == 1: print("Xを押した")
+    if get_controller_id() == 2: print("Aを押した")
+  
+  if is_button_pressed(12):
+    if get_controller_id() == 1: print("左アナログスティックにタッチ")
+    if get_controller_id() == 2: print("右アナログスティックにタッチ")
+    
+  if is_button_pressed(14):
+    if get_controller_id() == 1: print("左アナログスティックを押し込んだ")
+    if get_controller_id() == 2: print("右アナログスティックを押し込んだ")
+    
+  if is_button_pressed(15):
+    if get_controller_id() == 1: print("左人差し指トリガーを押した_70％")
+    if get_controller_id() == 2: print("右人差し指トリガーを押した_70％")
+  
+  if is_button_pressed(16):
+    if get_controller_id() == 1: print("左人差し指トリガーにタッチ_10％")
+    if get_controller_id() == 2: print("右人差し指トリガーにタッチ_10％")
   ```
   参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_@globalscope.html#globalscope)  
 
