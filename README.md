@@ -2,7 +2,7 @@
 
 ### <b>index</b>
 
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#240501) | [Questコントローラー表示](#240502) | [is_button_pressed()](#240503) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) |
 ***
 
 <a name="外部スクリプトエディタ"></a>
@@ -624,7 +624,7 @@ public class Car : Sprite {
 [[TOP]](#TOP)
 
 
-<a name="240501"></a>
+<a name="220501"></a>
 # <b>Quest + Oculus Link</b>
 
 1. [Godot Standard version 64-bit(x86_64)](https://godotengine.org/download/windows) をダウンロード
@@ -649,12 +649,12 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 [[TOP]](#TOP)
 
 
-<a name="240502"></a>
+<a name="220502"></a>
 # <b>Questコントローラー表示</b>
 
 ### この項目は書きかけです
 
-1. [Quest + Oculus Link](#240501) の設定をおこなう
+1. [Quest + Oculus Link](#220501) の設定をおこなう
 1. 最上段にある [AssetLib] から "**Oculus Quest VR Toolkit**"（v.0.4.2）を [ダウンロード] ＆ [インストール]
 1. [シーン]-[Main]-[**FPController**] を選択し右クリックし [編集可能な子] を [✓]
 1. 同様に [ローカルにする] を選択
@@ -670,21 +670,6 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 　  └ MeshInstance（任意のオブジェクト）  
 1. [Main] シーンに戻ってから [▶] を押して Quest + Godot が同時再生されコントローラーが表示されれば成功！（ボタン類は動かない）
 
-＜テスト中＞  
-1. [Main]-[FPController] → "ARVROrigin" に変更
-1. [Main]-[LeftHandController] → "ARVRController_Left" に変更
-1. [Main]-[RightHandController] → "ARVRController_Right" に変更  
-  Main（Node3D）  
-　  ├ **ARVROrigin**  
-　  │   ├ Configuration（OpenXRConfig.gdns付のNode）   
-　  │   ├ **ARVRCamera**   
-　  │   ├ ARVRController_Left（**ARVRController**）  
-　  │   │　　└ OculusQuestTouchController_Left（.glTF）  
-　  │   └ ARVRController_Right（**ARVRController**）  
-　  │　　└ OculusQuestTouchController_Right（.glTF）    
-　  ├ Floor（MeshInstance/PlaneMesh）  
-　  └ Floor（MeshInstance/PlaneMesh）  
-
 参考：[docs.godotengine.org](https://docs.godotengine.org/ja/stable/tutorials/vr/xr_primer.html#new-ar-vr-nodes)
 
 ＜参考：Unity Asset Store の利用＞  
@@ -694,74 +679,74 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
-作成日：2022年05月XX日  
+作成日：2022年05月23日  
 [[TOP]](#TOP)
 
 
-<a name="240503"></a>
+<a name="220503"></a>
 # <b>is_button_pressed()</b>
 
-```GDScript
-extends ARVRController
+* [Questコントローラー](#220502)の [LeftHandController] にアタッチ済の [controller.gd] を変更する
+  ```GDScript
+  extends ARVRController
 
-signal activated
-signal deactivated
+  signal activated
+  signal deactivated
 
-func _process(delta):
-	if get_is_active():
-		if !visible:
-			visible = true
-			print("Activated " + name)
-			emit_signal("activated")
-	elif visible:
-		visible = false
-		print("Deactivated " + name)
-		emit_signal("deactivated")
-			
-	if is_button_pressed(1):
-		if get_controller_id() == 1: print("Yを押した")
-		if get_controller_id() == 2: print("Bを押した")
+  func _process(delta):
+    if get_is_active():
+      if !visible:
+        visible = true
+        print("Activated " + name)
+        emit_signal("activated")
+    elif visible:
+      visible = false
+      print("Deactivated " + name)
+      emit_signal("deactivated")
+        
+    if is_button_pressed(1):
+      if get_controller_id() == 1: print("Yを押した")
+      if get_controller_id() == 2: print("Bを押した")
 
-	if is_button_pressed(2):
-		if get_controller_id() == 1: print("左中指トリガーを押した_50％")
-		if get_controller_id() == 2: print("右中指トリガーを押した_50％")
-		
-	if is_button_pressed(3):
-		print("MENUを押した")
-		
-	if is_button_pressed(5):
-		if get_controller_id() == 1: print("Xにタッチ")
-		if get_controller_id() == 2: print("Aにタッチ")
+    if is_button_pressed(2):
+      if get_controller_id() == 1: print("左中指トリガーを押した_50％")
+      if get_controller_id() == 2: print("右中指トリガーを押した_50％")
+      
+    if is_button_pressed(3):
+      print("MENUを押した")
+      
+    if is_button_pressed(5):
+      if get_controller_id() == 1: print("Xにタッチ")
+      if get_controller_id() == 2: print("Aにタッチ")
 
-	if is_button_pressed(6):
-		if get_controller_id() == 1: print("Yにタッチ")
-		if get_controller_id() == 2: print("Bにタッチ")
-		
-	if is_button_pressed(7):
-		if get_controller_id() == 1: print("Xを押した")
-		if get_controller_id() == 2: print("Aを押した")
-	
-	if is_button_pressed(12):
-		if get_controller_id() == 1: print("左アナログスティックにタッチ")
-		if get_controller_id() == 2: print("右アナログスティックにタッチ")
-		
-	if is_button_pressed(14):
-		if get_controller_id() == 1: print("左アナログスティックを押し込んだ")
-		if get_controller_id() == 2: print("右アナログスティックを押し込んだ")
-		
-	if is_button_pressed(15):
-		if get_controller_id() == 1: print("左人差し指トリガーを押した_70％")
-		if get_controller_id() == 2: print("右人差し指トリガーを押した_70％")
-	
-	if is_button_pressed(16):
-		if get_controller_id() == 1: print("左人差し指トリガーにタッチ_10％")
-		if get_controller_id() == 2: print("右人差し指トリガーにタッチ_10％")
-```
+    if is_button_pressed(6):
+      if get_controller_id() == 1: print("Yにタッチ")
+      if get_controller_id() == 2: print("Bにタッチ")
+      
+    if is_button_pressed(7):
+      if get_controller_id() == 1: print("Xを押した")
+      if get_controller_id() == 2: print("Aを押した")
+    
+    if is_button_pressed(12):
+      if get_controller_id() == 1: print("左アナログスティックにタッチ")
+      if get_controller_id() == 2: print("右アナログスティックにタッチ")
+      
+    if is_button_pressed(14):
+      if get_controller_id() == 1: print("左アナログスティックを押し込んだ")
+      if get_controller_id() == 2: print("右アナログスティックを押し込んだ")
+      
+    if is_button_pressed(15):
+      if get_controller_id() == 1: print("左人差し指トリガーを押した_70％")
+      if get_controller_id() == 2: print("右人差し指トリガーを押した_70％")
+    
+    if is_button_pressed(16):
+      if get_controller_id() == 1: print("左人差し指トリガーにタッチ_10％")
+      if get_controller_id() == 2: print("右人差し指トリガーにタッチ_10％")
+  ```
 
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：202X年05月23日  
 [[TOP]](#TOP)
 
 
