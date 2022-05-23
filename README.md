@@ -822,6 +822,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 		print("16777216")
   ```
   参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_@globalscope.html#globalscope)  
+  [[is_button_pressed() TOP]](#220503)  
 
 <a name="220503_2"></a>
 
@@ -868,6 +869,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
     if get_controller_id() == 2: print("右人差し指トリガーにタッチ_10％")
   ```
   参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_@globalscope.html#globalscope)  
+  [[is_button_pressed() TOP]](#220503)  
 
 <a name="220503_3"></a>
 
@@ -928,6 +930,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
 作成日：202X年05月23日  
+[[is_button_pressed() TOP]](#220503)  
 [[TOP]](#TOP)
 
 
