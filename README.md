@@ -865,6 +865,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 1. [Questコントローラー表示](#220502)の設定を行う
 1. LeftHandController または RightHandController にアタッチ済の controller.gd の _process(delta) 関数を以下の通り変更  
   ```gdscript
+  # controller.gd
   extends ARVRController
 
   signal activated
@@ -892,6 +893,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
   ```
 1. 大元の Spatial ノードの名前を Main に変更しスクリプト（Main.gd）をアタッチし以下の通りに記述  
   ```gdscript
+  # Main.gd
   extends Spatial
 
   var _LController
