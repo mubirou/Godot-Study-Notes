@@ -652,8 +652,6 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 <a name="220502"></a>
 # <b>Questコントローラー表示</b>
 
-### この項目は書きかけです
-
 1. [Quest + Oculus Link](#220501) の設定をおこなう
 1. 最上段にある [AssetLib] から "**Oculus Quest VR Toolkit**"（v.0.4.2）を [ダウンロード] ＆ [インストール]
 1. [シーン]-[Main]-[**FPController**] を選択し右クリックし [編集可能な子] を [✓]
@@ -686,7 +684,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 <a name="220503"></a>
 # <b>is_button_pressed()</b>
 
-* SAMPLE  
+### SAMPLE  
   [Questコントローラー](#220502)の [LeftHandController] または [RightHandController] にアタッチ済の [controller.gd] を変更  
   ```gdscript
   extends ARVRController
@@ -743,6 +741,10 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
     if is_button_pressed(16):
       if get_controller_id() == 1: print("左人差し指トリガーにタッチ_10％")
       if get_controller_id() == 2: print("右人差し指トリガーにタッチ_10％")
+  ```
+
+### 参考：テスト用
+  ```
   ```
 
 実行環境：Windows 10、Godot 3.4.4  
