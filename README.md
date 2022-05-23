@@ -29,7 +29,7 @@
     |Control + B|左サイドバーの表示/非表示|
     |Control + `|ターミナルの表示/非表示|
     |Control + `|ターミナルの表示/非表示|e
-    
+  
 実行環境：Ubuntu 20.04 LTS、Godot 3.4.2、VSCode 1.63.2  
 作成者：夢寐郎  
 作成日：2021年12月30日  
@@ -691,6 +691,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 <a name="220503_1"></a>
 
 ### 検証用コード
+[Questコントローラー](#220502)の LeftHandController または RightHandController にアタッチ済の controller.gd の _process(delta) 関数内に追加
 
 ```gdscript
 if is_button_pressed(0): print("0")
