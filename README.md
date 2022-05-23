@@ -684,7 +684,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 <a name="220503"></a>
 # <b>is_button_pressed()</b>
 
-### SAMPLE  
+### 検証結果  
   [Questコントローラー](#220502)の LeftHandController または RightHandController にアタッチ済の controller.gd の _process(delta) 関数内に追加
   ```gdscript
   if is_button_pressed(1):
@@ -728,7 +728,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
   ```
   参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_@globalscope.html#globalscope)  
 
-### 参考  
+### 検証用コード  
   新しいコントローラーの検証用コード  
   ```gdscript
   if is_button_pressed(0):
