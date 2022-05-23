@@ -663,8 +663,8 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 　  │   ├　**ARVRCamera**  
 　  │   ├　LeftHandController（**ARVRController**）  
 　  │   │　　└ OculusQuestTouchController_Left（.glTF）  
-　  │   └ RightHandController（**ARVRController**）  
-　  │　　└  OculusQuestTouchController_Right（.glTF）  
+　  │   └　RightHandController（**ARVRController**）  
+　  │　　 └ OculusQuestTouchController_Right（.glTF）  
 　  └ MeshInstance（任意のオブジェクト）  
 1. [Main] シーンに戻ってから [▶] を押して Quest + Godot が同時再生されコントローラーが表示されれば成功！（ボタン類は動かない）
 
