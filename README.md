@@ -863,6 +863,33 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 
 ### 実践編  
 1. [Questコントローラー表示](#220502)の設定を行う
+1. LeftHandController または RightHandController にアタッチ済の controller.gd の _process(delta) 関数を以下の通り変更  
+  ```gdscript
+  extends ARVRController
+
+  signal activated
+  signal deactivated
+
+  signal LTriggerDown
+  signal RTriggerDown
+
+  func _process(delta):
+    if get_is_active():
+      if !visible:
+        visible = true
+        print("Activated " + name)
+        emit_signal("activated")
+    elif visible:
+      visible = false
+      print("Deactivated " + name)
+      emit_signal("deactivated")
+      
+    if is_button_pressed(JOY_VR_TRIGGER): # 15
+      if get_controller_id() == 1:
+        emit_signal("LTriggerDown")
+      if get_controller_id() == 2:
+        emit_signal("RTriggerDown")
+  ```
 1. 大元の Spatial ノードの名前を Main に変更しスクリプト（Main.gd）をアタッチし以下の通りに記述  
   ```gdscript
   extends Spatial
