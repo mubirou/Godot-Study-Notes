@@ -673,7 +673,6 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 ＜参考：Unity Asset Store の利用＞  
 1. [Questコントローラー表示](https://github.com/mubirou/Unity3D/tree/master/study-notes#quest%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E8%A1%A8%E7%A4%BA)で必要な作業をおこなう
 1. Unity の [Assets]-[Oculus]-[VR]-[Meshes]-[OculusTouchForQuestAndRiftS]-[**OculusTouchForQuestAndRiftS_Left.fbx**] および [**OculusTouchForQuestAndRiftS_Right.fbx**] を Godot のプロジェクトフォルダ内にコピー
-1. 
 
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
@@ -690,139 +689,55 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 
 <a name="220503_1"></a>
 
-### 検証用コード  
-  ```gdscript
-  if is_button_pressed(0):
-		print("0")
-	
-	if is_button_pressed(1):
-		print("1")
+### 検証用コード
 
-	if is_button_pressed(2):
-		print("2")
-		
-	if is_button_pressed(3):
-		print("3")
-	
-	if is_button_pressed(4):
-		print("4")
-		
-	if is_button_pressed(5):
-		print("5")
-
-	if is_button_pressed(6):
-		print("6")
-		
-	if is_button_pressed(7):
-		print("7")
-	
-	if is_button_pressed(8):
-		print("8")
-	
-	if is_button_pressed(9):
-		print("9")
-
-	if is_button_pressed(10):
-		print("10")
-		
-	if is_button_pressed(11):
-		print("11")
-	
-	if is_button_pressed(12):
-		print("12")
-		
-	if is_button_pressed(13):
-		print("13")
-
-	if is_button_pressed(14):
-		print("14")
-		
-	if is_button_pressed(15):
-		print("15")
-	
-	if is_button_pressed(16):
-		print("16")
-	
-	if is_button_pressed(17):
-		print("17")
-
-	if is_button_pressed(18):
-		print("18")
-		
-	if is_button_pressed(19):
-		print("19")
-	
-	if is_button_pressed(20):
-		print("20")
-		
-	if is_button_pressed(21):
-		print("21")
-
-	if is_button_pressed(22):
-		print("22")
-		
-	if is_button_pressed(23):
-		print("23")
-	
-	if is_button_pressed(24):
-		print("24")
-	
-	if is_button_pressed(25):
-		print("25")
-
-	if is_button_pressed(26):
-		print("26")
-		
-	if is_button_pressed(27):
-		print("27")
-	
-	if is_button_pressed(28):
-		print("28")
-		
-	if is_button_pressed(29):
-		print("29")
-
-	if is_button_pressed(30):
-		print("30")
-		
-	if is_button_pressed(31):
-		print("31")
-	
-	if is_button_pressed(32):
-		print("32")
-	
-	if is_button_pressed(64):
-		print("64")
-	
-	if is_button_pressed(71):
-		print("71")
-		
-	if is_button_pressed(128):
-		print("128")
-	
-	if is_button_pressed(256):
-		print("256")
-		
-	if is_button_pressed(512):
-		print("512")
-	
-	if is_button_pressed(1024):
-		print("1024")
-	
-	if is_button_pressed(2048):
-		print("2048")
-		
-	if is_button_pressed(4096):
-		print("4096")
-	
-	if is_button_pressed(8192):
-		print("8192")
-		
-	if is_button_pressed(16777216):
-		print("16777216")
-  ```
-  参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_@globalscope.html#globalscope)  
-  ["is_button_pressed()" TOP](#220503)  
+```gdscript
+if is_button_pressed(0): print("0")
+if is_button_pressed(1): print("1")
+if is_button_pressed(2): print("2")
+if is_button_pressed(3): print("3")
+if is_button_pressed(4): print("4")
+if is_button_pressed(5): print("5")
+if is_button_pressed(6): print("6")
+if is_button_pressed(7): print("7")
+if is_button_pressed(8): print("8")
+if is_button_pressed(9): print("9")
+if is_button_pressed(10): print("10")
+if is_button_pressed(11): print("11")
+if is_button_pressed(12): print("12")
+if is_button_pressed(13): print("13")
+if is_button_pressed(14): print("14")
+if is_button_pressed(15): print("15")
+if is_button_pressed(16): print("16")
+if is_button_pressed(17): print("17")
+if is_button_pressed(18): print("18")
+if is_button_pressed(19): print("19")
+if is_button_pressed(20): print("20")
+if is_button_pressed(21): print("21")
+if is_button_pressed(22): print("22")
+if is_button_pressed(23): print("23")
+if is_button_pressed(24): print("24")
+if is_button_pressed(25): print("25")
+if is_button_pressed(26): print("26")
+if is_button_pressed(27): print("27")
+if is_button_pressed(28): print("28")
+if is_button_pressed(29): print("29")
+if is_button_pressed(30): print("30")  
+if is_button_pressed(31): print("31")
+if is_button_pressed(32): print("32")
+if is_button_pressed(64): print("64")
+if is_button_pressed(71): print("71")
+if is_button_pressed(128): print("128")
+if is_button_pressed(256): print("256")
+if is_button_pressed(512): print("512")
+if is_button_pressed(1024): print("1024")
+if is_button_pressed(2048): print("2048")
+if is_button_pressed(4096): print("4096")
+if is_button_pressed(8192): print("8192")
+if is_button_pressed(16777216): print("16777216")
+```
+参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_@globalscope.html#globalscope)  
+["is_button_pressed()" TOP](#220503)  
 
 <a name="220503_2"></a>
 
