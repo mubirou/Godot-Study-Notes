@@ -863,6 +863,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 
 ### 実践編  
 1. [Questコントローラー表示](#220502)の設定を行う
+1. 大元の Spatial ノードの名前を Main に変更しスクリプト（Main.gd）をアタッチ
 1. 
 
 実行環境：Windows 10、Godot 3.4.4  
