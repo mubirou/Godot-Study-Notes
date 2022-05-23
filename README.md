@@ -685,7 +685,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 # <b>is_button_pressed()</b>
 
 ### SAMPLE  
-  [Questコントローラー](#220502)の [LeftHandController] または [RightHandController] にアタッチ済の [controller.gd] の [_process(delta)] 関数内に追加
+  [Questコントローラー](#220502)の LeftHandController または RightHandController にアタッチ済の controller.gd の _process(delta) 関数内に追加
   ```gdscript
   if is_button_pressed(1):
     if get_controller_id() == 1: print("Yを押した")
