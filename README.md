@@ -860,6 +860,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 	if is_button_pressed(16777216):
 		print("16777216")
   ```
+  参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_@globalscope.html#globalscope)  
 
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
