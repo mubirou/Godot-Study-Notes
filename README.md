@@ -875,7 +875,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 
 ### 実践編  
 1. [Questコントローラー表示](#220502)の設定を行う
-1. LeftHandController または RightHandController にアタッチ済の controller.gd の _process(delta) 関数を以下の通り変更  
+1. LeftHandController または RightHandController にアタッチ済の controller.gd を以下の通り変更  
   ```gdscript
   # controller.gd
   extends ARVRController
