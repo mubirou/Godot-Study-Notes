@@ -140,7 +140,7 @@
 ### 【GDScript版】 
 
 * [Spatialノード](https://docs.godotengine.org/ja/stable/tutorials/3d/introduction_to_3d.html#spatial-node)（3Dモデル）の移動  
-  ```GDScript
+  ```gdscript
   #Main.gd
   extends Spatial # 2Dの場合はNode2D
 
@@ -153,7 +153,7 @@
     _ufo.translation.y += 0.01 # 0.01m移動
   ```
   上記を含め次の方法で可能  
-  ```GDScript
+  ```gdscript
   # 指定位置に移動➀
   _ufo.translation.y += 0.01
   _ufo.translation += Vector3(0, 0.01, 0)
@@ -167,7 +167,7 @@
   ```
 
 * [Node2D](https://docs.godotengine.org/ja/stable/classes/class_node2d.html#node2d)ノード（2Dスプライト）の移動
-  ```GDScript
+  ```gdscript
   # Main.gd
   extends Node2D
 
@@ -180,7 +180,7 @@
     _ufo.position.x += 1 # 1ピクセル移動
   ```
   上記を含め次の方法で可能
-  ```GDScript
+  ```gdscript
   # 指定位置に移動
   _ufo.position.x += 1
   _ufo.position += Vector2(1, 0)
@@ -275,7 +275,7 @@
 
  * 3D（Spatialノード）版  
   👇マウスの位置
-    ```GDScript
+    ```gdscript
     #Main.gd
     extends Spatial #2Dの場合はNode2D
 
@@ -286,7 +286,7 @@
         print(_event.position.y) #-> 425
     ```
     👇入力座標位置  
-    ```GDScript
+    ```gdscript
     #Main.gd
     extends Spatial #2Dの場合はNode2D
 
@@ -301,7 +301,7 @@
 
  * 2D（Node2Dノード）版  
   👇マウスの位置
-    ```GDScript
+    ```gdscript
     # Main.gd
     extends Node2D
 
@@ -316,7 +316,7 @@
         _ufo.position.y = get_viewport().get_mouse_position().y
     ```
     👇入力座標位置  
-    ```GDScript
+    ```gdscript
     # Main.gd
     extends Node2D
       
@@ -447,7 +447,7 @@
 
 ### 【GDScript版】  
 ルーレット画像（Sprite）に以下のスクリプトをアタッチ
-```GDScript
+```gdscript
 # Roullette.gd
 extends Sprite # 要注意！
 
@@ -507,7 +507,7 @@ public class Roulette : Sprite { // 要注意！
 
 ### 【GDScript版】  
 メインシーン（Main.tscn）に以下のスクリプトをアタッチ
-```GDScript
+```gdscript
 # Main.gd
 extends Node2D
 
@@ -528,7 +528,7 @@ func _process(_delta):
 ```
 
 車（Sprite）に以下のスクリプトをアタッチ
-```GDScript
+```gdscript
 # Car.gd
 extends Sprite
 
@@ -686,8 +686,9 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 <a name="220503"></a>
 # <b>is_button_pressed()</b>
 
-* [Questコントローラー](#220502)の [LeftHandController] にアタッチ済の [controller.gd] を変更する
-  ```GDScript
+* SAMPLE  
+  [Questコントローラー](#220502)の [LeftHandController] または [RightHandController] にアタッチ済の [controller.gd] を変更  
+  ```gdscript
   extends ARVRController
 
   signal activated
