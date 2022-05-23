@@ -875,7 +875,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 
 ### 実践編  
 1. [Questコントローラー表示](#220502)の設定を行う
-1. LeftHandController または RightHandController にアタッチ済の controller.gd を以下の通り変更
+2. LeftHandController または RightHandController にアタッチ済の controller.gd を以下の通り変更
   ```gdscript
   # controller.gd
   extends ARVRController
@@ -903,7 +903,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
       if get_controller_id() == 2:
         emit_signal("RTriggerDown")
   ```
-1. 大元の Spatial ノードの名前を Main に変更しスクリプト（Main.gd）をアタッチし以下の通りに記述  
+3. 大元の Spatial ノードの名前を Main に変更しスクリプト（Main.gd）をアタッチし以下の通りに記述  
   ```gdscript
   # Main.gd
   extends Spatial
@@ -925,7 +925,6 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
   func RTriggerDownHandler():
     print("RTriggerDown")
   ```
-1. 
 
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
