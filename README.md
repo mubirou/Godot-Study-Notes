@@ -658,7 +658,7 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
 1. 同様に [ローカルにする] を選択
 1. [ファイルシステム]-[res://]-[OQ_Toolkit]-[OQ_ARVRController]-[Models3d]-[**OculusQuestTouchController_Left.glft**] を上記で開いた [FPController]-[LeftHandController] 上にドラッグ＆ドロップ
 1. 同様に [**OculusQuestTouchController_Right.glft**] を [RightHandController] 上にドラッグ＆ドロップ  
-  Spatial（Node3D）  
+  Spatial  
 　  ├ FPController（**ARVROrigin**）  
 　  │   ├　**ARVRCamera**   
 　  │   ├　LeftHandController（**ARVRController**）  
@@ -860,6 +860,10 @@ Meta Quest（初代）v.39.0、Oculusアプリ v.39.0
     if get_controller_id() == 2: print("右人差し指トリガーにタッチ_10％")
   ```
   参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_@globalscope.html#globalscope)  
+
+### 実践編  
+1. [Questコントローラー表示](#220502)の設定を行う
+1. 
 
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
