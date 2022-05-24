@@ -882,7 +882,7 @@ else:
 <a id="220504"></a>
 # <b>追跡</b>
 
-Unity版の[追跡](https://github.com/mubirou/Unity3D/blob/master/oqtouch/sample/README.md#001-%E8%BF%BD%E8%B7%A1)のGodot版  
+Unity版の「[001 追跡](https://github.com/mubirou/Unity3D/blob/master/oqtouch/sample/README.md#001-%E8%BF%BD%E8%B7%A1)」のGodot版  
 
 1. RightHandControl
 
