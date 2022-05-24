@@ -2,7 +2,7 @@
 
 ### <b>index</b>
 
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) |
 ***
 
 <a id="外部スクリプトエディタ"></a>
@@ -876,6 +876,113 @@ else:
 作成者：夢寐郎  
 作成日：2022年05月23日  
 ["is_button_pressed()" TOP](#220503)  
+[[TOP]](#TOP)
+
+
+<a id="220503"></a>
+# <b>追跡</b>
+
+1. RightHandControl
+
+```gdscript
+# controller.gd
+extends ARVRController
+
+signal activated
+signal deactivated
+signal LTriggerDown
+signal RTriggerDown
+signal RTriggerHold
+signal RTriggerUp
+
+var _isLTriggerDown = false
+var _isRTriggerDown = false
+
+func _process(delta):
+	if get_is_active():
+		if !visible:
+			visible = true
+			print("Activated " + name)
+			emit_signal("activated")
+	elif visible:
+		visible = false
+		print("Deactivated " + name)
+		emit_signal("deactivated")
+	
+	# Trigger
+	if is_button_pressed(JOY_VR_TRIGGER): # 15
+		if get_controller_id() == 1:
+			if !_isLTriggerDown:
+				print("左人差し指トリガーを押した")
+				_isLTriggerDown = true
+			#else: print("左人差し指トリガーを押し続けている") # 省略すると（downのみ）	
+		if get_controller_id() == 2:
+			if !_isRTriggerDown:
+				emit_signal("RTriggerDown")
+				#print("右人差し指トリガーを押した")
+				_isRTriggerDown = true
+			else:
+				emit_signal("RTriggerHold")
+				#print("右人差し指トリガーを押し続けている") # 省略すると（downのみ）
+	else:
+		if _isLTriggerDown:
+			_isLTriggerDown = false
+			print("左人差し指トリガーを離した")
+		if _isRTriggerDown:
+			_isRTriggerDown = false
+			emit_signal("RTriggerUp")
+			#print("右人差し指トリガーを離した")
+```
+
+1. Main
+
+```gdscript
+extends Spatial
+
+var _rightHand
+var _isRTriggerHold = false
+var _piece0
+var _pieceArray = []
+var _pieceNum = 50
+
+func _ready():
+	_rightHand = get_node("/root/Main/FPController/RightHandController")
+	_rightHand.connect("RTriggerDown", self, "RTriggerDownHandler")
+	_rightHand.connect("RTriggerUp", self, "RTriggerUpHandler")
+	_piece0 = get_node("piece")
+	_pieceArray.append(_piece0)
+	for i in range(1, _pieceNum):
+		var _thePiece = _piece0.duplicate()
+		add_child(_thePiece)
+		_pieceArray.append(_thePiece)
+	_piece0.hide()
+
+func _process(delta):
+	if !_isRTriggerHold: return
+	_piece0.translation = _rightHand.translation
+	for i in range(0, _pieceNum):
+		var _thePiece  = _pieceArray[i]
+		var _frontPiece = _pieceArray[i-1]
+		var _disX = _frontPiece.translation.x - _thePiece.translation.x
+		var _disY = _frontPiece.translation.y - _thePiece.translation.y
+		var _disZ = _frontPiece.translation.z - _thePiece.translation.z
+		_thePiece.look_at(_frontPiece.translation, Vector3.UP)
+		var _thePos = _thePiece.translation
+		_thePos.x += _disX / 8
+		_thePos.y += _disY / 8
+		_thePos.z += _disZ / 8
+		_thePiece.translation = _thePos
+
+func RTriggerDownHandler():
+	_isRTriggerHold = true
+	
+func RTriggerUpHandler():
+	_isRTriggerHold = false
+```
+
+実行環境：Windows 10、Godot 3.4.4  
+作成者：夢寐郎  
+作成日：202X年XX月XX日  
 [[TOP]](#TOP)
 
 
