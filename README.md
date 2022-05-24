@@ -874,7 +874,7 @@ else:
 
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
-作成日：202X年05月23日  
+作成日：2022年05月23日  
 ["is_button_pressed()" TOP](#220503)  
 [[TOP]](#TOP)
 
