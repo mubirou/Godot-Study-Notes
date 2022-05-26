@@ -1005,7 +1005,10 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 
 1. [SideQuestを使ってOculusQuestにapkファイルをインストールしよう！](https://vracademy.jp/blog/sidequest%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6oculusquest%E3%81%ABapk%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%82%88%E3%81%86/)の指示に従う（主な手順は以下の通り）  
     1. Windows に **SideQuest** をインストール
-    1. XXX
+    1. Windows と **Quest** を接続
+    1. SideQuest 上部の **Currently installed apps** アイコンを選択
+    1. **Search package** の領域に上記で作成した **.apk** ファイルをドラッグ＆ドロップ
+    1. **Quest** 上の [アプリ] の [**提供元不明**] の中からインストールしたアプリを選択し実行
 
 参考：[VRアカデミー](https://vracademy.jp/blog/sidequest%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6oculusquest%E3%81%ABapk%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%82%88%E3%81%86/)  
 実行環境：Windows 10、Godot 3.4.4  
