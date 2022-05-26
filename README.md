@@ -993,7 +993,7 @@ func RTriggerUpHandler():
 
 自作 .apk ファイルを SideQuest を使って Meta Quest にインストールする方法  
 
-**Note** SideQuest とは…  
+📖 SideQuest とは…  
 Meta の公式ストア以外のアプリを Meta Quest にインストール･削除等の操作を簡単に行える Windows 版ツール  
 
 
