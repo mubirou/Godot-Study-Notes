@@ -991,7 +991,7 @@ func RTriggerUpHandler():
 <a id="220505"></a>
 # <b>Questビルド</b>
 
-自作 .apk ファイルを SideQuest を使って Meta Quest にインストールする方法  
+自作 .apk ファイルを [SideQuest](https://sidequestvr.com/) を使って Meta Quest にインストールする方法  
 
 📖 [SideQuest](https://sidequestvr.com/) とは…  
 Meta の公式ストア以外のアプリを Meta Quest にインストール･削除等の操作を簡単に行える Windows 版ツール  
