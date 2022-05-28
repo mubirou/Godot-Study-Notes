@@ -1021,6 +1021,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 # <b>オブジェクト色</b>
 
 * Mesh の色付け  
+  1. [シーン]-[＋]-[MeshInstance] で任意を[プリミティブ](#プリミティブ)を作成
   1. Mesh の [インスペクター]-[MeshInstance]-[Material]-]新規SpatialMaterial]-[Albedo]-[Color] で #XXXXXX を指定
 
 実行環境：Windows 10、Godot 3.4.4  
