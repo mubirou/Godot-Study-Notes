@@ -1055,7 +1055,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
     * **x**：**10**、**y**：**10**  
 
 📝天井にタイルを貼る場合…  
-※PaneMeshは裏は透明、CubeMeshも天井が暗くなるという問題を回避
+※「PaneMesh」は裏は透明になる「CubeMesh」は裏は暗くなる、という問題を回避する必要があります
 1. [シーン]-[＋]-[MeshInstance] を選択
 1. 名前を "MeshInstance" → "Ceiling" に変更
 1. [インスペクター]-[MeshInstance]-[Mesh]-[新規**CubeMesh**] を選択（2mの立方体）
