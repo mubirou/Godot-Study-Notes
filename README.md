@@ -1044,8 +1044,8 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 1. [シーン]-[＋]-[MeshInstance] を選択
 1. 名前を "MeshInstance" → "Floor" に変更
 1. [インスペクター]-[MeshInstance]-[Mesh]-[新規**PlaneMesh**] を選択
-1. 引き続き [Spatial]-[Tranform]-[Scale] を次の通りに変更  
-    * X：10、Y：10（10m四方の床の場合）
+1. 引き続き [Spatial]-[Tranform]-[**Scale**] を次の通りに変更  
+    * X：**10**、Y：**10**（**10m**四方の床の場合）
 1. XXX
 
 実行環境：Windows 10、Godot 3.4.4  
