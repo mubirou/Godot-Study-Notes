@@ -1041,7 +1041,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 <a id="220507"></a>
 # <b>床タイル</b>
 
-📝10m四方の床にタイル（1m四方）を貼る場合…
+📝床（10m四方）にタイル（1m四方）を貼る場合…
 
 1. タイル（400x400px程度）のタイル（1m四方）用の画像を作成（例：[tile.svg](https://github.com/mubirou/Godot/blob/main/svg/tile.svg)）
 1. [シーン]-[＋]-[MeshInstance] を選択
@@ -1061,6 +1061,11 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 1. [インスペクター]-[Transform] を次の通りに変更  
     * Transform：x 0、y 2.35、z 0
     * Scale：**x 5**、**y 0.01**、**z 5**
+1. 引続き [インスペクター]-[**Material**]-[[空]]-[新規**SpatialMaterial**] を選択
+1. 表示された [球] にタイル用の画像（**.png** または **.jpg**）をドラッグ＆ドロップ
+1. [球] の右にある [v]-[編集] を選択し次の通りに変更
+    * [**Flags**]-[**Unshaded**] を**✓**
+    * [**Uv1**]-[**Scale**] を **x** **5**、**z**：**5**  
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest（初代）v.40  
 作成者：夢寐郎  
