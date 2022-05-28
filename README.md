@@ -1046,7 +1046,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 1. [インスペクター]-[MeshInstance]-[Mesh]-[新規**PlaneMesh**] を選択
 1. 引き続き [Spatial]-[Tranform]-[**Scale**] を次の通りに変更  
     * X：**10**、Y：**10**（**10m**四方の床の場合）
-1. タイル（400x400px程度）のタイル用の画像を作成（例：[tile.svg](https://github.com/mubirou/Godot/blob/main/svg/tile.zip)]
+1. タイル（400x400px程度）のタイル用の画像を作成（例：[tile.svg](https://github.com/mubirou/Godot/blob/main/svg/tile.svg)）
 1. 
 
 実行環境：Windows 10、Godot 3.4.4  
