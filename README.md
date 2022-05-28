@@ -1025,8 +1025,9 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
   1. Mesh の [インスペクター]-[MeshInstance]-[Material]-]新規SpatialMaterial]-[Albedo]-[Color] で #XXXXXX を指定
 
 * 環境色を設定（初期設定はやや青系）  
+  ※ オブジェクトの色は環境色に依存する  
   1. **res://default_env.tres** の [インスペクター]-[Background]-[Sky]-[Procedura]-[編集] を選択
-  1. 次の通りに変更  
+  1. 次の通りに変更（例）  
       * **Top Color**：a5d6f1 → d7e8f1（より薄い青）
       * **Horizon Color**：d6eafa → ffffff
 
