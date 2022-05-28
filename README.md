@@ -1025,12 +1025,14 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
   1. Mesh の [インスペクター]-[MeshInstance]-[Material]-]新規SpatialMaterial]-[Albedo]-[Color] で #XXXXXX を指定
 
 * 環境色を設定（初期設定はやや青系）  
-  1. 
+  1. **res://default_env.tres** の [インスペクター]-[Background]-[Sky]-[Procedura]-[編集] を選択
+  1. 次の通りに変更  
+    * **Top Color**：a5d6f1 → d7e8f1（より薄い青）
+    * **Horizon Color**：d6eafa → ffffff
 
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2022年05月28日  
 [[TOP]](#TOP)
 
 
