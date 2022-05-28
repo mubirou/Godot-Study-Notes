@@ -1052,7 +1052,15 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 1. 引続き [インスペクター]-[**Material**]-[[空]]-[新規**SpatialMaterial**] を選択
 1. 表示された [球] に上記で作成した **.png** または **.jpg** をドラッグ＆ドロップ
 1. [球] の右にある [v]-[編集]-[**Uv1**]-[**Scale**] を次の通りに変更  
-    * **x**：**10**、**y**：**10**
+    * **x**：**10**、**y**：**10**  
+
+📝天井にタイルを貼る場合…  
+1. [シーン]-[＋]-[MeshInstance] を選択
+1. 名前を "MeshInstance" → "Ceiling" に変更
+1. [インスペクター]-[MeshInstance]-[Mesh]-[新規**CubeMesh**] を選択（2mの立方体）
+1. [インスペクター]-[Transform] を次の通りに変更  
+    * Transform：y 2.35
+    * Scale：
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest（初代）v.40  
 作成者：夢寐郎  
