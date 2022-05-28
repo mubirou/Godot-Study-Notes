@@ -1041,18 +1041,22 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 <a id="220507"></a>
 # <b>床タイル</b>
 
+例：10m四方の床にタイル（1m四方）を貼る
+
+1. タイル（400x400px程度）のタイル（1m四方）用の画像を作成（例：[tile.svg](https://github.com/mubirou/Godot/blob/main/svg/tile.svg)）
 1. [シーン]-[＋]-[MeshInstance] を選択
 1. 名前を "MeshInstance" → "Floor" に変更
 1. [インスペクター]-[MeshInstance]-[Mesh]-[新規**PlaneMesh**] を選択
-1. 引き続き [Spatial]-[Tranform]-[**Scale**] を次の通りに変更  
-    * X：**10**、Y：**10**（**10m**四方の床の場合）
-1. タイル（400x400px程度）のタイル用の画像を作成（例：[tile.svg](https://github.com/mubirou/Godot/blob/main/svg/tile.svg)）
-1. 
+1. 引続き [Spatial]-[Tranform]-[**Scale**] を次の通りに変更  
+    * **x**：**10**、**z**：**10**（**10m**四方の床の場合）
+1. 引続き [インスペクター]-[**Material**]-[[空]]-[新規**SpatialMaterial**] を選択
+1. 表示された [球] に上記で作成した **.png** または **.jpg** をドラッグ＆ドロップ
+1. [球] の右にある [v]-[編集]-[Uv1]-[Scale] を次の通りに変更  
+    * **x**：**10**、**y**：**10**
 
-実行環境：Windows 10、Godot 3.4.4  
+実行環境：Windows 10、Godot 3.4.4、Meta Quest（初代）v.40  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2022年05月28日  
 [[TOP]](#TOP)
 
 
