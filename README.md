@@ -1059,8 +1059,8 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 1. 名前を "MeshInstance" → "Ceiling" に変更
 1. [インスペクター]-[MeshInstance]-[Mesh]-[新規**CubeMesh**] を選択（2mの立方体）
 1. [インスペクター]-[Transform] を次の通りに変更  
-    * Transform：y 2.35
-    * Scale：
+    * Transform：x 0、y 2.35、z 0
+    * Scale：**x 5**、**y 0.01**、**z 5**
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest（初代）v.40  
 作成者：夢寐郎  
