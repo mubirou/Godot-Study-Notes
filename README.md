@@ -1041,7 +1041,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 <a id="220507"></a>
 # <b>床タイル</b>
 
-例：10m四方の床にタイル（1m四方）を貼る
+📝10m四方の床にタイル（1m四方）を貼る場合…
 
 1. タイル（400x400px程度）のタイル（1m四方）用の画像を作成（例：[tile.svg](https://github.com/mubirou/Godot/blob/main/svg/tile.svg)）
 1. [シーン]-[＋]-[MeshInstance] を選択
