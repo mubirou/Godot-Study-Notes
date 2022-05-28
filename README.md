@@ -1031,7 +1031,8 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
       * **Top Color**：a5d6f1 → d7e8f1（より薄い青）
       * **Horizon Color**：d6eafa → ffffff
 
-実行環境：Windows 10、Godot 3.4.4  
+参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/tutorials/3d/environment_and_post_processing.html#environment-options)  
+実行環境：Windows 10、Godot 3.4.4、Meta Quest（初代）v.40  
 作成者：夢寐郎  
 作成日：2022年05月28日  
 [[TOP]](#TOP)
