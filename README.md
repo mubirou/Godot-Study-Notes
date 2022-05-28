@@ -1028,8 +1028,8 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
   ※ オブジェクトの色は環境色に依存する  
   1. **res://default_env.tres** の [インスペクター]-[Background]-[Sky]-[Procedura]-[編集] を選択
   1. 次の通りに変更（例）  
-      * **Top Color**：a5d6f1 → d7e8f1（より薄い青）
-      * **Horizon Color**：d6eafa → ffffff
+      * **Top Color**：a5d6f1 → ffffff（太陽光）
+      * **Horizon Color**：d6eafa → cccccc（地平線）
 
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/tutorials/3d/environment_and_post_processing.html#environment-options)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest（初代）v.40  
