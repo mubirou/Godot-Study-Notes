@@ -1022,7 +1022,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 
 * オブジェクトの色付け  
   1. [シーン]-[＋]-[MeshInstance] で任意の[プリミティブ](#プリミティブ)を作成
-  1. Mesh の [インスペクター]-[MeshInstance]-[Material]-]新規SpatialMaterial]-[Albedo]-[Color] で #XXXXXX を指定
+  1. Mesh の [インスペクター]-[MeshInstance]-[**Material**]-]新規SpatialMaterial]-[編集]-[**Albedo**]-[Color] で #XXXXXX を指定
 
 * 環境色を設定（初期設定はやや青系）  
   ※ オブジェクトの色は環境色に依存する  
