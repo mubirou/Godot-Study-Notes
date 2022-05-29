@@ -1081,6 +1081,31 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 <a id="XXX"></a>
 # <b>XXXXX</b>
 
+### これは編集中の項目です
+
+1. [シーン]-[＋]-[Sprite3D]
+1. [Sprite3D]-[＋子ノードを追加]-[Viewport]
+1. [Viewport]-[インスペクター]-[Size]-[x 512, y 512]
+1. [Viewport]-[＋子ノードを追加]-[Panel]
+1. [Panel]-[ブランチをシーンとして保存]→"Panel.tscn"
+1. [Panel]-[インスペクター]-[Margin]-[Right 512, Botton 512]
+1. [Panel]-[インスペクター]-[Label]
+1. [Label]-[インスペクター]-[Text]-"〇〇〇〇"
+1. [Label]-[Theme Overrides]-[Fonts]-[[空]]-[v]-[新規DynamicFont]
+1. [DynamicFont]-[編集]-[Settings]-[**Size**]-[32]
+1. [DynamicFont]-[編集]-[Font]-[Font Data]-[[空]]-[v]-[新規DynamicFontData]
+1. [DynamicFontData]-[**Font Path**]
+
+実行環境：Windows 10、Godot 3.4.4  
+作成者：夢寐郎  
+作成日：202X年XX月XX日  
+更新日：202X年XX月XX日  
+[[TOP]](#TOP)
+
+
+<a id="XXX"></a>
+# <b>XXXXX</b>
+
 1. XXX
     ```c#
     XXXX
@@ -1093,5 +1118,6 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 作成日：202X年XX月XX日  
 更新日：202X年XX月XX日  
 [[TOP]](#TOP)
+
 
 © 2021-2022 夢寐郎
