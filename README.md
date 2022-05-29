@@ -1085,16 +1085,20 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 
 1. [シーン]-[＋]-[Sprite3D]
 1. [Sprite3D]-[＋子ノードを追加]-[Viewport]
+1. [Sprite3D]-[インスペクター]-[Texture]-[[空]]-[v]-[新規ViewportTexture]-[（上記の）Viewport]
 1. [Viewport]-[インスペクター]-[**Size**]-[x 512, y 512]
 1. [Viewport]-[＋子ノードを追加]-[Panel]
 1. [Panel]-[ブランチをシーンとして保存]→"Panel.tscn"
 1. [Panel]-[インスペクター]-[Margin]-[**Right** 512, **Botton** 512]
+1. [Panel] の領域に **〇〇.png** をドラッグ＆ドロップ
 1. [Panel]-[インスペクター]-[Label]
 1. [Label]-[インスペクター]-[Text]-"**〇〇〇〇**"
 1. [Label]-[Theme Overrides]-[Fonts]-[[空]]-[v]-[新規DynamicFont]
 1. [DynamicFont]-[編集]-[Settings]-[**Size**]-[32]
 1. [DynamicFont]-[編集]-[Font]-[Font Data]-[[空]]-[v]-[新規DynamicFontData]
-1. [DynamicFontData]-[**Font Path**]
+1. [DynamicFontData]-[**Font Path**]-"**〇〇.ttf**"
+1. [DynamicFontData]-[Settings]-[Use Mipmaps]-[✓]…してみる
+1. [Sprite3D]-[インスペクター]-[Flip V]
 
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
