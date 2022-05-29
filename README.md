@@ -1079,7 +1079,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 
 
 <a id="XXX"></a>
-# <b>XXXXX</b>
+# <b>平面に文字表示</b>
 
 ### これは編集中の項目です
 
@@ -1100,10 +1100,9 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 1. [DynamicFontData]-[Settings]-[Use Mipmaps]-[✓] する？
 1. [Sprite3D]-[インスペクター]-[**Flip V**]
 
-実行環境：Windows 10、Godot 3.4.4  
+実行環境：Windows 10、Godot 3.4.4、Meta Quest（初代）v.40  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
 [[TOP]](#TOP)
 
 
