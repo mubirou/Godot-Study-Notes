@@ -1095,7 +1095,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
   1. RightHandController を選択し [子ノードを追加]-[**RayCast**]
   1. RayCast を選択し [インスペクター] を次の通りに設定  
       * **Cast To**： x 0、y 0、**z -1000**  
-  （階層は以下の通り）  
+（階層は以下の通り）  
     Spatial  
 　  ├ FPController（**ARVROrigin**）  
 　  │   ├　**ARVRCamera**  
