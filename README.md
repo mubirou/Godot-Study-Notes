@@ -1088,7 +1088,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
   1. CollisionShape を選択し [インスペクター]-[**Shape**]-[追加 BoxShape] を選ぶ（階層は以下の通り）  
 
 　  ├ MeshInstance（選択するオブジェクト）  
-　  │     └ **KinematicBody**（とにかく重要）  
+　  │     └ **KinematicBody**（重要）  
 　  │　　   └ **CollisionShape**（反応する領域）  
 
 📝 RayCast の用意
@@ -1102,7 +1102,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 　  │   ├ LeftHandController  
 　  │   └ RightHandController  
 　  │　　　　 ├ ControllerR（コントローラの視覚化）  
-　  │　　　　 └ **RayCast**（最重要）  
+　  │　　　　 └ **RayCast**（重要）  
 
 📝 RayCast の視覚化
   1. RightHandController を選択し [子ノードを追加]-[**MeshInstance**] を選んで名前を "MeshInstance" → "RayLine" に変更
@@ -1135,11 +1135,11 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 　  │   ├　LeftHandController  
 　  │   └　RightHandController  
 　  │　　　　 ├ ControllerR（コントローラの視覚化）  
-　  │　　　　 ├ **RayCast**（最重要）  
+　  │　　　　 ├ **RayCast**（重要）  
 　  │　　　　 ├ RayLine（RayCastの視覚化）  
 　  │　　　　 └ HitPoint（ヒットしたポイントの視覚化）  
 　  └ MeshInstance（選択するオブジェクト）  
-　　　　 └ **KinematicBody**（とにかく重要）  
+　　　　 └ **KinematicBody**（重要）  
 　　　　　　　 └ **CollisionShape**（反応する領域）  
 
 📝 コードの記述  
