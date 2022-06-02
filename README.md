@@ -1130,10 +1130,10 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 （ここまでの作業の階層は以下の通り）  
   Spatial  
 　  ├ FPController  
-　  │   ├　Configuration  
-　  │   ├　ARVRCamera  
-　  │   ├　LeftHandController  
-　  │   └　RightHandController  
+　  │   ├ Configuration  
+　  │   ├ ARVRCamera  
+　  │   ├ LeftHandController  
+　  │   └ RightHandController  
 　  │　　　　 ├ ControllerR（コントローラの視覚化）  
 　  │　　　　 ├ **RayCast**（重要）  
 　  │　　　　 ├ RayLine（RayCastの視覚化）  
