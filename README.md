@@ -1238,8 +1238,8 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 1. [Sprite3D]-[＋子ノードを追加]-[**Viewport**]
 1. [Sprite3D]-[インスペクター]-[**Texture**]-[新規 **ViewportTexture**]-[（上記の）Viewport]
 1. [Viewport]-[インスペクター]-[**Size**]-[x 512, y 512]
-1. [Viewport]-[＋子ノードを追加]-[Panel]
-1. [Panel]-[ブランチをシーンとして保存]→"Panel.tscn"
+1. [Viewport]-[子ノードを追加]-[**Panel**]
+1. [Panel]-[**ブランチをシーンとして保存**]→"Panel.tscn"
 1. [Panel]-[インスペクター]-[Margin]-[**Right** 512, **Botton** 512]
 1. [Panel] の領域に **〇〇.png** をドラッグ＆ドロップ
 1. [Panel]-[インスペクター]-[Label]
