@@ -1081,7 +1081,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 <a id="220601"></a>
 # <b>RayCastボタン</b>
 
-💡 選択するオブジェクトの用意  
+📝 選択するオブジェクトの用意  
   1. [立方体](#プリミティブ)などを用意
   1. 上記を選択し [子ノードを追加]-[**KinematicBody**]
   1. KinematicBody を選択し [子ノードを追加]-[**CollisionShape**]
@@ -1091,7 +1091,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 　  │     └ **KinematicBody**（とにかく重要）  
 　  │　　   └ **CollisionShape**（反応する領域）  
 
-💡 RayCast の用意
+📝 RayCast の用意
   1. [[**FPController**](#220501)]-[**RightHandController**] にコントローラを視覚化させるオブジェクト（"ControllerR"）を用意
   1. RightHandController を選択し [子ノードを追加]-[**RayCast**]
   1. RayCast を選択し [インスペクター] の [**Cast To**] を [x 0、y 0、**z -1000**] に設定（階層は以下の通り）  
@@ -1104,7 +1104,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 　  │　　　　 ├ ControllerR（コントローラの視覚化）  
 　  │　　　　 └ **RayCast**（最重要）  
 
-💡 RayCast の視覚化
+📝 RayCast の視覚化
   1. RightHandController を選択し [子ノードを追加]-[**MeshInstance**] を選んで名前を "MeshInstance" → "RayLine" に変更
   1. RayLine を選択し [インスペクター]-[Mesh]-[新規 **CubeMesh**] を選ぶ
   1. 引続き [インスペクター]-[Transform] で次の通りに設定  
@@ -1116,7 +1116,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
           * [**Albedo**]-[**Color**]：**#80ffffff**（白･不透明度50％）
           * [**Flags**]-[**Transparent**]：**✓**
 
-💡 ヒットしたポイントの視覚化
+📝 ヒットしたポイントの視覚化
   1. RightHandController を選択し [子ノードを追加]-[**MeshInstance**] を選んで名前を "MeshInstance" → "HitPoint" に変更
   1. HitPoint を選択し [インスペクター]-[Mesh]-[新規 **SphereMesh**] を選ぶ
   1. 引続き [インスペクター]-[Transform] で次の通りに設定  
@@ -1142,7 +1142,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 　　　　 └ **KinematicBody**（とにかく重要）  
 　　　　　　　 └ **CollisionShape**（反応する領域）  
 
-💡 コードの記述  
+📝 コードの記述  
 
 * RightHandController にアタッチ済の **controller.gd** に加筆  
 
