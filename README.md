@@ -1147,42 +1147,36 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
   1. [RightHandController] にアタッチされた [controller.gd] に加筆  
 
 ```gdscript
-extends Spatial
+extends ARVRController
 
-var _controllerR
-var _rayCastR
-var _rayLineR
-var _hitPointR
-var _selectCollider
+signal activated
+signal deactivated
+signal TriggerDownR # forRayCast(2022-06-02T08:44)
+signal TriggerUpR # forRayCast(2022-06-02T08:44)
 
-func _ready():
-	_controllerR = get_node("/root/Main/FPController/RightHandController")
-	_controllerR.connect("TriggerDownR", self, "TriggerDownHandlerR")
-	_controllerR.connect("TriggerUpR", self, "TriggerUpHandlerR")
-	_rayCastR = get_node("/root/Main/FPController/RightHandController/RayCast")
-	_rayLineR = get_node("/root/Main/FPController/RightHandController/RayLine")
-	_hitPointR = get_node("/root/Main/FPController/RightHandController/HitPoint")
-	_hitPointR.visible = false
+var _isTriggerDownR = false
 
-func _physics_process(delta):
-	if _rayCastR.is_colliding():
-		_hitPointR.visible = true
-		_hitPointR.global_transform.origin = _rayCastR.get_collision_point()
-		var _dis = (_rayCastR.global_transform.origin - _hitPointR.global_transform.origin).length()
-		_rayLineR.scale.z = _dis/2
-		_rayLineR.translation.z = -_dis/2
+func _process(delta):
+	if get_is_active():
+		if !visible:
+			visible = true
+			print("Activated " + name)
+			emit_signal("activated")
+	elif visible:
+		visible = false
+		print("Deactivated " + name)
+		emit_signal("deactivated")
+
+	# forRayCast(2022-06-02T08:44)
+	if is_button_pressed(JOY_VR_TRIGGER): # 15
+		if get_controller_id() == 2:
+			if !_isTriggerDownR:
+				_isTriggerDownR = true
+				emit_signal("TriggerDownR")
 	else:
-		_rayLineR.scale.z = 1000
-		_rayLineR.translation.z = -1000
-		_hitPointR.visible = false
-
-func TriggerDownHandlerR():
-	_selectCollider = _rayCastR.get_collider()
-
-func TriggerUpHandlerR():
-	if _rayCastR.get_collider() == null: return # DEBUG
-	if _rayCastR.get_collider() == _selectCollider:
-		print(_selectCollider.get_parent().name + " is selected")
+		if _isTriggerDownR:
+			_isTriggerDownR = false
+			emit_signal("TriggerUpR")
 ```
 
 実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2、Meta Quest 40.0  
