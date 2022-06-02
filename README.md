@@ -1235,8 +1235,8 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 ### これは編集中の項目です
 
 1. [シーン]-[＋]-[Sprite3D]
-1. [Sprite3D]-[＋子ノードを追加]-[Viewport]
-1. [Sprite3D]-[インスペクター]-[Texture]-[[空]]-[v]-[新規ViewportTexture]-[（上記の）Viewport]
+1. [Sprite3D]-[＋子ノードを追加]-[**Viewport**]
+1. [Sprite3D]-[インスペクター]-[**Texture**]-[新規 **ViewportTexture**]-[（上記の）Viewport]
 1. [Viewport]-[インスペクター]-[**Size**]-[x 512, y 512]
 1. [Viewport]-[＋子ノードを追加]-[Panel]
 1. [Panel]-[ブランチをシーンとして保存]→"Panel.tscn"
