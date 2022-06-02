@@ -1093,8 +1093,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 💡 RayCast の用意
   1. [[**FPController**](#220501)]-[**RightHandController**] にコントローラを視覚化させるオブジェクト（"ControllerR"）を用意
   1. RightHandController を選択し [子ノードを追加]-[**RayCast**]
-  1. RayCast を選択し [インスペクター] を次の通りに設定  
-      * **Cast To**： x 0、y 0、**z -1000**  
+  1. RayCast を選択し [インスペクター] の [**Cast To**] を [x 0、y 0、**z -1000**] に設定（階層は以下の通り）    
 　  ├ FPController  
 　  │   ├　Configuration  
 　  │   ├　ARVRCamera  
