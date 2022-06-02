@@ -1218,13 +1218,14 @@ func TriggerDownHandlerR():
 func TriggerUpHandlerR():
   if _rayCastR.get_collider() == null: return # DEBUG
   if _rayCastR.get_collider() == _selectCollider:
-    print(_selectCollider.get_parent().name + "is selected")
+    print(_selectCollider.get_parent().name + " is selected")
 ```
 
 実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2  
 Meta Quest 40.0、Oculus Link（Oculusアプリ）  
 作成者：夢寐郎  
 作成日：2022年06月02日  
+更新日：2022年06月03日  
 [[TOP]](#TOP)
 
 
