@@ -1181,45 +1181,45 @@ func _process(delta):
 
 * 大元の Spatial に新規で Main.gd をアタッチし以下の通りに記述  
 
-```gdscript
-# Main.gd
-extends Spatial
+  ```gdscript
+  # Main.gd
+  extends Spatial
 
-var _controllerR
-var _rayCastR
-var _rayLineR
-var _hitPointR
-var _selectCollider
+  var _controllerR
+  var _rayCastR
+  var _rayLineR
+  var _hitPointR
+  var _selectCollider
 
-func _ready():
-  _controllerR = get_node("/root/Main/FPController/RightHandController")
-  _controllerR.connect("TriggerDownR", self, "TriggerDownHandlerR")
-  _controllerR.connect("TriggerUpR", self, "TriggerUpHandlerR")
-  _rayCastR = get_node("/root/Main/FPController/RightHandController/RayCast")
-  _rayLineR = get_node("/root/Main/FPController/RightHandController/RayLine")
-  _hitPointR = get_node("/root/Main/FPController/RightHandController/HitPoint")
-  _hitPointR.visible = false
-
-func _physics_process(delta):
-  if _rayCastR.is_colliding():
-    _hitPointR.visible = true
-    _hitPointR.global_transform.origin = _rayCastR.get_collision_point()
-    var _dis = (_rayCastR.global_transform.origin - _hitPointR.global_transform.origin).length()
-    _rayLineR.scale.z = _dis/2
-    _rayLineR.translation.z = -_dis/2
-  else:
-    _rayLineR.scale.z = 1000
-    _rayLineR.translation.z = -1000
+  func _ready():
+    _controllerR = get_node("/root/Main/FPController/RightHandController")
+    _controllerR.connect("TriggerDownR", self, "TriggerDownHandlerR")
+    _controllerR.connect("TriggerUpR", self, "TriggerUpHandlerR")
+    _rayCastR = get_node("/root/Main/FPController/RightHandController/RayCast")
+    _rayLineR = get_node("/root/Main/FPController/RightHandController/RayLine")
+    _hitPointR = get_node("/root/Main/FPController/RightHandController/HitPoint")
     _hitPointR.visible = false
 
-func TriggerDownHandlerR():
-  _selectCollider = _rayCastR.get_collider()
+  func _physics_process(delta):
+    if _rayCastR.is_colliding():
+      _hitPointR.visible = true
+      _hitPointR.global_transform.origin = _rayCastR.get_collision_point()
+      var _dis = (_rayCastR.global_transform.origin - _hitPointR.global_transform.origin).length()
+      _rayLineR.scale.z = _dis/2
+      _rayLineR.translation.z = -_dis/2
+    else:
+      _rayLineR.scale.z = 1000
+      _rayLineR.translation.z = -1000
+      _hitPointR.visible = false
 
-func TriggerUpHandlerR():
-  if _rayCastR.get_collider() == null: return # DEBUG
-  if _rayCastR.get_collider() == _selectCollider:
-    print(_selectCollider.get_parent().name + "is selected")
-```
+  func TriggerDownHandlerR():
+    _selectCollider = _rayCastR.get_collider()
+
+  func TriggerUpHandlerR():
+    if _rayCastR.get_collider() == null: return # DEBUG
+    if _rayCastR.get_collider() == _selectCollider:
+      print(_selectCollider.get_parent().name + "is selected")
+  ```
 
 実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2、Meta Quest 40.0  
 作成者：夢寐郎  
