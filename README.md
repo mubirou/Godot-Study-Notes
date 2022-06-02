@@ -1086,9 +1086,9 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
   1. 上記を選択し [子ノードを追加]-[**KinematicBody**]
   1. KinematicBody を選択し [子ノードを追加]-[**CollisionShape**]
   1. CollisionShape を選択し [インスペクター]-[**Shape**]-[追加 BoxShape] を選び以下の状態にする  
-　  ├ MeshInstance  
-　  │     └ **KinematicBody**  
-　  │　　   └ **CollisionShape**  
+　  ├ MeshInstance（選択するオブジェクト）  
+　  │     └ **KinematicBody**（重要！）  
+　  │　　   └ **CollisionShape**（反応する領域）  
 
 💡 RayCast + 視覚化オブジェクトの用意
   1. [[**FPController**](#220501)]-[**RightHandController**] にコントローラを視覚化させるオブジェクト（"ControllerR"）を用意
