@@ -1101,8 +1101,8 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 　  │   ├ ARVRCamera  
 　  │   ├ LeftHandController  
 　  │   └ RightHandController  
-　  │　　　　 ├ ControllerR（コントローラの視覚化）  
-　  │　　　　 └ **RayCast**（重要）  
+　  │　　　 ├ ControllerR（コントローラの視覚化）  
+　  │　　　 └ **RayCast**（重要）  
 
 📝 RayCast の視覚化
   1. RightHandController を選択し [子ノードを追加]-[**MeshInstance**] を選んで名前を "MeshInstance" → "RayLine" に変更
@@ -1134,10 +1134,10 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 　  │   ├ ARVRCamera  
 　  │   ├ LeftHandController  
 　  │   └ RightHandController  
-　  │　　　　 ├ ControllerR（コントローラの視覚化）  
-　  │　　　　 ├ **RayCast**（重要）  
-　  │　　　　 ├ RayLine（RayCastの視覚化）  
-　  │　　　　 └ HitPoint（ヒットしたポイントの視覚化）  
+　  │　　　 ├ ControllerR（コントローラの視覚化）  
+　  │　　　 ├ **RayCast**（重要）  
+　  │　　　 ├ RayLine（RayCastの視覚化）  
+　  │　　　 └ HitPoint（ヒットしたポイントの視覚化）  
 　  └ MeshInstance（選択するオブジェクト）  
 　　　　 └ **KinematicBody**（重要）  
 　　　　　　　 └ **CollisionShape**（反応する領域）  
