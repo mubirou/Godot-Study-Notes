@@ -1091,10 +1091,9 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 　  │　　   └ **CollisionShape**  
 
 
-実行環境：Windows 10、Godot 3.4.4  
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
 [[TOP]](#TOP)
 
 
