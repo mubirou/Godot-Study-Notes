@@ -1223,7 +1223,7 @@ func TriggerUpHandlerR():
 
 実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2、Meta Quest 40.0  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
+作成日：2022年06月02日  
 [[TOP]](#TOP)
 
 
