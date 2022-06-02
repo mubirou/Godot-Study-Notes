@@ -1090,12 +1090,14 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 　  │     └ **KinematicBody**（とにかく重要）  
 　  │　　   └ **CollisionShape**（反応する領域）  
 
-💡 RayCast + 視覚化オブジェクトの用意
+💡 RayCast の用意
   1. [[**FPController**](#220501)]-[**RightHandController**] にコントローラを視覚化させるオブジェクト（"ControllerR"）を用意
   1. RightHandController を選択し [子ノードを追加]-[**RayCast**]
   1. RayCast を選択し [インスペクター] を次の通りに設定  
       * **Cast To**： x 0、y 0、**z -1000**
-  1. XXX
+
+💡 RayCast の視覚化
+  1. RightHandController を選択し [子ノードを追加]-[**MeshInstance**]
 
 実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2、Meta Quest 40.0  
 作成者：夢寐郎  
