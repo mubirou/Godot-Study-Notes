@@ -1119,7 +1119,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
       1. [インスペクタ]-[Material]-[新規 **SpatialMaterial**] を選択
       1. [編集] で以下の通りに設定  
           * [**Albedo**]-[**Color**]：**#80ffffff**（白･不透明度50％）
-          * [**Flags**]-[**Transparent**]：✓
+          * [**Flags**]-[**Transparent**]：**✓**
 
 実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2、Meta Quest 40.0  
 作成者：夢寐郎  
