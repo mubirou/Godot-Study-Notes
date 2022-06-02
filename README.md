@@ -1144,7 +1144,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 
 💡 コードの記述  
 
-  * [RightHandController]-[controller.gd] に加筆  
+* RightHandController にアタッチされた **controller.gd** に加筆  
 
 ```gdscript
 #controller.gd
