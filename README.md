@@ -1095,7 +1095,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
   1. [[**FPController**](#220501)]-[**RightHandController**] にコントローラを視覚化させるオブジェクト（"ControllerR"）を用意
   1. RightHandController を選択し [子ノードを追加]-[**RayCast**]
   1. RayCast を選択し [インスペクター] の [**Cast To**] を [x 0、y 0、**z -1000**] に設定（階層は以下の通り）  
-  
+
 　  ├ FPController  
 　  │   ├ Configuration  
 　  │   ├ ARVRCamera  
@@ -1141,6 +1141,42 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 　  └ MeshInstance（選択するオブジェクト）  
 　　　　 └ **KinematicBody**（とにかく重要）  
 　　　　　　　 └ **CollisionShape**（反応する領域）  
+
+💡 コードの記述  
+
+  1. [RightHandController] にアタッチされた [controller.gd] に加筆  
+
+```gdscript
+extends ARVRController
+
+signal activated
+signal deactivated
+signal TriggerDownR
+signal TriggerUpR
+
+var _isTriggerDownR = false
+
+func _process(delta):
+	if get_is_active():
+		if !visible:
+			visible = true
+			print("Activated " + name)
+			emit_signal("activated")
+	elif visible:
+		visible = false
+		print("Deactivated " + name)
+		emit_signal("deactivated")
+
+	if is_button_pressed(JOY_VR_TRIGGER): # 15
+		if get_controller_id() == 2:
+			if !_isTriggerDownR:
+				_isTriggerDownR = true
+				emit_signal("TriggerDownR")
+	else:
+		if _isTriggerDownR:
+			_isTriggerDownR = false
+			emit_signal("TriggerUpR")
+```
 
 実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2、Meta Quest 40.0  
 作成者：夢寐郎  
