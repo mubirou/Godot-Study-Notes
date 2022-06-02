@@ -1081,7 +1081,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 <a id="220601"></a>
 # <b>RayCastボタン</b>
 
-💡 選択するオブジェクトを用意する  
+💡 選択するオブジェクトの用意  
   1. [立方体](#プリミティブ)などを用意
   1. 上記を選択し [子ノードを追加]-[**KinematicBody**]
   1. KinematicBody を選択し [子ノードを追加]-[**CollisionShape**]
@@ -1090,6 +1090,8 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 　  │     └ **KinematicBody**  
 　  │　　   └ **CollisionShape**  
 
+💡 RayCast + 視覚化オブジェクトの用意
+  1. [**FPController**](#220501)-[**RightHandController**] にコントローラを視覚化させるオブジェクト（"ControllerR"）を用意
 
 実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2、Meta Quest 40.0  
 作成者：夢寐郎  
