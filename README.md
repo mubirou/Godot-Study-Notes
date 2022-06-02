@@ -1087,7 +1087,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
   1. KinematicBody を選択し [子ノードを追加]-[**CollisionShape**]
   1. CollisionShape を選択し [インスペクター]-[**Shape**]-[追加 BoxShape] を選び以下の状態にする  
 　  ├ MeshInstance（選択するオブジェクト）  
-　  │     └ **KinematicBody**（重要！）  
+　  │     └ **KinematicBody**（とにかく重要）  
 　  │　　   └ **CollisionShape**（反応する領域）  
 
 💡 RayCast + 視覚化オブジェクトの用意
