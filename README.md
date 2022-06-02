@@ -1096,15 +1096,18 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
   1. RayCast を選択し [インスペクター] を次の通りに設定  
       * **Cast To**： x 0、y 0、**z -1000**  
 
-  （ここまで階層は以下の通り）  
-      Spatial  
-  　  ├ FPController（**ARVROrigin**）  
-  　  │   ├　**ARVRCamera**  
-  　  │   ├　LeftHandController（**ARVRController**）  
-  　  │   │　　└ OculusQuestTouchController_Left（.glTF）  
-  　  │   └　RightHandController（**ARVRController**）  
-  　  │　　  └ OculusQuestTouchController_Right（.glTF）  
-  　  └ MeshInstance（任意のオブジェクト）  
+（ここまで階層は以下の通り）  
+  Spatial  
+　  ├ FPController  
+　  │   ├　Configuration  
+　  │   ├　ARVRCamera  
+　  │   ├　LeftHandController  
+　  │   └　**RightHandController**  
+　  │       ├ **ControllerR**（コントローラの視覚化）  
+　  │       └ **RayCast**  
+　  └ MeshInstance  
+        └ KinematicBody  
+            └ CollisionShape  
 
 💡 RayCast の視覚化
   1. RightHandController を選択し [子ノードを追加]-[**MeshInstance**]
