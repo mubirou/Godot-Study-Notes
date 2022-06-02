@@ -1086,6 +1086,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
   1. 上記を選択し [子ノードを追加]-[**KinematicBody**]
   1. KinematicBody を選択し [子ノードを追加]-[**CollisionShape**]
   1. CollisionShape を選択し [インスペクター]-[**Shape**]-[追加 BoxShape] を選び以下の状態にする  
+　  │
 　  ├ MeshInstance（選択するオブジェクト）  
 　  │     └ **KinematicBody**（とにかく重要）  
 　  │　　   └ **CollisionShape**（反応する領域）  
@@ -1094,10 +1095,8 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
   1. [[**FPController**](#220501)]-[**RightHandController**] にコントローラを視覚化させるオブジェクト（"ControllerR"）を用意
   1. RightHandController を選択し [子ノードを追加]-[**RayCast**]
   1. RayCast を選択し [インスペクター] を次の通りに設定  
-      * **Cast To**： x 0、y 0、**z -1000**  
-
-（ここまでの作業の階層は以下の通り）  
-  Spatial  
+      * **Cast To**： x 0、y 0、**z -1000**   
+　  │
 　  ├ FPController  
 　  │   ├　Configuration  
 　  │   ├　ARVRCamera  
@@ -1105,9 +1104,6 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 　  │   └　RightHandController  
 　  │　　　　 ├ ControllerR（コントローラの視覚化）  
 　  │　　　　 └ **RayCast**（最重要）  
-　  └ MeshInstance（選択するオブジェクト）  
-　　　　 └ **KinematicBody**（とにかく重要）  
-　　　　　　　 └ **CollisionShape**（反応する領域）  
 
 💡 RayCast の視覚化
   1. RightHandController を選択し [子ノードを追加]-[**MeshInstance**] を選んで名前を "MeshInstance" → "RayLine" に変更
