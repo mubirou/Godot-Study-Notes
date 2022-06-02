@@ -1083,8 +1083,8 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 
 💡 選択するオブジェクトを用意する  
   1. [立方体](#プリミティブ)などを用意
-  1. 上記を選択し[子ノードを追加]-[KinematicBody]
-  1. 
+  1. 上記を選択し [子ノードを追加]-[**KinematicBody**] を選択
+  1. KinematicBody を選択し [子ノードを追加]-[**CollisionShape**] を選択
 
 
 実行環境：Windows 10、Godot 3.4.4  
