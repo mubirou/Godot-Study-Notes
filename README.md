@@ -1192,12 +1192,12 @@ var _hitPointR
 var _selectCollider
 
 func _ready():
-  _controllerR = get_node("/root/Main/FPController/RightHandController")
+  _controllerR = get_node("FPController/RightHandController")
   _controllerR.connect("TriggerDownR", self, "TriggerDownHandlerR")
   _controllerR.connect("TriggerUpR", self, "TriggerUpHandlerR")
-  _rayCastR = get_node("/root/Main/FPController/RightHandController/RayCast")
-  _rayLineR = get_node("/root/Main/FPController/RightHandController/RayLine")
-  _hitPointR = get_node("/root/Main/FPController/RightHandController/HitPoint")
+  _rayCastR = get_node("FPController/RightHandController/RayCast")
+  _rayLineR = get_node("FPController/RightHandController/RayLine")
+  _hitPointR = get_node("FPController/RightHandController/HitPoint")
   _hitPointR.visible = false
 
 func _physics_process(delta):
