@@ -1242,7 +1242,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 1. [Panel]-[**ブランチをシーンとして保存**]→"Panel.tscn"
 1. [Panel]-[インスペクター]-[Margin]-[**Right** 512, **Botton** 512]
 1. [Panel] の領域に **.png** ファイルをドラッグ＆ドロップ
-1. [Panel]-[インスペクター]-[Label]
+1. [Panel]-[子ノードを追加]-[**Label**]
 1. [Label]-[インスペクター]-[Text]-"**〇〇〇〇**"
 1. [Label]-[Theme Overrides]-[Fonts]-[[空]]-[v]-[新規DynamicFont]
 1. [DynamicFont]-[編集]-[Settings]-[**Size**]-[32]
