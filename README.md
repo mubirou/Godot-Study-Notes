@@ -1121,6 +1121,32 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
           * [**Albedo**]-[**Color**]：**#80ffffff**（白･不透明度50％）
           * [**Flags**]-[**Transparent**]：**✓**
 
+💡 ヒットしたポイントの視覚化
+  1. RightHandController を選択し [子ノードを追加]-[**MeshInstance**] を選んで名前を "MeshInstance" → "HitPoint" に変更
+  1. HitPoint を選択し [インスペクター]-[Mesh]-[新規 **SphereMesh**] を選ぶ
+  1. 引続き [インスペクター]-[Transform] で次の通りに設定  
+      * **Scale**：x 0.02、y 0.02、z 0.02  
+  1. 半透明にする  
+      1. [インスペクタ]-[Material]-[新規 **SpatialMaterial**] を選択
+      1. [編集] で以下の通りに設定  
+          * [**Albedo**]-[**Color**]：**#ccffffff**（白･不透明度80％）
+          * [**Flags**]-[**Transparent**]：**✓**
+
+（ここまでの作業の階層は以下の通り）  
+  Spatial  
+　  ├ FPController  
+　  │   ├　Configuration  
+　  │   ├　ARVRCamera  
+　  │   ├　LeftHandController  
+　  │   └　RightHandController  
+　  │　　　　 ├ ControllerR（コントローラの視覚化）  
+　  │　　　　 ├ **RayCast**（最重要）  
+　  │　　　　 ├ RayLine（RayCastの視覚化）  
+　  │　　　　 └ HitPoint（ヒットしたポイントの視覚化）  
+　  └ MeshInstance（選択するオブジェクト）  
+　　　　 └ **KinematicBody**（とにかく重要）  
+　　　　　　　 └ **CollisionShape**（反応する領域）  
+
 実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2、Meta Quest 40.0  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
