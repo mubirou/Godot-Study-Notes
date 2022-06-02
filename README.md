@@ -1081,12 +1081,9 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 <a id="220601"></a>
 # <b>RayCastボタン</b>
 
-💡 XXX
-    ```c#
-    XXXX
-    ```
-    * XXX
-    * XXXX
+💡 選択するオブジェクトを用意する  
+  1. XXXX
+
 
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
