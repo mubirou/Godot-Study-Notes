@@ -1106,8 +1106,8 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 　  │　　　　 ├ ControllerR（コントローラの視覚化）  
 　  │　　　　 └ **RayCast**（最重要）  
 　  └ MeshInstance（選択するオブジェクト）  
-　　　　 └ KinematicBody（とにかく重要）  
-　　　　　　　 └ CollisionShape（反応する領域）  
+　　　　 └ **KinematicBody**（とにかく重要）  
+　　　　　　　 └ **CollisionShape**（反応する領域）  
 
 💡 RayCast の視覚化
   1. RightHandController を選択し [子ノードを追加]-[**MeshInstance**]
