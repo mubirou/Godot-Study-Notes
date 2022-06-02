@@ -1096,7 +1096,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
   1. RayCast を選択し [インスペクター] を次の通りに設定  
       * **Cast To**： x 0、y 0、**z -1000**  
 
-（ここまでの作業の階層）  
+（ここまでの作業の階層は以下の通り）  
   Spatial  
 　  ├ FPController  
 　  │   ├　Configuration  
