@@ -1248,7 +1248,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 1. [DynamicFont]-[編集]-[Settings]-[**Size**]-[32]
 1. [DynamicFont]-[編集]-[Font]-[Font Data]-[新規 **DynamicFontData**]
 1. [DynamicFontData]-[**Font Path**]-"**KosugiMaru-Regular.ttf**"
-1. [DynamicFontData]-[Settings]-[Use Mipmaps]-[✓] する？
+1. [DynamicFont]-[Settings]-[Use Mipmaps]-[✓] する？
 1. [Sprite3D]-[インスペクター]-[**Flip V**]
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest（初代）v.40  
