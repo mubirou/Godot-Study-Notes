@@ -1102,12 +1102,12 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 　  │   ├　Configuration  
 　  │   ├　ARVRCamera  
 　  │   ├　LeftHandController  
-　  │   └　**RightHandController**  
-　  │　　　　 ├ **ControllerR**（コントローラの視覚化）  
+　  │   └　RightHandController  
+　  │　　　　 ├ ControllerR（コントローラの視覚化）  
 　  │　　　　 └ **RayCast**（最重要）  
-　  └ MeshInstance  
-　　　　 └ KinematicBody  
-　　　　　　　 └ CollisionShape  
+　  └ MeshInstance（選択するオブジェクト）  
+　　　　 └ KinematicBody（とにかく重要）  
+　　　　　　　 └ CollisionShape（反応する領域）  
 
 💡 RayCast の視覚化
   1. RightHandController を選択し [子ノードを追加]-[**MeshInstance**]
