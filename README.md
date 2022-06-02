@@ -1244,9 +1244,9 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 1. [Panel] の領域に **.png** ファイルをドラッグ＆ドロップ
 1. [Panel]-[子ノードを追加]-[**Label**]
 1. [Label]-[インスペクター]-[Text]-"**〇〇〇〇**"
-1. [Label]-[Theme Overrides]-[Fonts]-[[空]]-[v]-[新規DynamicFont]
+1. [Label]-[Theme Overrides]-[Fonts]-[新規 **DynamicFont**]
 1. [DynamicFont]-[編集]-[Settings]-[**Size**]-[32]
-1. [DynamicFont]-[編集]-[Font]-[Font Data]-[[空]]-[v]-[新規DynamicFontData]
+1. [DynamicFont]-[編集]-[Font]-[Font Data]-[新規 **DynamicFontData**]
 1. [DynamicFontData]-[**Font Path**]-"**KosugiMaru-Regular.ttf**"
 1. [DynamicFontData]-[Settings]-[Use Mipmaps]-[✓] する？
 1. [Sprite3D]-[インスペクター]-[**Flip V**]
