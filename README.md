@@ -1236,6 +1236,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 
 1. [Convertio](https://convertio.co/ja/) などで **.webm または .ogv に返還
 1. project.godot と同階層に上記ファイルを置く  
+
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_videoplayer.html?highlight=Video#videoplayer)  
 
 📝 [Sprite3D](https://docs.godotengine.org/ja/stable/classes/class_sprite3d.html#sprite3d) の用意  
