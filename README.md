@@ -1232,6 +1232,12 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 <a id="220602"></a>
 # <b>動画再生</b>
 
+📝 動画ファイルの用意
+
+1. [Convertio](https://convertio.co/ja/) などで **.webm または .ogv に返還
+1. project.godot と同階層に上記ファイルを置く  
+参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_videoplayer.html?highlight=Video#videoplayer)  
+
 📝 [Sprite3D](https://docs.godotengine.org/ja/stable/classes/class_sprite3d.html#sprite3d) の用意  
 
 1. [シーン]-[＋]-[**Sprite3D**] を選択
@@ -1243,9 +1249,13 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 📝 [Viewport](https://docs.godotengine.org/ja/stable/classes/class_viewport.html?highlight=Viewport#viewport) の用意  
 
 1. Sprite3D を選択し [子ノードを追加]-[**Viewport**] を選択
-1. Sprite3D を選択し [インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で作成した Viewport を選択
+1. Sprite3D を選択し [インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **Viewport** を選択
 1. Viewport を選択し [インスペクター] を設定  
     * Size：**x 1920**、**y 1080**（動画の元サイズ）  
+
+📝 [VideoPlayer](https://docs.godotengine.org/ja/stable/classes/class_videoplayer.html?highlight=Video#videoplayer) の用意
+
+1. Viewport を選択し [子ノードを追加]-[**VideoPlayer**] を選択
 
 
 　  ├ FPController  
