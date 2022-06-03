@@ -1235,7 +1235,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 📝 動画ファイルの用意  
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_videoplayer.html?highlight=Video#videoplayer)  
 
-1. [Convertio](https://convertio.co/ja/) などで **.webm** または .ogv に返還
+1. [Convertio](https://convertio.co/ja/) などで **.webm** または **.ogv** に返還
 1. project.godot と同階層に上記ファイルを置く  
 
 📝 [Sprite3D](https://docs.godotengine.org/ja/stable/classes/class_sprite3d.html#sprite3d) の用意  
@@ -1256,21 +1256,20 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 📝 [VideoPlayer](https://docs.godotengine.org/ja/stable/classes/class_videoplayer.html?highlight=Video#videoplayer) の用意
 
 1. Viewport を選択し [子ノードを追加]-[**VideoPlayer**] を選択
+1. VideoPlayer に上記の **.webm** ファイルをドラッグ＆ドロップ
+1. VideoPlayer を選択し [インスペクター] を設定
+    * **Autoplay**：**✓**
+    * **Margin**：**Right 1920**、**Buttom 1080**（動画の元サイズ）  
 
+（階層は以下の通り）  
+　  ├ **Sprite3D**  
+　  │   └ **Viewport**  
+　  │　　　 └ **VideoPlayer**  
 
-　  ├ FPController  
-　  │   ├ Configuration  
-　  │   ├ ARVRCamera  
-　  │   ├ LeftHandController  
-　  │   └ RightHandController  
-　  │　　　 ├ ControllerR（コントローラの視覚化）  
-　  │　　　 └ **RayCast**（重要）  
-
-
-実行環境：Windows 10、Godot 3.4.4  
+実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2  
+Meta Quest 40.0、Oculus Link（Oculusアプリ）  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2022年06月04日  
 [[TOP]](#TOP)
 
 
