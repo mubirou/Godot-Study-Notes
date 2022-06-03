@@ -1232,12 +1232,11 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 <a id="220602"></a>
 # <b>動画再生</b>
 
-📝 動画ファイルの用意
-
-1. [Convertio](https://convertio.co/ja/) などで **.webm または .ogv に返還
-1. project.godot と同階層に上記ファイルを置く  
-
+📝 動画ファイルの用意  
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_videoplayer.html?highlight=Video#videoplayer)  
+
+1. [Convertio](https://convertio.co/ja/) などで **.webm** または .ogv に返還
+1. project.godot と同階層に上記ファイルを置く  
 
 📝 [Sprite3D](https://docs.godotengine.org/ja/stable/classes/class_sprite3d.html#sprite3d) の用意  
 
