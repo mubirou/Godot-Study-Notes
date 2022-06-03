@@ -1232,11 +1232,21 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 <a id="220602"></a>
 # <b>動画再生</b>
 
-📝 Sprite3D の用意  
+📝 [Sprite3D](https://docs.godotengine.org/ja/stable/classes/class_sprite3d.html#sprite3d) の用意  
+
 1. [シーン]-[＋]-[**Sprite3D**] を選択
-1. [Sprite3D]-[インスペクター] で各種設定  
+1. Sprite3D] を選択し [インスペクター] で各種設定  
     * **Flip V**：**✓**（上下反転）
     * Translation：x 0、**y 1**、**z -3**（スクリーン表示位置）
+    * Scale：**0.25**、**0.25**、1（ピクセルアスペクト比･表示サイズ）
+
+📝 [Viewport](https://docs.godotengine.org/ja/stable/classes/class_viewport.html?highlight=Viewport#viewport) の用意  
+
+1. Sprite3D を選択し [子ノードを追加]-[**Viewport**] を選択
+1. Sprite3D を選択し [インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で作成した Viewport を選択
+1. Viewport を選択し [インスペクター] を設定  
+  * Size：**x 1920**、**y 1080**（動画の元サイズ）
+
 
 　  ├ FPController  
 　  │   ├ Configuration  
