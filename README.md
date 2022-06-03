@@ -1245,7 +1245,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 1. Sprite3D を選択し [子ノードを追加]-[**Viewport**] を選択
 1. Sprite3D を選択し [インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で作成した Viewport を選択
 1. Viewport を選択し [インスペクター] を設定  
-  * Size：**x 1920**、**y 1080**（動画の元サイズ）
+    * Size：**x 1920**、**y 1080**（動画の元サイズ）  
 
 
 　  ├ FPController  
