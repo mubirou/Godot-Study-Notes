@@ -1242,8 +1242,8 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 1. [シーン]-[＋]-[**Sprite3D**] を選択
 1. Sprite3D] を選択し [インスペクター] で各種設定  
     * **Flip V**：**✓**（上下反転）
-    * Translation：x 0、**y 1**、**z -3**（スクリーン表示位置）
-    * Scale：**0.25**、**0.25**、1（ピクセルアスペクト比･表示サイズ）
+    * **Translation**：x 0、**y 1**、**z -3**（スクリーン表示位置）
+    * **Scale**：**0.25**、**0.25**、1（ピクセルアスペクト比･表示サイズ）
 
 📝 [Viewport](https://docs.godotengine.org/ja/stable/classes/class_viewport.html?highlight=Viewport#viewport) の用意  
 
