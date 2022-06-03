@@ -1256,7 +1256,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 📝 [VideoPlayer](https://docs.godotengine.org/ja/stable/classes/class_videoplayer.html?highlight=Video#videoplayer) の用意
 
 1. Viewport を選択し [子ノードを追加]-[**VideoPlayer**] を選択
-1. VideoPlayer に上記の **.webm** ファイルをドラッグ＆ドロップ
+1. VideoPlayer に上記の **.webm** ファイル等をドラッグ＆ドロップ
 1. VideoPlayer を選択し [インスペクター] を設定
     * **Autoplay**：**✓**
     * **Margin**：**Right 1920**、**Buttom 1080**（動画の元サイズ）  
