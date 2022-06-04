@@ -1281,16 +1281,16 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 
 1. [シーン]-[＋]-[**Sprite3D**] を選択
 1. Sprite3D] を選択し [インスペクター] で各種設定  
-    * **Translation**：x 0、**y 1**、**z -3**（時計表示位置）
-    * **Scale**：**0.25**、**0.25**、1（ピクセルアスペクト比･表示サイズはここで調整）
+    * [**Translation**]：x 0、**y 1**、**z -3**（時計表示位置）
+    * [**Scale**]：**0.25**、**0.25**、1（ピクセルアスペクト比･表示サイズはここで調整）
 
 📝 [Viewport](https://docs.godotengine.org/ja/stable/classes/class_viewport.html?highlight=Viewport#viewport) の用意  
 
 1. Sprite3D を選択し [子ノードを追加]-[**Viewport**] を選択
 1. Sprite3D を選択し [インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **Viewport** を選択
 1. Viewport を選択し [インスペクター] を設定  
-    * [Size]：**x 492**、**y 144**（フォントサイズにより要調整）  
-    * [Render Target]-[**VFlip**] を **✓**
+    * [**Size**]：**x 492**、**y 144**（フォントサイズにより要調整）  
+    * [**Render Target**]-[**VFlip**] を **✓**
 
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
