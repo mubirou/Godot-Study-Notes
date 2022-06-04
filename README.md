@@ -1275,7 +1275,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 <a id="220603"></a>
 # <b>デジタル時計</b>
 
-📝 デジタル時計用のフォント（[Digital Dismay](https://www.1001fonts.com/digital+clock-fonts.html) 等)を用意  
+📝 デジタル時計用のフォント（[Digital Dismay](https://www.1001fonts.com/digital+clock-fonts.html) 等）を用意  
 
 📝 XXX
 
