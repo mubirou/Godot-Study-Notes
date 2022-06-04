@@ -1310,14 +1310,10 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 
 📝 コードの記述  
 
-* 大元の Spatial に新規で Main.gd をアタッチし以下を記述  
+* 大元の Spatial に新規で Main.gd をアタッチし以下を追加  
 
 ```gdscript
-# Main.gd
-extends Spatial
-（中略）
 func _ready():
-  （中略）
   var _timer = Timer.new()
 	_timer.set_wait_time(1)
 	_timer.connect("timeout", self, "loopClock")
@@ -1336,8 +1332,6 @@ func loopClock():
 	var _result = str(_h) + ":" + str(_m) + ":" + str(_s)
 
 	get_node("Sprite3D/Viewport/Label").text = _result
-
-（後略）
 ```
 
 実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2  
