@@ -1336,6 +1336,8 @@ func loopClock():
 	var _result = str(_h) + ":" + str(_m) + ":" + str(_s)
 
 	get_node("Sprite3D/Viewport/Label").text = _result
+
+（後略）
 ```
 
 実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2  
