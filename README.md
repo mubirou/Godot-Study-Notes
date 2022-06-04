@@ -1314,24 +1314,24 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 
 ```gdscript
 func _ready():
-	var _timer = Timer.new()
-	_timer.set_wait_time(1)
-	_timer.connect("timeout", self, "loopClock")
-	add_child(_timer)
-	_timer.start()
+  var _timer = Timer.new()
+  _timer.set_wait_time(1)
+  _timer.connect("timeout", self, "loopClock")
+  add_child(_timer)
+  _timer.start()
 
 func loopClock():
-	var _now = OS.get_datetime()
-	var _h = _now.hour
-	var _m = _now.minute
-	var _s = _now.second
-	
-	if _h < 10: _h = "0" + str(_h)
-	if _m < 10:	_m = "0" + str(_m)
-	if _s < 10: _s = "0" + str(_s)
-	var _result = str(_h) + ":" + str(_m) + ":" + str(_s)
+  var _now = OS.get_datetime()
+  var _h = _now.hour
+  var _m = _now.minute
+  var _s = _now.second
 
-	get_node("Sprite3D/Viewport/Label").text = _result
+  if _h < 10: _h = "0" + str(_h)
+  if _m < 10:	_m = "0" + str(_m)
+  if _s < 10: _s = "0" + str(_s)
+  var _result = str(_h) + ":" + str(_m) + ":" + str(_s)
+
+  get_node("Sprite3D/Viewport/Label").text = _result
 ```
 
 実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2  
