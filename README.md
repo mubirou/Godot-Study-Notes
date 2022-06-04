@@ -1327,7 +1327,7 @@ func loopClock():
   var _s = _now.second
 
   if _h < 10: _h = "0" + str(_h)
-  if _m < 10:	_m = "0" + str(_m)
+  if _m < 10: _m = "0" + str(_m)
   if _s < 10: _s = "0" + str(_s)
   var _result = str(_h) + ":" + str(_m) + ":" + str(_s)
 
