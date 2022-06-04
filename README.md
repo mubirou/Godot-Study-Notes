@@ -1289,8 +1289,8 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 1. Sprite3D を選択し [子ノードを追加]-[**Viewport**] を選択
 1. Sprite3D を選択し [インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **Viewport** を選択
 1. Viewport を選択し [インスペクター] を設定  
-    * Size：**x 492**、**y 144**（フォントサイズにより要調整）  
-    * Render Target / **VFlip ✓**
+    * [Size]：**x 492**、**y 144**（フォントサイズにより要調整）  
+    * [Render Target]-[**VFlip**] を **✓**
 
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
