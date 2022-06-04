@@ -1290,12 +1290,24 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 1. Sprite3D を選択し [インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **Viewport** を選択
 1. Viewport を選択し [インスペクター] を設定  
     * [**Size**]：**x 492**、**y 144**（フォントサイズにより要調整）  
-    * [**Render Target**]-[**VFlip**] を **✓**
+    * [Render Target]-[**VFlip**] を **✓**
 
-実行環境：Windows 10、Godot 3.4.4  
+📝 [Label](https://docs.godotengine.org/ja/stable/classes/class_label.html?highlight=Label) の用意
+
+1. Viewport を選択し [子ノードを追加]-[**Label**] を選択
+1. Label を選択し [インスペクター] を設定
+    * [**Text**]：**88:88:88**
+    * []
+
+（階層は以下の通り）  
+　  ├ **Sprite3D**  
+　  │   └ **Viewport**  
+　  │　　 └ **Label**  
+
+実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2  
+Meta Quest 40.0、Oculus Link（Oculusアプリ）  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2022年06月04日  
 [[TOP]](#TOP)
 
 
