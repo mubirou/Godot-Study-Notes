@@ -1297,12 +1297,46 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 1. Viewport を選択し [子ノードを追加]-[**Label**] を選択
 1. Label を選択し [インスペクター] を設定
     * [**Text**]：**88:88:88**
-    * []
+    * [**Margin**]：**Left 22**、**Top 10**、**Right 0**、**Bottom 0**
+1. 引き続きフォント関係を設定  
+    1. [Theme Overrides]-[**Fonts**]-[新規 **DynamicFont**] を選択
+    1. [DynamicFont]-[編集]-[Font]-[**Font Data**] に上記の **Digital Dismay.otf** ファイルをドラッグ＆ドロップ
+    1. [Setting]-[**Size**] を **128** に変更
 
 （階層は以下の通り）  
 　  ├ **Sprite3D**  
 　  │   └ **Viewport**  
 　  │　　 └ **Label**  
+
+📝 コードの記述  
+
+* 大元の Spatial に新規で Main.gd をアタッチし以下を記述  
+
+```gdscript
+# Main.gd
+extends Spatial
+（中略）
+func _ready():
+  （中略）
+  var _timer = Timer.new()
+	_timer.set_wait_time(1)
+	_timer.connect("timeout", self, "loopClock")
+	add_child(_timer)
+	_timer.start()
+
+func loopClock():
+	var _now = OS.get_datetime()
+	var _h = _now.hour
+	var _m = _now.minute
+	var _s = _now.second
+	
+	if _h < 10: _h = "0" + str(_h)
+	if _m < 10:	_m = "0" + str(_m)
+	if _s < 10: _s = "0" + str(_s)
+	var _result = str(_h) + ":" + str(_m) + ":" + str(_s)
+
+	get_node("Sprite3D/Viewport/Label").text = _result
+```
 
 実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2  
 Meta Quest 40.0、Oculus Link（Oculusアプリ）  
