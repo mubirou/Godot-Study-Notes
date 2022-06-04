@@ -1314,7 +1314,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 
 ```gdscript
 func _ready():
-  var _timer = Timer.new()
+	var _timer = Timer.new()
 	_timer.set_wait_time(1)
 	_timer.connect("timeout", self, "loopClock")
 	add_child(_timer)
