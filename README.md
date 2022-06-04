@@ -1282,7 +1282,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 1. [シーン]-[＋]-[**Sprite3D**] を選択
 1. Sprite3D] を選択し [インスペクター] で各種設定  
     * [**Translation**]：x 0、**y 1**、**z -3**（時計表示位置）
-    * [**Scale**]：**0.25**、**0.25**、1（ピクセルアスペクト比･表示サイズはここで調整）
+    * [**Scale**]：**0.25**、**0.25**、1（ピクセルアスペクト比･表示サイズの調整）
 
 📝 [Viewport](https://docs.godotengine.org/ja/stable/classes/class_viewport.html?highlight=Viewport#viewport) の用意  
 
