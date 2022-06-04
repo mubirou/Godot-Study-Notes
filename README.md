@@ -1277,7 +1277,20 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 
 📝 デジタル時計用のフォント（[Digital Dismay](https://www.1001fonts.com/digital+clock-fonts.html) 等）を用意  
 
-📝 XXX
+📝 [Sprite3D](https://docs.godotengine.org/ja/stable/classes/class_sprite3d.html#sprite3d) の用意  
+
+1. [シーン]-[＋]-[**Sprite3D**] を選択
+1. Sprite3D] を選択し [インスペクター] で各種設定  
+    * **Translation**：x 0、**y 1**、**z -3**（時計表示位置）
+    * **Scale**：**0.25**、**0.25**、1（ピクセルアスペクト比･表示サイズはここで調整）
+
+📝 [Viewport](https://docs.godotengine.org/ja/stable/classes/class_viewport.html?highlight=Viewport#viewport) の用意  
+
+1. Sprite3D を選択し [子ノードを追加]-[**Viewport**] を選択
+1. Sprite3D を選択し [インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **Viewport** を選択
+1. Viewport を選択し [インスペクター] を設定  
+    * Size：**x 492**、**y 144**（フォントサイズにより要調整）  
+    * Render Target / **VFlip ✓**
 
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
