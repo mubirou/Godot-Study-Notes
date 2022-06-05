@@ -2,7 +2,7 @@
 
 ### <b>index</b>
 
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [床タイル](#220507) | [RayCastボタン](#220601) | [動画再生](#220602) | [デジタル時計](#220603) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [床タイル](#220507) | [RayCastボタン](#220601) | [動画再生](#220602) | [デジタル時計](#220603) | [Oculus Air Link](#220604) |
 ***
 
 <a id="外部スクリプトエディタ"></a>
@@ -1081,6 +1081,8 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 <a id="220601"></a>
 # <b>RayCastボタン</b>
 
+レーザーポインタの実装メモ（手作業配置編）。右人差し指トリガーで選択（≒Click ）すると選んだオブジェクトの名前が返る。  
+
 📝 選択するオブジェクトの用意  
   1. [立方体](#プリミティブ)などを用意
   1. 上記を選択し [子ノードを追加]-[**KinematicBody**]
@@ -1338,6 +1340,27 @@ func loopClock():
 Meta Quest 40.0、Oculus Link（Oculusアプリ）  
 作成者：夢寐郎  
 作成日：2022年06月04日  
+[[TOP]](#TOP)
+
+
+<a id="220604"></a>
+# <b>Oculus Air Link</b>
+
+1. **Oculusアプリ**の用意
+    1. Windows 上で [oculus.com/setup](https://www.oculus.com/setup/) から [OCULUS QUEST]（初代の場合）の [ソフトウェアをダウンロード] を選択  
+    【注意】"**Quest 2**"の場合は [QUEST 2] の [QUEST2 PCアプリをダウンロード] を選択します
+    1. ダウンロードした OculusSetup.exe をダブルクリックしインストール  
+    ～しばらく時間がかかります☕～
+
+1. Quest 上の [アプリ]-[Settings]-[試験中]-[**Air Link**] をオン
+
+1. Quest コントローラーの [MENU] ボタンを押しメニューを表示し、時間が表示されている部分を選択
+ 
+
+実行環境：Windows 10、Godot 3.4.4
+Meta Quest 40.0、Oculusアプリ  
+作成者：夢寐郎  
+作成日：2022年06月05日  
 [[TOP]](#TOP)
 
 
