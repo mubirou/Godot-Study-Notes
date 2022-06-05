@@ -1355,12 +1355,14 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 
 📝 **Oculus Air Link** の有効化  
   * Quest 上の [アプリ]-[Settings]-[試験中]-[**Air Link**] をオン
+  * Oculus アプリ上での設定は現在は不要
 
-📝 **Oculus Air Link** の実行  
+📝 **Oculus Air Link** の起動  
   1. Quest コントローラーの [MENU] ボタンを押しメニューを表示し、時間が表示されている部分をトリガーで選択
   1. [**Oculus Air Link**] ボタンを選択
   1. [**利用可能なPC**] を選択し [**ペアリング**]
-  1. Quest 本体に表示される7桁の**ペアリングコード**と PC 上に表示される「Air Linkペアリング」のコードを [**確認**]  
+  1. Quest 本体に表示される7桁の**ペアリングコード**と PC の Oculus アプリ上に表示される「Air Linkペアリング」のコードを [**確認**]  
+  1. Quest 本体上の指示に従い [**起動**]
 
 📝 **Godot Engine** の実行  
   * Godot の [▶] を押して Quest + Godot が同時再生されれば成功！
