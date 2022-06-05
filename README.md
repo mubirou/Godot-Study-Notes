@@ -1367,7 +1367,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 📝 **Godot Engine** の実行  
   * Godot の [▶] を押して Quest + Godot が同時再生されれば成功！
 
-⚠ 有線の [Oculus Link](#220501) と比較するとかなり不安定
+⚠ 有線の [Oculus Link](#220501) と比較するとかなり不安定（Oculus 本体上で [**Air Linkビットレート**] を [**固定**]（10Mbps）にするとやや安定）  
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
