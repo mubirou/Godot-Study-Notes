@@ -1413,7 +1413,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 1. 引続き [**Albedo**]-[**Texture**]-[新規 **ViewportTexture**] を選択
 1. 表示された [Viewport]-[編集]-[**Viewport Path**]-[**割り当て..**] から上記で作成した **Viewport** を選択  
 
-  💡 プログラムで表示させる場合…  
+    💡 プログラムで表示させる場合…  
   1. XXXX
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
