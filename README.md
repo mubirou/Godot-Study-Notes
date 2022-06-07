@@ -1405,7 +1405,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
     * **Rotation**：**x 90**、y 0、z 0
     * **Scale**：**x 1.5**、y 1、z 1（∵640:480=**1.5**:1）
 
-📝 **PlaneMesh** に **Viewport** を表示
+📝 **PlaneMesh** に **Viewport** を表示する
 1. 上記で作成した MeshInstance（PlaneMesh）の [インペクター] を開く
 1. [**Material**]-[新規 **SpatialMaterial**] を選択
 1. 表示された球型の右側にある [v]-[編集]-[**Resource**] を選択し次の通りに設定  
