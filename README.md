@@ -1378,8 +1378,15 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 <a id="220605"></a>
 # <b>VR空間に2Dシーンを表示</b>
 
+VR 空間上に 640x480px の 2D シーン（Node2D.tscn）を表示する  
+
 1. VR コンテンツ開発の [諸準備](#220501) をする
-1. 
+1. 大元の Spatial を選択し [子ノードを追加]-[**MeshInstance**] を選択
+1. [インスペクター]-[Mesh]-[新規**PlaneMesh**] を選択
+1. 引続き [インスペクター]-[Transform] を次の通りに変更  
+    * Transform：x 0、**y 1**、**z -3**  
+    * Rotation：**x 90**、y 0、z 0
+    * Scale：**x 1.5**、y 1、z 1
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
