@@ -1429,34 +1429,6 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 
 <a id="XXX"></a>
-# <b>平面に文字表示</b>
-
-### これは編集中の項目です
-
-1. [シーン]-[＋]-[Sprite3D]
-1. [Sprite3D]-[＋子ノードを追加]-[**Viewport**]
-1. [Sprite3D]-[インスペクター]-[**Texture**]-[新規 **ViewportTexture**]-[（上記の）Viewport]
-1. [Viewport]-[インスペクター]-[**Size**]-[x 512, y 512]
-1. [Viewport]-[子ノードを追加]-[**Panel**]
-1. [Panel]-[**ブランチをシーンとして保存**]→"Panel.tscn"
-1. [Panel]-[インスペクター]-[Margin]-[**Right** 512, **Botton** 512]
-1. [Panel] の領域に **.png** ファイルをドラッグ＆ドロップ
-1. [Panel]-[子ノードを追加]-[**Label**]
-1. [Label]-[インスペクター]-[Text]-"**〇〇〇〇**"
-1. [Label]-[Theme Overrides]-[Fonts]-[新規 **DynamicFont**]
-1. [DynamicFont]-[編集]-[Settings]-[**Size**]-[32]
-1. [DynamicFont]-[編集]-[Font]-[Font Data]-[新規 **DynamicFontData**]
-1. [DynamicFontData]-[**Font Path**]-"**KosugiMaru-Regular.ttf**"
-1. [DynamicFont]-[Settings]-[Use Mipmaps]-[✓] する？
-1. [Sprite3D]-[インスペクター]-[**Flip V**]
-
-実行環境：Windows 10、Godot 3.4.4、Meta Quest（初代）v.40  
-作成者：夢寐郎  
-作成日：202X年XX月XX日  
-[[TOP]](#TOP)
-
-
-<a id="XXX"></a>
 # <b>XXXXX</b>
 
 1. XXX
