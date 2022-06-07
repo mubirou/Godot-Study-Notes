@@ -1405,6 +1405,13 @@ VR コンテンツ開発の [諸準備](#220501) をする
     * **Rotation**：**x 90**、y 0、z 0
     * **Scale**：**x 1.5**、y 1、z 1（∵640:480=**1.5**:1）
 
+📝 **PlaneMesh** に **Viewport** を表示
+1. 上記で作成した MeshInstance（PlaneMesh）の [インペクター] を開く
+1. [**Material**]-[新規 **SpatialMaterial**] を選択
+1. 表示された球型の右側にある [v]-[編集]-[**Resource**] を選択し次の通りに設定  
+    * **Local Top Scene**：**✓オン**
+1. 
+
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月07日  
