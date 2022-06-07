@@ -1414,8 +1414,15 @@ VR コンテンツ開発の [諸準備](#220501) をする
 1. 表示された [Viewport]-[編集]-[**Viewport Path**]-[**割り当て..**] から上記で作成した **Viewport** を選択  
 
     💡 プログラムで表示させる場合…  
-  1. XXXX
+    1. MeshInstance（PlaneMesh）の [インペクター] を開く
+    1. [**Geometry**]-[**Material Override**]-[新規 **SpatialMaterial**] を選択
+    1. 大元の Spatial を右クリック → [**スクリプトをアタッチ**] を選び **.gd** を作成し以下の通りに記述  
+    ```gdscript
+    extends Spatial
 
+    func _ready():
+      $MeshInstance.material_override.albedo_texture = $Viewport.get_texture()
+    ```
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月07日  
