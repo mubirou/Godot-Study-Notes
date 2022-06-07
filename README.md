@@ -1381,7 +1381,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 VR 空間上に 640x480px の 2D シーン（Node2D.tscn）を表示する  
 
 📝 諸準備  
-VR コンテンツ開発の [諸準備](#220501) をする
+  VR コンテンツ開発の [諸準備](#220501) をする
 
 📝 **Viewport** の作成
 1. 大元の Spatial を選択し [子ノードを追加]-[**Viewport**] を選択
