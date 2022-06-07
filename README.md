@@ -1397,7 +1397,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
     * [Offset]-[**Centered**]：**オフ**
     * [Transform]-[**Position**]：**x 0**、**y 0**
 
-📝 **PlaneMesh**（2Dシーンを表示）の作成
+📝 **PlaneMesh** の作成（2Dシーンの表示用）
 1. 大元の Spatial を選択し [子ノードを追加]-[**MeshInstance**] を選択
 1. [インスペクター]-[Mesh]-[新規 **PlaneMesh**] を選択
 1. 引続き [インスペクター]-[Transform] を次の通りに変更  
