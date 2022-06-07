@@ -1413,8 +1413,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 1. 引続き [**Albedo**]-[**Texture**]-[新規 **ViewportTexture**] を選択
 1. 表示された [Viewport]-[編集]-[**Viewport Path**]-[**割り当て..**] から上記で作成した **Viewport** を選択  
 
-    💡 プログラムで表示させる場合 1～5の代わりに以下を実行…  
-    1. MeshInstance（PlaneMesh）の [インペクター] を開く
+    💡 プログラムで表示させる場合 2～5の代わりに以下を実行…  
     1. [**Geometry**]-[**Material Override**]-[新規 **SpatialMaterial**] を選択
     1. 大元の Spatial を右クリック → [**スクリプトをアタッチ**] を選び **.gd** を作成し以下の通りに記述  
     ```gdscript
