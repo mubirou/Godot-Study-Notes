@@ -1405,6 +1405,13 @@ VR コンテンツ開発の [諸準備](#220501) をする
     * **Rotation**：**x 90**、y 0、z 0
     * **Scale**：**x 1.5**、y 1、z 1（∵640:480=**1.5**:1）
 
+（ここまでの作業の階層は以下の通り）  
+  Spatial  
+　  ├ FPController  
+　  ├ **Viewport**  
+　  │   └ **Node2D**（2Dシーン/**.tscn**）  
+　  └ MeshInstance（PlaneMesh/これに2Dシーンを表示）  
+
 📝 **PlaneMesh** に **Viewport** を表示する
 1. 上記で作成した MeshInstance（PlaneMesh）の [インペクター] を開く
 1. [**Material**]-[新規 **SpatialMaterial**] を選択
