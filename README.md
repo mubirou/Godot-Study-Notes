@@ -1429,7 +1429,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
     func _ready():
       $MeshInstance.material_override.albedo_texture = $Viewport.get_texture()
     ```
-参考：[godot-demo-projects](https://github.com/godotengine/godot-demo-projects/tree/master/viewport/2d_in_3d)  
+参考：[GODOT Asset Library](https://godotengine.org/asset-library/asset/129)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月07日  
