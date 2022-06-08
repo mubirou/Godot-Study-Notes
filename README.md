@@ -1447,6 +1447,13 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 [Environment]：default_env.tres
 
+📝 **WorldEnvironment** の作成  
+
+1. 大元の Spatial を選択し [子ノードを追加]-[**orldEnvironment**] を選択
+1. WorldEnvironment を選択し [インスペクター] を設定  
+    * **Environment**：[クイックロード]-[**default_env.tres**]
+
+📝 **default_env.tres** の設定
 
 1. [ファイルシステム]-[default_env.tres] を次の通りに設定
     1. [Background]  
