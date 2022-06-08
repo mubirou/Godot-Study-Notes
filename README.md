@@ -1439,6 +1439,37 @@ VR コンテンツ開発の [諸準備](#220501) をする
 <a id="XXX"></a>
 # <b>XXXXX</b>
 
+1. [WorldEnvironment]-[インスペクタ]-[Environment]-[新規 Environment]-[編集] で各種設定  
+    * [Background]  
+      * [Mode]：[Sky]
+      * [Sky]：[新規 PanoramaSky]
+          * [Panorama]-[新規 StreamTexture]-[Load Path]：  
+
+[Environment]：default_env.tres
+
+1. [ファイルシステム]-[default_env.tres] を次の通りに設定
+  1. [Background]  
+    * Mode：Sky
+    * Sky：PanoramaSky
+  1. [Tonemap]  
+    * Mode：Filmic
+    * Expsure：1.2
+    * White：6
+  1. [Ssao]
+    * Enabled：✓
+    * Light Affect：0.78
+    * Quality：Hight
+
+実行環境：Windows 10、Godot 3.4.4  
+作成者：夢寐郎  
+作成日：202X年XX月XX日  
+更新日：202X年XX月XX日  
+[[TOP]](#TOP)
+
+
+<a id="XXX"></a>
+# <b>XXXXX</b>
+
 1. XXX
     ```c#
     XXXX
