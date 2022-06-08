@@ -1439,13 +1439,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 <a id="XXX"></a>
 # <b>XXXXX</b>
 
-1. [WorldEnvironment]-[インスペクタ]-[Environment]-[新規 Environment]-[編集] で各種設定  
-    * [Background]  
-      * [Mode]：[Sky]
-      * [Sky]：[新規 PanoramaSky]
-          * [Panorama]-[新規 StreamTexture]-[Load Path]：  
-
-[Environment]：default_env.tres
+1. 
 
 📝 **WorldEnvironment** の作成  
 
@@ -1458,7 +1452,8 @@ VR コンテンツ開発の [諸準備](#220501) をする
 1. [ファイルシステム]-[default_env.tres] を次の通りに設定
     1. [Background]  
         * Mode：Sky
-        * Sky：PanoramaSky
+        * Sky：新規 PanoramaSky
+            * Panorama：〇〇.hdr をドラッグ＆ドロップ
     1. [Tonemap]  
         * Mode：Filmic
         * Expsure：1.2
