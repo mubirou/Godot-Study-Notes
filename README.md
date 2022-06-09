@@ -1454,10 +1454,13 @@ VR コンテンツ開発の [諸準備](#220501) をする
     * Sky：[新規 **PanoramaSky**]-[編集]  
         * **Panorama**：360°画像（**.jpg** [.hdr](https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%A4%E3%83%80%E3%82%A4%E3%83%8A%E3%83%9F%E3%83%83%E3%82%AF%E3%83%AC%E3%83%B3%E3%82%B8%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8) **.png**）をドラッグ＆ドロップ
 
+1. 引続き [**default_env.tres**]-[インスペクター]-[Sky]-[PanoramaSky]-[編集]-[**Radiance Size**] を **512** に設定
+
 参考：[GODOT Asset Library](https://godotengine.org/asset-library/asset/123)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月09日  
+更新日：2022年06月10日  
 [[TOP]](#TOP)
 
 
