@@ -1439,8 +1439,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 <a id="220606"></a>
 # <b>360°パノラマ</b>
 
-📝 360°画像の用意（.jpg .hdr .png）  
-  * https://pixexid.com/search/360%20panorama
+📝 [360°画像](https://pixexid.com/search/360%20panorama)の用意（.jpg .hdr .png）  
 
 📝 **WorldEnvironment** の作成  
 
@@ -1452,14 +1451,13 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 1. [ファイルシステム]-[**default_env.tres**]-[Background] を次の通りに設定  
     * Mode：Sky
-    * Sky：新規 PanoramaSky
+    * Sky：新規 **PanoramaSky**
         * Panorama：360°画像をドラッグ＆ドロップ
 
 参考：[GODOT Asset Library](https://godotengine.org/asset-library/asset/123)  
-実行環境：Windows 10、Godot 3.4.4  
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2022年06月09日  
 [[TOP]](#TOP)
 
 
