@@ -1450,19 +1450,10 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 📝 **default_env.tres** の設定
 
-1. [ファイルシステム]-[**default_env.tres**] を次の通りに設定
-    1. [Background]  
-        * Mode：Sky
-        * Sky：新規 PanoramaSky
-            * Panorama：360°画像をドラッグ＆ドロップ
-    1. [Tonemap]  
-        * Mode：Filmic
-        * Expsure：1.2
-        * White：6
-    1. [Ssao]
-        * Enabled：✓
-        * Light Affect：0.78
-        * Quality：Hight
+1. [ファイルシステム]-[**default_env.tres**]-[Background] を次の通りに設定  
+    * Mode：Sky
+    * Sky：新規 PanoramaSky
+        * Panorama：360°画像をドラッグ＆ドロップ
 
 参考：[GODOT Asset Library](https://godotengine.org/asset-library/asset/123)  
 実行環境：Windows 10、Godot 3.4.4  
