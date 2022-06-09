@@ -1473,7 +1473,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 1. [インスペクター]-[**Material**]-[新規 **SpatialMaterial**]-[編集]  
     * [Flags]-[**Transparent**]：[Albedo]-[Color] の不透明度と連動
     * [Albedo]-[**Color**]：不透明度の設定可能（初期値 #ffffff）
-    * XXX
+    * [MEtallic]-[**Metallic**]：**1**
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
