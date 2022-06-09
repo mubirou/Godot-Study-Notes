@@ -1439,7 +1439,8 @@ VR コンテンツ開発の [諸準備](#220501) をする
 <a id="220606"></a>
 # <b>360°パノラマ</b>
 
-📝 360°画像の用意（.jpg .hdr 等）  
+📝 360°画像の用意（.jpg .hdr .png）  
+  * https://pixexid.com/search/360%20panorama
 
 📝 **WorldEnvironment** の作成  
 
@@ -1453,7 +1454,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
     1. [Background]  
         * Mode：Sky
         * Sky：新規 PanoramaSky
-            * Panorama：〇〇.hdr をドラッグ＆ドロップ
+            * Panorama：360°画像をドラッグ＆ドロップ
     1. [Tonemap]  
         * Mode：Filmic
         * Expsure：1.2
