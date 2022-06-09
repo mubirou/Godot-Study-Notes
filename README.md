@@ -1444,9 +1444,9 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 📝 **WorldEnvironment** の作成  
 
-1. 大元の Spatial を選択し [子ノードを追加]-[WorldEnvironment] を選択
+1. 大元の Spatial を選択し [子ノードを追加]-[**WorldEnvironment**] を選択
 1. WorldEnvironment を選択し [インスペクター] を設定  
-    * **Environment**：[クイックロード]-default_env.tres]
+    * Environment：[クイックロード]-default_env.tres]
 
 📝 **default_env.tres** の設定
 
