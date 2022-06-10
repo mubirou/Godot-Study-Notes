@@ -1479,6 +1479,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
     * [Metallic]-[**Metallic**]：**1**
     * [Roughness]-[**Roughness**]：**0.02**（光沢感）
 
+参考：[GODOT Asset Library](https://godotengine.org/asset-library/asset/123)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月10日  
