@@ -2,7 +2,7 @@
 
 ### <b>index</b>
 
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [床タイル](#220507) | [RayCastボタン](#220601) | [動画再生](#220602) | [デジタル時計](#220603) | [Oculus Air Link](#220604) | [VR空間に2Dシーンを表示](#220605) | [360°パノラマ](#220606) | [鏡面仕上げボール](#220607) | [ジョイスティック角度](#220608) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [床タイル](#220507) | [RayCastボタン](#220601) | [動画再生](#220602) | [デジタル時計](#220603) | [Oculus Air Link](#220604) | [VR空間に2Dシーンを表示](#220605) | [360°パノラマ](#220606) | [鏡面仕上げボール](#220607) | [ジョイスティック角度](#220608) | [Blender to Godot](#220609) |
 ***
 
 <a id="外部スクリプトエディタ"></a>
@@ -1517,6 +1517,29 @@ func _process(delta):
 
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_arvrcontroller.html#class-arvrcontroller-method-get-joystick-axis)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
+作成者：夢寐郎  
+作成日：2022年06月11日  
+[[TOP]](#TOP)
+
+
+<a id="220609"></a>
+# <b>Blender to Godot</b>
+
+本来は [Godot Blender Exporter](https://docs.godotengine.org/ja/stable/tutorials/assets_pipeline/escn_exporter/index.html#blender-escn-exporter) など最適解があるようですが、バージョンの関連の諸問題もあり、とりあえず成功した結果のみレポートします。  
+
+📝 Blender の作業
+
+1. [Blender] 上で書き出したいオブジェクトを選択
+1. [Blender]-[ファイル]-[エクスポート]-[Wavefront(.obj)] を選択し [**選択物のみ**] を **✓**  
+1. フォルダを Godot のプロジェクト内に指定し[OOBJのエクスポート] を選択
+
+📝 Godot の作業
+
+1. [ファイルシステム] 内に生成された **.obj** をステージ上にドラッグ＆ドロップ（注意：[シーン] へのドラッグ＆ドロップは不可）
+1. 配置したオブジェクトの [インスペクター]-[Transform]-[**Translation**] や [**Scale**] を設定（任意）
+1. 引続き [インスペクター]-[編集] を選択し適用されている各 [**Surface 〇**]-[**Material**]-[編集]-[**Metallic**] を **0** に変更
+
+実行環境：Windows 10、Godot 3.4.4、Blender 3.2.0  
 作成者：夢寐郎  
 作成日：2022年06月11日  
 [[TOP]](#TOP)
