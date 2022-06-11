@@ -1496,7 +1496,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 extends ARVRController
 
 func _process(delta):
-	if is_button_pressed(12): # 親指スティックにタッチ
+	if is_button_pressed(12): # 親指スティックにタッチ（オプション）
 		# 親指スティックの左右（-1.0...1.0）
 		var _levelLR = get_joystick_axis(0)
 
