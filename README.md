@@ -1525,7 +1525,7 @@ func _process(delta):
 <a id="220609"></a>
 # <b>Blender to Godot</b>
 
-本来は [Godot Blender Exporter](https://docs.godotengine.org/ja/stable/tutorials/assets_pipeline/escn_exporter/index.html#blender-escn-exporter) など最適解があるようですが、バージョンの関連の諸問題もあり、とりあえず成功した結果のみレポートします（今後要検証）。  
+本来は [Godot Blender Exporter](https://docs.godotengine.org/ja/stable/tutorials/assets_pipeline/escn_exporter/index.html#blender-escn-exporter) など最適解があるようですが、バージョンの関連の問題があり、とりあえず成功した方法をレポートします（今後要検証）。  
 
 📝 Blender の作業
 
