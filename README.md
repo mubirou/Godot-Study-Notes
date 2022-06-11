@@ -2,7 +2,7 @@
 
 ### <b>index</b>
 
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [床タイル](#220507) | [RayCastボタン](#220601) | [動画再生](#220602) | [デジタル時計](#220603) | [Oculus Air Link](#220604) | [VR空間に2Dシーンを表示](#220605) | [360°パノラマ](#220606) | [鏡面仕上げボール](#220607) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [床タイル](#220507) | [RayCastボタン](#220601) | [動画再生](#220602) | [デジタル時計](#220603) | [Oculus Air Link](#220604) | [VR空間に2Dシーンを表示](#220605) | [360°パノラマ](#220606) | [鏡面仕上げボール](#220607) | [ジョイスティック角度](#220608) |
 ***
 
 <a id="外部スクリプトエディタ"></a>
@@ -1483,6 +1483,41 @@ VR コンテンツ開発の [諸準備](#220501) をする
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月10日  
+[[TOP]](#TOP)
+
+
+<a id="220608"></a>
+# <b>ジョイスティック角度</b>
+
+1. VR コンテンツ開発の [諸準備](#220501) をする
+1. [FPController]-[LeftHandController]（または[RightHandController]）に
+アタッチされている [controller.gd] に以下の内容を記述
+```gdscript
+extends ARVRController
+
+func _process(delta):
+	if is_button_pressed(12): # 親指スティックにタッチ
+		# 親指スティックの左右（-1.0...1.0）
+		var _levelLR = get_joystick_axis(0)
+
+		# 親指スティックの上下（+1.0...-1.0）
+		var _levelTB = get_joystick_axis(1)
+
+		# 右親指スティックの角度（弧度法）
+		var _radianJoyStick = atan2(_levelTB, _levelLR)
+
+		# 右親指スティックの角度（度数法）
+		var _degreeJoyStick = rad2deg(_radianJoyStick)
+
+		if get_controller_id() == 1:
+			print("L: " + str(_degreeJoyStick)) # +180...-180
+		elif get_controller_id() == 2:
+			print("R: " + str(_degreeJoyStick)) # +180...-180
+```
+
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
+作成者：夢寐郎  
+作成日：2022年06月11日  
 [[TOP]](#TOP)
 
 
