@@ -1490,7 +1490,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 # <b>ジョイスティック角度</b>
 
 1. VR コンテンツ開発の [諸準備](#220501) をする
-1. [FPController]-[LeftHandController]（または[RightHandController]）に
+1. [FPController]-[[LeftHandController](#220502)]（または[[RightHandController](#220502)]）に
 アタッチされている [controller.gd] に以下の内容を記述
 ```gdscript
 extends ARVRController
@@ -1515,6 +1515,7 @@ func _process(delta):
 			print("R: " + str(_degreeJoyStick)) # +180...-180
 ```
 
+参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_arvrcontroller.html#class-arvrcontroller-method-get-joystick-axis)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月11日  
