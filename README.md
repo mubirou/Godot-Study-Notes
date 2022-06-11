@@ -1490,8 +1490,8 @@ VR コンテンツ開発の [諸準備](#220501) をする
 # <b>ジョイスティック角度</b>
 
 1. VR コンテンツ開発の [諸準備](#220501) をする
-1. [FPController]-[[LeftHandController](#220502)]（または[[RightHandController](#220502)]）に
-アタッチされている [controller.gd] に以下の内容を記述
+1. [[FPController](#220502)]-[[LeftHandController](#220502)]（または[[RightHandController](#220502)]）に
+アタッチされている [**controller.gd**] に以下の内容を記述
 ```gdscript
 extends ARVRController
 
