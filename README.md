@@ -1544,6 +1544,7 @@ func _process(delta):
 作成日：2022年06月11日  
 [[TOP]](#TOP)
 
+[物理](https://docs.godotengine.org/ja/stable/tutorials/physics/physics_introduction.html?highlight=%E7%89%A9%E7%90%86%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3#physics-introduction)エンジンを使ってオブジェクトを床に落下させる  
 
 <a id="220610"></a>
 # <b>RigidBodyとStaticBody</b>
@@ -1561,8 +1562,8 @@ VR コンテンツ開発の [諸準備](#220501) をする
 　  　  └ **CollisionShape**（BoxShape型）  
 　  　　　　└ **MeshInstance**（CubeMesh型＝床）  
 
-📖 **RigidBody**：物理エンジンの制御で動作  
-📖 **StaticBody**：衝突しても動かない
+📖 [RigidBody](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=Rigidbody#rigidbody)：衝突時にバウンド等する  
+📖 [StaticBody](https://docs.godotengine.org/ja/stable/classes/class_staticbody.html#staticbody)：衝突しても動かない
 
 💡 各種設定のポイント  
 
