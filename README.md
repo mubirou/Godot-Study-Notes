@@ -1554,10 +1554,10 @@ VR コンテンツ開発の [諸準備](#220501) をする
 📝 各種ノードを以下の通り配置  
   Spatial  
 　  ├ FPController  
-　  ├ Cube（**RigidBody**）  
+　  ├ **RigidBody**（"Cube〇"等に変更）  
 　  │   └ **CollisionShape**（BoxShape）  
 　  │　　　 └ **MeshInstance**（CubeMesh＝落下物）  
-　  └ Floor（**StaticBody**）  
+　  └ **StaticBody**（"Floor"等に変更）  
 　  　  └ **CollisionShape**（BoxShape）  
 　  　　　　└ **MeshInstance**（CubeMesh＝床）  
 
