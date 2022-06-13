@@ -1561,7 +1561,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 　  　  └ **CollisionShape**（BoxShape型）  
 　  　　　　└ **MeshInstance**（CubeMesh型＝床）  
 
-💡 設定ポイント  
+💡 各種設定のポイント  
 
 * オブジェクトの**大きさ**  
     * 各 **CollisionShape** の [Transform]-[**Scale**] で設定  
