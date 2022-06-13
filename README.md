@@ -1556,10 +1556,10 @@ VR コンテンツ開発の [諸準備](#220501) をする
 　  ├ FPController  
 　  ├ Cube（**RigidBody**）  
 　  │   └ **CollisionShape**（BoxShape）  
-　  │　　　 └ **MeshInstance**（CubeMesh＝見た目）  
+　  │　　　 └ **MeshInstance**（CubeMesh＝落下物）  
 　  └ Floor（**StaticBody**）  
 　  　  └ **CollisionShape**（BoxShape）  
-　  　　　　└ **MeshInstance**（CubeMesh＝見た目）  
+　  　　　　└ **MeshInstance**（CubeMesh＝床）  
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
