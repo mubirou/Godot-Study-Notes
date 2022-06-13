@@ -1565,11 +1565,11 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 * オブジェクトの"大きさ"  
     各 **CollisionShape** の [Transform]-[**Scale**] で設定  
-    注意：〇〇Body や MeshInstance の Scale は全て初期値  
+    【注意】〇〇Body や MeshInstance の Scale は全て初期値  
 
 * オブジェクトの"位置"や"角度"  
     各 **〇〇Body** の [Transform]-[**Translation**] と [**Rotation**] で設定  
-    注意：CollisionShape や MeshInstance の Translation と Rotation は全て初期値  
+    【注意】CollisionShape や MeshInstance の Translation と Rotation は全て初期値  
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
