@@ -1564,7 +1564,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 　  　　　　└ **MeshInstance**（CubeMesh型＝床）  
 
 📖 [RigidBody](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=Rigidbody#rigidbody)：衝突時にバウンド等する  
-📖 [StaticBody](https://docs.godotengine.org/ja/stable/classes/class_staticbody.html#staticbody)：衝突しても動かない（CPU負荷無し）
+📖 [StaticBody](https://docs.godotengine.org/ja/stable/classes/class_staticbody.html#staticbody)：衝突しても動かない（CPU負荷少ない）
 
 💡 各種設定のポイント  
 
