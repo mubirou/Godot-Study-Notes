@@ -1561,6 +1561,9 @@ VR コンテンツ開発の [諸準備](#220501) をする
 　  　  └ **CollisionShape**（BoxShape型）  
 　  　　　　└ **MeshInstance**（CubeMesh型＝床）  
 
+📖 **RigidBody**：物理エンジンの制御で動作  
+📖 **StaticBody**：衝突しても動かない
+
 💡 各種設定のポイント  
 
 * オブジェクトの**大きさ**  
