@@ -1548,7 +1548,7 @@ func _process(delta):
 <a id="220610"></a>
 # <b>RigidBodyとStaticBody</b>
 
-[物理](https://docs.godotengine.org/ja/stable/tutorials/physics/physics_introduction.html?highlight=%E7%89%A9%E7%90%86%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3#physics-introduction)エンジンを使ってオブジェクトを床に落下させる  
+[物理エンジン](https://docs.godotengine.org/ja/stable/tutorials/physics/physics_introduction.html?highlight=%E7%89%A9%E7%90%86%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3#physics-introduction)を使ってオブジェクトを床に落下させる  
 
 📝 諸準備  
 VR コンテンツ開発の [諸準備](#220501) をする
