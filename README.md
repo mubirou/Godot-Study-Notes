@@ -1565,11 +1565,11 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 * オブジェクトの**大きさ**  
     * 各 **CollisionShape** の [Transform]-[**Scale**] で設定  
-    * 〇〇Body や MeshInstance の [Scale] は全て初期値（"1"）  
+    * 〇〇Body や MeshInstance の [Scale] は全て初期値（"1"）のまま  
 
 * オブジェクトの**位置**や**角度**  
     * 各 **〇〇Body** の [Transform]-[**Translation**] と [**Rotation Degrees**] で設定  
-    * CollisionShape や MeshInstance の [Translation] と [Rotation Degrees] は全て初期値（"0"）  
+    * CollisionShape や MeshInstance の [Translation] と [Rotation Degrees] は全て初期値（"0"）のまま  
 
 * **重力加速度**の調整（ゆっくり落下させる）
     * 各 **〇〇Body** の **Gravity Scale** を「0.05」等に変更
