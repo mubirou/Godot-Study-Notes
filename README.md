@@ -1568,12 +1568,15 @@ VR コンテンツ開発の [諸準備](#220501) をする
     * 〇〇Body や MeshInstance の [Scale] は全て初期値（"1"）  
 
 * オブジェクトの**位置**や**角度**  
-    * **〇〇Body** の [Transform]-[**Translation**] と [**Rotation Degrees**] で設定  
+    * 各 **〇〇Body** の [Transform]-[**Translation**] と [**Rotation Degrees**] で設定  
     * CollisionShape や MeshInstance の [Translation] と [Rotation Degrees] は全て初期値（"0"）  
+
+* **重力加速度**の調整（ゆっくり落下させる）
+    * 各 **〇〇Body** の **Gravity Scale** を「0.05」等に変更
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
-作成日：2022年XX月XX日  
+作成日：2022年06月13日  
 [[TOP]](#TOP)
 
 
