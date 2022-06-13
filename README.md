@@ -1563,11 +1563,11 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 💡 設定ポイント  
 
-* オブジェクトの"大きさ"  
+* オブジェクトの"**大きさ**"  
     * 各 **CollisionShape** の [Transform]-[**Scale**] で設定  
     * 〇〇Body や MeshInstance の [Scale] は全て初期値（"1"）  
 
-* オブジェクトの"位置"や"角度"  
+* オブジェクトの"**位置**"や"**角度**"  
     * **〇〇Body** の [Transform]-[**Translation**] と [**Rotation Degrees**] で設定  
     * CollisionShape や MeshInstance の [Translation] と [Rotation Degrees] は全て初期値（"0"）  
 
