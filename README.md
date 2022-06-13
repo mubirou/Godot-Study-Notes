@@ -1563,10 +1563,10 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 💡 設定ポイント  
 
-* オブジェクトのサイズ  
+* オブジェクトの"大きさ"  
     各 **CollisionShape** の **Scale** で設定  
     （〇〇BodyやMeshInstanceのScaleは全て初期値）
-* オブジェクトの位置や角度  
+* オブジェクトの"位置"や"角度"  
     各 **〇〇Body** の **Translation** と **Rotation** で設定  （CollisionShapeやMeshInstanceのTranslationとRotationは全て初期値）
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
