@@ -1555,11 +1555,11 @@ VR コンテンツ開発の [諸準備](#220501) をする
   Spatial  
 　  ├ FPController  
 　  ├ **RigidBody**（"Cube〇"等に変更）  
-　  │   └ **CollisionShape**（BoxShape）  
-　  │　　　 └ **MeshInstance**（CubeMesh＝落下物）  
+　  │   └ **CollisionShape**（BoxShape型）  
+　  │　　　 └ **MeshInstance**（CubeMesh型＝落下物）  
 　  └ **StaticBody**（"Floor"等に変更）  
-　  　  └ **CollisionShape**（BoxShape）  
-　  　　　　└ **MeshInstance**（CubeMesh＝床）  
+　  　  └ **CollisionShape**（BoxShape型）  
+　  　　　　└ **MeshInstance**（CubeMesh型＝床）  
 
 💡 設定ポイント  
 
