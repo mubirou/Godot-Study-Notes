@@ -1561,10 +1561,17 @@ VR コンテンツ開発の [諸準備](#220501) をする
 　  　  └ **CollisionShape**（BoxShape）  
 　  　　　　└ **MeshInstance**（CubeMesh＝床）  
 
+💡 設定ポイント  
+
+* オブジェクトのサイズ  
+    各 **CollisionShape** の **Scale** で設定  
+    （〇〇BodyやMeshInstanceのScaleは全て初期値）
+* オブジェクトの位置や角度  
+    各 **〇〇Body** の **Translation** と **Rotation** で設定  （CollisionShapeやMeshInstanceのTranslationとRotationは全て初期値）
+
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2022年XX月XX日  
 [[TOP]](#TOP)
 
 
