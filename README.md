@@ -1588,6 +1588,20 @@ VR コンテンツ開発の [諸準備](#220501) をする
 <a id="XXX"></a>
 # <b>XXXXX</b>
 
+### この項目は編集中です
+
+* KinematicBody.move_and_slide(Vector3) # 指定Vector3だけ移動
+
+実行環境：Windows 10、Godot 3.4.4  
+作成者：夢寐郎  
+作成日：202X年XX月XX日  
+更新日：202X年XX月XX日  
+[[TOP]](#TOP)
+
+
+<a id="XXX"></a>
+# <b>XXXXX</b>
+
 1. XXX
     ```c#
     XXXX
