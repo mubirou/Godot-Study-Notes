@@ -1590,7 +1590,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 ### この項目は編集中です
 
-* 指定Vector3だけ移動
+* 指定 Vector3 だけ移動
 
     ```gdscript
     KinematicBody.move_and_slide(Vector3)
