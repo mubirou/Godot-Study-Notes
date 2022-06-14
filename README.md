@@ -1590,7 +1590,13 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 ### この項目は編集中です
 
-* KinematicBody.move_and_slide(Vector3) # 指定Vector3だけ移動  
+* 指定Vector3だけ移動
+
+    ```gdscript
+    KinematicBody.move_and_slide(Vector3)
+    ```
+
+* 
 
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
