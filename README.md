@@ -137,6 +137,26 @@
 <a id="ノードの移動"></a>
 # <b>ノードの移動</b>
 
+* **指定位置に移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
+
+    ```gdscript
+    Spatial.translation = Vector3(0,0,0)
+    Spatial.global_transform.origin = Vector3(0,0,0)
+    ```
+
+* **値だけ移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)）
+
+    ```gdscript
+    KinematicBody.move_and_slide(Vector3(0,0.1,0))
+    KinematicBody.move_and_collide(Vector3(0,0.1,0))
+    ```
+
+* **力を加える**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
+
+    ```gdscript
+    RigidBody.add_force(Vector3(0,200,0), Vector3.ZERO)
+    ```
+
 ### 【GDScript版】 
 
 * [Spatialノード](https://docs.godotengine.org/ja/stable/tutorials/3d/introduction_to_3d.html#spatial-node)（3Dモデル）の移動  
@@ -1582,46 +1602,6 @@ VR コンテンツ開発の [諸準備](#220501) をする
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月13日  
-[[TOP]](#TOP)
-
-
-<a id="XXX"></a>
-# <b>XXXXX</b>
-
-### この項目は編集中です
-
-* **指定位置に移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
-
-    ```gdscript
-    Spatial.translation = Vector3(0,0,0)
-    Spatial.global_transform.origin = Vector3(0,0,0)
-    ```
-
-* **値だけ移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)）
-
-    ```gdscript
-    KinematicBody.move_and_slide(Vector3(0,0.1,0))
-    KinematicBody.move_and_collide(Vector3(0,0.1,0))
-    ```
-
-* **力を加える**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
-
-    ```gdscript
-    RigidBody.add_force(Vector3(0,200,0), Vector3.ZERO)
-    ```
-
-* 要検証
-  * Vector3 move_toward（Vector3 to, float delta）  
-    向かってこのベクターを動かす to 固定することにより delta 量
-  
-  *  
-
-
-
-実行環境：Windows 10、Godot 3.4.4  
-作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
 [[TOP]](#TOP)
 
 
