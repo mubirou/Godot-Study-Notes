@@ -1590,14 +1590,14 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 ### この項目は編集中です
 
-* **指定 Vector3 だけ移動**（[KinematicBody](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)）
+* **値だけ移動**（[KinematicBody](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)）
 
     ```gdscript
     KinematicBody.move_and_slide(Vector3(0,0.1,0))
     KinematicBody.move_and_collide(Vector3(0,0.1,0))
     ```
 
-* **Vector3 の加速度を加える**（[RigidBody](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
+* **力を加える**（[RigidBody](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
 
     ```gdscript
     RigidBody.add_force(Vector3(0,200,0), Vector3.ZERO)
