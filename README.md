@@ -1590,11 +1590,11 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 ### この項目は編集中です
 
-* **指定位置に移動**（[KinematicBody](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)）
+* **指定位置に移動**（[Spatial](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
 
     ```gdscript
-    KinematicBody.translation = Vector3(0,0,0)
-    KinematicBody.global_transform.origin = Vector3(0,0,0)
+    Spatial.translation = Vector3(0,0,0)
+    Spatial.global_transform.origin = Vector3(0,0,0)
     ```
 
 * **値だけ移動**（[KinematicBody](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)）
