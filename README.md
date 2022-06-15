@@ -1590,6 +1590,13 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 ### この項目は編集中です
 
+* **指定位置に移動**（[KinematicBody](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)）
+
+    ```gdscript
+    KinematicBody.translation = Vector3(0,0,0)
+    KinematicBody.global_transform.origin = Vector3(0,0,0)
+    ```
+
 * **値だけ移動**（[KinematicBody](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)）
 
     ```gdscript
@@ -1602,6 +1609,37 @@ VR コンテンツ開発の [諸準備](#220501) をする
     ```gdscript
     RigidBody.add_force(Vector3(0,200,0), Vector3.ZERO)
     ```
+
+* 要検証
+  * Vector3 move_toward（Vector3 to, float delta）  
+    向かってこのベクターを動かす to 固定することにより delta 量
+  
+  *  
+
+
+
+実行環境：Windows 10、Godot 3.4.4  
+作成者：夢寐郎  
+作成日：202X年XX月XX日  
+更新日：202X年XX月XX日  
+[[TOP]](#TOP)
+
+
+<a id="XXX"></a>
+# <b>XXXXX</b>
+
+### この項目は書きかけです
+
+```gdscript
+func _ready():
+  set_physics_process(true)
+  set_max_contacts_reported(1)
+
+func _physics_process(delta):
+  var _bodies = get_colliding_bodies()
+  for _thisBody in _bodies:
+    print("collision :" + _thisBody.get_name())
+`````
 
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
