@@ -1597,7 +1597,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
     KinematicBody.move_and_collide(Vector3(0,0.1,0))
     ```
 
-* **Vector3 の加速度を加える**
+* **Vector3 の加速度を加える**（[RigidBody.add_force()](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#class-rigidbody-method-add-force)）
 
     ```gdscript
     RigidBody.add_force(Vector3(0,200,0), Vector3.ZERO)
