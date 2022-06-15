@@ -137,6 +137,8 @@
 <a id="ノードの移動"></a>
 # <b>ノードの移動</b>
 
+### 【移動の基本3種】 
+
 * **指定位置に移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
 
     ```gdscript
