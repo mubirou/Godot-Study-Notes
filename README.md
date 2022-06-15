@@ -2,7 +2,7 @@
 
 ### <b>index</b>
 
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [床タイル](#220507) | [RayCastボタン](#220601) | [動画再生](#220602) | [デジタル時計](#220603) | [Oculus Air Link](#220604) | [VR空間に2Dシーンを表示](#220605) | [360°パノラマ](#220606) | [鏡面仕上げボール](#220607) | [ジョイスティック角度](#220608) | [Blender to Godot](#220609) | [物理エンジン RigidBodyとStaticBody](#220610) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [床タイル](#220507) | [RayCastボタン](#220601) | [動画再生](#220602) | [デジタル時計](#220603) | [Oculus Air Link](#220604) | [VR空間に2Dシーンを表示](#220605) | [360°パノラマ](#220606) | [鏡面仕上げボール](#220607) | [ジョイスティック角度](#220608) | [Blender to Godot](#220609) | [物理エンジン RigidBodyとStaticBody](#220610) | [移動の基本3種](#220611) |
 ***
 
 <a id="外部スクリプトエディタ"></a>
@@ -137,28 +137,6 @@
 <a id="ノードの移動"></a>
 # <b>ノードの移動</b>
 
-### 【移動の基本3種】 
-
-* **指定位置に移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
-
-    ```gdscript
-    Spatial.translation = Vector3(0,0,0)
-    Spatial.global_transform.origin = Vector3(0,0,0)
-    ```
-
-* **値だけ移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)）
-
-    ```gdscript
-    KinematicBody.move_and_slide(Vector3(0,0.1,0))
-    KinematicBody.move_and_collide(Vector3(0,0.1,0))
-    ```
-
-* **力を加える**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
-
-    ```gdscript
-    RigidBody.add_force(Vector3(0,200,0), Vector3.ZERO)
-    ```
-
 ### 【GDScript版】 
 
 * [Spatialノード](https://docs.godotengine.org/ja/stable/tutorials/3d/introduction_to_3d.html#spatial-node)（3Dモデル）の移動  
@@ -283,10 +261,11 @@
   _ufo.Translate(new Vector2(1, 0));
   ```
 
+参考：[移動の基本3種](#220611)  
 実行環境：Windows 10、Godot 3.4.2  
 作成者：夢寐郎  
 作成日：2022年03月03日  
-更新日：2022年06月15日 移動の基本3種を追加  
+更新日：2022年03月05日 C#版を追加  
 [[TOP]](#TOP)
 
 
@@ -1604,6 +1583,36 @@ VR コンテンツ開発の [諸準備](#220501) をする
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月13日  
+[[TOP]](#TOP)
+
+
+<a id="220611"></a>
+# <b>移動の基本3種</b>
+
+* **指定位置に移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
+
+    ```gdscript
+    Spatial.translation = Vector3(0,0,0)
+    Spatial.global_transform.origin = Vector3(0,0,0)
+    ```
+
+* **値だけ移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)）
+
+    ```gdscript
+    KinematicBody.move_and_slide(Vector3(0,0.1,0))
+    KinematicBody.move_and_collide(Vector3(0,0.1,0))
+    ```
+
+* **力を加える**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
+
+    ```gdscript
+    RigidBody.add_force(Vector3(0,200,0), Vector3.ZERO)
+    ```
+
+参考：[ノードの移動](#ノードの移動)  
+実行環境：Windows 10、Godot 3.4.4  
+作成者：夢寐郎  
+作成日：2022年06月15日  
 [[TOP]](#TOP)
 
 
