@@ -1590,7 +1590,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 ### この項目は編集中です
 
-* **指定位置に移動**（[Spatial](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
+* **指定位置に移動**（[GODOT DOC](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
 
     ```gdscript
     Spatial.translation = Vector3(0,0,0)
