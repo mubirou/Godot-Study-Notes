@@ -1591,7 +1591,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 ### この項目は編集中です
 
 * 指定 Vector3 だけ移動  
-参考：[GODOT DOCS "KinematicBody"](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)  
+参考：[GODOT DOCS（KinematicBody）](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)  
 
     ```gdscript
     KinematicBody.move_and_slide(Vector3)
