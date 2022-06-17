@@ -1653,6 +1653,9 @@ VR コンテンツ開発の [諸準備](#220501) をする
 　  　  └ CollisionShape（SphereShape型）  
 　  　　　　└ MeshInstance（SphereShape型）  
 
+    * **Enemy**：StaticBody,KinematicBody,RigidBody（全モード）可
+    * **Player**：RigidBody（Rigid型）限定
+
     ```gdscript
     RigidBody.add_force(Vector3(0,200,0), Vector3.ZERO)
     ```
