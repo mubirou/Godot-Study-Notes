@@ -1589,7 +1589,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 <a id="220611"></a>
 # <b>移動の基本3種</b>
 
-* **指定位置に移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
+📝 **指定位置に移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
 
     ```gdscript
     Spatial.translation = Vector3(0,0,0)
@@ -1603,14 +1603,14 @@ VR コンテンツ開発の [諸準備](#220501) をする
     KinematicBody.move_and_slide(_disPos)
     ```
 
-* **値だけ移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)）
+📝 **値だけ移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)）
 
     ```gdscript
     KinematicBody.move_and_slide(Vector3(0,0.1,0))
     KinematicBody.move_and_collide(Vector3(0,0.1,0))
     ```
 
-* **力を加える**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
+📝 **力を加える**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
 
     ```gdscript
     RigidBody.add_force(Vector3(0,200,0), Vector3.ZERO)
