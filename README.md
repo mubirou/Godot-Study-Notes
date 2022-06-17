@@ -1745,7 +1745,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
-作成日：2022年06月XX日  
+作成日：2022年06月17日  
 [[TOP]](#TOP)
 
 
