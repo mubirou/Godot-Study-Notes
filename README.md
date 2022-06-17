@@ -1631,7 +1631,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 📝 **指定位置に移動**  
 
-Player と Enemy は物理的に重ならず Static 物体があると指定位置に移動できない（ **set_mode(0)** で動かすなど工夫が必要）  
+Player と Enemy は物理的に重なることはなく Enemy が Static の場合は指定位置に移動できない（ **set_mode(0)** で動かすなど工夫が必要）  
 
   Spatial  
 　  ├ FPController  
