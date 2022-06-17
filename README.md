@@ -1627,7 +1627,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 <a id="220612"></a>
 # <b>衝突判定</b>
 
-📝 **指定位置に移動**…で衝突判定  
+📝 **指定位置に移動…で衝突判定**  
 
 Player と Enemy は物理的に重なることはなく Enemy が Static の場合は指定位置に移動できない（ **set_mode(0)** で動かすなど工夫が必要）。Player.translation = Vector3 で移動させると確実に指定位置に移動するが「衝突判定」はできない。「衝突判定」が必要な場合は **KinematicBody.move_and_slide(Vector3)** で動かす必要がある。  
 
@@ -1668,7 +1668,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
         _enemy.set_mode(0) # 0(Rigid)
     ```
 
-📝 **値だけ移動**
+📝 **値だけ移動…で衝突判定**  
 
   Spatial  
 　  ├ FPController  
@@ -1704,7 +1704,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
         _enemy.set_mode(0) # 0(Rigid)
     ```
 
-📝 **力を加える**
+📝 **力を加える…で衝突判定**  
 
   Spatial  
 　  ├ FPController  
