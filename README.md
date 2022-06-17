@@ -1657,6 +1657,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 * **Player**：RigidBody（Rigid型）限定
 
     ```gdscript
+    # Main.gd
     extends Spatial
 
     var _player # RigidBody
