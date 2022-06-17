@@ -1644,20 +1644,38 @@ VR コンテンツ開発の [諸準備](#220501) をする
   Spatial  
 　  ├ FPController  
 　  ├ **Floor**（**StaticBody**）  
-　  │   └ CollisionShape（BoxShape型）  
-　  │　　　 └ MeshInstance（CubeMesh型）  
-　  ├ **Enemy**（**RigidBody**-**Static**型など）  
-　  │   └ CollisionShape（SphereShape型）  
-　  │　　　 └ MeshInstance（SphereShape型）  
-　  └ **Player**（**RigidBody**-**Rigid**型）  
-　  　  └ CollisionShape（SphereShape型）  
-　  　　　　└ MeshInstance（SphereShape型）  
+　  │   └ CollisionShape（BoxShape 型）  
+　  │　　　 └ MeshInstance（CubeMesh 型）  
+　  ├ **Enemy**（**RigidBody**-**Static**型 など）  
+　  │   └ CollisionShape（SphereShape 型）  
+　  │　　　 └ MeshInstance（SphereShape 型）  
+　  └ **Player**（**RigidBody**-**Rigid** 型）  
+　  　  └ CollisionShape（SphereShape 型）  
+　  　　　　└ MeshInstance（SphereShape 型）  
 
 * **Enemy**：Static / Kinematic / RigidBody（全 Mode 可）
 * **Player**：RigidBody（Rigid型）限定
 
     ```gdscript
-    RigidBody.add_force(Vector3(0,200,0), Vector3.ZERO)
+    extends Spatial
+
+    var _player # RigidBody
+    var _floor # StaticBody
+    var _count = 0
+
+    func _ready():
+      _floor = get_node("Floor")
+      _player = get_node("RigidBody_Player")
+      _player.add_force(Vector3(-30,0,0), Vector3.ZERO)
+
+    func _physics_process(delta):
+      var _enemyList = _player.get_colliding_bodies()
+      if _enemyList.size() != 0:
+        for _theEnemy in _enemyList:
+          if (_theEnemy != _floor):
+            _theEnemy.set_mode(0) # 0(Rigid), 1(Static), 2(Charactr), 3(Kinematic)
+            _count += 1
+            print(str(_theEnemy) + ": " + str(_count))
     ```
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
