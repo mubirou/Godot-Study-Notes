@@ -1497,23 +1497,23 @@ VR コンテンツ開発の [諸準備](#220501) をする
 extends ARVRController
 
 func _process(delta):
-	if is_button_pressed(12): # 親指スティックにタッチ（オプション）
-		# 親指スティックの左右（-1.0...1.0）
-		var _levelLR = get_joystick_axis(0)
+  if is_button_pressed(12): # 親指スティックにタッチ（オプション）
+    # 親指スティックの左右（-1.0...1.0）
+    var _levelLR = get_joystick_axis(0)
 
-		# 親指スティックの上下（+1.0...-1.0）
-		var _levelTB = get_joystick_axis(1)
+    # 親指スティックの上下（+1.0...-1.0）
+    var _levelTB = get_joystick_axis(1)
 
-		# 右親指スティックの角度（弧度法）
-		var _radianJoyStick = atan2(_levelTB, _levelLR)
+    # 右親指スティックの角度（弧度法）
+    var _radianJoyStick = atan2(_levelTB, _levelLR)
 
-		# 右親指スティックの角度（度数法）
-		var _degreeJoyStick = rad2deg(_radianJoyStick)
+    # 右親指スティックの角度（度数法）
+    var _degreeJoyStick = rad2deg(_radianJoyStick)
 
-		if get_controller_id() == 1:
-			print("L: " + str(_degreeJoyStick)) # +180...-180
-		elif get_controller_id() == 2:
-			print("R: " + str(_degreeJoyStick)) # +180...-180
+    if get_controller_id() == 1:
+      print("L: " + str(_degreeJoyStick)) # +180...-180
+    elif get_controller_id() == 2:
+      print("R: " + str(_degreeJoyStick)) # +180...-180
 ```
 
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_arvrcontroller.html#class-arvrcontroller-method-get-joystick-axis)  
