@@ -1629,9 +1629,47 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 ### この項目は書きかけです
 
-📝 **指定位置に移動**
+📝 **指定位置に移動**  
+
+* 物理的に重ならない
+* Static 物体があると指定位置に移動できない  
+（set_mode(0) で動かすなど工夫が必要）  
+
+  Spatial  
+　  ├ FPController  
+　  ├ **Floor**（**StaticBody**）  
+　  │   └ CollisionShape（BoxShape 型）  
+　  │　　　 └ MeshInstance（CubeMesh 型）  
+　  ├ **Enemy**（**RigidBody**-**Static** 型など）  
+　  │   └ CollisionShape（SphereShape 型）  
+　  │　　　 └ MeshInstance（SphereShape 型）  
+　  └ **Player**（**KinematicBody** 型）  
+　  　  └ CollisionShape（SphereShape 型）  
+　  　　　　└ MeshInstance（SphereShape 型）  
+
+* **Enemy**：RigidBody（**Static** / **Kinematic** モードのみ）ほか
+* **Player**：**KinematicBody** 限定
 
     ```gdscript
+    # Main.gd
+    extends Spatial
+
+    var _player # KinematicBody Only
+    var _targetPos
+
+    func _ready():
+      _player = get_node("Player") # KinematicBody Only
+      _targetPos = Vector3(0, 1, -1)
+
+    func _physics_process(delta):
+      var _currentPos = _player.translation
+      var _disPos = _targetPos - _currentPos
+      _player.move_and_slide(_disPos)
+
+      if _player.get_slide_count() != 0:
+        print("衝突!")
+        var _enemy = _player.get_slide_collision(0).collider
+        _enemy.set_mode(0) # 0(Rigid)
     ```
 
 📝 **値だけ移動**
@@ -1658,7 +1696,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
     var _player # KinematicBody Only
 
     func _ready():
-      _player = get_node("Player") # KinematicBody
+      _player = get_node("Player") # KinematicBody Only
 
     func _physics_process(delta):
       _player.move_and_slide(Vector3(-0.1,0,0))
