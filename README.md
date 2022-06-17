@@ -1640,15 +1640,18 @@ VR コンテンツ開発の [諸準備](#220501) をする
     ```
 
 * **力を加える**
-  
+
   Spatial  
 　  ├ FPController  
-　  ├ **RigidBody**（"Cube〇"等に変更）  
-　  │   └ **CollisionShape**（BoxShape型）  
-　  │　　　 └ **MeshInstance**（CubeMesh型＝落下物）  
-　  └ **StaticBody**（"Floor"等に変更）  
-　  　  └ **CollisionShape**（BoxShape型）  
-　  　　　　└ **MeshInstance**（CubeMesh型＝床）  
+　  ├ **Floor**（**StaticBody**）  
+　  │   └ CollisionShape（BoxShape型）  
+　  │　　　 └ MeshInstance（CubeMesh型）  
+　  ├ **Enemy**（**RigidBody**-**Static**型）  
+　  │   └ CollisionShape（SphereShape型）  
+　  │　　　 └ MeshInstance（SphereShape型）  
+　  └ **Player**（**RigidBody**-**Rigid**型）  
+　  　  └ CollisionShape（SphereShape型）  
+　  　　　　└ MeshInstance（SphereShape型）  
 
     ```gdscript
     RigidBody.add_force(Vector3(0,200,0), Vector3.ZERO)
