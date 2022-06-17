@@ -1646,7 +1646,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 　  ├ **Floor**（**StaticBody**）  
 　  │   └ CollisionShape（BoxShape 型）  
 　  │　　　 └ MeshInstance（CubeMesh 型）  
-　  ├ **Enemy**（**RigidBody**-**Static**型 など）  
+　  ├ **Enemy**（**RigidBody**-**Static** 型など）  
 　  │   └ CollisionShape（SphereShape 型）  
 　  │　　　 └ MeshInstance（SphereShape 型）  
 　  └ **Player**（**RigidBody**-**Rigid** 型）  
