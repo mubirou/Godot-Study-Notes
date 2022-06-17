@@ -1631,7 +1631,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 📝 **指定位置に移動**  
 
-Player と Enemy は物理的に重なることはなく Enemy が Static の場合は指定位置に移動できない（ **set_mode(0)** で動かすなど工夫が必要）。Player.translation = Vector3 で移動させると確実に指定位置に移動するが衝突判定はできない。  
+Player と Enemy は物理的に重なることはなく Enemy が Static の場合は指定位置に移動できない（ **set_mode(0)** で動かすなど工夫が必要）。Player.translation = Vector3 で移動させると確実に指定位置に移動するが衝突判定はできない。衝突判定する場合は Player.move_and_slide(Vector3) で動かす必要がある。  
 
   Spatial  
 　  ├ FPController  
