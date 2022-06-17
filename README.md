@@ -1693,7 +1693,6 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
     var _player # RigidBody
     var _floor # StaticBody
-    var _count = 0
 
     func _ready():
       _floor = get_node("Floor")
@@ -1706,9 +1705,8 @@ VR コンテンツ開発の [諸準備](#220501) をする
         for _theEnemy in _enemyList:
           if (_theEnemy != _floor):
             print("衝突!")
+            print(_theEnemy)
             _theEnemy.set_mode(0) # 0(Rigid)
-            _count += 1
-            print(str(_theEnemy) + ": " + str(_count))
     ```
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
