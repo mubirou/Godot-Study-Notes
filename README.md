@@ -1624,26 +1624,39 @@ VR コンテンツ開発の [諸準備](#220501) をする
 [[TOP]](#TOP)
 
 
-<a id="XXX"></a>
-# <b>XXXXX</b>
+<a id="220612"></a>
+# <b>衝突判定</b>
 
 ### この項目は書きかけです
 
-```gdscript
-func _ready():
-  set_physics_process(true)
-  set_max_contacts_reported(1)
+* **指定位置に移動**
 
-func _physics_process(delta):
-  var _bodies = get_colliding_bodies()
-  for _thisBody in _bodies:
-    print("collision :" + _thisBody.get_name())
-`````
+    ```gdscript
+    ```
 
-実行環境：Windows 10、Godot 3.4.4  
+* **値だけ移動**
+
+    ```gdscript
+    ```
+
+* **力を加える**
+  
+  Spatial  
+　  ├ FPController  
+　  ├ **RigidBody**（"Cube〇"等に変更）  
+　  │   └ **CollisionShape**（BoxShape型）  
+　  │　　　 └ **MeshInstance**（CubeMesh型＝落下物）  
+　  └ **StaticBody**（"Floor"等に変更）  
+　  　  └ **CollisionShape**（BoxShape型）  
+　  　　　　└ **MeshInstance**（CubeMesh型＝床）  
+
+    ```gdscript
+    RigidBody.add_force(Vector3(0,200,0), Vector3.ZERO)
+    ```
+
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2022年06月XX日  
 [[TOP]](#TOP)
 
 
