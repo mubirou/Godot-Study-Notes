@@ -1674,7 +1674,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
       if _enemyList.size() != 0:
         for _theEnemy in _enemyList:
           if (_theEnemy != _floor):
-            _theEnemy.set_mode(0) # 0(Rigid), 1(Static), 2(Charactr), 3(Kinematic)
+            _theEnemy.set_mode(0) # 0(Rigid)
             _count += 1
             print(str(_theEnemy) + ": " + str(_count))
     ```
