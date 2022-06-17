@@ -1636,7 +1636,38 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 📝 **値だけ移動**
 
+  Spatial  
+　  ├ FPController  
+　  ├ **Floor**（**StaticBody**）  
+　  │   └ CollisionShape（BoxShape 型）  
+　  │　　　 └ MeshInstance（CubeMesh 型）  
+　  ├ **Enemy**（**RigidBody**-**Static** 型など）  
+　  │   └ CollisionShape（SphereShape 型）  
+　  │　　　 └ MeshInstance（SphereShape 型）  
+　  └ **Player**（**KinematicBody** 型）  
+　  　  └ CollisionShape（SphereShape 型）  
+　  　　　　└ MeshInstance（SphereShape 型）  
+
+* **Enemy**：RigidBody（**Static** / **Kinematic** モードのみ）ほか
+* **Player**：**KinematicBody** 限定
+
     ```gdscript
+    # Main.gd
+    extends Spatial
+
+    var _player # KinematicBody Only
+
+    func _ready():
+      _player = get_node("Player") # KinematicBody
+
+    func _physics_process(delta):
+      _player.move_and_slide(Vector3(-0.1,0,0))
+
+      if _player.get_slide_count() != 0:
+        print("衝突!")
+        # _enemy: RigidBody(Static or Kinematic Mode Only)
+        var _enemy = _player.get_slide_collision(0).collider
+        _enemy.set_mode(0) # 0(Rigid)
     ```
 
 📝 **力を加える**
@@ -1653,8 +1684,8 @@ VR コンテンツ開発の [諸準備](#220501) をする
 　  　  └ CollisionShape（SphereShape 型）  
 　  　　　　└ MeshInstance（SphereShape 型）  
 
-* **Enemy**：Static / Kinematic / RigidBody（全 Mode 可）
-* **Player**：RigidBody（Rigid型）限定
+* **Enemy**：RigidBody（全モード可）ほか
+* **Player**：**RigidBody**（**Rigid** 型）限定
 
     ```gdscript
     # Main.gd
@@ -1666,7 +1697,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
     func _ready():
       _floor = get_node("Floor")
-      _player = get_node("RigidBody_Player")
+      _player = get_node("Player") # RigidBody Only
       _player.add_force(Vector3(-30,0,0), Vector3.ZERO)
 
     func _physics_process(delta):
@@ -1674,6 +1705,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
       if _enemyList.size() != 0:
         for _theEnemy in _enemyList:
           if (_theEnemy != _floor):
+            print("衝突!")
             _theEnemy.set_mode(0) # 0(Rigid)
             _count += 1
             print(str(_theEnemy) + ": " + str(_count))
