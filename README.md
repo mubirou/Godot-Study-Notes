@@ -1753,8 +1753,6 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 <a id="220613"></a>
 # <b>Picture-in-Picture</b>
 
-### この項目は書きかけです
-
 📝 [Sprite3D](https://docs.godotengine.org/ja/stable/classes/class_sprite3d.html#sprite3d) の用意  
 
 1. [シーン]-[＋]-[**Sprite3D**] を選択
