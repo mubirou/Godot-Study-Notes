@@ -1806,10 +1806,17 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
   1. 名前を "BGM〇" "SE〇" 等に変更
   1. [BGM〇] or [SE〇]-[インスペクター]-[**Stream**]-[クイックロード] から **.ogg** / **.wav** ファイルを選択
 
-📖 プログラミング  
-  大元の Spatial にスクリプトをアタッチして以下のように記述  
-
+📖 プログラミング例  
   ```gdscript
+  var _BGM1
+  var _SE1
+  ……
+  _BGM1 = get_node("BGM1")
+  _SE1 = get_node("SE1")
+  _BGM1.play()
+  ……
+  _SE1.play()
+  _BGM1.stop()
   ```
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
