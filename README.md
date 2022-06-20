@@ -1757,8 +1757,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 📝 [Sprite3D](https://docs.godotengine.org/ja/stable/classes/class_sprite3d.html#sprite3d) の用意  
 
 1. [シーン]-[＋]-[**Sprite3D**] を選択
-1. Sprite3D] を選択し [インスペクター] で各種設定  
-    * **Flip V**：**✓**（上下反転）
+1. [Sprite3D] を選択し [インスペクター] で各種設定  
     * **Translation**：x 0、**y 1**、**z -3**（スクリーン表示位置）
     * **Scale**：**0.25**、**0.25**、1（ピクセルアスペクト比･表示サイズ）
 
@@ -1767,15 +1766,16 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 1. Sprite3D を選択し [子ノードを追加]-[**Viewport**] を選択
 1. Sprite3D を選択し [インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **Viewport** を選択
 1. Viewport を選択し [インスペクター] を設定  
-    * Size：**x 1920**、**y 1080**（動画の元サイズ）  
+    * Size：**x 640**、**y 480**（カメラの画像サイズ）  
+    * Render Target：**✓ V Flip**（垂直に反転）
 
-📝 [Camera](https://docs.godotengine.org/ja/stable/classes/class_videoplayer.html?highlight=Video#videoplayer) の用意
+📝 [Camera](https://docs.godotengine.org/ja/stable/classes/class_camera.html?highlight=Camera#camera) の用意
 
-1. Viewport を選択し [子ノードを追加]-[**VideoPlayer**] を選択
-1. VideoPlayer に上記の **.webm** ファイル等をドラッグ＆ドロップ
-1. VideoPlayer を選択し [インスペクター] を設定
-    * **Autoplay**：**✓**
-    * **Margin**：**Right 1920**、**Buttom 1080**（動画の元サイズ）  
+1. Viewport を選択し [子ノードを追加]-[**Camera**] を選択
+1. [Camera] を選択し [インスペクター] で各種設定  
+    * **Fov**（視野角）：任意（初期値70°/1～179°）
+    * **Translation**：任意（カメラの位置）
+    * **Rotation Degrees**：任意（カメラの角度）
 
 （階層は以下の通り）  
 　  ├ **Sprite3D**  
