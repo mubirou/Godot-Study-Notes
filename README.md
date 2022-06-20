@@ -1806,7 +1806,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 📖 **AudioStreamPlayer3D** の作成  
   1. [シーン]-[＋]-[**AudioStreamPlayer3D**] を選択
   1. 名前を "BGM〇" "SE〇" 等に変更
-  1. [BGM〇] or [SE〇]-[インスペクター]-[**Stream**]-[クイックロード] から .ogg / .mp3 ファイルを選択
+  1. [BGM〇] or [SE〇]-[インスペクター]-[**Stream**]-[クイックロード] から **.ogg** / **.mp3** ファイルを選択
 
 📖 プログラミング  
   1. 大元の Spatial   
