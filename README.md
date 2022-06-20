@@ -1793,7 +1793,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 
 ### この項目は書きかけです
 
-📖 Sound の用意  
+📖 サウンドの用意  
   1. 用途別サウンドファイルの用意  
     * **ループサウンド**：**.ogg**（.mp3 は一瞬音が途切れる）  
     * **効果音**：**.mp3**（.ogg または .wav でも可）   
@@ -1802,8 +1802,14 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
   1. [インスペクター]-[**LOOP**] を設定  
     * **効果音**：**オフ**  
     * **ループサウンド**：**オン**  
-  1. XXX
-  
+
+📖 **AudioStreamPlayer3D** の作成  
+  1. [シーン]-[＋]-[**AudioStreamPlayer3D**] を選択
+  1. 名前を "BGM〇" "SE〇" 等に変更
+  1. [BGM〇] or [SE〇]-[インスペクター]-[**Stream**]-[クイックロード] から .ogg / .mp3 ファイルを選択
+
+📖 プログラミング  
+  1. 大元の Spatial   
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
