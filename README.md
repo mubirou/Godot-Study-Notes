@@ -1791,8 +1791,6 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 <a id="220614"></a>
 # <b>BGM･SE</b>
 
-### この項目は書きかけです
-
 📖 サウンドの用意  
   1. 用途別サウンドファイルの用意  
     * **ループサウンド**：**.ogg**  
@@ -1810,18 +1808,23 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
   ```gdscript
   var _BGM1
   var _SE1
+
   ……
+  
   _BGM1 = get_node("BGM1")
   _SE1 = get_node("SE1")
   _BGM1.play()
+  
   ……
+  
   _SE1.play()
   _BGM1.stop()
   ```
 
+参考：[GODOT Asset Library](https://godotengine.org/asset-library/asset/515)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
+作成日：2022年06月20日  
 [[TOP]](#TOP)
 
 
