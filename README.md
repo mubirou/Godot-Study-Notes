@@ -1788,6 +1788,22 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 [[TOP]](#TOP)
 
 
+<a id="220614"></a>
+# <b>BGM･SE</b>
+
+### この項目は書きかけです
+
+📖 Sound の用意
+    1. **.wav** **.mp3** **.ogg** ファイルを Godot プロジェクトフォルダに置く
+    1. [Godot]-[ファイルシステム] のサウンドファイルをＷクリック
+    1. 
+
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
+作成者：夢寐郎  
+作成日：202X年XX月XX日  
+[[TOP]](#TOP)
+
+
 <a id="XXX"></a>
 # <b>XXXXX</b>
 
