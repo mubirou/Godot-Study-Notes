@@ -1269,6 +1269,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 　  │   └ **Viewport**  
 　  │　　 └ **VideoPlayer**  
 
+参考：[Picture-in-Picture](#220613)  
 実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2  
 Meta Quest 40.0、Oculus Link（Oculusアプリ）  
 作成者：夢寐郎  
