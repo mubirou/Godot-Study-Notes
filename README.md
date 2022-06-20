@@ -1823,6 +1823,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
   ```
 
 参考：[GODOT Asset Library](https://godotengine.org/asset-library/asset/515)  
+参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/tutorials/assets_pipeline/importing_audio_samples.html)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月20日  
