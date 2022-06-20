@@ -1795,7 +1795,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 
 📖 Sound の用意  
   1. **.wav** **.mp3** **.ogg** ファイルをプロジェクトフォルダに置く
-  1. [Godot]-[ファイルシステム] のサウンドファイルをＷクリック
+  1. [Godot]-[ファイルシステム] の .mp3 等をＷクリック
   1. XXXX
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
