@@ -1806,19 +1806,21 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 
 📖 プログラミング例  
   ```gdscript
+  # Main.gd
+  extends Spatial
+
   var _BGM1
   var _SE1
 
+  func _ready():
+    _BGM1 = get_node("BGM1")
+    _SE1 = get_node("SE1")
+    _BGM1.play()
+  
   ……
-  
-  _BGM1 = get_node("BGM1")
-  _SE1 = get_node("SE1")
-  _BGM1.play()
-  
-  ……
-  
-  _SE1.play()
-  _BGM1.stop()
+  func _〇〇Handler():
+    _SE1.play()
+    _BGM1.stop()
   ```
 
 参考：[GODOT Asset Library](https://godotengine.org/asset-library/asset/515)  
