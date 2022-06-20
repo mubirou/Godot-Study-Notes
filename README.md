@@ -1818,8 +1818,8 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
     _BGM1.play()
   
   func _xxHandler():
-    _SE1.play()
     _BGM1.stop()
+    _SE1.play()
   ```
 
 参考：[GODOT Asset Library](https://godotengine.org/asset-library/asset/515)  
