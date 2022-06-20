@@ -1817,7 +1817,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
     _SE1 = get_node("SE1")
     _BGM1.play()
   
-  func _〇〇Handler():
+  func _xxHandler():
     _SE1.play()
     _BGM1.stop()
   ```
