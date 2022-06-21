@@ -1881,6 +1881,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 1. 大元の Spatial にスクリプトをアタッチして以下のように記述  
 
   ```gdscript
+  # Main.gd
   extends Spatial
 
   var _secondHandCenter
