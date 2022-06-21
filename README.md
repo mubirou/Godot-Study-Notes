@@ -1869,8 +1869,8 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 
 1. [Blender(階層構造) to Godot](#220615) の作業を行う
 1. [secondBoard] を選択し右クリック → [子ノードを追加]-[**Spatial**]-[作成] を選択
-1. 名前を "Spatial" → "secondHandCenter" に変更
-1. [secondHand] を [secondHandCenter] 上にドラッグ＆ドロップ
+1. 名前を "Spatial" → "**secondHandCenter**" に変更
+1. [secondHand] を [**secondHandCenter**] 上にドラッグ＆ドロップ
 
 （階層構造は以下の通り）  
 　  ├ watchBoard（文字盤）  
