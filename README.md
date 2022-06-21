@@ -1887,7 +1887,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
   var _secondHandCenter
 
   func _ready():
-    _secondHandCenter = get_node("Watch/watchBoard/secondBoard/secondHanCenter")
+    _secondHandCenter = $Watch/watchBoard/secondBoard/secondHanCenter
 
   func _process(delta):
     var _now = OS.get_datetime()
