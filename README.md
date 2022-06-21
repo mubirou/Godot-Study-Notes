@@ -1866,14 +1866,15 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 <a id="220616"></a>
 # <b>回転軸の変更</b>
 
-1. [Blender(階層構造) to Godot](#220615) を参照  
+1. [Blender(階層構造) to Godot](#220615) の作業を行う
+1. XXXX  
 
 （例：スモールセコンド付時計）  
 　  ├ **watchBoard**（文字盤）  
 　  │   └ **secondBoard**（スモールセコンド部分）  
 　  │　　 └ **secondHand**（秒針）  
 
-1. 
+
 
 参考：[フタバゼミ](https://futabazemi.net/unity/pivot_change/)  
 実行環境：Windows 10、Godot 3.4.4、Blender 3.2.0、Meta Quest 40.0、Oculusアプリ  
