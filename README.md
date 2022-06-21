@@ -1835,12 +1835,13 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 # <b>Blender(階層構造) to Godot</b>
 
 📝 Blender の作業  
+
 1. [階層構造の設定](https://github.com/mubirou/Blender/tree/master/study-notes#%E9%9A%8E%E5%B1%A4%E6%A7%8B%E9%80%A0%E3%81%AE%E8%A8%AD%E5%AE%9A)をする  
 （例：スモールセコンド付時計）  
 　  ├ **watchBoard**（文字盤）  
 　  │   └ **secondBoard**（スモールセコンド部分）  
 　  │　　 └ **secondHand**（秒針）  
-1. 上記全体を選択する
+1. 上記の全てを選択する
 1. [ファイル]-[エクスポート]-[**glTF 2.0 (.glb/.gltf)**] を選択
 1. 以下の通り設定  
     * フォーマット：**glTFバイナリ (.glb)**
@@ -1849,26 +1850,31 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 
 📝 Godot の作業  
 
+1. [ファイルシステム]-[Watch]-[**Watch.glb**] を [シーン] にドラッグ＆ドロップ  
+1. [インスペクター]-[Transform] で位置やサイズを調整
+1. [シーン]-[Watch] を右クリック → [**ローカルにする**] を選択
+
 参考：[Blender to Godot](#220609)  
-実行環境：Windows 10、Godot 3.4.4、Blender 3.2.0、Meta Quest 40.0、Oculusアプリ  
+実行環境：Windows 10、Godot 3.4.4、Blender 3.2.0  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2022年06月21日  
 [[TOP]](#TOP)
 
 
 <a id="220616"></a>
 # <b>回転軸の変更</b>
 
-1. XXX
-    ```c#
-    XXXX
-    ```
-    * XXX
-    * XXXX
+1. [Blender(階層構造) to Godot](#220615) を参照  
+
+（例：スモールセコンド付時計）  
+　  ├ **watchBoard**（文字盤）  
+　  │   └ **secondBoard**（スモールセコンド部分）  
+　  │　　 └ **secondHand**（秒針）  
+
+1. 
 
 参考：[フタバゼミ](https://futabazemi.net/unity/pivot_change/)  
-実行環境：Windows 10、Godot 3.4.4  
+実行環境：Windows 10、Godot 3.4.4、Blender 3.2.0、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
 更新日：202X年XX月XX日  
