@@ -1845,7 +1845,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 1. 以下の通り設定  
     * フォーマット：**glTFバイナリ (.glb)**
     * 内容：**✓ 選択したオブジェクト**  
-1. Godot のプロジェクトフォルダー内に "Watch" フォルダを作成し "Watch.glb" として保存
+1. Godot のプロジェクトフォルダー内に "Watch" フォルダを作成し "**Watch.glb**" として保存
 
 📝 Godot の作業  
 
