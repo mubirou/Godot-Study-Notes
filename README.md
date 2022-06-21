@@ -1867,12 +1867,15 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 # <b>回転軸の変更</b>
 
 1. [Blender(階層構造) to Godot](#220615) の作業を行う
-1. XXXX  
+1. [secondBoard] を選択し右クリック → [子ノードを追加]-[**Spatial**]-[作成] を選択
+1. 名前を "Spatial" → "secondHandCenter" に変更
+1. [secondHand] を [secondHandCenter] 上にドラッグ＆ドロップ
 
-（例：スモールセコンド付時計）  
-　  ├ **watchBoard**（文字盤）  
-　  │   └ **secondBoard**（スモールセコンド部分）  
-　  │　　 └ **secondHand**（秒針）  
+（階層構造は以下の通り）  
+　  ├ watchBoard（文字盤）  
+　  │   └ secondBoard（スモールセコンド部分）  
+　  │　　 └ **secondHandCenter**（秒針の回転軸）  
+　  │　　   └ secondHand（秒針）  
 
 
 
