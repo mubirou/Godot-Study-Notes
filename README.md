@@ -1877,13 +1877,26 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 　  │　　└ **secondHandCenter**（秒針の回転軸）  
 　  │　　　 └ secondHand（秒針）  
 
+1. 大元の Spatial にスクリプトをアタッチして以下のように記述  
 
+  ```gdscript
+  extends Spatial
+
+  var _secondHandCenter
+
+  func _ready():
+    _secondHandCenter = get_node("Watch/watchBoard/secondBoard/secondHanCenter")
+
+  func _process(delta):
+    var _now = OS.get_datetime()
+    var _secondRad = -deg2rad(_now.second*6-90)
+    _secondHandCenter.rotation = Vector3(0, _secondRad, 0)
+  ```
 
 参考：[フタバゼミ](https://futabazemi.net/unity/pivot_change/)  
 実行環境：Windows 10、Godot 3.4.4、Blender 3.2.0、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2022年06月21日  
 [[TOP]](#TOP)
 
 
