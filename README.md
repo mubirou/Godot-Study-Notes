@@ -1834,15 +1834,20 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 <a id="220615"></a>
 # <b>Blender（階層構造）to Godot</b>
 
-1. XXX
-    ```c#
-    XXXX
-    ```
-    * XXX
-    * XXXX
+📝 Blender の作業  
+1. [階層構造の設定](https://github.com/mubirou/Blender/tree/master/study-notes#%E9%9A%8E%E5%B1%A4%E6%A7%8B%E9%80%A0%E3%81%AE%E8%A8%AD%E5%AE%9A)をする  
+
+（例：スモールセコンド付時計）  
+　  ├ **WatchBoard**  
+　  │   └ **立方体.001**  
+　  │　　 └ **立方体.002**  
+
+
+
+📝 Godot の作業  
 
 参考：[Blender to Godot](#220609)  
-実行環境：Windows 10、Godot 3.4.4  
+実行環境：Windows 10、Godot 3.4.4、Blender 3.2.0、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
 更新日：202X年XX月XX日  
