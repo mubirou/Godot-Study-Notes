@@ -1839,8 +1839,8 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 1. [階層構造の設定](https://github.com/mubirou/Blender/tree/master/study-notes#%E9%9A%8E%E5%B1%A4%E6%A7%8B%E9%80%A0%E3%81%AE%E8%A8%AD%E5%AE%9A)をする  
 
 （例：スモールセコンド付時計）  
-　  ├ **watchBoard**（文字盤）  
-　  │   └ **secondBoard**（スモールセコンド部分）  
+　  ├ **watchBoard**（時計全体の文字盤）  
+　  │   └ **secondBoard**（スモールセコンドの文字盤）  
 　  │　　 └ **secondHand**（秒針）  
 
 1. 上記の全てを選択する
@@ -1873,9 +1873,9 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 1. [secondHand] を [**secondHandCenter**] 上にドラッグ＆ドロップ
 
 （階層構造は以下の通り）  
-　  ├ watchBoard（文字盤）  
-　  │   └ secondBoard（スモールセコンド部分）  
-　  │　　└ **secondHandCenter**（秒針の回転軸）  
+　  ├ watchBoard（時計全体の文字盤）  
+　  │   └ secondBoard（スモールセコンドの文字盤）  
+　  │　　└ **secondHandCenter**（秒針の回転軸）←追加  
 　  │　　　 └ secondHand（秒針）  
 
 1. 大元の Spatial にスクリプトをアタッチして以下のように記述  
