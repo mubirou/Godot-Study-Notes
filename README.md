@@ -1874,7 +1874,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 （階層構造は以下の通り）  
 　  ├ watchBoard（文字盤）  
 　  │   └ secondBoard（スモールセコンド部分）  
-　  │　　 └ **secondHandCenter**（秒針の回転軸）  
+　  │　　└ **secondHandCenter**（秒針の回転軸）  
 　  │　　　 └ secondHand（秒針）  
 
 
