@@ -1593,17 +1593,17 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 📝 **指定位置に移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
 
-    ```gdscript
-    Spatial.translation = Vector3(0,0,0)
-    Spatial.global_transform.origin = Vector3(0,0,0)
-    ```
+  ```gdscript
+  Spatial.translation = Vector3(0,0,0)
+  Spatial.global_transform.origin = Vector3(0,0,0)
+  ```
 
-    ```gdscript
-    var _targetPos = Vector3(0, 0, 0)
-    var _currentPos = KinematicBody.translation
-    var _disPos = _targetPos - _currentPos
-    KinematicBody.move_and_slide(_disPos)
-    ```
+  ```gdscript
+  var _targetPos = Vector3(0, 0, 0)
+  var _currentPos = KinematicBody.translation
+  var _disPos = _targetPos - _currentPos
+  KinematicBody.move_and_slide(_disPos)
+  ```
 
 📝 **値だけ移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)）
 
