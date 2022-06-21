@@ -1607,16 +1607,16 @@ VR コンテンツ開発の [諸準備](#220501) をする
 
 📝 **値だけ移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)）
 
-    ```gdscript
-    KinematicBody.move_and_slide(Vector3(0,0.1,0))
-    KinematicBody.move_and_collide(Vector3(0,0.1,0))
-    ```
+  ```gdscript
+  KinematicBody.move_and_slide(Vector3(0,0.1,0))
+  KinematicBody.move_and_collide(Vector3(0,0.1,0))
+  ```
 
 📝 **力を加える**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
 
-    ```gdscript
-    RigidBody.add_force(Vector3(0,200,0), Vector3.ZERO)
-    ```
+  ```gdscript
+  RigidBody.add_force(Vector3(0,200,0), Vector3.ZERO)
+  ```
 
 参考：[ノードの移動](#ノードの移動)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
