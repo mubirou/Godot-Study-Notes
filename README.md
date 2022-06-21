@@ -1875,7 +1875,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 　  ├ watchBoard（文字盤）  
 　  │   └ secondBoard（スモールセコンド部分）  
 　  │　　 └ **secondHandCenter**（秒針の回転軸）  
-　  │　　   └ secondHand（秒針）  
+　  │　　　 └ secondHand（秒針）  
 
 
 
