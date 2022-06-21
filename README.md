@@ -1871,13 +1871,11 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 1. [secondBoard] を選択し右クリック → [子ノードを追加]-[**Spatial**]-[作成] を選択
 1. 名前を "Spatial" → "**secondHandCenter**" に変更
 1. [secondHand] を [**secondHandCenter**] 上にドラッグ＆ドロップ
-
 （階層構造は以下の通り）  
 　  ├ watchBoard（時計全体の文字盤）  
 　  │   └ secondBoard（スモールセコンドの文字盤）  
 　  │　　└ **secondHandCenter**（秒針の回転軸）←追加  
 　  │　　　 └ secondHand（秒針）  
-
 1. 大元の Spatial にスクリプトをアタッチして以下のように記述  
 
   ```gdscript
