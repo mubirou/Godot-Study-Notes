@@ -1933,8 +1933,8 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 　  ├ FPController  
 　  ├ 〇〇  
 　  │   ├ アーマチュア  
-　  │   │　 └ Skeleton
-　  │   │　　 └ 立方体
+　  │   │　 └ Skeleton  
+　  │   │　　 └ 立方体  
 　  │   └ **AnimationPlayer**（自動的に生成）  
 　  └ **AnimationTree**  
 
