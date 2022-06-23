@@ -1926,7 +1926,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 1. [ファイルシステム]-[〇〇]-[〇〇.glb] を [シーン] にドラッグ＆ドロップ（✕の場合はステージ上にドラッグ＆ドロップ＝原因不明･要調査）  
 1. [インスペクター]-[Transform] で位置やサイズを調整
 1. [シーン]-[〇〇] を右クリック → [ローカルにする] を選択
-1. 大元の Spatial を選択し [子ノードを追加]-[**AnimationTree**] を選択  
+1. 大元の Spatial を選択し [子ノードを追加]-[**[AnimationTree](https://docs.godotengine.org/ja/stable/tutorials/animation/animation_tree.html?highlight=StateMachine#using-animationtree)**] を選択  
 （階層構造は以下の通り）  
   Spatial  
 　  ├ FPController  
