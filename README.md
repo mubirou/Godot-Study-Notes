@@ -1927,6 +1927,16 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 1. [インスペクター]-[Transform] で位置やサイズを調整
 1. [シーン]-[〇〇] を右クリック → [ローカルにする] を選択
 1. 大元の Spatial を選択し [子ノードを追加]-[**AnimationTree**] を選択
+1. [**AnimationTree**]-[インスペクター]-[**Animation Player**] で〇〇の階層下にある **AnimationPlayer** を指定  
+（階層構造は以下の通り）  
+  Spatial  
+　  ├ FPController  
+　  ├ 〇〇  
+　  │   ├ アーマチュア  
+　  │   │　 └ Skeleton
+　  │   │　　 └ 立方体
+　  │   └ **AnimationPlayer**（自動的に生成）  
+　  └ **AnimationTree**  
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 作成者：夢寐郎  
