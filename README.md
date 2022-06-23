@@ -1908,14 +1908,12 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 📝 Blender の作業  
 
 1. Blender で[モデリング＆アニメーション](https://github.com/mubirou/Blender/tree/master/sample#001-%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC9%E3%83%9D%E3%83%BC%E3%82%BA)  
-
 （階層構造は以下の通り）  
 　  ├ アーマチュア  
 　  │   ├　アニメーション  
 　  │   ├　ポーズ  
 　  │   ├　アーマチュア  
 　  │   └　立方体  
-
 1. アーマチュア以下全てを選択する
 1. [ファイル]-[エクスポート]-[**glTF 2.0 (.glb/.gltf)**] を選択
 1. 以下の通り設定  
