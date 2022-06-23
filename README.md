@@ -1905,8 +1905,13 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 
 [キャラクターポーズ制御](https://github.com/mubirou/Unity3D/tree/master/sample#001-%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC9%E3%83%9D%E3%83%BC%E3%82%BA%E5%88%B6%E5%BE%A1) の Godot 版  
 
-1. Blender で[モデリング＆アニメーション](https://github.com/mubirou/Blender/tree/master/sample#001-%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC9%E3%83%9D%E3%83%BC%E3%82%BA)
-
+1. Blender で[モデリング＆アニメーション](https://github.com/mubirou/Blender/tree/master/sample#001-%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC9%E3%83%9D%E3%83%BC%E3%82%BA)  
+（階層構造は以下の通り）  
+　  ├ アーマチュア  
+　  │   ├　アニメーション  
+　  │   ├　ポーズ  
+　  │   ├　アーマチュア  
+　  │   └　立方体  
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 作成者：夢寐郎  
