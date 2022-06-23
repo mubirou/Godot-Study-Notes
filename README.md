@@ -1940,7 +1940,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
     * **Tree Root**：**AnimationNodeBlendTree**
     * **Anim Player**：〇〇の階層下にある **[AnimationPlayer](https://docs.godotengine.org/ja/stable/classes/class_animationtree.html#class-animationtree)**  
     * **Active**：**✓**オン
-1. [AnimationTree] 設定画面で右クリック → [**Transition**] を選択
+1. [AnimationTree] 画面で右クリック → [**Transition**] を選択
 1. [Transition]-[インスペクター]-[**Input Count**] でポーズ数を入力
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
