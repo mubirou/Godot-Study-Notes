@@ -1934,8 +1934,8 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 　  │   ├ アーマチュア  
 　  │   │　└ Skeleton  
 　  │   │　　 └ 立方体  
-　  │   └ **AnimationPlayer**（自動的に生成）  
-　  └ **AnimationTree**  
+　  │   └ **[AnimationPlayer](https://docs.godotengine.org/ja/stable/classes/class_animationtree.html#class-animationtree)**（自動的に生成）  
+　  └ **[AnimationTree](https://docs.godotengine.org/ja/stable/tutorials/animation/animation_tree.html?highlight=StateMachine#using-animationtree)**  
 1. [**AnimationTree**]-[インスペクター]-[**Animation Player**] で〇〇の階層下にある **AnimationPlayer** を指定  
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
