@@ -1926,8 +1926,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 1. [ファイルシステム]-[〇〇]-[〇〇.glb] を [シーン] にドラッグ＆ドロップ（✕の場合はステージ上にドラッグ＆ドロップ＝原因不明･要調査）  
 1. [インスペクター]-[Transform] で位置やサイズを調整
 1. [シーン]-[〇〇] を右クリック → [ローカルにする] を選択
-1. 大元の Spatial を選択し [子ノードを追加]-[**AnimationTree**] を選択
-1. [**AnimationTree**]-[インスペクター]-[**Animation Player**] で〇〇の階層下にある **AnimationPlayer** を指定  
+1. 大元の Spatial を選択し [子ノードを追加]-[**AnimationTree**] を選択  
 （階層構造は以下の通り）  
   Spatial  
 　  ├ FPController  
@@ -1937,6 +1936,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 　  │   │　　 └ 立方体  
 　  │   └ **AnimationPlayer**（自動的に生成）  
 　  └ **AnimationTree**  
+1. [**AnimationTree**]-[インスペクター]-[**Animation Player**] で〇〇の階層下にある **AnimationPlayer** を指定  
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 作成者：夢寐郎  
