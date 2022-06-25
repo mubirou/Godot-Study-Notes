@@ -1926,6 +1926,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 1. [ファイルシステム]-[〇〇]-[〇〇.glb] を [シーン] にドラッグ＆ドロップ（✕の場合はステージ上にドラッグ＆ドロップ＝原因不明･要調査）  
 1. [インスペクター]-[Transform] で位置やサイズを調整
 1. [シーン]-[〇〇] を右クリック → [ローカルにする] を選択
+1. [シーン]-[〇〇]-[**[AnimationPlayer](https://docs.godotengine.org/ja/stable/classes/class_animationtree.html#class-animationtree)**] を選択
 1. 大元の Spatial を選択し [子ノードを追加]-[**[AnimationTree](https://docs.godotengine.org/ja/stable/tutorials/animation/animation_tree.html?highlight=StateMachine#using-animationtree)**] を選択  
 （階層構造は以下の通り）  
   Spatial  
@@ -1940,10 +1941,12 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
     * **Tree Root**：**AnimationNodeBlendTree**
     * **Anim Player**：〇〇の階層下にある **[AnimationPlayer](https://docs.godotengine.org/ja/stable/classes/class_animationtree.html#class-animationtree)**  
     * **Active**：**✓**オン
-1. [AnimationTree] 画面で右クリック → [**Transition**] を選択
+1. [AnimationTree] 画面上で右クリック → [**Transition**] を選択
 1. [Transition]-[インスペクター]-[**Input Count**]：ポーズ数
 1. 引続き [Input 0]、[Input 1]...の [**Name**] を [Blender で設定したポーズ](https://github.com/mubirou/Unity3D/tree/master/sample#001-%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC9%E3%83%9D%E3%83%BC%E3%82%BA%E5%88%B6%E5%BE%A1)に合わせて変更  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202206251219.jpg)
+1. [AnimationTree] 画面上で右クリック → [**Animation**] を選択
+
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 作成者：夢寐郎  
