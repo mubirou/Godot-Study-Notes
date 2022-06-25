@@ -1948,7 +1948,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
     * [**Xfade Time**]：ポーズ遷移の時間（0.3秒程度）
     * [**Input 〇**]-[**Name**]：[Blender で設定したポーズ](https://github.com/mubirou/Unity3D/tree/master/sample#001-%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC9%E3%83%9D%E3%83%BC%E3%82%BA%E5%88%B6%E5%BE%A1)の名前 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202206251302.jpg)  
-1. [AnimationTree] 画面上で右クリック → [**Animation**] を選択
+1. [AnimationTree]（ノード設定画面）で右クリック → [**Animation**] を選択
 1. 上記の [**AnimationPlayer**] で設定したポーズを指定
 1. 同様にポーズの数繰返し、各ノードを接続  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202206251252.jpg)  
