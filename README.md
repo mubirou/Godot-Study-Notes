@@ -1921,7 +1921,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 
 📝 Godot の作業  
 
-1. [ファイルシステム]-[〇〇]-[〇〇.glb] を [シーン] にドラッグ＆ドロップ（✕の場合はステージ上にドラッグ＆ドロップ＝原因不明･要調査）  
+1. [ファイルシステム]-[〇〇]-[〇〇.glb] を [シーン] にドラッグ＆ドロップ（〇〇.glbに**✕**の印がついている場合はステージ上にドラッグ＆ドロップ＝原因不明･要調査）  
 1. [インスペクター]-[Transform] で位置やサイズを調整
 1. [シーン]-[〇〇] を右クリック → [ローカルにする] を選択
 1. [シーン]-[〇〇]-[**[AnimationPlayer](https://docs.godotengine.org/ja/stable/classes/class_animationtree.html#class-animationtree)**] をＷクリック
