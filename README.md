@@ -1942,7 +1942,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
     * **Tree Root**：**AnimationNodeBlendTree**
     * **Anim Player**：〇〇の階層下にある **[AnimationPlayer](https://docs.godotengine.org/ja/stable/classes/class_animationplayer.html?highlight=AnimationPlayer#animationplayer)**  
     * **Active**：**✓**オン
-1. [AnimationTree] 画面上で右クリック → [**Transition**] を選択
+1. [AnimationTree] 画面上（ノード設定画面）で右クリック → [**Transition**] を選択
 1. [Transition]-[インスペクター] で各種設定をする
     * [**Input Count**]：ポーズ数
     * [**Xfade Time**]：ポーズ遷移の時間
