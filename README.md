@@ -1953,6 +1953,22 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 1. 上記の [**AnimationPlayer**] で設定したポーズを指定
 1. 同様にポーズの数繰返し、各ノードを接続  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202206251252.jpg)  
+1. [**Transition**] の最下部のポーズ変更しスムーズな遷移を確認
+1. ポーズを変更したいタイミングにコードを記述（例）  
+
+```gdscript
+func TriggerDownHandlerR():
+if _rayCastR.get_collider() == null: return
+_selectCollider = _rayCastR.get_collider()
+
+var _cubeName = _selectCollider.get_parent().name
+if _cubeName == "CubeR":
+  $AnimationTree["parameters/state/current"] = 0
+elif _cubeName == "CubeY":
+  $AnimationTree["parameters/state/current"] = 1
+elif _cubeName == "CubeB":
+  $AnimationTree["parameters/state/current"] = 2
+```
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 作成者：夢寐郎  
