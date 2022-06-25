@@ -1927,7 +1927,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 1. [インスペクター]-[Transform] で位置やサイズを調整
 1. [シーン]-[〇〇] を右クリック → [ローカルにする] を選択
 1. [シーン]-[〇〇]-[**[AnimationPlayer](https://docs.godotengine.org/ja/stable/classes/class_animationtree.html#class-animationtree)**] をＷクリック
-1. ポーズを確認しながら [アニメーション]-[名前を変更] で "保留アクション〇" を [Blender で設定したポーズ](https://github.com/mubirou/Unity3D/tree/master/sample#001-%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC9%E3%83%9D%E3%83%BC%E3%82%BA%E5%88%B6%E5%BE%A1)の名前に変更（この画面で [**アニメーションループ**] をオンにする）    
+1. ポーズを確認しながら [アニメーション]-[名前を変更] で "保留アクション〇" を [Blender で設定したポーズ](https://github.com/mubirou/Unity3D/tree/master/sample#001-%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC9%E3%83%9D%E3%83%BC%E3%82%BA%E5%88%B6%E5%BE%A1)の名前に変更（この画面で [**アニメーションループ**] をオンにする）  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202206251244.jpg)  
 1. 大元の Spatial を選択し [子ノードを追加]-[**[AnimationTree](https://docs.godotengine.org/ja/stable/classes/class_animationplayer.html?highlight=AnimationPlayer#animationplayer)**] を選択  
 （階層構造は以下の通り）  
@@ -1958,16 +1958,16 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 
 ```gdscript
 func TriggerDownHandlerR():
-if _rayCastR.get_collider() == null: return
-_selectCollider = _rayCastR.get_collider()
+  if _rayCastR.get_collider() == null: return
+  _selectCollider = _rayCastR.get_collider()
 
-var _cubeName = _selectCollider.get_parent().name
-if _cubeName == "CubeR":
-  $AnimationTree["parameters/state/current"] = 0
-elif _cubeName == "CubeY":
-  $AnimationTree["parameters/state/current"] = 1
-elif _cubeName == "CubeB":
-  $AnimationTree["parameters/state/current"] = 2
+  var _cubeName = _selectCollider.get_parent().name
+  if _cubeName == "CubeR":
+    $AnimationTree["parameters/Transition/current"] = 0
+  elif _cubeName == "CubeY":
+    $AnimationTree["parameters/Transition/current"] = 1
+  elif _cubeName == "CubeB":
+    $AnimationTree["parameters/Transition/current"] = 2
 ```
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
