@@ -1951,7 +1951,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 1. [AnimationTree]（ノード設定画面）で右クリック → [**Animation**] を選択
 1. 上記の [**AnimationPlayer**] で設定したポーズを指定（下図参照）
 1. 同様にポーズの数繰返し、各ノードを接続（下図）<a id="220617-1"></a>  
-![image](https://github.com/mubirou/Godot/blob/main/jpg/202206251252.jpg)  
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202206261021.jpg)  
 1. [**Transition**] の最下部のポーズを変更し"スムーズな遷移"を確認
 1. ポーズを変更したいタイミングにコードを記述（例）  
 
