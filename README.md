@@ -1987,6 +1987,10 @@ func TriggerDownHandlerR():
 $AnimationTree["parameters/TimeScale/scale"] = 2
 ```
 
+* 備考  
+$AnimationTree["**parameters/TimeScale/scale**"]  
+
+
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/tutorials/animation/animation_tree.html#using-animationtree)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 作成者：夢寐郎  
