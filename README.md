@@ -1941,7 +1941,7 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 1. [**AnimationTree**]-[インスペクター] で各種設定  
     * **Tree Root**：**AnimationNodeBlendTree**
     * **Anim Player**：〇〇の階層下にある **[AnimationPlayer](https://docs.godotengine.org/ja/stable/classes/class_animationplayer.html?highlight=AnimationPlayer#animationplayer)**  
-    * **Active**：**✓**オン
+    * **Active**：**✓**オン（オンにすると [AnimationPlayer] でポーズの確認ができなくなります）
 1. [AnimationTree]（ノード設定画面）で右クリック → [**Transition**] を選択
 1. [Transition]-[インスペクター] で各種設定をする
     * [**Input Count**]：ポーズ数
