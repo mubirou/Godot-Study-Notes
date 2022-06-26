@@ -1987,7 +1987,7 @@ func TriggerDownHandlerR():
 $AnimationTree["parameters/TimeScale/scale"] = 2
 ```
 * 備考
-"**parameters/TimeScale/scale**" の値は [AnimationTree]-[インスペクター]-[Parameters] の値と同じ（下図） 
+"**parameters/TimeScale/scale**" の値は [AnimationTree]-[インスペクター]-[Parameters] の値と同じ（下図）  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202206261051.jpg)  
 
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/tutorials/animation/animation_tree.html#using-animationtree)  
@@ -1997,7 +1997,6 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 [[TOP]](#TOP)
 
 
-
 <a id="XXX"></a>
 # <b>XXXXX</b>
 
@@ -2005,7 +2004,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 1. プロジェクトを **[GLES3](https://docs.godotengine.org/ja/stable/tutorials/rendering/gles2_gles3_differences.html#differences-between-gles2-and-gles3)** に設定
 1. 任意の Spatial（Node3D）を選択し [子ノードを追加]-[**Particles**] を選択
-1. [Particles]-[インスペクター] で各種設定
+1. [Particles]-[インスペクター] で各種設定  
+    * [**Process MAterial**]：新規**ParticlesMaterial**
+    * [**Draw Passes**]-[Pass1]：新規**QuadMesh**
 
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_particles.html?highlight=Particles)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
