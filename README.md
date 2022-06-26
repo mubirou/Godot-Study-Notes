@@ -2009,7 +2009,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     * [**Draw Passes**]-[Pass1]：新規 **QuadMesh**
     * [**Geometry**]-[**Material Override**]：新規 **SpatialMaterial**
 1. 引続き [**Material Override**]-[編集] で各種設定  
-    * XXX
+    * [Flags]-[**Transparent**]：**✓**オン
+    * [Flags]-[**Unshaded**]：**✓**オン
+    * [Vertex Color]-[**Use As Albedo**]：**✓**オン
 
 
 参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)
