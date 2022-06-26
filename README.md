@@ -1981,13 +1981,16 @@ func TriggerDownHandlerR():
 1. [各ノードの接続](#220617-1)まで作業を行う
 1. [Animation] と [Transition] の間に [**TimeScale**] を追加（下図）  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202206261034.jpg)  
-1. XXX
+1. アニメーションの速度を変更したいタイミングにコードを記述（例）
+
+```gdscrip
+$AnimationTree["parameters/TimeScale/scale"] = 2
+```
 
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/tutorials/animation/animation_tree.html#using-animationtree)  
-実行環境：Windows 10、Godot 3.4.4  
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2022年06月26日  
 [[TOP]](#TOP)
 
 
@@ -2001,7 +2004,7 @@ func TriggerDownHandlerR():
     * XXX
     * XXXX
 
-実行環境：Windows 10、Godot 3.4.4  
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
 更新日：202X年XX月XX日  
