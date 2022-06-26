@@ -2012,6 +2012,8 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     * [Flags]-[**Transparent**]：**✓**オン
     * [Flags]-[**Unshaded**]：**✓**オン
     * [Vertex Color]-[**Use As Albedo**]：**✓**オン
+    * [Parameters]-[**Blend Mode**]：**✓**オン
+    * [Parameters]-[**Billboard Mode**]：**Particle Billboard**
 
 
 参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)
