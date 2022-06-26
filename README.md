@@ -1988,7 +1988,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 ```
 
 * 備考  
-$AnimationTree["**parameters/TimeScale/scale**"] の値は [AnimationTree]-[インスペクター]-[Parameters] の値と同値（下図）  
+$AnimationTree["**parameters/TimeScale/scale**"] の値は [AnimationTree]-[インスペクター]-[Parameters] の値と同じ（下図）  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202206261051.jpg)  
 
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/tutorials/animation/animation_tree.html#using-animationtree)  
