@@ -2027,7 +2027,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         * [Scale]-[**Scale Curve**]：新規 **CurveTexture**  
             * [**Scale Curve**]-[編集] で各種設定
               * カーブ上で右クリックで [**ポイントを追加**] [**ポイントを削除**] 可能
-
+        * [Angular Velocity]-[**Velocity**]：**15**
 
 YouTube 9:30/20:51
 
