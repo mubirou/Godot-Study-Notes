@@ -1,4 +1,4 @@
-# Godot Study Notes 2022<a id="TOP"></a>
+# Godot Study Notes<a id="TOP"></a>
 
 ### <b>index</b>
 
