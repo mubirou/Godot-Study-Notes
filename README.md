@@ -2031,7 +2031,8 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         * [Angular Velocity]-[**Velocity Random**]：**1**
         * [Color]-[**Color Ramp**]：新規 **GradientTexture**
           * [**GradientTexture**]-[編集] で各種設定
-            * XXX
+            * [**Gradient**]：新規 **Gradient**
+              * [**Gradient**]-[編集] で各種設定
 
 YouTube 9:30/20:51
 
