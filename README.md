@@ -2007,6 +2007,7 @@ $AnimationTree["**parameters/TimeScale/scale**"] の値は [AnimationTree]-[イ�
 1. 任意の Spatial（Node3D）を選択し [子ノードを追加]-[**Particles**] を選択
 1. [Particles]-[インスペクター]-[**Process Material**]-[新規**ParticlesMaterial**] を選択
 
+参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_particles.html?highlight=Particles)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
