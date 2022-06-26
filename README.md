@@ -2014,6 +2014,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     * [Vertex Color]-[**Use As Albedo**]：**✓**オン
     * [Parameters]-[**Blend Mode**]：**✓**オン
     * [Parameters]-[**Billboard Mode**]：**Particle Billboard**
+    * [Albedo]-[**Texture**]：〇〇**.png**
 
 
 参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)  
