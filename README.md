@@ -2007,9 +2007,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. [Particles]-[インスペクター] で各種設定  
     * [**Process MAterial**]：新規 **ParticlesMaterial**
     * [**Draw Passes**]-[Pass1]：新規 **QuadMesh**
-1. 引続き [インスペクター] の値を変更  
-    * [**Amount**]：4
     * [**Geometry**]-[**Material Override**]：新規 **SpatialMaterial**
+1. 引続き [**Material Override**]-[編集] で各種設定  
+    * XXX
 
 
 参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)
