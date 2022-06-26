@@ -2021,7 +2021,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         * [Angle]-[**Angle**]：**360**
         * [Angle]-[**Angle Random**]：1
         * [Emmision Shape]-[**Shape**]：**Sphere**
-        * [Emmision Shape]-[**Sphere Radius**]：**0.01～1**程度
+        * [Emmision Shape]-[**Sphere Radius**]：**0.01～1** 程度
 
 YouTube 9:30/20:51
 
