@@ -1988,8 +1988,8 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 ```
 
 * 備考  
-$AnimationTree["**parameters/TimeScale/scale**"]  
-
+$AnimationTree["**parameters/TimeScale/scale**"] の値は [AnimationTree]-[インスペクター]-[Parameters] の値と同値（下図）  
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202206261051.jpg)  
 
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/tutorials/animation/animation_tree.html#using-animationtree)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
