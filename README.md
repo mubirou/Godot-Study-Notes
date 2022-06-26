@@ -2016,7 +2016,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     * [Parameters]-[**Billboard Mode**]：**Particle Billboard**
 
 
-参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)
+参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)  
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_particles.html?highlight=Particles)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 作成者：夢寐郎  
