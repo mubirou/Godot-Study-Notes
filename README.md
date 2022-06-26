@@ -1978,8 +1978,10 @@ func TriggerDownHandlerR():
 <a id="220618"></a>
 # <b>アニメーション速度変更</b>
 
+1. [各ノードの接続](#220617-1)まで作業を行う
+1. XX
 
-
+参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/tutorials/animation/animation_tree.html#using-animationtree)  
 実行環境：Windows 10、Godot 3.4.4  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
