@@ -2007,6 +2007,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. [Particles]-[インスペクター] で各種設定  
     * [**Process MAterial**]：新規 **ParticlesMaterial**
     * [**Draw Passes**]-[Pass1]：新規 **QuadMesh**
+1. 引続き [インスペクター] の値を変更  
+    * [**Amount**]：4
+
 
 参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_particles.html?highlight=Particles)  
