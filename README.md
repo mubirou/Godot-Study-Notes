@@ -2007,15 +2007,15 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. [Particles]-[インスペクター] で各種設定  
     * [**Process MAterial**]：新規 **ParticlesMaterial**
     * [**Draw Passes**]-[Pass1]：新規 **QuadMesh**
-    * [**Geometry**]-[**Material Override**]：新規 **SpatialMaterial**
-1. 引続き [**Material Override**]-[編集] で各種設定  
-    * [Flags]-[**Transparent**]：**✓**オン
-    * [Flags]-[**Unshaded**]：**✓**オン
-    * [Vertex Color]-[**Use As Albedo**]：**✓**オン
-    * [Parameters]-[**Blend Mode**]：**✓**オン
-    * [Parameters]-[**Billboard Mode**]：**Particle Billboard**
-    * [Albedo]-[**Texture**]：**〇〇.png**（重要）
-    * XX 
+    * [**Geometry**]-[**Material Override**]：新規 **SpatialMaterial**  
+      引続き [**Material Override**]-[編集] で各種設定  
+        * [Flags]-[**Transparent**]：**✓**オン
+        * [Flags]-[**Unshaded**]：**✓**オン
+        * [Vertex Color]-[**Use As Albedo**]：**✓**オン
+        * [Parameters]-[**Blend Mode**]：**✓**オン
+        * [Parameters]-[**Billboard Mode**]：**Particle Billboard**
+        * [Albedo]-[**Texture**]：**〇〇.png**（重要）
+    * XXXXX
 
 参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)  
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_particles.html?highlight=Particles)  
