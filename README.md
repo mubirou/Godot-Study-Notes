@@ -2034,7 +2034,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
             * [**Gradient**]：新規 **Gradient**
               * [**Gradient**]-[編集] で各種設定
 
-YouTube 9:30/20:51
+YouTube 12:40/20:51
 
 参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)  
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_particles.html?highlight=Particles)  
