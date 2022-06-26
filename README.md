@@ -2022,7 +2022,12 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         * [Angle]-[**Angle**]：**360**
         * [Angle]-[**Angle Random**]：1
         * [Emmision Shape]-[**Shape**]：**Sphere**
-        * [Emmision Shape]-[**Sphere Radius**]：**0.01～1**程度
+        * [Emmision Shape]-[**Sphere Radius**]：**0.08～1**程度
+        * [Scale]-[**Scale**]：**1.2**
+        * [Scale]-[**Scale Curve**]：新規 **CurveTexture**  
+            * [**Scale Curve**]-[編集] で各種設定
+              * XXXX
+
 
 YouTube 9:30/20:51
 
