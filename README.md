@@ -2009,6 +2009,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     * [**Draw Passes**]-[Pass1]：新規 **QuadMesh**
 1. 引続き [インスペクター] の値を変更  
     * [**Amount**]：4
+    * [**Geometry**]-[**Material Override**]：新規 **SpatialMaterial**
 
 
 参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)
