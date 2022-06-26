@@ -2005,7 +2005,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. プロジェクトを **[GLES3](https://docs.godotengine.org/ja/stable/tutorials/rendering/gles2_gles3_differences.html#differences-between-gles2-and-gles3)** に設定
 1. 任意の Spatial（Node3D）を選択し [子ノードを追加]-[**Particles**] を選択
 1. [Particles]-[インスペクター] で各種設定  
-    * [**Process MAterial**]：新規 **ParticlesMaterial**
+    * [**Process Material**]：新規 **ParticlesMaterial**
     * [**Draw Passes**]-[Pass1]：新規 **QuadMesh**
     * [**Geometry**]-[**Material Override**]：新規 **SpatialMaterial**  
       引続き [**Material Override**]-[編集] で各種設定  
@@ -2015,7 +2015,8 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         * [Parameters]-[**Blend Mode**]：**✓**オン
         * [Parameters]-[**Billboard Mode**]：**Particle Billboard**
         * [Albedo]-[**Texture**]：**〇〇.png**（重要）
-    * XXXXX
+    * [**Process Material**] に戻り各種設定  
+        * [**Gravity**]：x 0、**y 0**、z 0
 
 参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)  
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_particles.html?highlight=Particles)  
