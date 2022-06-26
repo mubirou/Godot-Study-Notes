@@ -2003,7 +2003,7 @@ $AnimationTree["**parameters/TimeScale/scale**"] の値は [AnimationTree]-[イ�
 
 ### この項目は編集中です
 
-1. プロジェクトを [**[GLES3](https://docs.godotengine.org/ja/stable/tutorials/rendering/gles2_gles3_differences.html#differences-between-gles2-and-gles3)**] に設定
+1. プロジェクトを **[GLES3](https://docs.godotengine.org/ja/stable/tutorials/rendering/gles2_gles3_differences.html#differences-between-gles2-and-gles3)** に設定
 1. 任意の Node3D を選択し [子ノードを追加]-[**Particles**] を選択
 1. [シーン]-[Particles] を選びステージ上方の [パーティクル]-[**CPUパーティクルに変換**] を選択
 1. [シーン]-[Particles]-[インスペクター]-[**Process Material**]-[]
