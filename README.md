@@ -2014,7 +2014,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         * [Flags]-[**Unshaded**]：**✓**オン
         * [Vertex Color]-[**Use As Albedo**]：**✓**オン
         * [Parameters]-[**Blend Mode**]：**✓**オン
-        * [Parameters]-[**Billboard Mode**]：**Particle Billboard**
+        * [Parameters]-[**Billboard Mode**]：(**Particle Billboard**)
         * [Albedo]-[**Texture**]：**〇〇.png**（重要）
     * [**Process Material**] に戻り各種設定  
         * [**Gravity**]：x 0、**y 0**、z 0
