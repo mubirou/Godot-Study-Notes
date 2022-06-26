@@ -2005,7 +2005,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. プロジェクトを **[GLES3](https://docs.godotengine.org/ja/stable/tutorials/rendering/gles2_gles3_differences.html#differences-between-gles2-and-gles3)** に設定
 1. 任意の Spatial（Node3D）を選択し [子ノードを追加]-[**Particles**] を選択
 1. [Particles]-[インスペクター] で各種設定  
-    * [**Amount**]：パーティクルの数（100以上可）
+    * [**Amount**]：パーティクルの数（～90程度）
     * [**Process Material**]：新規 **ParticlesMaterial**
     * [**Draw Passes**]-[Pass1]：新規 **QuadMesh**
     * [**Geometry**]-[**Material Override**]：新規 **SpatialMaterial**  
@@ -2021,7 +2021,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         * [Angle]-[**Angle**]：**360**
         * [Angle]-[**Angle Random**]：1
         * [Emmision Shape]-[**Shape**]：**Sphere**
-        * [Emmision Shape]-[**Sphere Radius**]：**0.01～1**
+        * [Emmision Shape]-[**Sphere Radius**]：**0.01～1程度**
 
 参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)  
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_particles.html?highlight=Particles)  
