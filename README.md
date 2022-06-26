@@ -1979,7 +1979,9 @@ func TriggerDownHandlerR():
 # <b>アニメーション速度変更</b>
 
 1. [各ノードの接続](#220617-1)まで作業を行う
-1. XX
+1. [Animation] と [Transition] の間に [**TimeScale**] を追加（下図）  
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202206261034.jpg)  
+1. XXX
 
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/tutorials/animation/animation_tree.html#using-animationtree)  
 実行環境：Windows 10、Godot 3.4.4  
