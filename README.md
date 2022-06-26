@@ -2014,8 +2014,8 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     * [Vertex Color]-[**Use As Albedo**]：**✓**オン
     * [Parameters]-[**Blend Mode**]：**✓**オン
     * [Parameters]-[**Billboard Mode**]：**Particle Billboard**
-    * [Albedo]-[**Texture**]：**〇〇.png**
-
+    * [Albedo]-[**Texture**]：**〇〇.png**（重要）
+    * XX 
 
 参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)  
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_particles.html?highlight=Particles)  
