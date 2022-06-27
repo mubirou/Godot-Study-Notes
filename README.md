@@ -2016,7 +2016,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         * [Parameters]-[**Billboard Mode**]：**Particle Billboard**
         * [Albedo]-[**Texture**]：**〇〇.png**（👇例）  
         ![image](https://github.com/mubirou/Godot/blob/main/png/smoke.png)  
-        [KENNY](https://www.kenney.nl/assets?s=Particle+Pack+Free)のフリー素材も利用可能（"Particl Pack"-"spark_02.png"など）  
+        💡フリー素材 [KENNY](https://www.kenney.nl/assets?s=Particle+Pack+Free)（"Particl Pack"）  
     * [**Process Material**]-[**ParticlesMaterial**]-[編集] で各種設定  
         * [**Gravity**]：x 0、**y 0**、z 0
         * [**Initial Velocity**]-[Velocity]：(**0.6**)
