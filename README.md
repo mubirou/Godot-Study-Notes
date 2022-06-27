@@ -2051,12 +2051,19 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 <a id="220620"></a>
 # <b>外部テキストの読み書き</b>
 
+### この項目は書きかけです
+
 1. XXX
     ```c#
     XXXX
     ```
     * XXX
     * XXXX
+
+📝保存場所（[GODOT DOCS](https://docs.godotengine.org/en/3.4/tutorials/io/data_paths.html#accessing-persistent-user-data)）  
+
+* **user://** の場合  
+  C:\Users\◇◇\AppData\Roaming\Godot\app_userdata\〇〇\△△.dat  
 
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_file.html?highlight=File.new())（File）  
 参考：[GODOT DOCS](https://docs.godotengine.org/en/3.4/tutorials/io/data_paths.html)（File paths）  
