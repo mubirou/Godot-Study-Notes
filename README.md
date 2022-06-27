@@ -2039,8 +2039,6 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
         ![image](https://github.com/mubirou/Godot/blob/main/jpg/202206272104.jpg)  
 
-YouTube 12:40/20:51
-
 参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)  
 参考：[KENNY](https://www.kenney.nl/assets?s=Particle+Pack+Free)（フリー素材"Particl Pack"）  
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_particles.html?highlight=Particles)  
