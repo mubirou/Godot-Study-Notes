@@ -2019,7 +2019,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         ![image](https://github.com/mubirou/Godot/blob/main/png/smoke.png)  
     * [**Process Material**]-[**ParticlesMaterial**]-[編集] で各種設定  
         * [**Gravity**]：x 0、**y 0**、z 0
-        * [**Initial Velocity**]：(**0.6**)、(**0.4**)
+        * [**Initial Velocity**]：**0.6**（Random **0.4**)
         * [**Angle**]-[Angle]：**360**
         * [**Angle**]-[Angle Random]：1
         * [Emmision Shape]-[**Shape**]：**Sphere**
