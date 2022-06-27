@@ -2016,7 +2016,6 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         * [Parameters]-[**Billboard Mode**]：**Particle Billboard**
         * [Albedo]-[**Texture**]：**〇〇.png**（👇例）  
         ![image](https://github.com/mubirou/Godot/blob/main/png/smoke.png)  
-        💡フリー素材 [KENNY](https://www.kenney.nl/assets?s=Particle+Pack+Free)（"Particl Pack"）  
     * [**Process Material**]-[**ParticlesMaterial**]-[編集] で各種設定  
         * [**Gravity**]：x 0、**y 0**、z 0
         * [**Initial Velocity**]-[Velocity]：(**0.6**)
@@ -2043,6 +2042,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 YouTube 12:40/20:51
 
 参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)  
+参考：[KENNY](https://www.kenney.nl/assets?s=Particle+Pack+Free)（"Particl Pack"）  
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_particles.html?highlight=Particles)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 作成者：夢寐郎  
