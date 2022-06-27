@@ -1999,8 +1999,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 <a id="220619"></a>
 # <b>パーティクル</b>
-
-### この項目は編集中です
+（例）煙の生成方法  
 
 1. プロジェクトを **[GLES3](https://docs.godotengine.org/ja/stable/tutorials/rendering/gles2_gles3_differences.html#differences-between-gles2-and-gles3)** に設定
 1. 任意の Spatial（Node3D）を選択し [子ノードを追加]-[**Particles**] を選択
