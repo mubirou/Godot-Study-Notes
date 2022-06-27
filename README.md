@@ -2062,8 +2062,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 📝保存場所（[GODOT DOCS](https://docs.godotengine.org/en/3.4/tutorials/io/data_paths.html#accessing-persistent-user-data)）  
 
-* **user://** の場合  
-  C:\Users\◇◇\AppData\Roaming\Godot\app_userdata\〇〇\score.dat  
+* **user://〇〇.dat** の場合…  
+  C:\Users\◇◇\AppData\Roaming\Godot\app_userdata\△△\〇〇.dat  
+* **res://〇〇.dat** の場合…[プロジェクトのルート](https://docs.godotengine.org/ja/stable/tutorials/scripting/filesystem.html?highlight=res%3A%2F%2F#resource-path)に保存  
 
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_file.html?highlight=File.new())（File）  
 参考：[GODOT DOCS](https://docs.godotengine.org/en/3.4/tutorials/io/data_paths.html)（File paths）  
