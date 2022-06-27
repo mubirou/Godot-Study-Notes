@@ -2019,11 +2019,10 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         ![image](https://github.com/mubirou/Godot/blob/main/png/smoke.png)  
     * [**Process Material**]-[**ParticlesMaterial**]-[編集] で各種設定  
         * [**Gravity**]：x 0、y 0、z 0
-        * [**Initial Velocity**]：0.6（Random 0.4)
+        * [**Initial Velocity**]：0.6（Random：0.4)
         * [**Angle**]：360（Random 1）
-        * [**Emmision Shape**]：Sphere（Radius **0.08～1**程度）
-        * [Scale]-[**Scale**]：**1.2**
-        * [Scale]-[**Scale Curve**]：新規 **CurveTexture**  
+        * [**Emmision Shape**]：Sphere（Radius：0.08～1 程度）
+        * [**Scale**]：Scale 1.2（Scale Curve：新 CurveTexture）  
           * [**CurveTexture**]-[編集] で各種設定
             * カーブ上で右クリックで [**ポイントを追加**] [**ポイントを削除**] 可能
         * [**Angular Velocity**]-[Velocity]：**15**
