@@ -2021,6 +2021,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         * [**Gravity**]：x 0、**y 0**、z 0
         * [**Initial Velocity**]-[Velocity]：(**0.6**)
         * [**Initial Velocity**]-[Velocity Random]：(**0.4**)
+        * [**Linear Accel**]-[Accel]：(**-0.18**)
         * [Angle]-[**Angle**]：**360**
         * [Angle]-[**Angle Random**]：1
         * [Emmision Shape]-[**Shape**]：**Sphere**
@@ -2035,6 +2036,8 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
           * [**GradientTexture**]-[編集] で各種設定
             * [**Gradient**]：新規 **Gradient**
               * [**Gradient**]-[編集] で各種設定
+                * 右端のアルファ値を 0 にする（下図）  
+                ![image](https://github.com/mubirou/Godot/blob/main/jpg/202206272104.jpg)  
 
 YouTube 12:40/20:51
 
