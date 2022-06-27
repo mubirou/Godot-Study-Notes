@@ -2018,14 +2018,19 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         * [Albedo]-[**Texture**]：**〇〇.png**（👇例）  
         ![image](https://github.com/mubirou/Godot/blob/main/png/smoke.png)  
     * [**Process Material**]-[**ParticlesMaterial**]-[編集] で各種設定  
-        * [**Gravity**]：x 0、y 0、z 0
-        * [**Initial Velocity**]：0.6（**Random**：0.4)
-        * [**Angle**]：360（**Random** 1）
-        * [**Emmision Shape**]：**Sphere**（**Radius**：0.08～1 程度）
-        * [**Scale**]：1.2（**Scale Curve**：新 **CurveTexture**）  
+        * [**Gravity**]：x 0、**y 0**、z 0
+        * [**Initial Velocity**]-[Velocity]：(**0.6**)
+        * [**Initial Velocity**]-[Velocity Random]：(**0.4**)
+        * [Angle]-[**Angle**]：**360**
+        * [Angle]-[**Angle Random**]：1
+        * [Emmision Shape]-[**Shape**]：**Sphere**
+        * [Emmision Shape]-[**Sphere Radius**]：**0.08～1**程度
+        * [Scale]-[**Scale**]：**1.2**
+        * [Scale]-[**Scale Curve**]：新規 **CurveTexture**  
           * [**CurveTexture**]-[編集] で各種設定
             * カーブ上で右クリックで [**ポイントを追加**] [**ポイントを削除**] 可能
-        * [**Angular Velocity**]：15（**Random**：1）
+        * [**Angular Velocity**]-[Velocity]：**15**
+        * [**Angular Velocity**]-[Velocity Random]：**1**
         * [Color]-[**Color Ramp**]：新規 **GradientTexture**
           * [**GradientTexture**]-[編集] で各種設定
             * [**Gradient**]：新規 **Gradient**
