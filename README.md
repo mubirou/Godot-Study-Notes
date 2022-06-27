@@ -2037,6 +2037,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
             * [**Gradient**]：新規 **Gradient**
               * [**Gradient**]-[編集] で各種設定
                 * 右端のアルファ値を 0 にする（下図）  
+
         ![image](https://github.com/mubirou/Godot/blob/main/jpg/202206272104.jpg)  
 
 YouTube 12:40/20:51
