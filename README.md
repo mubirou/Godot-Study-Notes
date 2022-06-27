@@ -2025,8 +2025,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         * [**Scale**]：1.2（**Scale Curve**：新 **CurveTexture**）  
           * [**CurveTexture**]-[編集] で各種設定
             * カーブ上で右クリックで [**ポイントを追加**] [**ポイントを削除**] 可能
-        * [**Angular Velocity**]-[Velocity]：**15**
-        * [**Angular Velocity**]-[Velocity Random]：**1**
+        * [**Angular Velocity**]：15（**Random**：1）
         * [Color]-[**Color Ramp**]：新規 **GradientTexture**
           * [**GradientTexture**]-[編集] で各種設定
             * [**Gradient**]：新規 **Gradient**
