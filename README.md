@@ -2042,7 +2042,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 YouTube 12:40/20:51
 
 参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)  
-参考：[KENNY](https://www.kenney.nl/assets?s=Particle+Pack+Free)（"Particl Pack"）  
+参考：[KENNY](https://www.kenney.nl/assets?s=Particle+Pack+Free)（フリー素材"Particl Pack"）  
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_particles.html?highlight=Particles)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 作成者：夢寐郎  
