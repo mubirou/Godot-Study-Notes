@@ -2151,8 +2151,6 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 <a id="220622"></a>
 # <b>PHP+SQLiteの利用</b>
 
-### この項目は書きかけです
-
 📝 **PHP** + **SQLite** の動作確認  
 
 1. [XAMPP](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-)をインストール
