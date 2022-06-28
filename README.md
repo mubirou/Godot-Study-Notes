@@ -2125,12 +2125,25 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     return _text
   ```
 
+👉 関数の実行と JSON データの解析  
+  ```gscript
+  var _loadJSON = loadJSON() # String型
+  var _result = JSON.parse(_loadJSON) # JSONParseResult型
+  var _dic = _result.result # Dictionary or Array型
+  print(_dic["002"]["title"]) #-> VRコンテンツ開発ガイド 2017
+  print(_dic["002"]["isbn"]) #-> 978-4-8443-6666-9
+  print(_dic["002"]["price"]) #-> 2600
+  var _contents = _dic["002"]["contents"]
+  for _theContent in _contents:
+    var _chapter = _theContent["chapter"]
+    print(str(_chapter) + ":" + _theContent["content"]) #-> 1:近代VRの基礎知識 
+  ```
+
 参考：[外部テキストの読み書き](https://github.com/mubirou/Godot#%E5%A4%96%E9%83%A8%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%81%AE%E8%AA%AD%E3%81%BF%E6%9B%B8%E3%81%8D)  
 参考：[GDScript（連想配列）](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#%E9%80%A3%E6%83%B3%E9%85%8D%E5%88%97%E8%BE%9E%E6%9B%B8)  
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2022年06月28日  
 [[TOP]](#TOP)
 
 
