@@ -2169,25 +2169,26 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 1. http://localhost/test.php で実行
 
-📝 GDScript を記述
+📝 GDScript の記述例
 
   ```gdscript
+  # Main.gd
   extends Spatial
 
   func _ready():
-    var http_request = HTTPRequest.new()
-    add_child(http_request)
-    http_request.connect("request_completed", self, "_http_request_completed")
-    var error = http_request.request("http://localhost/test.php")
+    var _request = HTTPRequest.new()
+    add_child(_request)
+    _request.connect("request_completed", self, "completed")
+    _request.request("http://127.0.0.1/test.php")
 
-  func _http_request_completed(result, response_code, headers, body):
-    print(body.get_string_from_utf8())
+  func completed(arg1, arg2, arg3, arg4):
+    print(arg4.get_string_from_utf8())
   ```
 
-参考：[GODOT DOCS (HTTPRequest)](https://docs.godotengine.org/ja/stable/classes/class_httprequest.html?highlight=HTTPRequest)  
+参考：[GODOT DOCS (HTTPRequest）](https://docs.godotengine.org/ja/stable/classes/class_httprequest.html?highlight=HTTPRequest)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ、Apache 2.4.53、PHP 8.1.6、SQLite 3.36.0  
 作成者：夢寐郎  
-作成日：2022年XX月XX日  
+作成日：2022年06月29日  
 [[TOP]](#TOP)
 
 
