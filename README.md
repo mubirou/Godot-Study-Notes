@@ -2176,10 +2176,10 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
   extends Spatial
 
   func _ready():
-    var _request = HTTPRequest.new()
-    add_child(_request)
-    _request.connect("request_completed", self, "completed")
-    _request.request("http://127.0.0.1/test.php")
+    var _rq = HTTPRequest.new()
+    add_child(_rq)
+    _rq.connect("request_completed", self, "completed")
+    _rq.request("http://127.0.0.1/test.php")
 
   func completed(arg1, arg2, arg3, arg4):
     print(arg4.get_string_from_utf8())
