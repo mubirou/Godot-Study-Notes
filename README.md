@@ -2067,7 +2067,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
   💡◇◇は [プロジェクト]-[Application]-[Config]-[Name] に依存
 
 2. **[res://](https://docs.godotengine.org/ja/stable/tutorials/scripting/filesystem.html?highlight=res%3A%2F%2F#resource-path)** の場合…  
-  プロジェクトのルートに保存  
+  プロジェクトのルートに保存（Godot上では見えない）  
 
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_file.html?highlight=File.new())（File）  
 参考：[GODOT DOCS](https://docs.godotengine.org/en/3.4/tutorials/io/data_paths.html)（File paths）  
