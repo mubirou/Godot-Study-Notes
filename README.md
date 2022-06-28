@@ -2053,7 +2053,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 ### この項目は書きかけです
 
-1. 読み込み＆書き込み用関数  
+☞ 読み込み＆書き込み用関数  
 
   ```gdscript
   # 外部テキストの読み込み
@@ -2076,7 +2076,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     _file.close()
   ```
 
-1. 関数の実行例
+☞ 関数の実行例
 
   ```gdscript
   var _loadText = loadText()
