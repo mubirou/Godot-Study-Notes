@@ -2172,7 +2172,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
-Apache 2.4.53、PHP 8.1.6、SQLite 3.36.0
+Apache 2.4.53、PHP 8.1.6、SQLite 3.36.0  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
 更新日：202X年XX月XX日  
