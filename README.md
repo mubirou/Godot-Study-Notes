@@ -2167,7 +2167,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     ?>
     ```
 
-1. **http://localhost/test.php**（http://127.0.0.1/test.php）で実行
+1. **http://localhost/test.php**で実行
 
 
 
