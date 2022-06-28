@@ -2108,8 +2108,8 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 ### この項目は書きかけです
 
-1. [JSON データ](https://raw.githubusercontent.com/mubirou/Godot/main/json/sample.json)の準備
-1. [JSON 整形ツール](https://tools.m-bsys.com/development_tooles/json-beautifier.php)などで確認
+1. [JSONデータ](https://raw.githubusercontent.com/mubirou/Godot/main/json/sample.json)の準備
+1. [JSON整形ツール](https://tools.m-bsys.com/development_tooles/json-beautifier.php)などで確認
 1. Godot プルジェクトのルートに保存
 
 👉 外部 JSON データの読み込み用関数  
