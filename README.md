@@ -2053,11 +2053,10 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 ### この項目は書きかけです
 
-☞ 読み込み＆書き込み用関数  
+☞ 外部テキストの読み書き用関数  
 
   ```gdscript
-  # 外部テキストの読み込み
-  func loadText():
+  func loadText(): # 外部テキストの読み込み用
     var _file = File.new()
     # ファイルが無い場合は自動的に生成
     _file.open("res://save_text.dat", File.READ)
@@ -2066,8 +2065,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     _file.close()
     return _text
 
-  # 外部テキストの書き込み
-  func saveText(arg):
+  func saveText(arg): # 外部テキストの書き込み
     var _file = File.new()
     # ファイルが無い場合は自動的に生成
     _file.open("res://save_text.dat", File.WRITE)
@@ -2079,11 +2077,13 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 ☞ 関数の実行例
 
   ```gdscript
+  # 外部テキストの読み込み
   var _loadText = loadText()
   print("LoadText: " + _loadText)
-	```
+  ```
 
   ```gdscript
+  # 外部テキストの書き込み
   var _newText = OS.get_system_time_msecs()
   saveText(_newText)
   ```
@@ -2101,7 +2101,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 参考：[GODOT DOCS](https://docs.godotengine.org/en/3.4/tutorials/io/data_paths.html)（File paths）  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
+作成日：2022年06月28日  
 [[TOP]](#TOP)
 
 
