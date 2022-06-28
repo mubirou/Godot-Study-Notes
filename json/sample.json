@@ -1,0 +1,40 @@
+{
+	"001": {
+		"title": "Unity C# プログラミング入門",
+		"isbn": "978-4-7980-6268-6",
+		"price": "3400",
+		"contents": [
+			{
+				"chapter": 1,
+				"content": "ゲームで使うUnityの基本機能"
+			},
+			{
+				"chapter": 2,
+				"content": "ゲームのデータを管理する"
+			},
+			{
+				"chapter": 3,
+				"content": "アニメーションの活用"
+			}
+		]
+	},
+	"002": {
+		"title": "VRコンテンツ開発ガイド 2017",
+		"isbn": "978-4-8443-6666-9",
+		"price": "2600",
+		"contents": [
+			{
+				"chapter": 1,
+				"content": "近代VRの基礎知識"
+			},
+			{
+				"chapter": 2,
+				"content": "VRソフト開発環境"
+			},
+			{
+				"chapter": 3,
+				"content": "ソフトウェア開発"
+			}
+		]
+	}
+}
