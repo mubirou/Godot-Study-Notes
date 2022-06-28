@@ -2163,7 +2163,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         $con = new PDO('sqlite::memory:', null, null);
         $statement = $con->prepare('SELECT sqlite_version()');
         $statement->execute();
-        echo $statement->fetchColumn(); //=> 3.36.0
+        echo $statement->fetchColumn(); //-> 3.36.0
     ?>
     ```
 
@@ -2182,7 +2182,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     _rq.request("http://127.0.0.1/test.php")
 
   func completed(arg1, arg2, arg3, arg4):
-    print(arg4.get_string_from_utf8())
+    print(arg4.get_string_from_utf8()) #-> 3.36.0
   ```
 
 参考：[GODOT DOCS (HTTPRequest）](https://docs.godotengine.org/ja/stable/classes/class_httprequest.html?highlight=HTTPRequest)  
