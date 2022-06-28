@@ -2118,9 +2118,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     # ファイルが無い場合は自動的に生成
     _file.open("res://sample.json", File.READ)
     #_file.open("user://sample.json", File.READ)
-    var _text = _file.get_as_text()
+    var _joson = _file.get_as_text()
     _file.close()
-    return _text
+    return _joson
   ```
 
 👉 関数の実行と JSON データの解析  
