@@ -2053,12 +2053,28 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 ### この項目は書きかけです
 
-1. XXX
-    ```c#
-    XXXX
-    ```
-    * XXX
-    * XXXX
+1. 読み込み＆書き込み用関数  
+
+  ```gdscript
+  # 外部テキストの読み込み
+  func loadText():
+    var _file = File.new()
+    # ファイルが無い場合は自動的に生成
+    _file.open("res://save_text.dat", File.READ)
+    #_file.open("user://save_text.dat", File.READ)
+    var _text = _file.get_as_text()
+    _file.close()
+    return _text
+
+  # 外部テキストの書き込み
+  func saveText(arg):
+    var _file = File.new()
+    # ファイルが無い場合は自動的に生成
+    _file.open("res://save_text.dat", File.WRITE)
+    #_file.open("user://save_text.dat", File.WRITE)
+    _file.store_string(str(arg))
+    _file.close()
+  ```
 
 📝保存場所（[GODOT DOCS](https://docs.godotengine.org/en/3.4/tutorials/io/data_paths.html#accessing-persistent-user-data)）  
 
