@@ -2106,8 +2106,6 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 <a id="220621"></a>
 # <b>JSONデータの解析</b>
 
-### この項目は書きかけです
-
 1. [JSONデータ](https://raw.githubusercontent.com/mubirou/Godot/main/json/sample.json)の準備
 1. [JSON整形ツール](https://tools.m-bsys.com/development_tooles/json-beautifier.php)などで確認
 1. Godot プルジェクトのルートに保存
@@ -2137,7 +2135,8 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
   var _contents = _dic["002"]["contents"]
   for _theContent in _contents:
     var _chapter = _theContent["chapter"]
-    print(str(_chapter) + ":" + _theContent["content"]) #-> 1:近代VRの基礎知識 
+    print(str(_chapter) + ":" + _theContent["content"])
+    #-> 1:近代VRの基礎知識 など 
   ```
 
 参考：[外部テキストの読み書き](https://github.com/mubirou/Godot#%E5%A4%96%E9%83%A8%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%81%AE%E8%AA%AD%E3%81%BF%E6%9B%B8%E3%81%8D)  
