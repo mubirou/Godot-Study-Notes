@@ -2155,7 +2155,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 1. [SQLite](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-)
 1. [XAMPP 8.1.6](https://www.apachefriends.org/jp/download.html)
-1. **C:\xampp\htdocs\test.php**（localhost/test.php）を置く
+1. **C:\xampp\htdocs\test.php** を作成
 
   ```php
   <?php phpinfo(); ?>
