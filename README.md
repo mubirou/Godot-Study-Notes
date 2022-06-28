@@ -2153,19 +2153,17 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 ### この項目は書きかけです
 
-1. [SQLite](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-)
-1. [XAMPP 8.1.6](https://www.apachefriends.org/jp/download.html)
-1. **C:\xampp\htdocs** に以下の **test.php** を置く
-
+1. [XAMPP](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-)をインストール
+1. **C:\xampp\htdocs** に以下の **test.php** を作成
   ```php
   <?php phpinfo(); ?>
   ```
-
 1. **http://localhost/test.php** で実行
 
 
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
+Apache 2.4.53、PHP 8.1.6、SQLite 3.36.0
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
 更新日：202X年XX月XX日  
