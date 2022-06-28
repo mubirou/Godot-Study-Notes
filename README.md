@@ -2153,7 +2153,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 ### この項目は書きかけです
 
+1. [SQLite](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-)
 1. [XAMPP 8.1.6](https://www.apachefriends.org/jp/download.html)
+
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 作成者：夢寐郎  
