@@ -2153,7 +2153,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 ### この項目は書きかけです
 
-📝 PHP + SQLite の動作確認  
+📝 **PHP** + **SQLite** の動作確認  
 
 1. [XAMPP](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-)をインストール
 1. **C:\xampp\htdocs** に以下の **test.php** を作成
@@ -2167,7 +2167,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     ?>
     ```
 
-1. **http://localhost/test.php** で実行（**SQLite** の動作確認）
+1. **http://localhost/test.php** で実行
 
 
 
