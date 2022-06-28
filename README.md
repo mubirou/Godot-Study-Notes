@@ -2156,7 +2156,12 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. [XAMPP](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-)をインストール
 1. **C:\xampp\htdocs** に以下の **test.php** を作成
   ```php
-  <?php phpinfo(); ?>
+  <?php
+      $con = new PDO('sqlite::memory:', null, null);
+      $statement = $con->prepare('SELECT sqlite_version()');
+      $statement->execute();
+      echo $statement->fetchColumn(); //=> 3.33.0
+  ?>
   ```
 1. **http://localhost/test.php** で実行
 
