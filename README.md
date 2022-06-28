@@ -2151,6 +2151,20 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 <a id="XXX"></a>
 # <b>XXXXX</b>
 
+### この項目は書きかけです
+
+1. [XAMPP 8.1.6](https://www.apachefriends.org/jp/download.html)
+
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
+作成者：夢寐郎  
+作成日：202X年XX月XX日  
+更新日：202X年XX月XX日  
+[[TOP]](#TOP)
+
+
+<a id="XXX"></a>
+# <b>XXXXX</b>
+
 1. XXX
     ```c#
     XXXX
