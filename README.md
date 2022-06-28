@@ -2165,7 +2165,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     ?>
     ```
 
-1. **http://localhost/test.php** で実行（SQLiteの動作確認）
+1. **http://localhost/test.php** で実行（**SQLite** の動作確認）
 
 
 
