@@ -2076,6 +2076,18 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     _file.close()
   ```
 
+1. 関数の実行例
+
+  ```gdscript
+  var _loadText = loadText()
+  print("LoadText: " + _loadText)
+	```
+
+  ```gdscript
+  var _newText = OS.get_system_time_msecs()
+  saveText(_newText)
+  ```
+
 📝保存場所（[GODOT DOCS](https://docs.godotengine.org/en/3.4/tutorials/io/data_paths.html#accessing-persistent-user-data)）  
 
 1. **[user://](https://docs.godotengine.org/ja/stable/tutorials/scripting/filesystem.html?highlight=res%3A%2F%2F#user-path)** の場合…  
