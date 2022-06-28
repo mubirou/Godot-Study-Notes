@@ -2184,6 +2184,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     print(body.get_string_from_utf8())
   ```
 
+参考：[GODOT DOCS（HTTPRequest）](https://docs.godotengine.org/ja/stable/classes/class_httprequest.html?highlight=HTTPRequest)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ、Apache 2.4.53、PHP 8.1.6、SQLite 3.36.0  
 作成者：夢寐郎  
 作成日：2022年XX月XX日  
