@@ -2169,7 +2169,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 1. http://localhost/test.php で実行
 
-📝 GDScript の記述例
+📝 **GDScript** の記述例
 
   ```gdscript
   # Main.gd
