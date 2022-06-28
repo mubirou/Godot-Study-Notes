@@ -2169,7 +2169,18 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 1. http://localhost/test.php で実行
 
+📝Godot で作業  
 
+  ```gdscript
+  func _ready():
+    var http_request = HTTPRequest.new()
+    add_child(http_request)
+    http_request.connect("request_completed", self, "_http_request_completed")
+    var error = http_request.request("http://localhost/test.php")
+
+  func _http_request_completed(result, response_code, headers, body):
+    print(body.get_string_from_utf8())
+  ```
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 Apache 2.4.53、PHP 8.1.6、SQLite 3.36.0  
