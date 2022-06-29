@@ -2193,7 +2193,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 <a id="220623"></a>
 # <b>PHP+MySQLの利用</b>
 
-📝 **PHP** + **MySQL** の動作確認
+📝 **PHP** + **MySQL**（MariaDB）の動作確認
 
 1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/MySQL/MySQL_win.md) を実行する  
 1. **C:\xampp\htdocs** に以下の **test.php** を作成
