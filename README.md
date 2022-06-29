@@ -2238,7 +2238,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 📝 **XAMPP** のインストール（[参考](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-)）  
 
-📝 **XAMPP** + **Python** の設定
+📝 **XAMPP** に **Python** を追加する  
 
   ```conf
   # Python Settings
