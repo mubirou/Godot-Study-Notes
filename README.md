@@ -2241,12 +2241,24 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 📝 **XAMPP** に **Python** を追加する  
 
 1. [XAMPP]-[Apache]-[config]-[**Apache(httpd.conf)**] を開く
+1. **httpd.conf** の最終行に以下を追加する
 
   ```conf
   # Python Settings
   AddHandler cgi-script .py
   ScriptInterpreterSource Registry-Strict
   ```
+
+1. **C:\xampp\htdocs** に以下の **test.py** を作成
+
+  ```py
+  #!C:\Users\〇〇\AppData\Local\Programs\Python\Python310\python.exe
+  # -*- coding: utf-8 -*-
+  print("Content-Type: text/html\n")
+  print("Hello Python!")
+  ```
+
+1.
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 Python 3.10.5  
