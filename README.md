@@ -2223,7 +2223,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     print(arg4.get_string_from_utf8()) #-> 10.4.24-MariaDB
   ```
 
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ、Apache 2.4.53、PHP 8.1.6、[MariaDB](https://ja.wikipedia.org/wiki/MariaDB) 10.4.24  
 作成者：夢寐郎  
 作成日：2022年06月29日  
 [[TOP]](#TOP)
