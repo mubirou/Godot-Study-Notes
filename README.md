@@ -2201,7 +2201,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
   ```php
   <?php
     $con = new PDO('mysql::memory:', 'root', '');
-    $statement = $con->prepare("SELECT version()");
+    $statement = $con->prepare("SELECT VERSION()");
     $statement->execute();
     echo $statement->fetchColumn(); //-> 10.4.24-MariaDB
   ?>
