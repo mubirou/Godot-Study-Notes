@@ -2316,8 +2316,28 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     ```
     >pip install mysql-connector-python
     ```
+📝 Python の記述と動作確認  
 
-1. XXXX
+1. **C:\xampp\htdocs** の **test.py** を以下の通りに記述
+
+  ```py
+  #!C:\Users\Owner\AppData\Local\Programs\Python\Python310\python.exe
+  # -*- coding: utf-8 -*-
+  print("Content-Type: text/html\n")
+
+  import mysql.connector
+
+  _con = mysql.connector.connect(user='root', passwd='', host='localhost', db='test_db')
+  _cur = _con.cursor()
+  _cur.execute('SELECT VERSION()')
+  _result = _cur.fetchall()
+  print(_result[0][0]) #-> 10.4.24-MariaDB
+  ```
+
+1. Web ブラウザで **localhost/test.py** を開く
+1. MySQL（MariaDB）のバージョンが表示されたら成功！
+
+
 
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
