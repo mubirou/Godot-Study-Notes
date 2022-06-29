@@ -2153,7 +2153,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 📝 **PHP** + **SQLite** の動作確認  
 
-1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-) を実行する
+1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-) の準備と動作確認  
 1. **C:\xampp\htdocs** に以下の **test.php** を作成
 
   ```php
@@ -2195,7 +2195,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 📝 **PHP** + **MySQL**（[MariaDB](https://ja.wikipedia.org/wiki/MariaDB)）の動作確認
 
-1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/MySQL/MySQL_win.md) を実行する  
+1. [MySQL](https://github.com/mubirou/HelloWorld/blob/master/languages/MySQL/MySQL_win.md) の準備と動作確認  
 1. **C:\xampp\htdocs** に以下の **test.php** を作成
 
   ```php
@@ -2226,6 +2226,20 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ、Apache 2.4.53、PHP 8.1.6、[MariaDB](https://ja.wikipedia.org/wiki/MariaDB) 10.4.24  
 作成者：夢寐郎  
 作成日：2022年06月29日  
+[[TOP]](#TOP)
+
+
+<a id="XXX"></a>
+# <b>XXXXX</b>
+
+### この項目は書きかけです  
+
+1. 
+
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
+作成者：夢寐郎  
+作成日：202X年XX月XX日  
+更新日：202X年XX月XX日  
 [[TOP]](#TOP)
 
 
