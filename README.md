@@ -2153,7 +2153,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 📝 **PHP** + **SQLite** の動作確認  
 
-1. [SQLite](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-) の準備と動作確認  
+1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-) を実行する
 1. **C:\xampp\htdocs** に以下の **test.php** を作成
 
   ```php
@@ -2195,7 +2195,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 📝 **PHP** + **MySQL**（[MariaDB](https://ja.wikipedia.org/wiki/MariaDB)）の動作確認
 
-1. [MySQL](https://github.com/mubirou/HelloWorld/blob/master/languages/MySQL/MySQL_win.md) の準備と動作確認  
+1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/MySQL/MySQL_win.md) を実行する  
 1. **C:\xampp\htdocs** に以下の **test.php** を作成
 
   ```php
