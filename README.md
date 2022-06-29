@@ -2368,7 +2368,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 参考：[VRスターターチュートリアルパート1](https://github.com/GodotVR/godot_openvr_fps)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
+作成日：2022年06月30日  
 [[TOP]](#TOP)
 
 
