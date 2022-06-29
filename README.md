@@ -2234,12 +2234,14 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 ### この項目は書きかけです  
 
-1. 
+📝 **Python** のインストールと動作確認  
+
+1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/Python/Python_win.md) を実行する  
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
+Python 3.10.5  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
 [[TOP]](#TOP)
 
 
