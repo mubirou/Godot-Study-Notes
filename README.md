@@ -2240,6 +2240,8 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 📝 **XAMPP** に **Python** を追加する  
 
+1. [XAMPP]-[Apache]-[config]-[**Apache(httpd.conf)**] を開く
+
   ```conf
   # Python Settings
   AddHandler cgi-script .py
