@@ -2311,11 +2311,13 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 1. [Python](https://github.com/mubirou/Godot#pythonsqlite) と [MySQL](https://github.com/mubirou/Godot#phpmysql) の動作確認をする  
 
-1. コマンドプロンプトで次のコマンドで [MySQL コネクタ](https://www.mysql.com/jp/products/connector/)をインストール  
+1. コマンドプロンプトを起動し次のコマンドで [MySQL コネクタ](https://www.mysql.com/jp/products/connector/)をインストール  
 
-```
->pip install mysql-connector-python
-```
+    ```
+    >pip install mysql-connector-python
+    ```
+
+1. XXXX
 
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
