@@ -2,7 +2,7 @@
 
 ### <b>index</b>
 
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [床タイル](#220507) | [RayCastボタン](#220601) | [動画再生](#220602) | [デジタル時計](#220603) | [Oculus Air Link](#220604) | [VR空間に2Dシーンを表示](#220605) | [360°パノラマ](#220606) | [鏡面仕上げボール](#220607) | [ジョイスティック角度](#220608) | [Blender to Godot](#220609) | [物理エンジン RigidBodyとStaticBody](#220610) | [移動の基本3種](#220611) | [衝突判定](#220612) | [Picture-in-Picture](#220613) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [パーティクル](#220619) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#外部スクリプトエディタ) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [床タイル](#220507) | [RayCastボタン](#220601) | [動画再生](#220602) | [デジタル時計](#220603) | [Oculus Air Link](#220604) | [VR空間に2Dシーンを表示](#220605) | [360°パノラマ](#220606) | [鏡面仕上げボール](#220607) | [ジョイスティック角度](#220608) | [Blender to Godot](#220609) | [物理エンジン RigidBodyとStaticBody](#220610) | [移動の基本3種](#220611) | [衝突判定](#220612) | [Picture-in-Picture](#220613) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [パーティクル](#220619) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) |
 ***
 
 <a id="外部スクリプトエディタ"></a>
@@ -2229,10 +2229,8 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 [[TOP]](#TOP)
 
 
-<a id="XXX"></a>
-# <b>XXXXX</b>
-
-### この項目は書きかけです  
+<a id="220624"></a>
+# <b>Python+SQLite</b>
 
 📝 **Python** の動作確認（[Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/Python/Python_win.md) を実行する）  
 
@@ -2261,10 +2259,47 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 4. Web ブラウザで **localhost/test.py** を開く
 5. Hello,world! と表示されたら成功！
 
+📝 Python + SQLite の記述と動作確認  
+
+1. **C:\xampp\htdocs** の **test.py** を以下の通りに記述
+
+  ```py
+  #!C:\Users\Owner\AppData\Local\Programs\Python\Python310\python.exe
+  # -*- coding: utf-8 -*-
+  print("Content-Type: text/html\n")
+
+  import sqlite3
+
+  _con = sqlite3.connect(':memory:')
+  _cur = _con.cursor()
+  _cur.execute('SELECT sqlite_version()')
+  _result = _cur.fetchall()
+  print(_result[0][0]) #-> 3.37.2
+  ```
+
+4. Web ブラウザで **localhost/test.py** を開く
+5. SQLite のバージョンが表示されたら成功！
+
+📝 **GDScript** の記述例（[PHP+SQLite](#220622)とほぼ同じ）  
+
+  ```gdscript
+  # Main.gd
+  extends Spatial
+
+  func _ready():
+    var _rq = HTTPRequest.new()
+    add_child(_rq)
+    _rq.connect("request_completed", self, "completed")
+    _rq.request("http://127.0.0.1/test.py")
+
+  func completed(arg1, arg2, arg3, arg4):
+    print(arg4.get_string_from_utf8()) #-> 3.37.2
+  ```
+
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
-Python 3.10.5  
+Apache 2.4.53、**Python** 3.10.5（**SQLite** 3.37.2）  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
+作成日：2022年06月29日  
 [[TOP]](#TOP)
 
 
