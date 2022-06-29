@@ -2296,8 +2296,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     print(arg4.get_string_from_utf8()) #-> 3.37.2
   ```
 
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
-Apache 2.4.53、**Python** 3.10.5（**SQLite** 3.37.2）  
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ、Apache 2.4.53、**Python** 3.10.5、**SQLite** 3.37.2）  
 作成者：夢寐郎  
 作成日：2022年06月29日  
 [[TOP]](#TOP)
