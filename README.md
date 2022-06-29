@@ -2154,7 +2154,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 📝 **PHP** + **SQLite** の動作確認  
 
 1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-) を実行する
-1. **C:\xampp\htdocs** に以下の **test.php** を作成
+2. **C:\xampp\htdocs** に以下の **test.php** を作成
 
   ```php
   <?php
@@ -2165,7 +2165,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
   ?>
   ```
 
-1. http://localhost/test.php で実行
+3. http://localhost/test.php で実行
 
 📝 **GDScript** の記述例
 
@@ -2241,7 +2241,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 📝 **XAMPP** に **Python** を追加する  
 
 1. [XAMPP]-[Apache]-[config]-[**Apache(httpd.conf)**] を開く
-1. **httpd.conf** の最終行に以下を追加する
+2. **httpd.conf** の最終行に以下を追加する
 
   ```conf
   # Python Settings
@@ -2249,7 +2249,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
   ScriptInterpreterSource Registry-Strict
   ```
 
-1. **C:\xampp\htdocs** に以下の **test.py** を作成
+3. **C:\xampp\htdocs** に以下の **test.py** を作成
 
   ```py
   #!C:\Users\〇〇\AppData\Local\Programs\Python\Python310\python.exe
@@ -2258,7 +2258,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
   print("Hello Python!")
   ```
 
-1.
+4. XXXX
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 Python 3.10.5  
