@@ -2335,7 +2335,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 2. Web ブラウザで **localhost/test.py** を開く
 3. MySQL（MariaDB）のバージョンが表示されたら成功！
 
-👉 **GDScript** の記述例（[Python+MySQL](#220624)と同じ）  
+👉 **GDScript** の記述例（[Python+MySQL](#220625)と同じ）  
 
   ```gdscript
   # Main.gd
