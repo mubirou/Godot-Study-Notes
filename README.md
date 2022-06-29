@@ -2184,7 +2184,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
   ```
 
 参考：[GODOT DOCS (HTTPRequest）](https://docs.godotengine.org/ja/stable/classes/class_httprequest.html?highlight=HTTPRequest)  
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ、Apache 2.4.53、PHP 8.1.6、SQLite 3.36.0  
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ、Apache 2.4.53、**PHP** 8.1.6、**SQLite** 3.36.0  
 作成者：夢寐郎  
 作成日：2022年06月29日  
 [[TOP]](#TOP)
@@ -2223,7 +2223,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     print(arg4.get_string_from_utf8()) #-> 10.4.24-MariaDB
   ```
 
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ、Apache 2.4.53、PHP 8.1.6、[MariaDB](https://ja.wikipedia.org/wiki/MariaDB) 10.4.24  
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ、Apache 2.4.53、**PHP** 8.1.6、**[MariaDB](https://ja.wikipedia.org/wiki/MariaDB)** 10.4.24  
 作成者：夢寐郎  
 作成日：2022年06月29日  
 [[TOP]](#TOP)
@@ -2305,9 +2305,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 <a id="220625"></a>
 # <b>Python+MySQL</b>
 
-### この項目は書きかけです
-
-📝 準備
+👉 準備
 
 1. [Python](https://github.com/mubirou/Godot#pythonsqlite) と [MySQL](https://github.com/mubirou/Godot#phpmysql) の動作確認をする  
 
@@ -2316,7 +2314,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     ```
     >pip install mysql-connector-python
     ```
-📝 Python の記述と動作確認  
+👉 **Python** の記述と動作確認  
 
 1. **C:\xampp\htdocs** の **test.py** を以下の通りに記述
 
@@ -2334,16 +2332,28 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
   print(_result[0][0]) #-> 10.4.24-MariaDB
   ```
 
-1. Web ブラウザで **localhost/test.py** を開く
-1. MySQL（MariaDB）のバージョンが表示されたら成功！
+2. Web ブラウザで **localhost/test.py** を開く
+3. MySQL（MariaDB）のバージョンが表示されたら成功！
 
+👉 **GDScript** の記述例（[Python+MySQL](#220624)と同じ）  
 
+  ```gdscript
+  # Main.gd
+  extends Spatial
 
+  func _ready():
+    var _rq = HTTPRequest.new()
+    add_child(_rq)
+    _rq.connect("request_completed", self, "completed")
+    _rq.request("http://127.0.0.1/test.py")
 
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
+  func completed(arg1, arg2, arg3, arg4):
+    print(arg4.get_string_from_utf8()) #-> 10.4.24-MariaDB
+  ```
+
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ、Apache 2.4.53、**Python** 3.10.5、**[MariaDB](https://ja.wikipedia.org/wiki/MariaDB)** 10.4.24  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2022年06月29日  
 [[TOP]](#TOP)
 
 
