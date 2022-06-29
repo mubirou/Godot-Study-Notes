@@ -2156,14 +2156,14 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. [XAMPP](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-)をインストール
 1. **C:\xampp\htdocs** に以下の **test.php** を作成
 
-    ```php
-    <?php
-        $con = new PDO('sqlite::memory:', null, null);
-        $statement = $con->prepare('SELECT sqlite_version()');
-        $statement->execute();
-        echo $statement->fetchColumn(); //-> 3.36.0
-    ?>
-    ```
+  ```php
+  <?php
+      $con = new PDO('sqlite::memory:', null, null);
+      $statement = $con->prepare('SELECT sqlite_version()');
+      $statement->execute();
+      echo $statement->fetchColumn(); //-> 3.36.0
+  ?>
+  ```
 
 1. http://localhost/test.php で実行
 
@@ -2185,6 +2185,45 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 参考：[GODOT DOCS (HTTPRequest）](https://docs.godotengine.org/ja/stable/classes/class_httprequest.html?highlight=HTTPRequest)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ、Apache 2.4.53、PHP 8.1.6、SQLite 3.36.0  
+作成者：夢寐郎  
+作成日：2022年06月29日  
+[[TOP]](#TOP)
+
+
+<a id="XXX"></a>
+# <b>XXXXX</b>
+
+📝 **PHP** + **MySQL** の動作確認
+
+1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/MySQL/MySQL_win.md) を実行する  
+1. **C:\xampp\htdocs** に以下の **test.php** を作成
+
+  ```php
+  <?php
+    $con = new PDO('mysql::memory:', 'root', '');
+    $statement = $con->prepare("SELECT version()");
+    $statement->execute();
+    echo $statement->fetchColumn(); //-> 10.4.24-MariaDB
+  ?>
+  ```
+
+📝 **GDScript** の記述例（[PHP+SQLiteの利用](#220622)と同じ）  
+
+  ```gdscript
+  # Main.gd
+  extends Spatial
+
+  func _ready():
+    var _rq = HTTPRequest.new()
+    add_child(_rq)
+    _rq.connect("request_completed", self, "completed")
+    _rq.request("http://127.0.0.1/test.php")
+
+  func completed(arg1, arg2, arg3, arg4):
+    print(arg4.get_string_from_utf8()) #-> 10.4.24-MariaDB
+  ```
+
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月29日  
 [[TOP]](#TOP)
