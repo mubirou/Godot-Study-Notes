@@ -2238,6 +2238,14 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 📝 **[XAMPP](https://www.apachefriends.org/jp)** のインストール（[参考](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-)）  
 
+📝 **XAMPP** + **Python** の設定
+
+  ```conf
+  # Python Settings
+  AddHandler cgi-script .py
+  ScriptInterpreterSource Registry-Strict
+  ```
+
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 Python 3.10.5  
 作成者：夢寐郎  
