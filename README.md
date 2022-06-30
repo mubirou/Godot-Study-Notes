@@ -9,10 +9,10 @@
 # <b>外部スクリプトエディタ</b>
 
 1. Godot の設定
-    1. [エディター]-[エディター設定]-[Text Editor]-[External] を開く
+    1. [エディター]-[エディター設定]-[テキストエディター]-[外部] を開く
     1. 次の通り設定  
-        * [Use External Editor] : ✔
-        * Exec Path] : C:/Users/XXXXX/AppData/Local/Programs/Microsoft VS Code/**Code.exe**  
+        * [外部エディターを使用] : **✔**
+        * [実行パス] : C:/Users/XXXXX/AppData/Local/Programs/Microsoft VS Code/**Code.exe**  
 
 1. Visual Studio Code の設定  
     1. VSCode を起動
@@ -30,9 +30,10 @@
     |Control + `|ターミナルの表示/非表示|
     |Control + `|ターミナルの表示/非表示|e
   
-実行環境：Ubuntu 20.04 LTS、Godot 3.4.2、VSCode 1.63.2  
+実行環境：Windows 10、Godot 4.0 alpha 10、VSCode 1.63.2  
 作成者：夢寐郎  
 作成日：2021年12月30日  
+更新日：2022年06月30日 Godot 4.0 対応  
 [[TOP]](#TOP)
 
 
