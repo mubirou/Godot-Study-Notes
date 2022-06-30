@@ -1449,7 +1449,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
 📝 **[WorldEnvironment](https://docs.godotengine.org/ja/stable/classes/class_worldenvironment.html?highlight=WorldEnvironment%20)** の作成  
 
 1. 大元の Node3D を選択し [子ノードを追加]-[**WorldEnvironment**] を選択
-1. [WorldEnvironment]-[インスペクター]-[Environment]-[新規 Environment] を選択
+1. [WorldEnvironment]-[インスペクター]-[Environment]-[新規 **Environment**] を選択
 1. [編集] で以下の通りに設定  
     * XXXX
 
