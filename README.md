@@ -1442,16 +1442,13 @@ VR コンテンツ開発の [諸準備](#220501) をする
 <a id="220606"></a>
 # <b>360°パノラマ</b>
 
-### この項目は書きかけです
-
 📝 [360°画像](https://pixexid.com/search/360%20panorama)の用意  
 
-📝 **[WorldEnvironment](https://docs.godotengine.org/ja/stable/classes/class_worldenvironment.html?highlight=WorldEnvironment%20)** の作成  
+📝 **WorldEnvironment** の作成  
 
-1. 大元の Node3D を選択し [子ノードを追加]-[**WorldEnvironment**] を選択
-1. [WorldEnvironment]-[インスペクター]-[Environment]-[新規 **Environment**] を選択
-1. [編集] で以下の通りに設定  
-    * XXXX
+1. 大元の Spatial を選択し [子ノードを追加]-[**WorldEnvironment**] を選択
+1. WorldEnvironment を選択し [インスペクター] を設定  
+    * Environment：[クイックロード]-[**default_env.tres**]
 
 📝 **default_env.tres** の設定
 
