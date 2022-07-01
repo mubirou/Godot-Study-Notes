@@ -2379,7 +2379,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     * **PlaceholderMesh**（新）
     * **ImmediateMesh**（新）
     * **PrimitiveMesh**（新）
-    * **BoxMesh**（旧[CubeMesh](https://docs.godotengine.org/ja/stable/classes/class_cubemesh.html?highlight=CubeMesh#cubemesh)／立方体＝壁･柱･箱･階段）
+    * **BoxMesh**（旧[CubeMesh](https://docs.godotengine.org/ja/stable/classes/class_cubemesh.html?highlight=CubeMesh#cubemesh) / 立方体＝壁･柱･箱･階段）
     * **[CapsuleMesh](https://docs.godotengine.org/ja/stable/classes/class_capsulemesh.html?highlight=CapsuleMesh#capsulemesh)**（カプセル＝物理挙動テスト）
     * **[CylinderMesh](https://docs.godotengine.org/ja/stable/classes/class_cylindermesh.html?highlight=CylinderMesh#cylindermesh)**（円柱）
     * **[PlaneMesh](https://docs.godotengine.org/ja/stable/classes/class_planemesh.html?highlight=PlaneMesh#planemesh)**（平面）
