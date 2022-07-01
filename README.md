@@ -2390,20 +2390,20 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     * PlaceholderMesh（新）
     * ImmediateMesh（新）
     * PrimitiveMesh（新）
-    * BoxMesh（旧CubeMesh／立方体＝壁･柱･箱･階段）
-    * CapsuleMesh（カプセル＝物理挙動テスト）
-    * CylinderMesh（円柱）
-    * PlaneMesh（平面）
-    * PrismMesh（プリズム＝三角柱）
-    * QuadMesh（画像表示･動画再生用）
+    * BoxMesh（旧[CubeMesh](https://docs.godotengine.org/ja/stable/classes/class_cubemesh.html?highlight=CubeMesh#cubemesh)／立方体＝壁･柱･箱･階段）
+    * [CapsuleMesh](https://docs.godotengine.org/ja/stable/classes/class_capsulemesh.html?highlight=CapsuleMesh#capsulemesh)（カプセル＝物理挙動テスト）
+    * [CylinderMesh](https://docs.godotengine.org/ja/stable/classes/class_cylindermesh.html?highlight=CylinderMesh#cylindermesh)（円柱）
+    * [PlaneMesh](https://docs.godotengine.org/ja/stable/classes/class_planemesh.html?highlight=PlaneMesh#planemesh)（平面）
+    * [PrismMesh](https://docs.godotengine.org/ja/stable/classes/class_prismmesh.html?highlight=PrismMesh#prismmesh)（プリズム＝三角柱）
+    * [QuadMesh](https://docs.godotengine.org/ja/stable/classes/class_quadmesh.html?highlight=QuadMesh#quadmesh)（画像表示･動画再生用）
     * [SphereMesh](https://docs.godotengine.org/ja/stable/classes/class_spheremesh.html?highlight=SphereMesh#spheremesh)（球＝星･弾丸）
     * TextMesh（新）
     * TubeTrailMesh（新）
-    * PointMesh
+    * [PointMesh](https://docs.godotengine.org/ja/stable/classes/class_pointmesh.html?highlight=PointMesh)
 
-実行環境：Windows 10、Godot 3.4.2  
+実行環境：Windows 10、Godot 4.0 alpha 10
 作成者：夢寐郎  
-作成日：2022年02月28日  
+作成日：2022年07月01日  
 [[TOP]](#TOP)
 
 
