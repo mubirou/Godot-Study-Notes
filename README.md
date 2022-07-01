@@ -2388,8 +2388,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 📝 選択するオブジェクトの用意  
 
-  1. **Godot_XXX.exe** を起動
-  1. 
+  1. **Godot_xxx.exe** を起動
+  1. プロジェクト名、プロジェクトパスを設定
+  1. **Vulkan Mobile** を選択し [作成して編集]
   1. [立方体](#プリミティブ)などを用意
   1. 上記を選択し [子ノードを追加]-[**KinematicBody**]
   1. KinematicBody を選択し [子ノードを追加]-[**CollisionShape**]
