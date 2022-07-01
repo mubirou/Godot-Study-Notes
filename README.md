@@ -2,45 +2,13 @@
 
 ### <b>index（Godot 3.4 対応）</b>
 
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [プリミティブ](#プリミティブ) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [床タイル](#220507) | [RayCastボタン](#220601) | [動画再生](#220602) | [デジタル時計](#220603) | [Oculus Air Link](#220604) | [VR空間に2Dシーンを表示](#220605) | [360°パノラマ](#220606) | [鏡面仕上げボール](#220607) | [ジョイスティック角度](#220608) | [Blender to Godot](#220609) | [物理エンジン RigidBodyとStaticBody](#220610) | [移動の基本3種](#220611) | [衝突判定](#220612) | [Picture-in-Picture](#220613) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [パーティクル](#220619) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [青空](#220626) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [床タイル](#220507) | [RayCastボタン](#220601) | [動画再生](#220602) | [デジタル時計](#220603) | [Oculus Air Link](#220604) | [VR空間に2Dシーンを表示](#220605) | [360°パノラマ](#220606) | [鏡面仕上げボール](#220607) | [ジョイスティック角度](#220608) | [Blender to Godot](#220609) | [物理エンジン RigidBodyとStaticBody](#220610) | [移動の基本3種](#220611) | [衝突判定](#220612) | [Picture-in-Picture](#220613) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [パーティクル](#220619) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [青空](#220626) |
 ***
 
 ### **index（Godot 4.0 Alpha 10 対応）**
 
-[外部スクリプトエディタ](#外部スクリプトエディタ) |
+[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) |
 ***
-
-<a id="外部スクリプトエディタ"></a>
-# <b>外部スクリプトエディタ</b>
-
-1. Godot の設定
-    1. [エディター]-[エディター設定]-[テキストエディター]-[外部] を開く
-    1. 次の通り設定  
-        * [外部エディターを使用] : **✔**
-        * [実行パス] : C:/Users/XXXXX/AppData/Local/Programs/Microsoft VS Code/**Code.exe**  
-
-1. Visual Studio Code の設定  
-    1. VSCode を起動
-    1. [表示]-[外観]-[アクティビティバーを表示する]
-    1. 左側アイコンの一番下を選択
-    1. [Marketplaceで機能拡張を検索] で **Godot** を検索
-    1. **godot-tolls** をインストール
-
-* Visual Studo Code ショートカットキー
-
-    |Key|内容|
-    |:--|:--|
-    |Alt|上部メニューの表示/非表示|
-    |Control + B|左サイドバーの表示/非表示|
-    |Control + `|ターミナルの表示/非表示|
-    |Control + `|ターミナルの表示/非表示|e
-  
-実行環境：Windows 10、Godot 4.0 alpha 10、VSCode 1.63.2  
-作成者：夢寐郎  
-作成日：2021年12月30日  
-更新日：2022年06月30日 Godot 4.0 対応  
-[[TOP]](#TOP)
-
 
 <a id="Androidビルド"></a>
 # <b>Androidビルド</b>
@@ -2378,8 +2346,42 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 [[TOP]](#TOP)
 
 
-<a id="プリミティブ"></a>
+<a id="220630"></a>
+# <b>外部スクリプトエディタ</b>
+
+1. Godot の設定
+    1. [エディター]-[エディター設定]-[テキストエディター]-[外部] を開く
+    1. 次の通り設定  
+        * [外部エディターを使用] : **✔**
+        * [実行パス] : C:/Users/XXXXX/AppData/Local/Programs/Microsoft VS Code/**Code.exe**  
+
+1. Visual Studio Code の設定  
+    1. VSCode を起動
+    1. [表示]-[外観]-[アクティビティバーを表示する]
+    1. 左側アイコンの一番下を選択
+    1. [Marketplaceで機能拡張を検索] で **Godot** を検索
+    1. **godot-tolls** をインストール
+
+* Visual Studo Code ショートカットキー
+
+    |Key|内容|
+    |:--|:--|
+    |Alt|上部メニューの表示/非表示|
+    |Control + B|左サイドバーの表示/非表示|
+    |Control + `|ターミナルの表示/非表示|
+    |Control + `|ターミナルの表示/非表示|e
+  
+実行環境：Windows 10、Godot 4.0 alpha 10、VSCode 1.63.2  
+作成者：夢寐郎  
+作成日：2021年12月30日  
+更新日：2022年06月30日 Godot 4.0 対応  
+[[TOP]](#TOP)
+
+
+<a id="220701"></a>
 # <b>プリミティブ</b>
+
+この項目は書きかけです
 
 1. [シーン] の任意のノードを選択し [子ノードを追加]-["**MeshInstance3D**]
 1. [インスペクタ]-[Mesh]を以下の中から選択
