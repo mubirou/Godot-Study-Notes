@@ -2381,23 +2381,23 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 <a id="220701"></a>
 # <b>プリミティブ</b>
 
-1. [シーン] の任意のノードを選択し [子ノードを追加]-["**MeshInstance3D**]
+1. [シーン] の任意のノードを選択し [子ノードを追加]-[**MeshInstance3D**]
 1. [インスペクタ]-[Mesh]を以下の中から選択
-    * Mesh（新）
-    * [ArrayMesh](https://docs.godotengine.org/ja/stable/classes/class_arraymesh.html?highlight=ArrayMesh#arraymesh)
-    * PlaceholderMesh（新）
-    * ImmediateMesh（新）
-    * PrimitiveMesh（新）
-    * BoxMesh（旧[CubeMesh](https://docs.godotengine.org/ja/stable/classes/class_cubemesh.html?highlight=CubeMesh#cubemesh)／立方体＝壁･柱･箱･階段）
-    * [CapsuleMesh](https://docs.godotengine.org/ja/stable/classes/class_capsulemesh.html?highlight=CapsuleMesh#capsulemesh)（カプセル＝物理挙動テスト）
-    * [CylinderMesh](https://docs.godotengine.org/ja/stable/classes/class_cylindermesh.html?highlight=CylinderMesh#cylindermesh)（円柱）
-    * [PlaneMesh](https://docs.godotengine.org/ja/stable/classes/class_planemesh.html?highlight=PlaneMesh#planemesh)（平面）
-    * [PrismMesh](https://docs.godotengine.org/ja/stable/classes/class_prismmesh.html?highlight=PrismMesh#prismmesh)（プリズム＝三角柱）
-    * [QuadMesh](https://docs.godotengine.org/ja/stable/classes/class_quadmesh.html?highlight=QuadMesh#quadmesh)（画像表示･動画再生用）
-    * [SphereMesh](https://docs.godotengine.org/ja/stable/classes/class_spheremesh.html?highlight=SphereMesh#spheremesh)（球＝星･弾丸）
-    * TextMesh（新）
-    * TubeTrailMesh（新）
-    * [PointMesh](https://docs.godotengine.org/ja/stable/classes/class_pointmesh.html?highlight=PointMesh)
+    * **Mesh**（新）
+    * **[ArrayMesh](https://docs.godotengine.org/ja/stable/classes/class_arraymesh.html?highlight=ArrayMesh#arraymesh)**
+    * **PlaceholderMesh**（新）
+    * **ImmediateMesh**（新）
+    * **PrimitiveMesh**（新）
+    * **BoxMesh**（旧[CubeMesh](https://docs.godotengine.org/ja/stable/classes/class_cubemesh.html?highlight=CubeMesh#cubemesh)／立方体＝壁･柱･箱･階段）
+    * **[CapsuleMesh](https://docs.godotengine.org/ja/stable/classes/class_capsulemesh.html?highlight=CapsuleMesh#capsulemesh)**（カプセル＝物理挙動テスト）
+    * **[CylinderMesh](https://docs.godotengine.org/ja/stable/classes/class_cylindermesh.html?highlight=CylinderMesh#cylindermesh)**（円柱）
+    * **[PlaneMesh](https://docs.godotengine.org/ja/stable/classes/class_planemesh.html?highlight=PlaneMesh#planemesh)**（平面）
+    * **[PrismMesh](https://docs.godotengine.org/ja/stable/classes/class_prismmesh.html?highlight=PrismMesh#prismmesh)**（プリズム＝三角柱）
+    * **[QuadMesh](https://docs.godotengine.org/ja/stable/classes/class_quadmesh.html?highlight=QuadMesh#quadmesh)**（画像表示･動画再生用）
+    * **[SphereMesh](https://docs.godotengine.org/ja/stable/classes/class_spheremesh.html?highlight=SphereMesh#spheremesh)**（球＝星･弾丸）
+    * **TextMesh**（新）
+    * **TubeTrailMesh**（新）
+    * **[PointMesh](https://docs.godotengine.org/ja/stable/classes/class_pointmesh.html?highlight=PointMesh)**
 
 実行環境：Windows 10、Godot 4.0 alpha 10  
 作成者：夢寐郎  
