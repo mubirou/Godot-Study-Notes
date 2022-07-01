@@ -2381,8 +2381,6 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 <a id="220701"></a>
 # <b>プリミティブ</b>
 
-この項目は書きかけです
-
 1. [シーン] の任意のノードを選択し [子ノードを追加]-["**MeshInstance3D**]
 1. [インスペクタ]-[Mesh]を以下の中から選択
     * Mesh（新）
@@ -2401,9 +2399,10 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     * TubeTrailMesh（新）
     * [PointMesh](https://docs.godotengine.org/ja/stable/classes/class_pointmesh.html?highlight=PointMesh)
 
-実行環境：Windows 10、Godot 4.0 alpha 10
+実行環境：Windows 10、Godot 4.0 alpha 10  
 作成者：夢寐郎  
-作成日：2022年07月01日  
+作成日：2022年02月28日  
+更新日：2022年07月01日 Godot 4.0 対応  
 [[TOP]](#TOP)
 
 
