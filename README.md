@@ -2378,6 +2378,33 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 [[TOP]](#TOP)
 
 
+<a id="プリミティブ"></a>
+# <b>プリミティブ</b>
+
+1. [シーン] の任意のノードを選択し [子ノードを追加]-["**MeshInstance3D**]
+1. [インスペクタ]-[Mesh]を以下の中から選択
+    * Mesh（新）
+    * [ArrayMesh](https://docs.godotengine.org/ja/stable/classes/class_arraymesh.html?highlight=ArrayMesh#arraymesh)
+    * PlaceholderMesh（新）
+    * ImmediateMesh（新）
+    * PrimitiveMesh（新）
+    * BoxMesh（旧CubeMesh／立方体＝壁･柱･箱･階段）
+    * CapsuleMesh（カプセル＝物理挙動テスト）
+    * CylinderMesh（円柱）
+    * PlaneMesh（平面）
+    * PrismMesh（プリズム＝三角柱）
+    * QuadMesh（画像表示･動画再生用）
+    * [SphereMesh](https://docs.godotengine.org/ja/stable/classes/class_spheremesh.html?highlight=SphereMesh#spheremesh)（球＝星･弾丸）
+    * TextMesh（新）
+    * TubeTrailMesh（新）
+    * PointMesh
+
+実行環境：Windows 10、Godot 3.4.2  
+作成者：夢寐郎  
+作成日：2022年02月28日  
+[[TOP]](#TOP)
+
+
 <a id="XXXX"></a>
 # <b>RayCastボタン</b>
 
