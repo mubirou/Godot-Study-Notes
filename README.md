@@ -2361,15 +2361,6 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     1. 左側アイコンの一番下を選択
     1. [Marketplaceで機能拡張を検索] で **Godot** を検索
     1. **godot-tolls** をインストール
-
-* Visual Studo Code ショートカットキー
-
-    |Key|内容|
-    |:--|:--|
-    |Alt|上部メニューの表示/非表示|
-    |Control + B|左サイドバーの表示/非表示|
-    |Control + `|ターミナルの表示/非表示|
-    |Control + `|ターミナルの表示/非表示|e
   
 実行環境：Windows 10、Godot 4.0 alpha 10、VSCode 1.63.2  
 作成者：夢寐郎  
