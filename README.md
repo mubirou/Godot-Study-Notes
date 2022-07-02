@@ -2469,6 +2469,14 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     * [Transform]-[**Scale**]：x 0.03、y 0.03、**z 1000**  
     💡 ここでは不透明度50％の赤いレーザー光線  
 
+    Main（**Node3D**）  
+    　  └ **XROrigin3D**  
+    　　  ├ **XRCamera3D**  
+    　　  └ **XRController3D**_Right  
+    　　  　 ├ Controller（コントローラの視覚化）  
+    　　  　 ├ RayCast3D  
+    　　  　 └ RayLine（RayCast3Dの視覚化）  
+
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
