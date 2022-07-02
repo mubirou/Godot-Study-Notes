@@ -2447,6 +2447,10 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. [**XRController3D_Right**]-[インスペクター] で次の通りに設定  
     * [Tracker]：**right_hand**
     * [Pose]：**aim**
+1. [**XRController3D_Left**] を選択し [子ノードを追加]-[**MeshInstance3D**] を選択
+1. [**MeshInstance3D**]-[インスペクター] で次の通りに設定  
+    * [Mesh]：**SphereMesh**
+    * [Transform]-[**Scale**]：x 0.07、y 0.07、z 0.07
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
