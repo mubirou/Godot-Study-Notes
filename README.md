@@ -2474,7 +2474,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     　　  ├ **XRCamera3D**  
     　　  └ **XRController3D**_Right  
     　　  　 ├ Controller（コントローラの視覚化）  
-    　　  　 ├ RayCast3D  
+    　　  　 ├ **RayCast3D**  
     　　  　 └ RayLine（RayCast3Dの視覚化）  
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
