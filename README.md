@@ -2457,7 +2457,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     　　  └ **XRController3D**_Right  
     　　  　 └ **MeshInstance3D**_Sphere（コントローラ視覚化）  
 
-📝 RayCast の追加
+📝 RayCast の視覚化
+
+1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**RayCast3D**] を選択
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
