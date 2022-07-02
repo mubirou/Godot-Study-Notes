@@ -2436,7 +2436,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 <a id="XXX"></a>
 # <b>XXXXX</b>
 
-1. [VR入門](#220702) の作業を行う
+### この項目は書きかけです
+
+1. [**VR入門**](#220702) の作業を行う
 1. XXX
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
