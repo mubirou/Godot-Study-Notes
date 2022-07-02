@@ -2414,8 +2414,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     Main（**Node3D**）  
   　  └ **XROrigin3D**  
   　　  └ **XRCamera3D**  
-1. XXX
-
+1. [プロジェクト]-[プロジェクト設定]-[XR] の設定を行う  
+    * [**OpenXR**]-[Enabled]：**✓オン**
+    * [**シェーダー**]-[Enabled]：**✓オン**
 
 実行環境：Windows 10、Godot 4.0 alpha 10、Godot XR Tools 2.4.1  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
