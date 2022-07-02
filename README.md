@@ -2433,6 +2433,8 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
       vp.use_xr = true
   ```
 
+1. [実行] し **Quest + Oclus Link + Godot** の動作確認をする
+
 実行環境：Windows 10、Godot 4.0 alpha 10、Godot XR Tools 2.4.1  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
