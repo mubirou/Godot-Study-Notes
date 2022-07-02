@@ -2414,7 +2414,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     Main（**Node3D**）  
   　  └ **XROrigin3D**  
   　　  └ **XRCamera3D**  
-1. [プロジェクト]-[プロジェクト設定]-[**XR**] の設定を行い再起動  
+1. [プロジェクト]-[プロジェクト設定]-[**XR**] の設定＆再起動  
     * [**OpenXR**]-[Enabled]：**✓オン**
     * [**シェーダー**]-[Enabled]：**✓オン**
 
