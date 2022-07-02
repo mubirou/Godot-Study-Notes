@@ -2440,7 +2440,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 1. [**VR入門**](#220702) の作業を行う
 1. [XROriginal] を選択し [子ノードを追加]-[**XRController3D**] を選択（2回行う）
-1. 名前を [**XRController3D_Left**] と [**XRController3D_RRight**] に変更
+1. 名前を [**XRController3D_Left**] と [**XRController3D_Right**] に変更
 1. [**XRController3D_Left**]-[インスペクター] で次の通りに設定  
     * [Tracker]：**left_hand**
     * [Pose]：**aim**
