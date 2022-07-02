@@ -2451,7 +2451,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     * [Transform]-[**Scale**]：x 0.07、y 0.07、z 0.07  
     💡 直径7cmの赤色の球体のコントローラー  
 
-（ここまでの階層）  
+（ここまでの作業の階層）  
     Main（**Node3D**）  
   　  └ **XROrigin3D**  
   　　  ├ **XRCamera3D**  
