@@ -2446,16 +2446,16 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. [**XRController3D_Right**]-[インスペクター] で次の通り設定  
     * [Tracker]：**right_hand**
     * [Pose]：**aim**
-1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で次の通りに設定（名前は "MeshInstance3D_Controller" に変更）  
+1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で次の通りに設定（名前は "Controller" に変更）  
     * [Mesh]：[新規 **SphereMesh**]-[編集]-[Material]-[新規 **StandardMaterial3D**]-[編集]-[**Albedo**]-[**Color**]-[**#ff0000**]
     * [Transform]-[**Scale**]：x 0.07、y 0.07、z 0.07  
-    💡 直径7cmの赤色の球体のコントローラー  
+    💡 ここでは直径7cmの赤色の球体のコントローラー  
 
     Main（**Node3D**）  
     　  └ **XROrigin3D**  
     　　  ├ **XRCamera3D**  
     　　  └ **XRController3D**_Right  
-    　　  　 └ **MeshInstance3D**_Controller（コントローラ視覚化）  
+    　　  　 └ Controller（コントローラの視覚化）  
 
 📝 RayCast の視覚化
 
