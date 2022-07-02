@@ -2464,7 +2464,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で次の通りに設定（名前は "RayLine" に変更）  
     * [**Mesh**]：[新規 **BoxMesh**]-[編集]-[Material]-[新規 **StandardMaterial3D**]-[編集] で次の通りに設定  
         * [Transparency]-[**Transparency**]：**Alpha**
-        * [**Albedo**]-[**Color**]：**#ff000080**（不透明度50％の赤）
+        * [**Albedo**]-[**Color**]：**#ff000080**（不透明度50％）
     * [Transform]-[**Position**]：x 0、y 0、**z -500**
     * [Transform]-[**Scale**]：x 0.03、y 0.03、**z 1000**  
 
