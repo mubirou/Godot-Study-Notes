@@ -2466,7 +2466,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         * [Transparency]-[**Transparency**]：**Alpha**
         * [**Albedo**]-[**Color**]：**#ff000080**（不透明度50％）
     * [Transform]-[**Position**]：x 0、y 0、**z -500**
-    * [Transform]-[**Scale**]：x 0.03、y 0.03、**z 1000**  
+    * [Transform]-[**Scale**]：x 0.01、y 0.01、**z 1000**  
     🖊 ここでは不透明度50％の赤いレーザー光線  
 
     Main（**Node3D**）  
@@ -2476,6 +2476,18 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     　　  　 ├ Controller（コントローラの視覚化）  
     　　  　 ├ **RayCast3D**  
     　　  　 └ RayLine（**BoxMesh** / RayCast3Dの視覚化）  
+
+📝 選択するオブジェクトの用意  
+
+  1. [立方体](#220701)などを用意
+  1. 上記を選択し [子ノードを追加]-[**StaticBody3D**]
+  1. StaticBody3D を選択し [子ノードを追加]-[**CollisionShape3D**]
+  1. CollisionShape3D を選択し [インスペクター]-[**Shape**]-[追加 BoxShape3D] を選ぶ（階層は以下の通り）  
+
+　  ├ MeshInstance3D（選択するオブジェクト）  
+　  │     └ **StaticBody3D**  
+　  │　　   └ **CollisionShape3D**（反応する領域）  
+
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
