@@ -2402,13 +2402,19 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 ### この項目は書きかけです
 
-👉 Godot XR Tools のインストール  
+👉 **Godot XR Tools** のインストール  
 
 1. [**Godot XR Tools**](https://github.com/GodotVR/godot-xr-tools/releases) の最新版をダウンロード
 1. Godot を起動
 1. [AssetLib]-[インポート...] でダウンロードした **godot-xr-tools-x.x.x.zip** を選択 → [開く] → [インポート]
 
 👉 XXXX
+
+1. XXXX
+
+  Main（**Node3D**）  
+　  └ **XROrigin3D**  
+　　  └　**XRCamera3D**  
 
 実行環境：Windows 10、Godot 4.0 alpha 10、Godot XR Tools 2.4.1  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
