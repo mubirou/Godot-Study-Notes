@@ -2420,18 +2420,18 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 1. 大元の Node3D を選択し以下のスクリプトをアタッチ  
 
-```gdscript
-# main.gd
-extends Node3D
+    ```gdscript
+    # main.gd
+    extends Node3D
 
-var interface : XRInterface
+    var interface : XRInterface
 
-func _ready():
-  interface = XRServer.find_interface("OpenXR")
-  if interface and interface.is_initialized():
-    var vp : Viewport = get_viewport()
-    vp.use_xr = true
-```
+    func _ready():
+      interface = XRServer.find_interface("OpenXR")
+      if interface and interface.is_initialized():
+        var vp : Viewport = get_viewport()
+        vp.use_xr = true
+    ```
 
 1. [実行] し **Quest + Oclus Link + Godot** の動作確認をする
 
