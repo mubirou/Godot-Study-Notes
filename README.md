@@ -2400,6 +2400,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 <a id="220702"></a>
 # <b>VRスタート</b>
 
+1. [**Quest Link（Oculus Link）の準備**](https://github.com/mubirou/Unity3D/tree/master/study-notes#oculus-link%E3%81%AE%E6%BA%96%E5%82%99)を行う
 1. [新規プロジェクト]（レンダラー：**Vulkan Clustered**）を作成
 1. シーンに以下のようにノードを追加  
     Main（**Node3D**）  
