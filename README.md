@@ -7,7 +7,7 @@
 
 ### **index（Godot 4.0 Alpha 10 対応）**
 
-[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [XXXXX](#220702) |
+[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [Quest + Quest Link](#220702) |
 ***
 
 <a id="Androidビルド"></a>
@@ -2397,20 +2397,11 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 [[TOP]](#TOP)
 
 
-<a id="220702"></a>
-# <b>XXXXX</b>
+<a id="Quest + Quest Link"></a>
+# <b>220702</b>
 
-### この項目は書きかけです
-
-👉 **Godot XR Tools** のインストール  
-
-1. [**Godot XR Tools**](https://github.com/GodotVR/godot-xr-tools/releases) の最新版をダウンロード
-1. Godot を起動
-1. [AssetLib]-[インポート...] でダウンロードした **godot-xr-tools-x.x.x.zip** を選択 → [開く] → [インポート]
-
-👉 Godot → Quest の動作  
-
-1. シーンに以下のようにノードを追加する  
+1. [新規プロジェクト]（レンダラー：**Vulkan Clustered**）を作成
+1. シーンに以下のようにノードを追加  
     Main（**Node3D**）  
   　  └ **XROrigin3D**  
   　　  └ **XRCamera3D**  
@@ -2433,12 +2424,30 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         vp.use_xr = true
     ```
 
-1. [実行] し **Quest + Oclus Link + Godot** の動作確認をする
+1. [実行] し **Quest** 上で動作確認（何もまだない状態）  
 
 実行環境：Windows 10、Godot 4.0 alpha 10、Godot XR Tools 2.4.1  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
+作成日：2022年07月02日  
+[[TOP]](#TOP)
+
+
+<a id="XXX"></a>
+# <b>XXXXX</b>
+
+### この項目は書きかけです
+
+👉 **Godot XR Tools** のインストール  
+
+1. [**Godot XR Tools**](https://github.com/GodotVR/godot-xr-tools/releases) の最新版をダウンロード
+1. Godot を起動
+1. [AssetLib]-[インポート...] でダウンロードした **godot-xr-tools-x.x.x.zip** を選択 → [開く] → [インポート]
+
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
+作成者：夢寐郎  
 作成日：202X年XX月XX日  
+更新日：202X年XX月XX日  
 [[TOP]](#TOP)
 
 
