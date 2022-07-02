@@ -2444,6 +2444,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. [**XRController3D_Left**]-[インスペクター] で次の通りに設定  
     * [Tracker]：**left_hand**
     * [Pose]：**aim**
+1. [**XRController3D_Right**]-[インスペクター] で次の通りに設定  
+    * [Tracker]：**right_hand**
+    * [Pose]：**aim**
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
