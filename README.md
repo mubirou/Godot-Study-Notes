@@ -2418,6 +2418,21 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     * [**OpenXR**]-[Enabled]：**✓オン**
     * [**シェーダー**]-[Enabled]：**✓オン**
 
+1. 大元の Node3D を選択し以下のスクリプトをアタッチ  
+
+  ```gdscript
+  # main.gd
+  extends Node3D
+
+  var interface : XRInterface
+
+  func _ready():
+    interface = XRServer.find_interface("OpenXR")
+    if interface and interface.is_initialized():
+      var vp : Viewport = get_viewport()
+      vp.use_xr = true
+  ```
+
 実行環境：Windows 10、Godot 4.0 alpha 10、Godot XR Tools 2.4.1  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
