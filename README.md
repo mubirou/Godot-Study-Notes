@@ -2443,7 +2443,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. [**VR入門**](#220702) の作業を行う
 1. [XROriginal] を選択し [子ノードを追加]-[**XRController3D**] を選択
 1. 名前を [**XRController3D_Right**] に変更
-1. [**XRController3D_Right**]-[インスペクター] で次の通りに設定  
+1. [**XRController3D_Right**]-[インスペクター] で次の通り設定  
     * [Tracker]：**right_hand**
     * [Pose]：**aim**
 1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で次の通りに設定（名前は "MeshInstance3D_Sphere" に変更）  
@@ -2457,7 +2457,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     　　  └ **XRController3D**_Right  
     　　  　 └ **MeshInstance3D**_Sphere（コントローラ視覚化）  
 
-📝 RayCast
+📝 RayCast の追加
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
