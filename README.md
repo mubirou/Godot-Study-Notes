@@ -2456,7 +2456,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
   　  └ **XROrigin3D**  
   　　  ├ **XRCamera3D**  
   　　  └ **XRController3D**_Right  
-  　　  　 └ **MeshInstance3D**_Sphere  
+  　　  　 └ **MeshInstance3D**_Sphere（コントローラの視覚化）  
 
 👉 XXXX
 
