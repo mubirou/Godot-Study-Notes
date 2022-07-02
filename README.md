@@ -2408,7 +2408,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. Godot を起動
 1. [AssetLib]-[インポート...] でダウンロードした **godot-xr-tools-x.x.x.zip** を選択 → [開く] → [インポート]
 
-👉 XXXX
+👉 Godot → Quest の動作  
 
 1. シーンに以下のようにノードを追加する  
     Main（**Node3D**）  
