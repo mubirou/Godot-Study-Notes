@@ -2449,7 +2449,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で次の通りに設定（名前は "Controller" に変更）  
     * [**Mesh**]：[新規 **SphereMesh**]-[編集]-[Material]-[新規 **StandardMaterial3D**]-[編集]-[**Albedo**]-[**Color**]-[**#ff0000**]
     * [Transform]-[**Scale**]：x 0.07、y 0.07、z 0.07  
-    💡 ここでは直径7cmの赤色の球体のコントローラー  
+    🖊 ここでは直径7cmの赤色の球体のコントローラー  
 
     Main（**Node3D**）  
     　  └ **XROrigin3D**  
@@ -2467,7 +2467,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         * [**Albedo**]-[**Color**]：**#ff000080**（不透明度50％）
     * [Transform]-[**Position**]：x 0、y 0、**z -500**
     * [Transform]-[**Scale**]：x 0.03、y 0.03、**z 1000**  
-    💡 ここでは不透明度50％の赤いレーザー光線  
+    🖊 ここでは不透明度50％の赤いレーザー光線  
 
     Main（**Node3D**）  
     　  └ **XROrigin3D**  
@@ -2475,7 +2475,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     　　  └ **XRController3D**_Right  
     　　  　 ├ Controller（コントローラの視覚化）  
     　　  　 ├ **RayCast3D**  
-    　　  　 └ RayLine（RayCast3Dの視覚化）  
+    　　  　 └ RayLine（BoxMesh / RayCast3Dの視覚化）  
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
