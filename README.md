@@ -2448,7 +2448,8 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     * [Pose]：**aim**
 1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で次の通りに設定（名前は "MeshInstance3D_Sphere" に変更）  
     * [Mesh]：[新規 **SphereMesh**]-[編集]-[Material]-[新規 **StandardMaterial3D**]-[編集]-[**Albedo**]-[**Color**]-[**#ff0000**]
-    * [Transform]-[**Scale**]：x 0.07、y 0.07、z 0.07
+    * [Transform]-[**Scale**]：x 0.07、y 0.07、z 0.07  
+    💡 直径7cmの赤色の球体のコントローラー  
 
 👉 XXXX
 
