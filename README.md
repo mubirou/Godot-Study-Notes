@@ -2402,7 +2402,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 ### この項目は書きかけです
 
-1. [**Godot XR Tools**/Source code (zip)](https://github.com/GodotVR/godot-xr-tools/releases) の最新版をダウンロード
+1. [**Godot XR Tools**](https://github.com/GodotVR/godot-xr-tools/releases) の最新版をダウンロード
 1. Godot を起動
 1. [AssetLib]-[インポート...] でダウンロードした **godot-xr-tools-x.x.x.zip** を選択 → [開く] → [インポート]
 
