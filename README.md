@@ -2447,7 +2447,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     * [Tracker]：**right_hand**
     * [Pose]：**aim**
 1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で次の通りに設定（名前は "Controller" に変更）  
-    * [Mesh]：[新規 **SphereMesh**]-[編集]-[Material]-[新規 **StandardMaterial3D**]-[編集]-[**Albedo**]-[**Color**]-[**#ff0000**]
+    * [**Mesh**]：[新規 **SphereMesh**]-[編集]-[Material]-[新規 **StandardMaterial3D**]-[編集]-[**Albedo**]-[**Color**]-[**#ff0000**]
     * [Transform]-[**Scale**]：x 0.07、y 0.07、z 0.07  
     💡 ここでは直径7cmの赤色の球体のコントローラー  
 
@@ -2462,7 +2462,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**RayCast3D**]-[インスペクター] で次の通りに設定  
     * [**Target Position**]：x 0、y 0、**z -1000**
 1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で次の通りに設定（名前は "RayLine" に変更）  
-    * [Mesh]：[新規 **BoxMesh**]-[編集]-[Material]-[新規 **StandardMaterial3D**]-[編集] で次の通りに設定  
+    * [**Mesh**]：[新規 **BoxMesh**]-[編集]-[Material]-[新規 **StandardMaterial3D**]-[編集] で次の通りに設定  
         * [Transparency]-[**Transparency**]：**Alpha**
         * [**Albedo**]-[**Color**]：**#ff000080**
     * [Transform]-[**Position**]：x 0、y 0、**z -500**
