@@ -2467,6 +2467,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         * [**Albedo**]-[**Color**]：**#ff000080**（不透明度50％）
     * [Transform]-[**Position**]：x 0、y 0、**z -500**
     * [Transform]-[**Scale**]：x 0.03、y 0.03、**z 1000**  
+    💡 ここでは不透明度50％の赤いレーザー光線  
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
