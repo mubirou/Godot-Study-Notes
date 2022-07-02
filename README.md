@@ -2400,7 +2400,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 <a id="220702"></a>
 # <b>VR入門</b>
 
-1. [**Quest Link（Oculus Link）の準備**](https://github.com/mubirou/Unity3D/tree/master/study-notes#oculus-link%E3%81%AE%E6%BA%96%E5%82%99)を行う
+1. [**Quest Link（Oculus Link）の準備**](https://github.com/mubirou/Unity3D/tree/master/study-notes#oculus-link%E3%81%AE%E6%BA%96%E5%82%99) を行う
 1. [新規プロジェクト]（レンダラー：**Vulkan Clustered**）を作成
 1. シーンに以下のようにノードを追加  
     Main（**Node3D**）  
@@ -2430,6 +2430,19 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月02日  
+[[TOP]](#TOP)
+
+
+<a id="XXX"></a>
+# <b>XXXXX</b>
+
+1. [VR入門](#220702) の作業を行う
+1. XXX
+
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
+作成者：夢寐郎  
+作成日：202X年XX月XX日  
+更新日：202X年XX月XX日  
 [[TOP]](#TOP)
 
 
