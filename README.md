@@ -2410,7 +2410,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 👉 XXXX
 
-1. シーンに以下のようにノードを追加する
+1. シーンに以下のようにノードを追加する  
     Main（**Node3D**）  
   　  └ **XROrigin3D**  
   　　  └ **XRCamera3D**  
