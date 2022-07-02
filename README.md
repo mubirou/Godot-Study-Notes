@@ -2438,7 +2438,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 ### この項目は書きかけです
 
-📝 右コントローラーの視覚化
+📝 コントローラーの視覚化（今回は右のみ）
 
 1. [**VR入門**](#220702) の作業を行う
 1. [XROriginal] を選択し [子ノードを追加]-[**XRController3D**] を選択
@@ -2457,7 +2457,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     　　  └ **XRController3D**_Right  
     　　  　 └ **MeshInstance3D**_Sphere（コントローラ視覚化）  
 
-📝 XXXX
+📝 RayCast
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
