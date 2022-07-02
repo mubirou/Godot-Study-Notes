@@ -2459,7 +2459,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 📝 RayCast の視覚化
 
-1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**RayCast3D**] を選択
+1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**RayCast3D**]-[インスペクター] で次の通りに設定  
+    * [**Target Position**]：x 0、y 0、**z -1000**
+1. XXX
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
