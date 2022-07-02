@@ -2442,7 +2442,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. [XROriginal] を選択し [子ノードを追加]-[**XRController3D**] を選択（2回行う）
 1. 名前を [**XRController3D_Left**] と [**XRController3D_RRight**] に変更
 1. [**XRController3D_Left**]-[インスペクター] で次の通りに設定  
-    * [Tracker**]：**left_hand**
+    * [Tracker]：**left_hand**
     * [Pose]：**aim**
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
