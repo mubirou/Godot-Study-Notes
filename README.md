@@ -2440,9 +2440,10 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 1. [**VR入門**](#220702) の作業を行う
 1. [XROriginal] を選択し [子ノードを追加]-[**XRController3D**] を選択（2回行う）
-1. 名前を"**XRController3D_Right**"と"**XRController3D_Left**"に変更
+1. 名前を "**XRController3D_Left**" と "**XRController3D_RRight**" に変更
+1. XXX
 
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
 更新日：202X年XX月XX日  
