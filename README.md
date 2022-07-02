@@ -7,7 +7,7 @@
 
 ### **index（Godot 4.0 対応）**
 
-[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VRスタート](#220702) |
+[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) |
 ***
 
 <a id="Androidビルド"></a>
@@ -2398,7 +2398,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 
 <a id="220702"></a>
-# <b>VRスタート</b>
+# <b>VR入門</b>
 
 1. [**Quest Link（Oculus Link）の準備**](https://github.com/mubirou/Unity3D/tree/master/study-notes#oculus-link%E3%81%AE%E6%BA%96%E5%82%99)を行う
 1. [新規プロジェクト]（レンダラー：**Vulkan Clustered**）を作成
