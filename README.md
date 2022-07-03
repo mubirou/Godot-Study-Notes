@@ -2449,7 +2449,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で次の通りに設定（名前は "Controller" に変更）  
     * [**Mesh**]：[新規 **SphereMesh**]-[編集]-[Material]-[新規 **StandardMaterial3D**]-[編集]-[**Albedo**]-[**Color**]-[**#ff0000**]
     * [Transform]-[**Scale**]：x 0.07、y 0.07、z 0.07  
-    🖊 ここでは直径7cmの赤色の球体のコントローラー  
+    🖊 直径7cmの赤色の球体のコントローラー  
 
     Main（**Node3D**）  
     　  └ **XROrigin3D**  
@@ -2467,7 +2467,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         * [**Albedo**]-[**Color**]：**#ff000080**（不透明度50％）
     * [Transform]-[**Position**]：x 0、y 0、**z -500**
     * [Transform]-[**Scale**]：x 0.01、y 0.01、**z 1000**  
-    🖊 ここでは不透明度50％の赤いレーザー光線  
+    🖊 不透明度50％の赤いレーザー光線  
 
     Main（**Node3D**）  
     　  └ **XROrigin3D**  
@@ -2497,7 +2497,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
       * [**Transform**] を次の通りに設定
         * [**Position**]：x 0、y 0、**z -0.5**  
         * [**Scale**]：x 0.02、y 0.02、z 0.02  
-      🖊 ここでは直径2cmの赤色（不透明度80％）の球体  
+      🖊 直径2cmの赤色（不透明度80％）の球体  
 
       Main（**Node3D**）  
       　  └ **XROrigin3D**  
