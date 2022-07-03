@@ -2506,28 +2506,17 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
       🖊 直径2cmの赤色（不透明度80％）の球体  
 
       Main（**Node3D**）  
-      　  └ **XROrigin3D**  
-      　　  ├ **XRCamera3D**  
-      　　  └ **XRController3D**_Right  
-      　　  　 ├ Controller（コントローラの視覚化）  
-      　　  　 ├ **RayCast3D**  
-      　　  　 ├ RayLine（RayCast3Dの視覚化）  
-      　　  　 └ HitPoint（ヒットポイントの可視化）  
-
-================================
-
-  Main（**Node3D**）  
-　  ├ **XROrigin3D**  
-　  │   ├ **XRCamera3D**  
-　  │   └ **XRController3D**_Right  
-　  │　　　 ├ Controller（コントローラの視覚化）  
-　  │　　　 ├ **RayCast3D**  
-　  │　　　 ├ RayLine（RayCast3Dの視覚化）  
-　  │　　　 └ HitPoint（ヒットポイントの可視化）  
-　  ├ MeshInstance3D（選択するオブジェクト）  
-　  │   └ **StaticBody3D**  
-　  │　　　 └ **CollisionShape3D**（反応する領域）  
-　  └ **DirecionalLight3D**  
+    　  ├ **XROrigin3D**  
+    　  │   ├ **XRCamera3D**  
+    　  │   └ **XRController3D**_Right  
+    　  │　　　 ├ Controller（コントローラの視覚化）  
+    　  │　　　 ├ **RayCast3D**  
+    　  │　　　 ├ RayLine（RayCast3Dの視覚化）  
+    　  │　　　 └ HitPoint（ヒットポイントの可視化）  
+    　  ├ MeshInstance3D（選択するオブジェクト）  
+    　  │   └ **StaticBody3D**  
+    　  │　　　 └ **CollisionShape3D**（反応する領域）  
+    　  └ **DirecionalLight3D**  
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
