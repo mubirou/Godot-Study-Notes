@@ -2461,7 +2461,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 1. [**XRController3D_Right**] を選択し [**ノード**] タブを選ぶ
 1. [ノード]-[**XRcontroller3D**]-[**button_pressed(name:String)**] を選択し [右クリック]-[**接続**]（下図）  
-![image](https://github.com/mubirou/Godot/blob/main/jpg/202207040001.jpg)  
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202207040006.jpg)  
 1. [**メソッドにシグナルを接続**] ダイアログが表示される（下図）  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207032357.jpg)  
 
