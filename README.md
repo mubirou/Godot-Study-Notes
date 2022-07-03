@@ -2466,6 +2466,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207032357.jpg)  
 💡 上記の作業の意味  
 [**XRController3D**_Right] の [**button_pressed(name:String)**] イベントが [**Main**] ノードにアタッチされたスクリプト内に生成される "**_on_xr_controller_3d_right_button_pressed**" という名前（変更可能）のメソッド（イベントハンドラー）で受信される  
+1. [ノード] タブに **→] ../..:: _on_xr_controller_3d_right_button_pressed()** が追加され（下図上）、[シーン] の [**XRController3D**_Right] にも接続マークが追加される（下図下）  
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202207040024.jpg)  
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202207040028.jpg)  
 
 📝 コードの確認＆変更  
 
