@@ -2511,20 +2511,18 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
       　　  └ **XRController3D**_Right  
       　　  　 ├ Controller（コントローラの視覚化）  
       　　  　 ├ **RayCast3D**  
-      　　  　 └ RayLine（**BoxMesh** / RayCast3Dの視覚化）  
+      　　  　 ├ RayLine（**BoxMesh** / RayCast3Dの視覚化）  
+      　　  　 └ HitPoint（**SphereMesh** / ヒットポイントの視覚化）  
 
 ================================
 
-（ここまでの作業の階層は以下の通り）  
-  Spatial  
-　  ├ FPController  
-　  │   ├ Configuration  
-　  │   ├ ARVRCamera  
-　  │   ├ LeftHandController  
-　  │   └ RightHandController  
-　  │　　　 ├ ControllerR（コントローラの視覚化）  
-　  │　　　 ├ **RayCast**（重要）  
-　  │　　　 ├ RayLine（RayCastの視覚化）  
+  Main（**Node3D**）  
+　  ├ **XROrigin3D**  
+　  │   ├ **XRCamera3D**  
+　  │   └ **XRController3D**_Right  
+　  │　　　 ├ Controller（コントローラの視覚化）  
+　  │　　　 ├ **RayCast3D**  
+　  │　　　 ├ RayLine（**BoxMesh** / RayCast3Dの視覚化）  
 　  │　　　 └ HitPoint（ヒットしたポイントの視覚化）  
 　  └ MeshInstance（選択するオブジェクト）  
 　　　　 └ **KinematicBody**（重要）  
