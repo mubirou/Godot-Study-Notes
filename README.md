@@ -2511,8 +2511,8 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
       　　  └ **XRController3D**_Right  
       　　  　 ├ Controller（コントローラの視覚化）  
       　　  　 ├ **RayCast3D**  
-      　　  　 ├ RayLine（**BoxMesh** / RayCast3Dの視覚化）  
-      　　  　 └ HitPoint（**SphereMesh** / ヒットポイントの視覚化）  
+      　　  　 ├ RayLine（RayCast3Dの視覚化）  
+      　　  　 └ HitPoint（ヒットポイントの可視化）  
 
 ================================
 
@@ -2522,11 +2522,12 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 　  │   └ **XRController3D**_Right  
 　  │　　　 ├ Controller（コントローラの視覚化）  
 　  │　　　 ├ **RayCast3D**  
-　  │　　　 ├ RayLine（**BoxMesh** / RayCast3Dの視覚化）  
-　  │　　　 └ HitPoint（ヒットしたポイントの視覚化）  
-　  └ MeshInstance（選択するオブジェクト）  
-　　　　 └ **KinematicBody**（重要）  
-　　　　　　　 └ **CollisionShape**（反応する領域）  
+　  │　　　 ├ RayLine（RayCast3Dの視覚化）  
+　  │　　　 └ HitPoint（ヒットポイントの可視化）  
+　  ├ MeshInstance3D（選択するオブジェクト）  
+　  │   └ **StaticBody3D**  
+　  │　　　 └ **CollisionShape3D**（反応する領域）  
+　  └ **DirecionalLight3D**  
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
