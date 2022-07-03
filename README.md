@@ -2497,13 +2497,13 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         * [**Scale**]：x 0.02、y 0.02、z 0.02  
       🖊 ここでは直径2cmの赤色（不透明度80％）の球体  
 
-   Main（**Node3D**）  
-    　  └ **XROrigin3D**  
-    　　  ├ **XRCamera3D**  
-    　　  └ **XRController3D**_Right  
-    　　  　 ├ Controller（コントローラの視覚化）  
-    　　  　 ├ **RayCast3D**  
-    　　  　 └ RayLine（**BoxMesh** / RayCast3Dの視覚化）  
+      Main（**Node3D**）  
+      　  └ **XROrigin3D**  
+      　　  ├ **XRCamera3D**  
+      　　  └ **XRController3D**_Right  
+      　　  　 ├ Controller（コントローラの視覚化）  
+      　　  　 ├ **RayCast3D**  
+      　　  　 └ RayLine（**BoxMesh** / RayCast3Dの視覚化）  
 
 （ここまでの作業の階層は以下の通り）  
   Spatial  
