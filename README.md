@@ -2471,21 +2471,21 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 1. 大元の Main（Node3D）にアタッチされたコードを確認  
 
-    ```gdscript
-    # main.gd
-    extends Node3D
+  ```gdscript
+  # main.gd
+  extends Node3D
 
-    var interface : XRInterface
+  var interface : XRInterface
 
-    func _ready():
-      interface = XRServer.find_interface("OpenXR")
-      if interface and interface.is_initialized():
-        var vp : Viewport = get_viewport()
-        vp.use_xr = true
+  func _ready():
+    interface = XRServer.find_interface("OpenXR")
+    if interface and interface.is_initialized():
+      var vp : Viewport = get_viewport()
+      vp.use_xr = true
 
-    func _on_xr_controller_3d_right_button_pressed(name):
-      print(name)
-    ```
+  func _on_xr_controller_3d_right_button_pressed(name):
+    print(name)
+  ```
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Godot XR Tools 2.4.1  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
