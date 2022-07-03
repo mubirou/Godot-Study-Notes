@@ -2465,7 +2465,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. [**メソッドにシグナルを接続**] ダイアログが表示（下図）  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207032357.jpg)  
 💡 上記の作業の意味  
-[**XRController3D_Right**] の [**button_pressed(name:String)**] イベントが [Main] ノードにアタッチされたスクリプト内に生成される **_on_xr_controller_3d_right_button_pressed** という名前のイベントハンドラーに受信される  
+[**XRController3D**_Right] の [**button_pressed(name:String)**] イベントが [Main] ノードにアタッチされたスクリプト内に生成される [_on_xr_controller_3d_right_button_pressed] という名前のイベントハンドラーに受信される（イベントハンドラ名は変更可能）  
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Godot XR Tools 2.4.1  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
