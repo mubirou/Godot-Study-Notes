@@ -2499,15 +2499,16 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
   |**by_button**|BYを押した|
   |**by_touch**|BYにタッチ|
   |**grip_click**|中指トリガーを押した|
+  |**menu_button**|MENUボタンを押した|
   |**primary_click**|アナログスティックを押し込んだ|
   |**primary_touch**|アナログスティックにタッチ|
   |**trigger_touch**|人差し指トリガーにタッチ|
   |**trigger_click**|人差し指トリガーを押した|
 
-実行環境：Windows 10、Godot 4.0 alpha 11、Godot XR Tools 2.4.1  
+実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：2022年07月XX日  
+作成日：2022年07月04日  
 [[TOP]](#TOP)
 
 
