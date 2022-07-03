@@ -2493,7 +2493,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. 実行すると VR コントローラーの入力に応じて以下の値（String型）が出力される  
 
   |戻り値|内容|
-  |:--:|:--|
+  |:--|:--|
   |ax_touch||
   |by_button||
   |by_touch||
