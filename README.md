@@ -2489,10 +2489,10 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
         * [**Position**]：x 0、**y 5**、z 0
         * [**Rotation**]：**x -55**、y 0、z 0  
   
-　  ├ MeshInstance3D（選択するオブジェクト）  
-　  │     └ **StaticBody3D**  
-　  │　　   └ **CollisionShape3D**（反応する領域）  
-　  └ **DirecionalLight3D**  
+  　  ├ MeshInstance3D（選択するオブジェクト）  
+  　  │     └ **StaticBody3D**  
+  　  │　　   └ **CollisionShape3D**（反応する領域）  
+  　  └ **DirecionalLight3D**  
 
 📝 ヒットポイントの視覚化
 
