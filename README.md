@@ -2490,9 +2490,17 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     print(name)
   ```
 
-1. 実行すると VR コントローラーの入力に応じて以下の値が出力される  
+1. 実行すると VR コントローラーの入力に応じて以下の値（String型）が出力される  
 
-    * XXX
+  |戻り値|内容|
+  |:--:|:--|
+  |ax_touch||
+  |by_button||
+  |by_touch||
+  |grip_click||
+  |primary_click||
+  |primary_touch||
+  |trigger_touch||
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Godot XR Tools 2.4.1  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
