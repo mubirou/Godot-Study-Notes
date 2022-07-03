@@ -2492,7 +2492,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
   1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で次の通りに設定（名前は "HitPoint" に変更）  
       * [**Mesh**]：[新規 **SphereMesh**]-[編集]-[**Material**]-[新規 **StandardMaterial3D**]-[編集] で次の通りに設定  
-        * [Transparency]-[**Transparency**]：**Alpha**
+        * [**Transparency**]-[**Transparency**]：**Alpha**
         * [**Albedo**]：[**Color**]-[**#ff0000cc**]
       * [**Transform**] を次の通りに設定
         * [**Position**]：x 0、y 0、**z -0.5**  
