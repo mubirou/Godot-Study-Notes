@@ -2482,11 +2482,17 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
   1. [立方体](#220701)などを用意
   1. 上記を選択し [子ノードを追加]-[**StaticBody3D**]
   1. StaticBody3D を選択し [子ノードを追加]-[**CollisionShape3D**]
-  1. CollisionShape3D を選択し [インスペクター]-[**Shape**]-[追加 BoxShape3D] を選ぶ（階層は以下の通り）  
-
+  1. CollisionShape3D を選択し [インスペクター]-[**Shape**]-[追加 BoxShape3D] を選ぶ
+  1. [Main] に [**DirectionalLight3D**] を追加（設定は次の通り）  
+      * [**Shadow**]-[Enabled]：**✓オン**
+      * [**Transform**] を次の通りに設定  
+        * [**Position**]：x 0、**y 5**、z 0
+        * [**Rotation**]：**x -55**、y 0、z 0  
+  
 　  ├ MeshInstance3D（選択するオブジェクト）  
 　  │     └ **StaticBody3D**  
 　  │　　   └ **CollisionShape3D**（反応する領域）  
+　  └ **DirecionalLight3D**  
 
 📝 ヒットポイントの視覚化
 
