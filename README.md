@@ -2515,27 +2515,9 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
 ### この項目は書きかけです
 
-📝 コントローラーの視覚化（今回は右のみ）
-
-1. [**VR入門**](#220702) の作業を行う
-1. [XROriginal] を選択し [子ノードを追加]-[**XRController3D**] を選択
-1. 名前を [**XRController3D_Right**] に変更
-1. [**XRController3D_Right**]-[インスペクター] で次の通り設定  
-    * [Tracker]：**right_hand**
-    * [Pose]：**aim**
-1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で次の通りに設定（名前は "Controller" に変更）  
-    * [**Mesh**]：[新規 **SphereMesh**]-[編集]-[Material]-[新規 **StandardMaterial3D**]-[編集]-[**Albedo**]-[**Color**]-[**#ff0000**]
-    * [Transform]-[**Scale**]：x 0.07、y 0.07、z 0.07  
-    🖊 直径7cmの赤色の球体のコントローラー  
-
-    Main（**Node3D**）  
-    　  └ **XROrigin3D**  
-    　　  ├ **XRCamera3D**  
-    　　  └ **XRController3D**_Right  
-    　　  　 └ Controller（コントローラの視覚化）  
-
 📝 RayCast の視覚化
 
+1. [**VRコントローラーの入力イベント**](#220703) の作業を行う
 1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**RayCast3D**]-[インスペクター] で次の通りに設定  
     * [**Target Position**]：x 0、y 0、**z -1000**
 1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で次の通りに設定（名前は "RayLine" に変更）  
