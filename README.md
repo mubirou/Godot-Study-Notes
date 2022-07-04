@@ -2485,23 +2485,26 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
       _viewport.use_xr = true
 
   func _on_xr_controller_3d_right_button_pressed(name):
-    print(name)
+    print("Pressed: " + name)
+
+  func _on_xr_controller_3d_right_button_released(name):
+    print("Released: " + name
   ```
 
 1. 実行すると VR コントローラーの入力に応じて以下の値（String型）が出力される  
 
   |戻り値|内容|
   |:--|:--|
-  |**ax_button**|AXを押した|
+  |**ax_button**|AXを押した･離した|
   |**ax_touch**|AXにタッチ|
-  |**by_button**|BYを押した|
+  |**by_button**|BYを押した･離した|
   |**by_touch**|BYにタッチ|
-  |**grip_click**|中指トリガーを押した|
-  |**menu_button**|MENUボタンを押した|
-  |**primary_click**|アナログスティックを押し込んだ|
+  |**grip_click**|中指トリガーを押した･離した|
+  |**menu_button**|MENUボタンを押した･離した|
+  |**primary_click**|アナログスティックを押した･離した|
   |**primary_touch**|アナログスティックにタッチ|
   |**trigger_touch**|人差し指トリガーにタッチ|
-  |**trigger_click**|人差し指トリガーを押した|
+  |**trigger_click**|人差し指トリガーを押した･離した|
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
