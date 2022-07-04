@@ -2517,7 +2517,8 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
 📝 RayCast の視覚化
 
-1. [**VRコントローラーの入力イベント**](#220703) の作業を行う
+1. [**VRコントローラーの入力イベント**](#220703) の作業を行う  
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202207041558.jpg)  
 1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**RayCast3D**]-[インスペクター] で次の通りに設定  
     * [**Target Position**]：x 0、y 0、**z -1000**
 1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で次の通りに設定（名前は "RayLine" に変更）  
