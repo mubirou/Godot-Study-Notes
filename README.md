@@ -2467,6 +2467,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 1. [ノード] タブに **→] ../..:: _on_xr_controller_3d_right_button_pressed()** が追加され（下図上）、[シーン] の [**XRController3D**_Right] にも [接続アイコン] が追加される（下図下）  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207040024.jpg)  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207040028.jpg)  
+1. 同様に [ノード]-[**XRcontroller3D**]-[**button_released(name:String)**] を選択し [右クリック]-[**接続**] する
 
 📝 コードの確認＆変更  
 
