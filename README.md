@@ -2522,7 +2522,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**RayCast3D**]-[インスペクター] で次の通りに設定  
     * [**Target Position**]：x 0、y 0、**z -1000**
 1. [**XRController3D_Right**] を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で次の通りに設定（名前は "RayLine" に変更）  
-    * [**Mesh**]：[新規 **BoxMesh**]-[編集]-[Material]-[新規 **StandardMaterial3D**]-[編集] で次の通りに設定  
+    * [**Mesh**]：[新規 **BoxMesh**]-[編集]-[**Material**]-[新規 **StandardMaterial3D**]-[編集] で次の通りに設定  
         * [Transparency]-[**Transparency**]：**Alpha**
         * [**Albedo**]-[**Color**]：**#ff000080**（不透明度50％）
     * [Transform]-[**Position**]：x 0、y 0、**z -500**
