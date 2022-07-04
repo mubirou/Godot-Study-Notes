@@ -2476,13 +2476,13 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
   # main.gd
   extends Node3D
 
-  var interface : XRInterface
+  var _interface : XRInterface
 
   func _ready():
-    interface = XRServer.find_interface("OpenXR")
-    if interface and interface.is_initialized():
-      var vp : Viewport = get_viewport()
-      vp.use_xr = true
+    _interface = XRServer.find_interface("OpenXR")
+    if _interface and _interface.is_initialized():
+      var _viewport : Viewport = get_viewport()
+      _viewport.use_xr = true
 
   func _on_xr_controller_3d_right_button_pressed(name):
     print(name)
