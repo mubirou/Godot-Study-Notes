@@ -2574,8 +2574,8 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
     　  │　　　 ├ RayLine（RayCast3Dの視覚化）  
     　  │　　　 └ HitPoint（ヒットポイントの可視化）  
     　  ├ MeshInstance3D（選択するオブジェクト）  
-    　  │   └ **StaticBody3D**  
-    　  │　　　 └ **CollisionShape3D**（反応する領域）  
+    　  │   └ [**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d)  
+    　  │　　　 └ [**CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d)（反応する領域）  
     　  └ **DirecionalLight3D**  
 
 📝 コードの記述  
