@@ -2470,7 +2470,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 📝 コードの確認＆変更  
 
-1. 大元の Main（Node3D）にアタッチされたコードを確認  
+1. 大元の Main（Node3D）にアタッチされたコードを確認＆変更  
 
   ```gdscript
   # main.gd
