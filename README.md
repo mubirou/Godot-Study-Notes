@@ -2562,7 +2562,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
         * [**Albedo**]：[**Color**]-[**#ff0000cc**]
       * [**Transform**] を次の通りに設定
         * [**Position**]：x 0、y 0、**z -0.5**  
-        * [**Scale**]：x 0.02、y 0.02、z 0.02  
+        * [**Scale**]：x 0.04、y 0.04、z 0.04  
       🖊 直径2cmの赤色（不透明度80％）の球体  
 
       ***
