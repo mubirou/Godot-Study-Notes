@@ -2565,7 +2565,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
         * [**Scale**]：x 0.02、y 0.02、z 0.02  
       🖊 直径2cmの赤色（不透明度80％）の球体  
 
-      Main（**Node3D**）  
+      Main（[**Node3D**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=Node3D#node3d)）  
     　  ├ [**XROrigin3D**](https://docs.godotengine.org/en/latest/classes/class_xrorigin3d.html?highlight=XROrigin3D#xrorigin3d)  
     　  │   ├ [**XRCamera3D**](https://docs.godotengine.org/en/latest/classes/class_xrcamera3d.html?highlight=XRCamera3D#xrcamera3d)  
     　  │   └ [**XRController3D**](https://docs.godotengine.org/en/latest/classes/class_xrcontroller3d.html?highlight=XRController3D#xrcontroller3d)_Right  
