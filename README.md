@@ -2570,7 +2570,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
     　  │   ├ **XRCamera3D**  
     　  │   └ **XRController3D**_Right  
     　  │　　　 ├ Controller（コントローラの視覚化）  
-    　  │　　　 ├ **RayCast3D**  
+    　  │　　　 ├ [**RayCast3D**](https://docs.godotengine.org/en/latest/classes/class_raycast3d.html?highlight=RayCast3D#raycast3d)  
     　  │　　　 ├ RayLine（RayCast3Dの視覚化）  
     　  │　　　 └ HitPoint（ヒットポイントの可視化）  
     　  ├ MeshInstance3D（選択するオブジェクト）  
