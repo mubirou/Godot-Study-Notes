@@ -2535,7 +2535,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
     　　  └ **XRController3D**_Right  
     　　  　 ├ Controller（コントローラの視覚化）  
     　　  　 ├ **RayCast3D**  
-    　　  　 └ RayLine（**BoxMesh** / RayCast3Dの視覚化）  
+    　　  　 └ RayLine（RayCast3Dの視覚化）  
 
 📝 選択するオブジェクトの用意  
 
