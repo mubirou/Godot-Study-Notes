@@ -2540,7 +2540,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 📝 選択するオブジェクトの用意  
 
   1. [立方体](#220701)などを用意
-  1. 上記を選択し [子ノードを追加]-[**StaticBody3D**]
+  1. 立方体を選択し [子ノードを追加]-[**StaticBody3D**]
   1. StaticBody3D を選択し [子ノードを追加]-[**CollisionShape3D**]
   1. CollisionShape3D を選択し [インスペクター]-[**Shape**]-[追加 BoxShape3D] を選ぶ
   1. [Main] に [**DirectionalLight3D**] を追加（設定は次の通り）  
