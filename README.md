@@ -2568,7 +2568,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
       Main（**Node3D**）  
     　  ├ **XROrigin3D**  
     　  │   ├ **XRCamera3D**  
-    　  │   └ **XRController3D**_Right  
+    　  │   └ [**XRController3D**](https://docs.godotengine.org/en/latest/classes/class_xrcontroller3d.html?highlight=XRController3D#xrcontroller3d)_Right  
     　  │　　　 ├ Controller（コントローラの視覚化）  
     　  │　　　 ├ [**RayCast3D**](https://docs.godotengine.org/en/latest/classes/class_raycast3d.html?highlight=RayCast3D#raycast3d)  
     　  │　　　 ├ RayLine（RayCast3Dの視覚化）  
