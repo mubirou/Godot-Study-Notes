@@ -2656,7 +2656,13 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
       * Size：x 0.05
       * Subdivide Depth：40
   * [Surface Material Override]-[新規 ShaderMaterial]-[編集]
-      * [Shader]-[New Shader]（名前：teleport.gdshader）  
+      * [Shader]-[New Shader]  
+        * 言語：Shader
+        * Mode：Spatial
+        * テンプレート：Empty
+        * Built-in Shader：オフ
+        * パス：res//teleport.gdshader  
+        （以下の通り記述）  
         ```c
         shader_type spatial;
         render_mode unshaded, cull_disabled, skip_vertex_transform;
