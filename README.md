@@ -2698,7 +2698,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
           ALPHA = col.a;
         }
         ```
-        （コントローラーからテレポート用の黒い曲線が表示） 
+        （コントローラーから黒い曲線が表示される） 
       *  [Shader Param]  
         * Arrow Texture：[teleport_arrow.png](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/images/teleport_arrow.png)  
         * Length：30  
