@@ -2416,13 +2416,13 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     # main.gd
     extends Node3D
 
-    var interface : XRInterface
+    var _interface : XRInterface
 
     func _ready():
-      interface = XRServer.find_interface("OpenXR")
-      if interface and interface.is_initialized():
-        var vp : Viewport = get_viewport()
-        vp.use_xr = true
+      _interface = XRServer.find_interface("OpenXR")
+      if _interface and _interface.is_initialized():
+        var _viewport : Viewport = get_viewport()
+        _viewport.use_xr = true
     ```
 
 1. [実行] し **Quest** 上で動作確認（何もまだない状態）  
@@ -2647,21 +2647,10 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 1. Godot を起動
 1. [AssetLib]-[インポート...] でダウンロードした **godot-xr-tools-x.x.x.zip** を選択 → [開く] → [インポート]
 
-👉
+👉 XXXX
 
-1. [**VR入門**](#220702) の作業を行う
-1. [XROriginal] を選択し [子ノードを追加]-[**XRController3D**] を選択（2回行う）
-1. 名前を [**XRController3D_Left**] と [**XRController3D_Right**] に変更
-1. [**XRController3D_Left**]-[インスペクター] で次の通りに設定  
-    * [Tracker]：**left_hand**
-    * [Pose]：**aim**
-1. [**XRController3D_Right**]-[インスペクター] で次の通りに設定  
-    * [Tracker]：**right_hand**
-    * [Pose]：**aim**
-1. [**XRController3D_Left**] を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で次の通りに設定  
-    * [Mesh]：[新規 **SphereMesh**]-[編集]-[Material]-[新規 **StandardMaterial3D**]-[編集]-[**Albedo**]-[**Color**]-[**#0000ff**]
-    * [Transform]-[**Scale**]：x 0.07、y 0.07、z 0.07
-1. [**XRController3D_Right**] も上記と同様（色は **#ff0000**）
+1. 
+
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Godot XR Tools 2.4.1  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
