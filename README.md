@@ -2699,7 +2699,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
         }
         ```
       *  [Shader Param]  
-        * Arrow Texture：[teleport_arrow.png](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/images/teleport_arrow.png)
+        * Arrow Texture：[teleport_arrow.png](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/images/teleport_arrow.png)  
         * Length：30
         * Mix Color：#0000ff
         * Scale T：0.2
