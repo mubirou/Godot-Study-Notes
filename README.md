@@ -2698,7 +2698,12 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
           ALPHA = col.a;
         }
         ```
-      *  XXX
+      *  [Shader Param]  
+        * Arrow Texture：[teleport_arrow.png](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/images/teleport_arrow.png)
+        * Length：30
+        * Mix Color：#0000ff
+        * Scale T：0.2
+        * Ws：1
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Godot XR Tools 2.4.1  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
