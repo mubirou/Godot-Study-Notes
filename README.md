@@ -2650,6 +2650,55 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 👉 Godot 4 用の [**Function_Teleport.gd**](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd)
 
 
+👉 Function_Teleport（CharacterBody3D）/Teleport（MeshInstance3D）  
+
+  * [Mesh]-[新規 PlaneMesh]-[編集]  
+      * Size：x 0.05
+      * Subdivide Depth：40
+  * [Surface Material Override]-[新規 ShaderMaterial]-[編集]
+      * New Shader  
+        ```c
+        shader_type spatial;
+        render_mode unshaded, cull_disabled, skip_vertex_transform;
+
+        uniform float scale_t = 0.2;
+        uniform float length = 20.0;
+        uniform float ws = 1.0;
+        uniform vec4 mix_color : source_color;
+        uniform sampler2D arrow_texture : hint_default_white;
+
+        void vertex() {
+          vec3 down = vec3(0.0, -1.0 / ws, 0.0);
+          
+          // offset our Z so we're projecting from our origin point
+          VERTEX.z -= 0.5;
+          VERTEX.z *= length;
+          
+          // now use that to create our arch
+          float t = VERTEX.z * scale_t;
+          float t2 = t * t;
+
+          // translate to our world vector
+          VERTEX = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xyz; 
+          
+          // and now create our arch
+          VERTEX += down * t2;
+          
+          // and apply our view matrix
+          VERTEX = (VIEW_MATRIX * vec4(VERTEX, 1.0)).xyz;
+        }
+
+        void fragment() {
+          // and do our color
+          float offset =  (TIME * 2.0);
+          vec4 col = texture(arrow_texture, vec2(UV.x, (UV.y * length * 4.0) + offset )).rgba;
+          ALBEDO = col.rgb * mix_color.rgb;
+          
+          // need to fix up our image and add an alpha channel
+          ALPHA = col.a;
+        }
+        ```
+
 実行環境：Windows 10、Godot 4.0 alpha 11、Godot XR Tools 2.4.1  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
