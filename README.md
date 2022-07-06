@@ -2641,9 +2641,6 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
 ### この項目は書きかけです
 
-👉 Godot 4 用の [**Function_Teleport.gd**](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd)
-
-
 👉 Function_Teleport（CharacterBody3D）/Teleport（MeshInstance3D）  
 
   * [Mesh]-[新規 PlaneMesh]-[編集]  
@@ -2698,14 +2695,18 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
           ALPHA = col.a;
         }
         ```
-        （コントローラーから黒い曲線が表示される） 
+        ～コントローラーから黒い曲線が表示される～ 
       *  [Shader Param]  
         * Arrow Texture：[teleport_arrow.png](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/images/teleport_arrow.png)  
         * Length：30  
         * Mix Color：#0000ff  
         * Scale T：0.2  
         * Ws：1  
-        （テレポート用の青い矢印が動きだす）  
+        ～テレポート用の青い矢印が動きだす～  
+
+        ###　この項目は書きかけです
+
+👉 Godot 4 用の [**Function_Teleport.gd**](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd)
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Godot XR Tools 2.4.1  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
