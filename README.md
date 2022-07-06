@@ -2656,7 +2656,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
       * Size：x 0.05
       * Subdivide Depth：40
   * [Surface Material Override]-[新規 ShaderMaterial]-[編集]
-      * New Shader  
+      * [Shader]-[New Shader]（名前：teleport.gdshader）  
         ```c
         shader_type spatial;
         render_mode unshaded, cull_disabled, skip_vertex_transform;
@@ -2698,6 +2698,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
           ALPHA = col.a;
         }
         ```
+      *  XXX
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Godot XR Tools 2.4.1  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
