@@ -2641,12 +2641,6 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
 ### この項目は書きかけです
 
-👉 **Godot XR Tools** のインストール  
-
-1. [**Godot XR Tools**](https://github.com/GodotVR/godot-xr-tools/releases) の最新版をダウンロード
-1. Godot を起動
-1. [AssetLib]-[インポート...] でダウンロードした **godot-xr-tools-x.x.x.zip** を選択 → [開く] → [インポート]
-
 👉 Godot 4 用の [**Function_Teleport.gd**](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd)
 
 
@@ -2704,14 +2698,14 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
           ALPHA = col.a;
         }
         ```
-        💡以上でコントローラーからテレポートライン（黒い曲線）が表示される  
-
+        （コントローラーからテレポート用の黒い曲線が表示） 
       *  [Shader Param]  
         * Arrow Texture：[teleport_arrow.png](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/images/teleport_arrow.png)  
         * Length：30  
         * Mix Color：#0000ff  
         * Scale T：0.2  
         * Ws：1  
+        （テレポート用の青い矢印が動きだす）  
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Godot XR Tools 2.4.1  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
