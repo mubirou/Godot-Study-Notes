@@ -2646,7 +2646,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
   Main（**Node3D**）  
   　  └ **XROrigin3D**  
   　　  ├ **XRCamera3D**  
-  　　  └ **XRController3D**Left  
+  　　  └ **XRController3D**_Left  
   　　  　 └ Controller（左コントローラの視覚化）  
 
 👉 Function_Teleport（CharacterBody3D）/Teleport（MeshInstance3D）  
