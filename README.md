@@ -2781,7 +2781,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
       * [**Cant Teleport Color**]：#ffffff
       * [**No Collision Color**]：#ffffff
 1. テレポートの矢印の速度を一定にする  
-  **Function_Teleport.gd** を変更  
+  **Function_Teleport.gd** を以下の通りコメントアウト  
 ```gdscript
 249行目 #$Teleport.get_surface_override_material(0).set_shader_param("length", cast_length)
 ```
