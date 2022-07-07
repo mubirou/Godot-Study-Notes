@@ -2744,9 +2744,9 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
     * [**Shape**]-[新規 **CapseleShape3D**]-[編集]  
       * [**Radius**]：**0.05**
       * [**Height**]：**0.1**
-      * [**Transform**]-[**Rotation**]：**x 90**、y 0、z 0
     * [**Transform**] で各種設定  
       * [**Position**]：x 0、**y -0.05**、z 0
+      * [**Rotation**]：**x 90**、y 0、z 0
       * [**Scale**]：x 1、**y 0.1**、z 1  
 
 （これまでの作業の階層）  
