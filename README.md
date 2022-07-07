@@ -2776,15 +2776,16 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 📝 **カスタマイズ**  
 
 * テレポートの色の変更
-  * [**Function_Teleport**]-[インスペクター]
+  * [**Function_Teleport**]-[インスペクター] で設定
     * [**Can Teleport Color**]：#0000ff  
     * [**Cant Teleport Color**]：#ffffff
     * [**No Collision Color**]：#ffffff
 
 * テレポートの矢印の速度を一定にする  
-```gdscript
-249行目 #$Teleport.get_surface_override_material(0).set_shader_param("length", cast_length)
-```
+  **Function_Teleport.gd** を変更  
+  ```gdscript
+  249行目 #$Teleport.get_surface_override_material(0).set_shader_param("length", cast_length)
+  ```
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Godot XR Tools 2.4.1  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
