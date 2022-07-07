@@ -2736,7 +2736,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
       * [**Transparencey**]-[Transparency]：**Alpha**
       * [**Albedo**] で各種設定  
         * [**Color**]：**#0000ff**（アルファ値は無効）  
-        * [**Texture**]：[**teleport_target.png**](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/images/teleport_target.png)
+        * [**Texture**]：[**teleport_target_foot.png**](https://github.com/mubirou/Godot/blob/main/png/teleport_target_foot.png)
     * [**Transform**] で各種設定  
       * [**Position**]：x 0、**y：-1**、**z：-5**
       * [**Scale**]：**x 0.5**、**y 0.5**、**z 0.5**
