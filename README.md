@@ -2659,7 +2659,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
     * [**Mesh**]-[新規 **PlaneMesh**]-[編集]  
       * **Size**：**x 0.05**、**y 1**
       * **Subdivide Depth**：**40**
-    * [**Surface Material Override**]-[新規 ShaderMaterial]-[編集]
+    * [**Surface Material Override**]-[新規 **ShaderMaterial**]-[編集]
         * [Shader]-[New Shader]  
           * 言語：Shader
           * Mode：Spatial
