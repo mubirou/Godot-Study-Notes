@@ -2724,8 +2724,8 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
   　　  ├ **XRCamera3D**  
   　　  └ **XRController3D**_Left  
   　　  　 ├ Controller（左コントローラの視覚化）  
-  　　  　 └ **Function＿Teleport**（**CharacterBody3D**）  
-  　　  　 　 └ **Teleport**（**MeshInstance**）  
+  　　  　 └ **Function_Teleport**（**CharacterBody3D**）  
+  　　  　 　 └ **Teleport**（**PlaneMesh**）  
 
 📝 ターゲットの作成  
 
@@ -2739,6 +2739,26 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
         * [**Color**]：**#0000ff**（アルファ値は無効）  
         * [**Texture**]：[**teleport_target.png**](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/images/teleport_target.png)
       * [**Transform**]-[**Position**]：x 0、**y：-1**、**z：-5**
+1. [**Function_Teleport**] を選択し [子ノードを追加]-[**CollisionShape3D**] を選択
+1. [**CollisionShape3D**]-[インスペクター] で各種設定  
+    * [**Shape**]-[新規 **CapseleShape3D**]-[編集]  
+      * [**Radius**]：**0.05**
+      * [**Height**]：**0.1**
+      * [**Transform**]-[**Rotation**]：**x 90**、y 0、z 0
+    * [**Transform**] で各種設定  
+      * [**Position**]：x 0、**y -0.05**、z 0
+      * [**Scale**]：x 1、**y 0.1**、z 1  
+
+（これまでの作業の階層）  
+  Main（**Node3D**）  
+  　  └ **XROrigin3D**  
+  　　  ├ **XRCamera3D**  
+  　　  └ **XRController3D**_Left  
+  　　  　 ├ Controller（左コントローラの視覚化）  
+  　　  　 └ **Function_Teleport**（**CharacterBody3D**）  
+  　　  　 　 ├ **Teleport**（**PlaneMesh**）  
+  　　  　 　 ├ **Target**（**PlaneMesh**）  
+  　　  　 　 └ **CollisionShape3D**（**CapsuleShape3D**）  
 
 👉 Godot 4 用の [**Function_Teleport.gd**](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd)
 
