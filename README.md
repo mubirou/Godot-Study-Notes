@@ -2453,7 +2453,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     　  └ **XROrigin3D**  
     　　  ├ **XRCamera3D**  
     　　  └ **XRController3D**_Right  
-    　　  　 └ Controller（コントローラの視覚化）  
+    　　  　 └ Controller（右コントローラの視覚化）  
 
 📝 入力イベントとの接続  
 
@@ -2535,7 +2535,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
     　  └ **XROrigin3D**  
     　　  ├ **XRCamera3D**  
     　　  └ **XRController3D**_Right  
-    　　  　 ├ Controller（コントローラの視覚化）  
+    　　  　 ├ Controller（右コントローラの視覚化）  
     　　  　 ├ **RayCast3D**  
     　　  　 └ RayLine（RayCast3Dの視覚化）  
 
@@ -2641,7 +2641,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
 ### この項目は書きかけです
 
-👉 [VRコントローラーの入力イベント](https://github.com/mubirou/Godot#vr%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%81%AE%E5%85%A5%E5%8A%9B%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88) と同様に左コントローラーを設定  
+📝 [**VRコントローラーの入力イベント**](https://github.com/mubirou/Godot#vr%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%81%AE%E5%85%A5%E5%8A%9B%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88) と同様に左コントローラーを設定  
 
   Main（**Node3D**）  
   　  └ **XROrigin3D**  
@@ -2649,9 +2649,13 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
   　　  └ **XRController3D**_Left  
   　　  　 └ Controller（左コントローラの視覚化）  
 
-👉 Function_Teleport（CharacterBody3D）/Teleport（MeshInstance3D）  
+📝 〇〇〇〇〇〇  
 
-  * [Mesh]-[新規 PlaneMesh]-[編集]  
+1. [**XRController3D_Left**] を選択し [子ノードを追加]-[**CharacterBody3D**] を選択
+1. 名前を "CharacterBody3D" → "Function_Teleport" に変更
+1. [**CharacterBody3D**] を選択し [子ノードを追加]-[**MeshInstance3D**] を選択
+1. 名前を "MeshInstance3D" → "Teleport" に変更
+1. [**Teleport**]-[インスペクター]-[Mesh]-[新規 **PlaneMesh**]-[編集]  
       * Size：x 0.05
       * Subdivide Depth：40
   * [Surface Material Override]-[新規 ShaderMaterial]-[編集]
