@@ -2650,7 +2650,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
   　　  └ **XRController3D**_Left  
   　　  　 └ Controller（左コントローラの視覚化）  
 
-📝 テレポート線の作成  
+📝 **テレポート線の作成**  
 
 1. [**XRController3D_Left**] を選択し [子ノードを追加]-[**CharacterBody3D**] を選択
 1. 名前を "CharacterBody3D" → "**Function_Teleport**" に変更
@@ -2727,7 +2727,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
   　　  　 └ **Function_Teleport**（**CharacterBody3D**）  
   　　  　 　 └ **Teleport**（**PlaneMesh**）  
 
-📝 ターゲットの作成  
+📝 **ターゲットの作成**  
 
 1. [**Function_Teleport**] を選択し [子ノードを追加]-[**MeshInstance3D**] を選択
 1. 名前を "MeshInstance3D" → "**Target**" に変更
