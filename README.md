@@ -2649,16 +2649,16 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
   　　  └ **XRController3D**_Left  
   　　  　 └ Controller（左コントローラの視覚化）  
 
-📝 〇〇〇〇〇〇  
+📝 テレポート線の作成  
 
 1. [**XRController3D_Left**] を選択し [子ノードを追加]-[**CharacterBody3D**] を選択
 1. 名前を "CharacterBody3D" → "**Function_Teleport**" に変更
-1. [**CharacterBody3D**] を選択し [子ノードを追加]-[**MeshInstance3D**] を選択
+1. [**Function_Teleport**] を選択し [子ノードを追加]-[**MeshInstance3D**] を選択
 1. 名前を "MeshInstance3D" → "**Teleport**" に変更
 1. [**Teleport**]-[インスペクター] で各種設定  
     * [**Mesh**]-[新規 **PlaneMesh**]-[編集]  
-      * **Size**：**x 0.05**、**y 1**
-      * **Subdivide Depth**：**40**
+      * [**Size**]：**x 0.05**、**y 1**
+      * [**Subdivide Depth**]：**40**
     * [**Surface Material Override**]-[新規 **ShaderMaterial**]-[編集]
         * [Shader]-[**New Shader**]  
           * 言語：Shader
@@ -2710,14 +2710,33 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
         ```
         ～コントローラーから黒い曲線が表示される～ 
       *  [Shader Param]  
-          * Arrow Texture：[teleport_arrow.png](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/images/teleport_arrow.png)  
-          * Length：30  
-          * Mix Color：#0000ff  
-          * Scale T：0.2  
-          * Ws：1  
+          * **Arrow Texture**：[**teleport_arrow.png**](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/images/teleport_arrow.png)  
+          * **Length**：**30**  
+          * **Mix Color**：**#0000ff**（アルファ値は無効）  
+          * **Scale T**：**0.2**  
+          * **Ws**：**1**  
           ～テレポート用の青い矢印が動きだす～  
 
-        ###　この項目は書きかけです
+  Main（**Node3D**）  
+  　  └ **XROrigin3D**  
+  　　  ├ **XRCamera3D**  
+  　　  └ **XRController3D**_Left  
+  　　  　 ├ Controller（左コントローラの視覚化）  
+  　　  　 └ **Function＿Teleport**（**CharacterBody3D**）  
+  　　  　 　 └ **Teleport**（**MeshInstance**）  
+
+📝 ターゲットの作成  
+
+1. [**Function_Teleport**] を選択し [子ノードを追加]-[**MeshInstance3D**] を選択
+1. 名前を "MeshInstance3D" → "**Target**" に変更
+1. [**Target**]-[インスペクター] で各種設定  
+    * [**Mesh**]-[新規 **PlaneMesh**]  
+    * [**Surface Material Override**]-[新規 **ShaderMaterial**]-[編集]  
+      * [**Transparencey**]-[Transparency]：**Alpha**
+      * [**Albedo**] で各種設定  
+        * [**Color**]：**#0000ff**（アルファ値は無効）  
+        * [**Texture**]：[**teleport_target.png**](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/images/teleport_target.png)
+      * [**Transform**]-[**Position**]：x 0、**y：-1**、**z：-5**
 
 👉 Godot 4 用の [**Function_Teleport.gd**](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd)
 
