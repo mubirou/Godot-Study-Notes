@@ -2700,7 +2700,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
         void fragment() {
           // and do our color
-          float offset =  (TIME * 2.0);
+          float offset =  (TIME * 2.0); // 矢印の速度
           vec4 col = texture(arrow_texture, vec2(UV.x, (UV.y * length * 4.0) + offset )).rgba;
           ALBEDO = col.rgb * mix_color.rgb;
           
