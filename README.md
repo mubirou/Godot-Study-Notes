@@ -2775,10 +2775,11 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
 📝 **カスタマイズ**  
 
-* [**Function_Teleport**]-[インスペクター]
-  * [**Can Teleport Color**]：#0000ff  
-  * [**Cant Teleport Color**]：#ffffff
-  * [**No Collision Color**]：#ffffff
+* テレポートの色の変更
+  * [**Function_Teleport**]-[インスペクター]
+    * [**Can Teleport Color**]：#0000ff  
+    * [**Cant Teleport Color**]：#ffffff
+    * [**No Collision Color**]：#ffffff
 
 * テレポートの矢印の速度を一定にする  
 ```gdscript
