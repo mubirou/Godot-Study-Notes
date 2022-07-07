@@ -2726,6 +2726,11 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
   　　  　 └ **Function_Teleport**（**CharacterBody3D**）  
   　　  　 　 └ **Teleport**（**PlaneMesh**）  
 
+📝 **床の作成**  
+
+1. **CollisionShape3D** 付の床を作成
+1. XXXXX
+
 📝 **ターゲットの作成**  
 
 1. [**Function_Teleport**] を選択し [子ノードを追加]-[**MeshInstance3D**] を選択
