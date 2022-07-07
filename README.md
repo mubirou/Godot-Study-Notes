@@ -2660,7 +2660,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
       * **Size**：**x 0.05**、**y 1**
       * **Subdivide Depth**：**40**
     * [**Surface Material Override**]-[新規 **ShaderMaterial**]-[編集]
-        * [Shader]-[New Shader]  
+        * [Shader]-[**New Shader**]  
           * 言語：Shader
           * Mode：Spatial
           * テンプレート：Empty
@@ -2710,12 +2710,12 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
         ```
         ～コントローラーから黒い曲線が表示される～ 
       *  [Shader Param]  
-        * Arrow Texture：[teleport_arrow.png](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/images/teleport_arrow.png)  
-        * Length：30  
-        * Mix Color：#0000ff  
-        * Scale T：0.2  
-        * Ws：1  
-        ～テレポート用の青い矢印が動きだす～  
+          * Arrow Texture：[teleport_arrow.png](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/images/teleport_arrow.png)  
+          * Length：30  
+          * Mix Color：#0000ff  
+          * Scale T：0.2  
+          * Ws：1  
+          ～テレポート用の青い矢印が動きだす～  
 
         ###　この項目は書きかけです
 
