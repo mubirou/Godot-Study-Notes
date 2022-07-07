@@ -2766,6 +2766,11 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
 1. [**Function_Teleport**] を選択しスクリプトをアタッチ（名前は **Function_Teleport.gd**）
 1. **Function_Teleport.gd** の内容を Godot 4 用の [**Function_Teleport.gd**](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd) に書き換える  
+1. エラーが出る場所をコメントアウトする  
+
+```gdscript
+#$Target/Player_figure.scale = Vector3(ws, ws, ws)
+```
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Godot XR Tools 2.4.1  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
