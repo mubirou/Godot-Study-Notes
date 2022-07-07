@@ -2655,9 +2655,10 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 1. 名前を "CharacterBody3D" → "**Function_Teleport**" に変更
 1. [**CharacterBody3D**] を選択し [子ノードを追加]-[**MeshInstance3D**] を選択
 1. 名前を "MeshInstance3D" → "**Teleport**" に変更
-1. [**Teleport**]-[インスペクター]-[Mesh]-[新規 **PlaneMesh**]-[編集]  
+1. [**Teleport**]-[インスペクター] で各種設定  
+  * [Mesh]-[新規 **PlaneMesh**]-[編集]  
       * **Size**：**x 0.05**、**y 1**
-      * **Subdivide Depth**：40
+      * **Subdivide Depth**：**40**
   * [Surface Material Override]-[新規 ShaderMaterial]-[編集]
       * [Shader]-[New Shader]  
         * 言語：Shader
