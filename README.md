@@ -2733,7 +2733,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 1. 名前を "MeshInstance3D" → "**Target**" に変更
 1. [**Target**]-[インスペクター] で各種設定  
     * [**Mesh**]-[新規 **PlaneMesh**]  
-    * [**Surface Material Override**]-[新規 **ShaderMaterial**]-[編集]  
+    * [**Surface Material Override**]-[新規 **StandardMaterial3D**]-[編集]  
       * [**Transparencey**]-[Transparency]：**Alpha**
       * [**Albedo**] で各種設定  
         * [**Color**]：**#0000ff**（アルファ値は無効）  
