@@ -2738,7 +2738,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
       * [**Albedo**] で各種設定  
         * [**Color**]：**#0000ff**（アルファ値は無効）  
         * [**Texture**]：[**teleport_target.png**](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/images/teleport_target.png)
-      * [**Transform**]-[**Position**]：x 0、**y：-1**、**z：-5**
+    * [**Transform**]-[**Position**]：x 0、**y：-1**、**z：-5**
 1. [**Function_Teleport**] を選択し [子ノードを追加]-[**CollisionShape3D**] を選択
 1. [**CollisionShape3D**]-[インスペクター] で各種設定  
     * [**Shape**]-[新規 **CapseleShape3D**]-[編集]  
