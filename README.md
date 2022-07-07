@@ -2641,6 +2641,14 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
 ### この項目は書きかけです
 
+👉 [VRコントローラーの入力イベント](https://github.com/mubirou/Godot#vr%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%81%AE%E5%85%A5%E5%8A%9B%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88) と同様に左コントローラーを設定  
+
+    Main（**Node3D**）  
+    　  └ **XROrigin3D**  
+    　　  ├ **XRCamera3D**  
+    　　  └ **XRController3D**Left  
+    　　  　 └ Controller（左コントローラの視覚化）  
+
 👉 Function_Teleport（CharacterBody3D）/Teleport（MeshInstance3D）  
 
   * [Mesh]-[新規 PlaneMesh]-[編集]  
