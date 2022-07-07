@@ -2652,9 +2652,9 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 📝 〇〇〇〇〇〇  
 
 1. [**XRController3D_Left**] を選択し [子ノードを追加]-[**CharacterBody3D**] を選択
-1. 名前を "CharacterBody3D" → "Function_Teleport" に変更
+1. 名前を "CharacterBody3D" → "**Function_Teleport**" に変更
 1. [**CharacterBody3D**] を選択し [子ノードを追加]-[**MeshInstance3D**] を選択
-1. 名前を "MeshInstance3D" → "Teleport" に変更
+1. 名前を "MeshInstance3D" → "**Teleport**" に変更
 1. [**Teleport**]-[インスペクター]-[Mesh]-[新規 **PlaneMesh**]-[編集]  
       * Size：x 0.05
       * Subdivide Depth：40
