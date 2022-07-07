@@ -2643,11 +2643,12 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
 📝 [**VRコントローラーの入力イベント**](https://github.com/mubirou/Godot#vr%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%81%AE%E5%85%A5%E5%8A%9B%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88) と同様に左コントローラーを設定  
 
-  Main（**Node3D**）  
-  　  └ **XROrigin3D**  
-  　　  ├ **XRCamera3D**  
-  　　  └ **XRController3D**_Left  
-  　　  　 └ Controller（左コントローラの視覚化）  
+  （これまでの作業の階層）
+    Main（**Node3D**）  
+    　  └ **XROrigin3D**  
+    　　  ├ **XRCamera3D**  
+    　　  └ **XRController3D**_Left  
+    　　  　 └ Controller（左コントローラの視覚化）  
 
 📝 テレポート線の作成  
 
@@ -2717,13 +2718,14 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
           * **Ws**：**1**  
           ～テレポート用の青い矢印が動きだす～  
 
-  Main（**Node3D**）  
-  　  └ **XROrigin3D**  
-  　　  ├ **XRCamera3D**  
-  　　  └ **XRController3D**_Left  
-  　　  　 ├ Controller（左コントローラの視覚化）  
-  　　  　 └ **Function＿Teleport**（**CharacterBody3D**）  
-  　　  　 　 └ **Teleport**（**MeshInstance**）  
+  （これまでの作業の階層）
+    Main（**Node3D**）  
+    　  └ **XROrigin3D**  
+    　　  ├ **XRCamera3D**  
+    　　  └ **XRController3D**_Left  
+    　　  　 ├ Controller（左コントローラの視覚化）  
+    　　  　 └ **Function＿Teleport**（**CharacterBody3D**）  
+    　　  　 　 └ **Teleport**（**MeshInstance**）  
 
 📝 ターゲットの作成  
 
