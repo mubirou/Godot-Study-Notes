@@ -2788,7 +2788,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 1. **テレポート不可の時に半透明にする**  
   **Function_Teleport.gd** を以下の通り追加  
 ```gdscript
-275行目 var _path = res://.godot/imported/teleport_arrow_80.png-f1bbbbd02c2cd2c9a92c3715c2dd290e.s3tc.ctex
+275行目 var _path = "res://.godot/imported/teleport_arrow_80.png-f1bbbbd02c2cd2c9a92c3715c2dd290e.s3tc.ctex"
 276行目 $Teleport.get_surface_override_material(0).get_shader_param("arrow_texture").load_path = _path
 ...
 283行目 var _path = "res://.godot/imported/teleport_arrow_30.png-838b76c79534eb9bd426790e319d8073.s3tc.ctex"
