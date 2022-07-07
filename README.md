@@ -2762,7 +2762,9 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
   　　  　 　 ├ **Target**（**PlaneMesh**）  
   　　  　 　 └ **CollisionShape3D**（**CapsuleShape3D**）  
 
-👉 Godot 4 用の [**Function_Teleport.gd**](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd)
+📝 **スクリプトのアタッチ**  
+
+1. Godot 4 用の [**Function_Teleport.gd**](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd)  
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Godot XR Tools 2.4.1  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
