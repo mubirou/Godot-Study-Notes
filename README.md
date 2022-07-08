@@ -2734,7 +2734,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
       * [**Position**]：x 0、**y -0.05**、z 0
       * [**Scale**]：x 1、**y 0.1**、z 1  
 
-（これまでの作業の階層） 
+（これまでの作業の階層）  
   Main（Node3D）  
   　 ├ XROrigin3D  
   　 │ ├ XRCamera3D  
