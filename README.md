@@ -2735,7 +2735,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
       * [**Scale**]：x 1、**y 0.1**、z 1  
 
 （階層は次の通り）  
-  Main（Node3D）
+  Main（Node3D）  
 　 ├ Floor  
 　 │  └ **StaticBody3D**  
 　 │　　　 └ **CollisionShape3D**  
