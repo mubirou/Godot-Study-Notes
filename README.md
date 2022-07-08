@@ -2782,7 +2782,7 @@ Main（Node3D）
   　　  　 　 ├ **Target**（**PlaneMesh**）  
   　　  　 　 └ **CollisionShape3D**（**CapsuleShape3D**）  
 
-      ***  
+      ***
       Main（**Node3D**）  
       　 ├ **XROrigin3D**  
       　 │ ├ **XRCamera3D**  
@@ -2796,7 +2796,7 @@ Main（Node3D）
       　 │ └ **StaticBody3D**  
       　 │　　└ **CollisionShape3D**    
       　 └ DirecionalLight3D  
-      ***  
+      ***
 
 📝 **スクリプトのアタッチ**  
 
