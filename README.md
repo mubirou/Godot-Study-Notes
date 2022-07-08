@@ -2664,7 +2664,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
       * [**Rotation**]：**x -55**、y 0、z 0  
 
 📝 **天井にタイルを貼る場合**  
-※「PaneMesh」は裏は透明になる「CubeMesh」は裏は暗くなる、という問題を回避する必要があります
+💡「PaneMesh」は裏は透明になる「CubeMesh」は裏は暗くなる、という問題を回避する必要があります
 1. [シーン]-[＋]-[**MeshInstance3D**] を選択
 1. 名前を "MeshInstance3D" → "Ceiling（天井）" に変更
 1. [インスペクター]-[MeshInstance3D]-[Mesh]-[新規 **BoxMesh**] を選択（1mの立方体）
