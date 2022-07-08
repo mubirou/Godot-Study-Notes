@@ -2602,7 +2602,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 📝 **床にタイルを貼る場合**  
 （10x10m に 1x1m のタイルを敷き詰める）  
 
-1. タイル（400x400px程度）のタイル（1m四方）用の画像を作成（例：[tile.png](https://github.com/mubirou/Godot/blob/main/png/tile.png)）
+1. タイル（400x400px）のタイル（1m四方）用の画像を作成（例：[tile.png](https://github.com/mubirou/Godot/blob/main/png/tile.png)）
 1. [シーン]-[＋]-[**MeshInstance3D**] を選択
 1. 名前を "MeshInstance3D" → "Floor" に変更
 1. [インスペクター]-[Mesh]-[新規 **PlaneMesh**]-[編集] で以下の通り設定  
