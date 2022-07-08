@@ -2739,10 +2739,12 @@ Main（Node3D）
 　 ├ XROrigin3D  
 　 │ ├ XRCamera3D  
 　 │ └ XRController3D_Left  
-　 │　　　 └ Controller  
+　 │　　├ Controller  
+　 │　　└ Function_Teleport  
+　 │　　　　└ Teleport  
 　 ├ Floor  
 　 │ └ **StaticBody3D**  
-　 │　　　 └ **CollisionShape3D**    
+　 │　　└ **CollisionShape3D**    
 　 └ DirecionalLight3D  
 
 📝 **ターゲットの作成**  
