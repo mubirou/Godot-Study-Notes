@@ -2736,7 +2736,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
 📝 [**床の作成**](#220705)  
 
-1. **CollisionShape3D** 付の床を作成
+1. 上記の床（**MeshInstance3D** / **PlaneMesh**）に [**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d) および [***CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d) を設定  
 1. XXXXX
 
 📝 **ターゲットの作成**  
