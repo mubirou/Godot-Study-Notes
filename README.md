@@ -2781,20 +2781,19 @@ Main（Node3D）
   　　  　 　 ├ **Teleport**（**PlaneMesh**）  
   　　  　 　 ├ **Target**（**PlaneMesh**）  
   　　  　 　 └ **CollisionShape3D**（**CapsuleShape3D**）  
-
-Main（Node3D）
-　 ├ XROrigin3D
-　 │ ├ XRCamera3D
-　 │ └ XRController3D_Right
-　 │　　　 ├ Controller（コントローラの視覚化）
-　 │　　　 ├ RayCast3D
-　 │　　　 ├ RayLine（RayCast3Dの視覚化）
-　 │　　　 └ HitPoint（ヒットポイントの可視化）
-　 ├ Floor
-　 │ └ **StaticBody3D**
-　 │　　　 └ **CollisionShape3D**  
-　 └ DirecionalLight3D
-
+**
+Main（Node3D）  
+　 ├ XROrigin3D  
+　 │ ├ XRCamera3D  
+　 │ └ XRController3D_Left  
+　 │　　├ Controller  
+　 │　　└ Function_Teleport  
+　 │　　　　└ Teleport  
+　 ├ Floor  
+　 │ └ **StaticBody3D**  
+　 │　　└ **CollisionShape3D**    
+　 └ DirecionalLight3D  
+**
 
 
 📝 **スクリプトのアタッチ**  
