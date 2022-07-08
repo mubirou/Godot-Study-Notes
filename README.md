@@ -2641,7 +2641,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
 ### この項目は書きかけです
 
-📝 **床にタイルを貼る場合**
+📝 **床にタイルを貼る場合**  
 （10x10m に 1x1m のタイルを敷き詰める）  
 
 1. タイル（400x400px程度）のタイル（1m四方）用の画像を作成（例：[tile.png](https://github.com/mubirou/Godot/blob/main/png/tile.png)）
