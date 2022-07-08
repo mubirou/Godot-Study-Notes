@@ -2735,10 +2735,11 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
       * [**Scale**]：x 1、**y 0.1**、z 1  
 
 （階層は次の通り）  
-  Main（**Node3D**）  
-  　└ Floor  
-  　　 └ **StaticBody3D**  
-  　　 　 └ **CollisionShape3D**  
+  Main（Node3D）
+　 ├ Floor  
+　 │  └ **StaticBody3D**  
+　 │　　　 └ **CollisionShape3D**  
+　 └ DirecionalLight3D
 
 📝 **ターゲットの作成**  
 
@@ -2774,6 +2775,9 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
   　　  　 　 ├ **Teleport**（**PlaneMesh**）  
   　　  　 　 ├ **Target**（**PlaneMesh**）  
   　　  　 　 └ **CollisionShape3D**（**CapsuleShape3D**）  
+    　└ Floor  
+  　　 └ **StaticBody3D**  
+  　　 　 └ **CollisionShape3D**  
 
 📝 **スクリプトのアタッチ**  
 
