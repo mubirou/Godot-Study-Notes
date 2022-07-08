@@ -2643,7 +2643,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
 📝床（10m四方）にタイル（1m四方）を貼る場合…
 
-1. タイル（400x400px程度）のタイル（1m四方）用の画像を作成（例：[tile.svg](https://github.com/mubirou/Godot/blob/main/svg/tile.svg)）
+1. タイル（400x400px程度）のタイル（1m四方）用の画像を作成（例：[tile.png](https://github.com/mubirou/Godot/blob/main/png/tile.png)）
 1. [シーン]-[＋]-[MeshInstance] を選択
 1. 名前を "MeshInstance" → "Floor" に変更
 1. [インスペクター]-[MeshInstance]-[Mesh]-[新規**PlaneMesh**] を選択
