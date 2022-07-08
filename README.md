@@ -2781,7 +2781,7 @@ Main（**Node3D**）
 　 │　　　　├ **Teleport**（**PlaneMesh**）    
 　 │　　　　├ **Target**（**PlaneMesh**）    
 　 │　　　　└ **CollisionShape3D**（**CapsuleShape3D**）  
-　 ├ Floor  
+　 ├ Floor（**PlaneMesh**）  
 　 │ └ **StaticBody3D**  
 　 │　　└ **CollisionShape3D**    
 　 └ DirecionalLight3D  
