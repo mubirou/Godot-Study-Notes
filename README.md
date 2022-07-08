@@ -2729,8 +2729,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
 1. 上記の床（**MeshInstance3D** / **PlaneMesh**）に [**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d) を加える 
 1. 更に [**StaticBody3D**] に [**CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d) を加える（設定は以下の通り）  
-    * [**Shape**]-[新規 **BoxShape3D**]-[編集]
-      * [**Size**]：**x 2**、y 1、**z 2**
+    * [**Shape**]：**BoxShape3D**（Size：x 1、y 1、z 1）
     * [**Transform**] の設定
       * [**Position**]：x 0、**y -0.05**、z 0
       * [**Scale**]：x 1、**y 0.1**、z 1  
