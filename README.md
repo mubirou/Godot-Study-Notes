@@ -2772,31 +2772,19 @@ Main（Node3D）
       * [**Scale**]：x 1、**y 0.1**、z 1  
 
 （これまでの作業の階層）  
-  Main（**Node3D**）  
-  　  └ **XROrigin3D**  
-  　　  ├ **XRCamera3D**  
-  　　  └ **XRController3D**_Left  
-  　　  　 ├ Controller（左コントローラの視覚化）  
-  　　  　 └ **Function_Teleport**（**CharacterBody3D**）  
-  　　  　 　 ├ **Teleport**（**PlaneMesh**）  
-  　　  　 　 ├ **Target**（**PlaneMesh**）  
-  　　  　 　 └ **CollisionShape3D**（**CapsuleShape3D**）  
-
-      ***
-      Main（**Node3D**）  
-      　 ├ **XROrigin3D**  
-      　 │ ├ **XRCamera3D**  
-      　 │ └ **XRController3D**_Left  
-      　 │　　├ Controller（左コントローラの視覚化）    
-      　 │　　└ **Function_Teleport**（**CharacterBody3D**）  
-      　 │　　　　├ **Teleport**（**PlaneMesh**）    
-      　 │　　　　├ **Target**（**PlaneMesh**）    
-      　 │　　　　└ **CollisionShape3D**（**CapsuleShape3D**）  
-      　 ├ Floor  
-      　 │ └ **StaticBody3D**  
-      　 │　　└ **CollisionShape3D**    
-      　 └ DirecionalLight3D  
-      ***
+Main（**Node3D**）  
+　 ├ **XROrigin3D**  
+　 │ ├ **XRCamera3D**  
+　 │ └ **XRController3D**_Left  
+　 │　　├ Controller（左コントローラの視覚化）    
+　 │　　└ **Function_Teleport**（**CharacterBody3D**）  
+　 │　　　　├ **Teleport**（**PlaneMesh**）    
+　 │　　　　├ **Target**（**PlaneMesh**）    
+　 │　　　　└ **CollisionShape3D**（**CapsuleShape3D**）  
+　 ├ Floor  
+　 │ └ **StaticBody3D**  
+　 │　　└ **CollisionShape3D**    
+　 └ DirecionalLight3D  
 
 📝 **スクリプトのアタッチ**  
 
