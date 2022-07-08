@@ -2651,10 +2651,16 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 1. [インスペクター]-[Tranform]-[**Scale**] を次の通り設定  
     * **x**：**10**、y 1、**z**：**10**（**10m**四方の床の場合）
 1. [インスペクター]-[**Surface Material Override**]-[新規 **StandardMaterial3D**]-[編集] で以下の通り設定  
-    * 
-1. 表示された [球] に上記で作成した **.png** または **.jpg** をドラッグ＆ドロップ
-1. [球] の右にある [v]-[編集]-[**Uv1**]-[**Scale**] を次の通りに変更  
-    * **x**：**10**、**y**：**10**  
+    * [**Albedo**] で次の通り設定  
+      * [**Color**]：#ffffff（任意）
+      * [**Texture**]：[tile.png](https://github.com/mubirou/Godot/blob/main/png/tile.png)
+      * [**UV1**]-[**Scale**]：**x 10**、**y 10**、z 1
+1. 大元の **Node3D** に [**DirectionalLight3D**] を追加（設定は次の通り）  
+    * [**Light**]-[**Energy**]：**0.9**
+    * [**Shadow**]-[Enabled]：**✓オン**（オプション）
+    * [**Transform**] を次の通りに設定  
+      * [**Position**]：x 0、**y 5**、z 0
+      * [**Rotation**]：**x -55**、y 0、z 0  
 
 📝天井にタイルを貼る場合…  
 ※「PaneMesh」は裏は透明になる「CubeMesh」は裏は暗くなる、という問題を回避する必要があります
