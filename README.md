@@ -2802,8 +2802,8 @@ Main（**Node3D**）
 1. **テレポートの色の変更**
     * [**Function_Teleport**]-[インスペクター] で設定
       * [**Can Teleport Color**]：#0000ff  
-      * [**Cant Teleport Color**]：#ffffff
-      * [**No Collision Color**]：#ffffff
+      * [**Cant Teleport Color**]：#0000ff
+      * [**No Collision Color**]：#0000ff
 1. **テレポートの矢印の速度を一定にする**  
   **Function_Teleport.gd** を以下の通りコメントアウト  
 ```gdscript
