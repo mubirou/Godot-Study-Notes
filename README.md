@@ -2725,23 +2725,14 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
           * **Ws**：**1**  
           ～テレポート用の青い矢印が動きだす～  
 
-  Main（**Node3D**）  
-　  │ 
-  　└ Floor（**MeshInstance3D** / **PlaneMesh**）  
-  　　 └ **StaticBody3D**  
-  　　 　 └ **CollisionShape3D**（**BoxShape3D**）  
-
 📝 [**床の作成**](#220705)  
 
 上記の床（**MeshInstance3D** / **PlaneMesh**）に [**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d) および [**CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d) を設定  
 
   Main（**Node3D**）  
-  　 └ **XROrigin3D**  
-  　　 ├ **XRCamera3D**  
-  　　 └ **XRController3D**_Left  
-  　　 　 ├ Controller（左コントローラの視覚化）  
-  　　 　 └ **Function_Teleport**（**CharacterBody3D**）  
-  　　 　 　 └ **Teleport**（**PlaneMesh**）  
+  　└ Floor（**MeshInstance3D** / **PlaneMesh**）  
+  　　 └ **StaticBody3D**  
+  　　 　 └ **CollisionShape3D**（**BoxShape3D**）  
 
 📝 **ターゲットの作成**  
 
