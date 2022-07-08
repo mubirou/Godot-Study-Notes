@@ -2670,7 +2670,8 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 1. [Ceiling]-[インスペクター]-[**Transform**] を以下の通り変更  
     * [**Position**]：x 0、**y 2.35**、z 0
     * [**Rotation**]：**x 180**、y 0、z 0
-1. 引続き [インスペクター]-[**Surface Material Override**]-[編集]
+1. 引続き [インスペクター]-[**Surface Material Override**]-[編集]  
+    * [**Shading**]-[**Shading Mode**]：**Unshaded**
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
