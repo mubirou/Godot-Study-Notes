@@ -2,7 +2,7 @@
 
 ### <b>index（Godot 3.4 対応）</b>
 
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [床タイル](#220507) | [RayCastボタン](#220601) | [動画再生](#220602) | [デジタル時計](#220603) | [Oculus Air Link](#220604) | [VR空間に2Dシーンを表示](#220605) | [360°パノラマ](#220606) | [鏡面仕上げボール](#220607) | [ジョイスティック角度](#220608) | [Blender to Godot](#220609) | [物理エンジン RigidBodyとStaticBody](#220610) | [移動の基本3種](#220611) | [衝突判定](#220612) | [Picture-in-Picture](#220613) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [パーティクル](#220619) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [青空](#220626) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [RayCastボタン](#220601) | [動画再生](#220602) | [デジタル時計](#220603) | [Oculus Air Link](#220604) | [VR空間に2Dシーンを表示](#220605) | [360°パノラマ](#220606) | [鏡面仕上げボール](#220607) | [ジョイスティック角度](#220608) | [Blender to Godot](#220609) | [物理エンジン RigidBodyとStaticBody](#220610) | [移動の基本3種](#220611) | [衝突判定](#220612) | [Picture-in-Picture](#220613) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [パーティクル](#220619) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [青空](#220626) |
 ***
 
 ### **index（Godot 4.0 対応）**
@@ -1010,46 +1010,6 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 実行環境：Windows 10、Godot 3.4.4、Meta Quest（初代）v.40  
 作成者：夢寐郎  
 作成日：2022年05月28日  
-[[TOP]](#TOP)
-
-
-<a id="220507"></a>
-# <b>床タイル</b>
-
-📝床（10m四方）にタイル（1m四方）を貼る場合…
-
-1. タイル（400x400px程度）のタイル（1m四方）用の画像を作成（例：[tile.svg](https://github.com/mubirou/Godot/blob/main/svg/tile.svg)）
-1. [シーン]-[＋]-[MeshInstance] を選択
-1. 名前を "MeshInstance" → "Floor" に変更
-1. [インスペクター]-[MeshInstance]-[Mesh]-[新規**PlaneMesh**] を選択
-1. 引続き [Spatial]-[Tranform]-[**Scale**] を次の通りに変更  
-    * **x**：**10**、**z**：**10**（**10m**四方の床の場合）
-1. 引続き [インスペクター]-[**Material**]-[[空]]-[新規**SpatialMaterial**] を選択
-1. 表示された [球] に上記で作成した **.png** または **.jpg** をドラッグ＆ドロップ
-1. [球] の右にある [v]-[編集]-[**Uv1**]-[**Scale**] を次の通りに変更  
-    * **x**：**10**、**y**：**10**  
-
-📝天井にタイルを貼る場合…  
-※「PaneMesh」は裏は透明になる「CubeMesh」は裏は暗くなる、という問題を回避する必要があります
-1. [シーン]-[＋]-[MeshInstance] を選択
-1. 名前を "MeshInstance" → "Ceiling" に変更
-1. [インスペクター]-[MeshInstance]-[Mesh]-[新規**CubeMesh**] を選択（2mの立方体）
-1. [インスペクター]-[Transform] を次の通りに変更  
-    * Transform：x 0、y 2.35、z 0
-    * Scale：**x 5**、**y 0.01**、**z 5**
-1. 引続き [インスペクター]-[**Material**]-[[空]]-[新規**SpatialMaterial**] を選択
-1. 表示された [球] にタイル用の画像（**.png** または **.jpg**）をドラッグ＆ドロップ
-1. [球] の右にある [v]-[編集] を選択し次の通りに変更
-    * [**Flags**]-[**Unshaded**] を**✓**
-    * [**Albedo**]-[**Color**] を設定（天井のベースカラー）
-    * [**Uv1**] の設定は次の通り
-        * [**Scale**]：**x** **5**、**z**：**5**
-        * [**Triplanar Sharp**] を**✓**  
-
-実行環境：Windows 10、Godot 3.4.4、Meta Quest（初代）v.40  
-作成者：夢寐郎  
-作成日：2022年05月28日  
-更新日：2022年05月29日  
 [[TOP]](#TOP)
 
 
@@ -2638,8 +2598,6 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
 <a id="220705"></a>
 # <b>床タイル</b>
-
-### この項目は書きかけです
 
 📝 **床にタイルを貼る場合**  
 （10x10m に 1x1m のタイルを敷き詰める）  
