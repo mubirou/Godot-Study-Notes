@@ -2646,7 +2646,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 1. タイル（400x400px程度）のタイル（1m四方）用の画像を作成（例：[tile.png](https://github.com/mubirou/Godot/blob/main/png/tile.png)）
 1. [シーン]-[＋]-[**MeshInstance3D**] を選択
 1. 名前を "MeshInstance3D" → "Floor" に変更
-1. [インスペクター]-[MeshInstance]-[Mesh]-[新規**PlaneMesh**] を選択
+1. [インスペクター]-[Mesh]-[新規 **PlaneMesh**] を選択
 1. 引続き [Spatial]-[Tranform]-[**Scale**] を次の通りに変更  
     * **x**：**10**、**z**：**10**（**10m**四方の床の場合）
 1. 引続き [インスペクター]-[**Material**]-[[空]]-[新規**SpatialMaterial**] を選択
