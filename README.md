@@ -2657,7 +2657,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
       * [**Texture**]：[tile.png](https://github.com/mubirou/Godot/blob/main/png/tile.png)
       * [**UV1**]-[**Scale**]：**x 10**、**y 10**、z 1
 1. 大元の **Node3D** に [**DirectionalLight3D**] を追加（設定は次の通り）  
-    * [**Light**]-[**Energy**]：**0.9**
+    * [**Light**]-[**Energy**]：**0.75**（任意）
     * [**Shadow**]-[Enabled]：**✓オン**（オプション）
     * [**Transform**] を次の通りに設定  
       * [**Position**]：x 0、**y 5**、z 0
@@ -2674,6 +2674,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 1. 引続き [インスペクター]-[**Surface Material Override**]-[**ユニーク化**]  
 1. 引続き [インスペクター]-[**Surface Material Override**]-[編集]  
     * [**Shading**]-[**Shading Mode**]：**Unshaded**
+    * [**Albedo**]-[**Color**]：**#ffffff**（調整）
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
