@@ -2641,7 +2641,8 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
 ### この項目は書きかけです
 
-📝床（10m四方）にタイル（1m四方）を貼る場合…
+📝 **床にタイルを貼る場合**
+（10x10m に 1x1m のタイルを敷き詰める）  
 
 1. タイル（400x400px程度）のタイル（1m四方）用の画像を作成（例：[tile.png](https://github.com/mubirou/Godot/blob/main/png/tile.png)）
 1. [シーン]-[＋]-[**MeshInstance3D**] を選択
@@ -2662,7 +2663,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
       * [**Position**]：x 0、**y 5**、z 0
       * [**Rotation**]：**x -55**、y 0、z 0  
 
-📝天井にタイルを貼る場合…  
+📝 **天井にタイルを貼る場合**  
 ※「PaneMesh」は裏は透明になる「CubeMesh」は裏は暗くなる、という問題を回避する必要があります
 1. [シーン]-[＋]-[**MeshInstance3D**] を選択
 1. 名前を "MeshInstance3D" → "Ceiling（天井）" に変更
