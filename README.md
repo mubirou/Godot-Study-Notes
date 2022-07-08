@@ -2672,29 +2672,6 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
     * [**Rotation**]：**x 180**、y 0、z 0
 1. 引続き [インスペクター]-[**Surface Material Override**]-[編集]
 
-1. [シーン]-[＋]-[**MeshInstance3D**] を選択
-1. 名前を "MeshInstance3D" → "Ceiling（天井）" に変更
-1. [インスペクター]-[**Mesh**]-[新規 **BoxMesh**] を選択（1mの立方体）
-1. [インスペクター]-[**Transform**] を次の通りに変更  
-    * [**Position**]：x 0、**y 2.35**、z 0
-    * Scale：**x 10**、**y 0.01**、**z 10**  
-1. [インスペクター]-[**Surface Material Override**]-[新規 **StandardMaterial3D**]-[編集] で以下の通り設定  
-    * [**Albedo**] で次の通り設定  
-      * [**Color**]：#ffffff（任意）
-      * [**Texture**]：[tile.png](https://github.com/mubirou/Godot/blob/main/png/tile.png)
-      * [**UV1**]-[**Scale**]：**x 10**、**y 10**、z 1  
-
-
-
-1. 引続き [インスペクター]-[**Material**]-[[空]]-[新規**SpatialMaterial**] を選択
-1. 表示された [球] にタイル用の画像（**.png** または **.jpg**）をドラッグ＆ドロップ
-1. [球] の右にある [v]-[編集] を選択し次の通りに変更
-    * [**Flags**]-[**Unshaded**] を**✓**
-    * [**Albedo**]-[**Color**] を設定（天井のベースカラー）
-    * [**Uv1**] の設定は次の通り
-        * [**Scale**]：**x** **5**、**z**：**5**
-        * [**Triplanar Sharp**] を**✓**  
-
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年05月28日  
