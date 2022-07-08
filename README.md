@@ -2734,7 +2734,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
   　　  　 └ **Function_Teleport**（**CharacterBody3D**）  
   　　  　 　 └ **Teleport**（**PlaneMesh**）  
 
-📝 **床の作成**  
+📝 [**床の作成**](#220705)  
 
 1. **CollisionShape3D** 付の床を作成
 1. XXXXX
