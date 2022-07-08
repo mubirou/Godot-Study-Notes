@@ -2727,12 +2727,19 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
 📝 [**床の作成**](#220705)  
 
-上記の床（**MeshInstance3D** / **PlaneMesh**）に [**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d) および [**CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d) を設定（階層は下図の通り）  
+1. 上記の床（**MeshInstance3D** / **PlaneMesh**）に [**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d) を設定  
+1. 更に [**StaticBody3D**] に [**CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d) を設定（設定は以下の通り）  
+    * [**Shape**]-[新規 **BoxShape3D**]-[編集]
+      * [**Size**]：**x 2**、y 1、**z 2**
+    * [**Transform**] の設定
+      * [**Position**]：x 0、**y -0.05**、z 0
+      * [**Scale**]：x 1、**y 0.1**、z 1  
 
-Main（**Node3D**）  
-　└ Floor（**MeshInstance3D** / **PlaneMesh**）  
-　　 └ **StaticBody3D**  
-　　 　 └ **CollisionShape3D**（**BoxShape3D**）  
+（階層は次の通り）  
+  Main（**Node3D**）  
+  　└ Floor（**MeshInstance3D** / **PlaneMesh**）  
+  　　 └ **StaticBody3D**  
+  　　 　 └ **CollisionShape3D**（**BoxShape3D**）  
 
 📝 **ターゲットの作成**  
 
