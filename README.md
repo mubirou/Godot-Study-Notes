@@ -2737,9 +2737,9 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
 （階層は次の通り）  
   Main（**Node3D**）  
-  　└ Floor（**MeshInstance3D** / **PlaneMesh**）  
+  　└ Floor  
   　　 └ **StaticBody3D**  
-  　　 　 └ **CollisionShape3D**（**BoxShape3D**）  
+  　　 　 └ **CollisionShape3D**  
 
 📝 **ターゲットの作成**  
 
