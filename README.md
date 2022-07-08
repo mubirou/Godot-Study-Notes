@@ -2735,15 +2735,15 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
       * [**Scale**]：x 1、**y 0.1**、z 1  
 
 （これまでの作業の階層）  
-  Main（Node3D）  
-  　 ├ XROrigin3D  
-  　 │ ├ XRCamera3D  
-  　 │ └ XRController3D_Left  
-  　 │　　　 └ Controller  
-  　 ├ Floor  
-  　 │ └ **StaticBody3D**  
-  　 │　　　 └ **CollisionShape3D**    
-  　 └ DirecionalLight3D  
+Main（Node3D）  
+　 ├ XROrigin3D  
+　 │ ├ XRCamera3D  
+　 │ └ XRController3D_Left  
+　 │　　　 └ Controller  
+　 ├ Floor  
+　 │ └ **StaticBody3D**  
+　 │　　　 └ **CollisionShape3D**    
+　 └ DirecionalLight3D  
 
 📝 **ターゲットの作成**  
 
