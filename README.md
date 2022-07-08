@@ -2727,17 +2727,34 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 
 （これまでの作業の階層）  
   Main（**Node3D**）  
-  　  └ **XROrigin3D**  
+  　 └ **XROrigin3D**  
+  　　 ├ **XRCamera3D**  
+  　　 └ **XRController3D**_Left  
+  　　 　 ├ Controller（左コントローラの視覚化）  
+  　　 　 └ **Function_Teleport**（**CharacterBody3D**）  
+  　　 　 　 └ **Teleport**（**PlaneMesh**）  
+
+📝 [**床の作成**](#220705)  
+
+上記の床（**MeshInstance3D** / **PlaneMesh**）に [**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d) および [**CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d) を設定  
+
+（これまでの作業の階層）  
+  Main（**Node3D**）  
+  　  ├ **XROrigin3D**  
   　　  ├ **XRCamera3D**  
   　　  └ **XRController3D**_Left  
   　　  　 ├ Controller（左コントローラの視覚化）  
   　　  　 └ **Function_Teleport**（**CharacterBody3D**）  
   　　  　 　 └ **Teleport**（**PlaneMesh**）  
 
-📝 [**床の作成**](#220705)  
-
-1. 上記の床（**MeshInstance3D** / **PlaneMesh**）に [**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d) および [***CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d) を設定  
-1. XXXXX
+  Main（**Node3D**）  
+　  ├ **XROrigin3D**  
+　  │   ├　**XRCamera3D**  
+　  │   └　**XRController3D**_Left  
+　  │   　　├ Controller（左コントローラの視覚化）  
+　  │   　　└ **Function_Teleport**（**CharacterBody3D**）  
+　  │   　　    └ **Teleport**（**PlaneMesh**）  
+　  └ MeshInstance（任意のオブジェクト） 
 
 📝 **ターゲットの作成**  
 
