@@ -2667,10 +2667,10 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 💡「PaneMesh」は裏は透明になる「CubeMesh」は裏は暗くなる、という問題を回避する必要があります
 1. [シーン]-[＋]-[**MeshInstance3D**] を選択
 1. 名前を "MeshInstance3D" → "Ceiling（天井）" に変更
-1. [インスペクター]-[MeshInstance3D]-[Mesh]-[新規 **BoxMesh**] を選択（1mの立方体）
-1. [インスペクター]-[Transform] を次の通りに変更  
-    * Transform：x 0、y 2.35、z 0
-    * Scale：**x 5**、**y 0.01**、**z 5**
+1. [インスペクター]-[**Mesh**]-[新規 **BoxMesh**] を選択（1mの立方体）
+1. [インスペクター]-[**Transform**] を次の通りに変更  
+    * [**Position**]：x 0、**y 2.35**、z 0
+    * Scale：**x 10**、**y 0.01**、**z 10**
 1. 引続き [インスペクター]-[**Material**]-[[空]]-[新規**SpatialMaterial**] を選択
 1. 表示された [球] にタイル用の画像（**.png** または **.jpg**）をドラッグ＆ドロップ
 1. [球] の右にある [v]-[編集] を選択し次の通りに変更
