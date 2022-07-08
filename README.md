@@ -2734,12 +2734,16 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
       * [**Position**]：x 0、**y -0.05**、z 0
       * [**Scale**]：x 1、**y 0.1**、z 1  
 
-（階層は次の通り）  
+（これまでの作業の階層） 
   Main（Node3D）  
-　 ├ Floor  
-　 │  └ **StaticBody3D**  
-　 │　　　 └ **CollisionShape3D**  
-　 └ DirecionalLight3D
+  　 ├ XROrigin3D  
+  　 │ ├ XRCamera3D  
+  　 │ └ XRController3D_Left  
+  　 │　　　 └ Controller  
+  　 ├ Floor  
+  　 │ └ **StaticBody3D**  
+  　 │　　　 └ **CollisionShape3D**    
+  　 └ DirecionalLight3D  
 
 📝 **ターゲットの作成**  
 
@@ -2775,9 +2779,21 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
   　　  　 　 ├ **Teleport**（**PlaneMesh**）  
   　　  　 　 ├ **Target**（**PlaneMesh**）  
   　　  　 　 └ **CollisionShape3D**（**CapsuleShape3D**）  
-    　└ Floor  
-  　　 └ **StaticBody3D**  
-  　　 　 └ **CollisionShape3D**  
+
+Main（Node3D）
+　 ├ XROrigin3D
+　 │ ├ XRCamera3D
+　 │ └ XRController3D_Right
+　 │　　　 ├ Controller（コントローラの視覚化）
+　 │　　　 ├ RayCast3D
+　 │　　　 ├ RayLine（RayCast3Dの視覚化）
+　 │　　　 └ HitPoint（ヒットポイントの可視化）
+　 ├ Floor
+　 │ └ **StaticBody3D**
+　 │　　　 └ **CollisionShape3D**  
+　 └ DirecionalLight3D
+
+
 
 📝 **スクリプトのアタッチ**  
 
