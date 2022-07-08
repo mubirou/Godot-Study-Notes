@@ -2671,6 +2671,12 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 1. [インスペクター]-[**Transform**] を次の通りに変更  
     * [**Position**]：x 0、**y 2.35**、z 0
     * Scale：**x 10**、**y 0.01**、**z 10**
+1. [インスペクター]-[**Surface Material Override**]-[新規 **StandardMaterial3D**]-[編集] で以下の通り設定  
+    * [**Albedo**] で次の通り設定  
+      * [**Color**]：#ffffff（任意）
+      * [**Texture**]：[tile.png](https://github.com/mubirou/Godot/blob/main/png/tile.png)
+      * [**UV1**]-[**Scale**]：**x 10**、**y 10**、z 1
+      
 1. 引続き [インスペクター]-[**Material**]-[[空]]-[新規**SpatialMaterial**] を選択
 1. 表示された [球] にタイル用の画像（**.png** または **.jpg**）をドラッグ＆ドロップ
 1. [球] の右にある [v]-[編集] を選択し次の通りに変更
