@@ -2860,6 +2860,28 @@ Main（Node3D）
 　 │　　└ CollisionShape3D  
 　 └ DirecionalLight3D  
 
+1. コードの変更  
+
+```gdscript
+# main.gd
+extends Node3D
+
+...
+var _rayCast_R
+...
+
+func _ready():
+  ...
+  _controller_R = get_node("XROrigin3D/XRController3D_Right")
+  _rayCast_R = _controller_R.get_node("RayCast3D")
+  ...
+  # RayCast からの除外
+	var _physicsBody  = $Floor/StaticBody3D
+	_rayCast_R.add_exception(_physicsBody)
+
+...
+```
+
 参考：[RayCast3D.add_exception()](https://docs.godotengine.org/en/latest/classes/class_raycast3d.html?highlight=RayCast#class-raycast3d-method-add-exception)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
