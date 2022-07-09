@@ -2799,20 +2799,20 @@ Main（**Node3D**）
 
 📝 **カスタマイズ**  
 
-1. **テレポートの色の変更**
+* **テレポートの色の変更**
     * [**Function_Teleport**]-[インスペクター] で設定
       * [**Can Teleport Color**]：#0000ff  
       * [**Cant Teleport Color**]：#0000ff
       * [**No Collision Color**]：#0000ff
-1. **テレポートの矢印の速度を一定にする**  
+* **テレポートの矢印の速度を一定にする**  
   **Function_Teleport.gd** を以下の通りコメントアウト  
 ```gdscript
 249行目 #$Teleport.get_surface_override_material(0).set_shader_param("length", cast_length)
 ```
-1. **テレポート不可の時に半透明にする**  
-  1. [アルファ値 80 の矢印](https://github.com/mubirou/Godot/blob/main/png/teleport_arrow_80.png) を用意
-  1. [アルファ値 30 の矢印](https://github.com/mubirou/Godot/blob/main/png/teleport_arrow_30.png) を用意
-  1. **Function_Teleport.gd** を以下の通り追加  
+* * **テレポート不可の時に半透明にする**  
+    * [アルファ値 80 の矢印](https://github.com/mubirou/Godot/blob/main/png/teleport_arrow_80.png) を用意
+    * [アルファ値 30 の矢印](https://github.com/mubirou/Godot/blob/main/png/teleport_arrow_30.png) を用意
+    * **Function_Teleport.gd** を以下の通り追加  
 ```gdscript
 275行目 var _path = "res://.godot/imported/teleport_arrow_80.png-f1bbbbd02c2cd2c9a92c3715c2dd290e.s3tc.ctex"
 276行目 $Teleport.get_surface_override_material(0).get_shader_param("arrow_texture").load_path = _path
