@@ -2844,7 +2844,7 @@ Main（**Node3D**）
 て [**RayCast3D**](https://docs.godotengine.org/en/latest/classes/class_raycast3d.html?highlight=RayCast3D#raycast3d) が衝突を報告しないように衝突例外を追加します  
 
 1. [**レーザーポインター**](#220704) の作業を行う  
-1. [**床の作成**](#220705) を行う  
+2. [**床の作成**](#220705) を行う  
 
 （これまでの作業の階層）  
 Main（Node3D）  
@@ -2863,7 +2863,7 @@ Main（Node3D）
 　 │　　└ CollisionShape3D  
 　 └ DirecionalLight3D  
 
-1. [**コード**](#code220704)の変更（追加）  
+3. [**コード**](#code220704)の変更（追加）  
 
 ```gdscript
 ...
