@@ -7,7 +7,7 @@
 
 ### **index（Godot 4.0 対応）**
 
-[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) |
+[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) |
 ***
 
 <a id="Androidビルド"></a>
@@ -2837,11 +2837,11 @@ Main（**Node3D**）
 [[TOP]](#TOP)
 
 
-<a id="XXX"></a>
-# <b>XXXXX</b>
+<a id="220707"></a>
+# <b>RayCastからの除外</b>
 
-[RayCast3D.add_exception()](https://docs.godotengine.org/en/latest/classes/class_raycast3d.html?highlight=RayCast#class-raycast3d-method-add-exception) を使っ
-て **RayCast3D** が衝突を報告しないように衝突例外を追加します  
+[**RayCast3D.add_exception()**](https://docs.godotengine.org/en/latest/classes/class_raycast3d.html?highlight=RayCast#class-raycast3d-method-add-exception) を使っ
+て [**RayCast3D**](https://docs.godotengine.org/en/latest/classes/class_raycast3d.html?highlight=RayCast3D#raycast3d) が衝突を報告しないように衝突例外を追加します  
 
 1. [**レーザーポインター**](#220704) の作業を行う  
 1. [**床の作成**](#220705) を行う  
