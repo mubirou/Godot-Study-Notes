@@ -2752,7 +2752,8 @@ Main（Node3D）
 1. [**Function_Teleport**] を選択し [子ノードを追加]-[**MeshInstance3D**] を選択
 1. 名前を "MeshInstance3D" → "**Target**" に変更
 1. [**Target**]-[インスペクター] で各種設定  
-    * [**Mesh**]-[新規 **PlaneMesh**]  
+    * [**Mesh**]-[新規 **PlaneMesh**]-[編集]  
+      * [**Size**]：**x 1**、**y 1**  
     * [**Surface Material Override**]-[新規 **StandardMaterial3D**]-[編集]  
       * [**Transparencey**]-[Transparency]：**Alpha**
       * [**Albedo**] で各種設定  
