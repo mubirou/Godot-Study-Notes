@@ -2812,6 +2812,7 @@ Main（**Node3D**）
 * **テレポート不可の時に半透明にする**  
     * [アルファ値 80 の矢印](https://github.com/mubirou/Godot/blob/main/png/teleport_arrow_80.png) を用意
     * [アルファ値 30 の矢印](https://github.com/mubirou/Godot/blob/main/png/teleport_arrow_30.png) を用意
+    * [**Function_Teleport**]-[**Teleport**]-[インスペクター]-[**Surface Material Override**]-[編集]-[**Arrow Texture**]-[編集]-[**Load Path**]-[📁]
     * **Function_Teleport.gd** を以下の通り追加  
 ```gdscript
 275行目 var _path = "res://.godot/imported/teleport_arrow_80.png-f1bbbbd02c2cd2c9a92c3715c2dd290e.s3tc.ctex"
