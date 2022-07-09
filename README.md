@@ -2613,7 +2613,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
     * [**Albedo**] で次の通り設定  
       * [**Color**]：#ffffff（任意）
       * [**Texture**]：[tile.png](https://github.com/mubirou/Godot/blob/main/png/tile.png)
-      * [**UV1**]-[**Scale**]：**x 10**、**y 10**、z 1
+    * [**UV1**]-[**Scale**]：**x 10**、**y 10**、z 1
 1. 大元の **Node3D** に [**DirectionalLight3D**] を追加（設定は次の通り）  
     * [**Light**]-[**Energy**]：**0.75**（任意）
     * [**Shadow**]-[Enabled]：**✓オン**（オプション）
