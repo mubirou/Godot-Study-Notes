@@ -2843,6 +2843,23 @@ Main（**Node3D**）
 1. [**レーザーポインター**](#220704) の作業を行う  
 1. [**床の作成**](#220705) を行う  
 
+（これまでの作業の階層）  
+Main（Node3D）  
+　 ├ XROrigin3D  
+　 │ ├ XRCamera3D  
+　 │ └ XRController3D_Right  
+　 │　　　 ├ Controller（コントローラの視覚化）  
+　 │　　　 ├ **RayCast3D**  
+　 │　　　 ├ RayLine（RayCast3Dの視覚化）  
+　 │　　　 └ HitPoint（ヒットポイントの可視化）  
+　 ├ MeshInstance3D（選択するオブジェクト）  
+　 │ └ StaticBody3D  
+　 │　　　 └ CollisionShape3D（反応する領域）  
+　 ├ **Floor**（反応させたくないオブジェクト）
+　 │ └ **StaticBody3D**
+　 │　　└ CollisionShape3D
+　 └ DirecionalLight3D  
+
 参考：[RayCast3D.add_exception()](https://docs.godotengine.org/en/latest/classes/class_raycast3d.html?highlight=RayCast#class-raycast3d-method-add-exception)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
