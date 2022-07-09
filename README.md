@@ -2876,8 +2876,8 @@ func _ready():
   _rayCast_R = _controller_R.get_node("RayCast3D")
   ...
   # RayCast からの除外
-	var _physicsBody  = $Floor/StaticBody3D
-	_rayCast_R.add_exception(_physicsBody)
+  var _physicsBody  = $Floor/StaticBody3D
+  _rayCast_R.add_exception(_physicsBody)
 
 ...
 ```
