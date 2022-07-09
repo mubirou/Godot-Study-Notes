@@ -2829,6 +2829,7 @@ Main（**Node3D**）
       * [**Transparency**]-[Transparency]：**Alpha**
       * [**Albedo**]-[**Color**]：**#0000ff80**（50％の青）  
 
+参考ファイル：[Teleport.zip](https://github.com/mubirou/Godot/blob/main/zip/Teleport.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 11、[Godot XR Tools](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd)（Godot 4 対応）、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月09日  
