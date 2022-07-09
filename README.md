@@ -2860,7 +2860,7 @@ Main（Node3D）
 　 │　　└ CollisionShape3D  
 　 └ DirecionalLight3D  
 
-1. [コード](#code220704)の変更  
+1. [**コード**](#code220704)の変更  
 
 ```gdscript
 # main.gd
@@ -2872,7 +2872,6 @@ var _rayCast_R
 
 func _ready():
   ...
-  _controller_R = get_node("XROrigin3D/XRController3D_Right")
   _rayCast_R = _controller_R.get_node("RayCast3D")
   ...
   # RayCast からの除外
