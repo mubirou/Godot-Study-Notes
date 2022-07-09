@@ -2855,9 +2855,9 @@ Main（Node3D）
 　 ├ MeshInstance3D（選択するオブジェクト）  
 　 │ └ StaticBody3D  
 　 │　　　 └ CollisionShape3D（反応する領域）  
-　 ├ **Floor**（反応させたくないオブジェクト）
-　 │ └ **StaticBody3D**
-　 │　　└ CollisionShape3D
+　 ├ **Floor**（反応させたくないオブジェクト）  
+　 │ └ **StaticBody3D**  
+　 │　　└ CollisionShape3D  
 　 └ DirecionalLight3D  
 
 参考：[RayCast3D.add_exception()](https://docs.godotengine.org/en/latest/classes/class_raycast3d.html?highlight=RayCast#class-raycast3d-method-add-exception)  
