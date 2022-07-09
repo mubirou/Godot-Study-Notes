@@ -2625,7 +2625,6 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 💡「PaneMesh」は裏は透明になる「CubeMesh」は裏は暗くなる、という問題を回避する必要があります
 1. 上記で作成した "Floor" をコピー＆ペースト  
 1. 名前を "Floor" → "Ceiling（天井）" に変更
-1. 
 1. [Ceiling]-[インスペクター]-[**Transform**] を以下の通り変更  
     * [**Position**]：x 0、**y 2.35**、z 0
     * [**Rotation**]：**x 180**、y 0、z 0
