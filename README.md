@@ -2822,8 +2822,14 @@ Main（**Node3D**）
 285行目付近 $Teleport.get_surface_override_material(0).get_shader_param("arrow_texture").load_path = _path
 ```
 
-* **ターゲット周辺をカプセルで囲む**
-    1. 
+* **ターゲット周辺をカプセルで囲む**  
+    1. [シーン] の [**Function_Teleport**]-[**Target**] を選択し [子ノードを追加]-[**MeshInstace3D**]-[インスペクター] で次の通り設定  
+      * [**Mesh**]-[**SphereMesh**]-[編集]
+        * [**Radius**]：**1** 　
+        * [**Height**]：**2**  
+      * [**Surface Material Override**]-[新規 **StandardMaterial3D**]-[編集] で次の通り設定  
+        * [**Transparency**]-[Transparency]：**Alpha**
+        * [**Albedo**]-[**Color**]：**#0000ff80**（50％の青）  
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
