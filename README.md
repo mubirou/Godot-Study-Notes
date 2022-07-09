@@ -2790,7 +2790,7 @@ Main（**Node3D**）
 📝 **スクリプトのアタッチ**  
 
 1. [**Function_Teleport**] を選択しスクリプトをアタッチ（名前は **Function_Teleport.gd**）
-1. **Function_Teleport.gd** の内容を Godot 4 用の [**Function_Teleport.gd**](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd) に書き換える  
+1. **Function_Teleport.gd** の内容を Godot 4 用の [**Function_Teleport.gd**](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd) に書き換える（最新版 [Godot XR Tools](https://godotengine.org/asset-library/asset/214) は今後要検証）  
 1. エラーが出る箇所をコメントアウトする  
 
 ```gdscript
@@ -2832,7 +2832,7 @@ Main（**Node3D**）
         * [**Transparency**]-[Transparency]：**Alpha**
         * [**Albedo**]-[**Color**]：**#0000ff80**（50％の青）  
 
-実行環境：Windows 10、Godot 4.0 alpha 11、([Godot XR Tools](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd)）、Meta Quest 41.0、Quest Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 11、[Godot XR Tools](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd)、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月09日  
 [[TOP]](#TOP)
