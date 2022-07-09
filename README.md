@@ -2671,7 +2671,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
           * Mode：Spatial
           * テンプレート：Empty
           * Built-in Shader：オフ
-          * パス：res//teleport.gdshader  
+          * パス：res//**teleport**.gdshader  
         （以下の通り記述）  
         ```c
         shader_type spatial;
