@@ -2722,6 +2722,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
           * **Scale T**：**0.2**  
           * **Ws**：**1**  
           ～テレポート用の青い矢印が動きだす～  
+          （"Function_Teleport" には ⚠ がついたまま）  
 
 📝 [**床の作成**](#220705)  
 
