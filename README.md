@@ -2543,7 +2543,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
     　  └ **DirecionalLight3D**  
         ***
 
-📝 コードの記述  
+📝 コードの記述 <a id="code220704">  
 大元の Main（Node3D）にアタッチされたコードを確認＆変更  
 
   ```gdscript
@@ -2860,7 +2860,7 @@ Main（Node3D）
 　 │　　└ CollisionShape3D  
 　 └ DirecionalLight3D  
 
-1. コードの変更  
+1. [コード](#code220704)の変更  
 
 ```gdscript
 # main.gd
