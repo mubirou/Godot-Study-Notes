@@ -2860,7 +2860,7 @@ Main（Node3D）
 　 │　　└ CollisionShape3D  
 　 └ DirecionalLight3D  
 
-1. [**コード**](#code220704)の変更  
+1. [**コード**](#code220704)の変更（追加）  
 
 ```gdscript
 ...
