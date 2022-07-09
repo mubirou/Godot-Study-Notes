@@ -2832,7 +2832,7 @@ Main（**Node3D**）
         * [**Transparency**]-[Transparency]：**Alpha**
         * [**Albedo**]-[**Color**]：**#0000ff80**（50％の青）  
 
-実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 11、(Godot XR Tools 2.4.1）、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月09日  
 [[TOP]](#TOP)
