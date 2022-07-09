@@ -2863,21 +2863,12 @@ Main（Node3D）
 1. [**コード**](#code220704)の変更  
 
 ```gdscript
-# main.gd
-extends Node3D
-
 ...
-var _rayCast_R
-...
-
 func _ready():
-  ...
-  _rayCast_R = _controller_R.get_node("RayCast3D")
   ...
   # RayCast からの除外
   var _physicsBody  = $Floor/StaticBody3D
   _rayCast_R.add_exception(_physicsBody)
-
 ...
 ```
 
