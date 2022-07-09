@@ -2815,10 +2815,10 @@ Main（**Node3D**）
     * [シーン] の [**Function_Teleport**]-[**Teleport**]-[インスペクター]-[**Surface Material Override**]-[編集]-[**Arrow Texture**]-[編集]-[**Load Path**]-[📁]
     * **Function_Teleport.gd** を以下の通り追加  
 ```gdscript
-275行目 var _path = "res://.godot/imported/teleport_arrow_80.png-f1bbbbd02c2cd2c9a92c3715c2dd290e.s3tc.ctex"
-276行目 $Teleport.get_surface_override_material(0).get_shader_param("arrow_texture").load_path = _path
+276行目付近 var _path = "res://.godot/imported/teleport_arrow_80.png-〇〇.ctex"
+277行目付近 $Teleport.get_surface_override_material(0).get_shader_param("arrow_texture").load_path = _path
 ...
-283行目 var _path = "res://.godot/imported/teleport_arrow_30.png-838b76c79534eb9bd426790e319d8073.s3tc.ctex"
+283行目 var _path = "res://.godot/imported/teleport_arrow_30.png-〇〇.ctex"
 284行目 $Teleport.get_surface_override_material(0).get_shader_param("arrow_texture").load_path = _path
 ```
 
