@@ -2810,10 +2810,10 @@ Main（**Node3D**）
 249行目 #$Teleport.get_surface_override_material(0).set_shader_param("length", cast_length)
 ```
 * **テレポート不可の場合は半透明にする**  
-    * [アルファ値 80 の矢印](https://github.com/mubirou/Godot/blob/main/png/teleport_arrow_80.png) を用意
-    * [アルファ値 10 の矢印](https://github.com/mubirou/Godot/blob/main/png/teleport_arrow_10.png) を用意
-    * [シーン] の [**Function_Teleport**]-[**Teleport**]-[インスペクター]-[**Surface Material Override**]-[編集]-[**Arrow Texture**]-[編集]-[**Load Path**]-[📁]
-    * **Function_Teleport.gd** を以下の通り追加  
+    1. [アルファ値 80 の矢印](https://github.com/mubirou/Godot/blob/main/png/teleport_arrow_80.png) を用意
+    1. [アルファ値 10 の矢印](https://github.com/mubirou/Godot/blob/main/png/teleport_arrow_10.png) を用意
+    1. [シーン] の [**Function_Teleport**]-[**Teleport**]-[インスペクター]-[**Surface Material Override**]-[編集]-[**Arrow Texture**]-[編集]-[**Load Path**]-[📁]
+    1. **Function_Teleport.gd** を以下の通り追加  
 ```gdscript
 276行目付近 var _path = "res://.godot/imported/teleport_arrow_80.png-〇〇.ctex"
 277行目付近 $Teleport.get_surface_override_material(0).get_shader_param("arrow_texture").load_path = _path
@@ -2821,6 +2821,9 @@ Main（**Node3D**）
 284行目付近 var _path = "res://.godot/imported/teleport_arrow_10.png-〇〇.ctex"
 285行目付近 $Teleport.get_surface_override_material(0).get_shader_param("arrow_texture").load_path = _path
 ```
+
+* **ターゲット周辺をカプセルで囲む**
+    1. 
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
