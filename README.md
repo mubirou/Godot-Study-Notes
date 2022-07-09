@@ -2809,7 +2809,7 @@ Main（**Node3D**）
 ```gdscript
 249行目 #$Teleport.get_surface_override_material(0).set_shader_param("length", cast_length)
 ```
-* **テレポート不可の時に半透明にする**  
+* **テレポート不可の場合は半透明にする**  
     * [アルファ値 80 の矢印](https://github.com/mubirou/Godot/blob/main/png/teleport_arrow_80.png) を用意
     * [アルファ値 10 の矢印](https://github.com/mubirou/Godot/blob/main/png/teleport_arrow_10.png) を用意
     * [シーン] の [**Function_Teleport**]-[**Teleport**]-[インスペクター]-[**Surface Material Override**]-[編集]-[**Arrow Texture**]-[編集]-[**Load Path**]-[📁]
