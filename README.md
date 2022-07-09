@@ -2637,7 +2637,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年05月28日  
-更新日：2022年07月0X日 Godot 4.0 対応  
+更新日：2022年07月09日 Godot 4.0 対応  
 [[TOP]](#TOP)
 
 
@@ -2840,12 +2840,8 @@ Main（**Node3D**）
 <a id="XXX"></a>
 # <b>XXXXX</b>
 
-1. XXX
-    ```c#
-    XXXX
-    ```
-    * XXX
-    * XXXX
+1. [**レーザーポインター**](#220704) の作業を行う
+1. 
 
 参考：[RayCast3D.add_exception()](https://docs.godotengine.org/en/latest/classes/class_raycast3d.html?highlight=RayCast#class-raycast3d-method-add-exception)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
