@@ -2811,15 +2811,15 @@ Main（**Node3D**）
 ```
 * **テレポート不可の時に半透明にする**  
     * [アルファ値 80 の矢印](https://github.com/mubirou/Godot/blob/main/png/teleport_arrow_80.png) を用意
-    * [アルファ値 30 の矢印](https://github.com/mubirou/Godot/blob/main/png/teleport_arrow_30.png) を用意
+    * [アルファ値 20 の矢印](https://github.com/mubirou/Godot/blob/main/png/teleport_arrow_20.png) を用意
     * [シーン] の [**Function_Teleport**]-[**Teleport**]-[インスペクター]-[**Surface Material Override**]-[編集]-[**Arrow Texture**]-[編集]-[**Load Path**]-[📁]
     * **Function_Teleport.gd** を以下の通り追加  
 ```gdscript
 276行目付近 var _path = "res://.godot/imported/teleport_arrow_80.png-〇〇.ctex"
 277行目付近 $Teleport.get_surface_override_material(0).get_shader_param("arrow_texture").load_path = _path
 ...
-283行目 var _path = "res://.godot/imported/teleport_arrow_30.png-〇〇.ctex"
-284行目 $Teleport.get_surface_override_material(0).get_shader_param("arrow_texture").load_path = _path
+284行目付近 var _path = "res://.godot/imported/teleport_arrow_30.png-〇〇.ctex"
+285行目付近 $Teleport.get_surface_override_material(0).get_shader_param("arrow_texture").load_path = _path
 ```
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
