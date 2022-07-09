@@ -2811,7 +2811,8 @@ Main（**Node3D**）
 * **テレポート不可の場合は半透明にする**  
   1. [アルファ値 80 の矢印](https://github.com/mubirou/Godot/blob/main/png/teleport_arrow_80.png) を用意
   1. [アルファ値 10 の矢印](https://github.com/mubirou/Godot/blob/main/png/teleport_arrow_10.png) を用意
-  1. [シーン] の [**Function_Teleport**]-[**Teleport**]-[インスペクター]-[**Surface Material Override**]-[編集]-[**Arrow Texture**]-[編集]-[**Load Path**]-[📁]
+  1. [シーン] の [**Function_Teleport**]-[**Teleport**]-[インスペクター]-[**Surface Material Override**]-[編集]-[**Arrow Texture**]-[編集]-[**Load Path**]-[📁] を開く
+  1. **res://.godot/imported/teleport_arrow_80.png-〇〇.ctex** と **res://.godot/imported/teleport_arrow_10.png-〇〇.ctex** をコピー
   1. **Function_Teleport.gd** を以下の通り追加  
 ```gdscript
 276行目付近 var _path = "res://.godot/imported/teleport_arrow_80.png-〇〇.ctex"
@@ -2823,9 +2824,7 @@ Main（**Node3D**）
 
 * **ターゲット周辺をカプセルで囲む**  
   [シーン] の [**Function_Teleport**]-[**Target**] を選択し [子ノードを追加]-[**MeshInstace3D**]-[インスペクター] で次の通り設定  
-    * [**Mesh**]-[**SphereMesh**]-[編集]
-      * [**Radius**]：**1** 　
-      * [**Height**]：**2**  
+    * [**Mesh**]-[新規 **SphereMesh**]
     * [**Surface Material Override**]-[新規 **StandardMaterial3D**]-[編集] で次の通り設定  
       * [**Transparency**]-[Transparency]：**Alpha**
       * [**Albedo**]-[**Color**]：**#0000ff80**（50％の青）  
