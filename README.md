@@ -2591,6 +2591,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
       _hitPoint_R.visible = false
   ```
 
+参考：[RayCastからの除外](#220707)  
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月04日  
