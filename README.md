@@ -2832,6 +2832,7 @@ Main（**Node3D**）
 実行環境：Windows 10、Godot 4.0 alpha 11、[Godot XR Tools](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd)（Godot 4 対応）、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月09日  
+更新日：2022年07月11日  
 [[TOP]](#TOP)
 
 
