@@ -2830,12 +2830,13 @@ Main（**Node3D**）
 * **特定の床のみにテレポートできるようにする**  
 
   **Function_Teleport.gd**（229行目付近）を変更    
+（変更前）  
 ```gdscript
 if dot > max_slope_cos:
   is_on_floor = true
 else:
 ```
-      ↓   ↓   ↓  
+（変更後）  
 ```gdscript
 if dot > max_slope_cos:
   if intersects.collider == $/root/Main/Floor/StaticBody3D: 
