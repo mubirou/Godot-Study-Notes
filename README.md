@@ -2829,13 +2829,22 @@ Main（**Node3D**）
 
 * **特定の床のみにテレポートできるようにする**  
 
-  **Function_Teleport.gd** を以下の通りコメントアウト  
+  **Function_Teleport.gd**（229行目付近）を変更    
   ```gdscript
   if dot > max_slope_cos:
-	  if intersects.collider == $/root/Main/Floor/StaticBody3D: 
-		  is_on_floor = true
-		else:
-			is_on_floor = false
+    is_on_floor = true
+  else:
+    is_on_floor = false
+  ```
+  ↓  
+    ```gdscript
+  if dot > max_slope_cos:
+    if intersects.collider == $/root/Main/Floor/StaticBody3D: 
+  	  is_on_floor = true
+  	else:
+  		is_on_floor = false
+  else:
+    is_on_floor = false
   ```
 
 完成ファイル：[Teleport.zip](https://github.com/mubirou/Godot/blob/main/zip/Teleport.zip)  
