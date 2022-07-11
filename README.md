@@ -2827,6 +2827,17 @@ Main（**Node3D**）
       * [**Transparency**]-[Transparency]：**Alpha**
       * [**Albedo**]-[**Color**]：**#0000ff80**（50％の青）  
 
+* **特定の床のみにテレポートできるようにする**  
+
+  **Function_Teleport.gd** を以下の通りコメントアウト  
+  ```gdscript
+  if dot > max_slope_cos:
+	  if intersects.collider == $/root/Main/Floor/StaticBody3D: 
+		  is_on_floor = true
+		else:
+			is_on_floor = false
+  ```
+
 完成ファイル：[Teleport.zip](https://github.com/mubirou/Godot/blob/main/zip/Teleport.zip)  
 参考：[Godot 4 OpenXR demo project](https://github.com/BastiaanOlij/godot4_openxr_demo)  
 実行環境：Windows 10、Godot 4.0 alpha 11、[Godot XR Tools](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd)（Godot 4 対応）、Meta Quest 41.0、Quest Link、Oculusアプリ  
