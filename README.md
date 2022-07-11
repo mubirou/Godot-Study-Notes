@@ -2836,7 +2836,7 @@ Main（**Node3D**）
   else:
   ```
     ↓ ↓ ↓  
-    ```gdscript
+    ```php
   if dot > max_slope_cos:
     if intersects.collider == $/root/Main/Floor/StaticBody3D: 
       is_on_floor = true
