@@ -2767,10 +2767,6 @@ Main（Node3D）
     * [**Shape**]-[新規 **CapseleShape3D**]-[編集]  
       * [**Radius**]：**0.05**
       * [**Height**]：**0.1**
-    * [**Transform**] で各種設定  
-      * [**Position**]：x 0、**y -0.05**、z 0
-      * [**Rotation**]：**x 90**、y 0、z 0
-      * [**Scale**]：x 1、**y 0.1**、z 1  
 
 （これまでの作業の階層）  
 Main（**Node3D**）  
