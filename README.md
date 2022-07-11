@@ -2834,7 +2834,6 @@ Main（**Node3D**）
   if dot > max_slope_cos:
     is_on_floor = true
   else:
-    is_on_floor = false
   ```
   ↓  
     ```gdscript
@@ -2844,7 +2843,6 @@ Main（**Node3D**）
   	else:
   	  is_on_floor = false
   else:
-    is_on_floor = false
   ```
 
 完成ファイル：[Teleport.zip](https://github.com/mubirou/Godot/blob/main/zip/Teleport.zip)  
