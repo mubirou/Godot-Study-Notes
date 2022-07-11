@@ -2830,20 +2830,20 @@ Main（**Node3D**）
 * **特定の床のみにテレポートできるようにする**  
 
   **Function_Teleport.gd**（229行目付近）を変更    
-  ```gdscript
-  if dot > max_slope_cos:
+```gdscript
+if dot > max_slope_cos:
+  is_on_floor = true
+else:
+```
+ ↓ ↓ ↓  
+```
+if dot > max_slope_cos:
+  if intersects.collider == $/root/Main/Floor/StaticBody3D: 
     is_on_floor = true
   else:
-  ```
-    ↓ ↓ ↓  
-    ```
-  if dot > max_slope_cos:
-    if intersects.collider == $/root/Main/Floor/StaticBody3D: 
-      is_on_floor = true
-    else:
-      is_on_floor = false
-  else:
-  ```
+    is_on_floor = false
+else:
+```
 
 完成ファイル：[Teleport.zip](https://github.com/mubirou/Godot/blob/main/zip/Teleport.zip)  
 参考：[Godot 4 OpenXR demo project](https://github.com/BastiaanOlij/godot4_openxr_demo)  
