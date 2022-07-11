@@ -2835,13 +2835,13 @@ Main（**Node3D**）
     is_on_floor = true
   else:
   ```
-  ↓  
+  ↓ ↓ ↓ ↓ ↓  
     ```gdscript
   if dot > max_slope_cos:
     if intersects.collider == $/root/Main/Floor/StaticBody3D: 
-  	  is_on_floor = true
-  	else:
-  	  is_on_floor = false
+      is_on_floor = true
+    else:
+      is_on_floor = false
   else:
   ```
 
