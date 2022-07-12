@@ -7,7 +7,7 @@
 
 ### **index（Godot 4.0 対応）**
 
-[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) |
+[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) |
 ***
 
 <a id="Androidビルド"></a>
@@ -2899,6 +2899,59 @@ func _ready():
 作成者：夢寐郎  
 作成日：2022年07月09日  
 [[TOP]](#TOP)
+
+
+<a id="220708"></a>
+# <b>デジタル時計</b>
+
+📝 デジタル時計用のフォント（[Digital Dismay](https://www.1001fonts.com/digital+clock-fonts.html) 等）を用意しプロジェクトフォルダ内に置く  
+
+1. 大元の Node3D（Main）を選択し [子ノードを追加]-[[**Label3D**](https://docs.godotengine.org/en/latest/classes/class_label3d.html?highlight=Label3D#label3d)] を選択
+1. 名前を "Label3D" → "Clock" に変更
+1. [Label3D] を選択し [インスペクター] を次の通り設定
+    * [**Text**]  
+      * [**Modulate**]：**#ffcc00**（フォント色）
+      * [**Text**]：**88:88:88**
+      * [**Font**]：**Digital Dismay.otf**（上記のフォント）
+      * [**Font Size**]：**127**
+    * [**Transform**]
+      * [**Position**]：x 0、**y 1.5**、**-3**
+      * [**Scale**]：**x 0.25**、**y 0.25**、z 1  
+      
+（階層は以下の通り）  
+Main（Node3D） 
+　  │
+　  └ Clock（**Label3D**）  
+
+* Clock（**Label3D**）を選択し新規でスクリプト（**Clock.gd**）をアタッチし以下の通り記述  
+
+```gdscript
+extends Label3D
+
+func _ready():
+	await loop()
+
+func loop():
+	await get_tree().create_timer(1.0).timeout
+	
+	var _now = Time.get_datetime_dict_from_system()
+	var _h = _now.hour
+	var _m = _now.minute
+	var _s = _now.second
+	if _h < 10: _h = "0" + str(_h)
+	if _m < 10: _m = "0" + str(_m)
+	if _s < 10: _s = "0" + str(_s)
+	var _result = str(_h) + ":" + str(_m) + ":" + str(_s)
+	text = _result
+	
+	await loop()
+```
+
+実行環境：実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
+作成者：夢寐郎  
+作成日：2022年06月04日  
+更新日：2022年07月13日 Godot 4.0 対応    
+[[TOP]](#TOP)/
 
 
 <a id="XXX"></a>
