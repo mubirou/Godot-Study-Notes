@@ -2946,7 +2946,7 @@ func loop():
 	await loop()
 ```
 
-参考：[タイマー](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#-%E7%B9%B0%E3%82%8A%E8%BF%94%E3%81%97%E5%AE%9F%E8%A1%8C%E6%B0%B8%E4%B9%85%E7%B6%99%E7%B6%9A)  
+参考：[タイマー（繰り返し実行）](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#-%E7%B9%B0%E3%82%8A%E8%BF%94%E3%81%97%E5%AE%9F%E8%A1%8C%E6%B0%B8%E4%B9%85%E7%B6%99%E7%B6%9A)  
 実行環境：実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月04日  
