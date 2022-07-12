@@ -2920,7 +2920,6 @@ func _ready():
       
 （階層は以下の通り）  
 Main（Node3D）  
-　  │  
 　  └ Clock（**Label3D**）  
 
 * Clock（**Label3D**）を選択し新規でスクリプト（**Clock.gd**）をアタッチし以下の通り記述  
