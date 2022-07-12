@@ -2918,9 +2918,9 @@ func _ready():
       * [**Position**]：x 0、**y 1.5**、**-3**
       * [**Scale**]：**x 0.25**、**y 0.25**、z 1  
       
-（階層は以下の通り）  
-Main（Node3D）  
-　  └ Clock（**Label3D**）  
+    （階層は以下の通り）  
+    Main（Node3D）  
+    　  └ Clock（**Label3D**）  
 
 * Clock（**Label3D**）を選択し新規でスクリプト（**Clock.gd**）をアタッチし以下の通り記述  
 
