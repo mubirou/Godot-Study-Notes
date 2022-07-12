@@ -2919,7 +2919,7 @@ func _ready():
       * [**Scale**]：**x 0.25**、**y 0.25**、z 1  
       
 （階層は以下の通り）  
-Main（Node3D） 
+Main（Node3D）  
 　  │  
 　  └ Clock（**Label3D**）  
 
