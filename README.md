@@ -2,7 +2,7 @@
 
 ### <b>index（Godot 3.4 対応）</b>
 
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [RayCastボタン](#220601) | [動画再生](#220602) | [デジタル時計](#220603) | [Oculus Air Link](#220604) | [VR空間に2Dシーンを表示](#220605) | [360°パノラマ](#220606) | [鏡面仕上げボール](#220607) | [ジョイスティック角度](#220608) | [Blender to Godot](#220609) | [物理エンジン RigidBodyとStaticBody](#220610) | [移動の基本3種](#220611) | [衝突判定](#220612) | [Picture-in-Picture](#220613) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [パーティクル](#220619) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [青空](#220626) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [RayCastボタン](#220601) | [動画再生](#220602) | [Oculus Air Link](#220604) | [VR空間に2Dシーンを表示](#220605) | [360°パノラマ](#220606) | [鏡面仕上げボール](#220607) | [ジョイスティック角度](#220608) | [Blender to Godot](#220609) | [物理エンジン RigidBodyとStaticBody](#220610) | [移動の基本3種](#220611) | [衝突判定](#220612) | [Picture-in-Picture](#220613) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [パーティクル](#220619) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [青空](#220626) |
 ***
 
 ### **index（Godot 4.0 対応）**
@@ -1204,75 +1204,6 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 　  │　　 └ **VideoPlayer**  
 
 参考：[Picture-in-Picture](#220613)  
-実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2  
-Meta Quest 40.0、Oculus Link（Oculusアプリ）  
-作成者：夢寐郎  
-作成日：2022年06月04日  
-[[TOP]](#TOP)
-
-
-<a id="220603"></a>
-# <b>デジタル時計</b>
-
-📝 デジタル時計用のフォント（[Digital Dismay](https://www.1001fonts.com/digital+clock-fonts.html) 等）を用意  
-
-📝 [Sprite3D](https://docs.godotengine.org/ja/stable/classes/class_sprite3d.html#sprite3d) の用意  
-
-1. [シーン]-[＋]-[**Sprite3D**] を選択
-1. Sprite3D] を選択し [インスペクター] で各種設定  
-    * [**Translation**]：x 0、**y 1**、**z -3**（時計表示位置）
-    * [**Scale**]：**0.25**、**0.25**、1（ピクセルアスペクト比･表示サイズの調整）
-
-📝 [Viewport](https://docs.godotengine.org/ja/stable/classes/class_viewport.html?highlight=Viewport#viewport) の用意  
-
-1. Sprite3D を選択し [子ノードを追加]-[**Viewport**] を選択
-1. Sprite3D を選択し [インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **Viewport** を選択
-1. Viewport を選択し [インスペクター] を設定  
-    * [**Size**]：**x 492**、**y 144**（フォントサイズにより要調整）  
-    * [Render Target]-[**VFlip**] を **✓**
-
-📝 [Label](https://docs.godotengine.org/ja/stable/classes/class_label.html?highlight=Label) の用意
-
-1. Viewport を選択し [子ノードを追加]-[**Label**] を選択
-1. Label を選択し [インスペクター] を設定
-    * [**Text**]：**88:88:88**
-    * [**Margin**]：**Left 22**、**Top 10**、**Right 0**、**Bottom 0**
-1. 引き続きフォント関係を設定  
-    1. [Theme Overrides]-[**Fonts**]-[新規 **DynamicFont**] を選択
-    1. [DynamicFont]-[編集]-[Font]-[**Font Data**] に上記の **Digital Dismay.otf** ファイルをドラッグ＆ドロップ
-    1. [Setting]-[**Size**] を **128** に変更
-
-（階層は以下の通り）  
-　  ├ **Sprite3D**  
-　  │   └ **Viewport**  
-　  │　　 └ **Label**  
-
-📝 コードの記述  
-
-* 大元の Spatial に新規で Main.gd をアタッチし以下を追加  
-
-```gdscript
-func _ready():
-  var _timer = Timer.new()
-  _timer.set_wait_time(1)
-  _timer.connect("timeout", self, "loopClock")
-  add_child(_timer)
-  _timer.start()
-
-func loopClock():
-  var _now = OS.get_datetime()
-  var _h = _now.hour
-  var _m = _now.minute
-  var _s = _now.second
-
-  if _h < 10: _h = "0" + str(_h)
-  if _m < 10: _m = "0" + str(_m)
-  if _s < 10: _s = "0" + str(_s)
-  var _result = str(_h) + ":" + str(_m) + ":" + str(_s)
-
-  get_node("Sprite3D/Viewport/Label").text = _result
-```
-
 実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2  
 Meta Quest 40.0、Oculus Link（Oculusアプリ）  
 作成者：夢寐郎  
@@ -2945,7 +2876,7 @@ func loop():
 	
 	await loop()
 ```
- 
+
 実行環境：実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月04日  
