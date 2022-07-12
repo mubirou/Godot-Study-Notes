@@ -2893,7 +2893,8 @@ func _ready():
   var _physicsBody  = $Floor/StaticBody3D
   _rayCast_R.add_exception(_physicsBody)
 ```
-  
+
+デモファイル：[teleport.zip](https://github.com/mubirou/Godot/blob/main/zip/teleport.zip)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月09日  
