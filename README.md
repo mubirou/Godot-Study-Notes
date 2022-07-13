@@ -2895,7 +2895,9 @@ func loop():
     * [**Amount**]：**10**：パーティクルの数  
     * [**Process Material**]-[新規 [**ParticlesMaterial**](https://docs.godotengine.org/en/latest/classes/class_particlesmaterial.html?highlight=ParticlesMaterial#particlesmaterial)]-[編集]  
       * [**Gravity**]：x 0、**y 0**、z 0
-      * [**Angle**]：Angle Min 0、**Angle Max 360**
+      * [**Angle**]：
+        * [Angle Min]：0
+        * [**Angle Max**]：**360**
       * [**Scale**]：任意（下図参照）  
       ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140730.jpg)  
       * [**Color**]：右端のアルファ値は **0**（下図参照）
@@ -2905,7 +2907,9 @@ func loop():
 
 
     * [**Geometry**]-[**Material Override**]-[新規 [**StandardMaterial3D**](https://docs.godotengine.org/en/latest/classes/class_standardmaterial3d.html?highlight=StandardMaterial3D#standardmaterial3d)]-[編集]    
-        * [**Transparency**]：**Transparency Alpha**、**Blend Mode Add**
+        * [**Transparency**]：
+          * [**Transparency**]：**Alpha**
+          * [**Blend Mode**]：**Add**
         * [**Shading**]：**Shading Unshaded**
 
         * [Flags]-[**Transparent**]：**✓**オン
