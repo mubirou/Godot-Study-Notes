@@ -2901,8 +2901,7 @@ func loop():
       * [**Color**]：右端のアルファ値は **0**（下図参照）
       ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140804.jpg)  
 
-    * [**Draw Passes**]-[**Pass1**]-[新規 **QuadMesh**]-[編集]  
-      * XXX
+    * [**Draw Passes**]-[**Pass1**]-[新規 [**QuadMesh**](https://docs.godotengine.org/en/latest/classes/class_quadmesh.html?highlight=QuadMesh#quadmesh)]
 
 
     * [**Geometry**]-[**Material Override**]：新規 **SpatialMaterial**  
