@@ -2911,6 +2911,11 @@ func loop():
           * [**Transparency**]：**Alpha**
           * [**Blend Mode**]：**Add**
         * [**Shading**]：**Shading Unshaded**
+        * [**Vertex Color**]-[**Use As Albedo**]：**✓オン**
+        * [**Albedo**]：
+          * [**Color**]：#ffffff
+          * [**Texture**]：**〇〇.png**（👇例）  
+        ![image](https://github.com/mubirou/Godot/blob/main/png/smoke.png)  
 
         * [Flags]-[**Transparent**]：**✓**オン
         * [Flags]-[**Unshaded**]：**✓**オン
@@ -2919,6 +2924,8 @@ func loop():
         * [Parameters]-[**Billboard Mode**]：**Particle Billboard**
         * [Albedo]-[**Texture**]：**〇〇.png**（👇例）  
         ![image](https://github.com/mubirou/Godot/blob/main/png/smoke.png)  
+
+  
     * [**Process Material**]-[**ParticlesMaterial**]-[編集] で各種設定  
         * [**Gravity**]：x 0、**y 0**、z 0
         * [**Initial Velocity**]-[Velocity]：(**0.6**)
