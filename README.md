@@ -2896,8 +2896,10 @@ func loop():
     * [**Process Material**]-[新規 **ParticlesMaterial**]=[編集]  
       * [**Gravity**]：x 0、**y 0**、z 0
       * [**Angle**]：Angle Min 0、**Angle Max 360**
-      * [**Scale**]：下図参照  
+      * [**Scale**]：任意（下図参照）  
       ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140730.jpg)  
+      * [**Color**]：右端のアルファ値を **0** にする（下図参照）
+      ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140804.jpg)  
 
     * [**Draw Passes**]-[Pass1]：新規 **QuadMesh**
     * [**Geometry**]-[**Material Override**]：新規 **SpatialMaterial**  
