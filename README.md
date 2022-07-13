@@ -2922,7 +2922,7 @@ func loop():
         * [Vertex Color]-[**Use As Albedo**]：**✓**オン
         * [Parameters]-[**Blend Mode**]：**Add**
         * [Parameters]-[**Billboard Mode**]：**Particle Billboard**
-        * [Albedo]-[**Texture**]：**〇〇.png**（👇例）  
+        * [Albedo]-[**Texture**]：[**smoke.png**](https://github.com/mubirou/Godot/blob/main/png/smoke.png)    
         ![image](https://github.com/mubirou/Godot/blob/main/png/smoke.png)  
 
   
