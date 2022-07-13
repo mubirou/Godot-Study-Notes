@@ -2916,6 +2916,7 @@ func loop():
           * [**Color**]：#ffffff
           * [**Texture**]：[**smoke.png**](https://github.com/mubirou/Godot/blob/main/png/smoke.png)    
         ![image](https://github.com/mubirou/Godot/blob/main/png/smoke.png)  
+        💡フリー素材の [KENNY](https://www.kenney.nl/assets?s=Particle+Pack+Free) の"Particl Pack" 等も利用可能  
 
 
   
@@ -2942,8 +2943,7 @@ func loop():
 
         ![image](https://github.com/mubirou/Godot/blob/main/jpg/202206272104.jpg)  
 
-参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)  
-参考：[KENNY](https://www.kenney.nl/assets?s=Particle+Pack+Free)（フリー素材"Particl Pack"）  
+参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)   
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_particles.html?highlight=Particles)  
 実行環境：実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
