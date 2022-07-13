@@ -2892,9 +2892,13 @@ func loop():
 
 1. 任意の Node3D を選択し [子ノードを追加]-[**GPUParticles3D**] を選択
 1. [**GPUParticles3D**]-[インスペクター] で各種設定  
+    * [**Amount**]：**10**：パーティクルの数  
+    * [**Process Material**]-[新規 **ParticlesMaterial**]=[編集]  
+      * [**Gravity**]：x 0、**y 0**、z 0
+      * [**Angle**]：Angle Min 0、**Angle Max 360**
+      * [**Scale**]：下図参照  
+      ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140730.jpg)  
 
-    * [**Amount**]：パーティクルの数（**4～90**程度）
-    * [**Process Material**]：新規 **ParticlesMaterial**
     * [**Draw Passes**]-[Pass1]：新規 **QuadMesh**
     * [**Geometry**]-[**Material Override**]：新規 **SpatialMaterial**  
       引続き [**Material Override**]-[編集] で各種設定  
