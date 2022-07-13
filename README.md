@@ -7,7 +7,7 @@
 
 ### **index（Godot 4.0 対応）**
 
-[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) |
+[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) |
 ***
 
 <a id="Androidビルド"></a>
@@ -2882,6 +2882,60 @@ func loop():
 作成日：2022年06月04日  
 更新日：2022年07月13日 Godot 4.0 対応    
 [[TOP]](#TOP)/
+
+
+<a id="220709"></a>
+# <b>パーティクル</b>
+（例）煙の生成方法  
+
+### この項目は書きかけです  
+
+1. プロジェクトを **[GLES3](https://docs.godotengine.org/ja/stable/tutorials/rendering/gles2_gles3_differences.html#differences-between-gles2-and-gles3)** に設定
+1. 任意の Spatial（Node3D）を選択し [子ノードを追加]-[**Particles**] を選択
+1. [Particles]-[インスペクター] で各種設定  
+    * [**Amount**]：パーティクルの数（**4～90**程度）
+    * [**Process Material**]：新規 **ParticlesMaterial**
+    * [**Draw Passes**]-[Pass1]：新規 **QuadMesh**
+    * [**Geometry**]-[**Material Override**]：新規 **SpatialMaterial**  
+      引続き [**Material Override**]-[編集] で各種設定  
+        * [Flags]-[**Transparent**]：**✓**オン
+        * [Flags]-[**Unshaded**]：**✓**オン
+        * [Vertex Color]-[**Use As Albedo**]：**✓**オン
+        * [Parameters]-[**Blend Mode**]：**Add**
+        * [Parameters]-[**Billboard Mode**]：**Particle Billboard**
+        * [Albedo]-[**Texture**]：**〇〇.png**（👇例）  
+        ![image](https://github.com/mubirou/Godot/blob/main/png/smoke.png)  
+    * [**Process Material**]-[**ParticlesMaterial**]-[編集] で各種設定  
+        * [**Gravity**]：x 0、**y 0**、z 0
+        * [**Initial Velocity**]-[Velocity]：(**0.6**)
+        * [**Initial Velocity**]-[Velocity Random]：(**0.4**)
+        * [**Linear Accel**]-[Accel]：(**-0.18**)
+        * [Angle]-[**Angle**]：**360**
+        * [Angle]-[**Angle Random**]：1
+        * [Emmision Shape]-[**Shape**]：**Sphere**
+        * [Emmision Shape]-[**Sphere Radius**]：**0.08～1** 程度
+        * [Scale]-[**Scale**]：**1.2**
+        * [Scale]-[**Scale Curve**]：新規 **CurveTexture**  
+          * [**CurveTexture**]-[編集] で各種設定
+            * カーブ上で右クリックで [**ポイントを追加**] [**ポイントを削除**] 可能
+        * [**Angular Velocity**]-[Velocity]：**15**
+        * [**Angular Velocity**]-[Velocity Random]：**1**
+        * [Color]-[**Color Ramp**]：新規 **GradientTexture**
+          * [**GradientTexture**]-[編集] で各種設定
+            * [**Gradient**]：新規 **Gradient**
+              * [**Gradient**]-[編集] で各種設定
+                * 右端のアルファ値を 0 にする（下図）  
+
+        ![image](https://github.com/mubirou/Godot/blob/main/jpg/202206272104.jpg)  
+
+参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)  
+参考：[KENNY](https://www.kenney.nl/assets?s=Particle+Pack+Free)（フリー素材"Particl Pack"）  
+参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_particles.html?highlight=Particles)  
+実行環境：実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
+作成者：夢寐郎  
+作成日：2022年06月27日  
+更新日：2022年07月XX日 Godot 4.0 対応  
+[[TOP]](#TOP)
 
 
 <a id="XXX"></a>
