@@ -2910,7 +2910,7 @@ func loop():
         * [**Transparency**]：
           * [**Transparency**]：**Alpha**
           * [**Blend Mode**]：**Add**
-        * [**Shading**]：**Shading Unshaded**
+        * [**Shading**]-[**Shading Mode**]：**Unshaded**
         * [**Vertex Color**]-[**Use As Albedo**]：**✓オン**
         * [**Albedo**]：
           * [**Color**]：#ffffff
