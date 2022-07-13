@@ -2914,16 +2914,9 @@ func loop():
         * [**Vertex Color**]-[**Use As Albedo**]：**✓オン**
         * [**Albedo**]：
           * [**Color**]：#ffffff
-          * [**Texture**]：**〇〇.png**（👇例）  
+          * [**Texture**]：[**smoke.png**](https://github.com/mubirou/Godot/blob/main/png/smoke.png)    
         ![image](https://github.com/mubirou/Godot/blob/main/png/smoke.png)  
 
-        * [Flags]-[**Transparent**]：**✓**オン
-        * [Flags]-[**Unshaded**]：**✓**オン
-        * [Vertex Color]-[**Use As Albedo**]：**✓**オン
-        * [Parameters]-[**Blend Mode**]：**Add**
-        * [Parameters]-[**Billboard Mode**]：**Particle Billboard**
-        * [Albedo]-[**Texture**]：[**smoke.png**](https://github.com/mubirou/Godot/blob/main/png/smoke.png)    
-        ![image](https://github.com/mubirou/Godot/blob/main/png/smoke.png)  
 
   
     * [**Process Material**]-[**ParticlesMaterial**]-[編集] で各種設定  
