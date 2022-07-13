@@ -2917,6 +2917,7 @@ func loop():
           * [**Texture**]：[**smoke.png**](https://github.com/mubirou/Godot/blob/main/png/smoke.png)    
         ![image](https://github.com/mubirou/Godot/blob/main/png/smoke.png)  
         📝 [**KENNY "Particl Pack"**](https://www.kenney.nl/assets?s=Particle+Pack+Free) も利用可  
+        * [**Billboard**]-[**Mode**]：**Particle Billboard**（重要）
 
 
   
