@@ -2904,8 +2904,8 @@ func loop():
     * [**Draw Passes**]-[**Pass1**]-[新規 [**QuadMesh**](https://docs.godotengine.org/en/latest/classes/class_quadmesh.html?highlight=QuadMesh#quadmesh)]
 
 
-    * [**Geometry**]-[**Material Override**]：新規 **SpatialMaterial**  
-      引続き [**Material Override**]-[編集] で各種設定  
+    * [**Geometry**]-[**Material Override**]-[新規 [**StandardMaterial3D**](https://docs.godotengine.org/en/latest/classes/class_standardmaterial3d.html?highlight=StandardMaterial3D#standardmaterial3d)]-[編集]    
+
         * [Flags]-[**Transparent**]：**✓**オン
         * [Flags]-[**Unshaded**]：**✓**オン
         * [Vertex Color]-[**Use As Albedo**]：**✓**オン
