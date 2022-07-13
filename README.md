@@ -2890,9 +2890,9 @@ func loop():
 
 ### この項目は書きかけです  
 
-1. プロジェクトを **[GLES3](https://docs.godotengine.org/ja/stable/tutorials/rendering/gles2_gles3_differences.html#differences-between-gles2-and-gles3)** に設定
-1. 任意の Spatial（Node3D）を選択し [子ノードを追加]-[**Particles**] を選択
-1. [Particles]-[インスペクター] で各種設定  
+1. 任意の Node3D を選択し [子ノードを追加]-[**GPUParticles3D**] を選択
+1. [**GPUParticles3D**]-[インスペクター] で各種設定  
+
     * [**Amount**]：パーティクルの数（**4～90**程度）
     * [**Process Material**]：新規 **ParticlesMaterial**
     * [**Draw Passes**]-[Pass1]：新規 **QuadMesh**
