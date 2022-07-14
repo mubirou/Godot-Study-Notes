@@ -2314,24 +2314,24 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 1. 大元の Main（Node3D）にアタッチされたコードを確認＆変更  
 
-  ```gdscript
-  # main.gd
-  extends Node3D
+    ```gdscript
+    # main.gd
+    extends Node3D
 
-  var _interface : XRInterface
+    var _interface : XRInterface
 
-  func _ready():
-    _interface = XRServer.find_interface("OpenXR")
-    if _interface and _interface.is_initialized():
-      var _viewport : Viewport = get_viewport()
-      _viewport.use_xr = true
+    func _ready():
+      _interface = XRServer.find_interface("OpenXR")
+      if _interface and _interface.is_initialized():
+        var _viewport : Viewport = get_viewport()
+        _viewport.use_xr = true
 
-  func _on_xr_controller_3d_right_button_pressed(name):
-    print("Pressed: " + name)
-
-  func _on_xr_controller_3d_right_button_released(name):
-    print("Released: " + name
-  ```
+    func _on_xr_controller_3d_right_button_pressed(name):
+      print("Pressed: " + name)
+      
+    func _on_xr_controller_3d_right_button_released(name):
+      print("Released: " + name)
+    ```
 
 1. 実行すると VR コントローラーの入力に応じて以下の値（String型）が出力される  
 
