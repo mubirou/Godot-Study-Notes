@@ -2900,7 +2900,7 @@ func loop():
   * [**Lifetime**]：1（寿命：0.01～600s）
   * [**Speed Scale**]：1（スピード：0～64）
   * [**Fixd FPS**]：30（フレームレート：0～1000fps）
-#### Process Material（作業➋）
+#### Process Material（作業➌）
   * [**Process Material**]-[新規 [**ParticlesMaterial**](https://docs.godotengine.org/en/latest/classes/class_particlesmaterial.html?highlight=ParticlesMaterial#particlesmaterial)]-[編集]  
     * [**Gravity**]：x 0、**y 0**、z 0（重力）
     * [**Angle**]：
@@ -2912,7 +2912,7 @@ func loop():
     ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140804.jpg)  
 #### Draw Passes（作業➊）
   * [**Draw Passes**]-[**Pass1**]-[新規 [**QuadMesh**](https://docs.godotengine.org/en/latest/classes/class_quadmesh.html?highlight=QuadMesh#quadmesh)]
-#### Geometry
+#### Geometry（作業➋）
   * [**Geometry**]-[**Material Override**]-[新規 [**StandardMaterial3D**](https://docs.godotengine.org/en/latest/classes/class_standardmaterial3d.html?highlight=StandardMaterial3D#standardmaterial3d)]-[編集]    
       * [**Transparency**]：
         * [**Transparency**]：**Alpha**
