@@ -2,7 +2,7 @@
 
 ### <b>index（Godot 3.4 対応）</b>
 
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [RayCastボタン](#220601) | [動画再生](#220602) | [Oculus Air Link](#220604) | [VR空間に2Dシーンを表示](#220605) | [360°パノラマ](#220606) | [鏡面仕上げボール](#220607) | [ジョイスティック角度](#220608) | [Blender to Godot](#220609) | [物理エンジン RigidBodyとStaticBody](#220610) | [移動の基本3種](#220611) | [衝突判定](#220612) | [Picture-in-Picture](#220613) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [パーティクル](#220619) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [青空](#220626) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [Quest + Oculus Link](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [RayCastボタン](#220601) | [動画再生](#220602) | [Oculus Air Link](#220604) | [VR空間に2Dシーンを表示](#220605) | [360°パノラマ](#220606) | [鏡面仕上げボール](#220607) | [ジョイスティック角度](#220608) | [Blender to Godot](#220609) | [物理エンジン RigidBodyとStaticBody](#220610) | [移動の基本3種](#220611) | [衝突判定](#220612) | [Picture-in-Picture](#220613) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [青空](#220626) |
 ***
 
 ### **index（Godot 4.0 対応）**
@@ -1859,57 +1859,6 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月26日  
-[[TOP]](#TOP)
-
-
-<a id="220619"></a>
-# <b>パーティクル</b>
-（例）煙の生成方法  
-
-1. プロジェクトを **[GLES3](https://docs.godotengine.org/ja/stable/tutorials/rendering/gles2_gles3_differences.html#differences-between-gles2-and-gles3)** に設定
-1. 任意の Spatial（Node3D）を選択し [子ノードを追加]-[**Particles**] を選択
-1. [Particles]-[インスペクター] で各種設定  
-    * [**Amount**]：パーティクルの数（**4～90**程度）
-    * [**Process Material**]：新規 **ParticlesMaterial**
-    * [**Draw Passes**]-[Pass1]：新規 **QuadMesh**
-    * [**Geometry**]-[**Material Override**]：新規 **SpatialMaterial**  
-      引続き [**Material Override**]-[編集] で各種設定  
-        * [Flags]-[**Transparent**]：**✓**オン
-        * [Flags]-[**Unshaded**]：**✓**オン
-        * [Vertex Color]-[**Use As Albedo**]：**✓**オン
-        * [Parameters]-[**Blend Mode**]：**Add**
-        * [Parameters]-[**Billboard Mode**]：**Particle Billboard**
-        * [Albedo]-[**Texture**]：**〇〇.png**（👇例）  
-        ![image](https://github.com/mubirou/Godot/blob/main/png/smoke.png)  
-    * [**Process Material**]-[**ParticlesMaterial**]-[編集] で各種設定  
-        * [**Gravity**]：x 0、**y 0**、z 0
-        * [**Initial Velocity**]-[Velocity]：(**0.6**)
-        * [**Initial Velocity**]-[Velocity Random]：(**0.4**)
-        * [**Linear Accel**]-[Accel]：(**-0.18**)
-        * [Angle]-[**Angle**]：**360**
-        * [Angle]-[**Angle Random**]：1
-        * [Emmision Shape]-[**Shape**]：**Sphere**
-        * [Emmision Shape]-[**Sphere Radius**]：**0.08～1** 程度
-        * [Scale]-[**Scale**]：**1.2**
-        * [Scale]-[**Scale Curve**]：新規 **CurveTexture**  
-          * [**CurveTexture**]-[編集] で各種設定
-            * カーブ上で右クリックで [**ポイントを追加**] [**ポイントを削除**] 可能
-        * [**Angular Velocity**]-[Velocity]：**15**
-        * [**Angular Velocity**]-[Velocity Random]：**1**
-        * [Color]-[**Color Ramp**]：新規 **GradientTexture**
-          * [**GradientTexture**]-[編集] で各種設定
-            * [**Gradient**]：新規 **Gradient**
-              * [**Gradient**]-[編集] で各種設定
-                * 右端のアルファ値を 0 にする（下図）  
-
-        ![image](https://github.com/mubirou/Godot/blob/main/jpg/202206272104.jpg)  
-
-参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)  
-参考：[KENNY](https://www.kenney.nl/assets?s=Particle+Pack+Free)（フリー素材"Particl Pack"）  
-参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_particles.html?highlight=Particles)  
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
-作成者：夢寐郎  
-作成日：2022年06月27日  
 [[TOP]](#TOP)
 
 
