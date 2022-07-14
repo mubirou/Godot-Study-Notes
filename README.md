@@ -2897,9 +2897,9 @@ func loop():
 #### Amount
   * [**Amount**]：**10**（パーティクルの数）  
 #### Time
-  * [**Lifetime**]：1（0.01～600s）
-  * [**Speed Scale**]：1（0～64）
-  * [**Fixd FPS**]：30（0～1000fps）
+  * [**Lifetime**]：1（寿命：0.01～600s）
+  * [**Speed Scale**]：1（スピード：0～64）
+  * [**Fixd FPS**]：30（フレームレート：0～1000fps）
 #### Process Material
   * [**Process Material**]-[新規 [**ParticlesMaterial**](https://docs.godotengine.org/en/latest/classes/class_particlesmaterial.html?highlight=ParticlesMaterial#particlesmaterial)]-[編集]  
     * [**Gravity**]：x 0、**y 0**、z 0
@@ -2913,7 +2913,7 @@ func loop():
 #### Draw Passes
   * [**Draw Passes**]-[**Pass1**]-[新規 [**QuadMesh**](https://docs.godotengine.org/en/latest/classes/class_quadmesh.html?highlight=QuadMesh#quadmesh)]
 #### Geometry
-  * [**Geometry**]-[**Material Override**]-[新規 [💡**StandardMaterial3D**](https://docs.godotengine.org/en/latest/classes/class_standardmaterial3d.html?highlight=StandardMaterial3D#standardmaterial3d)]-[編集]    
+  * [**Geometry**]-[**Material Override**]-[新規 [**StandardMaterial3D**](https://docs.godotengine.org/en/latest/classes/class_standardmaterial3d.html?highlight=StandardMaterial3D#standardmaterial3d)]-[編集]    
       * [**Transparency**]：
         * [**Transparency**]：**Alpha**
         * [**Blend Mode**]：**Add**
@@ -2926,6 +2926,7 @@ func loop():
       📝 [**KENNY "Particl Pack"**](https://www.kenney.nl/assets?s=Particle+Pack+Free) も利用可  
       * [**Billboard**]-[**Mode**]：**Particle Billboard**（向き）
 #### Transform
+  * [**Transform**]-[]
 
   
     * [**Process Material**]-[**ParticlesMaterial**]-[編集] で各種設定  
