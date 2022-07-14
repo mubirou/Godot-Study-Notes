@@ -2890,7 +2890,7 @@ func loop():
 
 ### この項目は書きかけです  
 
-📝 任意の Node3D を選択し [子ノードを追加]-[[**GPUParticles3D**](https://docs.godotengine.org/en/latest/classes/class_gpuparticles3d.html?highlight=GPUParticles3D#gpuparticles3d)]-[インスペクター] で以下の通り各種設定  
+📝 任意の Node3D を選択し [子ノードを追加]-[[**GPUParticles3D**](https://docs.godotengine.org/en/latest/classes/class_gpuparticles3d.html?highlight=GPUParticles3D#gpuparticles3d)]-[インスペクター] で以下の通り各種設定（手順➊）  
 
 #### Emitting
   * [**Emitting**]：✓オン（パーティクルのオン/オフ）
@@ -2900,7 +2900,7 @@ func loop():
   * [**Lifetime**]：1（寿命：0.01～600s）
   * [**Speed Scale**]：1（スピード：0～64）
   * [**Fixd FPS**]：30（フレームレート：0～1000fps）
-#### Process Material（作業➌）
+#### Process Material（手順➍）
   * [**Process Material**]-[新規 [**ParticlesMaterial**](https://docs.godotengine.org/en/latest/classes/class_particlesmaterial.html?highlight=ParticlesMaterial#particlesmaterial)]-[編集]  
     * [**Gravity**]：x 0、**y 0**、z 0（重力）
     * [**Angle**]：
@@ -2910,9 +2910,9 @@ func loop():
     ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140942.jpg)  
     * [**Color**]：右端のアルファ値は **0**（下図参照）
     ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140804.jpg)  
-#### Draw Passes（作業➊）
+#### Draw Passes（手順➋）
   * [**Draw Passes**]-[**Pass1**]-[新規 [**QuadMesh**](https://docs.godotengine.org/en/latest/classes/class_quadmesh.html?highlight=QuadMesh#quadmesh)]
-#### Geometry（作業➋）
+#### Geometry（手順➌）
   * [**Geometry**]-[**Material Override**]-[新規 [**StandardMaterial3D**](https://docs.godotengine.org/en/latest/classes/class_standardmaterial3d.html?highlight=StandardMaterial3D#standardmaterial3d)]-[編集]    
       * [**Transparency**]：
         * [**Transparency**]：**Alpha**
