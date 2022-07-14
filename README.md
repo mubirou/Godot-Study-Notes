@@ -2900,7 +2900,7 @@ func loop():
   * [**Lifetime**]：1（寿命：0.01～600s）
   * [**Speed Scale**]：1（スピード：0～64）
   * [**Fixd FPS**]：30（フレームレート：0～1000fps）
-#### Process Material
+#### Process Material（作業➋）
   * [**Process Material**]-[新規 [**ParticlesMaterial**](https://docs.godotengine.org/en/latest/classes/class_particlesmaterial.html?highlight=ParticlesMaterial#particlesmaterial)]-[編集]  
     * [**Gravity**]：x 0、**y 0**、z 0（重力）
     * [**Angle**]：
