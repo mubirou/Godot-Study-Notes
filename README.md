@@ -2926,7 +2926,9 @@ func loop():
       📝 [**KENNY "Particl Pack"**](https://www.kenney.nl/assets?s=Particle+Pack+Free) も利用可  
       * [**Billboard**]-[**Mode**]：**Particle Billboard**（向き）
 #### Transform
-  * [**Transform**]-[]
+  * [**Transform**]-[**Position**]：x 0、**y 1**、**z -2**（任意）
+
+
 
   
     * [**Process Material**]-[**ParticlesMaterial**]-[編集] で各種設定  
