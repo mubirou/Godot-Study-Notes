@@ -2912,21 +2912,20 @@ func loop():
     ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140804.jpg)  
 #### Draw Passes
   * [**Draw Passes**]-[**Pass1**]-[新規 [**QuadMesh**](https://docs.godotengine.org/en/latest/classes/class_quadmesh.html?highlight=QuadMesh#quadmesh)]
-
-
-    * [**Geometry**]-[**Material Override**]-[新規 [💡**StandardMaterial3D**](https://docs.godotengine.org/en/latest/classes/class_standardmaterial3d.html?highlight=StandardMaterial3D#standardmaterial3d)]-[編集]    
-        * [**Transparency**]：
-          * [**Transparency**]：**Alpha**
-          * [**Blend Mode**]：**Add**
-        * [**Shading**]-[**Shading Mode**]：**Unshaded**
-        * [**Vertex Color**]-[**Use As Albedo**]：**✓オン**
-        * [**Albedo**]：
-          * [**Color**]：#ffffff（ベースカラー）
-          * [**Texture**]：[**smoke.png**](https://github.com/mubirou/Godot/blob/main/png/smoke.png)    
-        ![image](https://github.com/mubirou/Godot/blob/main/png/smoke.png)  
-        📝 [**KENNY "Particl Pack"**](https://www.kenney.nl/assets?s=Particle+Pack+Free) も利用可  
-        * [**Billboard**]-[**Mode**]：**Particle Billboard**（向き）
-
+#### Geometry
+  * [**Geometry**]-[**Material Override**]-[新規 [💡**StandardMaterial3D**](https://docs.godotengine.org/en/latest/classes/class_standardmaterial3d.html?highlight=StandardMaterial3D#standardmaterial3d)]-[編集]    
+      * [**Transparency**]：
+        * [**Transparency**]：**Alpha**
+        * [**Blend Mode**]：**Add**
+      * [**Shading**]-[**Shading Mode**]：**Unshaded**
+      * [**Vertex Color**]-[**Use As Albedo**]：**✓オン**
+      * [**Albedo**]：
+        * [**Color**]：#ffffff（ベースカラーと不透明度）
+        * [**Texture**]：[**smoke.png**](https://github.com/mubirou/Godot/blob/main/png/smoke.png)    
+      ![image](https://github.com/mubirou/Godot/blob/main/png/smoke.png)  
+      📝 [**KENNY "Particl Pack"**](https://www.kenney.nl/assets?s=Particle+Pack+Free) も利用可  
+      * [**Billboard**]-[**Mode**]：**Particle Billboard**（向き）
+#### Transform
 
   
     * [**Process Material**]-[**ParticlesMaterial**]-[編集] で各種設定  
