@@ -2926,6 +2926,7 @@ func loop():
 #### Transform（手順➋）
   * [**Transform**]-[**Position**]：x 0、**y 1**、**z -2**（任意）
 
+デモファイル：[Particles.zip](https://github.com/mubirou/Godot/blob/main/zip/Particles.zip)  
 参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)   
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_particles.html?highlight=Particles)  
 実行環境：実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
