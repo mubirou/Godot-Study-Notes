@@ -2252,21 +2252,22 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 1. 大元の Node3D を選択し以下のスクリプトをアタッチ  
 
-    ```gdscript
-    # main.gd
-    extends Node3D
+  ```gdscript
+  # main.gd
+  extends Node3D
 
-    var _interface : XRInterface
+  var _interface : XRInterface
 
-    func _ready():
-      _interface = XRServer.find_interface("OpenXR")
-      if _interface and _interface.is_initialized():
-        var _viewport : Viewport = get_viewport()
-        _viewport.use_xr = true
-    ```
+  func _ready():
+    _interface = XRServer.find_interface("OpenXR")
+    if _interface and _interface.is_initialized():
+      var _viewport : Viewport = get_viewport()
+      _viewport.use_xr = true
+  ```
 
 1. [実行] し **Quest** 上で動作確認（何もまだない状態）  
 
+デモファイル：[vr_start.zip](https://github.com/mubirou/Godot/blob/main/zip/vr_start.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月02日  
