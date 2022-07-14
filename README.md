@@ -2928,7 +2928,7 @@ func loop():
 #### Transform
   * [**Transform**]-[**Position**]：x 0、**y 1**、**z -2**（任意）
 
-
+***
 
   
     * [**Process Material**]-[**ParticlesMaterial**]-[編集] で各種設定  
