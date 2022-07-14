@@ -2897,27 +2897,12 @@ func loop():
   * [Pixexid](https://pixexid.com/search/360)：JPEG 形式
   * [Poly Haven](https://polyhaven.com/hdris)：[**OpenEXR**](https://www.openexr.com/) 形式＝[推奨](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)  
 
-📝 **WorldEnvironment** の作成  
-
-大元の Node3D を選択し [子ノードを追加]-[**WorldEnvironment**]-[インスペクター] で各種設定 
-
+1. 大元の Node3D を選択し [子ノードを追加]-[**WorldEnvironment**]-[インスペクター] で各種設定 
   * [**Environment**]-[新規 **Environment**]-[編集]  
     * [**Background**]-[**Mode**]：**Sky**
   * [**Sky**]-[**Sky**]-[新規 **Sky**]-[編集]  
     * [**Sky Material**][：〇〇[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)
-
-
-
-
-📝 **default_env.tres** の設定
-
-1. [ファイルシステム]-[**default_env.tres**]-[**Background**] を次の通りに設定  
-    * Mode：**Sky**
-    * Sky：[新規 **PanoramaSky**]-[編集]  
-        * **Panorama**：360°画像（**.jpg** [.hdr](https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%A4%E3%83%80%E3%82%A4%E3%83%8A%E3%83%9F%E3%83%83%E3%82%AF%E3%83%AC%E3%83%B3%E3%82%B8%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8) **.png**）をドラッグ＆ドロップ
-        * **Radiance Size**：**512**
-
-
+1. XXX
 
 実行環境：実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
