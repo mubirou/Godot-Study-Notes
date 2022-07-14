@@ -2893,7 +2893,9 @@ func loop():
 
 📝 360°画像の用意  
   * [Pixexid](https://pixexid.com/search/360)：JPEG
-  * [Poly Haven](https://polyhaven.com/hdris)：[OpenEXR](https://www.openexr.com/)（[推奨](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial））
+  * [Poly Haven](https://polyhaven.com/hdris)：[OpenEXR](https://www.openexr.com/)（  
+  
+  [推奨](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
