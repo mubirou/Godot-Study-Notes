@@ -7,7 +7,7 @@
 
 ### **index（Godot 4.0 対応）**
 
-[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [XXXXX](#220710) |
+[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) |
 ***
 
 <a id="Androidビルド"></a>
@@ -2889,9 +2889,12 @@ func loop():
 
 
 <a id="220710"></a>
-# <b>XXXXX</b>
+# <b>360°パノラマ</b>
 
-### この項目は書きかけです
+:::note alert
+より強い警告
+○○しないでください。
+:::
 
 1. 360°パノラマ画像の用意  
 
@@ -2906,11 +2909,9 @@ func loop():
       * [**Sky Material**]-[新規 [**PanoramaSkyMaterial**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)]-[編集]
         * [**Panorama**]：〇〇[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)（360°パノラマ画像）  
 
-1. XXX
-
 実行環境：実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：2022年XX月XX日  
+作成日：2022年07月15日  
 [[TOP]](#TOP)
 
 
