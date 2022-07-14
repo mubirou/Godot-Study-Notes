@@ -2907,7 +2907,7 @@ func loop():
       * [Angle Min]：0
       * [**Angle Max**]：**360**
     * [**Scale**]：任意（下図参照）  
-    ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140730.jpg)  
+    ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140942.jpg)  
     * [**Color**]：右端のアルファ値は **0**（下図参照）
     ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140804.jpg)  
 #### Draw Passes（作業➊）
