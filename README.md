@@ -2892,13 +2892,13 @@ func loop():
 
 #### Emitting
   * [**Emitting**]：✓オン（パーティクルのオン/オフ）
-#### Amount
+#### Amount（最終調整）
   * [**Amount**]：**10**（パーティクルの数）  
-#### Time
+#### Time（最終調整）
   * [**Lifetime**]：1（寿命：0.01～600s）
   * [**Speed Scale**]：1（スピード：0～64）
   * [**Fixd FPS**]：30（フレームレート：0～1000fps）
-#### Process Material（手順➍）
+#### Process Material（手順➎）
   * [**Process Material**]-[新規 [**ParticlesMaterial**](https://docs.godotengine.org/en/latest/classes/class_particlesmaterial.html?highlight=ParticlesMaterial#particlesmaterial)]-[編集]  
     * [**Gravity**]：x 0、**y 0**、z 0（重力）
     * [**Angle**]：
@@ -2908,9 +2908,9 @@ func loop():
     ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140942.jpg)  
     * [**Color**]：両端のアルファ値は **0**（下図参照）
     ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140804.jpg)  
-#### Draw Passes（手順➋）
+#### Draw Passes（手順➌）
   * [**Draw Passes**]-[**Pass1**]-[新規 [**QuadMesh**](https://docs.godotengine.org/en/latest/classes/class_quadmesh.html?highlight=QuadMesh#quadmesh)]
-#### Geometry（手順➌）
+#### Geometry（手順➍）
   * [**Geometry**]-[**Material Override**]-[新規 [**StandardMaterial3D**](https://docs.godotengine.org/en/latest/classes/class_standardmaterial3d.html?highlight=StandardMaterial3D#standardmaterial3d)]-[編集]    
       * [**Transparency**]：
         * [**Transparency**]：**Alpha**
@@ -2923,7 +2923,7 @@ func loop():
       ![image](https://github.com/mubirou/Godot/blob/main/png/smoke.png)  
       📝 [**KENNY "Particl Pack"**](https://www.kenney.nl/assets?s=Particle+Pack+Free) も利用可  
       * [**Billboard**]-[**Mode**]：**Particle Billboard**（向き）
-#### Transform
+#### Transform（手順➋）
   * [**Transform**]-[**Position**]：x 0、**y 1**、**z -2**（任意）
 
 参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)   
