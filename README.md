@@ -2916,7 +2916,7 @@ func loop():
   * [**Geometry**]-[**Material Override**]-[新規 [**StandardMaterial3D**](https://docs.godotengine.org/en/latest/classes/class_standardmaterial3d.html?highlight=StandardMaterial3D#standardmaterial3d)]-[編集]    
       * [**Transparency**]：
         * [**Transparency**]：**Alpha**
-        * [**Blend Mode**]：**Add**
+        * [**Blend Mode**]：**Add**（爆発系は **Mix**）
       * [**Shading**]-[**Shading Mode**]：**Unshaded**
       * [**Vertex Color**]-[**Use As Albedo**]：**✓オン**
       * [**Albedo**]：
