@@ -2910,7 +2910,7 @@ func loop():
     ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140730.jpg)  
     * [**Color**]：右端のアルファ値は **0**（下図参照）
     ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140804.jpg)  
-#### Draw Passes
+#### Draw Passes（作業➊）
   * [**Draw Passes**]-[**Pass1**]-[新規 [**QuadMesh**](https://docs.godotengine.org/en/latest/classes/class_quadmesh.html?highlight=QuadMesh#quadmesh)]
 #### Geometry
   * [**Geometry**]-[**Material Override**]-[新規 [**StandardMaterial3D**](https://docs.godotengine.org/en/latest/classes/class_standardmaterial3d.html?highlight=StandardMaterial3D#standardmaterial3d)]-[編集]    
