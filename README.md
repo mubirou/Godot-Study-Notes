@@ -2890,20 +2890,28 @@ func loop():
 
 ### この項目は書きかけです  
 
-1. 任意の Node3D を選択し [子ノードを追加]-[**GPUParticles3D**] を選択
-1. [**GPUParticles3D**]-[インスペクター] で各種設定  
-    * [**Amount**]：**10**：パーティクルの数  
-    * [**Process Material**]-[新規 [💡**ParticlesMaterial**](https://docs.godotengine.org/en/latest/classes/class_particlesmaterial.html?highlight=ParticlesMaterial#particlesmaterial)]-[編集]  
-      * [**Gravity**]：x 0、**y 0**、z 0
-      * [**Angle**]：
-        * [Angle Min]：0
-        * [**Angle Max**]：**360**
-      * [**Scale**]：任意（下図参照）  
-      ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140730.jpg)  
-      * [**Color**]：右端のアルファ値は **0**（下図参照）
-      ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140804.jpg)  
+任意の Node3D を選択し [子ノードを追加]-[**GPUParticles3D**]-[**GPUParticles3D**]-[インスペクター] で各種設定  
 
-    * [**Draw Passes**]-[**Pass1**]-[新規 [💡**QuadMesh**](https://docs.godotengine.org/en/latest/classes/class_quadmesh.html?highlight=QuadMesh#quadmesh)]
+#### Emitting
+  * [**Emitting]：✓オン（パーティクルのオン/オフ）
+#### Amount
+  * [**Amount**]：**10**（パーティクルの数）  
+#### Time
+  * [**Lifetime**]：1（0.01～600s）
+  * [**Speed Scale**]：1（0～64）
+  * [**Fixd FPS**]：30（0～1000fps）
+#### Process Material
+  * [**Process Material**]-[新規 [**ParticlesMaterial**](https://docs.godotengine.org/en/latest/classes/class_particlesmaterial.html?highlight=ParticlesMaterial#particlesmaterial)]-[編集]  
+    * [**Gravity**]：x 0、**y 0**、z 0
+    * [**Angle**]：
+      * [Angle Min]：0
+      * [**Angle Max**]：**360**
+    * [**Scale**]：任意（下図参照）  
+    ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140730.jpg)  
+    * [**Color**]：右端のアルファ値は **0**（下図参照）
+    ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140804.jpg)  
+#### Draw Passes
+  * [**Draw Passes**]-[**Pass1**]-[新規 [**QuadMesh**](https://docs.godotengine.org/en/latest/classes/class_quadmesh.html?highlight=QuadMesh#quadmesh)]
 
 
     * [**Geometry**]-[**Material Override**]-[新規 [💡**StandardMaterial3D**](https://docs.godotengine.org/en/latest/classes/class_standardmaterial3d.html?highlight=StandardMaterial3D#standardmaterial3d)]-[編集]    
