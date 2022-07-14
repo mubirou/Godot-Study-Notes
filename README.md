@@ -2903,6 +2903,9 @@ func loop():
 
   * [**Environment**]-[新規 **Environment**]-[編集]  
     * [**Background**]-[**Mode**]：**Sky**
+  * [**Sky**]-[**Sky**]-[新規 **Sky**]-[編集]  
+    * [**Sky Material**][：〇〇[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)
+
 
 
 
