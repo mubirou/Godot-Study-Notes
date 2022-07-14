@@ -2888,8 +2888,6 @@ func loop():
 # <b>パーティクル</b>
 （例）煙の生成方法  
 
-### この項目は書きかけです  
-
 📝 任意の Node3D を選択し [子ノードを追加]-[[**GPUParticles3D**](https://docs.godotengine.org/en/latest/classes/class_gpuparticles3d.html?highlight=GPUParticles3D#gpuparticles3d)]-[インスペクター] で以下の通り各種設定（手順➊）  
 
 #### Emitting
@@ -2908,7 +2906,7 @@ func loop():
       * [**Angle Max**]：**360**
     * [**Scale**]：任意（下図参照）  
     ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140942.jpg)  
-    * [**Color**]：右端のアルファ値は **0**（下図参照）
+    * [**Color**]：両端のアルファ値は **0**（下図参照）
     ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207140804.jpg)  
 #### Draw Passes（手順➋）
   * [**Draw Passes**]-[**Pass1**]-[新規 [**QuadMesh**](https://docs.godotengine.org/en/latest/classes/class_quadmesh.html?highlight=QuadMesh#quadmesh)]
@@ -2928,38 +2926,12 @@ func loop():
 #### Transform
   * [**Transform**]-[**Position**]：x 0、**y 1**、**z -2**（任意）
 
-***
-
-  
-    * [**Process Material**]-[**ParticlesMaterial**]-[編集] で各種設定  
-        * [**Gravity**]：x 0、**y 0**、z 0
-        * [**Initial Velocity**]-[Velocity]：(**0.6**)
-        * [**Initial Velocity**]-[Velocity Random]：(**0.4**)
-        * [**Linear Accel**]-[Accel]：(**-0.18**)
-        * [Angle]-[**Angle**]：**360**
-        * [Angle]-[**Angle Random**]：1
-        * [Emmision Shape]-[**Shape**]：**Sphere**
-        * [Emmision Shape]-[**Sphere Radius**]：**0.08～1** 程度
-        * [Scale]-[**Scale**]：**1.2**
-        * [Scale]-[**Scale Curve**]：新規 **CurveTexture**  
-          * [**CurveTexture**]-[編集] で各種設定
-            * カーブ上で右クリックで [**ポイントを追加**] [**ポイントを削除**] 可能
-        * [**Angular Velocity**]-[Velocity]：**15**
-        * [**Angular Velocity**]-[Velocity Random]：**1**
-        * [Color]-[**Color Ramp**]：新規 **GradientTexture**
-          * [**GradientTexture**]-[編集] で各種設定
-            * [**Gradient**]：新規 **Gradient**
-              * [**Gradient**]-[編集] で各種設定
-                * 右端のアルファ値を 0 にする（下図）  
-
-        ![image](https://github.com/mubirou/Godot/blob/main/jpg/202206272104.jpg)  
-
 参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)   
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_particles.html?highlight=Particles)  
 実行環境：実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月27日  
-更新日：2022年07月XX日 Godot 4.0 対応  
+更新日：2022年07月14日 Godot 4.0 対応  
 [[TOP]](#TOP)
 
 
