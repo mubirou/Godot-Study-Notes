@@ -2890,7 +2890,7 @@ func loop():
 
 ### この項目は書きかけです  
 
-任意の Node3D を選択し [子ノードを追加]-[**GPUParticles3D**]-[**GPUParticles3D**]-[インスペクター] で各種設定  
+📝 任意の Node3D を選択し [子ノードを追加]-[**GPUParticles3D**]-[**GPUParticles3D**]-[インスペクター] で以下の通り各種設定  
 
 #### Emitting
   * [**Emitting]：✓オン（パーティクルのオン/オフ）
