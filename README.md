@@ -2348,6 +2348,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
   |**trigger_touch**|人差し指トリガーにタッチ|
   |**trigger_click**|人差し指トリガーを押した･離した|
 
+デモファイル：[vr_controller_events.zip](https://github.com/mubirou/Godot/blob/main/zip/vr_controller_events.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
