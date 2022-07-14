@@ -2893,7 +2893,7 @@ func loop():
 
 ### この項目は書きかけです
 
-1. 360°画像の用意  
+1. 360°パノラマ画像の用意  
 
     * [Pixexid](https://pixexid.com/search/360)：JPEG 形式
     * [Poly Haven](https://polyhaven.com/hdris)：[**OpenEXR**](https://www.openexr.com/) 形式＝[推奨](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)  
@@ -2904,7 +2904,7 @@ func loop():
       * [**Background**]-[**Mode**]：**Sky**
     * [**Sky**]-[**Sky**]-[新規 **Sky**]-[編集]  
       * [**Sky Material**]-[新規 [**PanoramaSkyMaterial**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)]-[編集]
-        * [**Panorama**]：〇〇[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)
+        * [**Panorama**]：〇〇[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)（360°パノラマ画像）  
 
 1. XXX
 
