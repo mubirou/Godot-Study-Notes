@@ -2902,13 +2902,16 @@ func loop():
 
     * [**Environment**]-[新規 **Environment**]-[編集]  
       * [**Background**]-[**Mode**]：**Sky**
-    * [**Sky**]-[**Sky**]-[新規 **Sky**]-[編集]  
-      * [**Sky Material**]-[新規 [**PanoramaSkyMaterial**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)]-[編集]
-        * [**Panorama**]：〇〇[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)（360°パノラマ画像）  
+    * [**Sky**]
+      * [**Sky**]-[新規 **Sky**]-[編集]  
+        * [**Sky Material**]-[新規 [**PanoramaSkyMaterial**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)]-[編集]
+          * [**Panorama**]：〇〇[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)（360°パノラマ画像）  
+    * [*Rotation*]：x 0、y XXX（**初期値の水平角**）、z 0  
 
-実行環境：実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
+実行環境：実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月15日  
+更新日：2022年07月17日  
 [[TOP]](#TOP)
 
 
