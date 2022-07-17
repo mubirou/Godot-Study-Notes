@@ -2952,7 +2952,7 @@ Main（Node3D）
         * [**Sky Material**]-[新規 [**PanoramaSkyMaterial**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)]-[編集]-[**Panorama**]：〇〇.jpg 等（[**360°パノラマ画像**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)） 
       * [**Potation**]：x 0、y（**回転角調整**）、z 0
 
-👉 **ボールの設置**  
+👉 **ボールの設置**（ステンレス球･シャボン玉風）  
 * 大元の Node3D を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター]
     * [**Mesh**]-[新規 **SphereMesh**]-[編集]  
       * [**Material**]-[新規 **StandardMaterial3D**]-[編集]
