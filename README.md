@@ -2972,6 +2972,8 @@ Main（Node3D）
 # <b>XXXXX</b>
 
 1. [**DirectionalLight3D**](https://docs.godotengine.org/en/latest/classes/class_directionallight3d.html#class-directionallight3d)
+  * 太陽光（平行光源）/ 光源から離れても光の強さは減衰しない
+  * position 
 
 1. [**OmniLight3D**](https://docs.godotengine.org/en/latest/classes/class_omnilight3d.html?highlight=OmniLight3D#omnilight3d)
 
@@ -2980,7 +2982,6 @@ Main（Node3D）
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 41.0、Quest Link、Oculusアプリ   
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
 [[TOP]](#TOP)
 
 
