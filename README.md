@@ -2978,7 +2978,7 @@ Main（Node3D）
       * Rotation：x -63（**太陽高度**）、y -8（**太陽方位**）、z 0（参考：[keisan.casio.jp](https://keisan.casio.jp/exec/system/1185781259)）  
 
 1. [**OmniLight3D**](https://docs.godotengine.org/en/latest/classes/class_omnilight3d.html?highlight=OmniLight3D#omnilight3d)
-    * 電球（全方向性光源）/ 離れると減衰
+    * 電球（全方向性）/ 離れると減衰
     * [**Omni**]
       * [**Range**]：範囲（初期値:5）
       * [**Attenuation**]：光エネルギー減衰曲線
