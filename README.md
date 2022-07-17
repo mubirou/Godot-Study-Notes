@@ -2942,9 +2942,11 @@ Main（Node3D）
 # <b>鏡面仕上げボール</b>
 ステンレス球･シャボン玉風なオブジェクトの作成  
 
-1. [360°パノラマ](#220710)を設定
+📝 [360°パノラマ](#220710)の設定
 
-1. 大元の Node3D を選択し [子ノードを追加]-[**WorldEnvironment**]-[インスペクター]-[**Environment**]-[新規 **Environment**]-[編集]
+📝 [WorldEnvironment](https://docs.godotengine.org/en/latest/classes/class_worldenvironment.html?highlight=WorldEnvironment%20#worldenvironment) の設定  
+
+* 大元の Node3D を選択し [子ノードを追加]-[**WorldEnvironment**]-[インスペクター]-[**Environment**]-[新規 **Environment**]-[編集]
     * [**Background**]-[**Mode**]：**Sky**
     * [**Sky**]
       * [**Sky**]-[新規 **Sky**]-[編集]  
