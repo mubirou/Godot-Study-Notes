@@ -2978,7 +2978,7 @@ Main（Node3D）
       * [**Energy**]：1（0～16）
     * [**Shadow**]
       * [**Enabled**]：**✓オン**
-      * [**Blur**]：**1.5**（初期値：1）
+      * [**Blur**]：**1.5**（初期値:1）
     * [**Transform**]  
       * Position：x 0、y 100、z 0（どこでも同じ）
       * Rotation：x -63（太陽高度）、y -8（太陽方位）、z 0（参考：[keisan.casio.jp](https://keisan.casio.jp/exec/system/1185781259)）  
