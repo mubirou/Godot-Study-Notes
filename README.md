@@ -2898,6 +2898,8 @@ func loop():
     * [Pixexid](https://pixexid.com/search/360)：JPEG 形式
     * [Poly Haven](https://polyhaven.com/hdris)：[**OpenEXR**](https://www.openexr.com/) 形式＝[推奨](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)  
 
+1. 大元の Node3D を選択し [子ノードを追加]-[[**MeshInstance3D**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=MeshInstance3D#meshinstance3d)] を選択  
+
 1. 大元の Node3D を選択し [子ノードを追加]-[[**WorldEnvironment**](https://docs.godotengine.org/en/latest/classes/class_worldenvironment.html?highlight=WorldEnvironment#worldenvironment)]-[インスペクター] で各種設定 
 
     * [**Environment**]-[新規 **Environment**]-[編集]  
