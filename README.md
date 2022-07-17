@@ -2981,9 +2981,14 @@ Main（Node3D）
     * 電球（全方向性光源）/ 離れると減衰
     * [**Omni**]
       * [**Range**]：範囲（初期値:5）
-      * [**Attenuation**]：減衰の加減（初期値:リニア）
+      * [**Attenuation**]：光エネルギー減衰曲線
 
-1. [**SpotLight3D**](https://docs.godotengine.org/en/latest/classes/class_spotlight3d.html?highlight=SpotLight3D#spotlight3d)
+1. [**SpotLight3D**](https://docs.godotengine.org/en/latest/classes/class_spotlight3d.html?highlight=SpotLight3D#spotlight3d)  
+    * スポットライト（円錐状）/ 離れると減衰 
+    * [**Spot**]
+      * [**Attenuation**]：光エネルギー減衰曲線
+      * [**Angle**]：角度（初期値:45）
+      * [**Angle Attenuation**]：角度減衰曲線
 
 * 共通設定
     * [**Light**]
