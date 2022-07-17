@@ -2918,10 +2918,10 @@ func loop():
       * [**Scale**]：**x 100**、**y 100**、**z 100**
 
 1. [Panorama] を選択し [子ノードを追加]-[**DirectionalLight3D**]-[インスペクター]  
-  * [**Shadow**]：**✓オン**
-  * [**Transform**]
-    * [**Position**]：x 0、**y 100**（0でも同じ）、z 0
-    * [**Rotation**]：**x -55**（太陽の高さ）、**y 35**（太陽の向き）、z 0
+    * [**Shadow**]：**✓オン**
+    * [**Transform**]
+      * [**Position**]：x 0、**y 100**（0でも同じ）、z 0
+      * [**Rotation**]：**x -55**（太陽の高さ）、**y 35**（太陽の向き）、z 0
 
 実行環境：実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
