@@ -2917,8 +2917,8 @@ func loop():
       * [**Rotation**]：x 0、y XXX（**初期値の水平角**）、z 0  
       * [**Scale**]：**x 100**、**y 100**、**z 100**
 
-1. [Panorama] を選択し [子ノードを追加]-[**DirectionalLight3D**]-[インスペクター]  
-    * [**Shadow**]：**✓オン**
+1. 大元の Node3D を選択し [子ノードを追加]-[**DirectionalLight3D**]-[インスペクター]  
+    * [**Shadow**]-[Enabled]：**✓オン**
     * [**Transform**]
       * [**Position**]：x 0、**y 100**（0でも同じ）、z 0
       * [**Rotation**]：**x -55**（太陽の高さ）、**y 35**（太陽の向き）、z 0
