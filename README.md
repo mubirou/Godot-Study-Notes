@@ -2891,7 +2891,7 @@ func loop():
 <a id="220710"></a>
 # <b>360°パノラマ</b>
 
-（警告） バージョン 3.4 の時のように **WorldEnvironment** を利用するとパノラマ画像が歪む  
+（警告） バージョン 3.4 の時のように [WorldEnvironment](https://docs.godotengine.org/en/latest/classes/class_worldenvironment.html?highlight=WorldEnvironment%20#worldenvironment) を利用するとパノラマ画像が歪む  
 
 1. 360°パノラマ画像の用意  
     * [Pixexid](https://pixexid.com/search/360)：JPEG 形式
