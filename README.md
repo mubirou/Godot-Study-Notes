@@ -2948,8 +2948,7 @@ Main（Node3D）
     * [**Background**]-[**Mode**]：**Sky**
     * [**Sky**]
       * [**Sky**]-[新規 **Sky**]-[編集]  
-        * [**Sky Material**]-[新規 [**PanoramaSkyMaterial**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)]-[編集]  
-          * [**Panorama**]：**.jpg**, **.exr**（360°パノラマ画像） 
+        * [**Sky Material**]-[新規 [**PanoramaSkyMaterial**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)]-[編集]-[**Panorama**]：**.jpg**, **.exr**（360°パノラマ画像） 
       * [**Potation**]：x 0、y XX（**回転角調整**）、z 0
 
 1. 大元の Node3D を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター]
