@@ -2829,7 +2829,7 @@ func loop():
 	await loop()
 ```
 
-実行環境：実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月04日  
 更新日：2022年07月13日 Godot 4.0 対応    
@@ -2881,7 +2881,7 @@ func loop():
 デモファイル：[Particles.zip](https://github.com/mubirou/Godot/blob/main/zip/Particles.zip)  
 参考：[YouTube](https://www.youtube.com/watch?v=DkJ2jYl-ESw)   
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_particles.html?highlight=Particles)  
-実行環境：実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月27日  
 更新日：2022年07月14日 Godot 4.0 対応  
@@ -2932,7 +2932,7 @@ Main（Node3D）
 　 └ DirectionalLight3D  
 
 デモファイル：[Panorama.zip](https://github.com/mubirou/Godot/blob/main/zip/Panorama.zip)  
-実行環境：実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 41.0、Quest Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 更新日：2022年07月17日   
 [[TOP]](#TOP)
@@ -2959,25 +2959,11 @@ Main（Node3D）
         * [**Transparency**]-[**Transparency**]：**Depth Pre-Pass**（影付）
         * [**Albedo**]-[**Color**]：#ffffff（アルファ値可）
         * [**Metaric**]-[**Metaric**]：**1**
-        * [**Roughness**]：**0～0.2** 程度
+        * [**Roughness**]：**0～0.2** 程度（光沢感）
 
-
-1. [インスペクター]-[Mesh]-[新規 **SphereMesh**] を選択
-
-1. [インスペクター]-[Transform] を次の通りに変更  
-    * Translation：x 0、y 0.5、z -1
-    * Scale：x 0.3、y 0.3、z 0.3
-
-1. [インスペクター]-[**Material**]-[新規 **SpatialMaterial**]-[編集]  
-    * [Flags]-[**Transparent**]：[Albedo]-[Color] の不透明度と連動
-    * [Albedo]-[**Color**]：不透明度の設定可能（初期値 #ffffff）
-    * [Metallic]-[**Metallic**]：**1**
-    * [Roughness]-[**Roughness**]：**0.02**（光沢感）
-
-参考：[GODOT Asset Library](https://godotengine.org/asset-library/asset/123)  
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：2022年06月10日  
+作成日：2022年07月17日  
 [[TOP]](#TOP)
 
 
