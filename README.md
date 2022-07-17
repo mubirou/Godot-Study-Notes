@@ -2972,20 +2972,26 @@ Main（Node3D）
 # <b>XXXXX</b>
 
 1. [**DirectionalLight3D**](https://docs.godotengine.org/en/latest/classes/class_directionallight3d.html#class-directionallight3d)
-    * 太陽光（平行光源）/ 光の強さの減衰なし
-    * [**Light**]
-      * [**Color**]：#ffffff
-      * [**Energy**]：1（0～16）
-    * [**Shadow**]
-      * [**Enabled**]：**✓オン**
-      * [**Blur**]：**1.5**（初期値:1）
+    * 太陽光（平行光源）/ 離れても減衰なし
     * [**Transform**]  
       * Position：x 0、y 100、z 0（どこでも同じ）
       * Rotation：x -63（**太陽高度**）、y -8（**太陽方位**）、z 0（参考：[keisan.casio.jp](https://keisan.casio.jp/exec/system/1185781259)）  
 
 1. [**OmniLight3D**](https://docs.godotengine.org/en/latest/classes/class_omnilight3d.html?highlight=OmniLight3D#omnilight3d)
+    * 電球（全方向性光源）/ 離れると減衰
+    * [**Omni**]
+      * [**Range**]：範囲（初期値:5）
+      * [**Attenuation**]：減衰の加減（初期値:リニア）
 
 1. [**SpotLight3D**](https://docs.godotengine.org/en/latest/classes/class_spotlight3d.html?highlight=SpotLight3D#spotlight3d)
+
+* 共通設定
+    * [**Light**]
+      * [**Color**]：#ffffff
+      * [**Energy**]：0～16（初期値:1）
+    * [**Shadow**]
+      * [**Enabled**]：**✓オン**
+      * [**Blur**]：0～10（初期値:1）
 
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 41.0、Quest Link、Oculusアプリ   
 作成者：夢寐郎  
