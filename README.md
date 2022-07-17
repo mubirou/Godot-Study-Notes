@@ -2945,8 +2945,6 @@ Main（Node3D）
 👉 [**360°パノラマ**](#220710)の設定
 
 👉 [**WorldEnvironment**](https://docs.godotengine.org/en/latest/classes/class_worldenvironment.html?highlight=WorldEnvironment%20#worldenvironment) の設定  
-
-👉 **ボールの設置**  
 * 大元の Node3D を選択し [子ノードを追加]-[**WorldEnvironment**]-[インスペクター]-[**Environment**]-[新規 **Environment**]-[編集]
     * [**Background**]-[**Mode**]：**Sky**
     * [**Sky**]
@@ -2954,16 +2952,13 @@ Main（Node3D）
         * [**Sky Material**]-[新規 [**PanoramaSkyMaterial**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)]-[編集]-[**Panorama**]：〇〇.jpg 等（[**360°パノラマ画像**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)） 
       * [**Potation**]：x 0、y（**回転角調整**）、z 0
 
-
-1. 大元の Node3D を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター]
+👉 **ボールの設置**  
+* 大元の Node3D を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター]
     * [**Mesh**]-[新規 **SphereMesh**]-[編集]  
       * [**Material**]-[新規 **StandardMaterial3D**]-[編集]
         * [**Transparency**]-[**Transparency**]：**Depth Pre-Pass**（影付）
         * [**Albedo**]-[**Color**]：#ffffff（アルファ値の設定可能）
-        * [**Metaric**]
-          * [**Metaric**]：**1**
-          * [**Specular**]：
-
+        * [**Metaric**]-[**Metaric**]：**1**
 
 
 1. [インスペクター]-[Mesh]-[新規 **SphereMesh**] を選択
