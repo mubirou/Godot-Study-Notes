@@ -2923,6 +2923,7 @@ func loop():
       * [**Position**]：x 0、**y 100**（0でも同じ）、z 0
       * [**Rotation**]：**x -55**（太陽の高さ）、**y 35**（太陽の向き）、z 0
 
+（上記の階層）  
 Main（Node3D）  
 　 ├ XROrigin3D  
 　 │ └ XRCamera3D  
