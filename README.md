@@ -2891,7 +2891,7 @@ func loop():
 <a id="220710"></a>
 # <b>360°パノラマ</b>
 
-**（警告）** バージョン 4.0 では画像が歪むため現在調査中  
+（警告） バージョン 3.4 の時のように **WorldEnvironment** を利用するとパノラマ画像が歪む  
 
 1. 360°パノラマ画像の用意  
     * [Pixexid](https://pixexid.com/search/360)：JPEG 形式
@@ -2907,25 +2907,25 @@ func loop():
     * [**Height**]：**2**m
     * [**Material**]-[新規 **StandardMaterial3D**]-[編集]  
       * [**Transparency**]
-        * [**Transparency**]：Disabled（**Alpha**も可）
-      * [**Shading**]：**Unshaded**
+        * [**Transparency**]：Disabled（Alphaも可能）
+        * [**Cull Mode**]：**Front**（内側にも表示）
+      * [**Shading**]：**Unshaded**（元画像の明るさで表示）
       * [**Albedo**]
-        * [**Color**]：#ffffff（**アルファ値**設定可）
+        * [**Color**]：#ffffff（アルファ値の設定可能）
+        * [**Texture**]：〇〇[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)（360°パノラマ画像） 
+  * [**Transform**]
+    * [**Rotation**]：x 0、y XXX（**初期値の水平角**）、z 0  
+    * [**Scale**]：**x 100**、**y 100**、**z 100**
 
-1. 大元の Node3D を選択し [子ノードを追加]-[[**WorldEnvironment**](https://docs.godotengine.org/en/latest/classes/class_worldenvironment.html?highlight=WorldEnvironment#worldenvironment)]-[インスペクター] で各種設定 
-
-    * [**Environment**]-[新規 **Environment**]-[編集]  
-      * [**Background**]-[**Mode**]：**Sky**
-    * [**Sky**]
-      * [**Sky**]-[新規 **Sky**]-[編集]  
-        * [**Sky Material**]-[新規 [**PanoramaSkyMaterial**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)]-[編集]
-          * [**Panorama**]：〇〇[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)（360°パノラマ画像）  
-    * [*Rotation*]：x 0、y XXX（**初期値の水平角**）、z 0  
+1. [Panorama] を選択し [子ノードを追加]-[**DirectionalLight3D**]-[インスペクター]  
+  * [**Shadow**]：**✓オン**
+  * [**Transform**]
+    * [**Position**]：x 0、**y 100**（0でも同じ）、z 0
+    * [**Rotation**]：**x -55**（太陽の高さ）、**y 35**（太陽の向き）、z 0
 
 実行環境：実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：2022年07月15日  
-更新日：2022年07月17日  
+更新日：2022年07月17日   
 [[TOP]](#TOP)
 
 
