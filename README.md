@@ -2957,7 +2957,7 @@ Main（Node3D）
     * [**Mesh**]-[新規 **SphereMesh**]-[編集]  
       * [**Material**]-[新規 **StandardMaterial3D**]-[編集]
         * [**Transparency**]-[**Transparency**]：**Depth Pre-Pass**（影付）
-        * [**Albedo**]-[**Color**]：#ffffff（アルファ値の設定可能）
+        * [**Albedo**]-[**Color**]：#ffffff（アルファ値可）
         * [**Metaric**]-[**Metaric**]：**1**
 
 
