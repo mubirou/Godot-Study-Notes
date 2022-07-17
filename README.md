@@ -2956,11 +2956,12 @@ Main（Node3D）
 * 大元の Node3D を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター]
     * [**Mesh**]-[新規 **SphereMesh**]-[編集]  
       * [**Material**]-[新規 **StandardMaterial3D**]-[編集]
-        * [**Transparency**]-[**Transparency**]：**Depth Pre-Pass**（影付）
+        * [**Transparency**]-[**Transparency**]：Disabled（alpha可能）
         * [**Albedo**]-[**Color**]：#ffffff（アルファ値可）
         * [**Metaric**]-[**Metaric**]：**1**
         * [**Roughness**]：**0～0.2** 程度（光沢感）
 
+デモファイル：[MirrorBall.zip](https://github.com/mubirou/Godot/blob/main/zip/MirrorBall.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月17日  
