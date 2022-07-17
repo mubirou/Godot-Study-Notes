@@ -2972,19 +2972,19 @@ Main（Node3D）
 # <b>ライト3種</b>
 
 1. [**DirectionalLight3D**](https://docs.godotengine.org/en/latest/classes/class_directionallight3d.html#class-directionallight3d)
-    * 太陽光（平行光源）/ 離れても減衰なし
+    * 太陽光（**平行光源**）/ 離れても減衰なし
     * [**Transform**]  
       * Position：x 0、y 100、z 0（どこでも同じ）
       * Rotation：x -63（**太陽高度**）、y -8（**太陽方位**）、z 0（参考：[keisan.casio.jp](https://keisan.casio.jp/exec/system/1185781259)）  
 
 1. [**OmniLight3D**](https://docs.godotengine.org/en/latest/classes/class_omnilight3d.html?highlight=OmniLight3D#omnilight3d)
-    * 電球（全方向性）/ 離れると減衰
+    * 電球（**全方向性**）/ 離れると減衰
     * [**Omni**]
       * [**Range**]：範囲（初期値:5）
       * [**Attenuation**]：光エネルギー減衰曲線
 
 1. [**SpotLight3D**](https://docs.godotengine.org/en/latest/classes/class_spotlight3d.html?highlight=SpotLight3D#spotlight3d)  
-    * スポットライト（円錐状）/ 離れると減衰 
+    * スポットライト（**円錐状**）/ 離れると減衰 
     * [**Spot**]
       * [**Attenuation**]：光エネルギー減衰曲線
       * [**Angle**]：角度（初期値:45）
