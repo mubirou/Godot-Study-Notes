@@ -2894,13 +2894,11 @@ func loop():
 **（警告）** バージョン 4.0 では画像が歪むため現在調査中  
 
 1. 360°パノラマ画像の用意  
-
     * [Pixexid](https://pixexid.com/search/360)：JPEG 形式
     * [Poly Haven](https://polyhaven.com/hdris)：[**OpenEXR**](https://www.openexr.com/) 形式＝[推奨](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)  
-
 1. 大元の Node3D を選択し [子ノードを追加]-[[**MeshInstance3D**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=MeshInstance3D#meshinstance3d)] を選択  
-
 1. 名前を "MeshInstance3D" → "Panorama" に変更  
+1. 
 
 1. 大元の Node3D を選択し [子ノードを追加]-[[**WorldEnvironment**](https://docs.godotengine.org/en/latest/classes/class_worldenvironment.html?highlight=WorldEnvironment#worldenvironment)]-[インスペクター] で各種設定 
 
