@@ -2902,20 +2902,20 @@ func loop():
 1. 名前を "MeshInstance3D" → "Panorama" に変更  
 
 1. [Panorama]-[インスペクター]  
-  * [**Mesh**]-[新規 **SphereMesh**]-[編集]  
-    * [**Radius**]：**1**m
-    * [**Height**]：**2**m
-    * [**Material**]-[新規 **StandardMaterial3D**]-[編集]  
-      * [**Transparency**]
-        * [**Transparency**]：Disabled（Alphaも可能）
-        * [**Cull Mode**]：**Front**（内側にも表示）
-      * [**Shading**]：**Unshaded**（元画像の明るさで表示）
-      * [**Albedo**]
-        * [**Color**]：#ffffff（アルファ値の設定可能）
-        * [**Texture**]：〇〇[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)（360°パノラマ画像） 
-  * [**Transform**]
-    * [**Rotation**]：x 0、y XXX（**初期値の水平角**）、z 0  
-    * [**Scale**]：**x 100**、**y 100**、**z 100**
+    * [**Mesh**]-[新規 **SphereMesh**]-[編集]  
+      * [**Radius**]：**1**m
+      * [**Height**]：**2**m
+      * [**Material**]-[新規 **StandardMaterial3D**]-[編集]  
+        * [**Transparency**]
+          * [**Transparency**]：Disabled（Alphaも可能）
+          * [**Cull Mode**]：**Front**（内側にも表示）
+        * [**Shading**]：**Unshaded**（元画像の明るさで表示）
+        * [**Albedo**]
+          * [**Color**]：#ffffff（アルファ値の設定可能）
+          * [**Texture**]：〇〇[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)（360°パノラマ画像） 
+    * [**Transform**]
+      * [**Rotation**]：x 0、y XXX（**初期値の水平角**）、z 0  
+      * [**Scale**]：**x 100**、**y 100**、**z 100**
 
 1. [Panorama] を選択し [子ノードを追加]-[**DirectionalLight3D**]-[インスペクター]  
   * [**Shadow**]：**✓オン**
