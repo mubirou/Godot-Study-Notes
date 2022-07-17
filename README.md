@@ -2943,11 +2943,32 @@ Main（Node3D）
 ステンレス球･シャボン玉風なオブジェクトの作成  
 
 1. [360°パノラマ](#220710)を設定
-1. 大元の Node3D を選択し [子ノードを追加]-[**MeshInstance**] を選択
+
+1. 大元の Node3D を選択し [子ノードを追加]-[**WorldEnvironment**]-[インスペクター]-[**Environment**]-[新規 **Environment**]-[編集]
+    * [**Background**]-[**Mode**]：**Sky**
+    * [**Sky**]
+      * [**Sky**]-[新規 **Sky**]-[編集]  
+        * [**Sky Material**]-[新規 [**PanoramaSkyMaterial**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)]-[編集]  
+          * [**Panorama**]：**.jpg**, **.exr**（360°パノラマ画像） 
+      * [**Potation**]：x 0、y XX（**回転角調整**）、z 0
+
+1. 大元の Node3D を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター]
+    * [**Mesh**]-[新規 **SphereMesh**]-[編集]  
+      * [**Material**]-[新規 **StandardMaterial3D**]-[編集]
+        * [**Transparency**]-[**Transparency**]：**Depth Pre-Pass**（影付）
+        * [**Albedo**]-[**Color**]：#ffffff（アルファ値の設定可能）
+        * [**Metaric**]
+          * [**Metaric**]：**1**
+          * [**Specular**]：
+
+
+
 1. [インスペクター]-[Mesh]-[新規 **SphereMesh**] を選択
+
 1. [インスペクター]-[Transform] を次の通りに変更  
     * Translation：x 0、y 0.5、z -1
     * Scale：x 0.3、y 0.3、z 0.3
+
 1. [インスペクター]-[**Material**]-[新規 **SpatialMaterial**]-[編集]  
     * [Flags]-[**Transparent**]：[Albedo]-[Color] の不透明度と連動
     * [Albedo]-[**Color**]：不透明度の設定可能（初期値 #ffffff）
