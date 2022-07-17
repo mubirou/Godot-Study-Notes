@@ -2972,8 +2972,10 @@ Main（Node3D）
 # <b>XXXXX</b>
 
 1. [**DirectionalLight3D**](https://docs.godotengine.org/en/latest/classes/class_directionallight3d.html#class-directionallight3d)
-    * 太陽光（平行光源）/ 光源から離れても光の強さは減衰しない
-    * position 
+    * 太陽光（平行光源）/ 光の強さの減衰なし
+    * Position：x 0、y 0、z 0（どこでも同じ）
+    * Rotation：x -63（太陽高度）、y　-8（太陽方位）、z 0  
+    参考：[keisan.casio.jp](https://keisan.casio.jp/exec/system/1185781259)  
 
 1. [**OmniLight3D**](https://docs.godotengine.org/en/latest/classes/class_omnilight3d.html?highlight=OmniLight3D#omnilight3d)
 
