@@ -2923,10 +2923,41 @@ func loop():
       * [**Position**]：x 0、**y 100**（0でも同じ）、z 0
       * [**Rotation**]：**x -55**（太陽の高さ）、**y 35**（太陽の向き）、z 0
 
+（これまでの作業の階層）  
+Main（Node3D）  
+　 ├ XROrigin3D  
+　 │ └ XRCamera3D  
+　 ├ **Panorama**（MeshInstance3D-**SphereMesh**）  
+　 ├ MeshInstance3D（展望台など）  
+　 └ DirectionalLight3D  
+
 デモファイル：[Panorama.zip](https://github.com/mubirou/Godot/blob/main/zip/Panorama.zip)  
 実行環境：実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 更新日：2022年07月17日   
+[[TOP]](#TOP)
+
+
+<a id="220711"></a>
+# <b>鏡面仕上げボール</b>
+ステンレス球･シャボン玉風なオブジェクトの作成  
+
+1. [360°パノラマ](#220710)を設定
+1. 大元の Node3D を選択し [子ノードを追加]-[**MeshInstance**] を選択
+1. [インスペクター]-[Mesh]-[新規 **SphereMesh**] を選択
+1. [インスペクター]-[Transform] を次の通りに変更  
+    * Translation：x 0、y 0.5、z -1
+    * Scale：x 0.3、y 0.3、z 0.3
+1. [インスペクター]-[**Material**]-[新規 **SpatialMaterial**]-[編集]  
+    * [Flags]-[**Transparent**]：[Albedo]-[Color] の不透明度と連動
+    * [Albedo]-[**Color**]：不透明度の設定可能（初期値 #ffffff）
+    * [Metallic]-[**Metallic**]：**1**
+    * [Roughness]-[**Roughness**]：**0.02**（光沢感）
+
+参考：[GODOT Asset Library](https://godotengine.org/asset-library/asset/123)  
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
+作成者：夢寐郎  
+作成日：2022年06月10日  
 [[TOP]](#TOP)
 
 
