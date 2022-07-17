@@ -2971,6 +2971,22 @@ Main（Node3D）
 <a id="XXX"></a>
 # <b>XXXXX</b>
 
+1. [**DirectionalLight3D**](https://docs.godotengine.org/en/latest/classes/class_directionallight3d.html#class-directionallight3d)
+
+1. [**OmniLight3D**](https://docs.godotengine.org/en/latest/classes/class_omnilight3d.html?highlight=OmniLight3D#omnilight3d)
+
+1. [**SpotLight3D**](https://docs.godotengine.org/en/latest/classes/class_spotlight3d.html?highlight=SpotLight3D#spotlight3d)
+
+実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 41.0、Quest Link、Oculusアプリ   
+作成者：夢寐郎  
+作成日：202X年XX月XX日  
+更新日：202X年XX月XX日  
+[[TOP]](#TOP)
+
+
+<a id="XXX"></a>
+# <b>XXXXX</b>
+
 1. XXX
     ```c#
     XXXX
