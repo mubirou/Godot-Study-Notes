@@ -2959,6 +2959,7 @@ Main（Node3D）
         * [**Transparency**]-[**Transparency**]：**Depth Pre-Pass**（影付）
         * [**Albedo**]-[**Color**]：#ffffff（アルファ値可）
         * [**Metaric**]-[**Metaric**]：**1**
+        * [**Roughness**]：**0～0.2** 程度
 
 
 1. [インスペクター]-[Mesh]-[新規 **SphereMesh**] を選択
