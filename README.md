@@ -3015,7 +3015,7 @@ Main（Node3D）
 
 👉 [Blender](https://www.blender.org/) → [Mixamo](https://www.mixamo.com/#/) 
   1. [Blender](https://www.blender.org/) で 上記ファイルを開きオブジェクトを選択 → [ファイル]-[エクスポート]-[**FBX(.fbx)**] を選択し以下を設定しエクスポート（[内容]-[Limit to]：**選択したオブジェクト**）
-  1. [Mixamo](https://www.mixamo.com/#/) 
+  1. [Mixamo](https://www.mixamo.com/#/)（無料･アカウント必須）を開き [**UPLOAD CHARACTER**] を選び上記の〇〇**.fbx**をドラッグ＆ドロップ 
 
 実行環境：Windows 10、Godot 4.0 alpha 12、Blender 3.2.1、Meta Quest 41.0、Quest Link、Oculusアプリ   
 作成者：夢寐郎  
