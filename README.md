@@ -3012,7 +3012,7 @@ Main（Node3D）
 👉 キャラクターの用意  
   * アーマチュア（ボーン）なし  
   * Camera、Light 不要  
-  * オブジェクト類は"統合"
+  * オブジェクト類は"統合"（マテリアルを適合）
   参考ファイル：[Kyle.blend](https://github.com/mubirou/Godot/blob/main/blend/Kyle.blend)  
 
 👉 [Blender](https://www.blender.org/) → [Mixamo](https://www.mixamo.com/#/) 
