@@ -3013,6 +3013,11 @@ Main（Node3D）
   * オブジェクト類は"統合"
   参考ファイル：[Kyle.blend](https://github.com/mubirou/Godot/blob/main/blend/Kyle.blend)  
 
+👉 Blender → Mixamo 
+  1. Blender で 上記ファイルを開きオブジェクトを選択 → [ファイル]-[エクスポート]-[**FBX(.fbx)**] を選択し以下を設定しエクスポート
+    * [内容]-[Limit to]：**選択したオブジェクト**
+  1. XXX
+
 実行環境：Windows 10、Godot 4.0 alpha 12、Blender 3.2.1、Meta Quest 41.0、Quest Link、Oculusアプリ   
 作成者：夢寐郎  
 作成日：2022年07月XX日  
