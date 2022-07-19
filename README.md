@@ -3014,7 +3014,7 @@ Main（Node3D）
   参考ファイル：[Kyle.blend](https://github.com/mubirou/Godot/blob/main/blend/Kyle.blend)  
 
 👉 Blender → Mixamo 
-  1. Blender で 上記ファイルを開きオブジェクトを選択 → [ファイル]-[エクスポート]-[**FBX(.fbx)**] を選択し以下を設定しエクスポート
+  1. Blender で 上記ファイルを開きオブジェクトを選択 → [ファイル]-[エクスポート]-[**FBX(.fbx)**] を選択し以下を設定しエクスポート  
     * [内容]-[Limit to]：**選択したオブジェクト**
   1. XXX
 
