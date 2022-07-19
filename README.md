@@ -3025,7 +3025,8 @@ Main（Node3D）
   * [Keyframe Reduction]：none
 
 👉 [Blender](https://www.blender.org/) → **Godot**  
-  1. [Blender](https://www.blender.org/) を起動
+  1. [Blender](https://www.blender.org/) を起動（Camera、Light、Cube は削除）
+  1. [ファイル]-[インポート]-[**FBX(.fbx)**] から上記の**◇◇.fbx**を開く
 
 実行環境：Windows 10、Godot 4.0 alpha 12、Blender 3.2.1、Meta Quest 41.0、Quest Link、Oculusアプリ   
 作成者：夢寐郎  
