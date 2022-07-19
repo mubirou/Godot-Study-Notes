@@ -3018,7 +3018,7 @@ Main（Node3D）
   1. [Mixamo](https://www.mixamo.com/#/)（無料･アカウント必須）を開き [**UPLOAD CHARACTER**] を選び上記の**〇〇.fbx**をドラッグ＆ドロップ  
   1. 指示に従い ➀顎 ➁手首 ➂肘 ➃膝 ➄股間 を指定（画像）  
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207191132.jpg)  
-  1. [**Animations**] の一覧から適当に選択（必要に応じてパラメータで調整）し [**DOWNLOAD**] を選択（設定は初期値）  
+  1. [**Animations**] の一覧から適当に選択（必要に応じてパラメータで調整）し [**DOWNLOAD**] を選択（設定は初期値）
     * [Format]：FBX Binary(**.fbx**)  
     * [Skin]：With Skin  
     * [Frames per Second]：30  
