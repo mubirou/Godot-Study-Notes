@@ -3016,7 +3016,8 @@ Main（Node3D）
   参考ファイル：[Kyle.blend](https://github.com/mubirou/Godot/blob/main/blend/Kyle.blend)  
 
 👉 [Blender](https://www.blender.org/) → [Mixamo](https://www.mixamo.com/#/) の作業  
-  1. [Blender](https://www.blender.org/) で 上記ファイル（[Kyle.blend](https://github.com/mubirou/Godot/blob/main/blend/Kyle.blend)）を開きオブジェクト全体を選択 → [ファイル]-[エクスポート]-[**FBX(.fbx)**] を選択し以下を設定しエクスポート（[内容]-[Limit to]：**選択したオブジェクト**）
+  1. [Blender](https://www.blender.org/) で 上記ファイル（[Kyle.blend](https://github.com/mubirou/Godot/blob/main/blend/Kyle.blend)）を開く
+  1. キャラクター全体を選択 → [ファイル]-[エクスポート]-[**FBX(.fbx)**] を選択し以下を設定しエクスポート（[内容]-[Limit to]：**選択したオブジェクト**）
   1. [Mixamo](https://www.mixamo.com/#/)（無料･アカウント必須）を開き [**UPLOAD CHARACTER**] を選び上記の **XXX.fbx** をドラッグ＆ドロップ  
   1. 指示に従い ➀顎 ➁手首 ➂肘 ➃膝 ➄股間 を指定（画像）  
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207191132.jpg)  
