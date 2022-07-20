@@ -3045,7 +3045,7 @@ Main（Node3D）
   1. シーン上の XX を選択し右クリック → [ローカルにする]
   1. XXX 内の MeshInstance3D を選択
   1. [インスペクター]-[**Geometry**]
-      * [**LOD Bias**]：**20** 程度
+      * [**LOD Bias**]：**20～40** 程度（[Level Of Detail](https://docs.unity3d.com/ja/2018.4/Manual/LevelOfDetail.html)）
   1. マテリアルを設定（オプション）
   1. XXX 内の **AnimationPlayer** を選択
   1. 表示されたタイムラインの [**アニメーションループ🔁**] と [**読み込み後、自動再生**] ボタンを選択
