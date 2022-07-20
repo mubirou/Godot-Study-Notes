@@ -3015,7 +3015,7 @@ Main（Node3D）
   * オブジェクト類は"統合"（マテリアルを設定）  
   参考ファイル：[Kyle.blend](https://github.com/mubirou/Godot/blob/main/blend/Kyle.blend)  
 
-### 👉 [Blender](https://www.blender.org/) の作業
+### 👉 [Blender](https://www.blender.org/) の作業➀
   1. [Blender](https://www.blender.org/) で 上記ファイル（[Kyle.blend](https://github.com/mubirou/Godot/blob/main/blend/Kyle.blend)）を開く
   1. キャラクター全体を選択 → [ファイル]-[エクスポート]-[**FBX(.fbx)**] を選択
   1. [内容]-[Limit to]：**✓選択したオブジェクト** を選択し [FBXをエクスポート] 
@@ -3030,7 +3030,7 @@ Main（Node3D）
   * [Frames per Second]：30
   * [Keyframe Reduction]：none
 
-👉 再度 [Blender](https://www.blender.org/) での作業 
+### 👉 [Blender](https://www.blender.org/) の作業➁  
   1. [Blender](https://www.blender.org/) を起動（Camera、Light、Cube は削除）
   1. [ファイル]-[インポート]-[**FBX(.fbx)**] を選択し [Mixamo](https://www.mixamo.com/#/) から DOWNLOAD した **XXX.fbx** を開く
   1. [シーンコレクション]-[Collection]-[Armature]-[**▽〇〇〇**] を選択した状態で"3Dビューポート"の右端の **<** を選択  
