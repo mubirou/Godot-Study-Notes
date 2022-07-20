@@ -3043,6 +3043,19 @@ Main（Node3D）
       * [**Extra Cull Margin**]：0（125?）
       * [**LOD Bias**]：**20** 程度（距離によるクオリティ）
 
+
+📝 複数ポーズの場合  
+
+  1. Mixamo を利用して pose1.fbx と pose2.fbx を用意
+  1. Blender を起動して pose1.fbx と pose2.fbx をインポート
+  1. [シーンコレクション]-[Collection]-[Armature〇]-[アニメーション]-[Armature〇|mixamo.com|Layer0] を "pose1" と "pose2" に変更
+  1. [タイムライン] → [ノンリニアアニメーション] に変更
+  1. 再生ヘッドを 0 に移動
+  1. [Armature] トラックを選択し [追加]-[ストリップを追加]-[pose2] を選択
+  1. [シーンコレクション]-[Collection]-[Armature.001] を全て削除
+  1. [Armature] の全てを選択し glTF 2.0(.glb/.gltf) エクスポート
+  1. Godot で [MeshInstance3D]-[Geometry]-[LOD Bias] を調整（20～35程度）
+
 実行環境：Windows 10、Godot 4.0 alpha 12、Blender 3.2.1、Meta Quest 41.0、Quest Link、Oculusアプリ   
 作成者：夢寐郎  
 作成日：2022年07月XX日  
