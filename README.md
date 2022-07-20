@@ -3019,7 +3019,7 @@ Main（Node3D）
   1. キャラクター全体を選択 → [ファイル]-[エクスポート]-[**FBX(.fbx)**] を選択
   1. [内容]-[Limit to]：**✓選択したオブジェクト** を選択し [FBXをエクスポート] 
 
-### 👉 [Mixamo](https://www.mixamo.com/#/) の作業  
+### 👉 [Mixamo](https://www.mixamo.com/#/)（ミキサモ）の作業  
   1. [Mixamo](https://www.mixamo.com/#/)（無料･アカウント必須）を開き [**UPLOAD CHARACTER**] を選び上記の **XXX.fbx** をドラッグ＆ドロップ  
   1. 指示に従い ➀顎 ➁手首 ➂肘 ➃膝 ➄股間 を指定（画像）  
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207191132.jpg)  
