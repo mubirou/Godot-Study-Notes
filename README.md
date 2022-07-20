@@ -3007,8 +3007,6 @@ Main（Node3D）
 <a id="220713"></a>
 # <b>Mixamo</b>
 
-### この項目は書きかけです  
-
 ### 👉 キャラクターの用意  
   * アーマチュア（ボーン）なし  
   * Camera、Light 不要  
@@ -3043,11 +3041,29 @@ Main（Node3D）
   * [内容]-[Limit to]：**✓選択したオブジェクト**  
 
 ### 👉 **Godot** の作業
-  1. XXXXXX  
-    * [インスペクター]-[**Geometry**]
-      * [**Extra Cull Margin**]：0（125?）
-      * [**LOD Bias**]：**20** 程度（距離によるクオリティ）
+  1. 上記の **XXX.glb** をシーンに配置
+  1. シーン上の XX を選択し右クリック → [ローカルにする]
+  1. XXX 内の MeshInstance3D を選択
+  1. [インスペクター]-[**Geometry**]
+      * [**LOD Bias**]：**20** 程度
+  1. マテリアルを設定（オプション）
+  1. XXX 内の **AnimationPlayer** を選択
+  1. 表示されたタイムラインの [**アニメーションループ🔁**] と [**読み込み後、自動再生**] ボタンを選択
+  1. Quest と接続して再生
 
+デモファイル：[Mixamo.zip](https://github.com/mubirou/Godot/blob/main/zip/Mixamo.zip)  
+実行環境：Windows 10、Godot 4.0 alpha 12、Blender 3.2.1、Meta Quest 42.0、Quest Link、Oculusアプリ   
+作成者：夢寐郎  
+作成日：2022年07月20日  
+[[TOP]](#TOP)
+
+
+<a id="XXX"></a>
+# <b>XXXXX</b>
+
+### この項目は書きかけです  
+
+1. XXX
 
 📝 複数ポーズの場合  
 
@@ -3061,10 +3077,10 @@ Main（Node3D）
   1. [Armature] の全てを選択し glTF 2.0(.glb/.gltf) エクスポート
   1. Godot で [MeshInstance3D]-[Geometry]-[LOD Bias] を調整（20～35程度）
 
-デモファイル：[Mixamo.zip](https://github.com/mubirou/Godot/blob/main/zip/Mixamo.zip)  
-実行環境：Windows 10、Godot 4.0 alpha 12、Blender 3.2.1、Meta Quest 41.0、Quest Link、Oculusアプリ   
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：2022年07月XX日  
+作成日：202X年XX月XX日  
+更新日：202X年XX月XX日  
 [[TOP]](#TOP)
 
 
