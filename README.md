@@ -3041,7 +3041,7 @@ Main（Node3D）
   1. XXXXXX  
     * [インスペクター]-[**Geometry**]
       * [**Extra Cull Margin**]：0（125?）
-      * [**LOD Bias**]：**20** 程度
+      * [**LOD Bias**]：**20** 程度（距離によるクオリティ）
 
 実行環境：Windows 10、Godot 4.0 alpha 12、Blender 3.2.1、Meta Quest 41.0、Quest Link、Oculusアプリ   
 作成者：夢寐郎  
