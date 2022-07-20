@@ -3013,7 +3013,7 @@ Main（Node3D）
   * オブジェクト類は"統合"（マテリアルを設定）  
   参考ファイル：[Kyle.blend](https://github.com/mubirou/Godot/blob/main/blend/Kyle.blend)  
 
-### 👉 [Blender](https://www.blender.org/) の作業➀  ｓ
+### 👉 [Blender](https://www.blender.org/) の作業➀  
   1. [Blender](https://www.blender.org/) で 上記ファイル（[Kyle.blend](https://github.com/mubirou/Godot/blob/main/blend/Kyle.blend)）を開く
   1. キャラクター全体を選択 → [ファイル]-[エクスポート]-[**FBX(.fbx)**] を選択
   1. [内容]-[Limit to]：**✓選択したオブジェクト** を選択し [FBXをエクスポート] 
