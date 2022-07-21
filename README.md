@@ -3082,7 +3082,7 @@ Main（Node3D）
    ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211102.jpg)  
   1. [シーンコレクション]-[Collection] の [**Idle**] 以外を全て削除  
    ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211106.jpg)  
-  1. [**Idle**] の全てを選択しエクスポート（[参考](#220713)  
+  1. [**Idle**] の全てを選択しエクスポート（[**参考**](#220713)）  
 
 ### 👉 **Godot** の作業
   1. Godot で [MeshInstance3D]-[Geometry]-[LOD Bias] を調整（20～35程度）
