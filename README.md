@@ -3068,7 +3068,7 @@ Main（Node3D）
 
 📝 複数ポーズの場合  
 
-  1. Mixamo を利用して pose1**.fbx** と pose2.fbx …等を作成
+  1. Mixamo を利用して pose1.fbx と pose2.fbx …等を作成
   1. Blender を起動して pose1.fbx と pose2.fbx …等をインポート
   1. [シーンコレクション]-[Collection]-[Armature〇]-[アニメーション]
 -"**Armature〇|mixamo.com|Layer0**" を "pose1" と "pose2" …等に変更
