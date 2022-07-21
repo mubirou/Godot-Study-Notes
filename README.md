@@ -3091,7 +3091,7 @@ Main（Node3D）
 
 参考：[Mixamo](#220713)  
 デモファイル：[Mixamo_MultiPose.zip](https://github.com/mubirou/Godot/blob/main/zip/Mixamo_MultiPose.zip)  
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 12、Blender 3.2.1、Meta Quest 42.0、Quest Link、Oculusアプリ   
 作成者：夢寐郎  
 作成日：2022年07月21日  
 [[TOP]](#TOP)
