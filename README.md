@@ -3068,16 +3068,21 @@ Main（Node3D）
 
 ### この項目は書きかけです  
 
-1. [**Mixamo**](https://www.mixamo.com/#/) を利用して ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx …等を作成（[参考](#220713)）
-1. [**Blender**](https://www.blender.org/) を起動して ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx …等をインポート
-1. [シーンコレクション]-[Collection]-[**Armature〇**] とその下層の [アニメーション] 内の "**Armature〇|mixamo.com|Layer0**" を "Idle"、"Kick"、"Punch" …等の**ポーズ名**に変更（画像）  
-![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211022.jpg)  
-1. [タイムライン] → [**ノンリニアアニメーション**] に変更
-1. 再生ヘッドを **0** に移動
-1. [**Idle**]（任意）トラックを選択し [追加]-[**ストリップを追加**]-[] を選択
-1. [シーンコレクション]-[Collection]-[Armature.001] を全て削除
-1. [Armature] の全てを選択し glTF 2.0(.glb/.gltf) エクスポート
-1. Godot で [MeshInstance3D]-[Geometry]-[LOD Bias] を調整（20～35程度）
+### 👉 [Mixamo](https://www.mixamo.com/#/)（ミキサモ）の作業  
+  「[Mixamo](#220713)」を参考に ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx …等を作成  
+
+### 👉 [Blender](https://www.blender.org/) の作業  
+  1. Blender を起動して ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx …等をインポート
+  1. [シーンコレクション]-[Collection]-[**Armature〇**] とその下層の [アニメーション] 内の "**Armature〇|mixamo.com|Layer0**" を "Idle"、"Kick"、"Punch" …等の**ポーズ名**に変更（画像）  
+  ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211022.jpg)  
+  1. [タイムライン] → [**ノンリニアアニメーション**] に変更
+  1. 再生ヘッドを **0** に移動
+  1. [**Idle**]（任意）トラックを選択し [追加]-[**ストリップを追加**]-[] を選択
+  1. [シーンコレクション]-[Collection]-[Armature.001] を全て削除
+  1. [Armature] の全てを選択し glTF 2.0(.glb/.gltf) エクスポート
+
+### 👉 **Godot** の作業
+  1. Godot で [MeshInstance3D]-[Geometry]-[LOD Bias] を調整（20～35程度）
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
