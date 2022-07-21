@@ -3069,7 +3069,7 @@ Main（Node3D）
 ### この項目は書きかけです  
 
 ### 👉 [Mixamo](https://www.mixamo.com/#/)（ミキサモ）の作業  
-  [**Mixamo**](#220713) を参考に ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx …等を作成  
+  [**Mixamo**](#220713) を参考に ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx を作成  
 
 ### 👉 [Blender](https://www.blender.org/) の作業  
   1. Blender を起動して ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx …等をインポート
