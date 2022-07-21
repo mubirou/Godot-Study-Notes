@@ -3070,8 +3070,9 @@ Main（Node3D）
 
   1. Mixamo を利用して ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx …等を作成
   1. Blender を起動して ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx …等をインポート
-  1. [シーンコレクション]-[Collection]-[Armature〇]-[アニメーション]
+  1. [シーンコレクション]-[Collection]-[Armature〇] と -[アニメーション]
 -"**Armature〇|mixamo.com|Layer0**" を "pose1" と "pose2" …等に変更
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211022.jpg)  
   1. [タイムライン] → [**ノンリニアアニメーション**] に変更
   1. 再生ヘッドを **0** に移動
   1. 最上段の [**Armature**] トラックを選択し [追加]-[ストリップを追加]-[pose2] を選択
