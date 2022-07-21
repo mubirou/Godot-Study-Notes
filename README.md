@@ -1,5 +1,5 @@
 # Godot Study Notes 🔰<a id="TOP"></a>
-⌚305h50min  
+⌚311h05min  
 
 ### <b>index（Godot 3.4 対応）</b>
 
@@ -3105,6 +3105,8 @@ Main（Node3D）
 
 📝 **[キューブマップ](https://docs.unity3d.com/2017.2/Documentation/Manual/class-Cubemap.html)形式**  
 立方体（6面）で構成 / [CAVE](https://ja.wikipedia.org/wiki/Cave_automatic_virtual_environment)、[CABIN](https://mine.place/page/9245bd60-4be4-4ac0-95f2-32ea8c7cc0f8) はこの簡易版  
+
+1. [360°パノラマ動画](https://www.insta360.com/jp/explore)を用意
 
 実行環境：Windows 10、Godot 4.0 alpha 12、Blender 3.2.1、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
