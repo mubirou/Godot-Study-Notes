@@ -3100,11 +3100,11 @@ Main（Node3D）
 <a id="220715"></a>
 # <b>XXXXX</b>
 
-📝 [正距円筒図法](https://en.wikipedia.org/wiki/Equirectangular_projection)（パノラマ）形式  
+📝 **[正距円筒図法](https://en.wikipedia.org/wiki/Equirectangular_projection)（パノラマ）形式**  
   * [メルカトル図法](https://ja.wikipedia.org/wiki/%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%88%E3%83%AB%E5%9B%B3%E6%B3%95)に似た方法
   * 球面 → 平面に変換
 
-📝 [キューブマップ](https://docs.unity3d.com/2017.2/Documentation/Manual/class-Cubemap.html)形式  
+📝 **[キューブマップ](https://docs.unity3d.com/2017.2/Documentation/Manual/class-Cubemap.html)形式**  
   * 立方体（6面）で構成  
   * [CAVE](https://ja.wikipedia.org/wiki/Cave_automatic_virtual_environment)、[CABIN](https://mine.place/page/9245bd60-4be4-4ac0-95f2-32ea8c7cc0f8) も同様の仕組み 
 
