@@ -3074,7 +3074,7 @@ Main（Node3D）
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211022.jpg)  
   1. [タイムライン] → [**ノンリニアアニメーション**] に変更
   1. 再生ヘッドを **0** に移動
-  1. [**Idle**] トラックを選択し（任意）[追加]-[ストリップを追加]-[pose2] を選択
+  1. [**Idle**]（任意）トラックを選択し [追加]-[**ストリップを追加**]-[] を選択
   1. [シーンコレクション]-[Collection]-[Armature.001] を全て削除
   1. [Armature] の全てを選択し glTF 2.0(.glb/.gltf) エクスポート
   1. Godot で [MeshInstance3D]-[Geometry]-[LOD Bias] を調整（20～35程度）
