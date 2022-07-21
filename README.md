@@ -3080,7 +3080,8 @@ Main（Node3D）
   1. [**Idle**]（任意）トラックを選択し [追加]-[**ストリップを追加**]-[**Kich**] を選択、同様に [**Punch**] も追加（下図）
   1. "**NlaTrack〇**"（Non Linear Animationの略）という名前を "**ポーズ名 + Track**" に変更（分かりやすいように）  
    ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211102.jpg)  
-  1. [シーンコレクション]-[Collection]-[Kick] と [Punch] の全てを削除
+  1. [シーンコレクション]-[Collection]-[Kick] と [Punch] の全てを削除  
+   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211106.jpg)  
   1. [Armature] の全てを選択し glTF 2.0(.glb/.gltf) エクスポート
 
 ### 👉 **Godot** の作業
