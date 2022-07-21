@@ -3068,8 +3068,8 @@ Main（Node3D）
 
 📝 複数ポーズの場合  
 
-  1. Mixamo を利用して ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx …等を作成（[参考](#220713)）
-  1. Blender を起動して ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx …等をインポート
+  1. [Mixamo](https://www.mixamo.com/#/) を利用して ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx …等を作成（[参考](#220713)）
+  1. [Blender](https://www.blender.org/) を起動して ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx …等をインポート
   1. [シーンコレクション]-[Collection]-[**Armature〇**] とその下層の [アニメーション] 内の "**Armature〇|mixamo.com|Layer0**" を "Idle"、"Kick"、"Punch" …等の**ポーズ名**に変更（画像）  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211022.jpg)  
   1. [タイムライン] → [**ノンリニアアニメーション**] に変更
