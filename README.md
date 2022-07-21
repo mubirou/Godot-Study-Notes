@@ -3068,8 +3068,8 @@ Main（Node3D）
 
 📝 複数ポーズの場合  
 
-  1. Mixamo を利用して ➀ Idle.fbx、➁ Kick.fbx、➂ Punch.fbx …等を作成
-  1. Blender を起動して pose1.fbx と pose2.fbx …等をインポート
+  1. Mixamo を利用して ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx …等を作成
+  1. Blender を起動して ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx …等をインポート
   1. [シーンコレクション]-[Collection]-[Armature〇]-[アニメーション]
 -"**Armature〇|mixamo.com|Layer0**" を "pose1" と "pose2" …等に変更
   1. [タイムライン] → [**ノンリニアアニメーション**] に変更
