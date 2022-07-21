@@ -3053,6 +3053,7 @@ Main（Node3D）
   1. Quest と接続して再生
 
 デモファイル：[Mixamo.zip](https://github.com/mubirou/Godot/blob/main/zip/Mixamo.zip)  
+参考：[Mixamoマルチポーズ](#220714)  
 実行環境：Windows 10、Godot 4.0 alpha 12、Blender 3.2.1、Meta Quest 42.0、Quest Link、Oculusアプリ   
 作成者：夢寐郎  
 作成日：2022年07月20日  
