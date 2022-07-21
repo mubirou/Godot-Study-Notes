@@ -3066,8 +3066,6 @@ Main（Node3D）
 * [**Mixamo**](#220713) の複数ポーズ版  
 * 例として ➀Idle、➁Kick、➂Punch の３ポーズを作成  
 
-### この項目は書きかけです  
-
 ### 👉 [Mixamo](https://www.mixamo.com/#/)（ミキサモ）の作業  
   [**Mixamo**](#220713) を参考に ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx を作成  
 
@@ -3088,11 +3086,13 @@ Main（Node3D）
 ### 👉 **Godot** の作業
   1. 上記の **.glb** ファイルをシーンに配置し [**ローカルにする**] 
   1. [MeshInstance3D]-[Geometry]-[**LOD Bias**] を調整（20～35程度）
-  1. 以降、[**アニメーション遷移**](#220617) と同様
+  1. 以降、[**アニメーション遷移**](#220617) と同様  
+  ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211157.jpg)  
 
+参考：[Mixamo](#220713)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
+作成日：2022年07月21日  
 [[TOP]](#TOP)
 
 
