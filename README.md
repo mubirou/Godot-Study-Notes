@@ -3075,6 +3075,7 @@ Main（Node3D）
   1. ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx をインポート
   1. [シーンコレクション]-[Collection]-[**Armature〇**] とその下層の [アニメーション] 内の "**Armature〇|mixamo.com|Layer0**" という名前を**ポーズ名**（"Idle"、"Kick"、"Punch"）に変更（下図）  
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211022.jpg)  
+  💡[ドープシート]-[アクション] 等で動作確認可能  
   1. [タイムライン] → [**ノンリニアアニメーション**] に変更
   1. 再生ヘッドを **0** に移動
   1. [**Idle**]（任意）トラックを選択し [追加]-[**ストリップを追加**]-[**Kich**] を選択、同様に [**Punch**] も追加（下図）
