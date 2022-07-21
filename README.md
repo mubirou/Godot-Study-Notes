@@ -3068,10 +3068,10 @@ Main（Node3D）
 
 📝 複数ポーズの場合  
 
-  1. Mixamo を利用して pose1.fbx と pose2.fbx を用意
-  1. Blender を起動して pose1.fbx と pose2.fbx をインポート
+  1. Mixamo を利用して pose1.fbx と pose2.fbx …等を作成
+  1. Blender を起動して pose1.fbx と pose2.fbx …等をインポート
   1. [シーンコレクション]-[Collection]-[Armature〇]-[アニメーション]-[
-    **Armature〇|mixamo.com|Layer0**] を "pose1" と "pose2" に変更
+    **Armature〇|mixamo.com|Layer0**] を "pose1" と "pose2" …等に変更
   1. [タイムライン] → [ノンリニアアニメーション] に変更
   1. 再生ヘッドを 0 に移動
   1. [Armature] トラックを選択し [追加]-[ストリップを追加]-[pose2] を選択
