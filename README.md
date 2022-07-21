@@ -3086,7 +3086,9 @@ Main（Node3D）
   1. [**Idle**] の全てを選択しエクスポート（[**参考**](#220713)）  
 
 ### 👉 **Godot** の作業
-  1. Godot で [MeshInstance3D]-[Geometry]-[LOD Bias] を調整（20～35程度）
+  1. 上記の **.glb** ファイルをシーンに配置し [**ローカルにする**] 
+  1. [MeshInstance3D]-[Geometry]-[**LOD Bias**] を調整（20～35程度）
+  1. 以降、[**アニメーション遷移**](#220617) と同様
 
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
