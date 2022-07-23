@@ -3113,9 +3113,9 @@ Main（Node3D）
 1. ダウンロード＆インストール  
 1. [Godot]-[エディター]-[エディター設定]-[エディター]-[**コードのフォント**] を以下の通りに設定
     * **M PLUS 1 Code** の場合  
-    C:/Users/〇/appdata/Local/Microsoft/Windows/Fonts/Mplus1Code-Regular.otf  
+    C:/Users/XXX/appdata/Local/Microsoft/Windows/Fonts/Mplus1Code-Regular.otf  
     * **Ricty Diminished Discord** の場合  
-    C:/Users/〇/appdata/Local/Microsoft/Windows/Fonts/RictyDiminishedDiscord-Regular.ttf  
+    C:/Users/XXX/appdata/Local/Microsoft/Windows/Fonts/RictyDiminishedDiscord-Regular.ttf  
 
 実行環境：Windows 10、Godot 4.0 alpha 12
 作成者：夢寐郎  
