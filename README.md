@@ -8,7 +8,7 @@
 
 ### **index（Godot 4.0 対応）**
 
-[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [XXXX](#220715) |
+[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) |
 ***
 
 <a id="Androidビルド"></a>
@@ -3103,6 +3103,25 @@ Main（Node3D）
 
 
 <a id="220715"></a>
+# <b>フォント設定</b>
+内部テキストエディターのフォント設定  
+
+1. コード用フォントをダウンロード＆インストール  
+  * [M PLUS 1 Code（Regular）](https://github.com/coz-m/MPLUS_FONTS/blob/master/fonts/otf/Mplus1Code-Regular.otf)
+  * [Ricty Diminished Discord（Regular）](https://github.com/edihbrandon/RictyDiminished/blob/master/RictyDiminishedDiscord-Regular.ttf)  
+
+C:/Users/Owner/appdata/Local/Microsoft/Windows/Fonts/Mplus1Code-Regular.otf
+
+C:/Users/Owner/appdata/Local/Microsoft/Windows/Fonts/RictyDiminishedDiscord-Regular.ttf
+
+実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
+作成者：夢寐郎  
+作成日：202X年XX月XX日  
+更新日：202X年XX月XX日  
+[[TOP]](#TOP)
+
+
+<a id="XXXXX"></a>
 # <b>XXXXX</b>
 
 📝 **[正距円筒図法](https://en.wikipedia.org/wiki/Equirectangular_projection)（パノラマ）形式**  
