@@ -3119,7 +3119,7 @@ Main（Node3D）
 
 実行環境：Windows 10、Godot 4.0 alpha 12
 作成者：夢寐郎  
-作成日：2022年07月XX日  
+作成日：2022年07月23日  
 [[TOP]](#TOP)
 
 
