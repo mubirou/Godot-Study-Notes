@@ -2202,11 +2202,16 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     1. 左側アイコンの一番下を選択
     1. [Marketplaceで機能拡張を検索] で **Godot** を検索
     1. **godot-tolls** をインストール
-  
-実行環境：Windows 10、Godot 4.0 alpha 10、VSCode 1.63.2  
+
+1. Visual Studio Code のフォントの設定
+    1. [**Ricty Diminished Discord（Regular）**](https://github.com/edihbrandon/RictyDiminished/blob/master/RictyDiminishedDiscord-Regular.ttf) をダウンロード＆インストール  
+    1. XXX
+
+参考：[フォント設定](#220715)  
+実行環境：Windows 10、Godot 4.0 alpha 12、VSCode 1.69.2  
 作成者：夢寐郎  
 作成日：2021年12月30日  
-更新日：2022年06月30日 Godot 4.0 対応  
+更新日：2022年07月23日 フォントの設定を追加  
 [[TOP]](#TOP)
 
 
