@@ -3109,7 +3109,7 @@ Main（Node3D）
 1. プログラミング用フォントを検討
     * [M PLUS 1 Code（Regular）](https://github.com/coz-m/MPLUS_FONTS/blob/master/fonts/otf/Mplus1Code-Regular.otf)
     * [**Ricty Diminished Discord（Regular）**](https://github.com/edihbrandon/RictyDiminished/blob/master/RictyDiminishedDiscord-Regular.ttf)  
-    * 「1lI0ODz」「全角スペース」の見分けられやすい後者を推奨
+    * 「1lI0O」はもちろん「Dz」「全角スペース」が見分けられやすい後者を推奨
 
 1. ダウンロード＆インストール  
 
