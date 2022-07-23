@@ -3090,6 +3090,7 @@ Main（Node3D）
   1. [MeshInstance3D]-[Geometry]-[**LOD Bias**] を調整（20～35程度）
   1. 以降、[**アニメーション遷移**](#220617) と同様  
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211157.jpg)  
+  参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/tutorials/animation/animation_tree.html?highlight=StateMachine#using-animationtree)  
 
 参考：[Mixamo](#220713)  
 デモファイル：[Mixamo_MultiPose.zip](https://github.com/mubirou/Godot/blob/main/zip/Mixamo_MultiPose.zip)  
