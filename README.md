@@ -3108,7 +3108,7 @@ Main（Node3D）
 
 1. コード用フォントをダウンロード＆インストール  
   * [M PLUS 1 Code（Regular）](https://github.com/coz-m/MPLUS_FONTS/blob/master/fonts/otf/Mplus1Code-Regular.otf)
-  * [Ricty Diminished Discord（Regular）](https://github.com/edihbrandon/RictyDiminished/blob/master/RictyDiminishedDiscord-Regular.ttf)  
+  * [**Ricty Diminished Discord（Regular）**](https://github.com/edihbrandon/RictyDiminished/blob/master/RictyDiminishedDiscord-Regular.ttf)  
 
 C:/Users/Owner/appdata/Local/Microsoft/Windows/Fonts/Mplus1Code-Regular.otf
 
