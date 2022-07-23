@@ -3110,17 +3110,16 @@ Main（Node3D）
     * [M PLUS 1 Code（Regular）](https://github.com/coz-m/MPLUS_FONTS/blob/master/fonts/otf/Mplus1Code-Regular.otf)
     * [**Ricty Diminished Discord（Regular）**](https://github.com/edihbrandon/RictyDiminished/blob/master/RictyDiminishedDiscord-Regular.ttf)  
     * 「**1lI0O**」はもちろん「**Dz**」「**全角スペース**」が見分けやすい後者を推奨
-
 1. ダウンロード＆インストール  
+1. [Godot]-[エディター]-[エディター設定]-[エディター]-[**コードのフォント**] を以下の通りに設定
+    * **M PLUS 1 Code** の場合  
+    C:/Users/Owner/appdata/Local/Microsoft/Windows/Fonts/Mplus1Code-Regular.otf  
+    * **Ricty Diminished Discord** の場合  
+    C:/Users/Owner/appdata/Local/Microsoft/Windows/Fonts/RictyDiminishedDiscord-Regular.ttf  
 
-C:/Users/Owner/appdata/Local/Microsoft/Windows/Fonts/Mplus1Code-Regular.otf
-
-C:/Users/Owner/appdata/Local/Microsoft/Windows/Fonts/RictyDiminishedDiscord-Regular.ttf
-
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 12
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2022年07月XX日  
 [[TOP]](#TOP)
 
 
