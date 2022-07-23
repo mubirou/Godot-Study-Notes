@@ -3044,7 +3044,7 @@ Main（Node3D）
 
 ### 👉 **Godot** の作業
   1. 上記の **XXX.glb** をシーンに配置
-  1. シーン上の XX を選択し右クリック → [ローカルにする]
+  1. シーン上の XX を選択し右クリック → [編集可能な子]
   1. XXX 内の MeshInstance3D を選択
   1. [インスペクター]-[**Geometry**]
       * [**LOD Bias**]：**20～40** 程度（[Level Of Detail](https://docs.unity3d.com/ja/2018.4/Manual/LevelOfDetail.html)）
