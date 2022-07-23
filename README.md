@@ -3123,6 +3123,7 @@ Main（Node3D）
     * **Ricty Diminished Discord** の場合  
     C:/Users/XXX/appdata/Local/Microsoft/Windows/Fonts/RictyDiminishedDiscord-Regular.ttf  
 
+参考：[外部スクリプトエディタ](#220630)  
 実行環境：Windows 10、Godot 4.0 alpha 12
 作成者：夢寐郎  
 作成日：2022年07月23日  
