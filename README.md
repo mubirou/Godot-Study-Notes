@@ -3101,7 +3101,7 @@ Main（Node3D）
 参考：[Mixamo](#220713)  
 デモファイル：[Mixamo_MultiPose.zip](https://github.com/mubirou/Godot/blob/main/zip/Mixamo_MultiPose.zip)  
 高画質版デモ：[Mixamo_MultiPose_HighQuality.zip](https://github.com/mubirou/Godot/blob/main/zip/Mixamo_MultiPose_HighQuality.zip)  
-実行環境：Windows 10、Godot 4.0 alpha 12、Blender 3.2.1、Meta Quest 42.0、Quest Link、Oculusアプリ   
+実行環境：Windows 10、Godot 4.0 alpha 12、Blender 3.2.1、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月21日  
 更新日：2022年07月23日 高画質版デモファイル追加  
@@ -3127,6 +3127,23 @@ Main（Node3D）
 実行環境：Windows 10、Godot 4.0 alpha 12
 作成者：夢寐郎  
 作成日：2022年07月23日  
+[[TOP]](#TOP)
+
+
+<a id="XXX"></a>
+# <b>XXXXX</b>
+
+1. 効果音の用意（[無料効果音](https://taira-komori.jpn.org/game01.html)）
+1. [Sound Forge Pro](https://www.sourcenext.com/product/vegas/sound/soundforge-pro/) で長さを調整し以下の設定で保存  
+    * ファイルの種類：**Wave(Microsoft)(*.wav)**
+    * テンプレート：**44.100Hz, 16ビット, ステレオ, PCM(*)**
+
+
+[Google Fonts（Oswald）](https://fonts.google.com/specimen/Oswald)  
+
+実行環境：Windows 10、Godot 4.0 alpha 12、Blender 3.2.1、Meta Quest 42.0、Quest Link、Oculusアプリ  
+作成者：夢寐郎  
+作成日：2022年07月XX日  
 [[TOP]](#TOP)
 
 
