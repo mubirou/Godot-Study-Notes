@@ -3135,6 +3135,8 @@ Main（Node3D）
 
 ### この項目は書きかけです
 
+### 👉 [レーザーポインター](#220704)の準備   
+
 ### 👉 効果音の用意  
   1. [無料効果音](https://taira-komori.jpn.org/game01.html) 等からダウンロード（.mp3）  
   1. [Sound Forge Pro](https://www.sourcenext.com/product/vegas/sound/soundforge-pro/) で長さを調整し以下の設定でプロジェクトフォルダに保存  
