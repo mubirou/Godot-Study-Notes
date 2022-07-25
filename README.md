@@ -3175,8 +3175,6 @@ Main（Node3D）
 1. 大元の Node3D（Main）を選択し [子ノードを追加]-[[**AudioStreamPlayer3D**](https://docs.godotengine.org/en/latest/classes/class_audiostreamplayer3d.html?highlight=AudioStreamPlayer3D#audiostreamplayer3d)] を追加（名前は "AudioStreamPlayer3D" → "SE1" に変更
 1. [SE1] を選択し [インスペクター] を次の通り設定  
     * [**Stream**]：**button04a.wav**（上記参照）
-    * [**Format**]：**8-bit**
-    * [**Stereo**]：**オフ**
 
 #### 👉 コードの記述    
 1. [**レーザーポインター**](#220704)の[**コード**](#code220704)を開く  
