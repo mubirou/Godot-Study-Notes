@@ -3187,7 +3187,7 @@ Main（Node3D）
       * Node3D.**scale.z = 0.7**（ボタンを凹ませる）
     * [**button_released**](https://docs.godotengine.org/en/latest/classes/class_xrcontroller3d.html?highlight=xrcontroller#xrcontroller3d) 時の処理  
       * Node3D.**scale.z = 1**（凹んだボタンを元に戻す）
-      * AudioStreamPlayer3D.play()（効果音を鳴らす）
+      * AudioStreamPlayer3D.**play()**（効果音を鳴らす）
     * [**_physics_process**](https://docs.godotengine.org/en/latest/classes/class_mainloop.html?highlight=_physics_process#class-mainloop-method-physics-process) 時の処理（RollOver時の色変更）  
       * MeshInstance3D.**get_surface_override_material(0)**
       * StandardMaterial3D.**set_albedo(Color(〇,〇,〇,1))**
