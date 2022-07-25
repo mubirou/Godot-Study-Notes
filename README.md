@@ -3147,8 +3147,20 @@ Main（Node3D）
 1. [Google Fonts（Oswald）](https://fonts.google.com/specimen/Oswald) 等をダウンロード  
 1. プロジェクトフォルダに保存  
 
-#### 👉 Godot の作業
-
+#### 👉 Godot の作業  
+1. 
+     Main（[**Node3D**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=Node3D#node3d)）  
+    　  ├ [**XROrigin3D**](https://docs.godotengine.org/en/latest/classes/class_xrorigin3d.html?highlight=XROrigin3D#xrorigin3d)  
+    　  │   ├ [**XRCamera3D**](https://docs.godotengine.org/en/latest/classes/class_xrcamera3d.html?highlight=XRCamera3D#xrcamera3d)  
+    　  │   └ [**XRController3D**](https://docs.godotengine.org/en/latest/classes/class_xrcontroller3d.html?highlight=XRController3D#xrcontroller3d)_Right  
+    　  │　　　 ├ Controller（コントローラの視覚化）  
+    　  │　　　 ├ [**RayCast3D**](https://docs.godotengine.org/en/latest/classes/class_raycast3d.html?highlight=RayCast3D#raycast3d)  
+    　  │　　　 ├ RayLine（RayCast3Dの視覚化）  
+    　  │　　　 └ HitPoint（ヒットポイントの可視化）  
+    　  ├ MeshInstance3D（選択するオブジェクト）  
+    　  │   └ [**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d)  
+    　  │　　　 └ [**CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d)（反応する領域）  
+    　  └ **DirecionalLight3D**  
 
 
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 42.0、Quest Link、Oculusアプリ  
