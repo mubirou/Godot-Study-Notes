@@ -3187,14 +3187,81 @@ Main（Node3D）
   * Node3D.**scale.z = 1**（凹んだボタンを元に戻す）
   * AudioStreamPlayer3D.**play()**（効果音を鳴らす）
 * [**_physics_process**](https://docs.godotengine.org/en/latest/classes/class_mainloop.html?highlight=_physics_process#class-mainloop-method-physics-process) 時の処理（RollOver時の色変更）  
-  * MeshInstance3D.**get_surface_override_material(0)**
+  * MeshInstance3D.**get_mesh().material**
+  * StandardMaterial3D.**get_albedo()**
   * StandardMaterial3D.**set_albedo(Color(〇,〇,〇,1))**
-  * MeshInstance3D.**set_surface_override_material(0, StandardMaterial3D)**
 ```gdscript
 # main.gd
 extends Node3D
 
 var _interface : XRInterface
+var _controller_R
+var _rayCast_R
+var _rayLine_R
+var _hitPoint_R
+var _selectCollider
+var _se1
+var _isRollOver = false
+
+func _ready():
+	_interface = XRServer.find_interface("OpenXR")
+	if _interface and _interface.is_initialized():
+		var _viewport : Viewport = get_viewport()
+		_viewport.use_xr = true
+	_controller_R = get_node("XROrigin3D/XRController3D_Right")
+	_rayCast_R = _controller_R.get_node("RayCast3D")
+	_rayLine_R = _controller_R.get_node("RayLine")
+	_hitPoint_R = _controller_R.get_node("HitPoint")
+	_hitPoint_R.visible = false
+	_se1 = get_node("SE1")
+
+func _on_xr_controller_3d_right_button_pressed(name):
+	if name == "trigger_click":
+		_selectCollider = _rayCast_R.get_collider()
+		if _selectCollider != null:
+			var _selectButton = _selectCollider.get_parent().get_parent()
+			_selectButton.scale.z = 0.7
+
+func _on_xr_controller_3d_right_button_released(name):
+	if name == "trigger_click":
+		if _selectCollider != null:
+			var _selectButton = _selectCollider.get_parent().get_parent()
+			_selectButton.scale.z = 1
+		if _rayCast_R.get_collider() == null: return
+		if _rayCast_R.get_collider() == _selectCollider: # Select!
+			var _selectButton = _selectCollider.get_parent().get_parent()
+			_selectButton.scale.z = 1
+			_se1.play()
+			print(_selectCollider.get_parent().name)
+
+func _physics_process(delta):
+	if _rayCast_R.is_colliding():
+		_hitPoint_R.visible = true
+		_hitPoint_R.global_transform.origin = _rayCast_R.get_collision_point()
+		var _dis = (_rayCast_R.global_transform.origin - _hitPoint_R.global_transform.origin).length()
+		_rayLine_R.scale.z = _dis
+		_rayLine_R.position.z = -_dis / 2
+		_selectCollider = _rayCast_R.get_collider()
+		if !_isRollOver: # RollOver
+			changeColor(true) 
+			_isRollOver = true
+	else:
+		if _isRollOver: # RollOut
+			changeColor(false) 
+			_isRollOver = false
+		_rayLine_R.scale.z = 1000
+		_rayLine_R.position.z = -500
+		_hitPoint_R.visible = false
+
+func changeColor(_bool):
+	if _selectCollider == null: return
+	#var _theMaterial = _selectCollider.get_parent().get_surface_override_material(0)
+	var _theMaterial = _selectCollider.get_parent().get_mesh().material
+	if _bool:
+		_theMaterial.set_albedo(_theMaterial.get_albedo()*4/3) # RollOver
+	else:
+		_theMaterial.set_albedo(_theMaterial.get_albedo()*3/4) # RollOut
+		print(_theMaterial.get_albedo())
 ```
 
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 42.0、Quest Link、Oculusアプリ  
