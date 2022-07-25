@@ -3182,7 +3182,7 @@ Main（Node3D）
 1. [**レーザーポインター**](#220704)の[**コード**](#code220704)を開く  
 1. 修正箇所のポイントは次の通り    
     * [**AudioStreamPlayer3D**](https://docs.godotengine.org/en/latest/classes/class_audiostreamplayer3d.html?highlight=AudioStreamPlayer3D#audiostreamplayer3d)  
-      * **get_node("SE1")**（ノードの取得）
+      * **get_node("SE1")**（効果音用ノードの取得）
     * [**button_pressed**](https://docs.godotengine.org/en/latest/classes/class_xrcontroller3d.html?highlight=xrcontroller#xrcontroller3d) 時の処理  
       * Node3D.**scale.z = 0.7**（ボタンを凹ませる）
     * [**button_released**](https://docs.godotengine.org/en/latest/classes/class_xrcontroller3d.html?highlight=xrcontroller#xrcontroller3d) 時の処理  
