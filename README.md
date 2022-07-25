@@ -2799,7 +2799,7 @@ func _ready():
 
 1. 大元の Node3D（Main）を選択し [子ノードを追加]-[[**Label3D**](https://docs.godotengine.org/en/latest/classes/class_label3d.html?highlight=Label3D#label3d)] を選択
 1. 名前を "Label3D" → "Clock" に変更
-1. [Label3D] を選択し [インスペクター] を次の通り設定
+1. [Clock] を選択し [インスペクター] を次の通り設定
     * [**Text**]  
       * [**Modulate**]：**#ffcc00**（フォント色）
       * [**Text**]：**88:88:88**
@@ -3136,12 +3136,6 @@ Main（Node3D）
 
 ### この項目は書きかけです
 
-#### 👉 効果音の用意  
-1. [無料効果音](https://taira-komori.jpn.org/game01.html) 等からダウンロード（.mp3）  
-1. [Sound Forge Pro](https://www.sourcenext.com/product/vegas/sound/soundforge-pro/) で長さを調整し以下の設定でプロジェクトフォルダに保存  
-    * ファイルの種類：**Wave(Microsoft)(*.wav)**
-    * テンプレート：**44.100Hz, 16ビット, ステレオ, PCM(*)**
-
 #### 👉 フォントの用意  
 1. [Google Fonts（Oswald）](https://fonts.google.com/specimen/Oswald) 等をダウンロード  
 1. プロジェクトフォルダに保存  
@@ -3172,8 +3166,29 @@ Main（Node3D）
     * **Position**：x 0、y 0、**z 0.03**（💡**ボタンの厚さの1/2**）
     * **Scale**：x 0.3、y 0.3、**z 0.06**（**ボタンの厚さ**）
 1. 同様に全てのボタンを設定  
-1. [**レーザーポインター**](#220704)の[**コード**](#code220704)を変更  
 
+#### 👉 効果音の用意  
+1. [無料効果音](https://taira-komori.jpn.org/game01.html) 等からダウンロード（.mp3）  
+1. [Sound Forge Pro](https://www.sourcenext.com/product/vegas/sound/soundforge-pro/) で長さを調整し以下の設定でプロジェクトフォルダに保存  
+    * ファイルの種類：**Wave(Microsoft)(*.wav)**
+    * テンプレート：**44.100Hz, 16ビット, ステレオ, PCM(*)**
+1. 大元の Node3D（Main）を選択し [子ノードを追加]-[[**AudioStreamPlayer3D**](https://docs.godotengine.org/en/latest/classes/class_audiostreamplayer3d.html?highlight=AudioStreamPlayer3D#audiostreamplayer3d)] を追加（名前は "AudioStreamPlayer3D" → "SE1" に変更
+1. [SE1] を選択し [インスペクター] を次の通り設定  
+    * [**Stream**]：**button04a.wav**（上記参照）
+    * [**Format**]：**8-bit**
+    * [**Stereo**]：**オフ**
+
+#### 👉 コードの記述    
+1. [**レーザーポインター**](#220704)の[**コード**](#code220704)を開く  
+1. 以下のポイントを修正  
+    * XXXX
+    * XXXX
+```gdscript
+# main.gd
+extends Node3D
+
+var _interface : XRInterface
+```
 
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
