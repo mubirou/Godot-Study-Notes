@@ -3181,7 +3181,7 @@ Main（Node3D）
 #### 👉 コードの記述    
 1. [**レーザーポインター**](#220704)の[**コード**](#code220704)を開く  
 1. 以下のポイントを修正  
-    * XXXX
+    * [**AudioStreamPlayer3D**](https://docs.godotengine.org/en/latest/classes/class_audiostreamplayer3d.html?highlight=AudioStreamPlayer3D#audiostreamplayer3d)] 関連
     * XXXX
 ```gdscript
 # main.gd
