@@ -3151,7 +3151,7 @@ Main（Node3D）
 1. 
      Main（[**Node3D**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=Node3D#node3d)）   
     　  └ Blue_Center（[**Node3D**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=Node3D#node3d)）  
-    　  　└ **Blue**（[**MeshInstance3D**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=MeshInstance3D#meshinstance3d)）   
+    　  　└ Blue（[**MeshInstance3D**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=MeshInstance3D#meshinstance3d)）   
     　  　　└ [**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d)  
     　  　　　└ [**CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d)
 
