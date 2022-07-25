@@ -3157,7 +3157,7 @@ Main（Node3D）
       * [**Outline Size**]：8（Font Sizeの1/10程度）
     * [**Transform**]  
       * [**Position**]：x 0、y 0、z 0.61（**ボタンの厚さ+💡0.01**）
-      * [**Scale**]：**x 0.1**、**y 0.1**、**z 0.1**
+      * [**Scale**]：**x 0.1**、**y 0.1**、**z 0.1**（💡高画質化）
 1. 「選択するオブジェクト」を以下の構造に変更  
   ***
   Main（[Node3D](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=Node3D#node3d)）   
