@@ -3191,7 +3191,7 @@ Main（Node3D）
     * [**_physics_process**](https://docs.godotengine.org/en/latest/classes/class_mainloop.html?highlight=_physics_process#class-mainloop-method-physics-process) 時の処理（RollOver時の色変更）  
       * MeshInstance3D.get_surface_override_material(0)
       * MeshInstance3D.set_albedo(Color(〇,〇,〇,1))
-      * MeshInstance3D.set_surface_override_material(0, StandardMaterial3D)
+      * MeshInstance3D.**set_surface_override_material(0**, StandardMaterial3D**)**
 ```gdscript
 # main.gd
 extends Node3D
