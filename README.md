@@ -3181,17 +3181,17 @@ Main（Node3D）
 #### 👉 コードの記述    
 1. [**レーザーポインター**](#220704)の[**コード**](#code220704)を開く  
 1. 修正箇所のポイントは次の通り    
-    * **_ready** 時の処理  
-      * **get_node("SE1")**（[**AudioStreamPlayer3D**](https://docs.godotengine.org/en/latest/classes/class_audiostreamplayer3d.html?highlight=AudioStreamPlayer3D#audiostreamplayer3d) ノードの取得）
-    * [**button_pressed**](https://docs.godotengine.org/en/latest/classes/class_xrcontroller3d.html?highlight=xrcontroller#xrcontroller3d) 時の処理  
-      * Node3D.**scale.z = 0.7**（ボタンを凹ませる）
-    * [**button_released**](https://docs.godotengine.org/en/latest/classes/class_xrcontroller3d.html?highlight=xrcontroller#xrcontroller3d) 時の処理  
-      * Node3D.**scale.z = 1**（凹んだボタンを元に戻す）
-      * AudioStreamPlayer3D.**play()**（効果音を鳴らす）
-    * [**_physics_process**](https://docs.godotengine.org/en/latest/classes/class_mainloop.html?highlight=_physics_process#class-mainloop-method-physics-process) 時の処理（RollOver時の色変更）  
-      * MeshInstance3D.**get_surface_override_material(0)**
-      * StandardMaterial3D.**set_albedo(Color(〇,〇,〇,1))**
-      * MeshInstance3D.**set_surface_override_material(0, StandardMaterial3D)**
+  * **_ready** 時の処理  
+    * **get_node("SE1")**（[**AudioStreamPlayer3D**](https://docs.godotengine.org/en/latest/classes/class_audiostreamplayer3d.html?highlight=AudioStreamPlayer3D#audiostreamplayer3d) ノードの取得）
+  * [**button_pressed**](https://docs.godotengine.org/en/latest/classes/class_xrcontroller3d.html?highlight=xrcontroller#xrcontroller3d) 時の処理  
+    * Node3D.**scale.z = 0.7**（ボタンを凹ませる）
+  * [**button_released**](https://docs.godotengine.org/en/latest/classes/class_xrcontroller3d.html?highlight=xrcontroller#xrcontroller3d) 時の処理  
+    * Node3D.**scale.z = 1**（凹んだボタンを元に戻す）
+    * AudioStreamPlayer3D.**play()**（効果音を鳴らす）
+  * [**_physics_process**](https://docs.godotengine.org/en/latest/classes/class_mainloop.html?highlight=_physics_process#class-mainloop-method-physics-process) 時の処理（RollOver時の色変更）  
+    * MeshInstance3D.**get_surface_override_material(0)**
+    * StandardMaterial3D.**set_albedo(Color(〇,〇,〇,1))**
+    * MeshInstance3D.**set_surface_override_material(0, StandardMaterial3D)**
 ```gdscript
 # main.gd
 extends Node3D
