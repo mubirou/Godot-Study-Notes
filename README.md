@@ -3147,6 +3147,17 @@ Main（Node3D）
 
 #### 👉 Godot の作業  
 1. [レーザーポインター](#220704)の準備   
+1. 「選択するオブジェクト」に [**Label3D**](https://docs.godotengine.org/en/latest/classes/class_label3d.html?highlight=Label3D#label3d) を追加し以下の通りに設定  
+    * [**Text**]
+      * [**Modulate**]：**#ffffff**
+      * [**Outline Modulate**]：**#000000cc**
+      * [**Text**]：〇〇（ボタン名）
+      * [**Font**]：**Oswald-Regular.ttf**（上記参照）
+      * [**Font Size**]：85（任意）
+      * [**Outline Size**]：8（Font Sizeの1/10程度）
+    * [**Transform**]  
+      * [**Position**]：x 0、y 0、z 0.61（**ボタンの厚さ+💡0.01**）
+      * [**Scale**]：**x 0.1**、**y 0.1**、**z 0.1**
 1. 「選択するオブジェクト」を以下の構造に変更  
   ***
   Main（[Node3D](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=Node3D#node3d)）   
