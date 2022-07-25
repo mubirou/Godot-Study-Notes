@@ -3156,8 +3156,9 @@ Main（Node3D）
 1. 「サイズ変更時の中心点」である [**Blue_Center**] の [**Transform**] の値を以下の通りに変更  
     * **Position**：x -0.5、y 0.5、z -2（**表示したい位置**）  
 1. 「ボタンの見た目」である [**Blue**] の [**Transform**] の値を以下の通りに変更  
-    * **Position**：x 0、y 0、**z -0.03**（💡**ボタンの厚さの-1/2**）
+    * **Position**：x 0、y 0、**z 0.03**（💡**ボタンの厚さの1/2**）
     * **Scale**：x 0.3、y 0.3、**z 0.06**（**ボタンの厚さ**）
+1. 同様に全てのボタンを設定  
 
 
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 42.0、Quest Link、Oculusアプリ  
