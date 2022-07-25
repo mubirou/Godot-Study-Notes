@@ -3264,9 +3264,10 @@ func changeColor(_bool):
     print(_theMaterial.get_albedo())
 ```
 
+デモファイル：[Button.zip](https://github.com/mubirou/Godot/blob/main/zip/Button.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：2022年07月XX日  
+作成日：2022年07月25日  
 [[TOP]](#TOP)
 
 
