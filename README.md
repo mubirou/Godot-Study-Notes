@@ -3134,8 +3134,6 @@ Main（Node3D）
 <a id="220716"></a>
 # <b>ボタン</b>
 
-### この項目は書きかけです
-
 #### 👉 フォントの用意  
 1. [Google Fonts（Oswald）](https://fonts.google.com/specimen/Oswald) 等をダウンロード  
 1. プロジェクトフォルダに保存  
