@@ -3138,8 +3138,8 @@ Main（Node3D）
 #### 👉 効果音の用意  
 1. [無料効果音](https://taira-komori.jpn.org/game01.html) 等からダウンロード（.mp3）  
 1. [Sound Forge Pro](https://www.sourcenext.com/product/vegas/sound/soundforge-pro/) で長さを調整し以下の設定でプロジェクトフォルダに保存  
-* ファイルの種類：**Wave(Microsoft)(*.wav)**
-* テンプレート：**44.100Hz, 16ビット, ステレオ, PCM(*)**
+    * ファイルの種類：**Wave(Microsoft)(*.wav)**
+    * テンプレート：**44.100Hz, 16ビット, ステレオ, PCM(*)**
 
 #### 👉 フォントの用意  
 1. [Google Fonts（Oswald）](https://fonts.google.com/specimen/Oswald) 等をダウンロード  
