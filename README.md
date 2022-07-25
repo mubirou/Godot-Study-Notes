@@ -3154,7 +3154,7 @@ Main（Node3D）
   　│　　└ [StaticBody3D](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d)  
   　│　　　└ [CollisionShape3D](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d)（反応する領域）  
   　└ [Label3D](https://docs.godotengine.org/en/latest/classes/class_label3d.html?highlight=Label3D#label3d)（表示する文字）  
-1. なお [**Label3D**](https://docs.godotengine.org/en/latest/classes/class_label3d.html?highlight=Label3D#label3d) をは以下の通りに設定  
+1. なお [**Label3D**](https://docs.godotengine.org/en/latest/classes/class_label3d.html?highlight=Label3D#label3d) は以下の通りに設定  
     * [**Text**]
       * [**Modulate**]：**#ffffff**
       * [**Outline Modulate**]：**#000000cc**
