@@ -3181,10 +3181,13 @@ Main（Node3D）
 #### 👉 コードの記述    
 1. [**レーザーポインター**](#220704)の[**コード**](#code220704)を開く  
 1. 修正箇所のポイントは次の通り    
-    * [**AudioStreamPlayer3D**](https://docs.godotengine.org/en/latest/classes/class_audiostreamplayer3d.html?highlight=AudioStreamPlayer3D#audiostreamplayer3d) 関連  
-      * get_node("〇〇")
+    * [**AudioStreamPlayer3D**](https://docs.godotengine.org/en/latest/classes/class_audiostreamplayer3d.html?highlight=AudioStreamPlayer3D#audiostreamplayer3d) ノードの取得  
+      * get_node("SE1")
       * AudioStreamPlayer3D.play()
-    * XXXX
+    * [**button_pressed**](https://docs.godotengine.org/en/latest/classes/class_xrcontroller3d.html?highlight=xrcontroller#xrcontroller3d) 時の処理  
+      * Node3D.scale.z = 0.7
+    * [**button_released**](https://docs.godotengine.org/en/latest/classes/class_xrcontroller3d.html?highlight=xrcontroller#xrcontroller3d) 時の処理  
+      * Node3D.scale.z = 0.7
 ```gdscript
 # main.gd
 extends Node3D
