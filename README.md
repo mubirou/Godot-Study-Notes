@@ -3153,9 +3153,9 @@ Main（Node3D）
   　　└ Blue（[**MeshInstance3D**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=MeshInstance3D#meshinstance3d)）（ボタンの見た目）   
   　　　└ [**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d)  
   　　　　└ [**CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d)（反応する領域）
-1. 「サイズ変更時の中心点」である [Blue_Center] の値を以下の通りに変更  
-    * XXXX
-    * XXXX
+1. 「サイズ変更時の中心点」である [**Blue_Center**] の [**Transform**] の値を以下の通りに変更  
+* **Position**：x -0.5、y 0.5、z -2（表示したい位置）  
+* XXXX
 1. 「ボタンの見た目」である [Blue] の値を以下の通りに変更  
 
 
