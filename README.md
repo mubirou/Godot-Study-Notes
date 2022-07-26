@@ -3244,32 +3244,37 @@ func changeColor(_bool):
 1. [VRコントローラーの入力イベント](#220703) と同様に…    
   [**XRController3D_Right**] を選択し [**ノード**] タブを選ぶ
 1. [ノード]-[**XRcontroller3D**]-[**input_axis_changed(name: String, value: Vector2)**] を選択し [右クリック]-[**接続**]
-
-*** 
-1. VR コンテンツ開発の [諸準備](#220501) をする
-1. [[FPController](#220502)]-[[LeftHandController](#220502)]（または[[RightHandController](#220502)]）に
-アタッチされている [**controller.gd**] に以下の内容を記述
+1. 以下はデモファイルのサンプルコード  
 ```gdscript
-extends ARVRController
+# main.gd
+extends Node3D
 
-func _process(delta):
-  if is_button_pressed(12): # 親指スティックにタッチ（オプション）
-    # 親指スティックの左右（-1.0...1.0）
-    var _levelLR = get_joystick_axis(0)
+var _interface : XRInterface
+var _plate
+var _arrow
 
-    # 親指スティックの上下（+1.0...-1.0）
-    var _levelTB = get_joystick_axis(1)
+func _ready():
+	_interface = XRServer.find_interface("OpenXR")
+	if _interface and _interface.is_initialized():
+		var _viewport : Viewport = get_viewport()
+		_viewport.use_xr = true
+	_plate = get_node("Node3D/plate")
+	_arrow = get_node("Node3D/plate/Sprite3D")
 
-    # 右親指スティックの角度（弧度法）
-    var _radianJoyStick = atan2(_levelTB, _levelLR)
+func _on_xr_controller_3d_right_button_pressed(name):
+	print("Pressed: " + name)
+	
+func _on_xr_controller_3d_right_button_released(name):
+	print("Released: " + name)
 
-    # 右親指スティックの角度（度数法）
-    var _degreeJoyStick = rad2deg(_radianJoyStick)
-
-    if get_controller_id() == 1:
-      print("L: " + str(_degreeJoyStick)) # +180...-180
-    elif get_controller_id() == 2:
-      print("R: " + str(_degreeJoyStick)) # +180...-180
+func _on_xr_controller_3d_right_input_axis_changed(name, value):		
+	var _radianJoyStick = atan2(value.x, value.y)
+	var _degreeJoyStick = rad2deg(_radianJoyStick)
+	if _radianJoyStick != 0:
+		_arrow.visible = true
+		_plate.rotation.y = -_radianJoyStick
+	else:
+		_arrow.visible = false
 ```
 
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_arvrcontroller.html#class-arvrcontroller-method-get-joystick-axis)  
