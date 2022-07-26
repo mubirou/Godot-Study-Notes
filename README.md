@@ -3255,26 +3255,26 @@ var _arrow
 
 func _ready():
   _interface = XRServer.find_interface("OpenXR")
-	if _interface and _interface.is_initialized():
-		var _viewport : Viewport = get_viewport()
-		_viewport.use_xr = true
-	_plate = get_node("Node3D/plate")
-	_arrow = get_node("Node3D/plate/Sprite3D")
+  if _interface and _interface.is_initialized():
+    var _viewport : Viewport = get_viewport()
+    _viewport.use_xr = true
+  _plate = get_node("Node3D/plate")
+  _arrow = get_node("Node3D/plate/Sprite3D")
 
 func _on_xr_controller_3d_right_button_pressed(name):
-	print("Pressed: " + name)
-	
+  print("Pressed: " + name)
+
 func _on_xr_controller_3d_right_button_released(name):
-	print("Released: " + name)
+  print("Released: " + name)
 
 func _on_xr_controller_3d_right_input_axis_changed(name, value):
-	var _radianJoyStick = atan2(value.x, value.y)
-	var _degreeJoyStick = rad2deg(_radianJoyStick)
-	if _radianJoyStick != 0:
-		_arrow.visible = true
-		_plate.rotation.y = -_radianJoyStick
-	else:
-		_arrow.visible = false
+  var _radianJoyStick = atan2(value.x, value.y)
+  var _degreeJoyStick = rad2deg(_radianJoyStick)
+  if _radianJoyStick != 0:
+    _arrow.visible = true
+    _plate.rotation.y = -_radianJoyStick
+  else:
+    _arrow.visible = false
 ```
 
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_arvrcontroller.html#class-arvrcontroller-method-get-joystick-axis)  
