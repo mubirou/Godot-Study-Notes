@@ -3246,9 +3246,11 @@ func changeColor(_bool):
 1. [ノード]-[**XRcontroller3D**]-[**input_axis_changed(name: String, value: Vector2)**] を選択し [右クリック]-[**接続...**]（大元のNode3Dにアタッチされたスクリプト＝ **main.gd** に接続）  
 1. コードのポイントは次の通り
 ```gdscript
-func _on_xr_controller_3d_right_input_axis_changed(name, value):
-  var _radianJoyStick = atan2(value.x, value.y) # 弧度法
-  var _degreeJoyStick = rad2deg(_radianJoyStick) # 度数法
+func _〇〇_input_axis_changed(name, value):
+  # 弧度法
+  var _radianJoyStick = atan2(value.x, value.y)
+  # 度数法
+  var _degreeJoyStick = rad2deg(_radianJoyStick)
 ```
 1. 以下はデモファイルのサンプルコード  
 ```gdscript
