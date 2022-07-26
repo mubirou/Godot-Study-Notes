@@ -3237,8 +3237,6 @@ func changeColor(_bool):
 <a id="220608"></a>
 # <b>ジョイスティック角度</b>
 
-### この項目は書きかけです  
-
 1. [VRコントローラーの入力イベント](#220703)のデモファイル（[vr_controller_events.zip](https://github.com/mubirou/Godot/blob/main/zip/vr_controller_events.zip)）を開く 
 
 1. [VRコントローラーの入力イベント](#220703) と同様に…    
