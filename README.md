@@ -3285,7 +3285,7 @@ func _on_xr_controller_3d_right_input_axis_changed(name, value):
 ```
 
 デモファイル：[JoystickAngle.zip](https://github.com/mubirou/Godot/blob/main/zip/JoystickAngle.zip)  
-参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_arvrcontroller.html#class-arvrcontroller-method-get-joystick-axis)  
+参考：[GODOT DOCS](https://docs.godotengine.org/en/latest/classes/class_xrcontroller3d.html?highlight=axis_changed#signals)  
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月11日  
