@@ -3239,7 +3239,12 @@ func changeColor(_bool):
 
 ### この項目は書きかけです  
 
-1. [VRコントローラーの入力イベント](#220703)のデモファイル（[vr_controller_events.zip](https://github.com/mubirou/Godot/blob/main/zip/vr_controller_events.zip)）を開く  
+1. [VRコントローラーの入力イベント](#220703)のデモファイル（[vr_controller_events.zip](https://github.com/mubirou/Godot/blob/main/zip/vr_controller_events.zip)）を開く 
+
+1. [VRコントローラーの入力イベント](#220703) と同様に…    
+  [**XRController3D_Right**] を選択し [**ノード**] タブを選ぶ
+1. [ノード]-[**XRcontroller3D**]-[**button_pressed(name:String)**] を選択し [右クリック]-[**接続**]
+
 *** 
 1. VR コンテンツ開発の [諸準備](#220501) をする
 1. [[FPController](#220502)]-[[LeftHandController](#220502)]（または[[RightHandController](#220502)]）に
