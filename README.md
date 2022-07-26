@@ -3243,7 +3243,13 @@ func changeColor(_bool):
 
 1. [VRコントローラーの入力イベント](#220703) と同様に…    
   [**XRController3D_Right**] を選択し [**ノード**] タブを選ぶ
-1. [ノード]-[**XRcontroller3D**]-[**input_axis_changed(name: String, value: Vector2)**] を選択し [右クリック]-[**接続**]
+1. [ノード]-[**XRcontroller3D**]-[**input_axis_changed(name: String, value: Vector2)**] を選択し [右クリック]-[**接続...**]（大元のNode3Dにアタッチされたスクリプト＝ **main.gd** に接続）  
+1. コードのポイントは次の通り
+```gdscript
+func _on_xr_controller_3d_right_input_axis_changed(name, value):
+  var _radianJoyStick = atan2(value.x, value.y) # 弧度法
+  var _degreeJoyStick = rad2deg(_radianJoyStick) # 度数法
+```
 1. 以下はデモファイルのサンプルコード  
 ```gdscript
 # main.gd
@@ -3269,7 +3275,6 @@ func _on_xr_controller_3d_right_button_released(name):
 
 func _on_xr_controller_3d_right_input_axis_changed(name, value):
   var _radianJoyStick = atan2(value.x, value.y)
-  var _degreeJoyStick = rad2deg(_radianJoyStick)
   if _radianJoyStick != 0:
     _arrow.visible = true
     _plate.rotation.y = -_radianJoyStick
@@ -3277,11 +3282,12 @@ func _on_xr_controller_3d_right_input_axis_changed(name, value):
     _arrow.visible = false
 ```
 
+デモファイル：[JoystickAngle.zip](https://github.com/mubirou/Godot/blob/main/zip/JoystickAngle.zip)  
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_arvrcontroller.html#class-arvrcontroller-method-get-joystick-axis)  
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月11日  
-更新日：2022年07月XX日  
+更新日：2022年07月27日 Godot 4.0 対応  
 [[TOP]](#TOP)
 
 
