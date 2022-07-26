@@ -3259,13 +3259,14 @@ func changeColor(_bool):
     _theMaterial.set_albedo(_theMaterial.get_albedo()*4/3) # RollOver
   else:
     _theMaterial.set_albedo(_theMaterial.get_albedo()*3/4) # RollOut
-    print(_theMaterial.get_albedo())
 ```
 
 デモファイル：[Button.zip](https://github.com/mubirou/Godot/blob/main/zip/Button.zip)  
+デモファイル２：[Button_MultiPose.zip](https://github.com/mubirou/Godot/blob/main/zip/Button_MultiPose.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月25日  
+更新日：2022年07月26日 デモファイル２を追加  
 [[TOP]](#TOP)
 
 
