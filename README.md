@@ -3244,7 +3244,7 @@ func changeColor(_bool):
 1. [VRコントローラーの入力イベント](#220703) と同様に…    
   [**XRController3D_Right**] を選択し [**ノード**] タブを選ぶ
 1. [ノード]-[**XRcontroller3D**]-[**input_axis_changed(name: String, value: Vector2)**] を選択し [右クリック]-[**接続...**]（大元のNode3Dにアタッチされたスクリプト＝ **main.gd** に接続）  
-1. コードのポイントは次の通り
+1. コードのポイントは次の通り  
 ```gdscript
 func _〇〇_input_axis_changed(name, value):
   # 弧度法
