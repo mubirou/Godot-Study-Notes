@@ -3294,14 +3294,12 @@ func _on_xr_controller_3d_right_input_axis_changed(name, value):
 <a id="220717"></a>
 # <b>トリガー量</b>
 
-### この項目は書きかけです  
-
 1. [VRコントローラーの入力イベント](#220703)のデモファイル（[vr_controller_events.zip](https://github.com/mubirou/Godot/blob/main/zip/vr_controller_events.zip)）を開く 
 
 1. [VRコントローラーの入力イベント](#220703) と同様に…    
   [**XRController3D_Right**] を選択し [**ノード**] タブを選ぶ
 1. [ノード]-[**XRcontroller3D**]-[**input_value_changed(name: String, value: float)**] を選択し [右クリック]-[**接続...**]（大元のNode3Dにアタッチされたスクリプト＝ **main.gd** に接続）  
-1. コードを書き換える  
+1. コードを変更（**_〇_input_value_changed()**部分） 
 ```gdscript
 # main.gd
 extends Node3D
@@ -3315,15 +3313,16 @@ func _ready():
     _viewport.use_xr = true
 
 func _on_xr_controller_3d_right_input_value_changed(name, value):
-  print(name + ": " + str(value))
+  print(name + " : " + str(value))
 ```
 * 取得値  
-**trigger**: **0～1.0**（少数点第14位まで取得）  
-**grip**: **0～1.0**（ 〃 ）  
+**trigger** : **0～1.0**（少数点第14位まで取得）  
+**grip** : **0～1.0**（ 〃 ）  
 
+デモファイル：[TriggerAmount.zip](https://github.com/mubirou/Godot/blob/main/zip/TriggerAmount.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-更新日：2022年07月XX日  
+更新日：2022年07月27日  
 [[TOP]](#TOP)
 
 <a id="XXXXX"></a>
