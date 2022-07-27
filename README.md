@@ -3300,10 +3300,26 @@ func _on_xr_controller_3d_right_input_axis_changed(name, value):
 
 1. [VRコントローラーの入力イベント](#220703) と同様に…    
   [**XRController3D_Right**] を選択し [**ノード**] タブを選ぶ
-1. [ノード]-[**XRcontroller3D**]-[**input_axis_changed(name: String, value: Vector2)**] を選択し [右クリック]-[**接続...**]（大元のNode3Dにアタッチされたスクリプト＝ **main.gd** に接続）  
-* コードのポイントは次の通り  
+1. [ノード]-[**XRcontroller3D**]-[**input_value_changed(name: String, value: float)**] を選択し [右クリック]-[**接続...**]（大元のNode3Dにアタッチされたスクリプト＝ **main.gd** に接続）  
+1. コードを書き換える  
 ```gdscript
+# main.gd
+extends Node3D
+
+var _interface : XRInterface
+
+func _ready():
+  _interface = XRServer.find_interface("OpenXR")
+  if _interface and _interface.is_initialized():
+    var _viewport : Viewport = get_viewport()
+    _viewport.use_xr = true
+
+func _on_xr_controller_3d_right_input_value_changed(name, value):
+  print(name + ": " + str(value))
 ```
+* 取得値
+**trigger**: **0～1.0**（少数点第14位まで取得）  
+**grip**: **0～1.0**（ 〃 ）  
 
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
