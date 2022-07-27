@@ -3317,7 +3317,7 @@ func _ready():
 func _on_xr_controller_3d_right_input_value_changed(name, value):
   print(name + ": " + str(value))
 ```
-* 取得値
+* 取得値  
 **trigger**: **0～1.0**（少数点第14位まで取得）  
 **grip**: **0～1.0**（ 〃 ）  
 
