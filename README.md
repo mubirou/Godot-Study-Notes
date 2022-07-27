@@ -3299,7 +3299,7 @@ func _on_xr_controller_3d_right_input_axis_changed(name, value):
 1. [VRコントローラーの入力イベント](#220703) と同様に…    
   [**XRController3D_Right**] を選択し [**ノード**] タブを選ぶ
 1. [ノード]-[**XRcontroller3D**]-[**input_value_changed(name: String, value: float)**] を選択し [右クリック]-[**接続...**]（大元のNode3Dにアタッチされたスクリプト＝ **main.gd** に接続）  
-1. コードを変更（**_〇_input_value_changed()**部分） 
+1. コードを変更（**_〇_input_value_changed()** 部分） 
 ```gdscript
 # main.gd
 extends Node3D
