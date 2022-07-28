@@ -3310,7 +3310,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 
 👉 [**Camera3D**](https://docs.godotengine.org/en/latest/classes/class_camera3d.html?highlight=Camera3D#camera3d) の用意
 
-1. [**SubViewport] を選択し [子ノードを追加]-[**Camera3D**] を選択
+1. [**SubViewport**] を選択し [子ノードを追加]-[**Camera3D**] を選択
 1. [**Camera3D**]-[インスペクター] で各種設定  
     * **Fov**（視野角）：1～179（初期値75°）
     * [**Transform**]  
