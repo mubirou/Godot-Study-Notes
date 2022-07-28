@@ -3253,7 +3253,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 
 1. 大元の **Node3D** に [**Sprite3D**] を追加
 1. [**Sprite3D**]-[インスペクター] で各種設定  
-    * **Translation**：x 1.75、y 1、z -2（ディスプレイの表示位置）
+    * **Translation**：x 1.75、y 1、z -2（ディスプレイ表示位置）
     * **Rotation**：x 0、y -40、z 0（ディスプレイの角度）
     * **Scale**：**0.25**、**0.25**、1（ピクセルアスペクト比･サイズ調整）
 
