@@ -3307,7 +3307,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 
 1. [無料動画素材](https://www.studio-lab01.com/freebies/)などで映像を準備  
 1. [Convertio](https://convertio.co/ja/) などで [**OGV（.ogv）**](https://www.theora.org/) に変換  
- ⚠**注意**：[**サポートされている再生形式**](https://docs.godotengine.org/en/latest/tutorials/animation/playing_videos.html?）highlight=Video#supported-playback-formats)
+ **注意**：[**サポートされている再生形式**](https://docs.godotengine.org/en/latest/tutorials/animation/playing_videos.html?）highlight=Video#supported-playback-formats)
 1. 上記 **.ogv** ファイルを Godot プロジェクトフォルダに置く  
 
 ### 👉 [**Sprite3D**](https://docs.godotengine.org/en/latest/classes/class_sprite3d.html?highlight=Sprite3D#sprite3d) の用意  
