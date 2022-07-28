@@ -3332,8 +3332,6 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 
 ### 項目は書きかけです  
 
-本来は [Godot Blender Exporter](https://docs.godotengine.org/ja/stable/tutorials/assets_pipeline/escn_exporter/index.html#blender-escn-exporter) など最適解があるようですが、バージョンの関連の問題があり、とりあえず成功した方法をレポートします（今後要検証）。  
-
 ### 👉 [Blender](https://www.blender.org/) の作業
 
 1. 書き出したいオブジェクト（階層内全て含む）を選択
