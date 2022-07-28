@@ -3249,7 +3249,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 # <b>Picture-in-Picture</b>
 カメラの映像を空間上に表示する  
 
-👉 [**Sprite3D**](https://docs.godotengine.org/en/latest/classes/class_sprite3d.html?highlight=Sprite3D#sprite3d) の用意  
+### 👉 [**Sprite3D**](https://docs.godotengine.org/en/latest/classes/class_sprite3d.html?highlight=Sprite3D#sprite3d) の用意  
 
 1. 大元の **Node3D** に [**Sprite3D**] を追加
 1. [**Sprite3D**]-[インスペクター] で各種設定  
@@ -3257,7 +3257,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
     * **Rotation**：x 0、y -40、z 0（ディスプレイの角度）
     * **Scale**：0.25、0.25、1（ピクセルアスペクト比･サイズ調整）
 
-👉 [**SubViewport**](https://docs.godotengine.org/en/latest/classes/class_subviewport.html?highlight=SubViewport#subviewport) の用意  
+### 👉 [**SubViewport**](https://docs.godotengine.org/en/latest/classes/class_subviewport.html?highlight=SubViewport#subviewport) の用意  
 
 1. [**Sprite3D**] を選択し [子ノードを追加]-[**SubViewport**] を選択
 1. [**Sprite3D**]-[インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **SubViewport** を選択
@@ -3265,7 +3265,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
     * Size：**x 640**、**y 360**（カメラの映像サイズ）  
     * Render Target：**When Parent Visible**
 
-👉 [**Camera3D**](https://docs.godotengine.org/en/latest/classes/class_camera3d.html?highlight=Camera3D#camera3d) の用意
+### 👉 [**Camera3D**](https://docs.godotengine.org/en/latest/classes/class_camera3d.html?highlight=Camera3D#camera3d) の用意
 
 1. [**SubViewport**] を選択し [子ノードを追加]-[**Camera3D**] を選択
 1. [**Camera3D**]-[インスペクター] で各種設定  
@@ -3274,12 +3274,12 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
       * **Position**：x -1、y 0.9、z -1（カメラの位置）
       * **Rotation**：x 0、y -65、z 0（カメラの角度）
 
-👉 **Camera3D** の可視化  
+### 👉 **Camera3D** の可視化  
 
 1. [**Camera3D**] の下層に 3D オブジェクト（.glb）を配置
 1. [**Camera3D**]-[インスペクター]-[**Transform**] で位置･角度･スケールを調整
 
-👉 ディスプレイ（本体）の可視化  
+### 👉 ディスプレイ（本体）の可視化  
 
 1. [**Sprite3D**] の下層に 3D オブジェクトを配置
 1. [インスペクター]-[**Transform**] で位置･スケールを調整  
@@ -3305,12 +3305,14 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 
 ### この項目は書きかけです  
 
-👉 動画ファイルの準備（参考：[GODOT DOCS](https://docs.godotengine.org/en/latest/classes/class_videostreamplayer.html#class-videostreamplayer)）
+### 👉 動画ファイルの準備（参考：[GODOT DOCS](https://docs.godotengine.org/en/latest/classes/class_videostreamplayer.html#class-videostreamplayer)）
 
 1. [無料動画素材](https://www.studio-lab01.com/freebies/)などで映像を準備  
 1. [Convertio](https://convertio.co/ja/) などで [**OGV（.ogv）**](https://www.theora.org/) に変換  
   参考：[**サポートされている再生形式**](https://docs.godotengine.org/en/latest/tutorials/animation/playing_videos.html?）highlight=Video#supported-playback-formats)
 1. Godot プロジェクトフォルダに置く  
+
+### 👉 
 
 📝 動画ファイルの用意（参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_videoplayer.html?highlight=Video#videoplayer)）  
 
