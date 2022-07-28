@@ -3346,10 +3346,10 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 1. Oculus Linkの動作要件を満たすスペックのPC
 1. PCとWi-FiルーターがLANケーブルで接続されている（有線接続である）こと
 
-実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月05日  
-更新日：2022年07月29日  Godot 4.0 対応
+更新日：2022年07月29日  Godot 4.0 対応  
 [[TOP]](#TOP)
 
 
