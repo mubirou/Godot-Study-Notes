@@ -3340,7 +3340,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
   * Godot の [▶] を押して Quest + Godot が同時再生されれば成功！
 
 ### 📝 [接続要件](https://www.moguravr.com/oculus-air-link/)  
-1．Oculus Air Linkの有効範囲：Wi-Fiルーターから20フィート（約6m）以内
+1. Oculus Air Linkの有効範囲：Wi-Fiルーターから20フィート（約6m）以内
 1. ルーターの設置場所：ヘッドセットと直線上で遮るものがなく、床から1m以上の高さ
 1. Wi-Fiの帯域：5GHz（acもしくはax）
 1. Oculus Linkの動作要件を満たすスペックのPC
