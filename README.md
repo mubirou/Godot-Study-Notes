@@ -3291,6 +3291,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 
 <a id="220613"></a>
 # <b>Picture-in-Picture</b>
+カメラの映像を空間上に表示する  
 
 ### この項目は書きかけです  
 
