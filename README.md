@@ -3330,7 +3330,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 
 1. [**SubViewport**] を選び [子ノードを追加]-[**VideoStreamPlayer**] を選択
 1. [**VideoStreamPlayer**]-[インスペクター] で各種設定  
-    * [**Stream**]：（上記の **.ogv** ファイルをドラッグ＆ドロップ）  
+    * [**Stream**]：（**.ogv**ファイルをドラッグ＆ドロップ）  
     * **Autoplay**：**✓**
 
 （階層は以下の通り）  
