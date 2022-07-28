@@ -3255,7 +3255,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 1. [**Sprite3D**]-[インスペクター] で各種設定  
     * **Translation**：x 1.75、y 1、z -2（ディスプレイの表示位置）
     * **Rotation**：x 0、y -40、z 0（ディスプレイの角度）
-    * **Scale**：0.25、0.25、1（ピクセルアスペクト比･サイズ調整）
+    * **Scale**：**0.25**、**0.25**、1（ピクセルアスペクト比･サイズ調整）
 
 ### 👉 [**SubViewport**](https://docs.godotengine.org/en/latest/classes/class_subviewport.html?highlight=SubViewport#subviewport) の用意  
 
@@ -3303,8 +3303,6 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 <a id="220602"></a>
 # <b>動画再生</b>
 
-### この項目は書きかけです  
-
 ### 👉 動画ファイルの準備  
 
 1. [無料動画素材](https://www.studio-lab01.com/freebies/)などで映像を準備  
@@ -3312,40 +3310,33 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
   参考：[**サポートされている再生形式**](https://docs.godotengine.org/en/latest/tutorials/animation/playing_videos.html?）highlight=Video#supported-playback-formats)
 1. 上記 **.ogv** ファイルを Godot プロジェクトフォルダに置く  
 
-### 👉 
+### 👉 [**Sprite3D**](https://docs.godotengine.org/en/latest/classes/class_sprite3d.html?highlight=Sprite3D#sprite3d) の用意  
 
-📝 動画ファイルの用意（参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_videoplayer.html?highlight=Video#videoplayer)）  
+1. 大元の **Node3D** に [**Sprite3D**] を追加
+1. [**Sprite3D**]-[インスペクター] で各種設定  
+    * **Translation**：x 0、y 1.5、z -3（ディスプレイの表示位置）
+    * **Rotation**：x 0、y 0、z 0（ディスプレイの角度）
+    * **Scale**：**0.25**、**0.25**、1（ピクセルアスペクト比･サイズ調整）
 
-1. [Convertio](https://convertio.co/ja/) などで [.webm](https://www.webmproject.org/) または [.ogv](https://www.theora.org/) に変換
-1. project.godot と同階層に上記ファイルを置く  
+### 👉 [**SubViewport**](https://docs.godotengine.org/en/latest/classes/class_subviewport.html?highlight=SubViewport#subviewport) の用意  
 
-📝 [Sprite3D](https://docs.godotengine.org/ja/stable/classes/class_sprite3d.html#sprite3d) の用意  
+1. [**Sprite3D**] を選択し [子ノードを追加]-[**SubViewport**] を選択
+1. [**Sprite3D**]-[インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **SubViewport** を選択
+1. [**SubViewport**]-[インスペクター] を設定  
+    * Size：**x 854**、**y 360**（映像も元サイズ）  
+    * Render Target：**When Parent Visible**
 
-1. [シーン]-[＋]-[**Sprite3D**] を選択
-1. Sprite3D] を選択し [インスペクター] で各種設定  
-    * **Flip V**：**✓**（上下反転）
-    * **Translation**：x 0、**y 1**、**z -3**（スクリーン表示位置）
-    * **Scale**：**0.25**、**0.25**、1（ピクセルアスペクト比･表示サイズ）
+### 👉 [**VideoStreamPlayer**](https://docs.godotengine.org/en/latest/classes/class_videostreamplayer.html?highlight=VideoStreamPlayer#videostreamplayer) の用意
 
-📝 [Viewport](https://docs.godotengine.org/ja/stable/classes/class_viewport.html?highlight=Viewport#viewport) の用意  
-
-1. Sprite3D を選択し [子ノードを追加]-[**Viewport**] を選択
-1. Sprite3D を選択し [インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **Viewport** を選択
-1. Viewport を選択し [インスペクター] を設定  
-    * Size：**x 1920**、**y 1080**（動画の元サイズ）  
-
-📝 [VideoPlayer](https://docs.godotengine.org/ja/stable/classes/class_videoplayer.html?highlight=Video#videoplayer) の用意
-
-1. Viewport を選択し [子ノードを追加]-[**VideoPlayer**] を選択
-1. VideoPlayer に上記の **.webm** ファイル等をドラッグ＆ドロップ
-1. VideoPlayer を選択し [インスペクター] を設定
+1. [**SubViewport**] を選択し [子ノードを追加]-[**VideoStreamPlayer**] を選択
+1. [**VideoStreamPlayer**]-[インスペクター] で各種設定  
+    * [**Stream**]：（上記の **.ogv** ファイルをドラッグ＆ドロップ）  
     * **Autoplay**：**✓**
-    * **Margin**：**Right 1920**、**Buttom 1080**（動画の元サイズ）  
 
 （階層は以下の通り）  
-　  ├ **Sprite3D**  
-　  │   └ **Viewport**  
-　  │　　 └ **VideoPlayer**  
+　├ **Sprite3D**（ディスプレイ表示位置･映像サイズ調整）  
+　│　└ **SubViewport**（映像サイズ）  
+　│　　└ **VideoStreamPlayer**（.ogv を指定）  
 
 参考：[Picture-in-Picture](#220613)  
 参考：[GODOT DOCS](https://docs.godotengine.org/en/latest/classes/class_videostreamplayer.html#class-videostreamplayer)  
