@@ -3318,9 +3318,9 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
     * **Rotation Degrees**：任意（カメラの角度）
 
 （階層は以下の通り）  
-　├ **Sprite3D**  
-　│　└ **SubViewport**  
-　│　　└ **Camera3D**  
+　├ **Sprite3D**（表示位置･映像サイズ調整）  
+　│　└ **SubViewport**（映像サイズ）  
+　│　　└ **Camera3D**（カメラ位置･画角）  
 　│　　　└ **MeshInstance3D**（Camera3Dの可視化）  
 
 参考：[動画再生](#220602)  
