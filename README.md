@@ -3334,7 +3334,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 
 本来は [Godot Blender Exporter](https://docs.godotengine.org/ja/stable/tutorials/assets_pipeline/escn_exporter/index.html#blender-escn-exporter) など最適解があるようですが、バージョンの関連の問題があり、とりあえず成功した方法をレポートします（今後要検証）。  
 
-📝 Blender の作業
+### 👉 [Blender](https://www.blender.org/) の作業
 
 1. [Blender] 上で書き出したいオブジェクトを選択
 1. [ファイル]-[エクスポート]-[Wavefront(**.obj**)] を選択し [**選択物のみ**] を **✓**  
