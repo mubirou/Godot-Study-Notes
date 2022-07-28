@@ -3322,8 +3322,6 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 <a id="220604"></a>
 # <b>Oculus Air Link</b>
 
-### この項目は書きかけです  
-
 ### 👉 **Oculus アプリ**の用意  
   1. Windows 上で [oculus.com/setup](https://www.oculus.com/setup/) から [OCULUS QUEST]（初代の場合）の [**ソフトウェアをダウンロード**] を選択  
     【注意】"**Quest 2**"の場合は [QUEST 2] の [QUEST2 PCアプリをダウンロード] を選択します
