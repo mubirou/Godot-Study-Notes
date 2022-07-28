@@ -3345,9 +3345,10 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 
 ### 👉 Godot の作業
 
-1. [ファイルシステム] 内に生成された **.obj** をステージ上にドラッグ＆ドロップ（注意：[シーン] へのドラッグ＆ドロップは不可）
-1. 配置したオブジェクトの [インスペクター]-[Transform]-[**Translation**] や [**Scale**] を設定（任意）
-1. 引続き [インスペクター]-[**Mesh**]-[編集] を選択し、適用されている各 [**Surface 〇**]-[**Material**]-[編集]-[**Metallic**]-[Metallic] を「**0**」に変更（デフォルトは若干暗い為）
+1. [ファイルシステム] 内に表示される **.glb** を [シーン] の任意のノード上にドラッグ＆ドロップ
+1. 配置したオブジェクトの [インスペクター] で位置やスケールを調整
+1. [シーン] 上で上記のオブジェクトを選択し [右クリック]-[**編集可能な子**] を選択
+1. 表示された階層から [**MeshInstance3D**] を選択し [インスペクター]-[**Geometry**]-[**LOD Bias**] を調整（[**Level Of Detail**](https://docs.unity3d.com/ja/2018.4/Manual/LevelOfDetail.html)）
 
 参考：[Blender（階層構造）to Godot](#220615)  
 実行環境：Windows 10、Godot 4.0 alpha 13、Blender 3.2.1  
