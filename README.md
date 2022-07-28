@@ -3338,6 +3338,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 　│　└ **SubViewport**（映像サイズ）  
 　│　　└ **VideoStreamPlayer**（.ogv を指定）  
 
+デモファイル：[VideoPlayer.zip](https://github.com/mubirou/Godot/blob/main/zip/VideoPlayer.zip)  
 参考：[Picture-in-Picture](#220613)  
 参考：[GODOT DOCS](https://docs.godotengine.org/en/latest/classes/class_videostreamplayer.html#class-videostreamplayer)  
 実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2  
