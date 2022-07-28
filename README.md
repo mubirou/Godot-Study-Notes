@@ -3,12 +3,12 @@
 
 ### <b>index（Godot 3.4 対応）</b>
 
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [Blender to Godot](#220609) | [物理エンジン RigidBodyとStaticBody](#220610) | [移動の基本3種](#220611) | [衝突判定](#220612) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [青空](#220626) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [物理エンジン RigidBodyとStaticBody](#220610) | [移動の基本3種](#220611) | [衝突判定](#220612) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [青空](#220626) |
 ***
 
 ### **index（Godot 4.0 対応）**
 
-[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) |
+[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) |
 ***
 
 <a id="Androidビルド"></a>
@@ -1276,30 +1276,6 @@ VR コンテンツ開発の [諸準備](#220501) をする
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月10日  
-[[TOP]](#TOP)
-
-
-<a id="220609"></a>
-# <b>Blender to Godot</b>
-
-本来は [Godot Blender Exporter](https://docs.godotengine.org/ja/stable/tutorials/assets_pipeline/escn_exporter/index.html#blender-escn-exporter) など最適解があるようですが、バージョンの関連の問題があり、とりあえず成功した方法をレポートします（今後要検証）。  
-
-📝 Blender の作業
-
-1. [Blender] 上で書き出したいオブジェクトを選択
-1. [ファイル]-[エクスポート]-[Wavefront(**.obj**)] を選択し [**選択物のみ**] を **✓**  
-1. フォルダを Godot のプロジェクト内に指定し [OOBJのエクスポート] を選択
-
-📝 Godot の作業
-
-1. [ファイルシステム] 内に生成された **.obj** をステージ上にドラッグ＆ドロップ（注意：[シーン] へのドラッグ＆ドロップは不可）
-1. 配置したオブジェクトの [インスペクター]-[Transform]-[**Translation**] や [**Scale**] を設定（任意）
-1. 引続き [インスペクター]-[**Mesh**]-[編集] を選択し、適用されている各 [**Surface 〇**]-[**Material**]-[編集]-[**Metallic**]-[Metallic] を「**0**」に変更（デフォルトは若干暗い為）
-
-参考：[Blender（階層構造）to Godot](#220615)  
-実行環境：Windows 10、Godot 3.4.4、Blender 3.2.0  
-作成者：夢寐郎  
-作成日：2022年06月11日  
 [[TOP]](#TOP)
 
 
@@ -3348,6 +3324,33 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 作成者：夢寐郎  
 作成日：2022年06月05日  
 更新日：2022年07月29日  Godot 4.0 対応  
+[[TOP]](#TOP)
+
+
+<a id="220609"></a>
+# <b>Blender to Godot</b>
+
+### 項目は書きかけです  
+
+本来は [Godot Blender Exporter](https://docs.godotengine.org/ja/stable/tutorials/assets_pipeline/escn_exporter/index.html#blender-escn-exporter) など最適解があるようですが、バージョンの関連の問題があり、とりあえず成功した方法をレポートします（今後要検証）。  
+
+📝 Blender の作業
+
+1. [Blender] 上で書き出したいオブジェクトを選択
+1. [ファイル]-[エクスポート]-[Wavefront(**.obj**)] を選択し [**選択物のみ**] を **✓**  
+1. フォルダを Godot のプロジェクト内に指定し [OOBJのエクスポート] を選択
+
+📝 Godot の作業
+
+1. [ファイルシステム] 内に生成された **.obj** をステージ上にドラッグ＆ドロップ（注意：[シーン] へのドラッグ＆ドロップは不可）
+1. 配置したオブジェクトの [インスペクター]-[Transform]-[**Translation**] や [**Scale**] を設定（任意）
+1. 引続き [インスペクター]-[**Mesh**]-[編集] を選択し、適用されている各 [**Surface 〇**]-[**Material**]-[編集]-[**Metallic**]-[Metallic] を「**0**」に変更（デフォルトは若干暗い為）
+
+参考：[Blender（階層構造）to Godot](#220615)  
+実行環境：Windows 10、Godot 4.0 alpha 13、Blender 3.2.1  
+作成者：夢寐郎  
+作成日：2022年06月11日  
+更新日：2022年07月29日
 [[TOP]](#TOP)
 
 
