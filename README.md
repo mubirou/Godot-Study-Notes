@@ -3259,7 +3259,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 
 ### 👉 [**SubViewport**](https://docs.godotengine.org/en/latest/classes/class_subviewport.html?highlight=SubViewport#subviewport) の用意  
 
-1. [**Sprite3D**] を選択し [子ノードを追加]-[**SubViewport**] を選択
+1. [**Sprite3D**] を選び [子ノードを追加]-[**SubViewport**] を選択
 1. [**Sprite3D**]-[インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **SubViewport** を選択
 1. [**SubViewport**]-[インスペクター] を設定  
     * Size：**x 640**、**y 360**（カメラの映像サイズ）  
