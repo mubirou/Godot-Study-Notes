@@ -1168,50 +1168,6 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 [[TOP]](#TOP)
 
 
-<a id="220602"></a>
-# <b>動画再生</b>
-
-📝 動画ファイルの用意（参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_videoplayer.html?highlight=Video#videoplayer)）  
-
-1. [Convertio](https://convertio.co/ja/) などで [.webm](https://www.webmproject.org/) または [.ogv](https://www.theora.org/) に変換
-1. project.godot と同階層に上記ファイルを置く  
-
-📝 [Sprite3D](https://docs.godotengine.org/ja/stable/classes/class_sprite3d.html#sprite3d) の用意  
-
-1. [シーン]-[＋]-[**Sprite3D**] を選択
-1. Sprite3D] を選択し [インスペクター] で各種設定  
-    * **Flip V**：**✓**（上下反転）
-    * **Translation**：x 0、**y 1**、**z -3**（スクリーン表示位置）
-    * **Scale**：**0.25**、**0.25**、1（ピクセルアスペクト比･表示サイズ）
-
-📝 [Viewport](https://docs.godotengine.org/ja/stable/classes/class_viewport.html?highlight=Viewport#viewport) の用意  
-
-1. Sprite3D を選択し [子ノードを追加]-[**Viewport**] を選択
-1. Sprite3D を選択し [インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **Viewport** を選択
-1. Viewport を選択し [インスペクター] を設定  
-    * Size：**x 1920**、**y 1080**（動画の元サイズ）  
-
-📝 [VideoPlayer](https://docs.godotengine.org/ja/stable/classes/class_videoplayer.html?highlight=Video#videoplayer) の用意
-
-1. Viewport を選択し [子ノードを追加]-[**VideoPlayer**] を選択
-1. VideoPlayer に上記の **.webm** ファイル等をドラッグ＆ドロップ
-1. VideoPlayer を選択し [インスペクター] を設定
-    * **Autoplay**：**✓**
-    * **Margin**：**Right 1920**、**Buttom 1080**（動画の元サイズ）  
-
-（階層は以下の通り）  
-　  ├ **Sprite3D**  
-　  │   └ **Viewport**  
-　  │　　 └ **VideoPlayer**  
-
-参考：[Picture-in-Picture](#220613)  
-実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2  
-Meta Quest 40.0、Oculus Link（Oculusアプリ）  
-作成者：夢寐郎  
-作成日：2022年06月04日  
-[[TOP]](#TOP)
-
-
 <a id="220604"></a>
 # <b>Oculus Air Link</b>
 
