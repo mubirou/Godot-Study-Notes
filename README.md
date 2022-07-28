@@ -3319,7 +3319,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
       * **Position**：x -1、y 0.9、z -1（カメラの位置）
       * **Rotation**：x 0、y -65、z 0（カメラの角度）
 
-👉 [**Camera3D**] の可視化  
+👉 **Camera3D** の可視化  
 
 1. [**Camera3D**] の下層に 3D オブジェクト（.glb）を配置
 1. [**Camera3D**]-[インスペクター]-[**Transform**] で位置･角度･スケールを調整
@@ -3330,6 +3330,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 　│　　└ **Camera3D**（カメラ位置･画角）  
 　│　　　└ **MeshInstance3D**（Camera3Dの可視化）  
 
+デモファイル：[PictureInPicture.zip](https://github.com/mubirou/Godot/blob/main/zip/PictureInPicture.zip)  
 参考：[動画再生](#220602)  
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
