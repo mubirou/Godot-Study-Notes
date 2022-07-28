@@ -3295,7 +3295,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 
 ### この項目は書きかけです  
 
-📝 [Sprite3D](https://docs.godotengine.org/ja/stable/classes/class_sprite3d.html#sprite3d) の用意  
+📝 [**Sprite3D**](https://docs.godotengine.org/en/latest/classes/class_sprite3d.html?highlight=Sprite3D#sprite3d) の用意  
 
 1. 大元の **Node3D** に [**Sprite3D**] を追加
 1. [Sprite3D]-[インスペクター] で各種設定  
