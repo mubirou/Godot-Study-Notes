@@ -3353,7 +3353,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 実行環境：Windows 10、Godot 4.0 alpha 13、Blender 3.2.1  
 作成者：夢寐郎  
 作成日：2022年06月11日  
-更新日：2022年07月29日
+更新日：2022年07月29日  
 [[TOP]](#TOP)
 
 
