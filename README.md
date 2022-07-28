@@ -3305,7 +3305,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 1. [**Sprite3D**] を選択し [子ノードを追加]-[**SubViewport**] を選択
 1. [**Sprite3D**]-[インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **SubViewport** を選択
 1. [**SubViewport**]-[インスペクター] を設定  
-    * Size：**x 640**、**y 480**（カメラの映像サイズ）  
+    * Size：**x 640**、**y 360**（カメラの映像サイズ）  
     * Render Target：**When Parent Visible**
 
 👉 [**Camera3D**](https://docs.godotengine.org/en/latest/classes/class_camera3d.html?highlight=Camera3D#camera3d) の用意
