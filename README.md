@@ -3297,10 +3297,10 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 
 📝 [Sprite3D](https://docs.godotengine.org/ja/stable/classes/class_sprite3d.html#sprite3d) の用意  
 
-1. [シーン]-[＋]-[**Sprite3D**] を選択
-1. [Sprite3D] を選択し [インスペクター] で各種設定  
-    * **Translation**：x 0、**y 1**、**z -3**（スクリーン表示位置）
-    * **Scale**：**0.25**、**0.25**、1（ピクセルアスペクト比･表示サイズ）
+1. 大元の **Node3D** に [**Sprite3D**] を追加
+1. [Sprite3D]-[インスペクター] で各種設定  
+    * **Translation**：x 1.75、y 1、z -2（スクリーン表示位置）
+    * **Scale**：0.25、0.25、1（ピクセルアスペクト比･サイズ調整）
 
 📝 [Viewport](https://docs.godotengine.org/ja/stable/classes/class_viewport.html?highlight=Viewport#viewport) の用意  
 
@@ -3319,7 +3319,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
     * **Rotation Degrees**：任意（カメラの角度）
 
 （階層は以下の通り）  
-　├ **Sprite3D**（表示位置･映像サイズ調整）  
+　├ **Sprite3D**（映像表示位置･映像サイズ調整）  
 　│　└ **SubViewport**（映像サイズ）  
 　│　　└ **Camera3D**（カメラ位置･画角）  
 　│　　　└ **MeshInstance3D**（Camera3Dの可視化）  
