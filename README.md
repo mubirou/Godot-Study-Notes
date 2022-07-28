@@ -3324,27 +3324,27 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 
 ### この項目は書きかけです  
 
-📝 **Oculus アプリ**の用意  
+### 👉 **Oculus アプリ**の用意  
   1. Windows 上で [oculus.com/setup](https://www.oculus.com/setup/) から [OCULUS QUEST]（初代の場合）の [**ソフトウェアをダウンロード**] を選択  
     【注意】"**Quest 2**"の場合は [QUEST 2] の [QUEST2 PCアプリをダウンロード] を選択します
   1. ダウンロードした OculusSetup.exe をダブルクリックしインストール  
     ～しばらく時間がかかります☕～
 
-📝 **Oculus Air Link** の有効化  
-  * Quest 上の [アプリ]-[Settings]-[試験中]-[**Air Link**] をオン
-  * Oculus アプリ上での設定は現在は不要
+### 👉 **Oculus Air Link** の起動   
+  * Quest コントローラーの [MENU] ボタンを押しメニューを表示し、時間が表示されている部分をトリガーで選択
+  * [**Quest Link**] ボタンを選択
+  * [**Air Linkを使用**] をオンにして [**起動**]
+  📝 初めて接続する場合 [**ペアリング**]作業が必要です
 
-📝 **Oculus Air Link** の起動  
-  1. Quest コントローラーの [MENU] ボタンを押しメニューを表示し、時間が表示されている部分をトリガーで選択
-  1. [**Oculus Air Link**] ボタンを選択
-  1. [**利用可能なPC**] を選択し [**ペアリング**]
-  1. Quest 本体に表示される7桁の**ペアリングコード**と PC の Oculus アプリ上に表示される「Air Linkペアリング」のコードを [**確認**]  
-  1. Quest 本体上の指示に従い [**起動**]
-
-📝 **Godot Engine** の実行  
+### 👉 **Godot Engine** の実行  
   * Godot の [▶] を押して Quest + Godot が同時再生されれば成功！
 
-⚠ 有線の [Oculus Link](#220501) と比較するとかなり不安定（Oculus 本体上で [**Air Linkビットレート**] を [**固定**]（10Mbps）にするとやや安定）  
+### 📝 [接続要件](https://www.moguravr.com/oculus-air-link/)  
+1．Oculus Air Linkの有効範囲：Wi-Fiルーターから20フィート（約6m）以内
+1. ルーターの設置場所：ヘッドセットと直線上で遮るものがなく、床から1m以上の高さ
+1. Wi-Fiの帯域：5GHz（acもしくはax）
+1. Oculus Linkの動作要件を満たすスペックのPC
+1. PCとWi-FiルーターがLANケーブルで接続されている（有線接続である）こと
 
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
 作成者：夢寐郎  
