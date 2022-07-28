@@ -3336,7 +3336,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 
 ### 👉 [Blender](https://www.blender.org/) の作業
 
-1. [Blender] 上で書き出したいオブジェクトを選択
+1. 書き出したいオブジェクト（階層内全て含む）を選択
 1. [ファイル]-[エクスポート]-[Wavefront(**.obj**)] を選択し [**選択物のみ**] を **✓**  
 1. フォルダを Godot のプロジェクト内に指定し [OOBJのエクスポート] を選択
 
