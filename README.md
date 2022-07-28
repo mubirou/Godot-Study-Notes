@@ -3,12 +3,12 @@
 
 ### <b>index（Godot 3.4 対応）</b>
 
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [~~RayCastボタン~~](#220601) | [Oculus Air Link](#220604) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [Blender to Godot](#220609) | [物理エンジン RigidBodyとStaticBody](#220610) | [移動の基本3種](#220611) | [衝突判定](#220612) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [青空](#220626) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [背景色](#背景色) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [オブジェクト色](#220506) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [Blender to Godot](#220609) | [物理エンジン RigidBodyとStaticBody](#220610) | [移動の基本3種](#220611) | [衝突判定](#220612) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [青空](#220626) |
 ***
 
 ### **index（Godot 4.0 対応）**
 
-[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) |
+[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) |
 ***
 
 <a id="Androidビルド"></a>
@@ -1165,37 +1165,6 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 作成者：夢寐郎  
 作成日：2022年06月02日  
 更新日：2022年06月03日  
-[[TOP]](#TOP)
-
-
-<a id="220604"></a>
-# <b>Oculus Air Link</b>
-
-📝 **Oculus アプリ**の用意  
-  1. Windows 上で [oculus.com/setup](https://www.oculus.com/setup/) から [OCULUS QUEST]（初代の場合）の [ソフトウェアをダウンロード] を選択  
-    【注意】"**Quest 2**"の場合は [QUEST 2] の [QUEST2 PCアプリをダウンロード] を選択します
-  1. ダウンロードした OculusSetup.exe をダブルクリックしインストール  
-    ～しばらく時間がかかります☕～
-
-📝 **Oculus Air Link** の有効化  
-  * Quest 上の [アプリ]-[Settings]-[試験中]-[**Air Link**] をオン
-  * Oculus アプリ上での設定は現在は不要
-
-📝 **Oculus Air Link** の起動  
-  1. Quest コントローラーの [MENU] ボタンを押しメニューを表示し、時間が表示されている部分をトリガーで選択
-  1. [**Oculus Air Link**] ボタンを選択
-  1. [**利用可能なPC**] を選択し [**ペアリング**]
-  1. Quest 本体に表示される7桁の**ペアリングコード**と PC の Oculus アプリ上に表示される「Air Linkペアリング」のコードを [**確認**]  
-  1. Quest 本体上の指示に従い [**起動**]
-
-📝 **Godot Engine** の実行  
-  * Godot の [▶] を押して Quest + Godot が同時再生されれば成功！
-
-⚠ 有線の [Oculus Link](#220501) と比較するとかなり不安定（Oculus 本体上で [**Air Linkビットレート**] を [**固定**]（10Mbps）にするとやや安定）  
-
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
-作成者：夢寐郎  
-作成日：2022年06月05日  
 [[TOP]](#TOP)
 
 
@@ -3347,6 +3316,40 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 作成者：夢寐郎  
 作成日：2022年06月04日  
 作成日：2022年07月28日 Godot 4.0 対応  
+[[TOP]](#TOP)
+
+
+<a id="220604"></a>
+# <b>Oculus Air Link</b>
+
+### この項目は書きかけです  
+
+📝 **Oculus アプリ**の用意  
+  1. Windows 上で [oculus.com/setup](https://www.oculus.com/setup/) から [OCULUS QUEST]（初代の場合）の [ソフトウェアをダウンロード] を選択  
+    【注意】"**Quest 2**"の場合は [QUEST 2] の [QUEST2 PCアプリをダウンロード] を選択します
+  1. ダウンロードした OculusSetup.exe をダブルクリックしインストール  
+    ～しばらく時間がかかります☕～
+
+📝 **Oculus Air Link** の有効化  
+  * Quest 上の [アプリ]-[Settings]-[試験中]-[**Air Link**] をオン
+  * Oculus アプリ上での設定は現在は不要
+
+📝 **Oculus Air Link** の起動  
+  1. Quest コントローラーの [MENU] ボタンを押しメニューを表示し、時間が表示されている部分をトリガーで選択
+  1. [**Oculus Air Link**] ボタンを選択
+  1. [**利用可能なPC**] を選択し [**ペアリング**]
+  1. Quest 本体に表示される7桁の**ペアリングコード**と PC の Oculus アプリ上に表示される「Air Linkペアリング」のコードを [**確認**]  
+  1. Quest 本体上の指示に従い [**起動**]
+
+📝 **Godot Engine** の実行  
+  * Godot の [▶] を押して Quest + Godot が同時再生されれば成功！
+
+⚠ 有線の [Oculus Link](#220501) と比較するとかなり不安定（Oculus 本体上で [**Air Linkビットレート**] を [**固定**]（10Mbps）にするとやや安定）  
+
+実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
+作成者：夢寐郎  
+作成日：2022年06月05日  
+更新日：2022年07月29日  Godot 4.0 対応
 [[TOP]](#TOP)
 
 
