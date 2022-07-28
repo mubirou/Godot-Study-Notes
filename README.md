@@ -3295,28 +3295,34 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 
 ### この項目は書きかけです  
 
-📝 [**Sprite3D**](https://docs.godotengine.org/en/latest/classes/class_sprite3d.html?highlight=Sprite3D#sprite3d) の用意  
+👉 [**Sprite3D**](https://docs.godotengine.org/en/latest/classes/class_sprite3d.html?highlight=Sprite3D#sprite3d) の用意  
 
 1. 大元の **Node3D** に [**Sprite3D**] を追加
 1. [Sprite3D]-[インスペクター] で各種設定  
     * **Translation**：x 1.75、y 1、z -2（スクリーン表示位置）
     * **Scale**：0.25、0.25、1（ピクセルアスペクト比･サイズ調整）
 
-📝 [Viewport](https://docs.godotengine.org/ja/stable/classes/class_viewport.html?highlight=Viewport#viewport) の用意  
+👉 [**SubViewport**](https://docs.godotengine.org/en/latest/classes/class_subviewport.html?highlight=SubViewport#subviewport) の用意  
 
-1. Sprite3D を選択し [子ノードを追加]-[**Viewport**] を選択
-1. Sprite3D を選択し [インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **Viewport** を選択
-1. Viewport を選択し [インスペクター] を設定  
-    * Size：**x 640**、**y 480**（カメラの画像サイズ）  
-    * Render Target：**✓ V Flip**（垂直に反転）
+1. [**Sprite3D**] を選択し [子ノードを追加]-[**SubViewport**] を選択
+1. [**Sprite3D**]-[インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **SubViewport** を選択
+1. [**SubViewport**]-[インスペクター] を設定  
+    * Size：**x 640**、**y 480**（カメラの映像サイズ）  
+    * Render Target：**When Parent Visible**
 
-📝 [Camera](https://docs.godotengine.org/ja/stable/classes/class_camera.html?highlight=Camera#camera) の用意
+👉 [**Camera3D**](https://docs.godotengine.org/en/latest/classes/class_camera3d.html?highlight=Camera3D#camera3d) の用意
 
-1. Viewport を選択し [子ノードを追加]-[**Camera**] を選択
-1. [Camera] を選択し [インスペクター] で各種設定  
-    * **Fov**（視野角）：任意（初期値70°/1～179°）
-    * **Translation**：任意（カメラの位置）
-    * **Rotation Degrees**：任意（カメラの角度）
+1. [**SubViewport] を選択し [子ノードを追加]-[**Camera3D**] を選択
+1. [**Camera3D**]-[インスペクター] で各種設定  
+    * **Fov**（視野角）：1～179（初期値75°）
+    * [**Transform**]  
+      * **Position**：x -1、y 0.9、z -1（カメラの位置）
+      * **Rotation**：x 0、y -65、z 0（カメラの角度）
+
+👉 [**Camera3D**] の可視化  
+
+1. [**Camera3D**] の下層に 3D オブジェクト（.glb）を配置
+1. [**Camera3D**]-[インスペクター]-[**Transform**] で位置･角度･スケールを調整
 
 （階層は以下の通り）  
 　├ **Sprite3D**（映像表示位置･映像サイズ調整）  
