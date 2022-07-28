@@ -3323,7 +3323,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 1. [**Sprite3D**] を選び [子ノードを追加]-[**SubViewport**] を選択
 1. [**Sprite3D**]-[インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **SubViewport** を選択
 1. [**SubViewport**]-[インスペクター] を設定  
-    * Size：**x 854**、**y 360**（映像も元サイズ）  
+    * Size：**x 854**、**y 360**（映像の元サイズ）  
     * Render Target：**When Parent Visible**
 
 ### 👉 [**VideoStreamPlayer**](https://docs.godotengine.org/en/latest/classes/class_videostreamplayer.html?highlight=VideoStreamPlayer#videostreamplayer) の用意
