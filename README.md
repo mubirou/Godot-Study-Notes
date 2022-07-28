@@ -3305,7 +3305,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 
 ### この項目は書きかけです  
 
-### 👉 動画ファイルの準備（参考：[GODOT DOCS](https://docs.godotengine.org/en/latest/classes/class_videostreamplayer.html#class-videostreamplayer)）
+### 👉 動画ファイルの準備  
 
 1. [無料動画素材](https://www.studio-lab01.com/freebies/)などで映像を準備  
 1. [Convertio](https://convertio.co/ja/) などで [**OGV（.ogv）**](https://www.theora.org/) に変換  
@@ -3348,6 +3348,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 　  │　　 └ **VideoPlayer**  
 
 参考：[Picture-in-Picture](#220613)  
+参考：[GODOT DOCS](https://docs.godotengine.org/en/latest/classes/class_videostreamplayer.html#class-videostreamplayer)  
 実行環境：Windows 10、Godot 3.4.4 + OpenXR Plugin 1.2  
 Meta Quest 40.0、Oculus Link（Oculusアプリ）  
 作成者：夢寐郎  
