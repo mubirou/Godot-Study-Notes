@@ -8,7 +8,7 @@
 
 ### **index（Godot 4.0 対応）**
 
-[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) |
+[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) |
 ***
 
 <a id="Androidビルド"></a>
@@ -1579,44 +1579,6 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 作成者：夢寐郎  
 作成日：2022年06月17日  
 [[TOP]](#TOP)  
-
-
-<a id="220613"></a>
-# <b>Picture-in-Picture</b>
-
-📝 [Sprite3D](https://docs.godotengine.org/ja/stable/classes/class_sprite3d.html#sprite3d) の用意  
-
-1. [シーン]-[＋]-[**Sprite3D**] を選択
-1. [Sprite3D] を選択し [インスペクター] で各種設定  
-    * **Translation**：x 0、**y 1**、**z -3**（スクリーン表示位置）
-    * **Scale**：**0.25**、**0.25**、1（ピクセルアスペクト比･表示サイズ）
-
-📝 [Viewport](https://docs.godotengine.org/ja/stable/classes/class_viewport.html?highlight=Viewport#viewport) の用意  
-
-1. Sprite3D を選択し [子ノードを追加]-[**Viewport**] を選択
-1. Sprite3D を選択し [インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **Viewport** を選択
-1. Viewport を選択し [インスペクター] を設定  
-    * Size：**x 640**、**y 480**（カメラの画像サイズ）  
-    * Render Target：**✓ V Flip**（垂直に反転）
-
-📝 [Camera](https://docs.godotengine.org/ja/stable/classes/class_camera.html?highlight=Camera#camera) の用意
-
-1. Viewport を選択し [子ノードを追加]-[**Camera**] を選択
-1. [Camera] を選択し [インスペクター] で各種設定  
-    * **Fov**（視野角）：任意（初期値70°/1～179°）
-    * **Translation**：任意（カメラの位置）
-    * **Rotation Degrees**：任意（カメラの角度）
-
-（階層は以下の通り）  
-　  ├ **Sprite3D**  
-　  │   └ **Viewport**  
-　  │　　 └ **Camera**  
-
-参考：[動画再生](#220602)  
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
-作成者：夢寐郎  
-作成日：2022年06月20日  
-[[TOP]](#TOP)
 
 
 <a id="220614"></a>
@@ -3325,6 +3287,49 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 作成者：夢寐郎  
 更新日：2022年07月27日  
 [[TOP]](#TOP)
+
+
+<a id="220613"></a>
+# <b>Picture-in-Picture</b>
+
+### この項目は書きかけです  
+
+📝 [Sprite3D](https://docs.godotengine.org/ja/stable/classes/class_sprite3d.html#sprite3d) の用意  
+
+1. [シーン]-[＋]-[**Sprite3D**] を選択
+1. [Sprite3D] を選択し [インスペクター] で各種設定  
+    * **Translation**：x 0、**y 1**、**z -3**（スクリーン表示位置）
+    * **Scale**：**0.25**、**0.25**、1（ピクセルアスペクト比･表示サイズ）
+
+📝 [Viewport](https://docs.godotengine.org/ja/stable/classes/class_viewport.html?highlight=Viewport#viewport) の用意  
+
+1. Sprite3D を選択し [子ノードを追加]-[**Viewport**] を選択
+1. Sprite3D を選択し [インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **Viewport** を選択
+1. Viewport を選択し [インスペクター] を設定  
+    * Size：**x 640**、**y 480**（カメラの画像サイズ）  
+    * Render Target：**✓ V Flip**（垂直に反転）
+
+📝 [Camera](https://docs.godotengine.org/ja/stable/classes/class_camera.html?highlight=Camera#camera) の用意
+
+1. Viewport を選択し [子ノードを追加]-[**Camera**] を選択
+1. [Camera] を選択し [インスペクター] で各種設定  
+    * **Fov**（視野角）：任意（初期値70°/1～179°）
+    * **Translation**：任意（カメラの位置）
+    * **Rotation Degrees**：任意（カメラの角度）
+
+（階層は以下の通り）  
+　├ **Sprite3D**  
+　│　└ **SubViewport**  
+　│　　└ **Camera3D**  
+　│　　　└ **MeshInstance3D**（Camera3Dの可視化）  
+
+参考：[動画再生](#220602)  
+実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 42.0、Quest Link、Oculusアプリ  
+作成者：夢寐郎  
+作成日：2022年06月20日  
+作成日：2022年07月28日  Godot 4.0 対応  
+[[TOP]](#TOP)
+
 
 <a id="XXXXX"></a>
 # <b>XXXXX</b>
