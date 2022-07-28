@@ -3297,7 +3297,8 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 
 1. 大元の **Node3D** に [**Sprite3D**] を追加
 1. [**Sprite3D**]-[インスペクター] で各種設定  
-    * **Translation**：x 1.75、y 1、z -2（スクリーン表示位置）
+    * **Translation**：x 1.75、y 1、z -2（ディスプレイの表示位置）
+    * **Rotation**：x 0、y -40、z 0（ディスプレイの角度）
     * **Scale**：0.25、0.25、1（ピクセルアスペクト比･サイズ調整）
 
 👉 [**SubViewport**](https://docs.godotengine.org/en/latest/classes/class_subviewport.html?highlight=SubViewport#subviewport) の用意  
@@ -3322,17 +3323,17 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 1. [**Camera3D**] の下層に 3D オブジェクト（.glb）を配置
 1. [**Camera3D**]-[インスペクター]-[**Transform**] で位置･角度･スケールを調整
 
-👉 テレビモニター（本体）の可視化  
+👉 ディスプレイ（本体）の可視化  
 
 1. [**Sprite3D**] の下層に 3D オブジェクトを配置
 1. [インスペクター]-[**Transform**] で位置･スケールを調整  
 
 （階層は以下の通り）  
-　├ **Sprite3D**（映像表示位置･映像サイズ調整）  
+　├ **Sprite3D**（ディスプレイ表示位置･映像サイズ調整）  
 　│　└ **SubViewport**（映像サイズ）  
 　│　　└ **Camera3D**（カメラ位置･画角）  
 　│　　　└ **MeshInstance3D**（Camera3Dの可視化）  
-　└ **MeshInstance3D**（テレビモニター本体）  
+　└ **MeshInstance3D**（ディスプレイ本体）  
 
 デモファイル：[PictureInPicture.zip](https://github.com/mubirou/Godot/blob/main/zip/PictureInPicture.zip)  
 参考：[動画再生](#220602)  
