@@ -3330,7 +3330,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 <a id="220609"></a>
 # <b>Blender to Godot</b>
 
-💡 **.blend** ファイルも読込可能ですが[マルチポーズ](#220714)型はうまくインポートできません（要調査）   
+💡 **.blend** ファイルも読込可能ですが "[マルチポーズ](#220714)" はうまくインポートできません（要調査）   
 
 ### 👉 [Blender](https://www.blender.org/) の作業
 
