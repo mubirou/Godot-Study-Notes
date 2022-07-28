@@ -3330,7 +3330,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 <a id="220609"></a>
 # <b>Blender to Godot</b>
 
-### 項目は書きかけです  
+注意：**.blend** ファイルも読込可能ですが[マルチポーズ](#220714)型はうまくインポートできません（要調査）   
 
 ### 👉 [Blender](https://www.blender.org/) の作業
 
@@ -3346,7 +3346,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 1. [ファイルシステム] 内に表示される **.glb** を [シーン] の任意のノード上にドラッグ＆ドロップ
 1. 配置したオブジェクトの [インスペクター] で位置やスケールを調整
 1. [シーン] 上で上記のオブジェクトを選択し [右クリック]-[**編集可能な子**] を選択
-1. 表示された階層から [**MeshInstance3D**] を選択し [インスペクター]-[**Geometry**]-[**LOD Bias**] を調整（[**Level Of Detail**](https://docs.unity3d.com/ja/2018.4/Manual/LevelOfDetail.html)）
+1. 表示された階層から [**MeshInstance3D**] を選択し [インスペクター]-[**Geometry**]-[**LOD Bias**] を 20～40 程度に調整（[**Level Of Detail**](https://docs.unity3d.com/ja/2018.4/Manual/LevelOfDetail.html)）
 
 参考：[Blender（階層構造）to Godot](#220615)  
 実行環境：Windows 10、Godot 4.0 alpha 13、Blender 3.2.1  
