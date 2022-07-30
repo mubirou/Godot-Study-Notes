@@ -3343,10 +3343,9 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 着色したい [**MeshInstance3D**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=MeshInstance3D#meshinstance3d) の [インスタンス] を開く
 
 ### ➀ [**Mesh**](https://docs.godotengine.org/en/latest/classes/class_mesh.html#mesh) プロパティを使う方法  
-[Mesh]-[編集]-[Material]-[新規 StandardMaterial3D]-[編集] で各種設定
-
-* **着色**：[**Albedo**]-[**Color**]（半透明は [**Transparency**] で設定） 
-* **光沢**：[**Metallic**]-
+* [**Mesh**]-[編集]-[**Material**]-[新規 **StandardMaterial3D**]-[編集] で各種設定
+  * **着色**：[**Albedo**]-[**Color**]（半透明は [**Transparency**] で設定） 
+  * **光沢**：[**Metallic**]-
 
 ### ➁ [**Surface Material Override**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=Surface%20Material%20Override#class-meshinstance3d-method-get-surface-override-material) を使う方法  
 
