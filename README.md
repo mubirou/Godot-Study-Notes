@@ -3340,6 +3340,9 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 
 ### この項目は書きかけです  
 
+1. 着色したい [**MeshInstance3D**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=MeshInstance3D#meshinstance3d) を選択
+1. XXX
+
 * オブジェクトの色付け  
   1. [シーン]-[＋]-[MeshInstance] で任意の[プリミティブ](#プリミティブ)を作成
   1. Mesh の [インスペクター]-[MeshInstance]-[**Material**]-[新規SpatialMaterial]-[編集]-[**Albedo**]-[Color] で #XXXXXX を指定
