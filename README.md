@@ -3344,8 +3344,9 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 
 ### ➀ [**Mesh**](https://docs.godotengine.org/en/latest/classes/class_mesh.html#mesh) プロパティを使う方法  
 * [**Mesh**]-[編集]-[**Material**]-[新規 **StandardMaterial3D**]-[編集] で各種設定
-  * **着色**：[**Albedo**]-[**Color**]（半透明は [**Transparency**] で設定） 
-  * **光沢**：[**Metallic**]-
+  * **着色**：[**Albedo**]-[**Color**]（アルファ値設定可）
+  * **半透明**：[**Transparency**]-[**Transparency**]
+  * **光沢**：[**Metallic**] + [**Roughness**]
 
 ### ➁ [**Surface Material Override**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=Surface%20Material%20Override#class-meshinstance3d-method-get-surface-override-material) を使う方法  
 
