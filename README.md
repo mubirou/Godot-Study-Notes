@@ -3357,8 +3357,8 @@ _obj.set_surface_override_material(0, _material)
 📝 **指定位置に移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
 
   ```gdscript
-  Spatial.translation = Vector3(0,0,0)
-  Spatial.global_transform.origin = Vector3(0,0,0)
+  Node3D.position = Vector3(0, 0, 0)
+  Node3D.global_transform.origin = Vector3(0, 0, 0)
   ```
 
   ```gdscript
