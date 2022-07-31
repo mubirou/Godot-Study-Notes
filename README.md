@@ -3,12 +3,12 @@
 
 ### <b>index（Godot 3.4 対応）</b>
 
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [物理エンジン RigidBodyとStaticBody](#220610) | [移動の基本3種](#220611) | [衝突判定](#220612) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [青空](#220626) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [物理エンジン RigidBodyとStaticBody](#220610) | [衝突判定](#220612) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [青空](#220626) |
 ***
 
 ### **index（Godot 4.0 対応）**
 
-[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [オブジェクト色](#220506) | [背景色](#背景色) |
+[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [オブジェクト色](#220506) | [背景色](#背景色) | [移動の基本3種](#220611) |
 ***
 
 <a id="Androidビルド"></a>
@@ -1283,44 +1283,6 @@ VR コンテンツ開発の [諸準備](#220501) をする
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月13日  
-[[TOP]](#TOP)
-
-
-<a id="220611"></a>
-# <b>移動の基本3種</b>
-
-📝 **指定位置に移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
-
-  ```gdscript
-  Spatial.translation = Vector3(0,0,0)
-  Spatial.global_transform.origin = Vector3(0,0,0)
-  ```
-
-  ```gdscript
-  var _targetPos = Vector3(0, 0, 0)
-  var _currentPos = KinematicBody.translation
-  var _disPos = _targetPos - _currentPos
-  KinematicBody.move_and_slide(_disPos)
-  ```
-
-📝 **値だけ移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)）
-
-  ```gdscript
-  KinematicBody.move_and_slide(Vector3(0,0.1,0))
-  KinematicBody.move_and_collide(Vector3(0,0.1,0))
-  ```
-
-📝 **力を加える**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
-
-  ```gdscript
-  RigidBody.add_force(Vector3(0,200,0), Vector3.ZERO)
-  ```
-
-参考：[ノードの移動](#ノードの移動)  
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
-作成者：夢寐郎  
-作成日：2022年06月15日  
-作成日：2022年06月17日 指定位置に移動に加筆  
 [[TOP]](#TOP)
 
 
@@ -3384,6 +3346,45 @@ _obj.set_surface_override_material(0, _material)
 作成者：夢寐郎  
 作成日：2022年03月07日  
 更新日：2022年07月31日 Godot 4.0 対応  
+[[TOP]](#TOP)
+
+
+<a id="220611"></a>
+# <b>移動の基本3種</b>
+
+### この項目は書きかけです  
+
+📝 **指定位置に移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
+
+  ```gdscript
+  Spatial.translation = Vector3(0,0,0)
+  Spatial.global_transform.origin = Vector3(0,0,0)
+  ```
+
+  ```gdscript
+  var _targetPos = Vector3(0, 0, 0)
+  var _currentPos = KinematicBody.translation
+  var _disPos = _targetPos - _currentPos
+  KinematicBody.move_and_slide(_disPos)
+  ```
+
+📝 **値だけ移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)）
+
+  ```gdscript
+  KinematicBody.move_and_slide(Vector3(0,0.1,0))
+  KinematicBody.move_and_collide(Vector3(0,0.1,0))
+  ```
+
+📝 **力を加える**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
+
+  ```gdscript
+  RigidBody.add_force(Vector3(0,200,0), Vector3.ZERO)
+  ```
+
+実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
+作成者：夢寐郎  
+作成日：2022年06月15日  
+作成日：2022年0X月XX日 Godot 4.0 対応    
 [[TOP]](#TOP)
 
 
