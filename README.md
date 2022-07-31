@@ -3290,7 +3290,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 
 着色したい [**MeshInstance3D**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=MeshInstance3D#meshinstance3d) の [インスタンス] を開く
 
-### ➀ [**Mesh**](https://docs.godotengine.org/en/latest/classes/class_mesh.html#mesh) プロパティを使う方法  
+#### ➀ [**Mesh**](https://docs.godotengine.org/en/latest/classes/class_mesh.html#mesh) プロパティを使う方法  
 
 * [[**Mesh**](https://docs.godotengine.org/en/latest/classes/class_mesh.html#mesh)]-[編集]-[[**Material**](https://docs.godotengine.org/en/latest/classes/class_material.html?highlight=Material#material)]-[新規 [**StandardMaterial3D**](https://docs.godotengine.org/en/latest/classes/class_standardmaterial3d.html?highlight=StandardMaterial3D#standardmaterial3d)]-[編集]  
   * **着色**：[**Albedo**]-[**Color**]（アルファ値設定可）
@@ -3308,7 +3308,7 @@ print(_obj.get_mesh().material.get_albedo())
 _obj.get_mesh().material.set_albedo(Color(1,0,0,1))
 ```
 
-### ➁ [**Surface Material Override**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=Surface%20Material%20Override#class-meshinstance3d-method-get-surface-override-material) を使う方法  
+#### ➁ [**Surface Material Override**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=Surface%20Material%20Override#class-meshinstance3d-method-get-surface-override-material) を使う方法  
 
 * [[**Surface Material Over…**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=Surface%20Material%20Override#class-meshinstance3d-method-get-surface-override-material)]-[新規 [**StandardMaterial3D**](https://docs.godotengine.org/en/latest/classes/class_standardmaterial3d.html?highlight=StandardMaterial3D#standardmaterial3d)]-[編集]  
   * **Mesh** プロパティを使う場合と同じ（上記参照）    
@@ -3352,7 +3352,7 @@ _obj.set_surface_override_material(0, _material)
 <a id="220611"></a>
 # <b>移動の基本3種</b>
 
-📝 **指定位置に移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
+#### 📝 **指定位置に移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
 
   ```gdscript
   Node3D.position = Vector3(0, 0, 0)
