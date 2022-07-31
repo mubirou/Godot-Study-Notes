@@ -3358,7 +3358,7 @@ _obj.get_mesh().material.set_albedo(Color(1,0,0,1))
 
 ### ➁ [**Surface Material Override**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=Surface%20Material%20Override#class-meshinstance3d-method-get-surface-override-material) を使う方法  
 
-* [**Surface Material Override**]-[0]-[新規 **StandardMaterial3D**]-[編集]
+* [**Surface Material Override**]-[新規 **StandardMaterial3D**]-[編集]  
     同上  
 
 * オブジェクトの色付け  
