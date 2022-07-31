@@ -3348,6 +3348,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
   * **半透明**：[**Transparency**]
   * **光沢**：[**Metallic**] + [**Roughness**]
 
+* 参考（オブジェクトの色を白→赤に変更）  
 ```gdscript
 var _obj = get_node("MeshInstance3D")
 print(_obj.get_mesh().material.get_albedo()) #->(1,1,1,1)
