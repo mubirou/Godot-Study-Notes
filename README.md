@@ -3350,10 +3350,13 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
   * **光沢**：[**Metallic**] + [**Roughness**]
 
 ```gdscript
-# オブジェクトの色を白→赤に変更
 var _obj = get_node("MeshInstance3D")
+
+# オブジェクトの色（不透明度）を調べる
 print(_obj.get_mesh().material.get_albedo())
 #-> (1, 1, 1, 1)
+
+# オブジェクトの色を白→赤に変更
 _obj.get_mesh().material.set_albedo(Color(1,0,0,1))
 ```
 
@@ -3363,10 +3366,13 @@ _obj.get_mesh().material.set_albedo(Color(1,0,0,1))
   * **Mesh** プロパティを使う場合と同じ（上記参照）    
 
 ```gdscript
-# オブジェクトの色を白→赤に変更
 var _obj = get_node("MeshInstance3D")
+
+# オブジェクトの色（不透明度）を調べる
 print(_obj.get_surface_override_material(0).get_albedo())
 #-> (1, 1, 1, 1)
+
+# オブジェクトの色を白→赤に変更
 var _material = _obj.get_surface_override_material(0)
 _material.set_albedo(Color(1,0,0,1))
 _obj.set_surface_override_material(0, _material)
