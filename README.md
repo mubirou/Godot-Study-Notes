@@ -3352,20 +3352,24 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 ```gdscript
 # オブジェクトの色を白→赤に変更
 var _obj = get_node("MeshInstance3D")
-print(_obj.get_mesh().material.get_albedo()) #->(1,1,1,1)
+print(_obj.get_mesh().material.get_albedo())
+#-> (1, 1, 1, 1)
 _obj.get_mesh().material.set_albedo(Color(1,0,0,1))
 ```
 
 ### ➁ [**Surface Material Override**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=Surface%20Material%20Override#class-meshinstance3d-method-get-surface-override-material) を使う方法  
 
 * [**Surface Material Over…**]-[新規 **StandardMaterial3D**]-[編集]  
-  * **Mesh** プロパティを使う場合と同じ    
+  * **Mesh** プロパティを使う場合と同じ（上記参照）    
 
 ```gdscript
 # オブジェクトの色を白→赤に変更
 var _obj = get_node("MeshInstance3D")
-print(_obj.get_mesh().material.get_albedo()) #->(1,1,1,1)
-_obj.get_mesh().material.set_albedo(Color(1,0,0,1))
+print(_obj.get_surface_override_material(0).get_albedo())
+#-> (1, 1, 1, 1)
+var _material = _obj.get_surface_override_material(0)
+_material.set_albedo(Color(1,0,0,1))
+_obj.set_surface_override_material(0, _material)
 ```
 
 
