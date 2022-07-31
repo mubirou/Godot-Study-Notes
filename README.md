@@ -3338,8 +3338,6 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 <a id="220506"></a>
 # <b>オブジェクト色</b>
 
-### この項目は書きかけです  
-
 着色したい [**MeshInstance3D**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=MeshInstance3D#meshinstance3d) の [インスタンス] を開く
 
 ### ➀ [**Mesh**](https://docs.godotengine.org/en/latest/classes/class_mesh.html#mesh) プロパティを使う方法  
@@ -3378,8 +3376,7 @@ _material.set_albedo(Color(1,0,0,1))
 _obj.set_surface_override_material(0, _material)
 ```
 
-参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/tutorials/3d/environment_and_post_processing.html#environment-options)  
-実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ 
+実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年05月28日  
 更新日：2022年07月31日 Godot 4.0 対応  
