@@ -3348,6 +3348,12 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
   * **半透明**：[**Transparency**]
   * **光沢**：[**Metallic**] + [**Roughness**]
 
+```gdscript
+var _obj = get_node("MeshInstance3D")
+print(_obj.get_mesh().material.get_albedo()) #-> (1, 1, 1, 1)
+_obj.get_mesh().material.set_albedo(Color(1,0,0,1))
+```
+
 ### ➁ [**Surface Material Override**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=Surface%20Material%20Override#class-meshinstance3d-method-get-surface-override-material) を使う方法  
 
 * オブジェクトの色付け  
