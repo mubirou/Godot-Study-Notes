@@ -2771,18 +2771,18 @@ Main（Node3D）
 <a id="220713"></a>
 # <b>Mixamo</b>
 
-#### 👉 キャラクターの用意  
+### 👉 キャラクターの用意  
   * アーマチュア（ボーン）なし  
   * Camera、Light 不要  
   * オブジェクト類は"統合"（マテリアルを設定）  
   参考ファイル：[Kyle.blend](https://github.com/mubirou/Godot/blob/main/blend/Kyle.blend)  
 
-#### 👉 [Blender](https://www.blender.org/) の作業➀  
+### 👉 [Blender](https://www.blender.org/) の作業➀  
   1. [Blender](https://www.blender.org/) で 上記ファイル（[Kyle.blend](https://github.com/mubirou/Godot/blob/main/blend/Kyle.blend)）を開く
   1. キャラクター全体を選択 → [ファイル]-[エクスポート]-[**FBX(.fbx)**] を選択
   1. [内容]-[Limit to]：**✓選択したオブジェクト** を選択し [FBXをエクスポート] 
 
-#### 👉 [Mixamo](https://www.mixamo.com/#/)（ミキサモ）の作業  
+### 👉 [Mixamo](https://www.mixamo.com/#/)（ミキサモ）の作業  
   1. [Mixamo](https://www.mixamo.com/#/)（無料･アカウント必須）を開き [**UPLOAD CHARACTER**] を選び上記の **XXX.fbx** をドラッグ＆ドロップ  
   1. 指示に従い ➀顎 ➁手首 ➂肘 ➃膝 ➄股間 を指定（画像）  
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207191132.jpg)  
@@ -2792,7 +2792,7 @@ Main（Node3D）
   * [Frames per Second]：30
   * [Keyframe Reduction]：none
 
-#### 👉 [Blender](https://www.blender.org/) の作業➁  
+### 👉 [Blender](https://www.blender.org/) の作業➁  
   1. [Blender](https://www.blender.org/) を起動（Camera、Light、Cube は削除）
   1. [ファイル]-[インポート]-[**FBX(.fbx)**] を選択し [Mixamo](https://www.mixamo.com/#/) から DOWNLOAD した **XXX.fbx** を開く
   1. [シーンコレクション]-[Collection]-[Armature]-[**▽〇〇〇**] を選択した状態で"3Dビューポート"の右端の **<** を選択  
@@ -2805,7 +2805,7 @@ Main（Node3D）
   * [フォーマット]：**glTFバイナリ(.glb)**  
   * [内容]-[Limit to]：**✓選択したオブジェクト**  
 
-#### 👉 **Godot** の作業
+### 👉 **Godot** の作業
   1. 上記の **XXX.glb** をシーンに配置
   1. シーン上の XX を選択し右クリック → [編集可能な子]
   1. XXX 内の MeshInstance3D を選択
@@ -2831,10 +2831,10 @@ Main（Node3D）
 * [**Mixamo**](#220713) の複数ポーズ版  
 * 例として ➀Idle、➁Kick、➂Punch の３ポーズを作成  
 
-#### 👉 [Mixamo](https://www.mixamo.com/#/)（ミキサモ）の作業  
+### 👉 [Mixamo](https://www.mixamo.com/#/)（ミキサモ）の作業  
   [**Mixamo**](#220713) を参考に ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx を作成  
 
-#### 👉 [Blender](https://www.blender.org/) の作業  
+### 👉 [Blender](https://www.blender.org/) の作業  
   1. ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx をインポート
   1. [シーンコレクション]-[Collection]-[**Armature〇**] とその下層の [アニメーション] 内の "**Armature〇|mixamo.com|Layer0**" という名前を**ポーズ名**（"Idle"、"Kick"、"Punch"）に変更（下図）  
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211022.jpg)  
@@ -2848,7 +2848,7 @@ Main（Node3D）
    ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211106.jpg)  
   1. [**Idle**] の全てを選択しエクスポート（[**参考**](#220713)）  
 
-#### 👉 **Godot** の作業
+### 👉 **Godot** の作業
   1. 上記の **.glb** ファイルをシーンに配置し [**編集可能な子**] 
   1. [MeshInstance3D]-[Geometry]-[**LOD Bias**] を調整（20～35程度）
   1. 以降、[**アニメーション遷移**](#220617) と同様  
@@ -2890,11 +2890,11 @@ Main（Node3D）
 <a id="220716"></a>
 # <b>ボタン</b>
 
-##### 👉 フォントの用意  
+#### 👉 フォントの用意  
 1. [Google Fonts（Oswald）](https://fonts.google.com/specimen/Oswald) 等をダウンロード  
 1. プロジェクトフォルダに保存  
 
-##### 👉 Godot の作業  
+#### 👉 Godot の作業  
 1. [**レーザーポインター**](#220704)の準備   
 1. 「選択するオブジェクト」を以下の構造に変更  
   Main（[Node3D](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=Node3D#node3d)）   
@@ -2921,7 +2921,7 @@ Main（Node3D）
     * **Scale**：x 0.3、y 0.3、**z 0.06**（**ボタンの厚さ**）
 1. 同様に全てのボタンを設定  
 
-##### 👉 効果音の用意  
+#### 👉 効果音の用意  
 1. [無料効果音](https://taira-komori.jpn.org/game01.html) 等からダウンロード（.mp3）  
 1. [Sound Forge Pro](https://www.sourcenext.com/product/vegas/sound/soundforge-pro/) で長さを調整し以下の設定でプロジェクトフォルダに保存  
     * ファイルの種類：**Wave(Microsoft)(*.wav)**
@@ -2930,7 +2930,7 @@ Main（Node3D）
 1. [SE1] を選択し [インスペクター] を次の通り設定  
     * [**Stream**]：**button04a.wav**（上記参照）
 
-##### 👉 コードの記述    
+#### 👉 コードの記述    
 1. [**レーザーポインター**](#220704)の[**コード**](#code220704)を開く  
 1. 修正箇所のポイントは次の通り    
 * **_ready** 時の処理  
@@ -3123,7 +3123,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 # <b>Picture-in-Picture</b>
 カメラの映像を空間上に表示する  
 
-#### 👉 [**Sprite3D**](https://docs.godotengine.org/en/latest/classes/class_sprite3d.html?highlight=Sprite3D#sprite3d) の用意  
+### 👉 [**Sprite3D**](https://docs.godotengine.org/en/latest/classes/class_sprite3d.html?highlight=Sprite3D#sprite3d) の用意  
 
 1. 大元の **Node3D** に [**Sprite3D**] を追加
 1. [**Sprite3D**]-[インスペクター] で各種設定  
@@ -3131,7 +3131,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
     * **Rotation**：x 0、y -40、z 0（ディスプレイの角度）
     * **Scale**：**0.25**、**0.25**、1（ピクセルアスペクト比･サイズ調整）
 
-#### 👉 [**SubViewport**](https://docs.godotengine.org/en/latest/classes/class_subviewport.html?highlight=SubViewport#subviewport) の用意  
+### 👉 [**SubViewport**](https://docs.godotengine.org/en/latest/classes/class_subviewport.html?highlight=SubViewport#subviewport) の用意  
 
 1. [**Sprite3D**] を選び [子ノードを追加]-[**SubViewport**] を選択
 1. [**SubViewport**]-[インスペクター] を設定  
@@ -3140,7 +3140,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
     **注意**：編集中に限り **Always** を選択すると再生可能  
 1. [**Sprite3D**]-[インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **SubViewport** を選択
 
-#### 👉 [**Camera3D**](https://docs.godotengine.org/en/latest/classes/class_camera3d.html?highlight=Camera3D#camera3d) の用意
+### 👉 [**Camera3D**](https://docs.godotengine.org/en/latest/classes/class_camera3d.html?highlight=Camera3D#camera3d) の用意
 
 1. [**SubViewport**] を選び [子ノードを追加]-[**Camera3D**] を選択
 1. [**Camera3D**]-[インスペクター] で各種設定  
@@ -3149,12 +3149,12 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
       * **Position**：x -1、y 0.9、z -1（カメラの位置）
       * **Rotation**：x 0、y -65、z 0（カメラの角度）
 
-#### 👉 **Camera3D** の可視化  
+### 👉 **Camera3D** の可視化  
 
 1. [**Camera3D**] の下層に 3D オブジェクト（.glb）を配置
 1. [**Camera3D**]-[インスペクター]-[**Transform**] で位置･角度･スケールを調整
 
-#### 👉 ディスプレイ（本体）の可視化  
+### 👉 ディスプレイ（本体）の可視化  
 
 1. [**Sprite3D**] の下層に 3D オブジェクトを配置
 1. [インスペクター]-[**Transform**] で位置･スケールを調整  
@@ -3178,14 +3178,14 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
 <a id="220602"></a>
 # <b>動画再生</b>
 
-#### 👉 動画ファイルの準備  
+### 👉 動画ファイルの準備  
 
 1. [無料動画素材](https://www.studio-lab01.com/freebies/)などで映像を準備  
 1. [Convertio](https://convertio.co/ja/) などで [**OGV（.ogv）**](https://www.theora.org/) に変換  
  **注意**：[**サポートされている再生形式**](https://docs.godotengine.org/en/latest/tutorials/animation/playing_videos.html?）highlight=Video#supported-playback-formats)
 1. 上記 **.ogv** ファイルを Godot プロジェクトフォルダに置く  
 
-#### 👉 [**Sprite3D**](https://docs.godotengine.org/en/latest/classes/class_sprite3d.html?highlight=Sprite3D#sprite3d) の用意  
+### 👉 [**Sprite3D**](https://docs.godotengine.org/en/latest/classes/class_sprite3d.html?highlight=Sprite3D#sprite3d) の用意  
 
 1. 大元の **Node3D** に [**Sprite3D**] を追加
 1. [**Sprite3D**]-[インスペクター] で各種設定  
@@ -3193,7 +3193,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
     * **Rotation**：x 0、y 0、z 0（ディスプレイの角度）
     * **Scale**：**0.25**、**0.25**、1（ピクセルアスペクト比･サイズ調整）
 
-#### 👉 [**SubViewport**](https://docs.godotengine.org/en/latest/classes/class_subviewport.html?highlight=SubViewport#subviewport) の用意  
+### 👉 [**SubViewport**](https://docs.godotengine.org/en/latest/classes/class_subviewport.html?highlight=SubViewport#subviewport) の用意  
 
 1. [**Sprite3D**] を選び [子ノードを追加]-[**SubViewport**] を選択
 1. [**SubViewport**]-[インスペクター] を設定  
@@ -3201,7 +3201,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, value):
     * Render Target：**When Parent Visible**
 1. [**Sprite3D**]-[インスペクター] の [**Texture**]-[新規 **ViewportTexture**] で上記で作成した **SubViewport** を選択
 
-#### 👉 [**VideoStreamPlayer**](https://docs.godotengine.org/en/latest/classes/class_videostreamplayer.html?highlight=VideoStreamPlayer#videostreamplayer) の用意
+### 👉 [**VideoStreamPlayer**](https://docs.godotengine.org/en/latest/classes/class_videostreamplayer.html?highlight=VideoStreamPlayer#videostreamplayer) の用意
 
 1. [**SubViewport**] を選び [子ノードを追加]-[**VideoStreamPlayer**] を選択
 1. [**VideoStreamPlayer**]-[インスペクター] で各種設定  
@@ -3227,19 +3227,19 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 <a id="220604"></a>
 # <b>Oculus Air Link</b>
 
-#### 👉 **Oculus アプリ**の用意  
+### 👉 **Oculus アプリ**の用意  
   1. Windows 上で [oculus.com/setup](https://www.oculus.com/setup/) から [OCULUS QUEST]（初代の場合）の [**ソフトウェアをダウンロード**] を選択  
     【注意】"**Quest 2**"の場合は [QUEST 2] の [QUEST2 PCアプリをダウンロード] を選択します
   1. ダウンロードした OculusSetup.exe をダブルクリックしインストール  
     ～しばらく時間がかかります☕～
 
-#### 👉 **Oculus Air Link** の起動   
+### 👉 **Oculus Air Link** の起動   
   * Quest コントローラーの [MENU] ボタンを押しメニューを表示し、時間が表示されている部分をトリガーで選択
   * [**Quest Link**] ボタンを選択
   * [**Air Linkを使用**] をオンにして [**起動**]
   📝 初めて接続する場合 [**ペアリング**]作業が必要です
 
-#### 👉 **Godot Engine** の実行  
+### 👉 **Godot Engine** の実行  
   * Godot の [▶] を押して Quest + Godot が同時再生されれば成功！
 
 ### 📝 [接続要件](https://www.moguravr.com/oculus-air-link/)  
@@ -3261,7 +3261,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 
 💡 **.blend** ファイルも読込可能ですが "[マルチポーズ](#220714)" はうまくインポートできません（要調査）   
 
-#### 👉 [Blender](https://www.blender.org/) の作業
+### 👉 [Blender](https://www.blender.org/) の作業
 
 1. 書き出したいオブジェクト（階層内全て含む）を選択
 1. [ファイル]-[エクスポート]-[**glTF 2.0 (.glb/.gltf)**] を選択
@@ -3270,7 +3270,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
     * 内容：**✓ 選択したオブジェクト**
 1. フォルダを Godot のプロジェクト内に指定し [**glTF 2.0のエクスポート**] を選択
 
-#### 👉 Godot の作業
+### 👉 Godot の作業
 
 1. [ファイルシステム] 内に表示される **.glb** を [シーン] の任意のノード上にドラッグ＆ドロップ
 1. 配置したオブジェクトの [インスペクター] で位置やスケールを調整
@@ -3290,7 +3290,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 
 着色したい [**MeshInstance3D**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=MeshInstance3D#meshinstance3d) の [インスタンス] を開く
 
-#### ➀ [**Mesh**](https://docs.godotengine.org/en/latest/classes/class_mesh.html#mesh) プロパティを使う方法  
+### ➀ [**Mesh**](https://docs.godotengine.org/en/latest/classes/class_mesh.html#mesh) プロパティを使う方法  
 
 * [[**Mesh**](https://docs.godotengine.org/en/latest/classes/class_mesh.html#mesh)]-[編集]-[[**Material**](https://docs.godotengine.org/en/latest/classes/class_material.html?highlight=Material#material)]-[新規 [**StandardMaterial3D**](https://docs.godotengine.org/en/latest/classes/class_standardmaterial3d.html?highlight=StandardMaterial3D#standardmaterial3d)]-[編集]  
   * **着色**：[**Albedo**]-[**Color**]（アルファ値設定可）
@@ -3308,7 +3308,7 @@ print(_obj.get_mesh().material.get_albedo())
 _obj.get_mesh().material.set_albedo(Color(1,0,0,1))
 ```
 
-#### ➁ [**Surface Material Override**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=Surface%20Material%20Override#class-meshinstance3d-method-get-surface-override-material) を使う方法  
+### ➁ [**Surface Material Override**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=Surface%20Material%20Override#class-meshinstance3d-method-get-surface-override-material) を使う方法  
 
 * [[**Surface Material Over…**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=Surface%20Material%20Override#class-meshinstance3d-method-get-surface-override-material)]-[新規 [**StandardMaterial3D**](https://docs.godotengine.org/en/latest/classes/class_standardmaterial3d.html?highlight=StandardMaterial3D#standardmaterial3d)]-[編集]  
   * **Mesh** プロパティを使う場合と同じ（上記参照）    
@@ -3352,7 +3352,7 @@ _obj.set_surface_override_material(0, _material)
 <a id="220611"></a>
 # <b>移動の基本3種</b>
 
-#### 📝 **指定位置に移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
+📝 **指定位置に移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
 
   ```gdscript
   Node3D.position = Vector3(0, 0, 0)
