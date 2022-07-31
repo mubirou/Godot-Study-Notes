@@ -3360,6 +3360,7 @@ _obj.set_surface_override_material(0, _material)
   Node3D.position = Vector3(0, 0, 0)
   Node3D.global_transform.origin = Vector3(0, 0, 0)
   ```
+***
 
   ```gdscript
   var _targetPos = Vector3(0, 0, 0)
