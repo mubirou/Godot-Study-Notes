@@ -3379,6 +3379,7 @@ _obj.set_surface_override_material(0, _material)
 
 （注意）オブジェクトの色に影響するためグレー系が好ましい  
 
+参考： [360°パノラマ](#220710)、[鏡面仕上げボール](#220711)  
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年03月07日  
