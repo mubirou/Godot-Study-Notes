@@ -3354,22 +3354,13 @@ _obj.set_surface_override_material(0, _material)
 
 ### この項目は書きかけです  
 
-（継承構造）  
+### 📖 継承構造  
 [Node3D](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=Node3D#node3d)  
 　└ [CollisionObject3D](https://docs.godotengine.org/en/latest/classes/class_collisionobject3d.html?highlight=CollisionObject3D#collisionobject3d)  
 　　└ [PhysicsBody3D](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#physicsbody3d)  
 　　　├ [**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d)   
 　　　├ [**CharacterBody3D**](https://docs.godotengine.org/en/latest/classes/class_characterbody3d.html?highlight=CharacterBody3D#characterbody3d)    
 　　　└ [**RigidDynamicBody3D**](https://docs.godotengine.org/en/latest/classes/class_rigiddynamicbody3d.html?highlight=RigidDynamicBody3D#rigiddynamicbody3d)
-
-📖 RigidDynamicBody3D  
-* 継承：PhysicsBody3D < CollisionObject3D < Node3D 
-
-📖 CharacterBody3D  
-* 継承：PhysicsBody3D < CollisionObject3D < Node3D
-
-📖 StaticBody3D  
-* 継承：PhysicsBody3D < CollisionObject3D < Node3D
 
 ### 📝 **指定位置に移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
 
