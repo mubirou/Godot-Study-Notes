@@ -3344,7 +3344,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 
 ### ➀ [**Mesh**](https://docs.godotengine.org/en/latest/classes/class_mesh.html#mesh) プロパティを使う方法  
 
-* [**Mesh**]-[編集]-[**Material**]-[新規 **StandardMaterial3D**]-[編集]  
+* [**Mesh**]-[編集]-[**[Material](https://docs.godotengine.org/en/latest/classes/class_material.html?highlight=Material#material)**]-[新規 **StandardMaterial3D**]-[編集]  
   * **着色**：[**Albedo**]-[**Color**]（アルファ値設定可）
   * **半透明**：[**Transparency**]
   * **光沢**：[**Metallic**] + [**Roughness**]
