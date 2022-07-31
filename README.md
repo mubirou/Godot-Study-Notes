@@ -3359,7 +3359,15 @@ _obj.get_mesh().material.set_albedo(Color(1,0,0,1))
 ### ➁ [**Surface Material Override**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=Surface%20Material%20Override#class-meshinstance3d-method-get-surface-override-material) を使う方法  
 
 * [**Surface Material Over…**]-[新規 **StandardMaterial3D**]-[編集]  
-    同上  
+  * **Mesh** プロパティを使う場合と同じ    
+
+```gdscript
+# オブジェクトの色を白→赤に変更
+var _obj = get_node("MeshInstance3D")
+print(_obj.get_mesh().material.get_albedo()) #->(1,1,1,1)
+_obj.get_mesh().material.set_albedo(Color(1,0,0,1))
+```
+
 
 * オブジェクトの色付け  
   1. [シーン]-[＋]-[MeshInstance] で任意の[プリミティブ](#プリミティブ)を作成
