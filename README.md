@@ -3349,7 +3349,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
   * **光沢**：[**Metallic**] + [**Roughness**]
 
 ```gdscript
-# オブジェクトの色を白 → 赤に変更
+# オブジェクトの色を白→赤に変更
 var _obj = get_node("MeshInstance3D")
 print(_obj.get_mesh().material.get_albedo()) #->(1,1,1,1)
 _obj.get_mesh().material.set_albedo(Color(1,0,0,1))
