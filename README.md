@@ -3378,23 +3378,11 @@ _material.set_albedo(Color(1,0,0,1))
 _obj.set_surface_override_material(0, _material)
 ```
 
-
-* オブジェクトの色付け  
-  1. [シーン]-[＋]-[MeshInstance] で任意の[プリミティブ](#プリミティブ)を作成
-  1. Mesh の [インスペクター]-[MeshInstance]-[**Material**]-[新規SpatialMaterial]-[編集]-[**Albedo**]-[Color] で #XXXXXX を指定
-
-* 環境色を設定（初期設定はやや青系）  
-  ※ オブジェクトの色は環境色に依存する  
-  1. **res://default_env.tres** の [インスペクター]-[Background]-[Sky]-[Procedura]-[編集] を選択
-  1. 次の通りに変更（例）  
-      * **Top Color**：a5d6f1 → ffffff（太陽光）
-      * **Horizon Color**：d6eafa → cccccc（地平線）
-
 参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/tutorials/3d/environment_and_post_processing.html#environment-options)  
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ 
 作成者：夢寐郎  
 作成日：2022年05月28日  
-更新日：2022年07月XX日 Godot 4.0 対応  
+更新日：2022年07月31日 Godot 4.0 対応  
 [[TOP]](#TOP)
 
 
