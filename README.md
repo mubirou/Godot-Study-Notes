@@ -3352,6 +3352,14 @@ _obj.set_surface_override_material(0, _material)
 <a id="220611"></a>
 # <b>移動の基本3種</b>
 
+### この項目は書きかけです  
+
+📖 RigidDynamicBody3D  
+
+📖 CharacterBody3D  
+
+📖 StaticBody3D  
+
 ### 📝 **指定位置に移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
 
   ```gdscript
@@ -3359,7 +3367,6 @@ _obj.set_surface_override_material(0, _material)
   Node3D.global_transform.origin = Vector3(0, 0, 0)
   ```
 ***
-### この項目は書きかけです  
 
   ```gdscript
   var _targetPos = Vector3(0, 0, 0)
