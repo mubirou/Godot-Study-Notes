@@ -3357,7 +3357,9 @@ _obj.get_mesh().material.set_albedo(Color(1,0,0,1))
 ```
 
 ### ➁ [**Surface Material Override**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=Surface%20Material%20Override#class-meshinstance3d-method-get-surface-override-material) を使う方法  
-*
+
+* [**Surface Material Override**]-[0]-[新規 **StandardMaterial3D**]-[編集]
+    同上  
 
 * オブジェクトの色付け  
   1. [シーン]-[＋]-[MeshInstance] で任意の[プリミティブ](#プリミティブ)を作成
@@ -3374,7 +3376,7 @@ _obj.get_mesh().material.set_albedo(Color(1,0,0,1))
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ 
 作成者：夢寐郎  
 作成日：2022年05月28日  
-更新日：2022年07月XX日 Godot 4.0 対応
+更新日：2022年07月XX日 Godot 4.0 対応  
 [[TOP]](#TOP)
 
 
