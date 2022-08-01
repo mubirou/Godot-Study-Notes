@@ -3352,6 +3352,8 @@ _obj.set_surface_override_material(0, _material)
 <a id="220611"></a>
 # <b>移動の基本3種</b>
 
+### 項目は書きかけです  
+
 ### 📖 物理物体３種の継承構造  
 [Node3D](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=Node3D#node3d)  
 　└ [CollisionObject3D](https://docs.godotengine.org/en/latest/classes/class_collisionobject3d.html?highlight=CollisionObject3D#collisionobject3d)  
@@ -3359,23 +3361,13 @@ _obj.set_surface_override_material(0, _material)
 　　　├ [**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d)（不動の物理物体･床や壁）   
 　　　├ [**CharacterBody3D**](https://docs.godotengine.org/en/latest/classes/class_characterbody3d.html?highlight=CharacterBody3D#characterbody3d)（スクリプトで移動する物理物体）    
 　　　├ [**RigidDynamicBody3D**](https://docs.godotengine.org/en/latest/classes/class_rigiddynamicbody3d.html?highlight=RigidDynamicBody3D#rigiddynamicbody3d)（他により押される物理物体）
-　　　└ [PhysicalBone3D](https://docs.godotengine.org/en/latest/classes/class_physicalbone3d.html?highlight=PhysicalBone3D#physicalbone3d)
+　　　└ [PhysicalBone3D](https://docs.godotengine.org/en/latest/classes/class_physicalbone3d.html?highlight=PhysicalBone3D#physicalbone3d)  
   
-
-### 📝 **指定位置に移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_spatial.html?highlight=global_transform#spatial)）
+### 📝 **指定位置に移動**
 
   ```gdscript
   Node3D.position = Vector3(0, 0, 0)
   Node3D.global_transform.origin = Vector3(0, 0, 0)
-  ```
-***
-### この項目は書きかけです  
-
-  ```gdscript
-  var _targetPos = Vector3(0, 0, 0)
-  var _currentPos = KinematicBody.translation
-  var _disPos = _targetPos - _currentPos
-  KinematicBody.move_and_slide(_disPos)
   ```
 
 ### 📝 **値だけ移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)）
