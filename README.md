@@ -3354,7 +3354,7 @@ _obj.set_surface_override_material(0, _material)
 
 ### この項目は書きかけです  
 
-### 参考：物理物体３種の継承   
+### 💡 物理物体３種の継承   
 [Node3D](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=Node3D#node3d)  
 　└ [CollisionObject3D](https://docs.godotengine.org/en/latest/classes/class_collisionobject3d.html?highlight=CollisionObject3D#collisionobject3d)（物理オブジェクトの基本クラス）  
 　　└ [PhysicsBody3D](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#physicsbody3d)（物理物体の基本クラス）  
