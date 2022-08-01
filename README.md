@@ -3392,7 +3392,8 @@ _obj.set_surface_override_material(0, _material)
 
 ### 📝 **力を加える**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
 
-  * [**RigidDynamicBody3D.add_constant_force(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_rigiddynamicbody3d.html?highlight=add_constant_force(#class-rigiddynamicbody3d-method-add-constant-force)
+  * [**RigidDynamicBody3D.add_constant_force(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_rigiddynamicbody3d.html?highlight=add_constant_force(#class-rigiddynamicbody3d-method-add-constant-force)  
+
   * [**RigidDynamicBody3D.add_constant_central_force(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_rigiddynamicbody3d.html?highlight=add_constant_force(#class-rigiddynamicbody3d-method-add-constant-central-force)  
 
   ```gdscript
