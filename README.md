@@ -3365,13 +3365,13 @@ _obj.set_surface_override_material(0, _material)
   
 ### 📝 **指定位置に移動**  
  
-  #### [**Node3D.set_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)   
+  * [**Node3D.set_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)   
   ```gdscript
   var _Node3D = get_node("〇〇")
   _Node3D.set_position(Vector3(0, 0, 0))
   ```
 
-  #### [**Node3D.set_global_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=set_global_position)  
+  * [**Node3D.set_global_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=set_global_position)  
   ```gdscript
   var _Node3D = get_node("XXXBody3D")
   _Node3D.set_global_position(Vector3(0, 0, 0))
@@ -3379,10 +3379,10 @@ _obj.set_surface_override_material(0, _material)
 
 ### 📝 **値だけ移動**  
 
-  #### [**PhysicsBody3D.move_and_collide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html#class-physicsbody3d-method-move-and-collide)  
+  * [**PhysicsBody3D.move_and_collide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html#class-physicsbody3d-method-move-and-collide)  
 
-   * [CollisionShape3D](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d) に衝突すると止まります  
-   * 衝突時に関連情報（[KinematicCollision3D](https://docs.godotengine.org/en/latest/classes/class_kinematiccollision3d.html#class-kinematiccollision3d)）を返す  
+    * [CollisionShape3D](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d) に衝突すると止まります  
+    * 衝突時に関連情報（[KinematicCollision3D](https://docs.godotengine.org/en/latest/classes/class_kinematiccollision3d.html#class-kinematiccollision3d)）を返す  
   ```gdscript
   var _PhysicsBody3D = get_node("〇〇")
 	var _KinematicCollision3D = _PhysicsBody3D.move_and_collide(Vector3(-0.1, 0, 0))
