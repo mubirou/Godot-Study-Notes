@@ -3369,7 +3369,7 @@ _obj.set_surface_override_material(0, _material)
   _Node3D.set_position(Vector3(0, 0, 0))
   ```
 
-  1. [**Node3D.set_global_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=set_global_position)  
+  2. [**Node3D.set_global_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=set_global_position)  
   ```gdscript
   var _Node3D = get_node("XXXBody3D")
   _Node3D.set_global_position(Vector3(0, 0, 0))
