@@ -3372,7 +3372,7 @@ _obj.set_surface_override_material(0, _material)
   ```
 
   * [**Node3D.set_global_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=set_global_position)  
-  
+
   ```gdscript
   var _Node3D = get_node("XXXBody3D")
   _Node3D.set_global_position(Vector3(0, 0, 0))
@@ -3395,6 +3395,7 @@ _obj.set_surface_override_material(0, _material)
 ### 📝 **力を加える**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
 
   * [**RigidDynamicBody3D.apply_force(Vector3)**](https://bit.ly/3cSXomI)  
+  * [**RigidDynamicBody3D.apply_central_force(Vector3)**](https://bit.ly/3Qctjg6)  
 
   ```gdscript
   RigidBody.add_force(Vector3(0,200,0), Vector3.ZERO)
