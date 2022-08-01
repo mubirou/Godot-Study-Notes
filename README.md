@@ -3395,11 +3395,10 @@ _obj.set_surface_override_material(0, _material)
 ### **➂力を加える**  
 
   * [**RigidDynamicBody3D.apply_force(Vector3)**](https://bit.ly/3cSXomI)  
-  * [**RigidDynamicBody3D.apply_central_force(Vector3)**](https://bit.ly/3Qctjg6)  
 
   ```gdscript
   var _RigidDynamicBody3D = get_node("〇〇")
-  _RigidDynamicBody3D.apply_central_force(Vector3(-100, 0, 0))
+  _RigidDynamicBody3D.apply_force(Vector3(-100, 0, 0))
   ```
 
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
