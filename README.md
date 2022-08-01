@@ -3373,7 +3373,7 @@ _obj.set_surface_override_material(0, _material)
 
 ### 📝 **値だけ移動**  
 
-  * **PhysicsBody3D.move_and_collide(Vector3)**
+  * [**PhysicsBody3D.move_and_collide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html#class-physicsbody3d-method-move-and-collide)  
   ```gdscript
   var _PhysicsBody3D = get_node("〇〇")
 	var _KinematicCollision3D = _PhysicsBody3D.move_and_collide(Vector3(-0.1, 0, 0))
