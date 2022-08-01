@@ -3389,10 +3389,6 @@ _obj.set_surface_override_material(0, _material)
 	  print(_KinematicCollision3D.get_collider().name)
   ```
 
-***
-
-  2. [CharacterBody3D.move_and_slide()] ???   
-
 ### 📝 **力を加える**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
 
   1. [RigidDynamicBody3D.add_constant_force()]
