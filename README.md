@@ -3354,7 +3354,7 @@ _obj.set_surface_override_material(0, _material)
 
 ### この項目は書きかけです  
 
-### 💡 物理物体３種の継承   
+### 📝 物理物体３種の継承   
 [Node3D](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=Node3D#node3d)  
 　└ [CollisionObject3D](https://docs.godotengine.org/en/latest/classes/class_collisionobject3d.html?highlight=CollisionObject3D#collisionobject3d)（物理オブジェクトの基本クラス）  
 　　└ [PhysicsBody3D](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#physicsbody3d)（物理物体の基本クラス）  
@@ -3363,7 +3363,7 @@ _obj.set_surface_override_material(0, _material)
 　　　├ [**RigidDynamicBody3D**](https://docs.godotengine.org/en/latest/classes/class_rigiddynamicbody3d.html?highlight=RigidDynamicBody3D#rigiddynamicbody3d)（他により押される物理物体）
 　　　└ [PhysicalBone3D](https://docs.godotengine.org/en/latest/classes/class_physicalbone3d.html?highlight=PhysicalBone3D#physicalbone3d)  
   
-### 📝 **指定位置に移動**  
+### **➀指定位置に移動**  
  
   * [**Node3D.set_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)   
   ```gdscript
@@ -3378,7 +3378,7 @@ _obj.set_surface_override_material(0, _material)
   _Node3D.set_global_position(Vector3(0, 0, 0))
   ```
 
-### 📝 **値だけ移動**  
+### **➁値だけ移動**  
 
   * [**PhysicsBody3D.move_and_collide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html#class-physicsbody3d-method-move-and-collide)  
 
@@ -3392,7 +3392,7 @@ _obj.set_surface_override_material(0, _material)
 	  print(_KinematicCollision3D.get_collider().name)
   ```
 
-### 📝 **力を加える**  
+### **➂力を加える**  
 
   * [**RigidDynamicBody3D.apply_force(Vector3)**](https://bit.ly/3cSXomI)  
   * [**RigidDynamicBody3D.apply_central_force(Vector3)**](https://bit.ly/3Qctjg6)  
