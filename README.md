@@ -3378,7 +3378,7 @@ _obj.set_surface_override_material(0, _material)
 ### 📝 **値だけ移動**  
 
   * [**PhysicsBody3D.move_and_collide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html#class-physicsbody3d-method-move-and-collide)  
-    * [CollisionShape3D](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d) と衝突すると止まります  
+    * [CollisionShape3D](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d) に衝突すると止まります  
     * 衝突時に関連情報（[KinematicCollision3D](https://docs.godotengine.org/en/latest/classes/class_kinematiccollision3d.html#class-kinematiccollision3d)）を返す  
   ```gdscript
   var _PhysicsBody3D = get_node("〇〇")
