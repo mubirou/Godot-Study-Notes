@@ -3363,18 +3363,20 @@ _obj.set_surface_override_material(0, _material)
 　　　├ [**RigidDynamicBody3D**](https://docs.godotengine.org/en/latest/classes/class_rigiddynamicbody3d.html?highlight=RigidDynamicBody3D#rigiddynamicbody3d)（他により押される物理物体）
 　　　└ [PhysicalBone3D](https://docs.godotengine.org/en/latest/classes/class_physicalbone3d.html?highlight=PhysicalBone3D#physicalbone3d)  
   
-### 📝 **指定位置に移動**
+### 📝 **指定位置に移動**  
 
   ```gdscript
   Node3D.position = Vector3(0, 0, 0)
   Node3D.global_transform.origin = Vector3(0, 0, 0)
   ```
 
-### 📝 **値だけ移動**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_kinematicbody.html?highlight=KinematicBody#kinematicbody)）
+### 📝 **値だけ移動**  
 
   ```gdscript
-  KinematicBody.move_and_slide(Vector3(0,0.1,0))
-  KinematicBody.move_and_collide(Vector3(0,0.1,0))
+  var _PhysicsBody3D = get_node("XXXBody3D")
+	var _KinematicCollision3D = _PhysicsBody3D.move_and_collide(Vector3(-0.1, 0, 0))
+	if _KinematicCollision3D != null:
+	  print(_KinematicCollision3D.get_collider().name)
   ```
 
 ### 📝 **力を加える**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
