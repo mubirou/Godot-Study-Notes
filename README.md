@@ -3366,14 +3366,16 @@ _obj.set_surface_override_material(0, _material)
 ### 📝 **指定位置に移動**  
 
   ```gdscript
-  Node3D.position = Vector3(0, 0, 0)
-  Node3D.global_transform.origin = Vector3(0, 0, 0)
+  var _Node3D = get_node("〇〇")
+  _Node3D.position = Vector3(0, 0, 0)
+  _Node3D.global_transform.origin = Vector3(0, 0, 0)
   ```
 
 ### 📝 **値だけ移動**  
 
+  * **PhysicsBody3D.move_and_collide(Vector3)**
   ```gdscript
-  var _PhysicsBody3D = get_node("XXXBody3D")
+  var _PhysicsBody3D = get_node("〇〇")
 	var _KinematicCollision3D = _PhysicsBody3D.move_and_collide(Vector3(-0.1, 0, 0))
 	if _KinematicCollision3D != null:
 	  print(_KinematicCollision3D.get_collider().name)
