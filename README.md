@@ -3352,9 +3352,7 @@ _obj.set_surface_override_material(0, _material)
 <a id="220611"></a>
 # <b>移動の基本3種</b>
 
-### 項目は書きかけです  
-
-### 📖 物理物体３種の継承構造  
+### （参考）物理物体３種の継承構造  
 [Node3D](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=Node3D#node3d)  
 　└ [CollisionObject3D](https://docs.godotengine.org/en/latest/classes/class_collisionobject3d.html?highlight=CollisionObject3D#collisionobject3d)  
 　　└ [PhysicsBody3D](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#physicsbody3d)  
@@ -3386,6 +3384,9 @@ _obj.set_surface_override_material(0, _material)
 	if _KinematicCollision3D != null:
 	  print(_KinematicCollision3D.get_collider().name)
   ```
+
+***
+### 項目は書きかけです  
 
 ### 📝 **力を加える**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
 
