@@ -3386,7 +3386,7 @@ _obj.set_surface_override_material(0, _material)
   ```
 
 ***
-### 項目は書きかけです  
+### この項目は書きかけです  
 
 ### 📝 **力を加える**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
 
