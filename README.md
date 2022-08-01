@@ -3364,7 +3364,8 @@ _obj.set_surface_override_material(0, _material)
 　　　└ [PhysicalBone3D](https://docs.godotengine.org/en/latest/classes/class_physicalbone3d.html?highlight=PhysicalBone3D#physicalbone3d)  
   
 ### 📝 **指定位置に移動**  
-
+ 
+  * [**Node3D.position**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)   
   ```gdscript
   var _Node3D = get_node("〇〇")
   _Node3D.position = Vector3(0, 0, 0)
