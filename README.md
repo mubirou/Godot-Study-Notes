@@ -3395,7 +3395,7 @@ _obj.set_surface_override_material(0, _material)
 ### **➂力を加える**  
 
   * [**RigidDynamicBody3D.apply_force(Vector3)**](https://bit.ly/3cSXomI)  
-    他のにも様々なメソッドが用意されています（[GODOT DOCS](https://bit.ly/3vsNvmf)）  
+    参考：[GODOT DOCS](https://bit.ly/3vsNvmf)    
 
   ```gdscript
   var _RigidDynamicBody3D = get_node("〇〇")
