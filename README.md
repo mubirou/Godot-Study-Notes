@@ -3372,6 +3372,7 @@ _obj.set_surface_override_material(0, _material)
   ```
 
   * [**Node3D.set_global_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=set_global_position)  
+  
   ```gdscript
   var _Node3D = get_node("XXXBody3D")
   _Node3D.set_global_position(Vector3(0, 0, 0))
@@ -3383,6 +3384,7 @@ _obj.set_surface_override_material(0, _material)
 
     * [CollisionShape3D](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d) に衝突すると止まります  
     * 衝突時に関連情報（[KinematicCollision3D](https://docs.godotengine.org/en/latest/classes/class_kinematiccollision3d.html#class-kinematiccollision3d)）を返す  
+  
   ```gdscript
   var _PhysicsBody3D = get_node("〇〇")
 	var _KinematicCollision3D = _PhysicsBody3D.move_and_collide(Vector3(-0.1, 0, 0))
@@ -3392,9 +3394,7 @@ _obj.set_surface_override_material(0, _material)
 
 ### 📝 **力を加える**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
 
-  * [**RigidDynamicBody3D.add_constant_force(Vector3)**](https://bit.ly/3JosTS0)  
-
-  * [**RigidDynamicBody3D.add_constant_central_force(Vector3)**](https://bit.ly/3OQMpHR)  
+  * [**RigidDynamicBody3D.apply_force(Vector3)**](https://bit.ly/3cSXomI)  
 
   ```gdscript
   RigidBody.add_force(Vector3(0,200,0), Vector3.ZERO)
