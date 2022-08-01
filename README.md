@@ -3352,6 +3352,8 @@ _obj.set_surface_override_material(0, _material)
 <a id="220611"></a>
 # <b>移動の基本3種</b>
 
+### この項目は書きかけです  
+
 ### 参考：物理物体３種の継承   
 [Node3D](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=Node3D#node3d)  
 　└ [CollisionObject3D](https://docs.godotengine.org/en/latest/classes/class_collisionobject3d.html?highlight=CollisionObject3D#collisionobject3d)（物理オブジェクトの基本クラス）  
@@ -3377,7 +3379,7 @@ _obj.set_surface_override_material(0, _material)
 
 ### 📝 **値だけ移動**  
 
-  * [**PhysicsBody3D.move_and_collide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html#class-physicsbody3d-method-move-and-collide)  
+  1. [**PhysicsBody3D.move_and_collide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html#class-physicsbody3d-method-move-and-collide)  
     * [CollisionShape3D](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d) に衝突すると止まります  
     * 衝突時に関連情報（[KinematicCollision3D](https://docs.godotengine.org/en/latest/classes/class_kinematiccollision3d.html#class-kinematiccollision3d)）を返す  
   ```gdscript
@@ -3388,7 +3390,8 @@ _obj.set_surface_override_material(0, _material)
   ```
 
 ***
-### この項目は書きかけです  
+
+  2. [CharacterBody3D.move_and_slide()] ???   
 
 ### 📝 **力を加える**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
 
