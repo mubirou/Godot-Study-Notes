@@ -3392,7 +3392,7 @@ _obj.set_surface_override_material(0, _material)
 	  print(_KinematicCollision3D.get_collider().name)
   ```
 
-### 📝 **力を加える**（[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_rigidbody.html?highlight=RigidBody#rigidbody)）
+### 📝 **力を加える**  
 
   * [**RigidDynamicBody3D.apply_force(Vector3)**](https://bit.ly/3cSXomI)  
   * [**RigidDynamicBody3D.apply_central_force(Vector3)**](https://bit.ly/3Qctjg6)  
