@@ -3357,7 +3357,7 @@ _obj.set_surface_override_material(0, _material)
 　└ [CollisionObject3D](https://docs.godotengine.org/en/latest/classes/class_collisionobject3d.html?highlight=CollisionObject3D#collisionobject3d)（物理オブジェクトの基本クラス）  
 　　└ [PhysicsBody3D](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#physicsbody3d)（物理ボディの基本クラス）  
 　　　├ [**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d)（床や壁）   
-　　　├ [**CharacterBody3D**](https://docs.godotengine.org/en/latest/classes/class_characterbody3d.html?highlight=CharacterBody3D#characterbody3d)（移動可･物理演算の影響無し）    
+　　　├ [**CharacterBody3D**](https://docs.godotengine.org/en/latest/classes/class_characterbody3d.html?highlight=CharacterBody3D#characterbody3d)（移動制御可･物理演算の影響無し）    
 　　　├ [**RigidDynamicBody3D**](https://docs.godotengine.org/en/latest/classes/class_rigiddynamicbody3d.html?highlight=RigidDynamicBody3D#rigiddynamicbody3d)（動く物理ボディ）
 　　　└ [PhysicalBone3D](https://docs.godotengine.org/en/latest/classes/class_physicalbone3d.html?highlight=PhysicalBone3D#physicalbone3d)  
   
