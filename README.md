@@ -3410,10 +3410,9 @@ _obj.set_surface_override_material(0, _material)
 <a id="XXX"></a>
 # <b>XXXXX</b>
 
-1. XXXXX
-    1. 三角形メッシュコリジョン（[ConcavePolygonShape3D](https://docs.godotengine.org/en/latest/classes/class_concavepolygonshape3d.html?highlight=ConcavePolygonShape3D#concavepolygonshape3d)）
-    1. 単一の凸型コリジョン（[ConvexPolygonShape3D](https://docs.godotengine.org/en/latest/classes/class_convexpolygonshape3d.html?highlight=ConvexPolygonShape3D)）
-    1. 簡略化された凸型のコリジョン
+1. 三角形メッシュコリジョン（[ConcavePolygonShape3D](https://docs.godotengine.org/en/latest/classes/class_concavepolygonshape3d.html?highlight=ConcavePolygonShape3D#concavepolygonshape3d)）
+1. 単一の凸型コリジョン（[ConvexPolygonShape3D](https://docs.godotengine.org/en/latest/classes/class_convexpolygonshape3d.html?highlight=ConvexPolygonShape3D)）
+1. 簡略化された凸型のコリジョン
 
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
 作成日：202X年XX月XX日  
