@@ -3358,7 +3358,7 @@ _obj.set_surface_override_material(0, _material)
 　　└ [PhysicsBody3D](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#physicsbody3d)（物理ボディの基本クラス）  
 　　　├ [**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d)（床や壁）   
 　　　├ [**CharacterBody3D**](https://docs.godotengine.org/en/latest/classes/class_characterbody3d.html?highlight=CharacterBody3D#characterbody3d)（移動制御可･重力等の影響無し）    
-　　　├ [**RigidDynamicBody3D**](https://docs.godotengine.org/en/latest/classes/class_rigiddynamicbody3d.html?highlight=RigidDynamicBody3D#rigiddynamicbody3d)（動く物理ボディ）
+　　　├ [**RigidDynamicBody3D**](https://docs.godotengine.org/en/latest/classes/class_rigiddynamicbody3d.html?highlight=RigidDynamicBody3D#rigiddynamicbody3d)（力を加えられる物理ボディ）
 　　　└ [PhysicalBone3D](https://docs.godotengine.org/en/latest/classes/class_physicalbone3d.html?highlight=PhysicalBone3D#physicalbone3d)  
   
 ### **➀指定位置に移動**  
