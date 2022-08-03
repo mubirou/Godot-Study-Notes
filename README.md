@@ -3421,6 +3421,7 @@ _obj.set_surface_override_material(0, _material)
 1. [**ConcavePolygonShape3D**](https://docs.godotengine.org/en/latest/classes/class_concavepolygonshape3d.html?highlight=ConcavePolygonShape3D#concavepolygonshape3d)
     * "**三角形メッシュコリジョン**"（超高精細）
     * 頂点数の省略不可
+    * 両方が ConcavePolygonShape3D の場合は無効
 1. [**ConvexPolygonShape3D**](https://docs.godotengine.org/en/latest/classes/class_convexpolygonshape3d.html?highlight=ConvexPolygonShape3D)  
     * "**単一の凸型コリジョン**"（中レベル）
     * "**簡略化された凸型のコリジョン**"（低レベル） 
