@@ -8,7 +8,7 @@
 
 ### **index（Godot 4.0 対応）**
 
-[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [オブジェクト色](#220506) | [背景色](#背景色) | [移動の基本3種](#220611) |
+[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [オブジェクト色](#220506) | [背景色](#背景色) | [移動の基本3種](#220611) | [衝突判定領域](#220801) |
 ***
 
 <a id="Androidビルド"></a>
@@ -3407,10 +3407,22 @@ _obj.set_surface_override_material(0, _material)
 [[TOP]](#TOP)
 
 
-<a id="XXX"></a>
-# <b>XXXXX</b>
+<a id="220801"></a>
+# <b>衝突判定領域</b>
 
-📝 [CollisionShape3D] の自動作成３種
+📝 プリミティブ型  
+
+1. [SphereShape3D](https://docs.godotengine.org/en/latest/classes/class_sphereshape3d.html?highlight=SphereShape3D#sphereshape3d)
+
+1. [BoxShape3D](https://docs.godotengine.org/en/latest/classes/class_boxshape3d.html?highlight=BoxShape3D#boxshape3d)
+
+1. [CapsuleShape3D](https://docs.godotengine.org/en/latest/classes/class_capsuleshape3d.html?highlight=CapsuleShape3D#capsuleshape3d)
+
+1. [CylinderShape3D](https://docs.godotengine.org/en/latest/classes/class_cylindershape3d.html?highlight=CylinderShape3D#cylindershape3d)
+
+📝 自動作成型  
+
+📝 [CollisionShape3D] の自動作成３種  
 1. 三角形メッシュコリジョン（[ConcavePolygonShape3D](https://docs.godotengine.org/en/latest/classes/class_concavepolygonshape3d.html?highlight=ConcavePolygonShape3D#concavepolygonshape3d)）
 1. 単一の凸型コリジョン（[ConvexPolygonShape3D](https://docs.godotengine.org/en/latest/classes/class_convexpolygonshape3d.html?highlight=ConvexPolygonShape3D)）
 1. 簡略化された凸型のコリジョン
