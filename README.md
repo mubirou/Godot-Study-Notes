@@ -3409,6 +3409,7 @@ _obj.set_surface_override_material(0, _material)
 
 <a id="220801"></a>
 # <b>衝突判定領域</b>
+さまざまな衝突判定領域（[**CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d)）について  
 
 📝 プリミティブ型  
 1. [**SphereShape3D**](https://docs.godotengine.org/en/latest/classes/class_sphereshape3d.html?highlight=SphereShape3D#sphereshape3d)（球）
@@ -3426,6 +3427,8 @@ _obj.set_surface_override_material(0, _material)
     * **[単一の凸型……]**（中レベル）を選び作成  
     * **[簡略化された凸型…]**（低レベル）を選び作成  
     * **頂点数の省略可**（[CollisionShape3D]-[インスペクター]-[Shape]-[ConvexPolygonShape3D]-[編集]-[Points]-[Array (size 〇〇)]-[サイズ]）
+
+📝デモファイル：[VideoPlayer.zip](https://github.com/mubirou/Godot/blob/main/zip/VideoPlayer.zip)  
 
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
 作成日：2022年08月XX日  
