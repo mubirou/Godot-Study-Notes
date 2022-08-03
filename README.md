@@ -3352,7 +3352,7 @@ _obj.set_surface_override_material(0, _material)
 <a id="220611"></a>
 # <b>移動の基本3種</b>
 
-### 📝 物理ボディ３種の継承構造   
+### 📝 物理ボディ３種の継承構造<a id="220611-1"></a>   
 [Node3D](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=Node3D#node3d)  
 　└ [CollisionObject3D](https://docs.godotengine.org/en/latest/classes/class_collisionobject3d.html?highlight=CollisionObject3D#collisionobject3d)  
 　　└ [PhysicsBody3D](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#physicsbody3d)  
@@ -3444,6 +3444,7 @@ _obj.set_surface_override_material(0, _material)
 
 参考：[YouTube](https://www.youtube.com/watch?v=Mq-_FffB2eE)  
 参考：[GODOT DOCS](https://docs.godotengine.org/en/latest/tutorials/physics/collision_shapes_3d.html?highlight=collision%20detection%20area#collision-shapes-3d)  
+参考：[物理ボディ３種](#220611-1)  
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
 作成日：2022年08月03日  
 [[TOP]](#TOP)
