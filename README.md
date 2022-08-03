@@ -3417,6 +3417,7 @@ _obj.set_surface_override_material(0, _material)
 1. [**CylinderShape3D**](https://docs.godotengine.org/en/latest/classes/class_cylindershape3d.html?highlight=CylinderShape3D#cylindershape3d)（円柱）
 
 📝 自動作成型  
+[MeshInstance3D](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=MeshInstance3D#meshinstance3d) を選び [メッシュ] ボタンを選択する
 1. 三角形メッシュコリジョン（[**ConcavePolygonShape3D**](https://docs.godotengine.org/en/latest/classes/class_concavepolygonshape3d.html?highlight=ConcavePolygonShape3D#concavepolygonshape3d)）
 1. 単一の凸型コリジョン（[**ConvexPolygonShape3D**](https://docs.godotengine.org/en/latest/classes/class_convexpolygonshape3d.html?highlight=ConvexPolygonShape3D)）
 1. 簡略化された凸型のコリジョン（同上）
