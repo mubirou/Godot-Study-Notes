@@ -3411,13 +3411,9 @@ _obj.set_surface_override_material(0, _material)
 # <b>衝突判定領域</b>
 
 📝 プリミティブ型  
-
 1. [SphereShape3D](https://docs.godotengine.org/en/latest/classes/class_sphereshape3d.html?highlight=SphereShape3D#sphereshape3d)
-
 1. [BoxShape3D](https://docs.godotengine.org/en/latest/classes/class_boxshape3d.html?highlight=BoxShape3D#boxshape3d)
-
 1. [CapsuleShape3D](https://docs.godotengine.org/en/latest/classes/class_capsuleshape3d.html?highlight=CapsuleShape3D#capsuleshape3d)
-
 1. [CylinderShape3D](https://docs.godotengine.org/en/latest/classes/class_cylindershape3d.html?highlight=CylinderShape3D#cylindershape3d)
 
 📝 自動作成型  
