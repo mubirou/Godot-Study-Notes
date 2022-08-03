@@ -3442,6 +3442,7 @@ _obj.set_surface_override_material(0, _material)
 　│　├ missile（**MeshInstance3D**）  
 　│　└ **CollisionShape3D**（[**ConvexPolygonShape3D**](https://docs.godotengine.org/en/latest/classes/class_convexpolygonshape3d.html?highlight=ConvexPolygonShape3D)）  
 
+参考：[YouTube](https://www.youtube.com/watch?v=Mq-_FffB2eE)  
 参考：[GODOT DOCS](https://docs.godotengine.org/en/latest/tutorials/physics/collision_shapes_3d.html?highlight=collision%20detection%20area#collision-shapes-3d)  
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
 作成日：2022年08月03日  
