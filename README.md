@@ -3411,13 +3411,13 @@ _obj.set_surface_override_material(0, _material)
 # <b>衝突判定領域</b>
 さまざまな衝突判定領域（[**CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d)）について  
 
-### 📝 プリミティブ型  
+### ➀プリミティブ型  
 1. [**SphereShape3D**](https://docs.godotengine.org/en/latest/classes/class_sphereshape3d.html?highlight=SphereShape3D#sphereshape3d)（球）
 1. [**BoxShape3D**](https://docs.godotengine.org/en/latest/classes/class_boxshape3d.html?highlight=BoxShape3D#boxshape3d)（直方体）
 1. [**CapsuleShape3D**](https://docs.godotengine.org/en/latest/classes/class_capsuleshape3d.html?highlight=CapsuleShape3D#capsuleshape3d)（カプセル薬）
 1. [**CylinderShape3D**](https://docs.godotengine.org/en/latest/classes/class_cylindershape3d.html?highlight=CylinderShape3D#cylindershape3d)（円柱）
 
-### 📝 自動作成型  
+### ➁自動作成型  
 [MeshInstance3D](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=MeshInstance3D#meshinstance3d) を選び [**メッシュ**] ボタンから作成
 1. [**ConcavePolygonShape3D**](https://docs.godotengine.org/en/latest/classes/class_concavepolygonshape3d.html?highlight=ConcavePolygonShape3D#concavepolygonshape3d)
     * **[三角形メッシュ…]**（超高精細）を選び作成  
@@ -3433,10 +3433,10 @@ _obj.set_surface_override_material(0, _material)
   * 階層構造  
 　├ mubirou（**CharacterBody3D**）  
 　│　├ Body（**MeshInstance3D**）  
-　│　└ **CollisionShape3D**（**ConcavePolygonShape3D**）  
+　│　└ **CollisionShape3D**（[**ConcavePolygonShape3D**](https://docs.godotengine.org/en/latest/classes/class_concavepolygonshape3d.html?highlight=ConcavePolygonShape3D#concavepolygonshape3d)）  
 　├ missile（**CharacterBody3D**）  
 　│　├ missile（**MeshInstance3D**）  
-　│　└ **CollisionShape3D**（**ConvexPolygonShape3D**）  
+　│　└ **CollisionShape3D**（[**ConvexPolygonShape3D**](https://docs.godotengine.org/en/latest/classes/class_convexpolygonshape3d.html?highlight=ConvexPolygonShape3D)）  
 
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
 作成日：2022年08月XX日  
