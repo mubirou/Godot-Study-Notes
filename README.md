@@ -3428,9 +3428,15 @@ _obj.set_surface_override_material(0, _material)
     * **[簡略化された凸型…]**（低レベル）を選び作成  
     * **頂点数の省略可**（[CollisionShape3D]-[インスペクター]-[Shape]-[ConvexPolygonShape3D]-[編集]-[Points]-[Array (size 〇〇)]-[サイズ]）
 
-### 📝デモファイル
+### 📝 デモファイル  
   * [CollisionShape3D.zip](https://github.com/mubirou/Godot/blob/main/zip/CollisionShape3D.zip)  
-  * XXX
+  * 階層構造  
+　├ mubirou（**CharacterBody3D**）  
+　│　├ Body（**MeshInstance3D**）  
+　│　└ **CollisionShape3D**（**ConcavePolygonShape3D**）  
+　├ missile（**CharacterBody3D**）  
+　│　├ missile（**MeshInstance3D**）  
+　│　└ **CollisionShape3D**（**ConvexPolygonShape3D**）  
 
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
 作成日：2022年08月XX日  
