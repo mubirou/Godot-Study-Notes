@@ -3419,12 +3419,12 @@ _obj.set_surface_override_material(0, _material)
 📝 自動作成型  
 [MeshInstance3D](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=MeshInstance3D#meshinstance3d) を選び [**メッシュ**] ボタンから作成
 1. [**ConcavePolygonShape3D**](https://docs.godotengine.org/en/latest/classes/class_concavepolygonshape3d.html?highlight=ConcavePolygonShape3D#concavepolygonshape3d)
-    * "**三角形メッシュコリジョン**"（超高精細）を選び作成  
+    * **[三角形メッシュ…]**（超高精細）を選び作成  
     * 頂点数の省略不可
     * 両方が ConcavePolygonShape3D の場合は無効
 1. [**ConvexPolygonShape3D**](https://docs.godotengine.org/en/latest/classes/class_convexpolygonshape3d.html?highlight=ConvexPolygonShape3D)  
-    * "**単一の凸型コリジョン**"（中レベル）を選び作成  
-    * "**簡略化された凸型のコリジョン**"（低レベル）を選び作成  
+    * **[単一の凸型……]**（中レベル）を選び作成  
+    * **[簡略化された凸型…]**（低レベル）を選び作成  
     * **頂点数の省略可**（[CollisionShape3D]-[インスペクター]-[Shape]-[ConvexPolygonShape3D]-[編集]-[Points]-[Array (size 〇〇)]-[サイズ]）
 
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
