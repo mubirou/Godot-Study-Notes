@@ -3431,6 +3431,9 @@ _obj.set_surface_override_material(0, _material)
 
 ### 📝 デモファイル  
   * [CollisionShape3D.zip](https://github.com/mubirou/Godot/blob/main/zip/CollisionShape3D.zip)  
+  * 右ジョイスティックでミサイルの前後左右
+  * 左ジョイスティックでミサイルの上下
+  * 衝突時に背面の壁が赤に変更
   * 階層構造  
 　├ mubirou（**CharacterBody3D**）  
 　│　├ Body（**MeshInstance3D**）  
