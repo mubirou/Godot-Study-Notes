@@ -3417,11 +3417,9 @@ _obj.set_surface_override_material(0, _material)
 1. [**CylinderShape3D**](https://docs.godotengine.org/en/latest/classes/class_cylindershape3d.html?highlight=CylinderShape3D#cylindershape3d)（円柱）
 
 📝 自動作成型  
-
-📝 [CollisionShape3D] の自動作成３種  
-1. 三角形メッシュコリジョン（[ConcavePolygonShape3D](https://docs.godotengine.org/en/latest/classes/class_concavepolygonshape3d.html?highlight=ConcavePolygonShape3D#concavepolygonshape3d)）
-1. 単一の凸型コリジョン（[ConvexPolygonShape3D](https://docs.godotengine.org/en/latest/classes/class_convexpolygonshape3d.html?highlight=ConvexPolygonShape3D)）
-1. 簡略化された凸型のコリジョン
+1. 三角形メッシュコリジョン（[**ConcavePolygonShape3D**](https://docs.godotengine.org/en/latest/classes/class_concavepolygonshape3d.html?highlight=ConcavePolygonShape3D#concavepolygonshape3d)）
+1. 単一の凸型コリジョン（[**ConvexPolygonShape3D**](https://docs.godotengine.org/en/latest/classes/class_convexpolygonshape3d.html?highlight=ConvexPolygonShape3D)）
+1. 簡略化された凸型のコリジョン（同上）
 
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
 作成日：202X年XX月XX日  
