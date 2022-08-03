@@ -3423,7 +3423,7 @@ _obj.set_surface_override_material(0, _material)
     * **[三角形メッシュ…]**（超高精細）を選び作成  
     * 頂点数の省略不可
     * 両方が ConcavePolygonShape3D の場合は無効
-    * 本来は StaticBody3D 用
+    * 本来は StaticBody3D（不動の物理ボディ）用
 1. [**ConvexPolygonShape3D**](https://docs.godotengine.org/en/latest/classes/class_convexpolygonshape3d.html?highlight=ConvexPolygonShape3D)  
     * **[単一の凸型……]**（中レベル）を選び作成  
     * **[簡略化された凸型…]**（低レベル）を選び作成  
