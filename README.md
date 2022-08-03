@@ -3419,7 +3419,7 @@ _obj.set_surface_override_material(0, _material)
 
 ### ➁自動作成型  
 [MeshInstance3D](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=MeshInstance3D#meshinstance3d) を選び [**メッシュ**] ボタンから作成
-1. [**ConcavePolygonShape3D**](https://docs.godotengine.org/en/latest/classes/class_concavepolygonshape3d.html?highlight=ConcavePolygonShape3D#concavepolygonshape3d)
+1. [**ConcavePolygonShape3D**](https://docs.godotengine.org/en/latest/classes/class_concavepolygonshape3d.html?highlight=ConcavePolygonShape3D#concavepolygonshape3d)💡
     * **[三角形メッシュ…]**（超高精細）を選び作成  
     * 頂点数の省略不可
     * 両方が ConcavePolygonShape3D の場合は無効
