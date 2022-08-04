@@ -8,7 +8,7 @@
 
 ### **index（Godot 4.0 対応）**
 
-[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [オブジェクト色](#220506) | [背景色](#背景色) | [移動の基本3種](#220611) | [衝突判定領域](#220801) |
+[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [オブジェクト色](#220506) | [背景色](#背景色) | [移動の基本3種](#220611) | [衝突判定領域](#220801) | [ボーンにアタッチ](#220802) |
 ***
 
 <a id="Androidビルド"></a>
@@ -3450,6 +3450,25 @@ _obj.set_surface_override_material(0, _material)
 [[TOP]](#TOP)
 
 
+<a id="XXX"></a>
+# <b>ボーンにアタッチ</b>
+任意の[ボーン](https://harkerhack.com/3dcg-what-is-born/)にオブジェクト（[Node3D](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=Node3D#node3d)）をアタッチする  
+
+### この項目は書きかけです  
+
+1. XXX
+    ```c#
+    XXXX
+    ```
+    * XXX
+    * XXXX
+
+参考：[YouTube](https://www.youtube.com/watch?v=A2JMYQBWeig)  
+実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
+作成日：2022年08月XX日  
+[[TOP]](#TOP)
+
+
 <a id="XXXXX"></a>
 # <b>XXXXX</b>
 
@@ -3477,7 +3496,7 @@ _obj.set_surface_override_material(0, _material)
     * XXX
     * XXXX
 
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
 更新日：202X年XX月XX日  
