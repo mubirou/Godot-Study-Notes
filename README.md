@@ -3476,7 +3476,7 @@ _obj.set_surface_override_material(0, _material)
 
     func _ready():
       ……
-      _hand = get_node("Player/Skeleton3D/…/Hand/Area3D")
+      _hand = get_node("Player/…/Hand/Area3D")
       
     func _physics_process(delta):
       var _theList = _hand.get_overlapping_bodies()
