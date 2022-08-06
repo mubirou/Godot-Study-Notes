@@ -3456,6 +3456,19 @@ _obj.set_surface_override_material(0, _material)
 
 ### この項目は書きかけです  
 
+  * 階層構造  
+　├ Wall（**MeshInstance3D**）←壁  
+　│　└ **StaticBody3D**  
+　│　　└ **CollisionShape3D** ←衝突判定領域  
+　├ Player（**Node3D**）  
+　│　├ **AnimationPlayer**  
+　│　└ **Skeleton3D**  
+　│　　├ Body（**MeshInstance3D**）←キャラクター  
+　│　　└ **BoneAttachment3D**  
+　│　　　└ Hand（**MeshInstance3D**）←追加したオブジェクト  
+　│　　　　└ **Area3D**  
+　│　　　　　└ **CollisionShape3D** ←衝突判定領域  
+
 💡 [**Area3D.get_overlapping_bodies()**](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#methods)  
   * [Area3D](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#area3d) 領域にある [PhysicsBody3D](#220611-1) の配列を返す  
 
