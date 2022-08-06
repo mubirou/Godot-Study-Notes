@@ -3461,6 +3461,7 @@ _obj.set_surface_override_material(0, _material)
 1. [Mixamo](#220713) を利用してアーマチュア含むオブジェクトを配置  
 1. [シーン] 内の [[**Skeleton3D**](https://docs.godotengine.org/en/latest/classes/class_skeleton3d.html?highlight=Skeleton3D#skeleton3d)]-[インスペクター] で各ボーンの位置を確認
 1. [**Skeleton3D**] を選び [子ノードを追加]-[[**BoneAttachment3D**](https://docs.godotengine.org/en/latest/classes/class_boneattachment3d.html?highlight=BoneAttachment3D#boneattachment3d)] を選択
+1. [**BoneAttachment3D**]-[インスペクター]-[**Use External Skeleton**] を **✓オン** にして上記の [**Skeleton3D**] を割り当てる
 1. [**BoneAttachment3D**] を選び [子ノードを追加]-[**MeshInstance3D**]-[インスペクター]-[**Mesh**]-[**CapsuleMesh**] など選択し位置、サイズを調整
 1. XXX
 
