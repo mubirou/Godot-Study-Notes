@@ -3457,11 +3457,7 @@ _obj.set_surface_override_material(0, _material)
 ### この項目は書きかけです  
 
 1. XXX
-    ```c#
-    XXXX
-    ```
-    * XXX
-    * XXXX
+  * [Area3D.get_overlapping_bodies()](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#methods)
 
 参考：[YouTube](https://www.youtube.com/watch?v=A2JMYQBWeig)  
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
