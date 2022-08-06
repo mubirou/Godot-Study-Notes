@@ -3464,7 +3464,7 @@ _obj.set_surface_override_material(0, _material)
 　│　├ **AnimationPlayer**  
 　│　└ **Skeleton3D**  
 　│　　├ Body（**MeshInstance3D**）←キャラクター  
-　│　　└ **BoneAttachment3D**  
+　│　　└ [**BoneAttachment3D**](https://docs.godotengine.org/en/latest/classes/class_boneattachment3d.html?highlight=BoneAttachment3D#boneattachment3d)  
 　│　　　└ Hand（**MeshInstance3D**）←追加したモノ  
 　│　　　　└ **Area3D**  
 　│　　　　　└ **CollisionShape3D** ←衝突判定領域  
