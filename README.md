@@ -3485,7 +3485,7 @@ _obj.set_surface_override_material(0, _material)
         var _mesh = _tmp.get_parent()
         _mesh.get_mesh().material.set_albedo(Color(…))
     ```
-  * 💡 [**Area3D.get_overlapping_bodies()**](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#methods)  
+  * 👆 [**Area3D.get_overlapping_bodies()**](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#methods)  
   （[Area3D](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#area3d) 領域にある [PhysicsBody3D](#220611-1) の配列を返す）
 
 参考：[YouTube](https://www.youtube.com/watch?v=A2JMYQBWeig)  
