@@ -3465,7 +3465,9 @@ _obj.set_surface_override_material(0, _material)
 1. [**BoneAttachment3D**]-[インスペクター]-[**Use External Skeleton**] を **✓オン** にして上記の [**Skeleton3D**] を割り当て
 1. 引続き [**Bone Name**] でオブジェクトをアタッチしたいボーンを選択（ボーンの位置に[マニュピレーター](https://blender-cg.net/manipyure-ta/#toc2)が表示）
 1. [**BoneAttachment3D**] を選び [子ノードを追加]-[**MeshInstance3D**]-[インスペクター]-[**Mesh**] から任意のメッシュを選択し位置、サイズを調整
-1. XXX
+1. 上記の [**MeshInstance3D**] を選び [子ノードを追加]-[[**Area3D**](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#area3d)] を追加
+1. 引続き [**Area3D**] を選び [子ノードを追加]-[[**CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionobject3d.html?highlight=CollisionObject3D#collisionobject3d)] を選択（[インスペクター]-[**Shape**] は上記の [**MeshInstance3D**] に合わせる）
+1. 必要に応じて衝突検知させるオブジェクトとスクリプトを記述（以下のデモファイルを参照）
 
 ### 📝 デモファイル  
   * [BoneAttachment.zip](https://github.com/mubirou/Godot/blob/main/zip/BoneAttachment.zip)  
