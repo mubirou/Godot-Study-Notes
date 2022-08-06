@@ -3352,7 +3352,7 @@ _obj.set_surface_override_material(0, _material)
 <a id="220611"></a>
 # <b>移動の基本3種</b>
 
-### 📝 物理ボディ３種の継承構造<a id="220611-1"></a>   
+### 📝 物理ボディ３種の継承構造<a id="220611-1"></a>  
 [Node3D](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=Node3D#node3d)  
 　└ [CollisionObject3D](https://docs.godotengine.org/en/latest/classes/class_collisionobject3d.html?highlight=CollisionObject3D#collisionobject3d)  
 　　└ [PhysicsBody3D](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#physicsbody3d)  
@@ -3376,7 +3376,7 @@ _obj.set_surface_override_material(0, _material)
   _Node3D.set_global_position(Vector3(0, 0, 0))
   ```
 
-### **➁値だけ移動**  
+### **➁値だけ移動**<a id="220611-2"></a>  
 
   * [**PhysicsBody3D.move_and_collide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html#class-physicsbody3d-method-move-and-collide)  
 
@@ -3487,6 +3487,7 @@ _obj.set_surface_override_material(0, _material)
     ```
     👆 [**Area3D.get_overlapping_bodies()**](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#methods)  
   （[Area3D](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#area3d) 領域にある [PhysicsBody3D](#220611-1) の配列を返す）
+  * 衝突判定領域を含む [CollisionObject3D](#220611-1) が [Area3D](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#area3d) ではなく [PhysicsBody3D](#220611-1) の場合は [**PhysicsBody3D.move_and_collide(Vector3)**](#220611-2) が利用可能  
 
 参考：[YouTube](https://www.youtube.com/watch?v=A2JMYQBWeig)  
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
