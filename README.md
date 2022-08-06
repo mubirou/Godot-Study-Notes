@@ -3457,7 +3457,7 @@ _obj.set_surface_override_material(0, _material)
 ### この項目は書きかけです  
 
 💡 [**Area3D.get_overlapping_bodies()**](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#methods)  
-  * Area3D 領域にある PhysicsBody3D の配列を返す  
+  * [Area3D](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#area3d) 領域にある [PhysicsBody3D](#220611-1) の配列を返す  
 
 参考：[YouTube](https://www.youtube.com/watch?v=A2JMYQBWeig)  
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
