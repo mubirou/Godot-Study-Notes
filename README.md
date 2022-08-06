@@ -3453,7 +3453,7 @@ _obj.set_surface_override_material(0, _material)
 
 <a id="220802"></a>
 # <b>ボーンにアタッチ</b>
-任意の[ボーン](https://harkerhack.com/3dcg-what-is-born/)にオブジェクト（[Node3D](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=Node3D#node3d)）をアタッチする  
+任意の[ボーン](https://harkerhack.com/3dcg-what-is-born/)にオブジェクト（[MeshInstance3D](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=MeshInstance3D#meshinstance3d)）等をアタッチする  
 
 ### この項目は書きかけです  
 
