@@ -3472,7 +3472,6 @@ _obj.set_surface_override_material(0, _material)
 　│　　　　　└ **CollisionShape3D** ←衝突判定領域  
   * コードのポイント  
     ```gdscript
-    ……
     var _hand : Area3D
 
     func _ready():
@@ -3485,7 +3484,6 @@ _obj.set_surface_override_material(0, _material)
       for _tmp in _theList:
         var _mesh = _tmp.get_parent()
         _mesh.get_mesh().material.set_albedo(Color(1,0,0,1)) # 赤
-      ……
     ```
   * 💡 [**Area3D.get_overlapping_bodies()**](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#methods)  
   （[Area3D](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#area3d) 領域にある [PhysicsBody3D](#220611-1) の配列を返す）
