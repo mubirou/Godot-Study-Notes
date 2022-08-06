@@ -3457,6 +3457,10 @@ _obj.set_surface_override_material(0, _material)
 
 ### この項目は書きかけです  
 
+### 📝 手順  
+1. [Mixamo](#220713) を利用してアーマチュア含むオブジェクトを配置  
+1. XXX
+
 ### 📝 デモファイル  
   * [BoneAttachment.zip](https://github.com/mubirou/Godot/blob/main/zip/BoneAttachment.zip)  
   * 階層構造  
