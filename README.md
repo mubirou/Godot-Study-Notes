@@ -3456,6 +3456,8 @@ _obj.set_surface_override_material(0, _material)
 
 ### この項目は書きかけです  
 
+#### 📝 デモファイル  
+  * [BoneAttachment.zip](https://github.com/mubirou/Godot/blob/main/zip/BoneAttachment.zip)  
   * 階層構造  
 　├ Wall（**MeshInstance3D**）←壁  
 　│　└ **StaticBody3D**  
@@ -3468,9 +3470,8 @@ _obj.set_surface_override_material(0, _material)
 　│　　　└ Hand（**MeshInstance3D**）←追加したモノ  
 　│　　　　└ [**Area3D**](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#area3d)  
 　│　　　　　└ **CollisionShape3D** ←衝突判定領域  
-
-💡 [**Area3D.get_overlapping_bodies()**](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#methods)  
-  * [Area3D](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#area3d) 領域にある [PhysicsBody3D](#220611-1) の配列を返す  
+  * 💡 [**Area3D.get_overlapping_bodies()**](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#methods)  
+  （[Area3D](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#area3d) 領域にある [PhysicsBody3D](#220611-1) の配列を返す）
 
 参考：[YouTube](https://www.youtube.com/watch?v=A2JMYQBWeig)  
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
