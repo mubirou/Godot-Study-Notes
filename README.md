@@ -3488,7 +3488,7 @@ _obj.set_surface_override_material(0, _material)
     ```
     👆 [**Area3D.get_overlapping_bodies()**](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#methods)  
   （[Area3D](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#area3d) 領域にある [PhysicsBody3D](#220611-1) の配列を返す）
-  * 衝突判定領域を含む [CollisionObject3D](#220611-1) が [Area3D](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#area3d) ではなく [PhysicsBody3D](#220611-1) の場合は [**PhysicsBody3D.move_and_collide(Vector3)**](#220611-2) が利用可能  
+  * 衝突判定領域を含む [CollisionObject3D](#220611-1) が [Area3D](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#area3d) ではなく [PhysicsBody3D](#220611-1) の何れか場合は [**PhysicsBody3D.move_and_collide(Vector3)**](#220611-2) が利用可能  
 
 参考：[YouTube](https://www.youtube.com/watch?v=A2JMYQBWeig)  
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
