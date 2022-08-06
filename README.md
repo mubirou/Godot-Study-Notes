@@ -3471,35 +3471,31 @@ _obj.set_surface_override_material(0, _material)
 　│　　　　└ [**Area3D**](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#area3d)  
 　│　　　　　└ **CollisionShape3D** ←衝突判定領域  
   * コードのポイント  
-  ```gdscript
-  extends Node3D
+    ```gdscript
+    var _hand : Area3D
+    var _redList = [] # PhysicsBody3D 配列
 
-  var _interface : XRInterface
-
-  var _hand : Area3D
-  var _redList = [] # PhysicsBody3D 配列
-
-  func _ready():
-    _interface = XRServer.find_interface("OpenXR")
-    if _interface and _interface.is_initialized():
-      var _viewport : Viewport = get_viewport()
-      _viewport.use_xr = true
-    _hand = get_node("Player/Skeleton3D/BoneAttachment3D/Hand/Area3D")
-    
-  func _physics_process(delta):
-    var _theList = _hand.get_overlapping_bodies()
-    if _theList == []:
-      if _redList == []: return
-      for _tmp in _redList:
-        var _mesh = _tmp.get_parent()
-        _mesh.get_mesh().material.set_albedo(Color(1,1,1,1)) # 白
-      _redList = []
-    else:
-      for _tmp in _theList:
-        var _mesh = _tmp.get_parent()
-        _mesh.get_mesh().material.set_albedo(Color(1,0,0,1)) # 赤
-      _redList = _theList
-  ```
+    func _ready():
+      _interface = XRServer.find_interface("OpenXR")
+      if _interface and _interface.is_initialized():
+        var _viewport : Viewport = get_viewport()
+        _viewport.use_xr = true
+      _hand = get_node("Player/Skeleton3D/BoneAttachment3D/Hand/Area3D")
+      
+    func _physics_process(delta):
+      var _theList = _hand.get_overlapping_bodies()
+      if _theList == []:
+        if _redList == []: return
+        for _tmp in _redList:
+          var _mesh = _tmp.get_parent()
+          _mesh.get_mesh().material.set_albedo(Color(1,1,1,1)) # 白
+        _redList = []
+      else:
+        for _tmp in _theList:
+          var _mesh = _tmp.get_parent()
+          _mesh.get_mesh().material.set_albedo(Color(1,0,0,1)) # 赤
+        _redList = _theList
+    ```
   * 💡 [**Area3D.get_overlapping_bodies()**](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#methods)  
   （[Area3D](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#area3d) 領域にある [PhysicsBody3D](#220611-1) の配列を返す）
 
