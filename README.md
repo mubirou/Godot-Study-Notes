@@ -3509,7 +3509,15 @@ _obj.set_surface_override_material(0, _material)
 <a id="220803"></a>
 # <b>青空文庫</b>
 
+### この項目は書きかけです  
+
 https://fonts.google.com/specimen/Kosugi+Maru#type-tester
+
+### 👉 Sprite3D の設定
+  * Texture：下記の SubViewport 
+  * Transform：表示したい位置･角度･スケール
+
+### 👉 SubViewport の設定
 
   * 階層構造  
 　├ **Sprite3D**  
