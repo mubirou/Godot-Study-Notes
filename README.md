@@ -3521,11 +3521,12 @@ https://fonts.google.com/specimen/Kosugi+Maru#type-tester
 ### 👉 Sprite3D の設定
   * **Texture**：下記の **SubViewport** 
   * **Transform**
-    * **Position**：x 0.1、y 0.5、z 1.5（表示位置）
+    * **Position**：x 0、y 0.5、z 1.5（表示位置）
     * **Rotation**：x -20、y 0、z 0（表示角度）
     * **Scale**：x 0.17、y 0.17、z 0.17（サイズ調整）
 
 ### 👉 SubViewport の設定
+  * **Size**：x 690、y 690（下記のRichTextLabelの表示範囲）
 
 
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
