@@ -3535,8 +3535,9 @@ https://fonts.google.com/specimen/Kosugi+Maru#type-tester
   * **BiDi**：
     * **Text Direction**：Left-to-Right
     * **Transform**：
-      * **Size**：x 690、y 760  
-💡 SubViewport 内の階層から外すとテキスト内容が確認可能（要調査）  
+      * **Size**：x 690、y 760
+
+  💡 SubViewport 内の階層から外すとテキスト内容が確認可能（要調査）  
 
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
 作成者：夢寐郎  
