@@ -3535,8 +3535,14 @@ https://fonts.google.com/specimen/Kosugi+Maru#type-tester
   * **Text**：[注文の多い店/宮沢賢治](https://www.aozora.gr.jp/cards/000081/files/43754_17659.html) から本文をコピペ
   * **BiDi**：
     * **Text Direction**：Left-to-Right
+  * **Layout**
     * **Transform**：
       * **Size**：x 690、y 760
+    * **Theme Override**：
+      * **Fonts**：
+        * **Normal Font**：[Kosugi Maru](https://fonts.google.com/specimen/Kosugi+Maru#type-tester)
+      * **Fonts sizes**：
+        * **Normal Font Size**：32
 
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
 作成者：夢寐郎  
