@@ -3530,7 +3530,7 @@ _obj.set_surface_override_material(0, _material)
 
 ### 👉 RichTextLabel の設定  
   （要検証）SubViewport 階層から外すとテキスト内容が確認可   
-  * **Text**：[注文の多い店/宮沢賢治](https://www.aozora.gr.jp/cards/000081/card43754.html#download) の[テキストファイル](https://github.com/mubirou/Godot/blob/main/txt/chumonno_oi_ryoriten.txt)から本文をコピペ
+  * **Text**：[注文の多い店/宮沢賢治](https://www.aozora.gr.jp/cards/000081/card43754.html#download) のテキストファイル（[chumonno_oi_ryoriten.txt](https://github.com/mubirou/Godot/blob/main/txt/chumonno_oi_ryoriten.txt)）から本文をコピペ
   * **BiDi**：
     * **Text Direction**：Left-to-Right
   * **Layout**
