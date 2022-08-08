@@ -3511,6 +3511,11 @@ _obj.set_surface_override_material(0, _material)
 
 ### この項目は書きかけです  
 
+* 階層構造  
+　├ **Sprite3D**  
+　│　└ **SubViewport**  
+　│　　└ **RichTextLabel**  
+
 https://fonts.google.com/specimen/Kosugi+Maru#type-tester
 
 ### 👉 Sprite3D の設定
@@ -3522,10 +3527,6 @@ https://fonts.google.com/specimen/Kosugi+Maru#type-tester
 
 ### 👉 SubViewport の設定
 
-  * 階層構造  
-　├ **Sprite3D**  
-　│　└ **SubViewport**  
-　│　　└ **RichTextLabel**  
 
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
 作成者：夢寐郎  
