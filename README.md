@@ -8,7 +8,7 @@
 
 ### **index（Godot 4.0 対応）**
 
-[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [オブジェクト色](#220506) | [背景色](#背景色) | [移動の基本3種](#220611) | [衝突判定領域](#220801) | [ボーンにアタッチ](#220802) | [青空文庫](#220803) |
+[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [オブジェクト色](#220506) | [背景色](#背景色) | [移動の基本3種](#220611) | [衝突判定領域](#220801) | [ボーンにアタッチ](#220802) | [テキストのスクロール](#220803) |
 ***
 
 <a id="Androidビルド"></a>
@@ -3507,9 +3507,7 @@ _obj.set_surface_override_material(0, _material)
 
 
 <a id="220803"></a>
-# <b>青空文庫</b>
-
-### この項目は書きかけです  
+# <b>テキストのスクロール</b>
 
 * 階層構造  
 　├ **Sprite3D**  
@@ -3519,33 +3517,64 @@ _obj.set_surface_override_material(0, _material)
 ### 👉 Sprite3D の設定
   * **Texture**：ViewportTexture（下記の **SubViewport**） 
   * **Transform**：
-    * **Position**：x 0、y 0.5、z -1.5（表示位置）
-    * **Rotation**：x -20、y 0、z 0（表示角度）
-    * **Scale**：x 0.17、y 0.17、z 0.17（サイズ調整）
+    * **Position**：x 0、y 0.55、z -1.5（表示位置）
+    * **Rotation**：x -15、y 0、z 0（表示角度）
+    * **Scale**：x 0.15、y 0.15、z 0.15（サイズ調整）
 
 ### 👉 SubViewport の設定
-  * **Size**：x 690、y 690（RichTextLabelのSizeに合わせる）
+  * **Size**：
+    * **x**：672（RichTextLabelのSizeに合わせる）
+    * **y**：660（調整）
   * **Render Target**：
     * **Update Mode**：Always（編集時）
 
 ### 👉 RichTextLabel の設定  
   （要検証）SubViewport 階層から外すとテキスト内容が確認可   
-  * **Text**：[注文の多い店/宮沢賢治](https://www.aozora.gr.jp/cards/000081/card43754.html#download) のテキストファイル（[chumonno_oi_ryoriten.txt](https://github.com/mubirou/Godot/blob/main/txt/chumonno_oi_ryoriten.txt)）から本文をコピペ
+  * **Text**：[注文の多い店/宮沢賢治](https://www.aozora.gr.jp/cards/000081/card43754.html#download) のテキストファイル（[chumonno_oi_ryoriten.txt](https://github.com/mubirou/Godot/blob/main/txt/chumonno_oi_ryoriten.txt)）から本文をコピペ（最終行に「完」を入れる）
+  * **Fit Content Height**：✓オン
+  * **Scroll Active**：オフ
   * **BiDi**：
     * **Text Direction**：Left-to-Right
   * **Layout**
     * **Transform**：
-      * **Size**：x 690、y 760
-      * **Position**：x 0、y -2（ちらつき防止）
+      * **Size**：x 672、y 13365（初期値）
+      * **Position**：x 0、y 0（調整）
     * **Theme Override**：
       * **Fonts**：
         * **Normal Font**：[Kosugi Maru](https://fonts.google.com/specimen/Kosugi+Maru#type-tester)
       * **Fonts sizes**：
         * **Normal Font Size**：32
 
+### 👉 コードの記述  
+  ```gdscript
+  # main.gd
+  extends Node3D
+
+  var _interface : XRInterface
+  var _richText : RichTextLabel
+  var _limitMin
+  var _limitMax
+
+  func _ready():
+    _interface = XRServer.find_interface("OpenXR")
+    if _interface and _interface.is_initialized():
+      var _viewport : Viewport = get_viewport()
+      _viewport.use_xr = true
+    _richText = get_node("Sprite3D/SubViewport/RichTextLabel")
+    _limitMin = _richText.get_position().y
+    _limitMax = -_richText.get_size().y + _richText.get_size().x
+
+  func _on_xr_controller_3d_right_input_axis_changed(name, value):
+    var _nextY = _richText.position.y + value.y * 10
+    if _nextY > _limitMin : _nextY = _limitMin
+    if _nextY < _limitMax: _nextY = _limitMax 
+    _richText.position.y = _nextY
+  ```
+
+デモファイル：[TextScroll.zip](https://github.com/mubirou/Godot/blob/main/zip/TextScroll.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：2022年08月XX日  
+作成日：2022年08月08日  
 [[TOP]](#TOP)
 
 
