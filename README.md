@@ -3544,23 +3544,6 @@ https://fonts.google.com/specimen/Kosugi+Maru#type-tester
 [[TOP]](#TOP)
 
 
-<a id="XXX"></a>
-# <b>XXXXX</b>
-
-1. XXX
-    ```c#
-    XXXX
-    ```
-    * XXX
-    * XXXX
-
-実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
-作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
-[[TOP]](#TOP)
-
-
 <a id="XXXXX"></a>
 # <b>XXXXX</b>
 
