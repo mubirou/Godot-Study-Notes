@@ -3526,7 +3526,7 @@ https://fonts.google.com/specimen/Kosugi+Maru#type-tester
     * **Scale**：x 0.17、y 0.17、z 0.17（サイズ調整）
 
 ### 👉 SubViewport の設定
-  * **Size**：x 690、y 690（下記のRichTextLabelのSizeに合わせる）
+  * **Size**：x 690、y 690（下記のRichTextLabelのSizeに合せる）
   * **Render Target**：
     * **Update Mode**：Always（編集時）
 
