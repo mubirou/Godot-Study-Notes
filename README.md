@@ -3517,9 +3517,9 @@ _obj.set_surface_override_material(0, _material)
 　│　　└ **RichTextLabel**  
 
 ### 👉 Sprite3D の設定
-  * **Texture**：下記の **SubViewport** 
+  * **Texture**：ViewportTexture（下記の **SubViewport**） 
   * **Transform**：
-    * **Position**：x 0、y 0.5、z 1.5（表示位置）
+    * **Position**：x 0、y 0.5、z -1.5（表示位置）
     * **Rotation**：x -20、y 0、z 0（表示角度）
     * **Scale**：x 0.17、y 0.17、z 0.17（サイズ調整）
 
