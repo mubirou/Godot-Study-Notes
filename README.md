@@ -3536,6 +3536,7 @@ _obj.set_surface_override_material(0, _material)
   * **Layout**
     * **Transform**：
       * **Size**：x 690、y 760
+      * **Position**：x 0、y -2（ちらつき防止）
     * **Theme Override**：
       * **Fonts**：
         * **Normal Font**：[Kosugi Maru](https://fonts.google.com/specimen/Kosugi+Maru#type-tester)
