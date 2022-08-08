@@ -3531,7 +3531,7 @@ https://fonts.google.com/specimen/Kosugi+Maru#type-tester
     * **Update Mode**：Always（編集時）
 
 ### 👉 RichTextLabel の設定  
-  （注意）SubViewport 階層から外すとテキスト内容が確認可能   
+  （要検証）SubViewport 階層から外すとテキスト内容が確認可   
   * **Text**：[注文の多い店/宮沢賢治](https://www.aozora.gr.jp/cards/000081/files/43754_17659.html) から本文をコピペ
   * **BiDi**：
     * **Text Direction**：Left-to-Right
