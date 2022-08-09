@@ -1989,7 +1989,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     * **[PrismMesh](https://docs.godotengine.org/ja/stable/classes/class_prismmesh.html?highlight=PrismMesh#prismmesh)**（プリズム＝三角柱）
     * **[QuadMesh](https://docs.godotengine.org/ja/stable/classes/class_quadmesh.html?highlight=QuadMesh#quadmesh)**（画像表示･動画再生用）
     * **[SphereMesh](https://docs.godotengine.org/ja/stable/classes/class_spheremesh.html?highlight=SphereMesh#spheremesh)**（球＝星･弾丸）
-    * **TextMesh**（新）
+    * **TextMesh**（新/3Dテキスト）
     * **TubeTrailMesh**（新）
     * **[PointMesh](https://docs.godotengine.org/ja/stable/classes/class_pointmesh.html?highlight=PointMesh)**
 
