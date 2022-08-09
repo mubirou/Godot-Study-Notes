@@ -1990,7 +1990,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     * **[QuadMesh](https://docs.godotengine.org/ja/stable/classes/class_quadmesh.html?highlight=QuadMesh#quadmesh)**（画像表示･動画再生用）
     * **[SphereMesh](https://docs.godotengine.org/ja/stable/classes/class_spheremesh.html?highlight=SphereMesh#spheremesh)**（球＝星･弾丸）
     * **TextMesh**（新/3Dテキスト）
-    * **TubeTrailMesh**（新）
+    * **TubeTrailMesh**（新/角柱＝多角形柱）
     * **[PointMesh](https://docs.godotengine.org/ja/stable/classes/class_pointmesh.html?highlight=PointMesh)**
 
 実行環境：Windows 10、Godot 4.0 alpha 10  
