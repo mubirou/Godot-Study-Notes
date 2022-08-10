@@ -2059,7 +2059,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     　　  └ **XRController3D**_Right  
     　　  　 └ Controller（右コントローラの視覚化）  
 
-📝 入力イベントとの接続  
+📝 入力イベントとの接続<a id="220703-1"></a>  
 
 1. [**XRController3D_Right**] を選択し [**ノード**] タブを選ぶ
 1. [ノード]-[**XRcontroller3D**]-[**button_pressed(name:String)**] を選択し [右クリック]-[**接続**]（下図）  
@@ -3524,22 +3524,19 @@ _obj.set_surface_override_material(0, _material)
 
 ### 👉 SubViewport の設定
   * **Size**：
-    * **x**：672（RichTextLabelのSizeに合わせる）
-    * **y**：660（調整）
+    * **x**：649（RichTextLabelのSizeに合わせる）
+    * **y**：662（同上）
   * **Render Target**：
     * **Update Mode**：Always（編集時）
 
 ### 👉 RichTextLabel の設定  
   （要検証）SubViewport 階層から外すとテキスト内容が確認可   
-  * **Text**：[注文の多い店/宮沢賢治](https://www.aozora.gr.jp/cards/000081/card43754.html#download) のテキストファイル（[chumonno_oi_ryoriten.txt](https://github.com/mubirou/Godot/blob/main/txt/chumonno_oi_ryoriten.txt)）から本文をコピペ（最終行に「完」を入れる）
-  * **Fit Content Height**：✓オン
-  * **Scroll Active**：オフ
+  * **Text**：[注文の多い店/宮沢賢治](https://www.aozora.gr.jp/cards/000081/card43754.html#download) のテキストファイル（[chumonno_oi_ryoriten.txt](https://github.com/mubirou/Godot/blob/main/txt/chumonno_oi_ryoriten.txt)）から本文をコピペ（最初にタイトル等、最終行に「完」を入れる）
   * **BiDi**：
     * **Text Direction**：Left-to-Right
   * **Layout**
     * **Transform**：
-      * **Size**：x 672、y 13365（初期値）
-      * **Position**：x 0、y 0（調整）
+      * **Size**：x 649、y 662（調整）  
     * **Theme Override**：
       * **Fonts**：
         * **Normal Font**：[Kosugi Maru](https://fonts.google.com/specimen/Kosugi+Maru#type-tester)
@@ -3553,8 +3550,7 @@ _obj.set_surface_override_material(0, _material)
 
   var _interface : XRInterface
   var _richText : RichTextLabel
-  var _limitMin
-  var _limitMax
+  var _lineCount = 0
 
   func _ready():
     _interface = XRServer.find_interface("OpenXR")
@@ -3562,20 +3558,34 @@ _obj.set_surface_override_material(0, _material)
       var _viewport : Viewport = get_viewport()
       _viewport.use_xr = true
     _richText = get_node("Sprite3D/SubViewport/RichTextLabel")
-    _limitMin = _richText.get_position().y
-    _limitMax = -_richText.get_size().y + _richText.get_size().x
 
+  # ジョイスティックの上下でスクロール
   func _on_xr_controller_3d_right_input_axis_changed(name, value):
-    var _nextY = _richText.position.y + value.y * 10
-    if _nextY > _limitMin : _nextY = _limitMin
-    if _nextY < _limitMax: _nextY = _limitMax 
-    _richText.position.y = _nextY
+    _lineCount -= value.y
+    __changeLine(_lineCount)
+
+  # B、Aボタンで頁送り
+  func _on_xr_controller_3d_right_button_pressed(name):
+    if name == "by_button":
+      _lineCount -= _richText.get_visible_line_count() - 1
+    if name == "ax_button": 
+      _lineCount += _richText.get_visible_line_count() - 1
+    __changeLine(_lineCount)
+
+  # 汎用関数	
+  func __changeLine(arg):
+    if arg < 0: _lineCount = 0
+    if arg > _richText.get_line_count() - _richText.get_visible_line_count() + 1:
+      _lineCount = _richText.get_line_count() - _richText.get_visible_line_count() + 1
+    _richText.scroll_to_line(round(_lineCount))
   ```
+  参考：[入力イベントの接続](#220703-1)  
 
 デモファイル：[TextScroll.zip](https://github.com/mubirou/Godot/blob/main/zip/TextScroll.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年08月08日  
+更新日：2022年08月10日 スクロールバー表示に対応  
 [[TOP]](#TOP)
 
 
