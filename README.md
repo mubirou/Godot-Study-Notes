@@ -3580,6 +3580,7 @@ _obj.set_surface_override_material(0, _material)
     _richText.scroll_to_line(round(_lineCount))
   ```
   参考：[入力イベントの接続](#220703-1)  
+  参考：[ジョイスティック角度](#220608)  
 
 デモファイル：[TextScroll.zip](https://github.com/mubirou/Godot/blob/main/zip/TextScroll.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
