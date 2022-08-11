@@ -2451,7 +2451,7 @@ Main（**Node3D**）
 282行目 #$Teleport.get_surface_override_material(0).set_shader_param("mix_color", no_collision_color)
 ```
 
-📝 **カスタマイズ**  
+📝 **カスタマイズ**（4.0 alpha 14 未検証）  
 
 * **テレポートの色の変更**
     * [シーン] の [**Function_Teleport**]-[インスペクター] で設定
