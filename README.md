@@ -3595,10 +3595,10 @@ _obj.set_surface_override_material(0, _material)
 
 ### この項目は書きかけです  
 
-1. A.tscn と B.tscn を用意
-1. [ボタン](#220716)を用意
+1. **〇.tscn** を複数用意
+1. [ボタン](#220716)を追加
 1. コードのポイント  
-  * [**get_tree().change_scene("res://〇〇.tscn")**](https://docs.godotengine.org/en/latest/tutorials/scripting/scene_tree.html?highlight=get_tree().change_scene#changing-current-scene)
+    * [**get_tree().change_scene("res://〇.tscn")**](https://docs.godotengine.org/en/latest/tutorials/scripting/scene_tree.html?highlight=get_tree().change_scene#changing-current-scene)
 
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
