@@ -2292,6 +2292,8 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
 <a id="220706"></a>
 # <b>テレポート移動</b>
 
+### この項目は更新中です
+
 📝 [**VRコントローラーの入力イベント**](https://github.com/mubirou/Godot#vr%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%81%AE%E5%85%A5%E5%8A%9B%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88) と同様に左コントローラーを設定  
 
 [**XRController3D_Left**]-[インスペクター]-[**Transform**]-[**Position**] で **y 1** に設定  
@@ -2315,7 +2317,7 @@ Meta Quest 41.0、Quest Link、Oculusアプリ
       * [**Subdivide Depth**]：**40**
     * [**Surface Material Override**]-[新規 **ShaderMaterial**]-[編集]
         * [Shader]-[**New Shader**]  
-          * 言語：Shader
+          * 型：Shader
           * Mode：Spatial
           * テンプレート：Empty
           * Built-in Shader：オフ
@@ -2391,7 +2393,7 @@ Main（Node3D）
 　 │　　　　└ Teleport  
 　 ├ Floor  
 　 │ └ **StaticBody3D**  
-　 │　　└ **CollisionShape3D**    
+　 │　　└ **CollisionShape3D**  
 　 └ DirecionalLight3D  
 
 📝 **ターゲットの作成**  
@@ -2434,11 +2436,21 @@ Main（**Node3D**）
 
 1. [**Function_Teleport**] を選択しスクリプトをアタッチ（名前は **Function_Teleport.gd**）
 1. **Function_Teleport.gd** の内容を Godot 4 用の [**Function_Teleport.gd**](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd) に書き換える（最新版 [Godot XR Tools](https://godotengine.org/asset-library/asset/214) は要検証）  
-1. エラーが出る箇所をコメントアウトする  
+1. [実行] 時にエラーが出る箇所をコメントアウトする  
 
 ```gdscript
  96行目 #$Target/Player_figure.scale = Vector3(ws, ws, ws)
-146行目	#$Target/Player_figure.scale = Vector3(ws, ws, ws)
+```
+
+1. [トリガー] でテレポートを表示再生時にエラーが出る箇所をコメントアウトする  
+
+```gdscript
+247行目 #$Teleport.get_surface_override_material(0).set_shader_param("scale_t", 1.0 / strength)
+248行目 #$Teleport.get_surface_override_material(0).set_shader_param("ws", ws)
+249行目 #$Teleport.get_surface_override_material(0).set_shader_param("length", cast_length)
+
+276行目 #$Teleport.get_surface_override_material(0).set_shader_param("mix_color", color)
+282行目 #$Teleport.get_surface_override_material(0).set_shader_param("mix_color", no_collision_color)
 ```
 
 📝 **カスタマイズ**  
@@ -2495,10 +2507,10 @@ Main（**Node3D**）
 
 デモファイル：[teleport.zip](https://github.com/mubirou/Godot/blob/main/zip/teleport.zip)  
 参考：[Godot 4 OpenXR demo project](https://github.com/BastiaanOlij/godot4_openxr_demo)  
-実行環境：Windows 10、Godot 4.0 alpha 11、[Godot XR Tools](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd)（Godot 4 対応）、Meta Quest 41.0、Quest Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 14、[Godot XR Tools](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd)、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月09日  
-更新日：2022年07月12日 特定の床のみ…に対応  
+更新日：2022年08月12日 Godot 4.0 alpha 14 に対応  
 [[TOP]](#TOP)
 
 
