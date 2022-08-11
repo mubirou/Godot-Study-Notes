@@ -8,7 +8,7 @@
 
 ### **index（Godot 4.0 対応）**
 
-[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [オブジェクト色](#220506) | [背景色](#背景色) | [移動の基本3種](#220611) | [衝突判定領域](#220801) | [ボーンにアタッチ](#220802) | [テキストのスクロール](#220803) |
+[外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [オブジェクト色](#220506) | [背景色](#背景色) | [移動の基本3種](#220611) | [衝突判定領域](#220801) | [ボーンにアタッチ](#220802) | [テキストのスクロール](#220803) | [シーン遷移](#220804) |
 ***
 
 <a id="Androidビルド"></a>
@@ -3249,7 +3249,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 1. Oculus Linkの動作要件を満たすスペックのPC
 1. PCとWi-FiルーターがLANケーブルで接続されている（有線接続である）こと
 
-実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月05日  
 更新日：2022年07月29日  Godot 4.0 対応  
@@ -3326,7 +3326,7 @@ _material.set_albedo(Color(1,0,0,1))
 _obj.set_surface_override_material(0, _material)
 ```
 
-実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年05月28日  
 更新日：2022年07月31日 Godot 4.0 対応  
@@ -3342,7 +3342,7 @@ _obj.set_surface_override_material(0, _material)
 （注意）オブジェクトの色に影響するためグレー系が好ましい  
 
 参考： [360°パノラマ](#220710)、[鏡面仕上げボール](#220711)  
-実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年03月07日  
 更新日：2022年07月31日 Godot 4.0 対応  
@@ -3401,7 +3401,7 @@ _obj.set_surface_override_material(0, _material)
   _RigidDynamicBody3D.apply_force(Vector3(-100, 100, 0))
   ```
 
-実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月15日  
 作成日：2022年08月02日 Godot 4.0 対応    
@@ -3446,7 +3446,7 @@ _obj.set_surface_override_material(0, _material)
 参考：[YouTube](https://www.youtube.com/watch?v=Mq-_FffB2eE)  
 参考：[GODOT DOCS](https://docs.godotengine.org/en/latest/tutorials/physics/collision_shapes_3d.html?highlight=collision%20detection%20area#collision-shapes-3d)  
 参考：[物理ボディ３種](#220611-1)  
-実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成日：2022年08月03日  
 [[TOP]](#TOP)
 
@@ -3501,7 +3501,7 @@ _obj.set_surface_override_material(0, _material)
   * 衝突判定領域を含む [CollisionObject3D](#220611-1) が [Area3D](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#area3d) ではなく [PhysicsBody3D](#220611-1) の何れか場合は [**PhysicsBody3D.move_and_collide(Vector3)**](#220611-2) が利用可能  
 
 参考：[YouTube](https://www.youtube.com/watch?v=A2JMYQBWeig)  
-実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成日：2022年08月06日  
 [[TOP]](#TOP)
 
@@ -3583,10 +3583,23 @@ _obj.set_surface_override_material(0, _material)
   参考：[ジョイスティック角度](#220608)  
 
 デモファイル：[TextScroll.zip](https://github.com/mubirou/Godot/blob/main/zip/TextScroll.zip)  
-実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年08月08日  
 更新日：2022年08月10日 スクロールバー表示に対応  
+[[TOP]](#TOP)
+
+
+<a id="220804"></a>
+# <b>シーン遷移</b>
+
+### この項目は書きかけです  ｓ
+
+1. A.tscn と B.tscn を用意（[ボタン](#220716)あり）
+
+実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Link、Oculusアプリ  
+作成者：夢寐郎  
+作成日：2022年08月11日  
 [[TOP]](#TOP)
 
 
@@ -3617,7 +3630,7 @@ _obj.set_surface_override_material(0, _material)
     * XXX
     * XXXX
 
-実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Air Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
 更新日：202X年XX月XX日  
