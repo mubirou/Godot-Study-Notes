@@ -3599,6 +3599,17 @@ _obj.set_surface_override_material(0, _material)
 1. [ボタン](#220716)を追加
 1. コードのポイント  
     * [**get_tree().change_scene("res://〇.tscn")**](https://docs.godotengine.org/en/latest/tutorials/scripting/scene_tree.html?highlight=get_tree().change_scene#changing-current-scene)
+    * 効果音終了後遷移  
+      ```gdscript
+        AudioStreamPlayer3D.play()
+        await __loop()
+        ……
+      func __loop():
+        await get_tree().create_timer(0.1).timeout
+        if ! AudioStreamPlayer3D.is_playing():
+          get_tree().change_scene("res://〇.tscn")
+        await __loop()
+      ```
 
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
