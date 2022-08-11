@@ -3599,7 +3599,7 @@ _obj.set_surface_override_material(0, _material)
 1. [ボタン](#220716)を追加
 1. コードのポイント  
     * [**get_tree().change_scene("res://〇.tscn")**](https://docs.godotengine.org/en/latest/tutorials/scripting/scene_tree.html?highlight=get_tree().change_scene#changing-current-scene)
-    * [タイマー](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC)を使い[効果音](#220614)の終了後に遷移  
+    * [タイマー](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC)を使い[効果音](#220614)が終了してから遷移  
       ```gdscript
         AudioStreamPlayer3D.play()
         await __loop()
