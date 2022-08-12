@@ -3646,6 +3646,8 @@ _obj.set_surface_override_material(0, _material)
   * **Bounce**（**反発係数**）：0～1（初期値：0）
 
 デモファイル：[FrictionBounce.zip](https://github.com/mubirou/Godot/blob/main/zip/FrictionBounce.zip)  
+📖**摩擦力**：高校「物理基礎の力学」（力のつり合い）  
+📖**はね返り係数**：高校「物理の力学」（力積と運動量）  
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年08月12日  
