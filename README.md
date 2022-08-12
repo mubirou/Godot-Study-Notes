@@ -1,5 +1,5 @@
 # Godot Study Notes 🔰<a id="TOP"></a>
-⌚395h50min  
+⌚397h35min  
 
 ### <b>index（Godot 3.4 対応）</b>
 
