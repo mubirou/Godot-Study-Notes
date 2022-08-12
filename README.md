@@ -3642,9 +3642,10 @@ _obj.set_surface_override_material(0, _material)
 ### 👉 摩擦係数と反発係数を設定  
 1. XXXXX
 
+デモファイル：[FrictionBounce.zip](https://github.com/mubirou/Godot/blob/main/zip/FrictionBounce.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
+作成日：2022年08月XX日  
 [[TOP]](#TOP)
 
 
