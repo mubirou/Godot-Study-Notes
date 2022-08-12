@@ -3631,8 +3631,6 @@ _obj.set_surface_override_material(0, _material)
 
 [**CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d) 同士が衝突した際に影響する「**摩擦係数**」と「**反発係数**（**はね返り係数**）」の設定
 
-### この項目は書きかけです  
-
 ### 👉 各種ノードを以下の通り配置  
 　├ Box（**[RigidDynamicBody3D](https://docs.godotengine.org/en/latest/classes/class_rigiddynamicbody3d.html?highlight=RigidDynamicBody3D#rigiddynamicbody3d)**）  
 　│　└ [**CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d)（BoxShape3D 型）  
@@ -3643,14 +3641,14 @@ _obj.set_surface_override_material(0, _material)
 
 ### 👉 摩擦係数と反発係数を設定  
 
-上記の Slope（[**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d)）の [インスペクター]-[**Physics Material Override**]-[新規 **PhysicsMaterial**]-[編集] で各種設定  
-  * **Friction**（摩擦係数）：0～1（初期値：1）
-  * **Bounce**（反発係数）：0～1（初期値：0）
+* 上記の Slope（[**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d)）の [インスペクター]-[**Physics Material Override**]-[新規 **PhysicsMaterial**]-[編集] で各種設定  
+  * **Friction**（**摩擦係数**）：0～1（初期値：1）
+  * **Bounce**（**反発係数**）：0～1（初期値：0）
 
 デモファイル：[FrictionBounce.zip](https://github.com/mubirou/Godot/blob/main/zip/FrictionBounce.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：2022年08月XX日  
+作成日：2022年08月12日  
 [[TOP]](#TOP)
 
 
