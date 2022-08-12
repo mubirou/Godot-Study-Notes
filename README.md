@@ -3632,7 +3632,7 @@ _obj.set_surface_override_material(0, _material)
 ### この項目は書きかけです  
 
 📝 各種ノードを以下の通り配置  
-　├ Box（**RigidDynamicBody3D**）  
+　├ Box（**[RigidDynamicBody3D](https://docs.godotengine.org/en/latest/classes/class_rigiddynamicbody3d.html?highlight=RigidDynamicBody3D#rigiddynamicbody3d)**）  
 　│　└ **CollisionShape3D**（BoxShape3D 型）  
 　│　　└ **MeshInstance3D**（BoxMesh 型＝落下物）  
 　└ Slope（**StaticBody3D**）  
