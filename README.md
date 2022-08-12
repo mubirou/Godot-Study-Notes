@@ -3641,7 +3641,7 @@ _obj.set_surface_override_material(0, _material)
 
 ### 👉 摩擦係数と反発係数を設定  
 
-* 上記の Slope（[**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d)）の [インスペクター]-[**Physics Material Override**]-[新規 **PhysicsMaterial**]-[編集] で各種設定  
+* 上記の Slope（[**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d)）の [インスペクター]-[**Physics Material Override**]-[新規 **PhysicsMaterial**]-[編集]    
   * **Friction**（**摩擦係数**）：0～1（初期値：1）
   * **Bounce**（**反発係数**）：0～1（初期値：0）
 
