@@ -3633,11 +3633,11 @@ _obj.set_surface_override_material(0, _material)
 
 📝 各種ノードを以下の通り配置  
 　├ Box（**RigidDynamicBody3D**）  
-　│└ **CollisionShape**（BoxShape3D 型）  
-　│　└ **MeshInstance3D**（BoxMesh 型＝落下物）  
+　│　└ **CollisionShape**（BoxShape3D 型）  
+　│　　└ **MeshInstance3D**（BoxMesh 型＝落下物）  
 　└ Slope（**StaticBody3D**）  
-　　└ **CollisionShape**（BoxShape3D 型）  
-　　　└ **MeshInstance3D**（BoxMesh 型＝斜めの床）  
+　　　└ **CollisionShape**（BoxShape3D 型）  
+　　　　└ **MeshInstance3D**（BoxMesh 型＝斜めの床）  
 
 
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
