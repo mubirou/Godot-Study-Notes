@@ -3669,12 +3669,7 @@ _obj.set_surface_override_material(0, _material)
 
 ### 準備  
   1. [ファイルシステム]-[res://] 上で右クリック→[新規スクリプト]を選択
-
-<a name="グローバル変数"></a>
-
-### グローバル変数
-1. [Godot Engine]-[ファイルシステム]上で右クリック→[新規スクリプト]を選択
-1. [パス] は "res://**Global.gd**" にしてコードを記述  
+  1. [パス] は "res://**Global.gd**" にしてコードを記述  
     ```gdscript
     # Global.gd
     extends Node3D
