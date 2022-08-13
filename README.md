@@ -3677,7 +3677,7 @@ _obj.set_surface_override_material(0, _material)
   ```
   3. [プロジェクト]-[プロジェクト設定]-[**Autoload**（自動読み込み）]を選択
   1. [パス]-[📁] から上記の **Global.gd** を選択し [追加]  
-  ![image](https://github.com/mubirou/Godot/blob/main/jpg/202208131844.jpg)  
+  |![image](https://github.com/mubirou/Godot/blob/main/jpg/202208131844.jpg)|  
   
 ### 👉 利用方法  
   複数のシーンで利用可能  
