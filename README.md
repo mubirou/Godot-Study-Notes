@@ -3629,7 +3629,7 @@ _obj.set_surface_override_material(0, _material)
 <a id="220805"></a>
 # <b>摩擦係数と反発係数</b>
 
-[**CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d) 同士が衝突した際に影響する「[**摩擦係数**](https://d-engineer.com/Mechanics/masatu.html)」と「**反発係数**（**はね返り係数**）」の設定
+[**CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d) 同士が衝突した際に影響する「[**摩擦係数**](https://d-engineer.com/Mechanics/masatu.html)」と「[**反発係数**（**はね返り係数**）](https://hujiblog.com/archives/2468#%E5%8F%8D%E7%99%BA%E4%BF%82%E6%95%B0%E3%81%AE%E5%85%AC%E5%BC%8F)」の設定
 
 ### 👉 各種ノードを以下の通り配置  
 　├ Box（**[RigidDynamicBody3D](https://docs.godotengine.org/en/latest/classes/class_rigiddynamicbody3d.html?highlight=RigidDynamicBody3D#rigiddynamicbody3d)**）  
@@ -3643,7 +3643,7 @@ _obj.set_surface_override_material(0, _material)
 
 * 上記の Slope（[**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d)）の [インスペクター]-[**Physics Material Override**]-[新規 **PhysicsMaterial**]-[編集]    
   * **Friction**（[**摩擦係数**](https://d-engineer.com/Mechanics/masatu.html)）：0～1（初期値：1）
-  * **Bounce**（**反発係数**）：0～1（初期値：0）  
+  * **Bounce**（[**反発係数**](https://hujiblog.com/archives/2468#%E5%8F%8D%E7%99%BA%E4%BF%82%E6%95%B0%E3%81%AE%E5%85%AC%E5%BC%8F)）：0～1（初期値：0）  
 
 💡 [**重力加速度**](https://www.eps.sci.kyoto-u.ac.jp/research/introduction/07/index.html) は [プロジェクト]-[プロジェクト設定]-[一般]-[Physics]-[3D]-[**DEfault Gravity**] で設定（初期値：**9.8**）  
 
