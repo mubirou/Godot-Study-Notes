@@ -3670,13 +3670,13 @@ _obj.set_surface_override_material(0, _material)
 ### 準備  
   1. [ファイルシステム]-[res://] 上で右クリック→[新規スクリプト]を選択
   1. [パス] は "res://**Global.gd**" にしてコードを記述  
-    ```gdscript
-    # Global.gd
-    extends Node3D
-    var SCORE = 100
-    func Welcome(arg):
-      return "Welcome," + arg + "!"
-    ```
+      ```gdscript
+      # Global.gd
+      extends Node3D
+      var SCORE = 100
+      func Welcome(arg):
+        return "Welcome," + arg + "!"
+      ```
 
 1. [プロジェクト]-[プロジェクト設定]-[自動読み込み]を選択
 1. [パス]を"res://**Global.gd**"に設定し[追加]を選択
