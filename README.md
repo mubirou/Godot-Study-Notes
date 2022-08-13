@@ -3691,7 +3691,7 @@ _obj.set_surface_override_material(0, _material)
 
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：2022年08月XX日  
+作成日：2022年08月13日  
 [[TOP]](#TOP)
 
 
