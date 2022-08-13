@@ -3677,6 +3677,7 @@ _obj.set_surface_override_material(0, _material)
   func Welcome(arg):
     return "Welcome," + arg + "!"
   ```
+  
   1. [プロジェクト]-[プロジェクト設定]-[自動読み込み]を選択
   1. [パス]を"res://**Global.gd**"に設定し[追加]を選択
   1. [グローバル変数]は[✓有効]のままにする
