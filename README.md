@@ -3681,31 +3681,15 @@ _obj.set_surface_override_material(0, _material)
   1. [パス]-[📁] から上記の **Global.gd** を選択し [追加]  
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202208131844.jpg)  
   
-### 利用方法
-  1. XXX
-    ```GDScript
-    #Main.gd
-    extends Spatial #2Dの場合はNode2D
-
-    #-----------------------------
-    # 関数内でのグローバル変数の扱い
-    #-----------------------------
-    func _ready():
-        print(Global._someGlobal) #-> 100（参照）
-        Global._someGlobal = 200 # 変更
-        print(Global._someGlobal) #-> 200（変更されている）
-
-        var _myClass = MyClass.new()
-
-    #-------------------------------
-    # クラス内でのグローバル変数の扱い
-    #-------------------------------
-    class MyClass:
-        func _init():
-            print(Global._someGlobal) #-> 200（参照）
-            Global._someGlobal = 300 # 変更
-            print(Global._someGlobal) #-> 300（変更されている）
-    ```
+### 利用方法  
+  複数のシーンで利用可能  
+  ```gdscript
+  func _ready():
+    ……
+    Global.SCORE -= 1
+    print(Global.SCORE)
+    print(Global.Welcome("〇〇"))
+  ```
 
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
