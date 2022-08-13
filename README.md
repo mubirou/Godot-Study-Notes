@@ -3669,7 +3669,7 @@ _obj.set_surface_override_material(0, _material)
 
 ### 準備  
   1. [ファイルシステム]-[res://] 上で右クリック→[新規スクリプト]を選択
-  1. [パス] は "res://**Global.gd**" にしてコードを記述  
+  2. [パス] は "res://**Global.gd**" にしてコードを記述  
   ```gdscript
   # Global.gd
   extends Node3D
@@ -3677,11 +3677,12 @@ _obj.set_surface_override_material(0, _material)
   func Welcome(arg):
     return "Welcome," + arg + "!"
   ```
-
-1. [プロジェクト]-[プロジェクト設定]-[自動読み込み]を選択
-1. [パス]を"res://**Global.gd**"に設定し[追加]を選択
-1. [グローバル変数]は[✓有効]のままにする
-1. 動作確認  
+  3. [プロジェクト]-[プロジェクト設定]-[**Autoload**（自動読み込み）]を選択
+  1. [パス]-[📁] から上記の **Global.gd** を選択し [追加]  
+  ![image](https://github.com/mubirou/Godot/blob/main/jpg/202208131844.jpg)  
+  
+### 利用方法
+  1. XXX
     ```GDScript
     #Main.gd
     extends Spatial #2Dの場合はNode2D
@@ -3708,8 +3709,7 @@ _obj.set_surface_override_material(0, _material)
 
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2022年08月XX日  
 [[TOP]](#TOP)
 
 
