@@ -3670,7 +3670,7 @@ _obj.set_surface_override_material(0, _material)
   2. [パス] は "res://**Global.gd**" にしてコードを記述  
   ```gdscript
   # Global.gd
-  extends Node3D
+  extends Node
   var SCORE = 100
   func Welcome(arg):
     return "Welcome," + arg + "!"
