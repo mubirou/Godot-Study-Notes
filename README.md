@@ -3663,13 +3663,13 @@ _obj.set_surface_override_material(0, _material)
 ### この項目は書きかけです  
 
 ### 特徴
-* Unity の [staticクラス](https://github.com/mubirou/Unity3D/tree/master/study-notes#static%E3%82%AF%E3%83%A9%E3%82%B9) の Godot 版
-* 複数の .gd ファイルから利用可能な「共有データ」が作れる（変更可能）
-* シーン遷移時でもデータを渡すことが可能
+  * Unity の [staticクラス](https://github.com/mubirou/Unity3D/tree/master/study-notes#static%E3%82%AF%E3%83%A9%E3%82%B9) の Godot 版
+  * 複数の .gd ファイルから利用可能な「共有データ」が作れる（変更可能）
+  * シーン遷移時でもデータを渡すことが可能
 
 ### 準備  
-1. [ファイルシステム]-[res://] 上で右クリック→[新規スクリプト]を選択
-1. [パス] は "res://**Global.gd**" にしてコードを記述  
+  1. [ファイルシステム]-[res://] 上で右クリック→[新規スクリプト]を選択
+  1. [パス] は "res://**Global.gd**" にしてコードを記述  
   ```gdscript
   # Global.gd
   extends Node3D
@@ -3677,10 +3677,10 @@ _obj.set_surface_override_material(0, _material)
   func Welcome(arg):
     return "Welcome," + arg + "!"
   ```
-1. [プロジェクト]-[プロジェクト設定]-[自動読み込み]を選択
-1. [パス]を"res://**Global.gd**"に設定し[追加]を選択
-1. [グローバル変数]は[✓有効]のままにする
-1. 動作確認  
+  1. [プロジェクト]-[プロジェクト設定]-[自動読み込み]を選択
+  1. [パス]を"res://**Global.gd**"に設定し[追加]を選択
+  1. [グローバル変数]は[✓有効]のままにする
+  1. 動作確認  
     ```GDScript
     #Main.gd
     extends Spatial #2Dの場合はNode2D
