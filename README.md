@@ -3664,7 +3664,7 @@ _obj.set_surface_override_material(0, _material)
 
 ### 📝 特徴
   * Unity の [staticクラス](https://github.com/mubirou/Unity3D/tree/master/study-notes#static%E3%82%AF%E3%83%A9%E3%82%B9) の Godot 版
-  * 複数の .gd ファイルから利用可能な「共有データ」（変更可能）が作れる
+  * 複数の .gd ファイルから利用可能な「共有データ」が作れる（変更可能）
   * シーン遷移時でもデータを渡すことが可能
 
 ### 
