@@ -3666,7 +3666,7 @@ _obj.set_surface_override_material(0, _material)
   * シーン遷移時でもデータを渡すことが可能
 
 ### 👉 準備  
-  1. [ファイルシステム] 上で右クリック→[新規スクリプト] を選択
+  1. [ファイルシステム] 上で右クリック→[新規スクリプト]
   2. [パス] は "res://**Global.gd**" にしてコードを記述  
   ```gdscript
   # Global.gd
