@@ -3665,7 +3665,7 @@ _obj.set_surface_override_material(0, _material)
   * 複数の .gd から利用可能な共有データが作れる＝変更可能
   * シーン遷移時でもデータを渡すことが可能
 
-### 👉 準備  
+### 👉 グローバル変数の準備  
   1. [ファイルシステム] 上で右クリック→[新規スクリプト]
   2. [パス] は "res://**Global.gd**" にしてコードを記述  
   ```gdscript
@@ -3677,7 +3677,7 @@ _obj.set_surface_override_material(0, _material)
   ```
   3. [プロジェクト]-[プロジェクト設定]-[**Autoload**（自動読み込み）]を選択
   1. [パス]-[📁] から上記の **Global.gd** を選択し [追加]  
-  |![image](https://github.com/mubirou/Godot/blob/main/jpg/202208131844.jpg)|  
+  ![image](https://github.com/mubirou/Godot/blob/main/jpg/202208131844.jpg)  
   
 ### 👉 利用方法  
   複数のシーンで利用可能  
@@ -3689,6 +3689,7 @@ _obj.set_surface_override_material(0, _material)
     print(Global.Welcome("〇〇"))
   ```
 
+参考：[グローバル変数](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#%E3%82%B0%E3%83%AD%E3%83%BC%E3%83%90%E3%83%AB%E5%A4%89%E6%95%B0)  
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年08月13日  
