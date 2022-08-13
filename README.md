@@ -3668,14 +3668,47 @@ _obj.set_surface_override_material(0, _material)
   * シーン遷移時でもデータを渡すことが可能
 
 ### 準備  
-  1. XXX
+  1. [ファイルシステム]-[res://] 上で右クリック→[新規スクリプト]を選択
 
-1. XXX
-    ```c#
-    XXXX
+<a name="グローバル変数"></a>
+
+### グローバル変数
+1. [Godot Engine]-[ファイルシステム]上で右クリック→[新規スクリプト]を選択
+1. [パス] は "res://**Global.gd**" にしてコードを記述  
+    ```gdscript
+    # Global.gd
+    extends Node3D
+    var SCORE = 100
+    func Welcome(arg):
+      return "Welcome," + arg + "!"
     ```
-    * XXX
-    * XXXX
+1. [プロジェクト]-[プロジェクト設定]-[自動読み込み]を選択
+1. [パス]を"res://**Global.gd**"に設定し[追加]を選択
+1. [グローバル変数]は[✓有効]のままにする
+1. 動作確認  
+    ```GDScript
+    #Main.gd
+    extends Spatial #2Dの場合はNode2D
+
+    #-----------------------------
+    # 関数内でのグローバル変数の扱い
+    #-----------------------------
+    func _ready():
+        print(Global._someGlobal) #-> 100（参照）
+        Global._someGlobal = 200 # 変更
+        print(Global._someGlobal) #-> 200（変更されている）
+
+        var _myClass = MyClass.new()
+
+    #-------------------------------
+    # クラス内でのグローバル変数の扱い
+    #-------------------------------
+    class MyClass:
+        func _init():
+            print(Global._someGlobal) #-> 200（参照）
+            Global._someGlobal = 300 # 変更
+            print(Global._someGlobal) #-> 300（変更されている）
+    ```
 
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
