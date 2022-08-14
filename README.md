@@ -3273,7 +3273,7 @@ Meta Quest 40.0、Oculus Link（Oculusアプリ）
 ### 👉 [Blender](https://www.blender.org/) の作業
 
 1. 書き出したいオブジェクト（階層内全て含む）を選択
-1. [ファイル]-[エクスポート]-[**[glTF](https://docs.godotengine.org/en/latest/about/faq.html#what-3d-model-formats-does-godot-support) 2.0 (.glb/.gltf)**] を選択
+1. [ファイル]-[エクスポート]-[**[glTF 2.0](https://docs.godotengine.org/en/latest/about/faq.html#what-3d-model-formats-does-godot-support)(.glb/.gltf)**] を選択
 1. 以下の通り設定
     * フォーマット：**glTFバイナリ (.glb)**
     * 内容：**✓ 選択したオブジェクト**
