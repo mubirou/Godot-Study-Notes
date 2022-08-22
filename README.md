@@ -1659,7 +1659,8 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 1. **[user://](https://docs.godotengine.org/en/latest/tutorials/scripting/filesystem.html?highlight=user%3A%2F%2F#user-path)** の場合…  
   C:\Users\User name\AppData\Roaming\Godot\app_userdata\
-  ●●\save_text.dat（●●は [プロジェクト]-[プロジェクト設定]-[アプリケーション]-[構成]-[名前] に依存）  
+  ●●\save_text.dat
+  ※●●は [プロジェクト]-[プロジェクト設定]-[アプリケーション]-[構成]-[名前] に依存  
 
 2. **[res://](https://docs.godotengine.org/en/latest/tutorials/scripting/filesystem.html?highlight=user%3A%2F%2F#resource-path)** の場合…  
   プロジェクトのルートに保存（Godot上では見えない）  
