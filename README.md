@@ -1675,6 +1675,8 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 <a id="220621"></a>
 # <b>JSONの解析</b>
 
+### この項目は書きかけです  
+
 1. [JSONデータ](https://raw.githubusercontent.com/mubirou/Godot/main/json/sample.json)の準備
 1. [JSON整形ツール](https://tools.m-bsys.com/development_tooles/json-beautifier.php)などで確認
 1. Godot プルジェクトのルートに保存
@@ -1709,11 +1711,12 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
   ```
 
 参考：[外部テキストの読み書き](https://github.com/mubirou/Godot#%E5%A4%96%E9%83%A8%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%81%AE%E8%AA%AD%E3%81%BF%E6%9B%B8%E3%81%8D)  
-参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_json.html)  
+参考：[GODOT DOCS（**JSON**）](https://docs.godotengine.org/ja/stable/classes/class_json.html)  
 参考：[GDScript（連想配列）](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#%E9%80%A3%E6%83%B3%E9%85%8D%E5%88%97%E8%BE%9E%E6%9B%B8)  
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月28日  
+更新日：2022年08月XX日  
 [[TOP]](#TOP)
 
 
