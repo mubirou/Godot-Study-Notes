@@ -3704,6 +3704,48 @@ _obj.set_surface_override_material(0, _material)
 　├ **Box**（MeshInstance3D）![image](https://github.com/mubirou/Godot-Study-Notes/blob/main/png/script.png)（**Box.gd**）  
 　└ **Sphere**（MeshInstance3D）![image](https://github.com/mubirou/Godot-Study-Notes/blob/main/png/script.png)（**Sphere.gd**） 
 
+* **Main** にアタッチしたスクリプト（**Main.gd**）
+  ```gdscript
+  # /root/Main(Main.gd)
+  extends Node3D
+  ……
+  func _ready():
+    ……
+    var _box = get_node("/root/Main/Box")
+    var _sphere = get_node("/root/Main/Sphere")
+    _box.some_method(self) #-> Box/some_method() from Main:[…
+    _sphere.some_method(self) #-> Sphere/some_method() from Main:[…
+  ```
+* **Box** にアタッチしたスクリプト（**Box.gd**）
+  ```gdscript
+  # /root/Main/Box(Box.gd)
+  extends MeshInstance3D
+
+  func _ready():
+    var _main = get_node("/root/Main")
+    var _sphere = get_node("/root/Main/Sphere")
+    _main.some_method(self) #-> Main/some_method() from Box:[…
+    _sphere.some_method(self) #-> Sphere/some_method() from Box:[…
+
+  func some_method(arg:Object):
+    print("Box/some_method() from " + str(arg))
+  ```
+* **Sphere** にアタッチしたスクリプト（**Sphere.gd**）
+  ```gdscript
+  # /root/Main/Sphere(Sphere.gd)
+  extends MeshInstance3D
+
+  func _ready():
+    var _main = get_node("/root/Main")
+    var _box = get_node("/root/Main/Box")
+    _main.some_method(self) #-> Main/some_method() from Sphere:[…
+    _box.some_method(self) #-> Box/some_method() from Sphere:[…
+
+  func some_method(arg:Object):
+    print("Sphere/some_method() from " + str(arg))
+  ```
+
+参考：[ノードにアタッチしたスクリプト内の self について](https://bit.ly/3dMF9Qp)  
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年08月XX日  
