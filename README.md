@@ -3752,7 +3752,7 @@ func _on_xr_controller_3d_button_pressed(_name:String):
 		print("読込データ: " + _loadText) #-> "読込データ: 23:26:31"
 ```
 
-📝 保存場所  
+### 📝 保存場所  
 
 1. **[user://](https://docs.godotengine.org/en/latest/tutorials/scripting/filesystem.html?highlight=user%3A%2F%2F#user-path)** の場合…  
   C:\Users\User name\AppData\Roaming\Godot\app_userdata\〇〇\save_text.dat  
