@@ -1619,46 +1619,48 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 <a id="220620"></a>
 # <b>外部テキストの読み書き</b>
+VRコントローラーのＢボタンでデータ保存（時分秒）、Ａボタンでデータ読み込みをするサンプル  
 
 ```gdscript
 # /root/Main(Main.gd)
 extends Node3D
 ……
 # 外部テキストの「読み込み」用
-func loadText():
-  var _file = File.new()
-  # ファイルが無い場合は自動的に生成
-  _file.open("res://save_text.dat", File.READ)
-  #_file.open("user://save_text.dat", File.READ)
-  var _text = _file.get_as_text()
-  _file.close()
-  return _text
+func __loadText():
+	var _file = File.new()
+	# ファイルが無い場合は自動的に生成
+	_file.open("res://save_text.dat", File.READ)
+	#_file.open("user://save_text.dat", File.READ)
+	var _text = _file.get_as_text()
+	_file.close()
+	return _text
 
 # 外部テキストの「書き込み」用
-func saveText(arg):
-  var _file = File.new()
-  # ファイルが無い場合は自動的に生成
-  _file.open("res://save_text.dat", File.WRITE)
-  #_file.open("user://save_text.dat", File.WRITE)
-  _file.store_string(str(arg))
-  _file.close()
+func __saveText(arg):
+	var _file = File.new()
+	# ファイルが無い場合は自動的に生成
+	_file.open("res://save_text.dat", File.WRITE)
+	#_file.open("user://save_text.dat", File.WRITE)
+	_file.store_string(str(arg))
+	_file.close()
 
 func _on_xr_controller_3d_button_pressed(_name:String):
-  if _name == "by_button":
-    # 外部テキストの書き込み
-    var _now:Dictionary = Time.get_datetime_dict_from_system()
-    var _h = _now.hour
-    var _m = _now.minute
-    var _s = _now.second
-    if _h < 10: _h = "0" + str(_h)
-    if _m < 10: _m = "0" + str(_m)
-    if _s < 10: _s = "0" + str(_s)
-    var _newText:String = str(_h) + ":" + str(_m) + ":" + str(_s)
-    saveText(_newText)
-  elif _name == "ax_button":
-    # 外部テキストの読み込み
-    var _loadText = loadText()
-    print(_loadText) #-> 22:38:02 など
+	if _name == "by_button":
+		# 外部テキストの書き込み
+		var _now:Dictionary = Time.get_datetime_dict_from_system()
+		var _h = _now.hour
+		var _m = _now.minute
+		var _s = _now.second
+		if _h < 10: _h = "0" + str(_h)
+		if _m < 10: _m = "0" + str(_m)
+		if _s < 10: _s = "0" + str(_s)
+		var _newText:String = str(_h) + ":" + str(_m) + ":" + str(_s)
+		__saveText(_newText)
+		print("セーブしました")
+	elif _name == "ax_button":
+		# 外部テキストの読み込み
+		var _loadText = __loadText()
+		print("読込データ: " + _loadText) #-> "読込データ: 23:26:31"
 ```
 
 📝 保存場所（[GODOT DOCS](https://docs.godotengine.org/en/3.4/tutorials/io/data_paths.html#accessing-persistent-user-data)）  
