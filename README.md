@@ -3698,7 +3698,7 @@ _obj.set_surface_override_material(0, _material)
 # <b>他人のメソッドの実行</b>
 
 1. XXX
-    ```c#
+    ```gdscript
     XXXX
     ```
     * XXX
@@ -3731,7 +3731,7 @@ _obj.set_surface_override_material(0, _material)
 # <b>XXXXX</b>
 
 1. XXX
-    ```c#
+    ```gdscript
     XXXX
     ```
     * XXX
