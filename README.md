@@ -1663,17 +1663,18 @@ func _on_xr_controller_3d_button_pressed(_name:String):
 		print("読込データ: " + _loadText) #-> "読込データ: 23:26:31"
 ```
 
-📝 保存場所（[GODOT DOCS（**Accessing persistent user data**）](https://bit.ly/3whtVd5)）  
+📝 保存場所  
 
 1. **[user://](https://docs.godotengine.org/en/latest/tutorials/scripting/filesystem.html?highlight=user%3A%2F%2F#user-path)** の場合…  
   C:\Users\User name\AppData\Roaming\Godot\app_userdata\〇〇\save_text.dat  
   ※〇〇は [プロジェクト]-[プロジェクト設定]-[アプリケーション]-[構成]-[名前] に依存  
 
-2. **[res://](https://docs.godotengine.org/en/latest/tutorials/scripting/filesystem.html?highlight=user%3A%2F%2F#resource-path)** の場合…  
+1. **[res://](https://docs.godotengine.org/en/latest/tutorials/scripting/filesystem.html?highlight=user%3A%2F%2F#resource-path)** の場合…  
   プロジェクトのルートに保存（Godot上では見えない）  
 
 参考：[GODOT DOCS（**File**）](https://docs.godotengine.org/en/latest/classes/class_file.html?highlight=File#file)  
 参考：[GODOT DOCS（**File paths in Godot projects**）](https://bit.ly/3c71OGM)  
+参考：[GODOT DOCS（**Accessing persistent user data**）](https://bit.ly/3whtVd5)  
 参考：[VRコントローラーの入力イベント](https://bit.ly/3T7Z2S3)  
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
