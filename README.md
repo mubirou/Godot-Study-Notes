@@ -1664,11 +1664,13 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 2. **[res://](https://docs.godotengine.org/ja/stable/tutorials/scripting/filesystem.html?highlight=res%3A%2F%2F#resource-path)** の場合…  
   プロジェクトのルートに保存（Godot上では見えない）  
 
-参考：[GODOT DOCS](https://docs.godotengine.org/ja/stable/classes/class_file.html?highlight=File.new())（File）  
-参考：[GODOT DOCS](https://docs.godotengine.org/en/3.4/tutorials/io/data_paths.html)（File paths）  
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
+参考：[GODOT DOCS（**File**）](https://docs.godotengine.org/en/latest/classes/class_file.html?highlight=File#file)  
+参考：[GODOT DOCS（**File paths in Godot projects**）](https://bit.ly/3c71OGM)  
+参考：[VRコントローラーの入力イベント](https://bit.ly/3T7Z2S3)  
+実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月28日  
+更新日：2022年08月XX日  
 [[TOP]](#TOP)
 
 
