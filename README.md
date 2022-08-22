@@ -1617,72 +1617,6 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 [[TOP]](#TOP)
 
 
-<a id="220620"></a>
-# <b>外部テキストの読み書き</b>
-VRコントローラーのＢボタンでデータ（現在の時間）を保存、Ａボタンでデータを読み込むサンプル  
-
-```gdscript
-# /root/Main(Main.gd)
-extends Node3D
-……
-# 外部テキストの「読み込み」用
-func __loadText():
-	var _file = File.new()
-	# ファイルが無い場合は自動的に生成
-	_file.open("res://save_text.dat", File.READ)
-	#_file.open("user://save_text.dat", File.READ)
-	var _text = _file.get_as_text()
-	_file.close()
-	return _text
-
-# 外部テキストの「書き込み」用
-func __saveText(arg):
-	var _file = File.new()
-	# ファイルが無い場合は自動的に生成
-	_file.open("res://save_text.dat", File.WRITE)
-	#_file.open("user://save_text.dat", File.WRITE)
-	_file.store_string(str(arg))
-	_file.close()
-
-func _on_xr_controller_3d_button_pressed(_name:String):
-	if _name == "by_button":
-		# 外部テキストの書き込み
-		var _now:Dictionary = Time.get_datetime_dict_from_system()
-		var _h = _now.hour
-		var _m = _now.minute
-		var _s = _now.second
-		if _h < 10: _h = "0" + str(_h)
-		if _m < 10: _m = "0" + str(_m)
-		if _s < 10: _s = "0" + str(_s)
-		var _newText:String = str(_h) + ":" + str(_m) + ":" + str(_s)
-		__saveText(_newText)
-		print("セーブしました")
-	elif _name == "ax_button":
-		# 外部テキストの読み込み
-		var _loadText = __loadText()
-		print("読込データ: " + _loadText) #-> "読込データ: 23:26:31"
-```
-
-📝 保存場所  
-
-1. **[user://](https://docs.godotengine.org/en/latest/tutorials/scripting/filesystem.html?highlight=user%3A%2F%2F#user-path)** の場合…  
-  C:\Users\User name\AppData\Roaming\Godot\app_userdata\〇〇\save_text.dat  
-  ※〇〇は [プロジェクト]-[プロジェクト設定]-[アプリケーション]-[構成]-[名前] に依存  
-
-1. **[res://](https://docs.godotengine.org/en/latest/tutorials/scripting/filesystem.html?highlight=user%3A%2F%2F#resource-path)** の場合…  
-  プロジェクトのルートに保存（Godot上では見えない）  
-
-参考：[GODOT DOCS（**File**）](https://docs.godotengine.org/en/latest/classes/class_file.html?highlight=File#file)  
-参考：[GODOT DOCS（**File paths in Godot projects**）](https://bit.ly/3c71OGM)  
-参考：[GODOT DOCS（**Accessing persistent user data**）](https://bit.ly/3whtVd5)  
-参考：[VRコントローラーの入力イベント](https://bit.ly/3T7Z2S3)  
-実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
-作成者：夢寐郎  
-作成日：2022年06月28日  
-更新日：2022年08月22日  
-[[TOP]](#TOP)
-
-
 <a id="220621"></a>
 # <b>JSONの解析</b>
 
@@ -3769,6 +3703,72 @@ _obj.set_surface_override_material(0, _material)
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年08月22日  
+[[TOP]](#TOP)
+
+
+<a id="220620"></a>
+# <b>外部テキストの読み書き</b>
+VRコントローラーのＢボタンでデータ（現在の時間）を保存、Ａボタンでデータを読み込むサンプル  
+
+```gdscript
+# /root/Main(Main.gd)
+extends Node3D
+……
+# 外部テキストの「読み込み」用
+func __loadText():
+	var _file = File.new()
+	# ファイルが無い場合は自動的に生成
+	_file.open("res://save_text.dat", File.READ)
+	#_file.open("user://save_text.dat", File.READ)
+	var _text = _file.get_as_text()
+	_file.close()
+	return _text
+
+# 外部テキストの「書き込み」用
+func __saveText(arg):
+	var _file = File.new()
+	# ファイルが無い場合は自動的に生成
+	_file.open("res://save_text.dat", File.WRITE)
+	#_file.open("user://save_text.dat", File.WRITE)
+	_file.store_string(str(arg))
+	_file.close()
+
+func _on_xr_controller_3d_button_pressed(_name:String):
+	if _name == "by_button":
+		# 外部テキストの書き込み
+		var _now:Dictionary = Time.get_datetime_dict_from_system()
+		var _h = _now.hour
+		var _m = _now.minute
+		var _s = _now.second
+		if _h < 10: _h = "0" + str(_h)
+		if _m < 10: _m = "0" + str(_m)
+		if _s < 10: _s = "0" + str(_s)
+		var _newText:String = str(_h) + ":" + str(_m) + ":" + str(_s)
+		__saveText(_newText)
+		print("セーブしました")
+	elif _name == "ax_button":
+		# 外部テキストの読み込み
+		var _loadText = __loadText()
+		print("読込データ: " + _loadText) #-> "読込データ: 23:26:31"
+```
+
+📝 保存場所  
+
+1. **[user://](https://docs.godotengine.org/en/latest/tutorials/scripting/filesystem.html?highlight=user%3A%2F%2F#user-path)** の場合…  
+  C:\Users\User name\AppData\Roaming\Godot\app_userdata\〇〇\save_text.dat  
+  ※〇〇は [プロジェクト]-[プロジェクト設定]-[アプリケーション]-[構成]-[名前] に依存  
+
+1. **[res://](https://docs.godotengine.org/en/latest/tutorials/scripting/filesystem.html?highlight=user%3A%2F%2F#resource-path)** の場合…  
+  プロジェクトのルートに保存（Godot上では見えない）  
+
+参考：[GODOT DOCS（**File**）](https://docs.godotengine.org/en/latest/classes/class_file.html?highlight=File#file)  
+参考：[GODOT DOCS（**File paths in Godot projects**）](https://bit.ly/3c71OGM)  
+参考：[GODOT DOCS（**Accessing persistent user data**）](https://bit.ly/3whtVd5)  
+参考：[VRコントローラーの入力イベント](https://bit.ly/3T7Z2S3)  
+実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
+作成者：夢寐郎  
+作成日：2022年06月28日  
+更新日：2022年08月22日  
 [[TOP]](#TOP)
 
 
