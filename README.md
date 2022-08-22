@@ -1619,7 +1619,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 <a id="220620"></a>
 # <b>外部テキストの読み書き</b>
-VRコントローラーのＢボタンでデータ保存（時分秒）、Ａボタンでデータ読み込みをするサンプル  
+VRコントローラーのＢボタンでデータ（現在の時間）を保存、Ａボタンでデータを読み込むサンプル  
 
 ```gdscript
 # /root/Main(Main.gd)
