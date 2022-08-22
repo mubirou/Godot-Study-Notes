@@ -3697,12 +3697,12 @@ _obj.set_surface_override_material(0, _material)
 <a id="220807"></a>
 # <b>他人のメソッドの実行</b>
 
-1. XXX
-    ```gdscript
-    XXXX
-    ```
-    * XXX
-    * XXXX
+* 階層構造（サンプル）  
+
+  **Main**（Node3D）![image](https://github.com/mubirou/Godot-Study-Notes/blob/main/png/script.png)（**Main.gd**）  
+　├ XROrigin3D  
+　├ **Box**（MeshInstance3D）![image](https://github.com/mubirou/Godot-Study-Notes/blob/main/png/script.png)（**Box.gd**）  
+　└ **Sphere**（MeshInstance3D）![image](https://github.com/mubirou/Godot-Study-Notes/blob/main/png/script.png)（**Sphere.gd**） 
 
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
