@@ -3727,11 +3727,9 @@ func _on_xr_controller_3d_button_pressed(_name:String):
 <a id="220621"></a>
 # <b>JSONの解析</b>
 
-### この項目は書きかけです  
-
 1. [JSONデータ](https://raw.githubusercontent.com/mubirou/Godot/main/json/sample.json)の準備
 1. [JSON整形ツール](https://tools.m-bsys.com/development_tooles/json-beautifier.php)などで確認
-1. Godot プルジェクトの res://sample.json として保存
+1. Godot プルジェクトの **res://sample.json** として保存
 
 #### サンプルコード
 
@@ -3780,7 +3778,7 @@ func _ready():
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月28日  
-更新日：2022年08月XX日  
+更新日：2022年08月23日  
 [[TOP]](#TOP)
 
 
