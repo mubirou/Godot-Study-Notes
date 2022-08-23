@@ -3592,6 +3592,8 @@ func _ready():
 3. http://localhost/test.php を実行（動作確認）
 
 ### 👉 サンプルコード
+「[PHP+MySQL](#220623)」と全く同じ  
+「[Python+SQLite](#220624) / [Python+MySQL](#220625)」とほぼ同じ（**.py** → **.php**） 
 
 ```gdscript
 # /root/Main(Main.gd)
@@ -3721,7 +3723,7 @@ func completed(arg1, arg2, arg3, arg4):
 
 ### 👉 サンプルコード
 「[Python+MySQL](#220625)」と全く同じ  
-「[PHP+SQLite](#220622)」とほぼ同じ（**test.php** → **test.py** に変更）  
+「[PHP+SQLite](#220622) / [PHP+MySQL](#220623)」とほぼ同じ（**.php** → **.py**）   
 
     ```gdscript
     # /root/Main(Main.gd)
@@ -3782,7 +3784,7 @@ func completed(arg1, arg2, arg3, arg4):
 
 ### 👉 サンプルコード
 「[Python+SQLite](#220624)」と全く同じ  
-「[PHP+SQLite](#220622)」とほぼ同じ（**test.php** → **test.py** に変更） 
+「[PHP+SQLite](#220622) / [PHP+MySQL](#220623)」とほぼ同じ（**.php** → **.py**）  
 
     ```gdscript
     # /root/Main(Main.gd)
