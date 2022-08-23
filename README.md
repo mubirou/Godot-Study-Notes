@@ -3727,7 +3727,7 @@ func _on_xr_controller_3d_button_pressed(_name:String):
 <a id="220621"></a>
 # <b>JSONの解析</b>
 
-1. [JSONデータ（**.json**）](https://raw.githubusercontent.com/mubirou/Godot/main/json/sample.json)の準備
+1. [**sample.json**](https://raw.githubusercontent.com/mubirou/Godot/main/json/sample.json) の準備
 1. [JSON整形ツール](https://tools.m-bsys.com/development_tooles/json-beautifier.php)などで確認
 1. Godot プルジェクトの **res://sample.json** として保存
 
