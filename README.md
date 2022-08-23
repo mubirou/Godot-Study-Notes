@@ -3741,7 +3741,7 @@ func _ready():
 <a id="220622"></a>
 # <b>PHP+SQLite</b>
 
-#### 準備
+#### PHP+SQLiteの準備
 
 1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-) を参考に **PHP**、**SQLite** の開発環境を準備する
 2. **C:\xampp\htdocs** に以下の **test.php** を作成
