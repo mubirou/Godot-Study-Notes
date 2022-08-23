@@ -3770,7 +3770,7 @@ func _ready():
 	var _contents = _dic["002"]["contents"]
 	for _tmp in _contents:
 		var _chapter = _tmp["chapter"]
-		print(str(_chapter) + ":" + _tmp["content"])
+		print(str(_chapter)+":"+_tmp["content"])
 		#-> 1:近代VRの基礎知識 など 
 ```
 
