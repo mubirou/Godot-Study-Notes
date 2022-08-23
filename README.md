@@ -1617,54 +1617,6 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 [[TOP]](#TOP)
 
 
-<a id="220621"></a>
-# <b>JSONの解析</b>
-
-### この項目は書きかけです  
-
-1. [JSONデータ](https://raw.githubusercontent.com/mubirou/Godot/main/json/sample.json)の準備
-1. [JSON整形ツール](https://tools.m-bsys.com/development_tooles/json-beautifier.php)などで確認
-1. Godot プルジェクトのルートに保存
-
-👉 外部 JSON データの読み込み用関数  
-
-  ```gdscript
-  func loadJSON():
-    var _file = File.new()
-    # ファイルが無い場合は自動的に生成
-    _file.open("res://sample.json", File.READ)
-    #_file.open("user://sample.json", File.READ)
-    var _joson = _file.get_as_text()
-    _file.close()
-    return _joson
-  ```
-
-👉 関数の実行と JSON データの解析  
-
-  ```gdscript
-  var _loadJSON = loadJSON() # String型
-  var _result = JSON.parse(_loadJSON) # JSONParseResult型
-  var _dic = _result.result # Dictionary or Array型
-  print(_dic["002"]["title"]) #-> VRコンテンツ開発ガイド 2017
-  print(_dic["002"]["isbn"]) #-> 978-4-8443-6666-9
-  print(_dic["002"]["price"]) #-> 2600
-  var _contents = _dic["002"]["contents"]
-  for _theContent in _contents:
-    var _chapter = _theContent["chapter"]
-    print(str(_chapter) + ":" + _theContent["content"])
-    #-> 1:近代VRの基礎知識 など 
-  ```
-
-参考：[外部テキストの読み書き](#220620)  
-参考：[GODOT DOCS（**JSON**）](https://docs.godotengine.org/en/latest/classes/class_json.html?highlight=JSON#json)  
-参考：[GDScript（連想配列）](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#%E9%80%A3%E6%83%B3%E9%85%8D%E5%88%97%E8%BE%9E%E6%9B%B8)  
-実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
-作成者：夢寐郎  
-作成日：2022年06月28日  
-更新日：2022年08月XX日  
-[[TOP]](#TOP)
-
-
 <a id="220622"></a>
 # <b>PHP+SQLite</b>
 
@@ -3769,6 +3721,70 @@ func _on_xr_controller_3d_button_pressed(_name:String):
 作成者：夢寐郎  
 作成日：2022年06月28日  
 更新日：2022年08月22日  
+[[TOP]](#TOP)
+
+
+<a id="220621"></a>
+# <b>JSONの解析</b>
+
+### この項目は書きかけです  
+
+1. [JSONデータ](https://raw.githubusercontent.com/mubirou/Godot/main/json/sample.json)の準備
+1. [JSON整形ツール](https://tools.m-bsys.com/development_tooles/json-beautifier.php)などで確認
+1. Godot プルジェクトの res://sample.json として保存
+
+#### サンプルコード
+
+```gdscript
+# /root/Main(Main.gd)
+extends Node3D
+……
+func _ready():
+	……
+  #===================
+  # 外部JSONの読み込み
+  #===================
+	var _load_data:String = __load_json()
+	
+  #=================
+  # JSONデータの解析
+  #=================
+	var _json = JSON.new()
+	_json.parse(_load_data) # JSONの解析
+	var _dic:Dictionary = _json.get_data()
+  # 👆 Dictionary or Array 型
+	print(_dic["002"]["title"])
+  #-> VRコンテンツ開発ガイド 2017
+	print(_dic["002"]["isbn"])
+  #-> 978-4-8443-6666-9
+	print(_dic["002"]["price"])
+  #-> 2600
+	var _contents = _dic["002"]["contents"]
+	for _tmp in _contents:
+		var _chapter = _tmp["chapter"]
+		print(str(_chapter) + ":" + _tmp["content"])
+		#-> 1:近代VRの基礎知識 など 
+
+#========================================
+# 外部JSONデータ（.json）の読み込み用関数
+#========================================
+func __load_json() -> String:
+	var _file = File.new()
+	# ファイルが無い場合は自動的に生成
+	_file.open("res://sample.json", File.READ)
+	#_file.open("user://sample.json", File.READ)
+	var _joson = _file.get_as_text()
+	_file.close()
+	return _joson
+```
+
+参考：[外部テキストの読み書き](#220620)  
+参考：[GODOT DOCS（**JSON**）](https://docs.godotengine.org/en/latest/classes/class_json.html?highlight=JSON#json)  
+参考：[GDScript（連想配列）](https://bit.ly/3TdtQ46)  
+実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ  
+作成者：夢寐郎  
+作成日：2022年06月28日  
+更新日：2022年08月XX日  
 [[TOP]](#TOP)
 
 
