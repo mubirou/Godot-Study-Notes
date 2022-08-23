@@ -1650,7 +1650,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     print(platform.python_version())
     ```
     👆 最初の3行は必須（決め打ち）  
-    👆 1行目は環境に合わせて確認＆設定（要注意）  
+    👆 1行目は環境に合わせて確認＆設定  
 
 
 4. Web ブラウザで **localhost/test.py** を開く
