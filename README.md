@@ -1620,11 +1620,14 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 <a id="220624"></a>
 # <b>Python+SQLite</b>
 
-📝 **Python** の動作確認（[Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/Python/Python_win.md) を実行する）  
+### この項目は書きかけです
 
-📝 **XAMPP** のインストール（[参考](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-)）  
+### 👉 **Python** の動作確認
+[Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/Python/Python_win.md) を参考に **Python** の開発環境を準備する
 
-📝 **XAMPP** に **Python** を追加する  
+### 👉 **XAMPP** のインストール（[参考](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-)）  
+
+### 👉 **XAMPP** に **Python** を追加する  
 
 1. [XAMPP]-[Apache]-[config]-[**Apache(httpd.conf)**] を開く
 2. **httpd.conf** の最終行に以下を追加･動作確認する
@@ -1684,9 +1687,10 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     print(arg4.get_string_from_utf8()) #-> 3.37.2
   ```
 
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ、Apache 2.4.53、**Python** 3.10.5、**SQLite** 3.37.2  
+実行環境：Windows 10、Godot 4.0 alpha 14、Apache 2.4.53、**Python** 3.10.5、**SQLite** 3.36.0  
 作成者：夢寐郎  
 作成日：2022年06月29日  
+更新日：2022年08月XX日 Godot 4.0 対応  
 [[TOP]](#TOP)
 
 
