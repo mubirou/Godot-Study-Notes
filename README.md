@@ -1677,21 +1677,22 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 4. Web ブラウザで **localhost/test.py** を開く
 5. SQLite のバージョン（3.37.2）が表示されたら成功！
 
-### 👉 **GDScript** の記述例（[PHP+SQLite](#220622)とほぼ同じ）  
+### 👉 **GDScript** の記述例
+「[PHP+SQLite](#220622)」とほぼ同じ（test**.php** → test**.py** に変更）  
 
-  ```gdscript
-  # Main.gd
-  extends Spatial
+```gdscript
+# Main.gd
+extends Spatial
 
-  func _ready():
-    var _rq = HTTPRequest.new()
-    add_child(_rq)
-    _rq.connect("request_completed", self, "completed")
-    _rq.request("http://127.0.0.1/test.py")
+func _ready():
+  var _rq = HTTPRequest.new()
+	add_child(_rq)
+	_rq.request_completed.connect(completed)
+	_rq.request("http://127.0.0.1/test.py")
 
-  func completed(arg1, arg2, arg3, arg4):
-    print(arg4.get_string_from_utf8()) #-> 3.37.2
-  ```
+func completed(arg1, arg2, arg3, arg4):
+	print(arg4.get_string_from_utf8()) #-> 3.36.0
+```
 
 実行環境：Windows 10、Godot 4.0 alpha 14、Apache 2.4.53、**Python** 3.10.5、**SQLite** 3.37.2  
 作成者：夢寐郎  
