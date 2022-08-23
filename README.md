@@ -1642,13 +1642,15 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 3. **C:\xampp\htdocs** に以下の **test.py** を作成
 
     ```py
-    #!C:\Users\owner\AppData\Local\Programs\Python\Python310\python.exe
+    #!C:\Users\User name\AppData\Local\Programs\Python\Python310\python.exe
     # -*- coding: utf-8 -*-
     print("Content-Type: text/html\n")
 
     import platform
     print(platform.python_version())
     ```
+    * 最初の3行は必須（決め打ち）
+    * 1行目は環境に合わせて確認＆設定（要注意）
 
 
 4. Web ブラウザで **localhost/test.py** を開く
