@@ -1617,54 +1617,6 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 [[TOP]](#TOP)
 
 
-<a id="220623"></a>
-# <b>PHP+MySQL</b>
-
-#### 👉 PHP+MySQL の準備
-
-### この項目は書きかけです
-
-📝 **PHP** + **MySQL**（[MariaDB](https://ja.wikipedia.org/wiki/MariaDB)）の動作確認
-
-1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/MySQL/MySQL_win.md) を参考に **PHP**、**MySQL** の開発環境を準備する
-
-2. **C:\xampp\htdocs** に以下の **test.php** を作成
-
-  ```php
-  <?php
-    $con = new PDO('mysql::memory:', 'root', '');
-    $statement = $con->prepare("SELECT VERSION()");
-    $statement->execute();
-    echo $statement->fetchColumn(); //-> 10.4.24-MariaDB
-  ?>
-  ```
-
-3. http://localhost/test.php を実行（動作確認）
-
-#### 👉 サンプルコード
-[PHP+SQLite](#220622)と同じ  
-```gdscript
-# /root/Main(Main.gd)
-extends Node3D
-……
-func _ready():
-	……	
-	var _rq = HTTPRequest.new()
-	add_child(_rq)
-	_rq.request_completed.connect(completed)
-	_rq.request("http://127.0.0.1/test.php")
-
-func completed(arg1, arg2, arg3, arg4):
-	print(arg4.get_string_from_utf8()) #-> 10.4.24-MariaDB
-```
-
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ、Apache 2.4.53、**PHP** 8.1.6、**[MariaDB](https://ja.wikipedia.org/wiki/MariaDB)** 10.4.24  
-作成者：夢寐郎  
-作成日：2022年06月29日  
-更新日：2022年08月XX日 Godot 4.0 対応  
-[[TOP]](#TOP)
-
-
 <a id="220624"></a>
 # <b>Python+SQLite</b>
 
@@ -3786,6 +3738,52 @@ func completed(arg1, arg2, arg3, arg4):
 
 参考：[GODOT DOCS (**HTTPRequest**）](https://docs.godotengine.org/en/latest/classes/class_httprequest.html?highlight=HTTPRequest)  
 実行環境：Windows 10、Godot 4.0 alpha 14、Apache 2.4.53、**PHP** 8.1.6、**SQLite** 3.36.0  
+作成者：夢寐郎  
+作成日：2022年06月29日  
+更新日：2022年08月23日 Godot 4.0 対応  
+[[TOP]](#TOP)
+
+
+<a id="220623"></a>
+# <b>PHP+MySQL</b>
+
+#### 👉 PHP+MySQL の準備
+
+📝 **PHP** + **MySQL**（[**MariaDB**](https://ja.wikipedia.org/wiki/MariaDB)）の動作確認
+
+1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/MySQL/MySQL_win.md) を参考に **PHP**、**MySQL** の開発環境を準備する
+
+2. **C:\xampp\htdocs** に以下の **test.php** を作成
+
+  ```php
+  <?php
+    $con = new PDO('mysql::memory:', 'root', '');
+    $statement = $con->prepare("SELECT VERSION()");
+    $statement->execute();
+    echo $statement->fetchColumn(); //-> 10.4.24-MariaDB
+  ?>
+  ```
+
+3. http://localhost/test.php を実行（動作確認）
+
+#### 👉 サンプルコード
+[PHP+SQLite](#220622)と同じ  
+```gdscript
+# /root/Main(Main.gd)
+extends Node3D
+……
+func _ready():
+	……
+	var _rq = HTTPRequest.new()
+	add_child(_rq)
+	_rq.request_completed.connect(completed)
+	_rq.request("http://127.0.0.1/test.php")
+
+func completed(arg1, arg2, arg3, arg4):
+	print(arg4.get_string_from_utf8()) #-> 3.36.0
+```
+
+実行環境：Windows 10、Godot 4.0 alpha 14、Apache 2.4.53、**PHP** 8.1.6、**[MariaDB](https://ja.wikipedia.org/wiki/MariaDB)** 10.4.24  
 作成者：夢寐郎  
 作成日：2022年06月29日  
 更新日：2022年08月23日 Godot 4.0 対応  
