@@ -3741,8 +3741,6 @@ func _ready():
 <a id="220622"></a>
 # <b>PHP+SQLite</b>
 
-📝 **PHP** + **SQLite** の動作確認  
-
 1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-) を参考に **PHP**、**SQLite** の開発環境を準備する
 2. **C:\xampp\htdocs** に以下の **test.php** を作成
 
@@ -3755,9 +3753,10 @@ func _ready():
   ?>
   ```
 
-3. http://localhost/test.php で実行してみる
+3. http://localhost/test.php を実行（サーバ動作確認）
 
-4. コードを記述する
+#### サンプルコード
+
 ```gdscript
 # /root/Main(Main.gd)
 extends Node3D
