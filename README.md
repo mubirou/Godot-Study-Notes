@@ -1622,7 +1622,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 ### 👉 Python と MySQL（[**MariaDB**](https://ja.wikipedia.org/wiki/MariaDB)）の準備
 
-1. [Python](https://github.com/mubirou/Godot#pythonsqlite) と [MySQL](https://github.com/mubirou/Godot#phpmysql) の動作確認をする  
+1. [Python+SQLite](#220624) と [PHP+MySQL](#220623) を参考に **Python** と **MySQL（MariaDB）** の動作確認をする  
 
 1. コマンドプロンプトを起動、次のコマンドで [MySQL コネクタ](https://www.mysql.com/jp/products/connector/)をインストール  
 
