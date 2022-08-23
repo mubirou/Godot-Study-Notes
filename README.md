@@ -1638,6 +1638,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     ScriptInterpreterSource Registry-Strict
     ```
 
+3. [XAMPP]-[**Apache**]-[Start] で Web サーバ（**Apache**）を起動
 3. **C:\xampp\htdocs** に以下の **test.py** を作成
 
     ```py
