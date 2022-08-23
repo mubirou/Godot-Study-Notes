@@ -1641,12 +1641,15 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 3. [XAMPP]-[**Apache**]-[Start] で Web サーバ（**Apache**）を起動
 3. **C:\xampp\htdocs** に以下の **test.py** を作成
 
-    ```py
-    #!C:\Users\〇〇\AppData\Local\Programs\Python\Python310\python.exe
-    # -*- coding: utf-8 -*-
-    print("Content-Type: text/html\n")
-    print("Hello,world!")
-    ```
+  ```py
+  #!C:\Users\owner\AppData\Local\Programs\Python\Python310\python.exe
+  # -*- coding: utf-8 -*-
+  print("Content-Type: text/html\n")
+
+  import platform
+  print(platform.python_version())
+  ```
+
 
 4. Web ブラウザで **localhost/test.py** を開く
 5. Hello,world! と表示されたら成功！
