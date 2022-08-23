@@ -1675,7 +1675,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     ```
 
 4. Web ブラウザで **localhost/test.py** を開く
-5. SQLite のバージョンが表示されたら成功！
+5. SQLite のバージョン（3.37.2）が表示されたら成功！
 
 📝 **GDScript** の記述例（[PHP+SQLite](#220622)とほぼ同じ）  
 
