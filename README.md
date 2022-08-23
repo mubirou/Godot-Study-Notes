@@ -1649,8 +1649,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
   print(_result[0][0]) #-> 10.4.24-MariaDB
   ```
 
-2. Web ブラウザで **localhost/test.py** を開く
-3. MySQL（MariaDB）のバージョンが表示されたら成功！
+2. [XAMPP]-[**MySQL**]-[Start] で **MySQL（MariaDB）** を起動
+3. Web ブラウザで **localhost/test.py** を開く
+4. MySQL（MariaDB）のバージョンが表示されたら成功！
 
 👉 **GDScript** の記述例（[Python+SQLite](#220624)と同じ）  
 
