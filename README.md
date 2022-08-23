@@ -3741,24 +3741,24 @@ extends Node3D
 ……
 func _ready():
 	……
-  #===================
-  # 外部JSONの読み込み
-  #===================
+	#===================
+	# 外部JSONの読み込み
+	#===================
 	var _load_data:String = __load_json()
-	
-  #=================
-  # JSONデータの解析
-  #=================
+		
+	#=================
+	# JSONデータの解析
+	#=================
 	var _json = JSON.new()
 	_json.parse(_load_data) # JSONの解析
-	var _dic:Dictionary = _json.get_data()
-  # 👆 Dictionary or Array 型
+	var _dic:Dictionary = _json.get_data()	
+	# ↑ Dictionary or Array 型
 	print(_dic["002"]["title"])
-  #-> VRコンテンツ開発ガイド 2017
+	#-> VRコンテンツ開発ガイド 2017
 	print(_dic["002"]["isbn"])
-  #-> 978-4-8443-6666-9
+	#-> 978-4-8443-6666-9
 	print(_dic["002"]["price"])
-  #-> 2600
+	#-> 2600
 	var _contents = _dic["002"]["contents"]
 	for _tmp in _contents:
 		var _chapter = _tmp["chapter"]
