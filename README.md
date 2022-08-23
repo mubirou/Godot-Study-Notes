@@ -3755,7 +3755,7 @@ func _ready():
   ?>
   ```
 
-3. http://localhost/test.php を実行（サーバ動作確認）
+3. http://localhost/test.php を実行（バックエンドの動作確認）
 
 #### サンプルコード
 
