@@ -1656,7 +1656,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 4. Web ブラウザで **localhost/test.py** を開く
 5. Python のバージョン（3.10.5）が表示されたら成功！
 
-### 👉 Python + SQLite の記述と動作確認  
+### 👉 Python + SQLite の動作確認  
 
 1. **C:\xampp\htdocs** の **test.py** を以下の通りに記述
 
@@ -1677,7 +1677,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 4. Web ブラウザで **localhost/test.py** を開く
 5. SQLite のバージョン（3.37.2）が表示されたら成功！
 
-📝 **GDScript** の記述例（[PHP+SQLite](#220622)とほぼ同じ）  
+### 👉 **GDScript** の記述例（[PHP+SQLite](#220622)とほぼ同じ）  
 
   ```gdscript
   # Main.gd
