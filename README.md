@@ -3757,7 +3757,7 @@ func completed(arg1, arg2, arg3, arg4):
 4. Web ブラウザで **localhost/test.py** を開く
 5. Python のバージョン（3.10.5）が表示されたら成功！
 
-### 👉 Python + SQLite の動作確認  
+### 👉 Python+SQLite の動作確認  
 
 1. **C:\xampp\htdocs** の **test.py** を以下の通りに記述
 
