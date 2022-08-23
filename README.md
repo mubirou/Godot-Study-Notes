@@ -2,11 +2,11 @@
 ⌚ 433h00min  
 
 ### **index（Godot 4.0 対応）**
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [オブジェクト色](#220506) | [背景色](#背景色) | [移動の基本3種](#220611) | [衝突判定領域](#220801) | [ボーンにアタッチ](#220802) | [テキストのスクロール](#220803) | [シーン遷移](#220804) | [摩擦係数と反発係数](#220805) | [共有データ](#220806) | [他人のメソッドの実行](#220807) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [オブジェクト色](#220506) | [背景色](#背景色) | [移動の基本3種](#220611) | [衝突判定領域](#220801) | [ボーンにアタッチ](#220802) | [テキストのスクロール](#220803) | [シーン遷移](#220804) | [摩擦係数と反発係数](#220805) | [共有データ](#220806) | [他人のメソッドの実行](#220807) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) |
 ***
 
 ### **index（Godot 3.4 対応）**
-| [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [物理エンジン RigidBodyとStaticBody](#220610) | [衝突判定](#220612) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [青空](#220626) |
+| [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [物理エンジン RigidBodyとStaticBody](#220610) | [衝突判定](#220612) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [青空](#220626) |
 ***
 
 <a id="Androidビルド"></a>
@@ -1614,48 +1614,6 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月26日  
-[[TOP]](#TOP)
-
-
-<a id="220622"></a>
-# <b>PHP+SQLite</b>
-
-📝 **PHP** + **SQLite** の動作確認  
-
-1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-) を実行する
-2. **C:\xampp\htdocs** に以下の **test.php** を作成
-
-  ```php
-  <?php
-      $con = new PDO('sqlite::memory:', null, null);
-      $statement = $con->prepare('SELECT sqlite_version()');
-      $statement->execute();
-      echo $statement->fetchColumn(); //-> 3.36.0
-  ?>
-  ```
-
-3. http://localhost/test.php で実行
-
-📝 **GDScript** の記述例
-
-  ```gdscript
-  # Main.gd
-  extends Spatial
-
-  func _ready():
-    var _rq = HTTPRequest.new()
-    add_child(_rq)
-    _rq.connect("request_completed", self, "completed")
-    _rq.request("http://127.0.0.1/test.php")
-
-  func completed(arg1, arg2, arg3, arg4):
-    print(arg4.get_string_from_utf8()) #-> 3.36.0
-  ```
-
-参考：[GODOT DOCS (HTTPRequest）](https://docs.godotengine.org/ja/stable/classes/class_httprequest.html?highlight=HTTPRequest)  
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ、Apache 2.4.53、**PHP** 8.1.6、**SQLite** 3.36.0  
-作成者：夢寐郎  
-作成日：2022年06月29日  
 [[TOP]](#TOP)
 
 
@@ -3776,7 +3734,50 @@ func _ready():
 実行環境：Windows 10、Godot 4.0 alpha 14  
 作成者：夢寐郎  
 作成日：2022年06月28日  
-更新日：2022年08月23日  
+更新日：2022年08月23日 Godot 4.0 対応  
+[[TOP]](#TOP)
+
+
+<a id="220622"></a>
+# <b>PHP+SQLite</b>
+
+📝 **PHP** + **SQLite** の動作確認  
+
+1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-) を実行する
+2. **C:\xampp\htdocs** に以下の **test.php** を作成
+
+  ```php
+  <?php
+      $con = new PDO('sqlite::memory:', null, null);
+      $statement = $con->prepare('SELECT sqlite_version()');
+      $statement->execute();
+      echo $statement->fetchColumn(); //-> 3.36.0
+  ?>
+  ```
+
+3. http://localhost/test.php で実行してみる
+
+4. コードを記述する
+```gdscript
+# /root/Main(Main.gd)
+extends Node3D
+……
+func _ready():
+	……	
+	var _rq = HTTPRequest.new()
+	add_child(_rq)
+	_rq.request_completed.connect(completed)
+	_rq.request("http://127.0.0.1/test.php")
+
+func completed(arg1, arg2, arg3, arg4):
+	print(arg4.get_string_from_utf8()) #-> 3.36.0
+```
+
+参考：[GODOT DOCS (**HTTPRequest**）](https://docs.godotengine.org/en/latest/classes/class_httprequest.html?highlight=HTTPRequest)  
+実行環境：Windows 10、Godot 4.0 alpha 14、Apache 2.4.53、**PHP** 8.1.6、**SQLite** 3.36.0  
+作成者：夢寐郎  
+作成日：2022年06月29日  
+更新日：2022年08月23日 Godot 4.0 対応  
 [[TOP]](#TOP)
 
 
