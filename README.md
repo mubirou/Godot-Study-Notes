@@ -3638,7 +3638,7 @@ func completed(arg1, arg2, arg3, arg4):
 
 ### 👉 サンプルコード
 「[PHP+SQLite](#220622)」と全く同じ  
-「[Python+SQLite](#220624)」「[Python+MySQL](#220625)」とほぼ同じ（**test.py** → **test.php**） 
+「[Python+SQLite](#220624) / [Python+MySQL](#220625)」とほぼ同じ（**.py** → **.php**） 
 ```gdscript
 # /root/Main(Main.gd)
 extends Node3D
