@@ -1681,23 +1681,24 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 「[PHP+SQLite](#220622)」とほぼ同じ（**test.php** → **test.py** に変更）  
 
 ```gdscript
-# Main.gd
-extends Spatial
-
+# /root/Main(Main.gd)
+extends Node3D
+……
 func _ready():
-  var _rq = HTTPRequest.new()
+	……
+	var _rq = HTTPRequest.new()
 	add_child(_rq)
 	_rq.request_completed.connect(completed)
 	_rq.request("http://127.0.0.1/test.py")
 
 func completed(arg1, arg2, arg3, arg4):
-	print(arg4.get_string_from_utf8()) #-> 3.36.0
+	print(arg4.get_string_from_utf8()) #-> 3.37.2
 ```
 
 実行環境：Windows 10、Godot 4.0 alpha 14、Apache 2.4.53、**Python** 3.10.5、**SQLite** 3.37.2  
 作成者：夢寐郎  
 作成日：2022年06月29日  
-更新日：2022年08月XX日 Godot 4.0 対応  
+更新日：2022年08月24日 Godot 4.0 対応  
 [[TOP]](#TOP)
 
 
