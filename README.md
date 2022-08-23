@@ -1620,7 +1620,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 <a id="220625"></a>
 # <b>Python+MySQL</b>
 
-👉 準備
+### 👉 Python と MySQL（[**MariaDB**](https://ja.wikipedia.org/wiki/MariaDB)）の準備
 
 1. [Python](https://github.com/mubirou/Godot#pythonsqlite) と [MySQL](https://github.com/mubirou/Godot#phpmysql) の動作確認をする  
 
