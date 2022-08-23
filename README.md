@@ -3743,7 +3743,7 @@ func _ready():
 
 📝 **PHP** + **SQLite** の動作確認  
 
-1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-) を実行する
+1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-) を参考に **PHP**、**SQLite** の開発環境を準備する
 2. **C:\xampp\htdocs** に以下の **test.php** を作成
 
   ```php
