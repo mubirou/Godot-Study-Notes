@@ -1623,7 +1623,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 ### この項目は書きかけです
 
 ### 👉 **Python** の動作確認
-[Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/Python/Python_win.md) を参考に **Python** の開発環境を準備する
+* [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/Python/Python_win.md) を参考に **Python** の開発環境を準備する
 
 ### 👉 **XAMPP** のインストール（[参考](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-)）  
 
