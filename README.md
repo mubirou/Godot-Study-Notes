@@ -1654,9 +1654,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 
 4. Web ブラウザで **localhost/test.py** を開く
-5. Hello,world! と表示されたら成功！
+5. Python のバージョン（3.10.5）が表示されたら成功！
 
-📝 Python + SQLite の記述と動作確認  
+### 👉 Python + SQLite の記述と動作確認  
 
 1. **C:\xampp\htdocs** の **test.py** を以下の通りに記述
 
