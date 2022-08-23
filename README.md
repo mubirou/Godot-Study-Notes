@@ -1678,7 +1678,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 5. SQLite のバージョン（3.37.2）が表示されたら成功！
 
 ### 👉 **GDScript** の記述例
-「[PHP+SQLite](#220622)」とほぼ同じ（test**.php** → test**.py** に変更）  
+「[PHP+SQLite](#220622)」とほぼ同じ（**test.php** → **test.py** に変更）  
 
 ```gdscript
 # Main.gd
