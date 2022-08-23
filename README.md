@@ -3744,15 +3744,23 @@ func _ready():
 	#===================
 	# 外部JSONの読み込み
 	#===================
-	var _load_data:String = __load_json()
+	var _file = File.new()
+	# ファイルが無い場合は自動的に生成
+	_file.open("res://sample.json", File.READ)
+	#_file.open("user://sample.json", File.READ)
+	var _load_data:String = _file.get_as_text()
+	_file.close()
 		
 	#=================
 	# JSONデータの解析
 	#=================
 	var _json = JSON.new()
 	_json.parse(_load_data) # JSONの解析
-	var _dic:Dictionary = _json.get_data()	
-	# ↑ Dictionary or Array 型
+	var _dic:Dictionary = _json.get_data() # or Array
+	
+	#=============================
+	# 連想配列（Dictionary）の処理
+	#=============================
 	print(_dic["002"]["title"])
 	#-> VRコンテンツ開発ガイド 2017
 	print(_dic["002"]["isbn"])
@@ -3764,18 +3772,6 @@ func _ready():
 		var _chapter = _tmp["chapter"]
 		print(str(_chapter) + ":" + _tmp["content"])
 		#-> 1:近代VRの基礎知識 など 
-
-#========================================
-# 外部JSONデータ（.json）の読み込み用関数
-#========================================
-func __load_json() -> String:
-	var _file = File.new()
-	# ファイルが無い場合は自動的に生成
-	_file.open("res://sample.json", File.READ)
-	#_file.open("user://sample.json", File.READ)
-	var _joson = _file.get_as_text()
-	_file.close()
-	return _joson
 ```
 
 参考：[外部テキストの読み書き](#220620)  
