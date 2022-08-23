@@ -3747,9 +3747,7 @@ func completed(arg1, arg2, arg3, arg4):
 <a id="220623"></a>
 # <b>PHP+MySQL</b>
 
-#### 👉 PHP+MySQL の準備
-
-📝 **PHP** + **MySQL**（[**MariaDB**](https://ja.wikipedia.org/wiki/MariaDB)）の動作確認
+#### 👉 PHP+MySQL（[**MariaDB**](https://ja.wikipedia.org/wiki/MariaDB)）の準備
 
 1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/MySQL/MySQL_win.md) を参考に **PHP**、**MySQL** の開発環境を準備する
 
