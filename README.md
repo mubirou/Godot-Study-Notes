@@ -3694,7 +3694,8 @@ func completed(arg1, arg2, arg3, arg4):
     print(platform.python_version()) #-> 3.10.5
     ```
     👆 最初の3行は必須（決め打ち）  
-    👆 1行目は環境に合わせて確認＆設定（設定が異なると "Internal Server Error" が出る）  
+    👆 1行目は環境に合わせて確認＆設定  
+    （設定が異なると "Internal Server Error" が出る）  
 
 
 4. Web ブラウザで **localhost/test.py** を開く
@@ -3778,7 +3779,8 @@ func completed(arg1, arg2, arg3, arg4):
   print(_result[0][0]) #-> 10.4.24-MariaDB
   ```
   👆 最初の3行は必須（決め打ち）  
-  👆 1行目は環境に合わせて確認＆設定（設定が異なると "Internal Server Error" が出る）  
+  👆 1行目は環境に合わせて確認＆設定  
+  （設定が異なると "Internal Server Error" が出る）  
 
 2. [XAMPP]-[**MySQL**]-[Start] で **MySQL（MariaDB）** を起動
 3. Web ブラウザで **localhost/test.py** を開く
