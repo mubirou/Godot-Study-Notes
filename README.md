@@ -3753,7 +3753,7 @@ func completed(arg1, arg2, arg3, arg4):
 ### 👉 Python と MySQL（[**MariaDB**](https://ja.wikipedia.org/wiki/MariaDB)）の準備
 
 1. [Python+SQLite](#220624) と [PHP+MySQL](#220623) を参考に **Python** と **MySQL（MariaDB）** の動作確認をする  
-（注意）[データベース](https://bit.ly/3wonu7Y)（**test_db**）を作成する    
+⚠ [データベース](https://bit.ly/3wonu7Y)（**test_db**）を作成する    
 
 1. コマンドプロンプトを起動、次のコマンドで [MySQL コネクタ](https://www.mysql.com/jp/products/connector/)をインストール  
 
