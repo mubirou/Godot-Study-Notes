@@ -1620,6 +1620,8 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 <a id="220625"></a>
 # <b>Python+MySQL</b>
 
+### この項目は書きかけです
+
 ### 👉 Python と MySQL（[**MariaDB**](https://ja.wikipedia.org/wiki/MariaDB)）の準備
 
 1. [Python+SQLite](#220624) と [PHP+MySQL](#220623) を参考に **Python** と **MySQL（MariaDB）** の動作確認をする  
@@ -1666,9 +1668,10 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     print(arg4.get_string_from_utf8()) #-> 10.4.24-MariaDB
   ```
 
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ、Apache 2.4.53、**Python** 3.10.5、**[MariaDB](https://ja.wikipedia.org/wiki/MariaDB)** 10.4.24  
+実行環境：Windows 10、Godot 4.0 alpha 14、Apache 2.4.53、**Python** 3.10.5、**[MariaDB](https://ja.wikipedia.org/wiki/MariaDB)** 10.4.24  
 作成者：夢寐郎  
 作成日：2022年06月29日  
+更新日：2022年08月XX日  Godot 4.0 対応  
 [[TOP]](#TOP)
 
 
