@@ -3637,7 +3637,8 @@ func completed(arg1, arg2, arg3, arg4):
 3. http://localhost/test.php を実行（動作確認）
 
 ### 👉 サンプルコード
-「[PHP+SQLite](#220622)」と同じ  
+「[PHP+SQLite](#220622)」と全く同じ  
+「[PHP+SQLite](#220622)」「[PHP+MySQL](#220623)」とほぼ同じ（**test.py** → **test.php** に変更） 
 ```gdscript
 # /root/Main(Main.gd)
 extends Node3D
