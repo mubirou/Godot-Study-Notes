@@ -1660,19 +1660,19 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 1. **C:\xampp\htdocs** の **test.py** を以下の通りに記述
 
-  ```py
-  #!C:\Users\Owner\AppData\Local\Programs\Python\Python310\python.exe
-  # -*- coding: utf-8 -*-
-  print("Content-Type: text/html\n")
+    ```py
+    #!C:\Users\User name\AppData\Local\Programs\Python\Python310\python.exe
+    # -*- coding: utf-8 -*-
+    print("Content-Type: text/html\n")
 
-  import sqlite3
+    import sqlite3
 
-  _con = sqlite3.connect(':memory:')
-  _cur = _con.cursor()
-  _cur.execute('SELECT sqlite_version()')
-  _result = _cur.fetchall()
-  print(_result[0][0]) #-> 3.37.2
-  ```
+    _con = sqlite3.connect(':memory:')
+    _cur = _con.cursor()
+    _cur.execute('SELECT sqlite_version()')
+    _result = _cur.fetchall()
+    print(_result[0][0]) #-> 3.37.2
+    ```
 
 4. Web ブラウザで **localhost/test.py** を開く
 5. SQLite のバージョンが表示されたら成功！
@@ -1693,7 +1693,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     print(arg4.get_string_from_utf8()) #-> 3.37.2
   ```
 
-実行環境：Windows 10、Godot 4.0 alpha 14、Apache 2.4.53、**Python** 3.10.5、**SQLite** 3.36.0  
+実行環境：Windows 10、Godot 4.0 alpha 14、Apache 2.4.53、**Python** 3.10.5、**SQLite** 3.37.2  
 作成者：夢寐郎  
 作成日：2022年06月29日  
 更新日：2022年08月XX日 Godot 4.0 対応  
