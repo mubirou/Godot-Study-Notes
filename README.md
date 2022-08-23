@@ -3743,7 +3743,6 @@ func _ready():
 	# 外部JSONの読み込み
 	#===================
 	var _file = File.new()
-	# ファイルが無い場合は自動的に生成
 	_file.open("res://sample.json", File.READ)
 	#_file.open("user://sample.json", File.READ)
 	var _load_data:String = _file.get_as_text()
