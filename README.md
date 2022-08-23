@@ -3574,7 +3574,7 @@ func _ready():
 <a id="220622"></a>
 # <b>PHP+SQLite</b>
 
-#### 👉 PHP+SQLite の準備
+### 👉 PHP+SQLite の準備
 
 1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-) を参考に **PHP**、**SQLite** の開発環境を準備する
 
@@ -3591,7 +3591,7 @@ func _ready():
 
 3. http://localhost/test.php を実行（動作確認）
 
-#### 👉 サンプルコード
+### 👉 サンプルコード
 
 ```gdscript
 # /root/Main(Main.gd)
@@ -3719,6 +3719,7 @@ func completed(arg1, arg2, arg3, arg4):
 5. SQLite のバージョン（3.37.2）が表示されたら成功！
 
 ### 👉 サンプルコード
+「[Python+MySQL](#220625)」と全く同じ  
 「[PHP+SQLite](#220622)」とほぼ同じ（**test.php** → **test.py** に変更）  
 
     ```gdscript
@@ -3779,7 +3780,8 @@ func completed(arg1, arg2, arg3, arg4):
 4. MySQL（MariaDB）のバージョンが表示されたら成功！
 
 ### 👉 サンプルコード
-「[Python+SQLite](#220624)」と同じ  
+「[Python+SQLite](#220624)」と全く同じ  
+「[PHP+SQLite](#220622)」とほぼ同じ（**test.php** → **test.py** に変更） 
 
     ```gdscript
     # /root/Main(Main.gd)
