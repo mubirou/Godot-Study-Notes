@@ -3744,7 +3744,6 @@ func _ready():
 	#===================
 	var _file = File.new()
 	_file.open("res://sample.json", File.READ)
-	#_file.open("user://sample.json", File.READ)
 	var _load_data:String = _file.get_as_text()
 	_file.close()
 		
