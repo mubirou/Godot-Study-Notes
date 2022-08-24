@@ -1620,15 +1620,18 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 <a id="220626"></a>
 # <b>青空</b>
 
+### 
+
 1. [360°パノラマ](#220606) と同様
 1. [ファイルシステム]-[res://]-[default_env.tres]-[インスペクター]-[Background]-[Sky]-[PanoramaSky]-[編集] で以下の通り設定  
     * **Panorama**：**[CGTuts_OceanHDRI_Freebie_001.hdr](https://github.com/GodotVR/godot_openvr_fps/blob/master/Assets/CGTuts_OceanHDRI_Freebie_001.hdr)**（青空と海）
     * **Radiance Size**：**32**
 
-参考：[VRスターターチュートリアルパート1（Godot OpenVR FPS）](https://github.com/GodotVR/godot_openvr_fps)  
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Quest Link、Oculusアプリ  
+参考：[360°パノラマ](#220710)  
+実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月30日  
+更新日：2022年08月XX日  
 [[TOP]](#TOP)
 
 
