@@ -1620,7 +1620,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 <a id="220626"></a>
 # <b>青空</b>
 
-### 
+### この項目は書きかけです
 
 1. [360°パノラマ](#220606) と同様
 1. [ファイルシステム]-[res://]-[default_env.tres]-[インスペクター]-[Background]-[Sky]-[PanoramaSky]-[編集] で以下の通り設定  
