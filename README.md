@@ -1622,6 +1622,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 ### この項目は書きかけです
 
+1. 空（360°パノラマ画像）の用意  
+  1. [Poly Haven](https://polyhaven.com/hdris) にアクセス
+
 1. [VR入門](#220702) のデモファイル（[vr_start.zip](https://github.com/mubirou/Godot/blob/main/zip/vr_start.zip)）をダウンロード
 1. 
 
