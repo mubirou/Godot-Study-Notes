@@ -1622,6 +1622,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 ### この項目は書きかけです
 
+1. [VR入門](#220702) のデモファイル（[vr_start.zip](https://github.com/mubirou/Godot/blob/main/zip/vr_start.zip)）をダウンロード
+1. 
+
 1. [360°パノラマ](#220606) と同様
 1. [ファイルシステム]-[res://]-[default_env.tres]-[インスペクター]-[Background]-[Sky]-[PanoramaSky]-[編集] で以下の通り設定  
     * **Panorama**：**[CGTuts_OceanHDRI_Freebie_001.hdr](https://github.com/GodotVR/godot_openvr_fps/blob/master/Assets/CGTuts_OceanHDRI_Freebie_001.hdr)**（青空と海）
