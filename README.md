@@ -2381,7 +2381,8 @@ func loop():
         * [**Transparency**]
           * [**Transparency**]：Disabled（Alphaも可能）
           * [**Cull Mode**]：**Front**（内側にも表示）
-        * [**Shading**]：**Unshaded**（元画像の明るさで表示）
+        * [**Shading**]
+          * [**Shading Mode**]：**Unshaded**（元画像の明るさで表示）
         * [**Albedo**]
           * [**Color**]：#ffffff（アルファ値の設定可能）
           * [**Texture**]：〇〇[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)（360°パノラマ画像） 
