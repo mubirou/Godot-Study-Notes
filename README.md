@@ -6,7 +6,7 @@
 ***
 
 ### **index（Godot 3.4 対応）**
-| [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [物理エンジン RigidBodyとStaticBody](#220610) | [衝突判定](#220612) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | ~~[青空](#220626)~~ |
+| [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [物理エンジン RigidBodyとStaticBody](#220610) | [衝突判定](#220612) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) |
 ***
 
 <a id="Androidビルド"></a>
@@ -1618,30 +1618,6 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 41.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月26日  
-[[TOP]](#TOP)
-
-
-<a id="220626"></a>
-# <b>青空</b>
-
-### この項目は書きかけです
-
-### 👉 空（360°パノラマ画像）の用意  
-  **Poly Haven**（[**polyhaven.com/hdris**](https://polyhaven.com/hdris)）の [**Skies**] から任意で画像（[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)）を選び [**Download**]
-
-1. [VR入門](#220702) のデモファイル（[vr_start.zip](https://github.com/mubirou/Godot/blob/main/zip/vr_start.zip)）をダウンロード
-1. 
-
-1. [360°パノラマ](#220606) と同様
-1. [ファイルシステム]-[res://]-[default_env.tres]-[インスペクター]-[Background]-[Sky]-[PanoramaSky]-[編集] で以下の通り設定  
-    * **Panorama**：**[CGTuts_OceanHDRI_Freebie_001.hdr](https://github.com/GodotVR/godot_openvr_fps/blob/master/Assets/CGTuts_OceanHDRI_Freebie_001.hdr)**（青空と海）
-    * **Radiance Size**：**32**
-
-参考：[360°パノラマ](#220710)  
-実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ  
-作成者：夢寐郎  
-作成日：2022年06月30日  
-更新日：2022年08月XX日  
 [[TOP]](#TOP)
 
 
