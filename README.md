@@ -2378,7 +2378,7 @@ func loop():
 
 1. 大元の Node3D を選択し [子ノードを追加]-[[**MeshInstance3D**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=MeshInstance3D#meshinstance3d)] を選択  
 
-1. 名前を "MeshInstance3D" → "Panorama" に変更  
+1. 名前を "MeshInstance3D" → "Panorama" に変更<a id="220710-panorama"></a>  
 
 1. [Panorama]-[インスペクター]  
     * [**Mesh**]-[新規 **SphereMesh**]-[編集]  
@@ -2425,7 +2425,7 @@ Main（Node3D）
       * [**Scale**]：**x 1000**、y 0、**z 1000**
 
 1. **パノラマ画像の調整**
-    1. 上記の [**Panorama**]-[インスペクター]-[**Material**]-[編集]
+    1. [[**Panorama**](#220710-1)]-[インスペクター]-[**Material**]-[編集]
     1. [**UV1**]-[**Offset**]：x 0、**y -0.017（微調整）**、z 0
 
 1. **被写界深度の設定**
