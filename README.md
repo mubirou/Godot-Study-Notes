@@ -2431,7 +2431,8 @@ Main（Node3D）
 
 1. **被写界深度の設定**  
     （地平線をほんの少しぼかす）  
-    1. [XROrigin3D]-[[**XRCamera3D**](https://docs.godotengine.org/en/latest/classes/class_xrcamera3d.html?highlight=XRCamera3D#xrcamera3d)]-[インスペクター]
+    1. [XROrigin3D]-[[**XRCamera3D**](https://docs.godotengine.org/en/latest/classes/class_xrcamera3d.html?highlight=XRCamera3D#xrcamera3d)]-[インスペクター]-[**Effects**]-[新規 [**CameraEffects**](https://docs.godotengine.org/en/latest/classes/class_cameraeffects.html?highlight=DOF%20Blur#cameraeffects)]-[編集] を開く
+    1. [**DOF Blur**]
 
 
 <a id="220710-1"></a>
