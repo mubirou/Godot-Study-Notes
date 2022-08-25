@@ -2414,8 +2414,9 @@ Main（Node3D）
 ### 👉 空のみの利用（参考）
 上記の作業に加え地面を設置し微調整する
 
-1. 大元の Node3D を選択し [子ノードを追加]-[**DirectionalLight3D**]-[インスペクター]  
-    * [**Shadow**]-[Enabled]：**✓オン**
+1. 大元の Node3D を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で各種設定
+  * -[Mesh]-[新規 **PlaneMesh**]  
+  * [**Shadow**]-[Enabled]：**✓オン**
 
 デモファイル：[Panorama.zip](https://github.com/mubirou/Godot/blob/main/zip/Panorama.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 41.0、Quest Link、Oculusアプリ  
