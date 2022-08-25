@@ -2428,9 +2428,9 @@ Main（Node3D）
 
 
 <a id="220710-1"></a>
-### 💡 パターン画像（.png）の作成方法（参考）
+### 💡 パターン画像の作成方法（参考）
   1. **Poly Haven**（[**polyhaven.com/textures**](https://polyhaven.com/textures)）から画像を選び「**Windows + Shift + S**」キーで任意の範囲をスクショ → [**GIMP**](https://www.gimp.org/) 等で **.png** 保存
-  1. [**画像ルーパーWeb版**](https://nodachisoft.com/common/jp/webapp/createpatternimage/) を使ってパターン画像を作成
+  1. [**画像ルーパーWeb版**](https://nodachisoft.com/common/jp/webapp/createpatternimage/) を使ってパターン画像（**.png**）を作成
 
 
 デモファイル：[Panorama.zip](https://github.com/mubirou/Godot/blob/main/zip/Panorama.zip)  
