@@ -2387,7 +2387,7 @@ func loop():
       * [**Material**]-[新規 **StandardMaterial3D**]-[編集]  
         * [**Transparency**]
           * [**Transparency**]：Disabled（Alphaも可能）
-          * [**Cull Mode**]：**Front**（内部が外にも描画される）
+          * [**Cull Mode**]：**Front**（外にも描画される）
         * [**Shading**]
           * [**Shading Mode**]：**Unshaded**（元画像の明るさで表示）
         * [**Albedo**]
