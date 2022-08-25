@@ -1623,9 +1623,9 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 ### この項目は書きかけです
 
 1. 空（360°パノラマ画像）の用意  
-    * **Poly Haven**（[**polyhaven.com/hdris**](https://polyhaven.com/hdris)）の [Skies] から任意で画像を選び [Download]  
-    📖 **EXR** とは…  
-    [**OpenEXR**](https://www.openexr.com/) 形式のこと。Godot で[推奨](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial) 
+  **Poly Haven**（[**polyhaven.com/hdris**](https://polyhaven.com/hdris)）の [Skies] から任意で画像を選び [Download] する  
+  📖 **EXR** とは…  
+  [**OpenEXR**](https://www.openexr.com/) 形式のこと。Godot で[推奨](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)
 
 1. [VR入門](#220702) のデモファイル（[vr_start.zip](https://github.com/mubirou/Godot/blob/main/zip/vr_start.zip)）をダウンロード
 1. 
