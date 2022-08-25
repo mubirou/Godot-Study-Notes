@@ -2434,7 +2434,8 @@ Main（Node3D）
     1. [XROrigin3D]-[[**XRCamera3D**](https://docs.godotengine.org/en/latest/classes/class_xrcamera3d.html?highlight=XRCamera3D#xrcamera3d)]-[インスペクター]-[**Effects**]-[新規 [**CameraEffects**](https://docs.godotengine.org/en/latest/classes/class_cameraeffects.html?highlight=DOF%20Blur#cameraeffects)]-[編集] を開く
     1. [**DOF Blur**] を各種設定
         * [**Far Enabled**]：**✓オン**
-        * [**Amount**]：**0.01**（初期値 0.1）    
+        * [**Amount**]：**0.01**（初期値 0.1）  
+
   💡 [シネマティックプレビュー] で PC 上でも確認可能
 
 <a id="220710-1"></a>
