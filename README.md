@@ -2424,12 +2424,12 @@ Main（Node3D）
     * [**Transform**]
       * [**Scale**]：**x 1000**、y 0、**z 1000**
 
-    💡 **パターン画像（.png）の作成方法（参考）**<a id="220710-1"></a>
-      1. **Poly Haven**（[**polyhaven.com/textures**](https://polyhaven.com/textures)）から画像を選び「**Windows + Shift + S**」キーで任意の範囲をスクショ → [**GIMP**](https://www.gimp.org/) 等で **.png** 保存
-      1. [**画像ルーパーWeb版**](https://nodachisoft.com/common/jp/webapp/createpatternimage/) を使ってパターン画像を作成
-
 1. **被写界深度の設定**
 
+
+💡 **パターン画像（.png）の作成方法（参考）**<a id="220710-1"></a>
+  1. **Poly Haven**（[**polyhaven.com/textures**](https://polyhaven.com/textures)）から画像を選び「**Windows + Shift + S**」キーで任意の範囲をスクショ → [**GIMP**](https://www.gimp.org/) 等で **.png** 保存
+  1. [**画像ルーパーWeb版**](https://nodachisoft.com/common/jp/webapp/createpatternimage/) を使ってパターン画像を作成
 
 
 デモファイル：[Panorama.zip](https://github.com/mubirou/Godot/blob/main/zip/Panorama.zip)  
