@@ -2387,7 +2387,7 @@ func loop():
       * [**Material**]-[新規 **StandardMaterial3D**]-[編集]  
         * [**Transparency**]
           * [**Transparency**]：Disabled（Alphaも可能）
-          * [**Cull Mode**]：**Front**（外にも描画される）
+          * [[**Cull Mode**](https://docs.godotengine.org/en/latest/classes/class_basematerial3d.html?highlight=Cull%20Mode%20BaseMaterial3D#enum-basematerial3d-cullmode)]：**Front**（外にも描画される）
         * [**Shading**]
           * [**Shading Mode**]：**Unshaded**（元画像の明るさで表示）
         * [**Albedo**]
@@ -2395,12 +2395,12 @@ func loop():
           * [**Texture**]：〇〇[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)（360°パノラマ画像） 
     * [**Transform**]
       * [**Rotation**]：x 0、y XXX（**初期値の水平角**）、z 0  
-      * [**Scale**]：**x 1000**、**y 1000**、**z 1000**
+      * [**Scale**]：**x 500**、**y 500**、**z 500**
 
 1. 大元の Node3D を選択し [子ノードを追加]-[**DirectionalLight3D**]-[インスペクター]  
     * [**Shadow**]-[Enabled]：**✓オン**
     * [**Transform**]
-      * [**Position**]：x 0、**y 1000**（0でも同じ）、z 0
+      * [**Position**]：x 0、**y 500**（0でも同じ）、z 0
       * [**Rotation**]：**x -55**（太陽の高さ）、**y 35**（太陽の向き）、z 0
 
 （上記の階層）  
