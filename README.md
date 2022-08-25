@@ -2429,7 +2429,9 @@ Main（Node3D）
     1. [[Panorama](#220710-panorama)]-[インスペクター]-[Mesh]-[編集]-[**Material**]-[編集] を開く
     1. [**UV1**]-[**Offset**]：x 0、**y -0.017（微調整）**、z 0  
 
-1. **被写界深度の設定**
+1. **被写界深度の設定**  
+    （地平線をほんの少しぼかす）  
+    1. [XROrigin3D]-[[**XRCamera3D**](https://docs.godotengine.org/en/latest/classes/class_xrcamera3d.html?highlight=XRCamera3D#xrcamera3d)]-[インスペクター]
 
 
 <a id="220710-1"></a>
