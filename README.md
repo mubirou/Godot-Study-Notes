@@ -6,7 +6,7 @@
 ***
 
 ### **index（Godot 3.4 対応）**
-| [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [物理エンジン RigidBodyとStaticBody](#220610) | [衝突判定](#220612) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | [青空](#220626) |
+| [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [物理エンジン RigidBodyとStaticBody](#220610) | [衝突判定](#220612) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) | ~~[青空](#220626)~~ |
 ***
 
 <a id="Androidビルド"></a>
@@ -2442,8 +2442,8 @@ Main（Node3D）
   1. **Poly Haven**（[**polyhaven.com/textures**](https://polyhaven.com/textures)）から画像を選び「**Windows + Shift + S**」キーで任意の範囲をスクショ → [**GIMP**](https://www.gimp.org/) 等で **.png** 保存
   1. [**画像ルーパーWeb版**](https://nodachisoft.com/common/jp/webapp/createpatternimage/) を使ってパターン画像（**.png**）を作成
 
-
 デモファイル：[Panorama.zip](https://github.com/mubirou/Godot/blob/main/zip/Panorama.zip)  
+デモファイル：[blue_sky.zip](https://github.com/mubirou/Godot/blob/main/zip/blue_sky.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月09日  
