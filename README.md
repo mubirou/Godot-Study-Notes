@@ -2387,7 +2387,7 @@ func loop():
       * [**Material**]-[新規 **StandardMaterial3D**]-[編集]  
         * [**Transparency**]
           * [**Transparency**]：Disabled（Alphaも可能）
-          * [**Cull Mode**]：**Front** か **Disabled**
+          * [**Cull Mode**]：**Front**（内部が外にも描画される）
         * [**Shading**]
           * [**Shading Mode**]：**Unshaded**（元画像の明るさで表示）
         * [**Albedo**]
@@ -2419,12 +2419,12 @@ Main（Node3D）
     * [Mesh]-[新規 **PlaneMesh**]  
     * [**Surface Material Override**]-[新規 **StandardMaterial3D**]-[編集]
       * [**Albedo**]
-        * [**Color**]：#999999（任意）
+        * [**Color**]：#ada37d（任意）
         * [Texture**]：パターン画像（オプション＝下記参照）
     * [**Transform**]
       * [**Scale**]：**x 1000**、y 0、**z 1000**
 
-1. XXXX
+1. **
 
 💡 **パターン画像（.png）の作成方法（参考）**
     1. **Poly Haven**（[**polyhaven.com/textures**](https://polyhaven.com/textures)）から画像を選び「**Windows + Shift + S**」キーで任意の範囲をスクショ → [**GIMP**](https://www.gimp.org/) 等で **.png** 保存
