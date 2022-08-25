@@ -1623,7 +1623,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 ### この項目は書きかけです
 
 1. 空（360°パノラマ画像）の用意  
-    * **Poly Haven**（[**polyhaven.com/hdris**](https://polyhaven.com/hdris)）の [Skies] から任意で画像を選び [Download]
+    * **Poly Haven**（[**polyhaven.com/hdris**](https://polyhaven.com/hdris)）の [Skies] から任意で画像を選び [Download]  
     📖 **EXR** とは…  
     [**OpenEXR**](https://www.openexr.com/) 形式のこと。Godot で[推奨](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial) 
 
