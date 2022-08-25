@@ -2366,7 +2366,7 @@ func loop():
 <a id="220710"></a>
 # <b>360°パノラマ</b>
 
-（警告） バージョン 3.4 の時のように [WorldEnvironment](https://docs.godotengine.org/en/latest/classes/class_worldenvironment.html?highlight=WorldEnvironment%20#worldenvironment) を利用するとパノラマ画像が歪みます（要調査）  
+（警告） [Godot 3.X 版](#220606) の時のように [WorldEnvironment](https://docs.godotengine.org/en/latest/classes/class_worldenvironment.html?highlight=WorldEnvironment%20#worldenvironment) を利用するとパノラマ画像が歪みます（要調査）  
 
 ### 👉 空（360°パノラマ画像）の用意  
 **Poly Haven**（[**polyhaven.com/hdris**](https://polyhaven.com/hdris)）の [**Skies**] から任意で画像（[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)）を選び [**Download**]  
