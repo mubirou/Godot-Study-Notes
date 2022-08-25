@@ -1197,6 +1197,8 @@ VR コンテンツ開発の [諸準備](#220501) をする
 <a id="220606"></a>
 # <b>360°パノラマ</b>
 
+### この項目は Godot 3.X 用です
+
 📝 [360°画像](https://pixexid.com/search/360%20panorama)の用意  
 
 📝 **WorldEnvironment** の作成  
