@@ -1215,6 +1215,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
         * **Panorama**：360°画像（**.jpg** [.hdr](https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%A4%E3%83%80%E3%82%A4%E3%83%8A%E3%83%9F%E3%83%83%E3%82%AF%E3%83%AC%E3%83%B3%E3%82%B8%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8) **.png**）をドラッグ＆ドロップ
         * **Radiance Size**：**512**
 
+参考：[**360°パノラマ（Godot 4.0 対応）**](#220710)  
 参考：[GODOT Asset Library](https://godotengine.org/asset-library/asset/123)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
