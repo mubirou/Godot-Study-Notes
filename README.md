@@ -2388,7 +2388,7 @@ func loop():
           * [**Texture**]：〇〇[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)（360°パノラマ画像） 
     * [**Transform**]
       * [**Rotation**]：x 0、y XXX（**初期値の水平角**）、z 0  
-      * [**Scale**]：**x 100**、**y 100**、**z 100**
+      * [**Scale**]：**x 1000**、**y 1000**、**z 1000**
 
 1. 大元の Node3D を選択し [子ノードを追加]-[**DirectionalLight3D**]-[インスペクター]  
     * [**Shadow**]-[Enabled]：**✓オン**
