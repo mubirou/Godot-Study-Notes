@@ -1187,7 +1187,8 @@ VR コンテンツ開発の [諸準備](#220501) をする
     func _ready():
       $MeshInstance.material_override.albedo_texture = $Viewport.get_texture()
     ```
-参考：[GODOT Asset Library](https://godotengine.org/asset-library/asset/129)  
+参考：[GODOT Asset Libra
+ry](https://godotengine.org/asset-library/asset/129)  
 実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月07日  
@@ -2410,8 +2411,8 @@ Main（Node3D）
 　 ├ MeshInstance3D（展望台など＝オプション）  
 　 └ DirectionalLight3D  
 
-### 👉 空のみ利用する（参考）
-上記の作業に加え地面を設置して水平線を自然な状態に近づけます
+### 👉 空のみの利用（参考）
+上記の作業に加え地面を設置し微調整する
 
 1. 大元の Node3D を選択し [子ノードを追加]-[**DirectionalLight3D**]-[インスペクター]  
     * [**Shadow**]-[Enabled]：**✓オン**
@@ -2419,7 +2420,8 @@ Main（Node3D）
 デモファイル：[Panorama.zip](https://github.com/mubirou/Godot/blob/main/zip/Panorama.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-更新日：2022年07月17日   
+作成日：2022年06月09日  
+更新日：2022年08月25日「空のみの利用」を追加  
 [[TOP]](#TOP)
 
 
