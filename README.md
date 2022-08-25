@@ -2399,7 +2399,7 @@ func loop():
 1. 大元の Node3D を選択し [子ノードを追加]-[**DirectionalLight3D**]-[インスペクター]  
     * [**Shadow**]-[Enabled]：**✓オン**
     * [**Transform**]
-      * [**Position**]：x 0、**y 100**（0でも同じ）、z 0
+      * [**Position**]：x 0、**y 1000**（0でも同じ）、z 0
       * [**Rotation**]：**x -55**（太陽の高さ）、**y 35**（太陽の向き）、z 0
 
 （上記の階層）  
@@ -2407,8 +2407,14 @@ Main（Node3D）
 　 ├ XROrigin3D  
 　 │ └ XRCamera3D  
 　 ├ **Panorama**（MeshInstance3D-**SphereMesh**）  
-　 ├ MeshInstance3D（展望台など）  
+　 ├ MeshInstance3D（展望台など＝オプション）  
 　 └ DirectionalLight3D  
+
+### 👉 空のみ利用する（参考）
+上記の作業に加え地面を設置して水平線を自然な状態に近づけます
+
+1. 大元の Node3D を選択し [子ノードを追加]-[**DirectionalLight3D**]-[インスペクター]  
+    * [**Shadow**]-[Enabled]：**✓オン**
 
 デモファイル：[Panorama.zip](https://github.com/mubirou/Godot/blob/main/zip/Panorama.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 41.0、Quest Link、Oculusアプリ  
