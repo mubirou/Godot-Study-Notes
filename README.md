@@ -2369,6 +2369,9 @@ func loop():
 **Poly Haven**（[**polyhaven.com/hdris**](https://polyhaven.com/hdris)）の [**Skies**] から任意で画像（[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)）を選び [**Download**]  
 * 他にも [Pixexid](https://pixexid.com/search/360)（JPEG 形式）もあり
 
+### 👉 Godot での作業
+1. [VR入門](#220702) のデモファイル（[vr_start.zip](https://github.com/mubirou/Godot/blob/main/zip/vr_start.zip)）をダウンロード
+
 1. 大元の Node3D を選択し [子ノードを追加]-[[**MeshInstance3D**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=MeshInstance3D#meshinstance3d)] を選択  
 
 1. 名前を "MeshInstance3D" → "Panorama" に変更  
