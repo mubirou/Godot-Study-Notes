@@ -2415,8 +2415,8 @@ Main（Node3D）
 上記の作業に加え地面を設置し微調整する
 
 1. 地面用の画像（.png）の用意
-  1. **Poly Haven**（[**polyhaven.com/textures**](hhttps://polyhaven.com/textures)）から画像を選び **[Windows] + [Shift] + [S]** キーで任意の範囲をスクショ → [GIMP](https://www.gimp.org/) 等で **.png** 保存
-  1. [**画像ルーパーWeb版**](https://nodachisoft.com/common/jp/webapp/createpatternimage/) を使ってパターンテクスチャを作成
+    1. **Poly Haven**（[**polyhaven.com/textures**](hhttps://polyhaven.com/textures)）から画像を選び **[Windows] + [Shift] + [S]** キーで任意の範囲をスクショ → [GIMP](https://www.gimp.org/) 等で **.png** 保存
+    1. [**画像ルーパーWeb版**](https://nodachisoft.com/common/jp/webapp/createpatternimage/) を使ってパターンテクスチャを作成
 
 1. 大元の Node3D を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で各種設定
     * [Mesh]-[新規 **PlaneMesh**]  
