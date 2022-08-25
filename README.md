@@ -2414,17 +2414,21 @@ Main（Node3D）
 ### 👉 空のみの利用（参考）
 上記の作業に加え地面を設置し微調整する
 
-1. 地面用の画像（.png）の用意
-    1. **Poly Haven**（[**polyhaven.com/textures**](https://polyhaven.com/textures)）から画像を選び「**Windows + Shift + S**」キーで任意の範囲をスクショ → [**GIMP**](https://www.gimp.org/) 等で **.png** 保存
-    1. [**画像ルーパーWeb版**](https://nodachisoft.com/common/jp/webapp/createpatternimage/) を使ってパターン画像を作成
-
-1. 大元の Node3D を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で各種設定
+1. **地面の設置**  
+大元の Node3D を選択し [子ノードを追加]-[**MeshInstance3D**]-[インスペクター] で各種設定
     * [Mesh]-[新規 **PlaneMesh**]  
     * [**Surface Material Override**]-[新規 **StandardMaterial3D**]-[編集]
       * [**Albedo**]
-        * [**Color**]：
+        * [**Color**]：#999999（任意）
+        * [Texture**]：パターン画像（オプション＝下記参照）
     * [**Transform**]
       * [**Scale**]：**x 1000**、y 0、**z 1000**
+
+1. XXXX
+
+💡 **パターン画像（.png）の作成方法（参考）**
+    1. **Poly Haven**（[**polyhaven.com/textures**](https://polyhaven.com/textures)）から画像を選び「**Windows + Shift + S**」キーで任意の範囲をスクショ → [**GIMP**](https://www.gimp.org/) 等で **.png** 保存
+    1. [**画像ルーパーWeb版**](https://nodachisoft.com/common/jp/webapp/createpatternimage/) を使ってパターン画像を作成
 
 デモファイル：[Panorama.zip](https://github.com/mubirou/Godot/blob/main/zip/Panorama.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 41.0、Quest Link、Oculusアプリ  
