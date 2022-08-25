@@ -2420,7 +2420,7 @@ Main（Node3D）
     * [**Surface Material Override**]-[新規 **StandardMaterial3D**]-[編集]
       * [**Albedo**]
         * [**Color**]：#ada37d（任意）
-        * [Texture**]：[パターン画像](#220710)（オプション）
+        * [Texture**]：[**パターン画像**](#220710-1)（オプション）
     * [**Transform**]
       * [**Scale**]：**x 1000**、y 0、**z 1000**
 
