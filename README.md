@@ -2421,6 +2421,7 @@ Main（Node3D）
       * [Transparency]-[**Transparency**]：**Alpha**
       * [Albedo]-[**Color**]：アルファ値を調整
   * 内側（動くパノラマ）をスクリプトで動かす  
+    [StandardMaterial3D.uv1_offset.x](https://docs.godotengine.org/en/latest/classes/class_basematerial3d.html?highlight=uv1_offset#class-basematerial3d-property-uv1-offset) を変更
     ```gdscript
     func _process(_delta):
       var _x = get_node("Panorama").get_mesh().material.uv1_offset.x
