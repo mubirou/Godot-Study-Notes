@@ -2426,7 +2426,7 @@ Main（Node3D）
       var _x = get_node("Panorama").get_mesh().material.uv1_offset.x
       get_node("Panorama").get_mesh().material.uv1_offset.x = _x + 0.000005
     ```
-    ↑[StandardMaterial3D.uv1_offset.x](https://docs.godotengine.org/en/latest/classes/class_basematerial3d.html?highlight=uv1_offset#class-basematerial3d-property-uv1-offset) を変更  
+    ↑ '[StandardMaterial3D.uv1_offset.x](https://docs.godotengine.org/en/latest/classes/class_basematerial3d.html?highlight=uv1_offset#class-basematerial3d-property-uv1-offset)' を変更  
 
 <a id="220710-1"></a>
 ### 📝 パターン画像の作成方法（参考）
@@ -2438,7 +2438,7 @@ Main（Node3D）
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月09日  
-更新日：2022年08月25日「空のみの利用」を追加  
+更新日：2022年08月28日 動く雲を追加  
 [[TOP]](#TOP)
 
 
