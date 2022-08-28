@@ -2419,7 +2419,7 @@ Main（Node3D）
   1. [**画像ルーパーWeb版**](https://nodachisoft.com/common/jp/webapp/createpatternimage/) を使ってパターン画像（**.png**）を作成
 
 デモファイル：[Panorama.zip](https://github.com/mubirou/Godot/blob/main/zip/Panorama.zip)  
-デモファイル：[blue_sky.zip](https://github.com/mubirou/Godot/blob/main/zip/blue_sky.zip)  
+デモファイル：[blue_sky.zip](https://github.com/mubirou/Godot/blob/main/zip/blue_sky.zip)（空のみ）  
 実行環境：Windows 10、Godot 4.0 alpha 12、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月09日  
