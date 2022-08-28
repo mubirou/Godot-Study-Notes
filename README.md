@@ -2413,10 +2413,14 @@ Main（Node3D）
         * [**Amount**]：**0.01**（初期値 0.1）
     * [シネマティックプレビュー] で PC 上でも確認可能💡
 
-💡 動く雲のポイント（参考）  
+💡 **動く雲のポイント**（参考）  
 
-  * 上記の **Panorama**（**SphereMesh**）を2層 
-  * 内側（動くパノラマ画像）をスクリプトで動かす  
+  * 上記の **Panorama**（**SphereMesh**）を2層
+  * 内側（動くパノラマ）を各種調整  
+    * [BaseMaterial3D]
+      * [Transparency]-[**Transparency**]：**Alpha**
+      * [Albedo]-[**Color**]：アルファ値を調整
+  * 内側（動くパノラマ）をスクリプトで動かす  
     ```gdscript
     func _process(_delta):
       var _x = get_node("Panorama").get_mesh().material.uv1_offset.x
