@@ -2415,7 +2415,7 @@ Main（Node3D）
 
 **（参考）動く雲**  
 
-  * 上記の **Panorama**（**SphereMesh**）を2層（ユニーク化）にする
+  * 上記の **Panorama** を2層（ユニーク化）にする
   * 内側（動くパノラマ）を各種調整  
     * [BaseMaterial3D]
       * [Transparency]-[**Transparency**]：**Alpha**
