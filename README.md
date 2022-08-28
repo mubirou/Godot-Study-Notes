@@ -2426,7 +2426,7 @@ Main（Node3D）
       var _x = get_node("Panorama").get_mesh().material.uv1_offset.x
       get_node("Panorama").get_mesh().material.uv1_offset.x = _x + 0.000005
     ```
-    ↑ '[StandardMaterial3D.uv1_offset.x](https://docs.godotengine.org/en/latest/classes/class_basematerial3d.html?highlight=uv1_offset#class-basematerial3d-property-uv1-offset)' を変更  
+    ↑「[StandardMaterial3D.uv1_offset.x](https://docs.godotengine.org/en/latest/classes/class_basematerial3d.html?highlight=uv1_offset#class-basematerial3d-property-uv1-offset)」を変更  
 
 <a id="220710-1"></a>
 ### 📝 パターン画像の作成方法（参考）
