@@ -3856,12 +3856,53 @@ func completed(arg1, arg2, arg3, arg4):
 <a id="220808"></a>
 # <b>機械式時計</b>
 
-1. XXX
-    ```gdscript
-    XXXX
-    ```
-    * XXX
-    * XXXX
+### この項目は書きかけです
+
+```gdscript
+# /root/Main(Main.gd)
+extends Node3D
+
+var _interface:XRInterface
+var __second_hand:Node3D
+var __long_hand:Node3D
+var __short_hand:Node3D
+var __current_second # null or int
+var __timer:Timer = Timer.new()
+var __start:int
+var __demical:float
+
+func _ready():
+	_interface = XRServer.find_interface("OpenXR")
+	if _interface and _interface.is_initialized():
+		var _viewport:Viewport = get_viewport()
+		_viewport.use_xr = true
+	
+	__short_hand = $clock/clock_board/short_hand_center
+	__long_hand = $clock/clock_board/long_hand_center
+	__second_hand = $clock/clock_board/second_hand_board/small_hand_center
+
+func _process(_delta):
+	var _now = Time.get_datetime_dict_from_system()
+	
+	# 機械式時計風（約6振動）処理＝力技
+	if (__current_second != null):
+		if (__current_second != _now.second):
+			# 秒が切り替わったタイミングで処理
+			__start = Time.get_unix_time_from_system()
+			__demical = 0
+			__timer.set_wait_time(0.167) # 約6振動
+			__timer.connect("timeout", loop)
+			add_child(__timer)
+			__timer.start()
+	__current_second = _now.second
+
+	__short_hand.rotation.y = - deg2rad(_now.hour * 30 + _now.minute * 0.5)
+	__long_hand.rotation.y = - deg2rad(_now.minute * 6 + _now.second / 60.0 * 6)
+	__second_hand.rotation.y = - deg2rad((_now.second + __demical) * 6.0)
+
+func loop():
+	__demical = Time.get_unix_time_from_system() - __start
+```
 
 デモファイル：[clock.zip](https://github.com/mubirou/Godot/blob/main/zip/clock.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ  
