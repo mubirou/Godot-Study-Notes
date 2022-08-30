@@ -3882,14 +3882,26 @@ func loop():
 
 ### この項目は書きかけです
 
-1. XXX
-    ```gdscript
-    XXXX
-    ```
-    * XXX
-    * XXXX
+```python
+import urllib.request
+from bs4 import BeautifulSoup # 事前に "pip install bs4" 処理
 
-実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ、Apache 2.4.53、[**Python**](https://www.python.jp/) 3.10.5、[**beautifulsoup4**](https://pypi.org/project/beautifulsoup4/) 4.11.1  
+_url = "https://www.aozora.gr.jp/cards/000081/files/43754_17659.html"
+
+_request = urllib.request.Request(_url)
+_response = urllib.request.urlopen(_request)
+_html = _response.read()
+_html = _html.decode('ShiftJIS')
+
+# Webスクレイピング
+_soup = BeautifulSoup(_html, "html.parser")
+
+# データの抽出
+print(_soup.find("title").text)
+print(_soup.find("body").text)
+```
+
+実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ、Apache 2.4.53、[**Python**](https://www.python.jp/) 3.10.5、[**beautifulsoup4**](https://pypi.org/project/beautifulsoup4/) 4.11.1、[**requests**](https://pypi.org/project/requests/) 2.28.1  
 作成者：夢寐郎  
 作成日：2022年08月XX日  
 [[TOP]](#TOP)
