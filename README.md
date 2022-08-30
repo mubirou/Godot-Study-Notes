@@ -3909,7 +3909,7 @@ func loop():
     _soup = BeautifulSoup(_html, "html.parser")
 
     # データの抽出
-    print(_soup.find("title").text)
+    #print(_soup.find("title").text)
     print(_soup.find("body").text)
     ```
     #### もしくは…
@@ -3931,7 +3931,7 @@ func loop():
     _soup = BeautifulSoup(_html, "html.parser")
 
     # データの抽出
-    print(_soup.find("title").text)
+    #print(_soup.find("title").text)
     print(_soup.find("body").text)
     ```  
 
