@@ -3882,46 +3882,58 @@ func loop():
 
 ### この項目は書きかけです
 
-### 👉 Python ファイルを用意 
+### 👉 Python の処理
 
-```python
-# aozora_43754_17659.py
-import urllib.request
-from bs4 import BeautifulSoup # 事前に "pip install bs4" 処理
+1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/Python/Python_win.md) を参考に [**Python**]((https://www.python.jp/)) の開発環境を準備する
+1. [Python+SQLite](#220624) を参考に **XAMPP** + **Python** の開発環境を準備する
+1. **C:\xampp\htdocs** に以下の **aozora_43754_17659.py**）を作成する
+    ```python
+    #!C:\Users\User name\AppData\Local\Programs\Python\Python310\python.exe
+    # -*- coding: utf-8 -*-
+    print("Content-Type: text/html\n")
 
-_url = "https://www.aozora.gr.jp/cards/000081/files/43754_17659.html"
+    import urllib.request
+    from bs4 import BeautifulSoup # 事前に "pip install bs4" 処理
 
-_request = urllib.request.Request(_url)
-_response = urllib.request.urlopen(_request)
-_html = _response.read()
-_html = _html.decode('ShiftJIS')
+    _url = "https://www.aozora.gr.jp/cards/000081/files/43754_17659.html"
 
-# Webスクレイピング
-_soup = BeautifulSoup(_html, "html.parser")
+    _request = urllib.request.Request(_url)
+    _response = urllib.request.urlopen(_request)
+    _html = _response.read()
+    _html = _html.decode('ShiftJIS')
 
-# データの抽出
-print(_soup.find("title").text)
-print(_soup.find("body").text)
-```
-#### もしくは…
-```python
-# aozora_43754_17659.py
-import requests # 事前に "pip install requests" を行う
-from bs4 import BeautifulSoup # 事前に "pip install bs4" を行う
+    # Webスクレイピング
+    _soup = BeautifulSoup(_html, "html.parser")
 
-_url = "https://www.aozora.gr.jp/cards/000081/files/43754_17659.html"
+    # データの抽出
+    print(_soup.find("title").text)
+    print(_soup.find("body").text)
+    ```
+    #### もしくは…
+    ```python
+    #!C:\Users\User name\AppData\Local\Programs\Python\Python310\python.exe
+    # -*- coding: utf-8 -*-
+    print("Content-Type: text/html\n")
 
-_response = requests.get(_url)
-_response.encoding = _response.apparent_encoding
-_html = _response.text
+    import requests # 事前に "pip install requests" を行う
+    from bs4 import BeautifulSoup # 事前に "pip install bs4" を行う
 
-# Webスクレイピング
-_soup = BeautifulSoup(_html, "html.parser")
+    _url = "https://www.aozora.gr.jp/cards/000081/files/43754_17659.html"
 
-# データの抽出
-print(_soup.find("title").text)
-print(_soup.find("body").text)
-```
+    _response = requests.get(_url)
+    _response.encoding = _response.apparent_encoding
+    _html = _response.text
+
+    # Webスクレイピング
+    _soup = BeautifulSoup(_html, "html.parser")
+
+    # データの抽出
+    print(_soup.find("title").text)
+    print(_soup.find("body").text)
+    ```
+    👆 最初の3行は必須（決め打ち）  
+    👆 1行目は環境に合わせて確認＆設定  
+    （設定が異なると "Internal Server Error" が出る）  
 
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ、Apache 2.4.53、[**Python**](https://www.python.jp/) 3.10.5、[**beautifulsoup4**](https://pypi.org/project/beautifulsoup4/) 4.11.1、[**requests**](https://pypi.org/project/requests/) 2.28.1  
 作成者：夢寐郎  
