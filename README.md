@@ -3856,7 +3856,7 @@ func completed(arg1, arg2, arg3, arg4):
 <a id="220808"></a>
 # <b>機械式時計</b>
 
-### この項目は書きかけです
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202208301311.jpg)
 
 （主な階層構造）  
 Main（Node3D）  
