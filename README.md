@@ -3934,6 +3934,7 @@ func loop():
     #print(_soup.find("title").text)
     print(_soup.find("body").text)
     ```  
+1. **http://localhost/aozora_43754_17659.py** を本文が表示されれば成功！  
 
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ、Apache 2.4.53、[**Python**](https://www.python.jp/) 3.10.5、[**beautifulsoup4**](https://pypi.org/project/beautifulsoup4/) 4.11.1、[**requests**](https://pypi.org/project/requests/) 2.28.1  
 作成者：夢寐郎  
