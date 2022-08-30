@@ -3796,7 +3796,7 @@ func completed(arg1, arg2, arg3, arg4):
       print(arg4.get_string_from_utf8()) #-> 10.4.24-MariaDB
     ```
 
-実行環境：Windows 10、Godot 4.0 alpha 14、Apache 2.4.53、**Python** 3.10.5、**[MariaDB](https://ja.wikipedia.org/wiki/MariaDB)** 10.4.24  
+実行環境：Windows 10、Godot 4.0 alpha 14、Apache 2.4.53、**Python** 3.10.5、**[MariaDB](https://ja.wikipedia.org/wiki/MariaDB)** 10.4.24、[mysql-connector-python](https://pypi.org/project/mysql-connector-python/) 8.0.29  
 作成者：夢寐郎  
 作成日：2022年06月29日  
 更新日：2022年08月24日  Godot 4.0 対応  
