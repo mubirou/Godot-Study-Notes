@@ -3861,12 +3861,12 @@ func completed(arg1, arg2, arg3, arg4):
 （主な階層構造）  
 Main（Node3D）  
 　├ clock（Node3D）  
-　│　├ clock_board（MeshInstance3D＝文字盤を含む本体）  
+　│　├ clock_board（文字盤を含む本体）  
 　│　│　├ short_hand_center（Node3D）  
-　│　│　│　└ short_hand（MeshInstance3D＝短針）  
+　│　│　│　└ short_hand（短針＝時針）  
 　│　│　├ long_hand_center（Node3D）  
-　│　│　│　└ long_hand（MeshInstance3D＝長針）  
-　│　│　└ second_hand_board（MeshInstance3D＝秒針文字盤）  
+　│　│　│　└ long_hand（長針＝分針）  
+　│　│　└ second_hand_board（スモールセコンド文字盤）  
 　│　　└ **Function_Teleport**（**CharacterBody3D**）  
 　│　　　　├ **Teleport**（**PlaneMesh**）    
 　│　　　　├ **Target**（**PlaneMesh**）    
