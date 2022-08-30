@@ -3860,21 +3860,18 @@ func completed(arg1, arg2, arg3, arg4):
 
 （主な階層構造）  
 Main（Node3D）  
-　├ clock（Node3D）  
-　│　├ clock_board（文字盤を含む本体）  
-　│　│　├ short_hand_center（Node3D）  
-　│　│　│　└ short_hand（短針＝時針）  
-　│　│　├ long_hand_center（Node3D）  
-　│　│　│　└ long_hand（長針＝分針）  
-　│　│　└ second_hand_board（スモールセコンド文字盤）  
-　│　　└ **Function_Teleport**（**CharacterBody3D**）  
-　│　　　　├ **Teleport**（**PlaneMesh**）    
-　│　　　　├ **Target**（**PlaneMesh**）    
-　│　　　　└ **CollisionShape3D**（**CapsuleShape3D**）  
-　├ Floor（**PlaneMesh**）  
-　│ └ **StaticBody3D**  
-　│　　└ **CollisionShape3D**    
-　└ DirecionalLight3D  
+　└ clock（Node3D）  
+　　　├ clock_board（文字盤を含む本体）  
+　　　│　├ **short_hand_center**（**Node3D**）  
+　　　│　│　└ short_hand（**時針**）  
+　　　│　├ **long_hand_center**（**Node3D**）  
+　　　│　│　└ long_hand（**分針**）  
+　　　│　├ second_hand_board（スモールセコンド文字盤）  
+　　　│　│　├ **second_hand_center**（**Node3D**）  
+　　　│　│　│　└ second_hand（**秒針**）
+　　　│　│　└ center_pin（秒針の中心）
+　　　│　└ center_pin（時分針の中心）
+　　　└ windshield（透明な風防）
 
 ```gdscript
 # /root/Main(Main.gd)
@@ -3897,7 +3894,7 @@ func _ready():
 	
 	__short_hand = $clock/clock_board/short_hand_center
 	__long_hand = $clock/clock_board/long_hand_center
-	__second_hand = $clock/clock_board/second_hand_board/small_hand_center
+	__second_hand = $clock/clock_board/second_hand_board/second_hand_center
 
 func _process(_delta):
 	var _now = Time.get_datetime_dict_from_system()
