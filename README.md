@@ -6,7 +6,7 @@
 ***
 
 ### **index（Godot 3.4 対応）**
-| [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [物理エンジン RigidBodyとStaticBody](#220610) | [衝突判定](#220612) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [回転軸の変更](#220616) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) |
+| [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [カメラ](#カメラ) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [物理エンジン RigidBodyとStaticBody](#220610) | [衝突判定](#220612) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) |
 ***
 
 <a id="Androidビルド"></a>
@@ -1480,43 +1480,6 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 
 参考：[Blender to Godot](#220609)  
 実行環境：Windows 10、Godot 3.4.4、Blender 3.2.0  
-作成者：夢寐郎  
-作成日：2022年06月21日  
-[[TOP]](#TOP)
-
-
-<a id="220616"></a>
-# <b>回転軸の変更</b>
-例：スモールセコンド付時計の秒針  
-
-1. [Blender(階層構造) to Godot](#220615) の作業を行う
-1. [secondBoard] を選択し右クリック → [子ノードを追加]-[**Spatial**]-[作成] を選択
-1. 名前を "Spatial" → "**secondHandCenter**" に変更
-1. [secondHand] を [**secondHandCenter**] 上にドラッグ＆ドロップ
-（階層構造は以下の通り）  
-　  ├ watchBoard（時計全体の文字盤）  
-　  │   └ secondBoard（スモールセコンドの文字盤）  
-　  │　　└ **secondHandCenter**（秒針の回転軸）←追加  
-　  │　　　 └ secondHand（秒針）  
-1. 大元の Spatial にスクリプトをアタッチして以下のように記述  
-
-  ```gdscript
-  # Main.gd
-  extends Spatial
-
-  var _secondHandCenter
-
-  func _ready():
-    _secondHandCenter = $Watch/watchBoard/secondBoard/secondHanCenter
-
-  func _process(delta):
-    var _now = OS.get_datetime()
-    var _secondRad = -deg2rad(_now.second*6-90)
-    _secondHandCenter.rotation = Vector3(0, _secondRad, 0)
-  ```
-
-参考：[フタバゼミ](https://futabazemi.net/unity/pivot_change/)  
-実行環境：Windows 10、Godot 3.4.4、Blender 3.2.0、Meta Quest 40.0、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月21日  
 [[TOP]](#TOP)
@@ -3920,9 +3883,10 @@ func loop():
 ```
 
 デモファイル：[clock.zip](https://github.com/mubirou/Godot/blob/main/zip/clock.zip)  
+参考：[フタバゼミ](https://futabazemi.net/unity/pivot_change/)  
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：2022年08月XX日  
+作成日：2022年08月30日  
 [[TOP]](#TOP)
 
 
