@@ -3882,7 +3882,7 @@ func loop():
 
 ### この項目は書きかけです
 
-### 👉 Python ファイルの準備
+### 👉 Python 側の準備
 
 1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/Python/Python_win.md) を参考に [**Python**]((https://www.python.jp/)) の開発環境を準備する
 1. [Python+SQLite](#220624) を参考に **XAMPP** + **Python** の開発環境を準備する
@@ -3935,6 +3935,11 @@ func loop():
     print(_soup.find("body").text)
     ```  
 1. "http://localhost/aozora_43754_17659.py" にアクセスして本文が表示されれば成功！  
+
+### 👉 Godot 側の処理
+
+1. [テキストのスクロール](#220803) の デモファイル（[**TextScroll.zip**](https://github.com/mubirou/Godot/blob/main/zip/TextScroll.zip)）をダウンロード  
+1. XXX
 
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ、Apache 2.4.53、[**Python**](https://www.python.jp/) 3.10.5、[**beautifulsoup4**](https://pypi.org/project/beautifulsoup4/) 4.11.1、[**requests**](https://pypi.org/project/requests/) 2.28.1  
 作成者：夢寐郎  
