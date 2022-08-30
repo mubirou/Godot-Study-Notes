@@ -3882,7 +3882,7 @@ func loop():
 
 ### この項目は書きかけです
 
-### 👉 Python の処理
+### 👉 Python ファイルの準備
 
 1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/Python/Python_win.md) を参考に [**Python**]((https://www.python.jp/)) の開発環境を準備する
 1. [Python+SQLite](#220624) を参考に **XAMPP** + **Python** の開発環境を準備する
