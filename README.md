@@ -3882,7 +3882,10 @@ func loop():
 
 ### この項目は書きかけです
 
+### 👉 Python ファイルを用意 
+
 ```python
+# aozora_43754_17659.py
 import urllib.request
 from bs4 import BeautifulSoup # 事前に "pip install bs4" 処理
 
@@ -3900,8 +3903,9 @@ _soup = BeautifulSoup(_html, "html.parser")
 print(_soup.find("title").text)
 print(_soup.find("body").text)
 ```
-### もしくは…
+#### もしくは…
 ```python
+# aozora_43754_17659.py
 import requests # 事前に "pip install requests" を行う
 from bs4 import BeautifulSoup # 事前に "pip install bs4" を行う
 
