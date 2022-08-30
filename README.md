@@ -3869,9 +3869,9 @@ Main（Node3D）
 　　　│　├ second_hand_board（スモールセコンド文字盤）  
 　　　│　│　├ **second_hand_center**（**Node3D**）  
 　　　│　│　│　└ second_hand（**秒針**）
-　　　│　│　└ center_pin（秒針の中心）
-　　　│　└ center_pin（時分針の中心）
-　　　└ windshield（透明な風防）
+　　　│　│　└ center_pin（秒針の中心）  
+　　　│　└ center_pin（時分針の中心）  
+　　　└ windshield（透明な風防）  
 
 ```gdscript
 # /root/Main(Main.gd)
