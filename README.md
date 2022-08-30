@@ -3866,7 +3866,7 @@ Main（Node3D）
 　│　│　│　└ short_hand（MeshInstance3D＝短針）  
 　│　│　├ long_hand_center（Node3D）  
 　│　│　│　└ long_hand（MeshInstance3D＝長針）  
-　│　│　└ second_hand_board（MeshInstance3D＝スモールセコンド文字盤）  
+　│　│　└ second_hand_board（MeshInstance3D＝秒針文字盤）  
 　│　　└ **Function_Teleport**（**CharacterBody3D**）  
 　│　　　　├ **Teleport**（**PlaneMesh**）    
 　│　　　　├ **Target**（**PlaneMesh**）    
