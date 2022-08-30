@@ -3900,14 +3900,14 @@ _soup = BeautifulSoup(_html, "html.parser")
 print(_soup.find("title").text)
 print(_soup.find("body").text)
 ```
-
+### もしくは…
 ```python
 import requests # 事前に "pip install requests" を行う
 from bs4 import BeautifulSoup # 事前に "pip install bs4" を行う
 
 _url = "https://www.aozora.gr.jp/cards/000081/files/43754_17659.html"
 
-_response = requests.get(_url) #.text
+_response = requests.get(_url)
 _response.encoding = _response.apparent_encoding
 _html = _response.text
 
