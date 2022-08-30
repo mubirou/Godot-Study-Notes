@@ -3871,7 +3871,7 @@ func loop():
 
 デモファイル：[clock.zip](https://github.com/mubirou/Godot/blob/main/zip/clock.zip)  
 参考：[フタバゼミ](https://futabazemi.net/unity/pivot_change/)  
-実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ、[**Python**](https://www.python.jp/) 3.10.5  
+実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年08月30日  
 [[TOP]](#TOP)
@@ -3880,6 +3880,8 @@ func loop():
 <a id="220809"></a>
 # <b>青空文庫</b>
 
+### この項目は書きかけです
+
 1. XXX
     ```gdscript
     XXXX
@@ -3887,10 +3889,9 @@ func loop():
     * XXX
     * XXXX
 
-実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ、  
+実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ、Apache 2.4.53、[**Python**](https://www.python.jp/) 3.10.5、[**beautifulsoup4**](https://pypi.org/project/beautifulsoup4/) 4.11.1  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2022年08月XX日  
 [[TOP]](#TOP)
 
 
