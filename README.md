@@ -3858,6 +3858,24 @@ func completed(arg1, arg2, arg3, arg4):
 
 ### この項目は書きかけです
 
+（主な階層構造）  
+Main（Node3D）  
+　├ clock（Node3D）  
+　│　├ clock_board（MeshInstance3D＝文字盤を含む本体）  
+　│　│　├ short_hand_center（Node3D）
+　│　│　│　└ short_hand（MeshInstance3D＝短針）
+　│　│　├ long_hand_center（Node3D）
+　│　│　│　└ long_hand（MeshInstance3D＝長針）
+　│　│　└ second_hand_board（MeshInstance3D＝スモールセコンド文字盤）
+　│　　└ **Function_Teleport**（**CharacterBody3D**）  
+　│　　　　├ **Teleport**（**PlaneMesh**）    
+　│　　　　├ **Target**（**PlaneMesh**）    
+　│　　　　└ **CollisionShape3D**（**CapsuleShape3D**）  
+　├ Floor（**PlaneMesh**）  
+　│ └ **StaticBody3D**  
+　│　　└ **CollisionShape3D**    
+　└ DirecionalLight3D  
+
 ```gdscript
 # /root/Main(Main.gd)
 extends Node3D
