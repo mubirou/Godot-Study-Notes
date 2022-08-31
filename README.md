@@ -3919,7 +3919,7 @@ func loop():
     ```
     #### もしくは…
     ```python
-    #!C:\Users\User name\AppData\Local\Programs\Python\Python310\python.exe
+    #!C:\Users\mubirou\AppData\Local\Programs\Python\Python310\python.exe
     # -*- coding: utf-8 -*-
     print("Content-Type: text/html\n")
 
