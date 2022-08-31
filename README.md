@@ -3885,9 +3885,8 @@ func loop():
 
 ### 👉 小説の用意
 
-1. [**TheRestaurantOfManyOrders.html**](https://github.com/mubirou/Godot-Study-Notes/blob/main/html/TheRestaurantOfManyOrders.html) を用意
-1. 上記のファイルを Web 上に置く（今回は **C:\xampp\htdocs** 内に配置し **http://localhost/TheRestaurantOfManyOrders.html** で閲覧できるようにする） 
-
+1. [TheRestaurantOfManyOrders.html](https://github.com/mubirou/Godot-Study-Notes/blob/main/html/TheRestaurantOfManyOrders.html) を用意
+1. 上記のファイルを Web 上に置く（今回は **C:\xampp\htdocs** 内に配置し http://localhost/TheRestaurantOfManyOrders.html で閲覧できるようにする） 
 
 ### 👉 Python 側の準備
 
