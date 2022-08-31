@@ -3832,7 +3832,7 @@ func loop():
 ### 👉 Godot 側の処理
 
 1. [**テキストのスクロール**](#220803) のデモファイル（[**TextScroll.zip**](https://github.com/mubirou/Godot/blob/main/zip/TextScroll.zip)）をダウンロード  
-1. コードの前半部分を以下の通りに書き換える
+1. コードの前半部分（_ready() メソッドまで）を以下の通りに書き換える
     ```gdscript
     # /root/Main(Main.gd)
     extends Node3D
