@@ -3896,28 +3896,27 @@ func loop():
     👇 最初の3行は必須（決め打ち）  
     👇 1行目は環境に合わせて確認＆設定  
     （設定が異なると "Internal Server Error" が出る）
-    ```python
-    #!C:\Users\User name\AppData\Local\Programs\Python\Python310\python.exe
-    # -*- coding: utf-8 -*-
-    print("Content-Type: text/html\n")
+```python
+#!C:\Users\mubirou\AppData\Local\Programs\Python\Python310\python.exe
+# -*- coding: utf_8 -*-
+print("Content-Type: text/html\n")
 
-    import urllib.request
-    from bs4 import BeautifulSoup # 事前に "pip install bs4" 処理
+import urllib.request
+from bs4 import BeautifulSoup # 事前に "pip install bs4" が必要
 
-    _url = "https://www.aozora.gr.jp/cards/000081/files/43754_17659.html"
+_url = "http://127.0.0.1/TheRestaurantOfManyOrders.html"
 
-    _request = urllib.request.Request(_url)
-    _response = urllib.request.urlopen(_request)
-    _html = _response.read()
-    _html = _html.decode("ShiftJIS")
+_request = urllib.request.Request(_url)
+_response = urllib.request.urlopen(_request)
+_html = _response.read()
+_html = _html.decode("utf-8") # "shift_jis" etc...
 
-    # Webスクレイピング
-    _soup = BeautifulSoup(_html, "html.parser")
+# Webスクレイピング
+_soup = BeautifulSoup(_html, "html.parser")
 
-    # データの抽出
-    #print(_soup.find("title").text)
-    print(_soup.find("body").text)
-    ```
+# データの抽出
+print(_soup.find("body").text) # "title" etc...
+```
     #### もしくは…
     ```python
     #!C:\Users\User name\AppData\Local\Programs\Python\Python310\python.exe
