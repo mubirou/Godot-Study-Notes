@@ -3883,6 +3883,12 @@ func loop():
 
 ### この項目は書きかけです
 
+### 👉 小説の用意
+
+1. [**TheRestaurantOfManyOrders.html**](https://github.com/mubirou/Godot-Study-Notes/blob/main/html/TheRestaurantOfManyOrders.html) を用意
+1. 上記のファイルを Web 上に置く（今回は **C:\xampp\htdocs** に配置し **http://localhost/TheRestaurantOfManyOrders.html** で閲覧できるようにする） 
+
+
 ### 👉 Python 側の準備
 
 1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/Python/Python_win.md) を参考に [**Python**]((https://www.python.jp/)) の開発環境を準備する
