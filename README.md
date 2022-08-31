@@ -3944,7 +3944,31 @@ func loop():
 ### 👉 Godot 側の処理
 
 1. [**テキストのスクロール**](#220803) のデモファイル（[**TextScroll.zip**](https://github.com/mubirou/Godot/blob/main/zip/TextScroll.zip)）をダウンロード  
-1. XXX
+1. コードの前半部分を以下の通りに書き換える
+    ```gdscript
+    # /root/Main(Main.gd)
+    extends Node3D
+
+    var _interface : XRInterface
+    var _richText : RichTextLabel
+    var _lineCount = 0
+
+    func _ready():
+      _interface = XRServer.find_interface("OpenXR")
+      if _interface and _interface.is_initialized():
+        var _viewport : Viewport = get_viewport()
+        _viewport.use_xr = true
+
+      _richText = get_node("Sprite3D/SubViewport/RichTextLabel")
+      var _rq = HTTPRequest.new()
+      add_child(_rq)
+      _rq.request_completed.connect(completed)
+      _rq.request("http://127.0.0.1/sample.py")
+
+    func completed(arg1, arg2, arg3, arg4:PackedByteArray):
+      var _text:String = arg4.get_string_from_utf8()
+      _richText.text = _text
+    ```
 
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ、Apache 2.4.53、[**Python**](https://www.python.jp/) 3.10.5、[**beautifulsoup4**](https://pypi.org/project/beautifulsoup4/) 4.11.1、[**requests**](https://pypi.org/project/requests/) 2.28.1  
 作成者：夢寐郎  
