@@ -3769,6 +3769,9 @@ func loop():
 
 <a id="220809"></a>
 # <b>洋書小説</b>
+
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202209010733.jpg)
+
 （注意）[青空文庫](https://www.aozora.gr.jp/cards/000081/files/43754_17659.html)などマルチバイト文字は対応していません  
 
 ### 👉 小説の用意
