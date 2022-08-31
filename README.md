@@ -3859,7 +3859,7 @@ func loop():
     ```
 1. 実行すると [**テキストのスクロール**](#220803) では日本語表示だった内容が英語に置き換わっていたら成功！
 
-参考：[**テキストのスクロール**](#220803)
+参考：[**テキストのスクロール**](#220803)  
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ、Apache 2.4.53、[**Python**](https://www.python.jp/) 3.10.5、[**beautifulsoup4**](https://pypi.org/project/beautifulsoup4/) 4.11.1、[**requests**](https://pypi.org/project/requests/) 2.28.1  
 作成者：夢寐郎  
 作成日：2022年08月31日  
