@@ -3923,7 +3923,7 @@ func _on_xr_controller_3d_right_button_released(name):
 		_isRTriggerHold = false
 ```
 
-実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ
+実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年05月24日  
 更新日：2022年0X月XX日 Godot 4.0 対応  
