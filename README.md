@@ -3885,13 +3885,13 @@ func loop():
 
 ### 👉 小説の用意
 
-1. [TheRestaurantOfManyOrders.html](https://github.com/mubirou/Godot-Study-Notes/blob/main/html/TheRestaurantOfManyOrders.html) を用意
-1. 上記のファイルを Web 上に置く（今回は **C:\xampp\htdocs** 内に配置し http://127.0.0.1/TheRestaurantOfManyOrders.html で閲覧できるようにする） 
+1. [**TheRestaurantOfManyOrders.html**](https://github.com/mubirou/Godot-Study-Notes/blob/main/html/TheRestaurantOfManyOrders.html) を用意
+1. 上記のファイルを Web 上に置く（今回は **C:\xampp\htdocs** 内に配置し **http://127.0.0.1/TheRestaurantOfManyOrders.html** で閲覧できるようにする） 
 
 ### 👉 Python 側の準備
 
-1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/Python/Python_win.md) を参考に [**Python**]((https://www.python.jp/)) の開発環境を準備する
-1. [Python+SQLite](#220624) を参考に **XAMPP** + **Python** の開発環境を準備する
+1. [**Hello,world!**](https://github.com/mubirou/HelloWorld/blob/master/languages/Python/Python_win.md) を参考に [**Python**]((https://www.python.jp/)) の開発環境を準備する
+1. [**Python+SQLite**](#220624) を参考に **XAMPP** + **Python** の開発環境を準備する
 1. **C:\xampp\htdocs** に以下の Python ファイル（**sample.py**）を作成する  
     👇 最初の3行は必須（決め打ち）  
     👇 1行目は環境に合わせて確認＆設定  
@@ -3939,7 +3939,7 @@ func loop():
     #print(_soup.find("title").text)
     print(_soup.find("body").text)
     ```  
-1. "http://localhost/sample.py" にアクセスして本文が表示されれば成功！  
+1. "**http://localhost/sample.py**" にアクセスして本文が表示されれば成功！  
 
 ### 👉 Godot 側の処理
 
