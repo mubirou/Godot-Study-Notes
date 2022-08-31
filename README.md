@@ -3716,21 +3716,20 @@ func completed(arg1, arg2, arg3, arg4):
 ### 👉 サンプルコード
 「[Python+MySQL](#220625)」と全く同じ  
 「[PHP+SQLite](#220622) / [PHP+MySQL](#220623)」とほぼ同じ（**.php** → **.py**）   
+```gdscript
+# /root/Main(Main.gd)
+extends Node3D
+……
+func _ready():
+  ……
+  var _rq = HTTPRequest.new()
+  add_child(_rq)
+  _rq.request_completed.connect(completed)
+  _rq.request("http://127.0.0.1/test.py")
 
-    ```gdscript
-    # /root/Main(Main.gd)
-    extends Node3D
-    ……
-    func _ready():
-      ……
-      var _rq = HTTPRequest.new()
-      add_child(_rq)
-      _rq.request_completed.connect(completed)
-      _rq.request("http://127.0.0.1/test.py")
-
-    func completed(arg1, arg2, arg3, arg4):
-      print(arg4.get_string_from_utf8()) #-> 3.37.2
-    ```
+func completed(arg1, arg2, arg3, arg4):
+  print(arg4.get_string_from_utf8()) #-> 3.37.2
+```
 
 実行環境：Windows 10、Godot 4.0 alpha 14、Apache 2.4.53、**Python** 3.10.5、**SQLite** 3.37.2  
 作成者：夢寐郎  
