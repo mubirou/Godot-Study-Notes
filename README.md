@@ -3879,8 +3879,6 @@ func loop():
 # <b>洋書小説</b>
 （注意）[青空文庫](https://www.aozora.gr.jp/cards/000081/files/43754_17659.html)などマルチバイト文字は対応していません  
 
-### この項目は書きかけです
-
 ### 👉 小説の用意
 
 1. [**TheRestaurantOfManyOrders.html**](https://github.com/mubirou/Godot-Study-Notes/blob/main/html/TheRestaurantOfManyOrders.html) を用意
@@ -3967,11 +3965,12 @@ func loop():
       var _text:String = arg4.get_string_from_utf8()
       _richText.text = _text
     ```
+1. 実行すると [**テキストのスクロール**](#220803) では日本語表示だった内容が英語に置き換わっていたら成功！
 
 参考：[**テキストのスクロール**](#220803)
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ、Apache 2.4.53、[**Python**](https://www.python.jp/) 3.10.5、[**beautifulsoup4**](https://pypi.org/project/beautifulsoup4/) 4.11.1、[**requests**](https://pypi.org/project/requests/) 2.28.1  
 作成者：夢寐郎  
-作成日：2022年08月XX日  
+作成日：2022年08月31日  
 [[TOP]](#TOP)
 
 
