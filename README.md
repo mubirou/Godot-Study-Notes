@@ -3872,7 +3872,7 @@ func loop():
 <a id="220504"></a>
 # <b>追跡</b>
 
-### この項目は書きかけです
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202209010744.jpg)
 
 Unity版の「[001 追跡](https://bit.ly/3pUYB0f)」のGodot版  
 
@@ -3927,10 +3927,11 @@ func _on_xr_controller_3d_right_button_released(name):
 		_isRTriggerHold = false
 ```
 
+デモファイル：[pursuit.zip](https://github.com/mubirou/Godot/blob/main/zip/pursuit.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年05月24日  
-更新日：2022年0X月XX日 Godot 4.0 対応  
+更新日：2022年09月01日 Godot 4.0 対応  
 [[TOP]](#TOP)
 
 
