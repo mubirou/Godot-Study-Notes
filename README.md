@@ -3887,7 +3887,7 @@ func loop():
 
 1. [Hello,world!](https://github.com/mubirou/HelloWorld/blob/master/languages/Python/Python_win.md) を参考に [**Python**]((https://www.python.jp/)) の開発環境を準備する
 1. [Python+SQLite](#220624) を参考に **XAMPP** + **Python** の開発環境を準備する
-1. **C:\xampp\htdocs** に以下の Python ファイル（**aozora_43754_17659.py**）を作成する  
+1. **C:\xampp\htdocs** に以下の Python ファイル（**sample.py**）を作成する  
     👇 最初の3行は必須（決め打ち）  
     👇 1行目は環境に合わせて確認＆設定  
     （設定が異なると "Internal Server Error" が出る）
