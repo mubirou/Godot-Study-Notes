@@ -3871,10 +3871,9 @@ func loop():
 
 <a id="220504"></a>
 # <b>追跡</b>
+Unity版の「[001 追跡](https://bit.ly/3pUYB0f)」のGodot版  
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209010744.jpg)
-
-Unity版の「[001 追跡](https://bit.ly/3pUYB0f)」のGodot版  
 
 ```gdscript
 # /root/Main(Main.gd)
