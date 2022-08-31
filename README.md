@@ -3903,7 +3903,7 @@ func loop():
     _request = urllib.request.Request(_url)
     _response = urllib.request.urlopen(_request)
     _html = _response.read()
-    _html = _html.decode('ShiftJIS')
+    _html = _html.decode("ShiftJIS")
 
     # Webスクレイピング
     _soup = BeautifulSoup(_html, "html.parser")
@@ -3934,7 +3934,7 @@ func loop():
     #print(_soup.find("title").text)
     print(_soup.find("body").text)
     ```  
-1. "http://localhost/aozora_43754_17659.py" にアクセスして本文が表示されれば成功！  
+1. "http://localhost/sample.py" にアクセスして本文が表示されれば成功！  
 
 ### 👉 Godot 側の処理
 
