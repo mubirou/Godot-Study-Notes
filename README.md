@@ -3780,20 +3780,20 @@ func completed(arg1, arg2, arg3, arg4):
 ### 👉 サンプルコード
 「[Python+SQLite](#220624)」と全く同じ  
 「[PHP+SQLite](#220622) / [PHP+MySQL](#220623)」とほぼ同じ（**.php** → **.py**）
-    ```gdscript
-    # /root/Main(Main.gd)
-    extends Node3D
-    ……
-    func _ready():
-      ……
-      var _rq = HTTPRequest.new()
-      add_child(_rq)
-      _rq.request_completed.connect(completed)
-      _rq.request("http://127.0.0.1/test.py")
+```gdscript
+# /root/Main(Main.gd)
+extends Node3D
+……
+func _ready():
+  ……
+  var _rq = HTTPRequest.new()
+  add_child(_rq)
+  _rq.request_completed.connect(completed)
+  _rq.request("http://127.0.0.1/test.py")
 
-    func completed(arg1, arg2, arg3, arg4):
-      print(arg4.get_string_from_utf8()) #-> 10.4.24-MariaDB
-    ```
+func completed(arg1, arg2, arg3, arg4):
+  print(arg4.get_string_from_utf8()) #-> 10.4.24-MariaDB
+```
 
 実行環境：Windows 10、Godot 4.0 alpha 14、Apache 2.4.53、**Python** 3.10.5、[**MariaDB**](https://ja.wikipedia.org/wiki/MariaDB) 10.4.24、[**mysql-connector-python**](https://pypi.org/project/mysql-connector-python/) 8.0.29  
 作成者：夢寐郎  
