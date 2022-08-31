@@ -2,11 +2,11 @@
 ⌚ 453h00min  
 
 ### **index（Godot 4.0 対応）**
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [オブジェクト色](#220506) | [背景色](#背景色) | [移動の基本3種](#220611) | [衝突判定領域](#220801) | [ボーンにアタッチ](#220802) | [テキストのスクロール](#220803) | [シーン遷移](#220804) | [摩擦係数と反発係数](#220805) | [共有データ](#220806) | [他人のメソッドの実行](#220807) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [機械式時計](#220808) | [洋書小説](#220809) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [オブジェクト色](#220506) | [背景色](#背景色) | [移動の基本3種](#220611) | [衝突判定領域](#220801) | [ボーンにアタッチ](#220802) | [テキストのスクロール](#220803) | [シーン遷移](#220804) | [摩擦係数と反発係数](#220805) | [共有データ](#220806) | [他人のメソッドの実行](#220807) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [機械式時計](#220808) | [洋書小説](#220809) | [追跡](#220504) |
 ***
 
 ### **index（Godot 3.4 対応）**
-| [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [追跡](#220504) | [Questビルド](#220505) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [物理エンジン RigidBodyとStaticBody](#220610) | [衝突判定](#220612) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) |
+| [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [Questビルド](#220505) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [物理エンジン RigidBodyとStaticBody](#220610) | [衝突判定](#220612) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) |
 ***
 
 <a id="Androidビルド"></a>
@@ -3971,6 +3971,71 @@ func loop():
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ、Apache 2.4.53、[**Python**](https://www.python.jp/) 3.10.5、[**beautifulsoup4**](https://pypi.org/project/beautifulsoup4/) 4.11.1、[**requests**](https://pypi.org/project/requests/) 2.28.1  
 作成者：夢寐郎  
 作成日：2022年08月31日  
+[[TOP]](#TOP)
+
+
+<a id="220504"></a>
+# <b>追跡</b>
+
+### この項目は書きかけです
+
+Unity版の「[001 追跡](https://bit.ly/3pUYB0f)」のGodot版  
+
+```gdscript
+# /root/Main(Main.gd)
+extends Node3D
+
+var _interface:XRInterface
+var _rightHand:MeshInstance3D
+var _piece0:Node3D
+var _pieceArray = []
+var _pieceNum = 50
+var _isRTriggerHold = false
+
+func _ready():
+	_interface = XRServer.find_interface("OpenXR")
+	if _interface and _interface.is_initialized():
+		var _viewport : Viewport = get_viewport()
+		_viewport.use_xr = true
+	
+	_rightHand = get_node("XROrigin3D/XRController3D_Right/Controller")
+	_piece0 = get_node("piece")
+	_pieceArray.append(_piece0)
+	for i in range(1, _pieceNum):
+		var _thePiece = _piece0.duplicate()
+		add_child(_thePiece)
+		_pieceArray.append(_thePiece)
+	_piece0.hide()
+
+func _process(delta):
+	if !_isRTriggerHold: return
+	_piece0.position = _rightHand.global_transform.origin
+	for i in range(0, _pieceNum):
+		var _thePiece  = _pieceArray[i]
+		var _frontPiece = _pieceArray[i-1]
+		var _disX = _frontPiece.position.x - _thePiece.position.x
+		var _disY = _frontPiece.position.y - _thePiece.position.y
+		var _disZ = _frontPiece.position.z - _thePiece.position.z
+		_thePiece.look_at(_frontPiece.position)
+		var _thePos = _thePiece.position
+		_thePos.x += _disX / 8
+		_thePos.y += _disY / 8
+		_thePos.z += _disZ / 8
+		_thePiece.position = _thePos
+
+func _on_xr_controller_3d_right_button_pressed(name):
+	if name == "trigger_click":
+		_isRTriggerHold = true
+	
+func _on_xr_controller_3d_right_button_released(name):
+	if name == "trigger_click":
+		_isRTriggerHold = false
+```
+
+実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ
+作成者：夢寐郎  
+作成日：2022年05月24日  
+更新日：2022年0X月XX日 Godot 4.0 対応  
 [[TOP]](#TOP)
 
 
