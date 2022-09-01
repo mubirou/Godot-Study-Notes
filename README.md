@@ -3768,7 +3768,7 @@ func loop():
 デモファイル：[clock.zip](https://github.com/mubirou/Godot/blob/main/zip/clock.zip)  
 参考：[フタバゼミ](https://futabazemi.net/unity/pivot_change/)  
 参考：[Poly Haven（テクスチャ）](https://polyhaven.com/textures)  
-実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 15、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年08月30日  
 更新日：2022年09月01日 deg2rad() → deg_to_rad() に変更  
