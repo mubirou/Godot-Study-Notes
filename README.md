@@ -2978,7 +2978,7 @@ _obj.set_surface_override_material(0, _material)
 ### **➂力を加える**  
 
   * [**RigidBody3D.apply_force(Vector3)**](https://bit.ly/3B6mTdO)  
-    参考：[GODOT DOCS](https://bit.ly/3Q7KSgX)    
+    参考：[GODOT DOCS（RigidBody3D）](https://bit.ly/3Q7KSgX)    
 
   ```gdscript
   var _RigidBody3D:RigidBody3D = get_node("〇〇")
