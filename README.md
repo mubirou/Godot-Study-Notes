@@ -2942,7 +2942,7 @@ _obj.set_surface_override_material(0, _material)
 　　├ [PhysicsBody3D](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#physicsbody3d)  
 　　│├ [**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d)（壁･床用）   
 　　│├ [**CharacterBody3D**](https://docs.godotengine.org/en/latest/classes/class_characterbody3d.html?highlight=CharacterBody3D#characterbody3d)（キャラクター用）    
-　　│├ [**RigidDynamicBody3D**](https://docs.godotengine.org/en/latest/classes/class_rigiddynamicbody3d.html?highlight=RigidDynamicBody3D#rigiddynamicbody3d)（力を加えられる物理ボディ）  
+　　│├ [**RigidDynamicBody3D**](https://docs.godotengine.org/en/latest/classes/class_rigidbody3d.html?highlight=add_constant_force(#rigidbody3d)（力を加えられる物理ボディ）  
 　　│└ [PhysicalBone3D](https://docs.godotengine.org/en/latest/classes/class_physicalbone3d.html?highlight=PhysicalBone3D#physicalbone3d)  
 　　└ [Area3D](https://docs.godotengine.org/en/latest/classes/class_area3d.html?highlight=get_overlapping_bodies#area3d)  
   
@@ -2977,18 +2977,18 @@ _obj.set_surface_override_material(0, _material)
 
 ### **➂力を加える**  
 
-  * [**RigidDynamicBody3D.apply_force(Vector3)**](https://bit.ly/3cSXomI)  
-    参考：[GODOT DOCS](https://bit.ly/3vsNvmf)    
+  * [**RigidBody3D.apply_force(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_rigidbody3d.html?highlight=add_constant_force(#class-rigidbody3d-method-apply-force)  
+    参考：[GODOT DOCS](https://docs.godotengine.org/en/latest/classes/class_rigidbody3d.html?highlight=add_constant_force(#rigidbody3d)    
 
   ```gdscript
-  var _RigidDynamicBody3D = get_node("〇〇")
-  _RigidDynamicBody3D.apply_force(Vector3(-100, 100, 0))
+  var _RigidBody3D:RigidBody3D = get_node("〇〇")
+  _RigidBody3D.apply_force(Vector3(-100, 100, 0))
   ```
 
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月15日  
-作成日：2022年08月02日 Godot 4.0 対応    
+作成日：2022年09月02日 RigidDynamicBody3D → RigidBody3D に変更  
 [[TOP]](#TOP)
 
 
