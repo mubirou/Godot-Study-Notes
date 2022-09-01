@@ -3753,9 +3753,13 @@ func _process(_delta):
 			__timer.start()
 	__current_second = _now.second
 
-	__short_hand.rotation.y = - deg2rad(_now.hour * 30 + _now.minute * 0.5)
-	__long_hand.rotation.y = - deg2rad(_now.minute * 6 + _now.second / 60.0 * 6)
-	__second_hand.rotation.y = - deg2rad((_now.second + __demical) * 6.0)
+	__short_hand.rotation.y = - deg_to_rad(_now.hour * 30 + _now.minute * 0.5)
+	__long_hand.rotation.y = - deg_to_rad(_now.minute * 6 + _now.second / 60.0 * 6)
+	__second_hand.rotation.y = - deg_to_rad((_now.second + __demical) * 6.0)
+	
+	#__short_hand.rotation.y = - PI * (_now.hour * 30 + _now.minute * 0.5) / 180
+	#__long_hand.rotation.y = - PI * (_now.minute * 6 + _now.second / 60.0 * 6) / 180
+	#__second_hand.rotation.y = - PI * ((_now.second + __demical) * 6.0) / 180
 
 func loop():
 	__demical = Time.get_unix_time_from_system() - __start
@@ -3767,6 +3771,7 @@ func loop():
 実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年08月30日  
+更新日：2022年09月01日 deg2rad() → deg_to_rad() に変更  
 [[TOP]](#TOP)
 
 
