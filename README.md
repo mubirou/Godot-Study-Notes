@@ -3961,6 +3961,12 @@ Main（Node3D）
 　　　└ CollisionShape3d  
 　　　　　└ Body（MeshInstance3D＝イガグリの可視化）  
 
+* 左右のコントローラー
+  * 投てき＝左トリガーを押している + 右トリガーを離す
+  * 投てきの力＝左右のコントローラーの距離（差）
+* イガグリがくっつく領域（StaticBody3d_Stick）
+* イガグリ（Igaguri＝RigidBody3D）
+
 ### 👉 全コード
 
 ```gdscript
