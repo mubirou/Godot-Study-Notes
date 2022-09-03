@@ -4001,7 +4001,7 @@ func _ready():
 # 繰り返し実行（フレームレートに依存）
 func _process(delta):
 	if _isRTriggerHold: # 右の人差し指トリガーを押している場合
-		# イガグリを右トリガー付近に配置
+		# イガグリを右コントローラーの位置に配置
 		_igaguri.position = _rightHand.global_transform.origin
 
 # 右の人差し指トリガーを押し込んだ時の処理
