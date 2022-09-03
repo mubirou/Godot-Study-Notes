@@ -3950,9 +3950,9 @@ func _on_xr_controller_3d_right_button_released(name):
 Main（Node3D）  
 　├ XROrigin3D  
 　│　├ XRController3D_Left（XRNode3D）  
-　│　│　└ Controller（左コントローラーの可視化）  
+　│　│　└ **Controller**（左コントローラーの可視化）  
 　│　└ XRController3D_Right（XRNode3D）  
-　│　　　└ Controller（右コントローラーの可視化）  
+　│　　　└ **Controller**（右コントローラーの可視化）  
 　├ Target（MeshInstance3D＝的の可視化）  
 　│　└ **StaticBody3d_Stick**（**StaticBody3D**）  
 　│　　　└ **CollisionShape3d**  
