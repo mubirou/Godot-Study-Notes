@@ -3944,10 +3944,70 @@ func _on_xr_controller_3d_right_button_released(name):
 <a id="220901"></a>
 # <b>Igaguriゲーム</b>
 
+### この項目は書きかけです
+
 ```gdscript
+# /root/Main(Main.gd)
+extends Node3D
+
+var _interface:XRInterface
+var _rightHand:MeshInstance3D
+var _leftHand:MeshInstance3D
+var _igaguri:RigidBody3D
+var _isRTriggerHold = false
+var _isLTriggerHold = false
+var _isReady = false
+
+func _ready():
+	_interface = XRServer.find_interface("OpenXR")
+	if _interface and _interface.is_initialized():
+		var _viewport : Viewport = get_viewport()
+		_viewport.use_xr = true
+
+	_rightHand = get_node("XROrigin3D/XRController3D_Right/Controller")
+	_leftHand = get_node("XROrigin3D/XrController3d_Left/Controller")
+	_igaguri = get_node("Igaguri")
+	_igaguri.contact_monitor = true # 衝突判定用
+	_igaguri.max_contacts_reported = 1 # 衝突判定用
+
+func _on_xr_controller_3d_right_button_pressed(name):
+	if name == "trigger_click":
+		_isRTriggerHold = true
+	
+func _on_xr_controller_3d_right_button_released(name):
+	if name == "trigger_click":
+		_isRTriggerHold = false
+		if _isLTriggerHold:
+			var _leftHandPos = _leftHand.global_transform.origin
+			var _rightHandPos = _rightHand.global_transform.origin
+			var _disPos:Vector3 = _leftHandPos - _rightHandPos
+			
+			# 重力のリセット
+			_igaguri.freeze = true
+			_igaguri.freeze = false
+			
+			# 微調整
+			var _powerX:float = _disPos.x * 3000
+			var _powerY:float = _disPos.y * 2500
+			var _powerZ:float = _disPos.z * 2000 
+			
+			_igaguri.apply_force(Vector3(_powerX, _powerY, _powerZ))
+
+func _on_xr_controller_3d_left_button_pressed(name):
+	if name == "trigger_click": _isLTriggerHold = true
+
+func _on_xr_controller_3d_left_button_released(name):
+	if name == "trigger_click": _isLTriggerHold = false
+
+func _process(delta):
+	if _isRTriggerHold:
+		_igaguri.position = _rightHand.global_transform.origin + Vector3(0, 0, -0.14)
+
+func _on_igaguri_body_entered(_body):
+	if _body == $Target/StaticBody3d_Stick: _igaguri.freeze = true
 ```
 
-実行環境：Windows 10、Godot 4.0 alpha 15、Meta Quest 43.0、Quest Link、Oculusアプリ 
+実行環境：Windows 10、Godot 4.0 alpha 15、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年09月XX日  
 [[TOP]](#TOP)
