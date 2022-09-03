@@ -3946,6 +3946,20 @@ func _on_xr_controller_3d_right_button_released(name):
 
 ### この項目は書きかけです
 
+（主な階層構造）  
+Main（Node3D）  
+　├ XROrigin3D  
+　│　├ XRController3D_Left（XRNode3D） 
+　│　│　└ Controller（左コントローラーの可視化）
+　│　└ XRController3D_Right（XRNode3D）
+　│　　　└ Controller（右コントローラーの可視化）
+　├ Target（MeshInstance3D＝的の可視化）  
+　│　└ **StaticBody3d_Stick**（**StaticBody3D**）  
+　│　　　└ **CollisionShape3d**  
+　└ **Igaguri**（**RigidBody3D**）  
+　　　└ **CollisionShape3d**  
+　　　　　└ Body（MeshInstance3D＝イガグリの可視化）  
+
 ```gdscript
 # /root/Main(Main.gd)
 extends Node3D # 決め打ち（3Dに必須）
