@@ -4002,7 +4002,7 @@ func _ready():
 func _process(delta):
 	if _isRTriggerHold: # 右の人差し指トリガーを押している場合
 		# イガグリを右トリガー付近に配置
-		_igaguri.position = _rightHand.global_transform.origin + Vector3(0, 0, -0.14)
+		_igaguri.position = _rightHand.global_transform.origin
 
 # 右の人差し指トリガーを押し込んだ時の処理
 func _on_xr_controller_3d_right_button_pressed(name):
