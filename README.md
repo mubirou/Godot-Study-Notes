@@ -3946,7 +3946,8 @@ func _on_xr_controller_3d_right_button_released(name):
 
 ### この項目は書きかけです
 
-（主な階層構造）  
+### 👉 主な階層構造  
+
 Main（Node3D）  
 　├ XROrigin3D  
 　│　├ XRController3D_Left（XRNode3D）  
@@ -3959,6 +3960,8 @@ Main（Node3D）
 　└ **Igaguri**（**RigidBody3D**）  
 　　　└ CollisionShape3d  
 　　　　　└ Body（MeshInstance3D＝イガグリの可視化）  
+
+### 👉 全コード
 
 ```gdscript
 # /root/Main(Main.gd)
