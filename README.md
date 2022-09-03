@@ -3946,8 +3946,9 @@ func _on_xr_controller_3d_right_button_released(name):
 
 ### この項目は書きかけです
 
-### 👉 主な階層構造  
+### 👉 主なポイント  
 
+#### 主な階層構造
 Main（Node3D）  
 　├ XROrigin3D  
 　│　├ XRController3D_Left（XRNode3D）  
@@ -3961,13 +3962,14 @@ Main（Node3D）
 　　　└ CollisionShape3d  
 　　　　　└ Body（MeshInstance3D＝イガグリの可視化）  
 
+#### 主な役目
 * 左右のコントローラー
-  * 投てき＝左トリガーを押している + 右トリガーを離す
-  * 投てきの力＝左右のコントローラーの距離（差）
-* イガグリがくっつく領域（StaticBody3d_Stick）
-* イガグリ（Igaguri＝RigidBody3D）
+  * 左トリガーを押している + 右トリガーを離す ＝ **投てき**
+  *左右のコントローラーの位置の差 ＝ **投てきの力**
+* **StaticBody3d_Stick**＝イガグリがくっつく領域
+* **Igaguri**（RigidBody3D）＝イガグリ（投げるもの）
 
-### 👉 全コード
+### 👉 全スクリプト
 
 ```gdscript
 # /root/Main(Main.gd)
