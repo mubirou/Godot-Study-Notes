@@ -3950,13 +3950,12 @@ func _on_xr_controller_3d_right_button_released(name):
 # /root/Main(Main.gd)
 extends Node3D
 
-var _interface:XRInterface
-var _rightHand:MeshInstance3D
-var _leftHand:MeshInstance3D
+var _interface:XRInterface # 決め打ち（VRに必須）
+var _leftHand:MeshInstance3D # 左コントローラー（可視化したもの）
+var _rightHand:MeshInstance3D # 右コントローラー（可視化したもの）
 var _igaguri:RigidBody3D
-var _isRTriggerHold = false
-var _isLTriggerHold = false
-var _isReady = false
+var _isLTriggerHold = false # 左の人差し指トリガーを押しているか
+var _isRTriggerHold = false # 右の人差し指トリガーを押しているか
 
 func _ready():
 	_interface = XRServer.find_interface("OpenXR")
