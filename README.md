@@ -3948,35 +3948,49 @@ func _on_xr_controller_3d_right_button_released(name):
 
 ```gdscript
 # /root/Main(Main.gd)
-extends Node3D
+extends Node3D # 決め打ち（3Dに必須）
 
 var _interface:XRInterface # 決め打ち（VRに必須）
-var _leftHand:MeshInstance3D # 左コントローラー（可視化したもの）
-var _rightHand:MeshInstance3D # 右コントローラー（可視化したもの）
-var _igaguri:RigidBody3D
+var _leftHand:MeshInstance3D # 左コントローラー（可視化）
+var _rightHand:MeshInstance3D # 右コントローラー（可視化）
+var _igaguri:RigidBody3D # イガグリ（親）
 var _isLTriggerHold = false # 左の人差し指トリガーを押しているか
 var _isRTriggerHold = false # 右の人差し指トリガーを押しているか
 
 func _ready():
+	# 決め打ち（VRに必須）
 	_interface = XRServer.find_interface("OpenXR")
 	if _interface and _interface.is_initialized():
 		var _viewport : Viewport = get_viewport()
 		_viewport.use_xr = true
 
+	# 各ノードの取得
 	_rightHand = get_node("XROrigin3D/XRController3D_Right/Controller")
 	_leftHand = get_node("XROrigin3D/XrController3d_Left/Controller")
 	_igaguri = get_node("Igaguri")
-	_igaguri.contact_monitor = true # 衝突判定用
-	_igaguri.max_contacts_reported = 1 # 衝突判定用
+	
+	# 衝突判定用（RigidBody3D.body_entered()と連動）
+	_igaguri.contact_monitor = true 
+	_igaguri.max_contacts_reported = 1
 
+# 繰り返し実行（フレームレートに依存）
+func _process(delta):
+	if _isRTriggerHold: # 右の人差し指トリガーを押している場合
+		# イガグリを右トリガー付近に配置
+		_igaguri.position = _rightHand.global_transform.origin + Vector3(0, 0, -0.14)
+
+# 右の人差し指トリガーを押し込んだ時の処理
 func _on_xr_controller_3d_right_button_pressed(name):
 	if name == "trigger_click":
 		_isRTriggerHold = true
-	
+
+# 右の人差し指トリガーを離した時の処理
 func _on_xr_controller_3d_right_button_released(name):
 	if name == "trigger_click":
 		_isRTriggerHold = false
-		if _isLTriggerHold:
+		
+		if _isLTriggerHold: # 投てきの際 左の人差し指トリガーを押しているか
+			# 左右のコントローラーの位置の差を調べる
 			var _leftHandPos = _leftHand.global_transform.origin
 			var _rightHandPos = _rightHand.global_transform.origin
 			var _disPos:Vector3 = _leftHandPos - _rightHandPos
@@ -3990,20 +4004,24 @@ func _on_xr_controller_3d_right_button_released(name):
 			var _powerY:float = _disPos.y * 2500
 			var _powerZ:float = _disPos.z * 2000 
 			
+			# 投てき（イガグリに力を加える）
 			_igaguri.apply_force(Vector3(_powerX, _powerY, _powerZ))
 
+# 左の人差し指トリガーを押し込んだ時の処理
 func _on_xr_controller_3d_left_button_pressed(name):
-	if name == "trigger_click": _isLTriggerHold = true
+	if name == "trigger_click":
+		_isLTriggerHold = true
 
+# 左の人差し指トリガーを離した時の処理
 func _on_xr_controller_3d_left_button_released(name):
-	if name == "trigger_click": _isLTriggerHold = false
+	if name == "trigger_click":
+		_isLTriggerHold = false
 
-func _process(delta):
-	if _isRTriggerHold:
-		_igaguri.position = _rightHand.global_transform.origin + Vector3(0, 0, -0.14)
-
+# イガグリが別のPhysicsBody3Dに衝突した時の処理
 func _on_igaguri_body_entered(_body):
-	if _body == $Target/StaticBody3d_Stick: _igaguri.freeze = true
+	# イガグリが的に命中したらくっつける
+	if _body == $Target/StaticBody3d_Stick:
+		_igaguri.freeze = true
 ```
 
 実行環境：Windows 10、Godot 4.0 alpha 15、Meta Quest 43.0、Quest Link、Oculusアプリ  
