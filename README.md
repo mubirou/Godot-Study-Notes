@@ -3955,9 +3955,9 @@ Main（Node3D）
 　│　　　└ **Controller**（右コントローラーの可視化）  
 　├ Target（MeshInstance3D＝的の可視化）  
 　│　└ **StaticBody3d_Stick**（**StaticBody3D**）  
-　│　　　└ **CollisionShape3d**  
+　│　　　└ CollisionShape3d  
 　└ **Igaguri**（**RigidBody3D**）  
-　　　└ **CollisionShape3d**  
+　　　└ CollisionShape3d  
 　　　　　└ Body（MeshInstance3D＝イガグリの可視化）  
 
 ```gdscript
