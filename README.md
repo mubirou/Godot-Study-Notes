@@ -3094,7 +3094,7 @@ _obj.set_surface_override_material(0, _material)
   * **Friction**（[**摩擦係数**](https://d-engineer.com/Mechanics/masatu.html)）：0～1（初期値：1）
   * **Bounce**（[**反発係数**](https://hujiblog.com/archives/2468)）：0～1（初期値：0）  
 
-💡 [**重力加速度**](https://www.eps.sci.kyoto-u.ac.jp/research/introduction/07/index.html) は [プロジェクト]-[プロジェクト設定]-[一般]-[Physics]-[3D]-[**DEfault Gravity**] で設定（初期値：**9.8**）  
+💡 [**重力加速度**](https://www.eps.sci.kyoto-u.ac.jp/research/introduction/07/index.html) は [プロジェクト]-[プロジェクト設定]-[一般]-[Physics]-[3D]-[**Default Gravity**] で設定（初期値：**9.8**）  
 
 デモファイル：[FrictionBounce.zip](https://github.com/mubirou/Godot/blob/main/zip/FrictionBounce.zip)（右トリガーで落下、Bボタンでリセット）  
 📖 **摩擦力**：高校『物理基礎の力学』（力のつり合い）  
