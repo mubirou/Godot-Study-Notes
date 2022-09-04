@@ -3943,6 +3943,7 @@ func _on_xr_controller_3d_right_button_released(name):
 
 <a id="220901"></a>
 # <b>Igaguriゲーム</b>
+『Unityの教科書/北村愛実著』(https://amzn.to/3Bcx7cL)（Chapter 7 3Dゲームの作り方）の Godot VR 版  
 
 ### この項目は書きかけです
 
