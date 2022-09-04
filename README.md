@@ -3096,7 +3096,7 @@ _obj.set_surface_override_material(0, _material)
 
 💡 [**重力加速度**](https://www.eps.sci.kyoto-u.ac.jp/research/introduction/07/index.html) は [プロジェクト]-[プロジェクト設定]-[一般]-[Physics]-[3D]-[**DEfault Gravity**] で設定（初期値：**9.8**）  
 
-デモファイル：[FrictionBounce.zip](https://github.com/mubirou/Godot/blob/main/zip/FrictionBounce.zip)  
+デモファイル：[FrictionBounce.zip](https://github.com/mubirou/Godot/blob/main/zip/FrictionBounce.zip)（右トリガーで落下、Bボタンでリセット）  
 📖 **摩擦力**：高校『物理基礎の力学』（力のつり合い）  
 📖 **はね返り係数**：高校『物理の力学』（力積と運動量）  
 実行環境：Windows 10、Godot 4.0 alpha 15、Meta Quest 43.0、Quest Link、Oculusアプリ  
