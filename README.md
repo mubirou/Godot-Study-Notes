@@ -2,11 +2,11 @@
 ⌚ 480h00min  
 
 ### **index（Godot 4.0 対応）**
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [オブジェクト色](#220506) | [背景色](#背景色) | [移動の基本3種](#220611) | [衝突判定領域](#220801) | [ボーンにアタッチ](#220802) | [テキストのスクロール](#220803) | [シーン遷移](#220804) | [摩擦係数と反発係数](#220805) | [共有データ](#220806) | [他人のメソッドの実行](#220807) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [機械式時計](#220808) | [洋書小説](#220809) | [追跡](#220504) | [Igaguriゲーム](#220901) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [オブジェクト色](#220506) | [背景色](#背景色) | [移動の基本3種](#220611) | [衝突判定領域](#220801) | [ボーンにアタッチ](#220802) | [テキストのスクロール](#220803) | [シーン遷移](#220804) | [摩擦係数と反発係数](#220805) | [共有データ](#220806) | [他人のメソッドの実行](#220807) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [機械式時計](#220808) | [洋書小説](#220809) | [追跡](#220504) | [Igaguriゲーム](#220901) | [衝突判定](#220612) |
 ***
 
 ### **index（Godot 3.X 対応）**
-| [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [Questビルド](#220505) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [物理エンジン RigidBodyとStaticBody](#220610) | [衝突判定](#220612) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) |
+| [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [Questビルド](#220505) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [物理エンジン RigidBodyとStaticBody](#220610) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) |
 ***
 
 <a id="Androidビルド"></a>
@@ -1167,131 +1167,6 @@ VR コンテンツ開発の [諸準備](#220501) をする
 作成者：夢寐郎  
 作成日：2022年06月13日  
 [[TOP]](#TOP)
-
-
-<a id="220612"></a>
-# <b>衝突判定</b>
-
-📝 **指定位置に移動…で衝突判定**  
-
-Player と Enemy は物理的に重なることはなく Enemy が Static の場合は指定位置に移動できない（ **set_mode(0)** で動かすなど工夫が必要）。Player.translation = Vector3 で移動させると確実に指定位置に移動するが「衝突判定」はできない。「衝突判定」が必要な場合は **KinematicBody.move_and_slide(Vector3)** で動かす必要がある。  
-
-  Spatial  
-　  ├ FPController  
-　  ├ **Floor**（**StaticBody**）  
-　  │   └ CollisionShape（BoxShape 型）  
-　  │　　　 └ MeshInstance（CubeMesh 型）  
-　  ├ **Enemy**（**RigidBody**-**Static** 型など）  
-　  │   └ CollisionShape（SphereShape 型）  
-　  │　　　 └ MeshInstance（SphereShape 型）  
-　  └ **Player**（**KinematicBody** 型）  
-　  　  └ CollisionShape（SphereShape 型）  
-　  　　　　└ MeshInstance（SphereShape 型）  
-
-* **Enemy**：RigidBody（**Static** / **Kinematic** モードのみ）ほか
-* **Player**：**KinematicBody** 限定
-
-    ```gdscript
-    # Main.gd
-    extends Spatial
-
-    var _player # KinematicBody Only
-    var _targetPos
-
-    func _ready():
-      _player = get_node("Player") # KinematicBody Only
-      _targetPos = Vector3(0, 1, -1)
-
-    func _physics_process(delta):
-      var _currentPos = _player.translation
-      var _disPos = _targetPos - _currentPos
-      _player.move_and_slide(_disPos)
-
-      if _player.get_slide_count() != 0:
-        print("衝突!")
-        var _enemy = _player.get_slide_collision(0).collider
-        _enemy.set_mode(0) # 0(Rigid)
-    ```
-
-📝 **値だけ移動…で衝突判定**  
-
-  Spatial  
-　  ├ FPController  
-　  ├ **Floor**（**StaticBody**）  
-　  │   └ CollisionShape（BoxShape 型）  
-　  │　　　 └ MeshInstance（CubeMesh 型）  
-　  ├ **Enemy**（**RigidBody**-**Static** 型など）  
-　  │   └ CollisionShape（SphereShape 型）  
-　  │　　　 └ MeshInstance（SphereShape 型）  
-　  └ **Player**（**KinematicBody** 型）  
-　  　  └ CollisionShape（SphereShape 型）  
-　  　　　　└ MeshInstance（SphereShape 型）  
-
-* **Enemy**：RigidBody（**Static** / **Kinematic** モードのみ）ほか
-* **Player**：**KinematicBody** 限定
-
-    ```gdscript
-    # Main.gd
-    extends Spatial
-
-    var _player # KinematicBody Only
-
-    func _ready():
-      _player = get_node("Player") # KinematicBody Only
-
-    func _physics_process(delta):
-      _player.move_and_slide(Vector3(-0.1,0,0))
-
-      if _player.get_slide_count() != 0:
-        print("衝突!")
-        # _enemy: RigidBody(Static or Kinematic Mode Only)
-        var _enemy = _player.get_slide_collision(0).collider
-        _enemy.set_mode(0) # 0(Rigid)
-    ```
-
-📝 **力を加える…で衝突判定**  
-
-  Spatial  
-　  ├ FPController  
-　  ├ **Floor**（**StaticBody**）  
-　  │   └ CollisionShape（BoxShape 型）  
-　  │　　　 └ MeshInstance（CubeMesh 型）  
-　  ├ **Enemy**（**RigidBody**-**Static** 型など）  
-　  │   └ CollisionShape（SphereShape 型）  
-　  │　　　 └ MeshInstance（SphereShape 型）  
-　  └ **Player**（**RigidBody**-**Rigid** 型）  
-　  　  └ CollisionShape（SphereShape 型）  
-　  　　　　└ MeshInstance（SphereShape 型）  
-
-* **Enemy**：RigidBody（全モード可）ほか
-* **Player**：**RigidBody**（**Rigid** 型）限定
-
-    ```gdscript
-    # Main.gd
-    extends Spatial
-
-    var _player # RigidBody
-    var _floor # StaticBody
-
-    func _ready():
-      _floor = get_node("Floor")
-      _player = get_node("Player") # RigidBody Only
-      _player.add_force(Vector3(-30,0,0), Vector3.ZERO)
-
-    func _physics_process(delta):
-      var _enemyList = _player.get_colliding_bodies()
-      if _enemyList.size() != 0:
-        for _theEnemy in _enemyList:
-          if (_theEnemy != _floor):
-            print("衝突!")
-            print(_theEnemy)
-            _theEnemy.set_mode(0) # 0(Rigid)
-    ```
-
-実行環境：Windows 10、Godot 3.4.4、Meta Quest 40.0、Oculusアプリ  
-作成者：夢寐郎  
-作成日：2022年06月17日  
-[[TOP]](#TOP)  
 
 
 <a id="220614"></a>
@@ -4053,6 +3928,134 @@ func _on_igaguri_body_entered(_body):
 作成者：夢寐郎  
 作成日：2022年09月04日  
 [[TOP]](#TOP)
+
+
+<a id="220612"></a>
+# <b>衝突判定</b>
+
+### この項目は書きかけです
+
+📝 **指定位置に移動…で衝突判定**  
+
+Player と Enemy は物理的に重なることはなく Enemy が Static の場合は指定位置に移動できない（ **set_mode(0)** で動かすなど工夫が必要）。Player.translation = Vector3 で移動させると確実に指定位置に移動するが「衝突判定」はできない。「衝突判定」が必要な場合は **KinematicBody.move_and_slide(Vector3)** で動かす必要がある。  
+
+  Spatial  
+　  ├ FPController  
+　  ├ **Floor**（**StaticBody**）  
+　  │   └ CollisionShape（BoxShape 型）  
+　  │　　　 └ MeshInstance（CubeMesh 型）  
+　  ├ **Enemy**（**RigidBody**-**Static** 型など）  
+　  │   └ CollisionShape（SphereShape 型）  
+　  │　　　 └ MeshInstance（SphereShape 型）  
+　  └ **Player**（**KinematicBody** 型）  
+　  　  └ CollisionShape（SphereShape 型）  
+　  　　　　└ MeshInstance（SphereShape 型）  
+
+* **Enemy**：RigidBody（**Static** / **Kinematic** モードのみ）ほか
+* **Player**：**KinematicBody** 限定
+
+    ```gdscript
+    # Main.gd
+    extends Spatial
+
+    var _player # KinematicBody Only
+    var _targetPos
+
+    func _ready():
+      _player = get_node("Player") # KinematicBody Only
+      _targetPos = Vector3(0, 1, -1)
+
+    func _physics_process(delta):
+      var _currentPos = _player.translation
+      var _disPos = _targetPos - _currentPos
+      _player.move_and_slide(_disPos)
+
+      if _player.get_slide_count() != 0:
+        print("衝突!")
+        var _enemy = _player.get_slide_collision(0).collider
+        _enemy.set_mode(0) # 0(Rigid)
+    ```
+
+📝 **値だけ移動…で衝突判定**  
+
+  Spatial  
+　  ├ FPController  
+　  ├ **Floor**（**StaticBody**）  
+　  │   └ CollisionShape（BoxShape 型）  
+　  │　　　 └ MeshInstance（CubeMesh 型）  
+　  ├ **Enemy**（**RigidBody**-**Static** 型など）  
+　  │   └ CollisionShape（SphereShape 型）  
+　  │　　　 └ MeshInstance（SphereShape 型）  
+　  └ **Player**（**KinematicBody** 型）  
+　  　  └ CollisionShape（SphereShape 型）  
+　  　　　　└ MeshInstance（SphereShape 型）  
+
+* **Enemy**：RigidBody（**Static** / **Kinematic** モードのみ）ほか
+* **Player**：**KinematicBody** 限定
+
+    ```gdscript
+    # Main.gd
+    extends Spatial
+
+    var _player # KinematicBody Only
+
+    func _ready():
+      _player = get_node("Player") # KinematicBody Only
+
+    func _physics_process(delta):
+      _player.move_and_slide(Vector3(-0.1,0,0))
+
+      if _player.get_slide_count() != 0:
+        print("衝突!")
+        # _enemy: RigidBody(Static or Kinematic Mode Only)
+        var _enemy = _player.get_slide_collision(0).collider
+        _enemy.set_mode(0) # 0(Rigid)
+    ```
+
+📝 **力を加える…で衝突判定**  
+
+  Spatial  
+　  ├ FPController  
+　  ├ **Floor**（**StaticBody**）  
+　  │   └ CollisionShape（BoxShape 型）  
+　  │　　　 └ MeshInstance（CubeMesh 型）  
+　  ├ **Enemy**（**RigidBody**-**Static** 型など）  
+　  │   └ CollisionShape（SphereShape 型）  
+　  │　　　 └ MeshInstance（SphereShape 型）  
+　  └ **Player**（**RigidBody**-**Rigid** 型）  
+　  　  └ CollisionShape（SphereShape 型）  
+　  　　　　└ MeshInstance（SphereShape 型）  
+
+* **Enemy**：RigidBody（全モード可）ほか
+* **Player**：**RigidBody**（**Rigid** 型）限定
+
+    ```gdscript
+    # Main.gd
+    extends Spatial
+
+    var _player # RigidBody
+    var _floor # StaticBody
+
+    func _ready():
+      _floor = get_node("Floor")
+      _player = get_node("Player") # RigidBody Only
+      _player.add_force(Vector3(-30,0,0), Vector3.ZERO)
+
+    func _physics_process(delta):
+      var _enemyList = _player.get_colliding_bodies()
+      if _enemyList.size() != 0:
+        for _theEnemy in _enemyList:
+          if (_theEnemy != _floor):
+            print("衝突!")
+            print(_theEnemy)
+            _theEnemy.set_mode(0) # 0(Rigid)
+    ```
+
+実行環境：Windows 10、Godot 4.0 alpha 15、Meta Quest 43.0、Quest Link、Oculusアプリ 
+作成者：夢寐郎  
+作成日：2022年06月17日  
+更新日：2022年09月XX日  
+[[TOP]](#TOP)  
 
 
 <a id="XXXXX"></a>
