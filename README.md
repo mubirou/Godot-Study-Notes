@@ -1,5 +1,5 @@
 # Godot Study Notes 🔰<a id="TOP"></a>
-⌚ 479h00min  
+⌚ 480h00min  
 
 ### **index（Godot 4.0 対応）**
 [GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [床タイル](#220705) | [テレポート移動](#220706) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [パーティクル](#220709) | [360°パノラマ](#220710) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [オブジェクト色](#220506) | [背景色](#背景色) | [移動の基本3種](#220611) | [衝突判定領域](#220801) | [ボーンにアタッチ](#220802) | [テキストのスクロール](#220803) | [シーン遷移](#220804) | [摩擦係数と反発係数](#220805) | [共有データ](#220806) | [他人のメソッドの実行](#220807) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [機械式時計](#220808) | [洋書小説](#220809) | [追跡](#220504) | [Igaguriゲーム](#220901) |
@@ -3945,8 +3945,6 @@ func _on_xr_controller_3d_right_button_released(name):
 # <b>Igaguriゲーム</b>
 [『Unityの教科書/北村愛実著』](https://amzn.to/3Bcx7cL)（Chapter 7 3Dゲームの作り方）の Godot VR 版  
 
-### この項目は書きかけです
-
 ### 👉 主なポイント  
 
 #### ◆主な階層構造
@@ -3977,7 +3975,7 @@ Main（Node3D）
 extends Node3D # 決め打ち（3Dに必須）
 
 var _interface:XRInterface # 決め打ち（VRに必須）
-var _leftHand:MeshInstance3D # 左コントローラー（可視化）
+var _leftHand:Node3D # 左コントローラー（可視化）
 var _rightHand:MeshInstance3D # 右コントローラー（可視化）
 var _igaguri:RigidBody3D # イガグリ（親）
 var _isLTriggerHold = false # 左の人差し指トリガーを押しているか
@@ -3991,8 +3989,8 @@ func _ready():
 		_viewport.use_xr = true
 
 	# 各ノードの取得
-	_rightHand = get_node("XROrigin3D/XRController3D_Right/Controller")
 	_leftHand = get_node("XROrigin3D/XrController3d_Left/Controller")
+	_rightHand = get_node("XROrigin3D/XRController3D_Right/Controller")
 	_igaguri = get_node("Igaguri")
 	
 	# 衝突判定用（RigidBody3D.body_entered()と連動）
@@ -4028,7 +4026,7 @@ func _on_xr_controller_3d_right_button_released(name):
 			# 微調整
 			var _powerX:float = _disPos.x * 3000
 			var _powerY:float = _disPos.y * 2500
-			var _powerZ:float = _disPos.z * 2000 
+			var _powerZ:float = _disPos.z * 2500 
 			
 			# 投てき（イガグリに力を加える）
 			_igaguri.apply_force(Vector3(_powerX, _powerY, _powerZ))
@@ -4050,9 +4048,10 @@ func _on_igaguri_body_entered(_body):
 		_igaguri.freeze = true
 ```
 
+デモファイル：[igaguri.zip](https://github.com/mubirou/Godot/blob/main/zip/igaguri.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 15、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：2022年09月XX日  
+作成日：2022年09月04日  
 [[TOP]](#TOP)
 
 
