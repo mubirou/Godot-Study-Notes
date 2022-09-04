@@ -3081,7 +3081,7 @@ _obj.set_surface_override_material(0, _material)
 [**CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d) 同士が衝突した際に影響する「[**摩擦係数**](https://d-engineer.com/Mechanics/masatu.html)」と「[**反発係数**（**はね返り係数**）](https://hujiblog.com/archives/2468)」の設定
 
 ### 👉 各種ノードを以下の通り配置  
-　├ Box（**[RigidDynamicBody3D](https://docs.godotengine.org/en/latest/classes/class_rigiddynamicbody3d.html?highlight=RigidDynamicBody3D#rigiddynamicbody3d)**）  
+　├ Box（**[RigidBody3D](https://docs.godotengine.org/en/latest/classes/class_rigidbody3d.html?highlight=RigidBody3D#rigidbody3d)**）  
 　│　└ [**CollisionShape3D**](https://docs.godotengine.org/en/latest/classes/class_collisionshape3d.html?highlight=CollisionShape3D#collisionshape3d)（BoxShape3D 型）  
 　│　　└ [**MeshInstance3D**](https://docs.godotengine.org/en/latest/classes/class_meshinstance3d.html?highlight=MeshInstance3D#meshinstance3d)（BoxMesh 型＝落下物）  
 　└ Slope（[**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d)）  
@@ -3102,7 +3102,7 @@ _obj.set_surface_override_material(0, _material)
 実行環境：Windows 10、Godot 4.0 alpha 15、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年08月12日  
-更新日：2022年09月04日 Godot 4.0 alpha 15 対応  
+更新日：2022年09月04日 RigidDynamicBody3D → RigidBody3D  
 [[TOP]](#TOP)
 
 
