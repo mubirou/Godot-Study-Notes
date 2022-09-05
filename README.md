@@ -3946,7 +3946,7 @@ Node3D
 　　　│　└ PhysicalBone3D  
 　　　└ Area3D  
 
-PhysicsBody3D.move_and_collide(Vector3)  
+**PhysicsBody3D.move_and_collide(Vector3)**：指定ベクトル分移動  
 
 📝 **指定位置に移動…で衝突判定**  
 
