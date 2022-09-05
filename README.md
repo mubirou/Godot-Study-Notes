@@ -3949,7 +3949,7 @@ Node3D
 
 ### 📝 各衝突オブジェクトの実践的構造
 Node3D  
-　├ Player（➀**Static** or ➁**Character** or ➂**Rigid**）  
+　├ Player（➀**StaticBody3D**, ➁**CharacterBody3D** or ➂**RigidBody3D**）  
 　│　└ **CollisionShape3d**（衝突判定する領域）  
 　│　　　└ MeshInstance3d（可視化）  
 
