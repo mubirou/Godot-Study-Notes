@@ -3951,6 +3951,11 @@ Node3D
 Node3D  
 　├ ➊**StaticBody3D**, ➋**CharacterBody3D** or ➌**RigidBody3D**  
 　│　　└ **CollisionShape3d**（衝突判定する領域）  
+　│　　　　└ **CollisionShape3d**（衝突判定する領域）  
+
+Node3D  
+　├ MeshInstance3d（可視化）  
+　│　　└ ➍**Area3D**  
 　│　　　　└ MeshInstance3d（可視化）  
 
 ### 👉 ３種類の移動方法
