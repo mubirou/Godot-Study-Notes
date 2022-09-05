@@ -3947,9 +3947,9 @@ Node3D
 　　　│　└ PhysicalBone3D  
 　　　└ ➍**Area3D**  
 
-* ➊**StaticBody3D**：CPUリソースを消費しない
-* ➋**CharacterBody3D**：物理運動を与える（受けない）
-* ➌**RigidBody3D**：物理運動を受けも与えもする
+* ➊**StaticBody3D**：物理シュミレーション（受✕、与✕）
+* ➋**CharacterBody3D**：物理シュミレーション（受✕、与〇）
+* ➌**RigidBody3D**：物理シュミレーション（受〇、与〇）
 * ➍**Area3D**：〇〇〇〇
 
 ### 👉 各衝突オブジェクトの実践的構造
