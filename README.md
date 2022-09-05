@@ -3955,7 +3955,7 @@ Node3D
 
 ### 👉 ３種類の移動方法
 
-**1. ➊ 指定位置に移動**（➀➁➂➃全て可能）  
+**1. 指定位置に移動**（➀➁➂➃全て可能）  
 * [**Node3D.position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 * [**Node3D.set_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 * [**Node3D.set_global_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-global-transform)  
