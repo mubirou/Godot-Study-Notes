@@ -3947,7 +3947,7 @@ Node3D
 　　　│　└ PhysicalBone3D  
 　　　└ ➍**Area3D**  
 
-* ➊**StaticBody3D**：動かさなければCPUのリーソースを消費しない
+* ➊**StaticBody3D**：CPUリソースを消費しない
 
 ### 👉 各衝突オブジェクトの実践的構造
 
