@@ -3941,29 +3941,29 @@ func _on_igaguri_body_entered(_body):
 Node3D  
 　└ CollisionObject3D  
 　　　├ PhysicsBody3D  
-　　　│　├ ➀**StaticBody3D**  
-　　　│　├ ➁**CharacterBody3D**  
-　　　│　├ ➂**RigidBody3D**  
+　　　│　├ ❶**StaticBody3D**  
+　　　│　├ ➋**CharacterBody3D**  
+　　　│　├ ➌**RigidBody3D**  
 　　　│　└ PhysicalBone3D  
-　　　└ ➃**Area3D**  
+　　　└ ➍**Area3D**  
 
 ### 👉 各衝突オブジェクトの実践的構造
 Node3D  
-　├ ➀**StaticBody3D**, ➁**CharacterBody3D** or ➂**RigidBody3D**  
+　├ ❶**StaticBody3D**, ➋**CharacterBody3D** or ➌**RigidBody3D**  
 　│　　└ **CollisionShape3d**（衝突判定する領域）  
 　│　　　　└ MeshInstance3d（可視化）  
 
 ### 👉 ３種類の移動方法
 
-**1. 指定位置に移動**（➀➁➂➃全て可能）  
+**1. 指定位置に移動**（❶➋➌➍全て可能）  
 * [**Node3D.position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 * [**Node3D.set_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 * [**Node3D.set_global_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-global-transform)  
 
-**2. 指定ベクトルの値だけ移動**（➃Area3Dは不可）  
+**2. 指定ベクトルの値だけ移動**（➍**Area3D**は不可）  
 * [**PhysicsBody3D.move_and_collide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#class-physicsbody3d-method-move-and-collide)  
 
-**3. 物理エンジンによる移動**（➂RigidBody3Dのみ可能）  
+**3. 物理エンジンによる移動**（➌**RigidBody3D**のみ可能）  
 * [**RigidBody3D.apply_force(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_rigidbody3d.html?highlight=apply_force#class-rigidbody3d-method-apply-force)
 
 ***
