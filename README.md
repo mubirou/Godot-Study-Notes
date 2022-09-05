@@ -3948,9 +3948,9 @@ Node3D
 　　　└ ➍**Area3D**  
 
 * ➊**StaticBody3D**：物理シュミレーション（受✕、与✕）
-* ➋**CharacterBody3D**：物理シュミレーション（受✕、与〇）
-* ➌**RigidBody3D**：物理シュミレーション（受〇、与〇）
-* ➍**Area3D**：〇〇〇〇
+* ➋**CharacterBody3D**：（受✕、与〇）
+* ➌**RigidBody3D**：（受〇、与〇）
+* ➍**Area3D**：（受✕、与✕）
 
 ### 👉 各衝突オブジェクトの実践的構造
 
