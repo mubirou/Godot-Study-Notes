@@ -3961,7 +3961,7 @@ Node3D
 Node3D  
 　├ MeshInstance3d（可視化）  
 　│　　└ ➍**Area3D**  
-　│　　　　└ MeshInstance3d（可視化）  
+　│　　　　└ **CollisionShape3d**（衝突判定する領域）  
 
 ### 👉 ３種類の移動方法
 
