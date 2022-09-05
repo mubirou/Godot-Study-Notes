@@ -3946,15 +3946,15 @@ Node3D
 　　　│　└ PhysicalBone3D  
 　　　└ **➃ Area3D**  
 
-**➊ 指定位置に移動**（全て可能）  
+**➊ 指定位置に移動**（➀➁➂➃ 全て可能）  
 [**Node3D.position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 [**Node3D.set_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 [**Node3D.set_global_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-global-transform)  
 
-**➋ 指定ベクトルの値だけ移動**（Area3Dは不可）  
+**➋ 指定ベクトルの値だけ移動**（➃ Area3D は不可）  
 [**PhysicsBody3D.move_and_collide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#class-physicsbody3d-method-move-and-collide)  
 
-**➌ 物理エンジンによる移動**（RigidBody3Dのみ可能）  
+**➌ 物理エンジンによる移動**（➂ RigidBody3D のみ可能）  
 [**RigidBody3D.apply_force(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_rigidbody3d.html?highlight=apply_force#class-rigidbody3d-method-apply-force)
 
 📝 **指定位置に移動…で衝突判定**  
