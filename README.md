@@ -3944,7 +3944,7 @@ Node3D
 　　　│　├ **CharacterBody3D**  
 　　　│　├ **RigidBody3D**  
 　　　│　└ PhysicalBone3D  
-　　　└ Area3D  
+　　　└ **Area3D**  
 
 ➀ 指定位置に移動  
 [**Node3D.position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
