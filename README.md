@@ -3946,8 +3946,11 @@ Node3D
 　　　│　└ PhysicalBone3D  
 　　　└ Area3D  
 
+➀ 指定ベクトルの値だけ移動  
 **PhysicsBody3D.move_and_collide(Vector3)**  
-（指定ベクトルの値だけ移動）    
+
+② 指定位置に移動
+**Node3D.position = Vector3**  
 
 📝 **指定位置に移動…で衝突判定**  
 
