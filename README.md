@@ -3946,7 +3946,7 @@ Node3D
 　　　│　└ PhysicalBone3D  
 　　　└ **Area3D**  
 
-**➊ 指定位置に移動**（全て可能）  
+<font color="Red">**➊ 指定位置に移動**</font>（全て可能）  
 [**Node3D.position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 [**Node3D.set_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 [**Node3D.set_global_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-global-transform)  
