@@ -3941,8 +3941,8 @@ func _on_igaguri_body_entered(_body):
 
 Player と Enemy は物理的に重なることはなく Enemy が Static の場合は指定位置に移動できない（ **set_mode(0)** で動かすなど工夫が必要）。Player.translation = Vector3 で移動させると確実に指定位置に移動するが「衝突判定」はできない。「衝突判定」が必要な場合は **KinematicBody.move_and_slide(Vector3)** で動かす必要がある。  
 
-    
-　├ FPController  
+Node3D  
+　├ XROrigin  
 　├ **Floor**（**StaticBody**）  
 　│　└ CollisionShape（BoxShape 型）  
 　│　　　└ MeshInstance（CubeMesh 型）  
