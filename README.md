@@ -3949,9 +3949,9 @@ Node3D
 
 ### 📝 各衝突オブジェクトの実践的構造
 Node3D  
-　├ ➀**StaticBody3D**,➁**CharacterBody3D** or ➂**RigidBody3D**  
-　│　└ **CollisionShape3d**（衝突判定する領域）  
-　│　　　└ MeshInstance3d（可視化）  
+　├ ➀**StaticBody3D**, ➁**CharacterBody3D** or ➂**RigidBody3D**  
+　│　　└ **CollisionShape3d**（衝突判定する領域）  
+　│　　　　└ MeshInstance3d（可視化）  
 
 
 **➊ 指定位置に移動**（➀➁➂➃全て可能）  
