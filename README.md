@@ -3953,6 +3953,7 @@ Node3D
 　│　　└ **CollisionShape3d**（衝突判定する領域）  
 　│　　　　└ MeshInstance3d（可視化）  
 
+### 📝 ３種類の移動方法
 
 **➊ 指定位置に移動**（➀➁➂➃全て可能）  
 [**Node3D.position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
@@ -3964,6 +3965,8 @@ Node3D
 
 **➌ 物理エンジンによる移動**（➂RigidBody3Dのみ可能）  
 [**RigidBody3D.apply_force(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_rigidbody3d.html?highlight=apply_force#class-rigidbody3d-method-apply-force)
+
+***
 
 📝 **指定位置に移動…で衝突判定**  
 
