@@ -3939,12 +3939,12 @@ func _on_igaguri_body_entered(_body):
 
 Node3D  
 　└ CollisionObject3D  
-　　├ PhysicsBody3D  
-　　│　├ **StaticBody3D**  
-　　│　├ **CharacterBody3D**  
-　　│　├ **RigidBody3D**  
-　　│　└ PhysicalBone3D  
-　　└ Area3D  
+　　　├ PhysicsBody3D  
+　　　│　├ **StaticBody3D**  
+　　　│　├ **CharacterBody3D**  
+　　　│　├ **RigidBody3D**  
+　　　│　└ PhysicalBone3D  
+　　　└ Area3D  
 
 📝 **指定位置に移動…で衝突判定**  
 
