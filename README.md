@@ -3953,7 +3953,7 @@ Node3D
 **PhysicsBody3D.move_and_collide(Vector3)**  
 
 ➂ 物理エンジンによる移動  
-**RigidBody3D.apply_force(Vector3)**
+[**RigidBody3D.apply_force(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_rigidbody3d.html?highlight=apply_force#class-rigidbody3d-method-apply-force)
 
 📝 **指定位置に移動…で衝突判定**  
 
