@@ -3937,7 +3937,7 @@ func _on_igaguri_body_entered(_body):
 
 ### この項目は書きかけです（v.4.0 移行中）
 
-### 📝 衝突オブジェクトの継承
+### 👉 衝突オブジェクトの継承
 Node3D  
 　└ CollisionObject3D  
 　　　├ PhysicsBody3D  
@@ -3947,13 +3947,13 @@ Node3D
 　　　│　└ PhysicalBone3D  
 　　　└ ➃**Area3D**  
 
-### 📝 各衝突オブジェクトの実践的構造
+### 👉 各衝突オブジェクトの実践的構造
 Node3D  
 　├ ➀**StaticBody3D**, ➁**CharacterBody3D** or ➂**RigidBody3D**  
 　│　　└ **CollisionShape3d**（衝突判定する領域）  
 　│　　　　└ MeshInstance3d（可視化）  
 
-### 📝 ３種類の移動方法
+### 👉 ３種類の移動方法
 
 **➊ 指定位置に移動**（➀➁➂➃全て可能）  
 [**Node3D.position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
