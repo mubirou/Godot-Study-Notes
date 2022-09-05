@@ -3943,15 +3943,15 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 
 Node3D  
 　├ XROrigin  
-　├ **Floor**（**StaticBody**）  
-　│　└ CollisionShape（BoxShape 型）  
-　│　　　└ MeshInstance（CubeMesh 型）  
-　├ **Enemy**（**RigidBody**-**Static** 型など）  
-　│　└ CollisionShape（SphereShape 型）  
+　├ Floor（**StaticBody**）  
+　│　└ **CollisionShape3d**（**WorldBoundaryShape3D** 型）  
+　│　　　└ MeshInstance（PlaneMesh 型）  
+　├ Player（**RigidBody3d**）  
+　│　└ **CollisionShape3d**（**SphereShape3D** 型）  
 　│　　　└ MeshInstance（SphereShape 型）  
-　└ **Player**（**KinematicBody** 型）  
-　　　└ CollisionShape（SphereShape 型）  
-　　　　　└ MeshInstance（SphereShape 型）  
+　└ **Enemy**（**RigidBody**-**Static** 型など）  
+　　　└ **CollisionShape**（**SphereShape** 型）  
+　　　　　└ MeshInstance3d（SphereShape 型）  
 
 * **Enemy**：RigidBody（**Static** / **Kinematic** モードのみ）ほか
 * **Player**：**KinematicBody** 限定
