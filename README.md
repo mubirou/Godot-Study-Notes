@@ -3947,6 +3947,13 @@ Node3D
 　　　│　└ PhysicalBone3D  
 　　　└ ➃**Area3D**  
 
+### 📝 各衝突オブジェクトの実践的構造
+Node3D  
+　├ Player（➀**StaticBody3D** or ➁**CharacterBody3D** or ➂**RigidBody3D**）  
+　│　└ **CollisionShape3d**（衝突判定する領域）  
+　│　　　└ MeshInstance3d（可視化）  
+
+
 **➊ 指定位置に移動**（➀➁➂➃全て可能）  
 [**Node3D.position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 [**Node3D.set_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
