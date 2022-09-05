@@ -3941,7 +3941,7 @@ func _on_igaguri_body_entered(_body):
 Node3D  
 　└ CollisionObject3D  
 　　　├ PhysicsBody3D  
-　　　│　├ ❶**StaticBody3D**  
+　　　│　├ ➊**StaticBody3D**  
 　　　│　├ ➋**CharacterBody3D**  
 　　　│　├ ➌**RigidBody3D**  
 　　　│　└ PhysicalBone3D  
@@ -3949,13 +3949,13 @@ Node3D
 
 ### 👉 各衝突オブジェクトの実践的構造
 Node3D  
-　├ ❶**StaticBody3D**, ➋**CharacterBody3D** or ➌**RigidBody3D**  
+　├ ➊**StaticBody3D**, ➋**CharacterBody3D** or ➌**RigidBody3D**  
 　│　　└ **CollisionShape3d**（衝突判定する領域）  
 　│　　　　└ MeshInstance3d（可視化）  
 
 ### 👉 ３種類の移動方法
 
-**1. 指定位置に移動**（❶➋➌➍全て可能）  
+**1. 指定位置に移動**（➊➋➌➍全て可能）  
 * [**Node3D.position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 * [**Node3D.set_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 * [**Node3D.set_global_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-global-transform)  
