@@ -3820,6 +3820,8 @@ func _on_xr_controller_3d_right_button_released(name):
 # <b>Igaguriゲーム</b>
 [『Unityの教科書/北村愛実著』](https://amzn.to/3Bcx7cL)（Chapter 7 3Dゲームの作り方）の Godot VR 版  
 
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202209051252.jpg)
+
 ### 👉 主なポイント  
 
 #### ◆主な階層構造
@@ -3978,17 +3980,18 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 
 📝 **値だけ移動…で衝突判定**  
 
-  Spatial  
-　  ├ FPController  
-　  ├ **Floor**（**StaticBody**）  
-　  │   └ CollisionShape（BoxShape 型）  
-　  │　　　 └ MeshInstance（CubeMesh 型）  
-　  ├ **Enemy**（**RigidBody**-**Static** 型など）  
-　  │   └ CollisionShape（SphereShape 型）  
-　  │　　　 └ MeshInstance（SphereShape 型）  
-　  └ **Player**（**KinematicBody** 型）  
-　  　  └ CollisionShape（SphereShape 型）  
-　  　　　　└ MeshInstance（SphereShape 型）  
+（主な階層構造）
+  Node3D  
+　├ XROrigin3D  
+　├ **Floor**（**StaticBody**）  
+　│　└ CollisionShape3D（WorldBoundaryShape3D 型）  
+　│　　 └ MeshInstance（PlaneMesh 型）  
+　├ **Player**（**RigidBody**-**Static** 型など）  
+　│　└ CollisionShape（SphereShape 型）  
+　│　　 └ MeshInstance（SphereShape 型）  
+　└ **Enemy**（**Static** 型）  
+　　　└ CollisionShape（SphereShape 型）  
+　　　　　└ MeshInstance（SphereShape 型）  
 
 * **Enemy**：RigidBody（**Static** / **Kinematic** モードのみ）ほか
 * **Player**：**KinematicBody** 限定
