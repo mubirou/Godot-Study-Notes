@@ -3946,12 +3946,12 @@ Node3D
 　├ Floor（**StaticBody**）  
 　│　└ **CollisionShape3d**（**WorldBoundaryShape3D** 型）  
 　│　　　└ MeshInstance（PlaneMesh 型）  
-　├ Player（**RigidBody3d**）  
-　│　└ **CollisionShape3d**（**SphereShape3D** 型）  
-　│　　　└ MeshInstance（SphereShape 型）  
-　└ **Enemy**（**RigidBody**-**Static** 型など）  
-　　　└ **CollisionShape**（**SphereShape** 型）  
-　　　　　└ MeshInstance3d（SphereShape 型）  
+　├ Player（**RigidBody3D**）  
+　│　└ **CollisionShape3D**（**SphereShape3D** 型）  
+　│　　　└ MeshInstance3D（SphereMesh 型）  
+　└ Enemy（**RigidBody3D** or **StaticBody3D**）  
+　　　└ **CollisionShape3D**（**SphereShape3D** 型）  
+　　　　　└ MeshInstance3D（SphereMesh 型）  
 
 * **Enemy**：RigidBody（**Static** / **Kinematic** モードのみ）ほか
 * **Player**：**KinematicBody** 限定
