@@ -3947,11 +3947,11 @@ Node3D
 　　　└ Area3D  
 
 ➀ 指定位置に移動  
-**Node3D.position = Vector3**  
-[**Node3D.set_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)
-[**Node3D.set_global_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-global-transform)
+[**Node3D.position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
+[**Node3D.set_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
+[**Node3D.set_global_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-global-transform)  
 
-② 指定ベクトルの値だけ移動  
+② 指定ベクトル分移動  
 [**PhysicsBody3D.move_and_collide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#class-physicsbody3d-method-move-and-collide)  
 
 ➂ 物理エンジンによる移動  
