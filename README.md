@@ -3954,7 +3954,7 @@ func _on_igaguri_body_entered(_body):
 Node3D  
 　├ ➊**StaticBody3D**, ➋**CharacterBody3D** or ➌**RigidBody3D**  
 　│　　└ **CollisionShape3d**（衝突判定する領域）  
-　│　　　　└ **CollisionShape3d**（衝突判定する領域）  
+　│　　　　└ MeshInstance3d（可視化）  
 
 **2. Area3D の場合…**  
 
