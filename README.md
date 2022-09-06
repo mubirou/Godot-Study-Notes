@@ -3938,9 +3938,9 @@ func _on_igaguri_body_entered(_body):
 ### この項目は書きかけです（v.4.0 移行中）
 
 ### 👉 衝突オブジェクトの継承と特徴
-Node3D  
+**Node3D**  
 　└ CollisionObject3D  
-　　　├ PhysicsBody3D  
+　　　├ **PhysicsBody3D**  
 　　　│　├ ➊**StaticBody3D**  
 　　　│　├ ➋**CharacterBody3D**  
 　　　│　├ ➌**RigidBody3D**  
