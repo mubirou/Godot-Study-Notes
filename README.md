@@ -3959,11 +3959,9 @@ func _on_igaguri_body_entered(_body):
 
 |Area3D の場合…|
 |:--|
-|
-**MeshInstance3D**（可視化）  
+|**MeshInstance3D**（可視化）  
 　└ ➍[**Area3D**](https://bit.ly/3KP38Lj)  
-　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域）  
-|
+　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域）|
 
 ### 👉 ３種類の移動方法
 
