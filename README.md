@@ -3941,7 +3941,7 @@ func _on_igaguri_body_entered(_body):
 **Node3D**  
 　└ CollisionObject3D  
 　　　├ **PhysicsBody3D**  
-　　　│　├ ➊**StaticBody3D**  
+　　　│　├ ➊[**StaticBody3D**](https://bit.ly/3RFtVvM)  
 　　　│　├ ➋**CharacterBody3D**  
 　　　│　├ ➌**RigidBody3D**  
 　　　│　└ PhysicalBone3D  
