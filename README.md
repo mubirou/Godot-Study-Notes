@@ -3953,7 +3953,7 @@ func _on_igaguri_body_entered(_body):
 
 Node3D  
 　├ **PhysicsBody3D**（➊➋➌）  
-　│　　└ **CollisionShape3d**（衝突判定する領域）  
+　│　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域）  
 　│　　　　└ MeshInstance3d（可視化）  
 
 **2. Area3D の場合…**  
@@ -3961,7 +3961,7 @@ Node3D
 Node3D  
 　├ MeshInstance3d（可視化）  
 　│　　└ ➍**Area3D**  
-　│　　　　└ **CollisionShape3d**（衝突判定する領域）  
+　│　　　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域）  
 
 ### 👉 ３種類の移動方法
 
