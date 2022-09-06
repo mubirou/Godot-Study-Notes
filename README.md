@@ -3942,10 +3942,10 @@ func _on_igaguri_body_entered(_body):
 　└ CollisionObject3D  
 　　　├ **PhysicsBody3D**  
 　　　│　├ ➊[**StaticBody3D**](https://bit.ly/3RFtVvM)  
-　　　│　├ ➋**CharacterBody3D**  
-　　　│　├ ➌**RigidBody3D**  
+　　　│　├ ➋[**CharacterBody3D**](https://bit.ly/3D0xCbh)  
+　　　│　├ ➌[**RigidBody3D**](https://bit.ly/3x10AnC)  
 　　　│　└ PhysicalBone3D  
-　　　└ ➍**Area3D**  
+　　　└ ➍[**Area3D**](https://bit.ly/3KP38Lj)  
 
 * ➊**StaticBody3D**：物理シュミレーション（受✕、与✕）
 * ➋**CharacterBody3D**：（受✕、与〇）
