@@ -3940,7 +3940,7 @@ func _on_igaguri_body_entered(_body):
 ### 👉 衝突オブジェクトの継承
 **Node3D**  
 　└ CollisionObject3D  
-　　　├ **PhysicsBody3D**  
+　　　├ [**PhysicsBody3D**](https://bit.ly/3RLyKnj)  
 　　　│　├ ➊[**StaticBody3D**](https://bit.ly/3RFtVvM)  
 　　　│　├ ➋[**CharacterBody3D**](https://bit.ly/3D0xCbh)  
 　　　│　├ ➌[**RigidBody3D**](https://bit.ly/3x10AnC)  
@@ -3952,7 +3952,7 @@ func _on_igaguri_body_entered(_body):
 **1. PhysicsBody3D の場合…**  
 
 Node3D  
-　├ **PhysicsBody3D**（➊➋➌）  
+　├ [**PhysicsBody3D**](https://bit.ly/3RLyKnj)（➊➋➌）  
 　│　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域）  
 　│　　　　└ MeshInstance3d（可視化）  
 
