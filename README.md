@@ -3970,7 +3970,7 @@ func _on_igaguri_body_entered(_body):
 * [**Node3D.set_global_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-global-position)  
 
 **2. 指定ベクトルの値だけ移動**（➍**Area3D**は不可）  
-* [**PhysicsBody3D.move_and_slide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#class-physicsbody3d-method-move-and-collide)  
+* [**PhysicsBody3D.move_and_collide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#class-physicsbody3d-method-move-and-collide)  
 
 **3. 物理エンジンによる移動**（➌**RigidBody3D**のみ可能）  
 * [**RigidBody3D.apply_force(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_rigidbody3d.html?highlight=apply_force#class-rigidbody3d-method-apply-force)
