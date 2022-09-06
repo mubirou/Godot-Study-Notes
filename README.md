@@ -3950,11 +3950,13 @@ func _on_igaguri_body_entered(_body):
 ### 👉 各衝突オブジェクトの実践的構造
 
 **1. PhysicsBody3D の場合…**  
-***
+```
+<pre>
 [**PhysicsBody3D**](https://bit.ly/3RLyKnj)（➊➋➌）  
 　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域）  
 　　└ **MeshInstance3D**（可視化）  
-***
+</pre>
+```
 **2. Area3D の場合…**  
 ***
 **MeshInstance3D**（可視化）  
