@@ -3937,7 +3937,7 @@ func _on_igaguri_body_entered(_body):
 
 ### この項目は書きかけです（v.4.0 移行中）
 
-### 👉 衝突オブジェクトの継承と特徴
+### 👉 衝突オブジェクトの継承
 **Node3D**  
 　└ CollisionObject3D  
 　　　├ **PhysicsBody3D**  
@@ -3946,11 +3946,6 @@ func _on_igaguri_body_entered(_body):
 　　　│　├ ➌[**RigidBody3D**](https://bit.ly/3x10AnC)  
 　　　│　└ PhysicalBone3D  
 　　　└ ➍[**Area3D**](https://bit.ly/3KP38Lj)  
-
-* ➊**StaticBody3D**：物理シュミレーション（受✕、与✕）
-* ➋**CharacterBody3D**：（受✕、与〇）
-* ➌**RigidBody3D**：（受〇、与〇）
-* ➍**Area3D**：（受✕、与✕）
 
 ### 👉 各衝突オブジェクトの実践的構造
 
