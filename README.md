@@ -3965,6 +3965,8 @@ func _on_igaguri_body_entered(_body):
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071609.jpg)
 
+* RigidBody3D ⇆ PhysicsBody3D には注意！  
+
 * [**Node3D.position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 * [**Node3D.set_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 * [**Node3D.global_position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-global-position)  
@@ -3976,7 +3978,6 @@ $Player.set_position($Enemy.position)
 #$Player.set_position($Player.position + Vector3(-0.1,0,0))
 #$Player.set_position($Player.position + Vector3(-0.05,0,0))
 ```
-💡 RigidBody3D x PhysicsBody3D の接触は☢  
 
 ### 👉 移動方法➋（指定ベクトルの値だけ移動）
 
