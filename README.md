@@ -3976,6 +3976,7 @@ $Player.set_position($Enemy.position)
 #$Player.set_position($Player.position + Vector3(-0.1,0,0))
 #$Player.set_position($Player.position + Vector3(-0.05,0,0))
 ```
+💡 RigidBody3D x PhysicsBody3D の接触は☢  
 
 ### 👉 移動方法➋（指定ベクトルの値だけ移動）
 
