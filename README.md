@@ -3947,7 +3947,7 @@ func _on_igaguri_body_entered(_body):
 　　　│　└ PhysicalBone3D  
 　　　└ ➍[**Area3D**](https://bit.ly/3KP38Lj)  
 
-### 👉 各衝突オブジェクトの実践的構造
+### 👉 各衝突オブジェクトの実用例（階層構造）
 
 **1. PhysicsBody3D の場合…**  
 
