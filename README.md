@@ -4129,7 +4129,7 @@ Node3D
     ```
 
 参考：[HatenaBlog](https://ore2wakaru2.hatenablog.com/entry/2018/03/02/233000)  
-実行環境：Windows 10、Godot 4.0 alpha 15、Meta Quest 43.0、Quest Link、Oculusアプリ 
+実行環境：Windows 10、Godot 4.0 alpha 15、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月17日  
 更新日：2022年09月XX日  
