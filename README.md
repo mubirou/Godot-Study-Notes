@@ -3946,7 +3946,7 @@ func _on_igaguri_body_entered(_body):
 　　　│　├ ➌[**RigidBody3D**](https://bit.ly/3x10AnC)  
 　　　│　└ PhysicalBone3D  
 　　　└ ➍[**Area3D**](https://bit.ly/3KP38Lj)  
-
+***
 ### 👉 各衝突オブジェクトの実用例（階層構造）
 
 **1. PhysicsBody3D の場合…**  
@@ -3960,7 +3960,7 @@ func _on_igaguri_body_entered(_body):
 >**MeshInstance3D**（可視化）  
 >　└ ➍[**Area3D**](https://bit.ly/3KP38Lj)  
 >　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域）  
-
+***
 ### 👉 移動方法➊（指定位置に移動）
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071609.jpg)
@@ -3978,7 +3978,6 @@ $Player.set_position($Enemy.position)
 #$Player.set_position($Player.position + Vector3(-0.05,0,0))
 ```
 ***
-
 ### 👉 移動方法➋（指定ベクトルの値だけ移動）
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071651.jpg)
@@ -3987,13 +3986,11 @@ $Player.set_position($Enemy.position)
 （衝突データ＝[KinematicCollision3D](https://bit.ly/3Bh7hEq) が返る）
 
 ***
-
 ### 👉 移動方法➌（物理エンジンによる移動）
 
 * [**RigidBody3D.apply_force(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_rigidbody3d.html?highlight=apply_force#class-rigidbody3d-method-apply-force)
 
 ***
-
 📝 **指定位置に移動…で衝突判定**  
 
 Player と Enemy は物理的に重なることはなく Enemy が Static の場合は指定位置に移動できない（ **set_mode(0)** で動かすなど工夫が必要）。Player.translation = Vector3 で移動させると確実に指定位置に移動するが「衝突判定」はできない。「衝突判定」が必要な場合は **KinematicBody.move_and_slide(Vector3)** で動かす必要がある。  
