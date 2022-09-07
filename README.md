@@ -4001,8 +4001,13 @@ if _kc != null: print(_kc.get_collider())
 
 ### 👉 移動方法➌（物理エンジンによる移動）
 
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071710.jpg)
+
 * [**RigidBody3D.apply_force(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_rigidbody3d.html?highlight=apply_force#class-rigidbody3d-method-apply-force)
 
+```gdscript
+$Player.apply_force(Vector3(-200, 0, 0))
+```
 ***
 
 📝 **指定位置に移動…で衝突判定**  
