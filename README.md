@@ -3970,7 +3970,6 @@ func _on_igaguri_body_entered(_body):
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071609.jpg)
 
-（サンプルコード）
 ```gdscript
 $Player.set_position($Enemy.position) 
 #$Player.set_position($Enemy.position + Vector3(0.1,0,0.1))
