@@ -3977,6 +3977,7 @@ $Player.set_position($Enemy.position)
 #$Player.set_position($Player.position + Vector3(-0.1,0,0))
 #$Player.set_position($Player.position + Vector3(-0.05,0,0))
 ```
+***
 
 ### 👉 移動方法➋（指定ベクトルの値だけ移動）
 
@@ -3984,6 +3985,8 @@ $Player.set_position($Enemy.position)
 
 * [**PhysicsBody3D.move_and_collide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#class-physicsbody3d-method-move-and-collide)  
 （衝突データ＝[KinematicCollision3D](https://bit.ly/3Bh7hEq) が返る）
+
+***
 
 ### 👉 移動方法➌（物理エンジンによる移動）
 
