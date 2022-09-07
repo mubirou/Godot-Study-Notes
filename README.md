@@ -3963,12 +3963,12 @@ func _on_igaguri_body_entered(_body):
 
 ### 👉 移動方法➊（指定位置に移動）
 
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071609.jpg)
+
 * [**Node3D.position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 * [**Node3D.set_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 * [**Node3D.global_position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-global-position)  
 * [**Node3D.set_global_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-global-position)  
-
-![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071609.jpg)
 
 ```gdscript
 $Player.set_position($Enemy.position) 
