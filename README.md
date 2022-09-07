@@ -3963,7 +3963,7 @@ func _on_igaguri_body_entered(_body):
 >　└ ➍[**Area3D**](https://bit.ly/3KP38Lj)  
 >　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域）  
 ***
-### 👉 移動方法➊（指定位置に移動）
+### 👉 ➀①指定位置に移動 x 衝突判定
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071609.jpg)
 📝 **RigidBody3D** ⇆ **PhysicsBody3D**（➊➋➌）の接触は危険！  
@@ -3982,7 +3982,7 @@ $Player.set_position($Enemy.position)
 
 ***
 
-### 👉 移動方法➋（指定ベクトルの値だけ移動）
+### 👉 ➁②指定ベクトルの値だけ移動 x 衝突判定
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071651.jpg)
 📝 **PhysicsBody3D** 同士が衝突すると重ならずに止まる    
@@ -3999,7 +3999,7 @@ if _kc != null: print(_kc.get_collider())
 ```
 ***
 
-### 👉 移動方法➌（物理エンジンによる移動）
+### 👉 ➂③物理エンジンによる移動 x 衝突判定
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071710.jpg)
 📝 [反発係数](#220805)の設定で「一部重なる」ことがなくなる  
