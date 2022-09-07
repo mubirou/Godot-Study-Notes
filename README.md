@@ -4002,6 +4002,7 @@ if _kc != null: print(_kc.get_collider())
 ### 👉 移動方法➌（物理エンジンによる移動）
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071710.jpg)
+📝 [反発係数](#220805)の設定で「一部重なる」ことがなくなる  
 
 * [**RigidBody3D.apply_force(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_rigidbody3d.html?highlight=apply_force#class-rigidbody3d-method-apply-force)
 
