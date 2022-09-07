@@ -3961,9 +3961,8 @@ func _on_igaguri_body_entered(_body):
 >　└ ➍[**Area3D**](https://bit.ly/3KP38Lj)  
 >　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域）  
 
-### 👉 ３種類の移動方法
+### 👉 移動方法➊（指定位置に移動）
 
-**1. 指定位置に移動**（➊➋➌➍全て可能）  
 * [**Node3D.position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 * [**Node3D.set_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 * [**Node3D.global_position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-global-position)  
@@ -3971,11 +3970,13 @@ func _on_igaguri_body_entered(_body):
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071609.jpg)
 
-**2. 指定ベクトルの値だけ移動**（➍**Area3D**は不可）  
+### 👉 移動方法➋（指定ベクトルの値だけ移動）
+
 * [**PhysicsBody3D.move_and_collide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#class-physicsbody3d-method-move-and-collide)  
 （衝突データ＝[KinematicCollision3D](https://bit.ly/3Bh7hEq) が返る）
 
-**3. 物理エンジンによる移動**（➌**RigidBody3D**のみ可能）  
+### 👉 移動方法➌（物理エンジンによる移動）
+
 * [**RigidBody3D.apply_force(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_rigidbody3d.html?highlight=apply_force#class-rigidbody3d-method-apply-force)
 
 ***
