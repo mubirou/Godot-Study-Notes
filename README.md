@@ -4004,7 +4004,7 @@ if _kc != null: print(_kc.get_collider())
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209081343.jpg)
 📝 [反発係数](#220805)の設定で「一部重なる」ことがなくなる  
 * [**RigidBody3D.apply_force(Vector3)**](https://bit.ly/3BmO9F0)：移動
-* [**RigidBody3D.body_entered()**](https://bit.ly/3BwPU2R)：[**入力イベントの接続**](#220703-1) 参照
+* [**RigidBody3D.body_entered()**](https://bit.ly/3BwPU2R)：[**イベントの接続**](#220703-1) 参照
 
 ```gdscript
 # /root/Main(Main.gd)
