@@ -4008,17 +4008,23 @@ $Player.set_position($Enemy.position)
 # /root/Main(Main.gd)
 extends Node3D
 ……
+
 func _on_xr_controller_3d_button_pressed(_name):
   if _name == "trigger_click":
+    ……
     var _kc:KinematicCollision3D
     #var _dis = $Enemy.position - $Player.position
     #_kc = $Player.move_and_collide(_dis)
     #_kc = $Player.move_and_collide(Vector3(-0.1,0,0))
-    #_kc = $Player.move_and_collide(Vector3(-0.05,0,0))
-    _kc = $Player.move_and_collide(Vector3(-1,0,0))
+    _kc = $Player.move_and_collide(Vector3(-0.05,0,0))
+    #_kc = $Player.move_and_collide(Vector3(-1,0,0))
     if _kc != null:
       if _kc.get_collider() == $Enemy:
-        print("Enemyと衝突")
+        print("Physics...がPhysics..に衝突")
+
+func _on_area_3d_body_entered(_body):
+  if _body == $Player:
+    print("Charactor...かRigid...がArea3Dに衝突")
 ```
 ***
 
