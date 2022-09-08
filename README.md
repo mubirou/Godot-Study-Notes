@@ -4002,7 +4002,8 @@ $Player.set_position($Enemy.position)
 戻り値：[KinematicCollision3D](https://bit.ly/3Bh7hEq)＝衝突データ  
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209081436.jpg)
-📝 [**PhysicsBody3D**](#220612-1) 同士が衝突すると重ならずに止まる    
+📝 [**PhysicsBody3D**](#220612-1) 同士が衝突すると重ならずに止まる   
+📝 Player が Enemy（**Area3D**）と重ならずに通過した場合は衝突判定できない 
 
 ```gdscript
 # /root/Main(Main.gd)
@@ -4022,7 +4023,8 @@ func _on_xr_controller_3d_button_pressed(_name):
       if _kc.get_collider() == $Enemy:
         print("Physics...が Physics..に衝突")
 
-func _on_area_3d_body_entered(_body): # 通過は無視される
+# Enemy(＝Area3D)の[ノード]-[シグナル]で接続
+func _on_area_3d_body_entered(_body):
   if _body == $Player:
     print("Charactor...か Rigid...が Area3D に衝突")
 ```
