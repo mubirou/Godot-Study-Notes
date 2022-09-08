@@ -4024,7 +4024,7 @@ func _on_xr_controller_3d_button_pressed(_name):
 
 ### 👉 ➂物理エンジンによる移動 x 衝突の検出
 
-* [**RigidBody3D.apply_force(Vector3)**](https://bit.ly/3BmO9F0)：移動
+* [**RigidBody3D.apply_force(Vector3)**](https://bit.ly/3BmO9F0)
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209081343.jpg)
 📝 [**反発係数**](#220805) の設定で「一部重なる」ことがなくなる  
