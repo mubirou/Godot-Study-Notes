@@ -3963,7 +3963,7 @@ func _on_igaguri_body_entered(_body):
 >　└ ➍[**Area3D**](https://bit.ly/3KP38Lj)  
 >　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域）  
 
-***
+___
 
 #### 以下の実験のおもな階層構造
 
