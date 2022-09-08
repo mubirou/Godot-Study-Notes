@@ -3949,7 +3949,7 @@ func _on_igaguri_body_entered(_body):
 
 ***
 
-### 👉 各衝突オブジェクトの実用例（階層構造）
+### 👉 各衝突オブジェクトの実用例（階層構造）<a id="220612-2"></a>
 
 **1. PhysicsBody3D の場合…**  
 
@@ -4042,15 +4042,12 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 
 Node3D  
 　├ XROrigin  
-　├ Floor（**StaticBody**）  
+　├ 
+　├ Floor（**StaticBody3D**）  
 　│　└ **CollisionShape3d**（**WorldBoundaryShape3D** 型）  
 　│　　　└ MeshInstance3d（PlaneMesh 型）  
-　├ Player（**RigidBody3D**）  
-　│　└ **CollisionShape3d**（**SphereShape3D** 型）  
-　│　　　└ MeshInstance3d（SphereMesh 型）  
-　└ Enemy（**RigidBody3D** or **StaticBody3D**）  
-　　　└ **CollisionShape3d**（**SphereShape3D** 型）  
-　　　　　└ MeshInstance3d（SphereMesh 型）  
+　├ [Player]（[PhysicsBody3D or Area3D](#220612-2)）  
+　└ [Enemy]（同上）  
 
 * **Enemy**：RigidBody（**Static** / **Kinematic** モードのみ）ほか
 * **Player**：**KinematicBody** 限定
