@@ -4006,7 +4006,7 @@ $Player.set_position($Enemy.position)
 📝 [**PhysicsBody3D**](#220612-1) 同士が衝突すると重ならずに止まる   
 📝 [**PhysicsBody3D**](#220612-1) → [**Area3D**](#220612-1) が "重ならずに通過した場合" は衝突判定できない  
 📝 [**StaticBody3D**](#220612-1) → [**Area3D**](#220612-1) の衝突判定ができない（[衝突判定できる場合あり](#220802)＝要検証）  
-📝 **_on_area_3d_body_entered()**＝**Area3D**との衝突判定は [**イベントの接続**](#220703-1) を参照  
+📝 **_on_area_3d_body_entered()**（＝**Area3D**との衝突判定）は [**イベントの接続**](#220703-1) を参照  
 
 ```gdscript
 # /root/Main(Main.gd)
