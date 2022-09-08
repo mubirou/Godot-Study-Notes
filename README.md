@@ -4024,7 +4024,7 @@ func _on_xr_controller_3d_button_pressed(_name):
 
 func _on_area_3d_body_entered(_body): # 通過は無視される
   if _body == $Player:
-  print("Charactor...かRigid...がArea3Dに衝突")
+    print("Charactor...かRigid...がArea3Dに衝突")
 ```
 _on_area_3d_body_entered()＝**Area3D**との衝突判定  
 …は [**イベントの接続**](#220703-1) を参照
