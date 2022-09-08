@@ -4042,7 +4042,6 @@ Player と Enemy は物理的に重なることはなく Enemy が Static の場
 
 Node3D  
 　├ XROrigin  
-　├ 
 　├ Floor（**StaticBody3D**）  
 　│　└ **CollisionShape3d**（**WorldBoundaryShape3D** 型）  
 　│　　　└ MeshInstance3d（PlaneMesh 型）  
