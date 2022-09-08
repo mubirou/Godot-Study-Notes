@@ -4031,7 +4031,7 @@ func _on_xr_controller_3d_button_pressed(_name):
 	if _name == "trigger_click":
 		$Player.apply_force(Vector3(-200, 0, 0))
 
-func _on_player_body_entered(_body): # $Player-ノードで設定
+func _on_player_body_entered(_body):
 	if _body == $Enemy:
 		print("衝突")
 ```
