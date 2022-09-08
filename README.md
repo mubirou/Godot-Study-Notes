@@ -3965,7 +3965,7 @@ func _on_igaguri_body_entered(_body):
 
 ***
 
-#### 以下の実験の階層構造
+#### 以下の実験のおもな階層構造
 
 Node3D  
 　├ XROrigin  
