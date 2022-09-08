@@ -3995,14 +3995,14 @@ $Player.set_position($Enemy.position)
 extends Node3D
 ……
 func _on_xr_controller_3d_button_pressed(_name):
-	if _name == "trigger_click":
-		var _kc:KinematicCollision3D
-		#_kc = $Player.move_and_collide($Enemy.position - $Player.position)
-		#_kc = $Player.move_and_collide(Vector3(-0.1,0,0))
-		#_kc = $Player.move_and_collide(Vector3(-0.05,0,0))
-		_kc = $Player.move_and_collide(Vector3(-1,0,0))
-		if _kc != null:
-			print(_kc.get_collider())
+  if _name == "trigger_click":
+    var _kc:KinematicCollision3D
+    #_kc = $Player.move_and_collide($Enemy.position - $Player.position)
+    #_kc = $Player.move_and_collide(Vector3(-0.1,0,0))
+    #_kc = $Player.move_and_collide(Vector3(-0.05,0,0))
+    _kc = $Player.move_and_collide(Vector3(-1,0,0))
+    if _kc != null:
+      print(_kc.get_collider())
 ```
 ***
 
