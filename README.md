@@ -4037,7 +4037,7 @@ func _on_player_body_entered(_body):
 		print("衝突")
 ```
 * [**RigidBody3D.apply_force(Vector3)**](https://bit.ly/3BmO9F0)
-* [**RigidBody3D.body_entered()**](https://bit.ly/3BwPU2R) は [入力イベントの接続](#220703-1) 参照
+* [**RigidBody3D.body_entered()**](https://bit.ly/3BwPU2R)：[**入力イベントの接続**](#220703-1) 参照
 ***
 
 📝 **指定位置に移動…で衝突判定**  
