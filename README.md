@@ -3984,7 +3984,7 @@ $Player.set_position($Enemy.position)
 
 ### 👉 ➁指定ベクトルの値だけ移動 x 衝突判定
 
-![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071651.jpg)
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202209081436.jpg)
 📝 **PhysicsBody3D** 同士が衝突すると重ならずに止まる    
 
 * [**PhysicsBody3D.move_and_collide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#class-physicsbody3d-method-move-and-collide)  
