@@ -4066,87 +4066,11 @@ _on_player_body_entered()＝**PhysicsBody3D**との衝突判定
 _on_area_3d_body_entered()＝**Area3D**との衝突判定  
 …は [**イベントの接続**](#220703-1) を参照
 
-***
-
-📝 **指定位置に移動…で衝突判定**  
-
-Player と Enemy は物理的に重なることはなく Enemy が Static の場合は指定位置に移動できない（ **set_mode(0)** で動かすなど工夫が必要）。Player.translation = Vector3 で移動させると確実に指定位置に移動するが「衝突判定」はできない。「衝突判定」が必要な場合は **KinematicBody.move_and_slide(Vector3)** で動かす必要がある。  
-
-Node3D  
-　├ XROrigin  
-　├ Floor（**StaticBody3D**）  
-　│　└ **CollisionShape3d**（**WorldBoundaryShape3D** 型）  
-　│　　　└ MeshInstance3d（PlaneMesh 型）  
-　├ **Player**（[**PhysicsBody3D** or **Area3D**](#220612-2)）  
-　└ **Enemy**（同上）  
-
-* **Enemy**：RigidBody（**Static** / **Kinematic** モードのみ）ほか
-* **Player**：**KinematicBody** 限定
-
-    ```gdscript
-    # Main.gd
-    extends Spatial
-
-    var _player # KinematicBody Only
-    var _targetPos
-
-    func _ready():
-      _player = get_node("Player") # KinematicBody Only
-      _targetPos = Vector3(0, 1, -1)
-
-    func _physics_process(delta):
-      var _currentPos = _player.translation
-      var _disPos = _targetPos - _currentPos
-      _player.move_and_slide(_disPos)
-
-      if _player.get_slide_count() != 0:
-        print("衝突!")
-        var _enemy = _player.get_slide_collision(0).collider
-        _enemy.set_mode(0) # 0(Rigid)
-    ```
-
-📝 **値だけ移動…で衝突判定**  
-
-（主な階層構造）
-  Node3D  
-　├ XROrigin3D  
-　├ **Floor**（**StaticBody**）  
-　│　└ CollisionShape3D（WorldBoundaryShape3D 型）  
-　│　　 └ MeshInstance（PlaneMesh 型）  
-　├ **Player**（**RigidBody**-**Static** 型など）  
-　│　└ CollisionShape（SphereShape 型）  
-　│　　 └ MeshInstance（SphereShape 型）  
-　└ **Enemy**（**Static** 型）  
-　　　└ CollisionShape（SphereShape 型）  
-　　　　　└ MeshInstance（SphereShape 型）  
-
-* **Enemy**：RigidBody（**Static** / **Kinematic** モードのみ）ほか
-* **Player**：**KinematicBody** 限定
-
-    ```gdscript
-    # Main.gd
-    extends Spatial
-
-    var _player # KinematicBody Only
-
-    func _ready():
-      _player = get_node("Player") # KinematicBody Only
-
-    func _physics_process(delta):
-      _player.move_and_slide(Vector3(-0.1,0,0))
-
-      if _player.get_slide_count() != 0:
-        print("衝突!")
-        # _enemy: RigidBody(Static or Kinematic Mode Only)
-        var _enemy = _player.get_slide_collision(0).collider
-        _enemy.set_mode(0) # 0(Rigid)
-    ```
-
 参考：[HatenaBlog](https://ore2wakaru2.hatenablog.com/entry/2018/03/02/233000)  
-実行環境：Windows 10、Godot 4.0 alpha 15、Meta Quest 43.0、Quest Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 alpha 16、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月17日  
-更新日：2022年09月XX日  
+更新日：2022年09月08日  
 [[TOP]](#TOP)  
 
 
