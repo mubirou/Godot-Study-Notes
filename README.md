@@ -4006,7 +4006,7 @@ $Player.set_position($Enemy.position)
 📝 [**PhysicsBody3D**](#220612-1) 同士が衝突すると重ならずに止まる   
 📝 [**PhysicsBody3D**](#220612-1) → [**Area3D**](#220612-1) が "重ならずに通過した場合" は衝突判定できない  
 📝 [**StaticBody3D**](#220612-1) → [**Area3D**](#220612-1) の衝突判定ができない（[衝突判定できる場合あり](#220802)＝要検証）  
-📝 **_on_area_3d_body_entered()**（＝**Area3D**との衝突判定）は [**イベントの接続**](#220703-1) を参照  
+📝 **_on_area_3d_body_entered()**（＝**Area3D**の衝突判定）は [**イベントの接続**](#220703-1) を参照  
 
 ```gdscript
 # /root/Main(Main.gd)
@@ -4039,6 +4039,7 @@ func _on_area_3d_body_entered(_body):
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209081343.jpg)
 📝 [**反発係数**](#220805) の設定で「一部重なる」ことがなくなる  
+📝 **_on_player_body_entered()**（＝**PhysicsBody3D**の衝突判定）や **_on_area_3d_body_entered()**（＝**Area3D**の衝突判定）は [**イベントの接続**](#220703-1) を参照  
 
 ```gdscript
 # /root/Main(Main.gd)
@@ -4064,9 +4065,6 @@ func _on_area_3d_body_entered(_body):
   if _body == $Player:
     print("Enemy(=Area3D)と衝突")
 ```
-**_on_player_body_entered()**＝**PhysicsBody3D**との衝突判定  
-**_on_area_3d_body_entered()**＝**Area3D**との衝突判定  
-…は [**イベントの接続**](#220703-1) を参照
 
 参考：[HatenaBlog](https://ore2wakaru2.hatenablog.com/entry/2018/03/02/233000)  
 実行環境：Windows 10、Godot 4.0 alpha 16、Meta Quest 43.0、Quest Link、Oculusアプリ  
