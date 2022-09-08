@@ -3962,7 +3962,19 @@ func _on_igaguri_body_entered(_body):
 >**MeshInstance3D**（可視化）  
 >　└ ➍[**Area3D**](https://bit.ly/3KP38Lj)  
 >　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域）  
+
+* 以下の実験の階層構造
+
+Node3D  
+　├ XROrigin  
+　├ Floor（**StaticBody3D**）  
+　│　└ **CollisionShape3d**（**WorldBoundaryShape3D** 型）  
+　│　　　└ MeshInstance3d（PlaneMesh 型）  
+　├ **Player**（[**PhysicsBody3D** or **Area3D**](#220612-2)）  
+　└ **Enemy**（同上）  
+
 ***
+
 ### 👉 ➀指定位置に移動 x 衝突判定
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071609.jpg)
@@ -4045,8 +4057,8 @@ Node3D
 　├ Floor（**StaticBody3D**）  
 　│　└ **CollisionShape3d**（**WorldBoundaryShape3D** 型）  
 　│　　　└ MeshInstance3d（PlaneMesh 型）  
-　├ [Player]（[PhysicsBody3D or Area3D](#220612-2)）  
-　└ [Enemy]（同上）  
+　├ **Player**（[**PhysicsBody3D** or **Area3D**](#220612-2)）  
+　└ **Enemy**（同上）  
 
 * **Enemy**：RigidBody（**Static** / **Kinematic** モードのみ）ほか
 * **Player**：**KinematicBody** 限定
