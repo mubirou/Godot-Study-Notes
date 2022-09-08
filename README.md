@@ -4003,7 +4003,7 @@ $Player.set_position($Enemy.position)
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209081436.jpg)
 📝 [**PhysicsBody3D**](#220612-1) 同士が衝突すると重ならずに止まる   
-📝 Player が Enemy（**Area3D**）と重ならずに通過した場合は衝突判定できない 
+📝 Player が Enemy（**Area3D**）と重ならずに通過した場合は衝突判定できない   
 
 ```gdscript
 # /root/Main(Main.gd)
@@ -4028,7 +4028,7 @@ func _on_area_3d_body_entered(_body):
   if _body == $Player:
     print("Charactor...か Rigid...が Area3D に衝突")
 ```
-_on_area_3d_body_entered()＝**Area3D**との衝突判定  
+_on_area_3d**_body_entered()**＝**Area3D**との衝突判定  
 …は [**イベントの接続**](#220703-1) を参照
 
 ***
