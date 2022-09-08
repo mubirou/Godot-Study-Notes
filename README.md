@@ -3998,11 +3998,11 @@ $Player.set_position($Enemy.position)
 
 ### 👉 ➁ベクトルの値だけ移動 x 衝突の検出
 
-![image](https://github.com/mubirou/Godot/blob/main/jpg/202209081436.jpg)
-📝 [**PhysicsBody3D**](#220612-1) 同士が衝突すると重ならずに止まる    
-
 * [**PhysicsBody3D.move_and_collide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#class-physicsbody3d-method-move-and-collide)  
 （衝突データ＝[KinematicCollision3D](https://bit.ly/3Bh7hEq) が返る）
+
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202209081436.jpg)
+📝 [**PhysicsBody3D**](#220612-1) 同士が衝突すると重ならずに止まる    
 
 ```gdscript
 # /root/Main(Main.gd)
@@ -4024,9 +4024,10 @@ func _on_xr_controller_3d_button_pressed(_name):
 
 ### 👉 ➂物理エンジンによる移動 x 衝突の検出
 
+* [**RigidBody3D.apply_force(Vector3)**](https://bit.ly/3BmO9F0)：移動
+
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209081343.jpg)
 📝 [**反発係数**](#220805) の設定で「一部重なる」ことがなくなる  
-* [**RigidBody3D.apply_force(Vector3)**](https://bit.ly/3BmO9F0)：移動
 * [**RigidBody3D.body_entered()**](https://bit.ly/3BwPU2R)：[**イベントの接続**](#220703-1) 参照
 
 ```gdscript
