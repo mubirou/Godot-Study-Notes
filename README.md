@@ -4013,7 +4013,7 @@ $Player.apply_force(Vector3(-200, 0, 0))
 
 ### 👉 衝突の検出
 
-**1. RigidBody3D x CharacterBody3D or RigidBody3D**
+**1. RigidBody3D → CharacterBody3D or RigidBody3D**
 
 ***
 
