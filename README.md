@@ -3966,7 +3966,7 @@ func _on_igaguri_body_entered(_body):
 ### 👉 ➀指定位置に移動 x 衝突判定
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071609.jpg)
-📝 **RigidBody3D** x **PhysicsBody3D**（➊➋➌）の接触時の動きは不規則  
+📝 **RigidBody3D** x **PhysicsBody3D**（➊➋➌）の接触は避けましょう  
 
 * [**Node3D.position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 * [**Node3D.set_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
