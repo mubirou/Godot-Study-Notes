@@ -4015,6 +4015,7 @@ $Player.apply_force(Vector3(-200, 0, 0))
 
 **1. RigidBody3D → PhysicsBody3D➊➋➌**
 
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202209081343.jpg)
 ```gdscript
 # /root/Main(Main.gd)
 extends Node3D
