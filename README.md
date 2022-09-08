@@ -3999,21 +3999,7 @@ if _kc != null: print(_kc.get_collider())
 ```
 ***
 
-### 👉 ➂物理エンジンによる移動 x 衝突判定
-
-![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071710.jpg)
-📝 [反発係数](#220805)の設定で「一部重なる」ことがなくなる  
-
-* [**RigidBody3D.apply_force(Vector3)**](https://bit.ly/3BmO9F0)
-
-```gdscript
-$Player.apply_force(Vector3(-200, 0, 0))
-```
-***
-
-### 👉 衝突の検出
-
-**1. RigidBody3D → PhysicsBody3D➊➋➌**
+### 👉 ➂物理エンジンによる移動 x 衝突の検出
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209081343.jpg)
 📝 [反発係数](#220805)の設定で「一部重なる」ことがなくなる  
