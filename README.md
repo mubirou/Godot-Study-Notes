@@ -4004,7 +4004,7 @@ $Player.set_position($Enemy.position)
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209081436.jpg)
 📝 [**PhysicsBody3D**](#220612-1) 同士が衝突すると重ならずに止まる   
-📝 [**PhysicsBody3D**](#220612-1) → [**Area3D**](#220612-1) が"重ならずに"通過した場合は衝突判定できない  
+📝 [**PhysicsBody3D**](#220612-1) → [**Area3D**](#220612-1) が"重ならずに通過した場合"は衝突判定できない  
 📝 [**StaticBody3D**](#220612-1) → [**Area3D**](#220612-1) の衝突判定ができない（[衝突判定できる場合あり](#220802)＝要検証）  
 
 ```gdscript
