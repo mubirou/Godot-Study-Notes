@@ -3937,7 +3937,7 @@ func _on_igaguri_body_entered(_body):
 
 ### この項目は書きかけです（v.4.0 移行中）
 
-### 👉 衝突オブジェクトの継承
+### 👉 衝突オブジェクトの継承<a id="220612-1"></a>
 **Node3D**  
 　└ CollisionObject3D  
 　　　├ [**PhysicsBody3D**](https://bit.ly/3RLyKnj)  
@@ -3985,7 +3985,7 @@ $Player.set_position($Enemy.position)
 ### 👉 ➁指定ベクトルの値だけ移動 x 衝突判定
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209081436.jpg)
-📝 **PhysicsBody3D** 同士が衝突すると重ならずに止まる    
+📝 [**PhysicsBody3D**](#220612-1) 同士が衝突すると重ならずに止まる    
 
 * [**PhysicsBody3D.move_and_collide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#class-physicsbody3d-method-move-and-collide)  
 （衝突データ＝[KinematicCollision3D](https://bit.ly/3Bh7hEq) が返る）
