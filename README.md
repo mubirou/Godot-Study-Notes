@@ -4048,11 +4048,12 @@ func _on_player_body_entered(_body):
   if _body == $Enemy:
     print("Enemy(＝PhysicsBody3D)と衝突")
 
+# Enemy(＝Area3D)の[ノード]-[シグナル]で接続
 func _on_area_3d_body_entered(_body):
   if _body == $Player:
     print("Enemy(＝Area3D)と衝突")
 ```
-※ [**RigidBody3D.body_entered()**](https://bit.ly/3BwPU2R) は [**イベントの接続**](#220703-1) を参照
+※ [**RigidBody3D.body_entered()**](https://bit.ly/3BwPU2R) や [**Area3D.body_entered()**](https://bit.ly/3AZD1fT) は [**イベントの接続**](#220703-1) を参照
 
 ***
 
