@@ -4047,7 +4047,7 @@ func _on_player_body_entered(_body):
   if _body == $Enemy:
     print("Enemyと衝突")
 ```
-※ [**RigidBody3D.body_entered()**](https://bit.ly/3BwPU2R)：[**イベントの接続**](#220703-1) 参照
+※ [**RigidBody3D.body_entered()**](https://bit.ly/3BwPU2R) は [**イベントの接続**](#220703-1) を参照
 
 ***
 
