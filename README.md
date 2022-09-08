@@ -3973,7 +3973,7 @@ Node3D
 　│　└ **CollisionShape3d**（**WorldBoundaryShape3D** 型）  
 　│　　　└ MeshInstance3d（PlaneMesh 型）  
 　├ **Player**（[**PhysicsBody3D** or **Area3D**](#220612-2)）  
-　└ **Enemy**（同上）  
+　└ **Enemy**（[**PhysicsBody3D** or **Area3D**](#220612-2)）  
 
 ***
 
