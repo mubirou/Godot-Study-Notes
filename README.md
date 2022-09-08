@@ -4016,6 +4016,8 @@ $Player.apply_force(Vector3(-200, 0, 0))
 **1. RigidBody3D → PhysicsBody3D➊➋➌**
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209081343.jpg)
+📝 [反発係数](#220805)の設定で「一部重なる」ことがなくなる  
+
 ```gdscript
 # /root/Main(Main.gd)
 extends Node3D
@@ -4036,6 +4038,7 @@ func _on_player_body_entered(_body):
 	if _body == $Enemy:
 		print("衝突")
 ```
+
 * [**RigidBody3D.apply_force(Vector3)**](https://bit.ly/3BmO9F0)
 * [**RigidBody3D.body_entered()**](https://bit.ly/3BwPU2R)：[**入力イベントの接続**](#220703-1) 参照
 ***
