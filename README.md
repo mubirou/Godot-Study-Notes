@@ -4003,7 +4003,8 @@ func _on_xr_controller_3d_button_pressed(_name):
     #_kc = $Player.move_and_collide(Vector3(-0.05,0,0))
     _kc = $Player.move_and_collide(Vector3(-1,0,0))
     if _kc != null:
-      print(_kc.get_collider())
+      if _kc.get_collider() == $Enemy:
+        print("Enemyと衝突")
 ```
 ***
 
@@ -4019,18 +4020,18 @@ func _on_xr_controller_3d_button_pressed(_name):
 extends Node3D
 ……
 func _ready():
-	……
-	# 衝突判定用（RigidBody3D.body_entered()と連動）
-	$Player.contact_monitor = true 
-	$Player.max_contacts_reported = 1
+  ……
+  # 衝突判定用（RigidBody3D.body_entered()と連動）
+  $Player.contact_monitor = true 
+  $Player.max_contacts_reported = 1
 
 func _on_xr_controller_3d_button_pressed(_name):
-	if _name == "trigger_click":
-		$Player.apply_force(Vector3(-200, 0, 0))
+  if _name == "trigger_click":
+    $Player.apply_force(Vector3(-200, 0, 0))
 
 func _on_player_body_entered(_body):
-	if _body == $Enemy:
-		print("衝突")
+  if _body == $Enemy:
+    print("Enemyと衝突")
 ```
 
 ***
