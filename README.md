@@ -4023,7 +4023,7 @@ var _interface : XRInterface
 
 func _ready():
   ……
-	# 衝突判定用（RigidBody3D.body_entered()と連動）
+  # 衝突判定用（RigidBody3D.body_entered()と連動）
 	$Player.contact_monitor = true 
 	$Player.max_contacts_reported = 1
 
