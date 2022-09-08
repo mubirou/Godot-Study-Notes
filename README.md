@@ -3996,7 +3996,7 @@ $Player.set_position($Enemy.position)
 
 ***
 
-### 👉 ➁指定ベクトルの値だけ移動 x 衝突の検出
+### 👉 ➁ベクトルの値だけ移動 x 衝突の検出
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209081436.jpg)
 📝 [**PhysicsBody3D**](#220612-1) 同士が衝突すると重ならずに止まる    
