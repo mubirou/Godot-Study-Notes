@@ -3975,6 +3975,8 @@ Node3D
 　├ **Player**（[**PhysicsBody3D** or **Area3D**](#220612-2)）  
 　└ **Enemy**（[**PhysicsBody3D** or **Area3D**](#220612-2)）  
 
+***
+
 ### 👉 ➀指定位置に移動 x 衝突
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071609.jpg)
