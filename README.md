@@ -4053,7 +4053,7 @@ func _on_area_3d_body_entered(_body):
   if _body == $Player:
     print("Enemy(＝Area3D)と衝突")
 ```
-* [**RigidBody3D.body_entered()**](https://bit.ly/3BwPU2R)：PhysicsBody3D と衝突  
+* [**RigidBody3D.body_entered()**](https://bit.ly/3BwPU2R) ＝ PhysicsBody3D と衝突  
 * [**Area3D.body_entered()**](https://bit.ly/3AZD1fT)：Area3D と衝突  
 …は [**イベントの接続**](#220703-1) を参照
 
