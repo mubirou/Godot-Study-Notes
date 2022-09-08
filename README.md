@@ -3977,7 +3977,7 @@ Node3D
 
 ***
 
-### 👉 ➀指定位置に移動 x 衝突判定
+### 👉 ➀指定位置に移動 x 衝突
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071609.jpg)
 📝 **RigidBody3D** x **PhysicsBody3D**（➊➋➌）の接触は避ける！  
@@ -4123,45 +4123,6 @@ Node3D
         # _enemy: RigidBody(Static or Kinematic Mode Only)
         var _enemy = _player.get_slide_collision(0).collider
         _enemy.set_mode(0) # 0(Rigid)
-    ```
-
-📝 **力を加える…で衝突判定**  
-
-  Spatial  
-　  ├ FPController  
-　  ├ **Floor**（**StaticBody**）  
-　  │   └ CollisionShape（BoxShape 型）  
-　  │　　　 └ MeshInstance（CubeMesh 型）  
-　  ├ **Enemy**（**RigidBody**-**Static** 型など）  
-　  │   └ CollisionShape（SphereShape 型）  
-　  │　　　 └ MeshInstance（SphereShape 型）  
-　  └ **Player**（**RigidBody**-**Rigid** 型）  
-　  　  └ CollisionShape（SphereShape 型）  
-　  　　　　└ MeshInstance（SphereShape 型）  
-
-* **Enemy**：RigidBody（全モード可）ほか
-* **Player**：**RigidBody**（**Rigid** 型）限定
-
-    ```gdscript
-    # Main.gd
-    extends Spatial
-
-    var _player # RigidBody
-    var _floor # StaticBody
-
-    func _ready():
-      _floor = get_node("Floor")
-      _player = get_node("Player") # RigidBody Only
-      _player.add_force(Vector3(-30,0,0), Vector3.ZERO)
-
-    func _physics_process(delta):
-      var _enemyList = _player.get_colliding_bodies()
-      if _enemyList.size() != 0:
-        for _theEnemy in _enemyList:
-          if (_theEnemy != _floor):
-            print("衝突!")
-            print(_theEnemy)
-            _theEnemy.set_mode(0) # 0(Rigid)
     ```
 
 参考：[HatenaBlog](https://ore2wakaru2.hatenablog.com/entry/2018/03/02/233000)  
