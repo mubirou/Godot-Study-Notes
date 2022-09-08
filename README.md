@@ -3991,11 +3991,18 @@ $Player.set_position($Enemy.position)
 （衝突データ＝[KinematicCollision3D](https://bit.ly/3Bh7hEq) が返る）
 
 ```gdscript
-#var _kc:KinematicCollision3D = $Player.move_and_collide($Enemy.position - $Player.position)
-#var _kc:KinematicCollision3D = $Player.move_and_collide(Vector3(-0.1,0,0))
-#var _kc:KinematicCollision3D = $Player.move_and_collide(Vector3(-0.05,0,0))
-var _kc:KinematicCollision3D = $Player.move_and_collide(Vector3(-1,0,0))
-if _kc != null: print(_kc.get_collider())
+# /root/Main(Main.gd)
+extends Node3D
+……
+func _on_xr_controller_3d_button_pressed(_name):
+	if _name == "trigger_click":
+		var _kc:KinematicCollision3D
+		#_kc = $Player.move_and_collide($Enemy.position - $Player.position)
+		#_kc = $Player.move_and_collide(Vector3(-0.1,0,0))
+		#_kc = $Player.move_and_collide(Vector3(-0.05,0,0))
+		_kc = $Player.move_and_collide(Vector3(-1,0,0))
+		if _kc != null:
+			print(_kc.get_collider())
 ```
 ***
 
@@ -4009,9 +4016,7 @@ if _kc != null: print(_kc.get_collider())
 ```gdscript
 # /root/Main(Main.gd)
 extends Node3D
-
-var _interface : XRInterface
-
+……
 func _ready():
 	……
 	# 衝突判定用（RigidBody3D.body_entered()と連動）
