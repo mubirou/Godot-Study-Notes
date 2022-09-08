@@ -4028,7 +4028,7 @@ func _on_area_3d_body_entered(_body):
   if _body == $Player:
     print("Charactor...か Rigid...が Area3D に衝突")
 ```
-_on_area_3d**_body_entered()**＝**Area3D**との衝突判定  
+_on_area_3d**_body_entered()** ＝ **Area3D**との衝突判定  
 …は [**イベントの接続**](#220703-1) を参照
 
 ***
