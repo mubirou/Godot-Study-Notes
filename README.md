@@ -4015,6 +4015,26 @@ $Player.apply_force(Vector3(-200, 0, 0))
 
 **1. RigidBody3D → PhysicsBody3D➊➋➌**
 
+```gdscript
+# /root/Main(Main.gd)
+extends Node3D
+
+var _interface : XRInterface
+
+func _ready():
+  ……
+	# 衝突判定用（RigidBody3D.body_entered()と連動）
+	$Player.contact_monitor = true 
+	$Player.max_contacts_reported = 1
+
+func _on_xr_controller_3d_button_pressed(_name):
+	if _name == "trigger_click":
+		$Player.apply_force(Vector3(-200, 0, 0))
+
+func _on_player_body_entered(_body): # $Player-ノードで設定
+	if _body == $Enemy:
+		print("衝突")
+```
 ***
 
 📝 **指定位置に移動…で衝突判定**  
