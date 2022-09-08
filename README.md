@@ -3996,7 +3996,7 @@ $Player.set_position($Enemy.position)
 
 ***
 
-### 👉 ➁ベクトルの値だけ移動 x 衝突の検出
+### 👉 ➁ベクトルの値だけ移動 x 衝突判定
 
 * [**PhysicsBody3D.move_and_collide(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_physicsbody3d.html?highlight=PhysicsBody3D#class-physicsbody3d-method-move-and-collide)  
 戻り値：[KinematicCollision3D](https://bit.ly/3Bh7hEq)＝衝突データ  
@@ -4022,7 +4022,7 @@ func _on_xr_controller_3d_button_pressed(_name):
 ```
 ***
 
-### 👉 ➂物理エンジンによる移動 x 衝突の検出
+### 👉 ➂物理エンジンによる移動 x 衝突判定
 
 * [**RigidBody3D.apply_force(Vector3)**](https://bit.ly/3BmO9F0)
 
@@ -4053,8 +4053,8 @@ func _on_area_3d_body_entered(_body):
   if _body == $Player:
     print("Enemy(＝Area3D)と衝突")
 ```
-**_on_player_body_entered()**＝**PhysicsBody3D**と衝突  
-**_on_area_3d_body_entered()**＝**Area3D**と衝突  
+_on_player_body_entered()＝**PhysicsBody3D**との衝突判定  
+_on_area_3d_body_entered()＝**Area3D**との衝突判定  
 …は [**イベントの接続**](#220703-1) を参照
 
 ***
