@@ -4046,12 +4046,12 @@ func _on_xr_controller_3d_button_pressed(_name):
 # Enemy(＝PhysicsBody3D)の[ノード]-[シグナル]で接続
 func _on_player_body_entered(_body):
   if _body == $Enemy:
-    print("Enemy(＝PhysicsBody3D)と衝突")
+    print("Enemy(=PhysicsBody3D)と衝突")
 
 # Enemy(＝Area3D)の[ノード]-[シグナル]で接続
 func _on_area_3d_body_entered(_body):
   if _body == $Player:
-    print("Enemy(＝Area3D)と衝突")
+    print("Enemy(=Area3D)と衝突")
 ```
 _on_player_body_entered()＝**PhysicsBody3D**との衝突判定  
 _on_area_3d_body_entered()＝**Area3D**との衝突判定  
