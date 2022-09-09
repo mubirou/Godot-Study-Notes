@@ -4072,7 +4072,7 @@ func _on_xr_controller_3d_button_pressed(_name):
   if _name == "trigger_click":
     $Player.apply_force(Vector3(-200, 0, 0))
 
-# Enemy(＝PhysicsBody3D)の[ノード]-[シグナル]で接続
+# Player(＝PhysicsBody3D)の[ノード]-[シグナル]で接続
 func _on_player_body_entered(_body):
   if _body == $Enemy:
     print("Enemy(=PhysicsBody3D)と衝突")
