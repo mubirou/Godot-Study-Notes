@@ -4087,7 +4087,7 @@ func _on_area_3d_body_entered(_body):
 実行環境：Windows 10、Godot 4.0 alpha 16、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月17日  
-更新日：2022年09月XX日  
+更新日：2022年09月09日 Godot 4.0 対応  
 [[TOP]](#TOP)  
 
 
