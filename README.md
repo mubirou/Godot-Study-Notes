@@ -3991,10 +3991,25 @@ Node3D
 * [**Node3D.set_global_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-global-position)  
 
 ```gdscript
-$Player.set_position($Enemy.position) 
-#$Player.set_position($Enemy.position + Vector3(0.1,0,0.1))
-#$Player.set_position($Player.position + Vector3(-0.1,0,0))
-#$Player.set_position($Player.position + Vector3(-0.05,0,0))
+# /root/Main(Main.gd)
+extends Node3D
+……
+func _on_xr_controller_3d_button_pressed(_name):
+	if _name == "trigger_click":
+		#$Player.set_position($Enemy.position) 
+		#$Player.set_position($Enemy.position + Vector3(0.1,0,0.1))
+		#$Player.set_position($Player.position + Vector3(-0.1,0,0))
+		$Player.set_position($Player.position + Vector3(-0.05,0,0))
+
+# Player(＝Area3D)の[ノード]-[シグナル]で接続
+func _on_area_3d_area_entered(_area):
+	if _area.get_parent() == $Enemy:
+		print("Area3D が Area3D に衝突")
+
+# Player(＝Area3D)の[ノード]-[シグナル]で接続
+func _on_area_3d_body_entered(_body):
+	if _body == $Enemy: # or $Player
+		print("Area3D と PhysicsBody3D が衝突")
 ```
 
 ***
