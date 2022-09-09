@@ -3984,7 +3984,7 @@ Node3D
 📝 **RigidBody3D** x **PhysicsBody3D**（➊➋➌）の接触は避ける！  
 📝 [**StaticBody3D**](#220612-1) → [**Area3D**](#220612-1) の衝突判定ができない（要検証）  
 （[**Area3D**](#220612-1) → [**StaticBody3D**](#220612-1) は可能  
-📝 **_on_area_3d_area_entered()**（＝**Area3D**同士の衝突判定）や**_on_area_3d_body_entered()**（＝**Area3D**同士の衝突判定）[**イベントの接続**](#220703-1) を参照  
+📝 **_on_area_3d_area_entered()**（＝**Area3D**同士の衝突判定）や  **_on_area_3d_body_entered()**（＝**Area3D**同士の衝突判定）[**イベントの接続**](#220703-1) を参照  
 
 * [**Node3D.position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
 * [**Node3D.set_position(Vector3)**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
