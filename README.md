@@ -3980,7 +3980,7 @@ Node3D
 
 ### 👉 ➀指定位置に移動 x 衝突
 
-![image](https://github.com/mubirou/Godot/blob/main/jpg/202209071609.jpg)
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202209092045.jpg)
 📝 **RigidBody3D** x **PhysicsBody3D**（➊➋➌）の接触は避ける！  
 
 * [**Node3D.position = Vector3**](https://docs.godotengine.org/en/latest/classes/class_node3d.html?highlight=position%20Node3D#class-node3d-property-position)  
