@@ -4093,7 +4093,7 @@ func _on_area_3d_body_entered(_body):
 <a id="220910"></a>
 # <b>AccuRIG</b>
 
-1. [Mixamo](#220713) の利用と同様、キャラクターの用意～Blender の作業（FBXをエクスポート）を行う
+1. [Mixamo](#220713) の利用と同様、キャラクターの用意～Blender の作業（FBX をエクスポート）を行う
 
 1. https://actorcore.reallusion.com/auto-rig で [FREE DOWNLOAD] → インストール
 
