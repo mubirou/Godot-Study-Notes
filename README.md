@@ -2277,7 +2277,7 @@ Main（Node3D）
 
 デモファイル：[Mixamo.zip](https://github.com/mubirou/Godot/blob/main/zip/Mixamo.zip)  
 参考：[Mixamoマルチポーズ](#220714)  
-参考：[AccuRIG](https://actorcore.reallusion.com/auto-rig)  
+参考：[AccuRIG](https://actorcore.reallusion.com)（自動リギング他）  
 実行環境：Windows 10、Godot 4.0 alpha 12、Blender 3.2.1、Meta Quest 42.0、Quest Link、Oculusアプリ   
 作成者：夢寐郎  
 作成日：2022年07月20日  
