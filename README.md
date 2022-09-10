@@ -4093,9 +4093,13 @@ func _on_area_3d_body_entered(_body):
 <a id="220910"></a>
 # <b>AccuRIG</b>
 
+### 👉 [Blender](https://www.blender.org/) の作業➀
+
 1. [Mixamo](#220713) の利用と同様、キャラクターの用意～Blender の作業（[FBX](https://ja.wikipedia.org/wiki/FBX) をエクスポート）を行う
 
 1. https://actorcore.reallusion.com/auto-rig で [FREE DOWNLOAD] → インストール
+
+### 👉 [AccuRIG](https://actorcore.reallusion.com/auto-rig) の作業
 
 実行環境：Windows 10、Godot 4.0 alpha 16、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
