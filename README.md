@@ -4065,6 +4065,7 @@ func _on_area_3d_body_entered(_body):
 ```
 
 参考：[HatenaBlog](https://ore2wakaru2.hatenablog.com/entry/2018/03/02/233000)  
+参考：[衝突判定領域](#220801)  
 実験用ファイル：[CollisionDetection.zip](https://github.com/mubirou/Godot/blob/main/zip/CollisionDetection.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 16、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
