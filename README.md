@@ -2886,6 +2886,7 @@ _obj.set_surface_override_material(0, _material)
 参考：[YouTube](https://www.youtube.com/watch?v=Mq-_FffB2eE)  
 参考：[GODOT DOCS](https://docs.godotengine.org/en/latest/tutorials/physics/collision_shapes_3d.html?highlight=collision%20detection%20area#collision-shapes-3d)  
 参考：[物理ボディ３種](#220611-1)  
+参考：[衝突判定](#220612)  
 実行環境：Windows 10、Godot 4.0 alpha 13、Meta Quest 42.0、Quest Link、Oculusアプリ  
 作成日：2022年08月03日  
 [[TOP]](#TOP)
