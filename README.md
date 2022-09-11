@@ -4053,6 +4053,8 @@ func _ready():
 func _on_xr_controller_3d_button_pressed(_name):
   if _name == "trigger_click":
     $Player.apply_force(Vector3(-200, 0, 0))
+    #$Player.apply_force(Vector3(-500, 0, 0))
+    #$Player.apply_force(Vector3(-1500, 0, 0))
 
 # Player(＝PhysicsBody3D)の[ノード]-[シグナル]で接続
 func _on_player_body_entered(_body):
@@ -4071,7 +4073,7 @@ func _on_area_3d_body_entered(_body):
 実行環境：Windows 10、Godot 4.0 alpha 16、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月17日  
-更新日：2022年09月09日 Godot 4.0 対応  
+更新日：2022年09月09日 apply_force()を再調査  
 [[TOP]](#TOP)  
 
 
