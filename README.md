@@ -73,27 +73,6 @@
 [[TOP]](#TOP)  
 
 
-<a id="プリミティブ"></a>
-# <b>プリミティブ</b>
-
-1. [シーン]タブ-[+]で"**MeshInstance**"を検索し[作成]
-1. [インスペクタ]-[Mesh]を以下の中から選択
-  * ArrayMesh（？）
-  * CapsuleMesh（カプセル＝物理挙動テスト）
-  * CubeMesh（立方体＝壁･柱･箱･階段）
-  * CylinderMesh（円柱）
-  * PlaneMesh（平面）
-  * PointMesh（点？）
-  * PrismMesh（プリズム＝三角柱）
-  * QuadMesh（画像表示･動画再生用）
-  * SphereMesh（球＝星･弾丸）
-
-実行環境：Windows 10、Godot 3.4.2  
-作成者：夢寐郎  
-作成日：2022年02月28日  
-[[TOP]](#TOP)
-
-
 <a id="ノードの移動"></a>
 # <b>ノードの移動</b>
 
@@ -583,7 +562,7 @@ public class Car : Sprite {
 1. [シーン]-[シーンを保存]
 1. [ファイルシステム]-[res://]-[addons]-[godot-openxr]-[scenes]-[**first_person_controller_vr.tscn**] を上記の [シーン]-[Spatial] 上にドラッグ＆ドロップ  
 1. [プロジェクト]-[プロジェクト設定]-[一般]-[Display]-[Window]-[**Use Vsync**] の ✓オン を外す（フレームレートを向上させるため）
-1. [プリミティブ](#プリミティブ) など何かオブジェクトを配置（任意）し以下のような階層にする    
+1. [プリミティブ](#220701) など何かオブジェクトを配置（任意）し以下のような階層にする  
   Spatial  
 　  ├ FPController（VR用カメラなど）  
 　  └ MeshInstance（任意のオブジェクト）  
@@ -867,7 +846,7 @@ Meta の公式ストア以外のアプリを Meta Quest にインストール･
 右人差し指トリガーで選択（≒Click ）すると選んだオブジェクトの名前が返る。  
 
 📝 選択するオブジェクトの用意  
-  1. [立方体](#プリミティブ)などを用意
+  1. [立方体](#220701)などを用意
   1. 上記を選択し [子ノードを追加]-[**KinematicBody**]
   1. KinematicBody を選択し [子ノードを追加]-[**CollisionShape**]
   1. CollisionShape を選択し [インスペクター]-[**Shape**]-[追加 BoxShape] を選ぶ（階層は以下の通り）  
