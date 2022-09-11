@@ -3928,9 +3928,11 @@ func _on_igaguri_body_entered(_body):
 ```
 
 デモファイル：[igaguri.zip](https://github.com/mubirou/Godot/blob/main/zip/igaguri.zip)  
-実行環境：Windows 10、Godot 4.0 alpha 15、Meta Quest 43.0、Quest Link、Oculusアプリ  
+デモファイル：[arrow.zip](https://github.com/mubirou/Godot/blob/main/zip/arrow.zip)（弓矢バージョン）  
+実行環境：Windows 10、Godot 4.0 alpha 16、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年09月04日  
+更新日：2022年09月11日 弓矢バージョン追加  
 [[TOP]](#TOP)
 
 
