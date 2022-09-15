@@ -4107,8 +4107,8 @@ func _on_area_3d_body_entered(_body):
 >　│　├ Left（💡[**WorldBoundaryShape3D**](https://bit.ly/3BFlrQ6)）＝衝突判定面  
 >　│　│  
 >　├ MeshInstance3d_Body（**Node3D**）  
->　│　├ Back**（**MeshInstance3D**）  
->　│　├ Top**（**MeshInstance3D**）  
+>　│　├ Back**（**MeshInstance3D** / 可視化）  
+>　│　├ Top**（**MeshInstance3D** / 可視化）  
 >　│　│  
 
 * [**RigidBody3D.apply_force(Vector3)**](#220612-3) は薄い壁を通過してしまうため 💡[**WorldBoundaryShape3D**](https://bit.ly/3LhylqL)（無限平面）を利用  
