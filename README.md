@@ -4085,6 +4085,80 @@ func _on_area_3d_body_entered(_body):
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209151551.jpg)
 
+```gdscript
+# /root/Main(Main.gd)
+extends Node3D
+
+var _interface:XRInterface
+var _triggerValue:float = 0.0
+var _ball:RigidBody3D
+var _isFall = false
+var _isPrepared = true
+var _checkPoint:MeshInstance3D
+var _checkPointNum:int
+var _sp:MeshInstance3D # StartPoint
+
+func _ready():
+	_interface = XRServer.find_interface("OpenXR")
+	if _interface and _interface.is_initialized():
+		var _viewport:Viewport = get_viewport()
+		_viewport.use_xr = true
+	
+	_ball = $Pachinko/Ball
+
+func _on_xr_controller_3d_right_button_pressed(_name):
+	if (_name == "trigger_click") or (_name == "trigger_touch"):
+		_triggerValue = 0.0
+
+func _on_xr_controller_3d_right_button_released(_name):	
+	if _name == "trigger_click":
+		if !_isPrepared: return
+		_ball.apply_force(Vector3(0, _triggerValue*89.6, 0)) # 微調整
+		_isFall = false
+
+func _on_xr_controller_3d_right_input_value_changed(name, _value):
+	if _triggerValue < _value:
+		_triggerValue = _value
+
+func _on_area_3d_startpoint_body_entered(_body):
+	if _body == _ball:
+		_isPrepared = true
+		_sp.get_mesh().material.set_albedo(Color(0.8,0,0,1))
+		if _checkPoint != null:
+			# Pachinko/Checkpoints/Checkpoint_X を白（不透明度20％）に変更
+			_checkPoint.get_mesh().material.set_albedo(Color(1,1,1,0.2))
+			# Pachinko/MeshInstance3d_Body/Glass/checkpoint_1X の非表示
+			var _path = "Pachinko/MeshInstance3d_Body/Glass/checkpoint_"
+			var _label_a = get_node(_path + str(_checkPointNum) + "a")
+			var _label_b = get_node(_path + str(_checkPointNum) + "b")
+			_label_a.visible = false
+			_label_b.visible = false
+	
+func _on_area_3d_startpoint_body_exited(_body):
+	if _body == _ball:
+		_isPrepared = false
+		_sp.get_mesh().material.set_albedo(Color(0.2,0.2,0.2,1))
+
+# Area3d_checkpoint(＝Area3D)の[ノード]-[シグナル]で接続（"高度な設定"）
+func _on_area_3d_checkpoint_body_entered(_body, _int):
+	if _body != _ball: return # 今回はBallしか接触しないが…
+	if _isFall: return # バウンドして再度接触した場合は無視
+	_isFall = true
+	_checkPointNum = _int
+
+	# Pachinko/Checkpoints/Checkpoint_X を赤（不透明度50％）に変更
+	var _path = "Pachinko/Checkpoints/Checkpoint_" + str(_checkPointNum)
+	_checkPoint = get_node(_path)
+	_checkPoint.get_mesh().material.set_albedo(Color(1,0,0,0.5))
+	
+	# Pachinko/MeshInstance3d_Body/Glass/checkpoint_1X の表示
+	_path = "Pachinko/MeshInstance3d_Body/Glass/checkpoint_"
+	var _label_a = get_node(_path + str(_checkPointNum) + "a")
+	var _label_b = get_node(_path + str(_checkPointNum) + "b")
+	_label_a.visible = true
+	_label_b.visible = true
+```
+
 ### 👉 主なポイント  
 
 デモファイル：[pachinko.zip](https://github.com/mubirou/Godot/blob/main/zip/pachinko.zip)  
