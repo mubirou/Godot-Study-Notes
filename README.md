@@ -4240,6 +4240,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 ```
 
 デモファイル：[pachinko.zip](https://github.com/mubirou/Godot/blob/main/zip/pachinko.zip)  
+参考：[衝突判定](#220612)  
 実行環境：Windows 10、Godot 4.0 alpha 16、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年09月15日  
