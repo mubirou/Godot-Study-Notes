@@ -4232,7 +4232,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   _checkPoint = get_node(_path)
   _checkPoint.get_mesh().material.set_albedo(Color(1,0,0,0.5))
   
-  # ガラス状の数字（1～7）の表示
+  # ガラス上の数字（1～7）の表示
   _path = "Pachinko/MeshInstance3d_Body/Glass/checkpoint_"
   var _label_a = get_node(_path + str(_checkPointNum) + "a")
   var _label_b = get_node(_path + str(_checkPointNum) + "b")
@@ -4253,7 +4253,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 
 ### この項目は書きかけです
 
-📝 [ドローンの操作モード](https://viva-drone.com/drone-transmitter-mode1-mode2/#12)
+📝 [ドローンの操作モード（Mode1 / Mode2）](https://viva-drone.com/drone-transmitter-mode1-mode2/#12)
 
 実行環境：Windows 10、Godot 4.0 alpha 16、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
