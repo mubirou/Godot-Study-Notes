@@ -4114,23 +4114,22 @@ func _on_area_3d_body_entered(_body):
 
 * [**RigidBody3D.apply_force(Vector3)**](#220612-3) は薄い壁を通過してしまうため 💡[**WorldBoundaryShape3D**](https://bit.ly/3LhylqL)（無限平面）を利用  
 
-**4. チェックポイント（Checkpoint_X）**  
+**4. スタート地点（StartPoint）**  
+
+>StartPoint（**MeshInstance3D**）  
+>　└ Area3d_startpoint（[**Area3D**](https://bit.ly/3KP38Lj)）＝💡シグナル接続    
+>　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域） 
+
+* [Area3D]-[ノード]-[シグナル]-[Area3D] の "body_entered(…" および "body_exited(…" →[右クリック]→[接続] から「**メソッドにシグナルを接続**」し **_on_area_3d_startpoint_body_entered(_body)** および **_on_area_3d_startpoint_body_exited(_body)** メソッドを作成（参照：[イベントの接続](#220703-1)）  
+
+**5. チェックポイント（Checkpoint_X）**  
 Ball が通過すると得点になるエリア（[**Area3D**](https://bit.ly/3KP38Lj)）
 
 >Checkpoint_1（**MeshInstance3D**）  
 >　└ Area3d_checkpoint（[**Area3D**](https://bit.ly/3KP38Lj)）＝💡シグナル接続  
 >　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域）  
 
-* [**イベントの接続**](#220703-1)
-
-**5. スタート地点（StartPoint）**  
-
->StartPoint（**MeshInstance3D**）  
->　└ Area3d_startpoint（[**Area3D**](https://bit.ly/3KP38Lj)）＝💡シグナル接続    
->　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域） 
-
-* [**Area3D**]-[**ノード**]-[シグナル]-[**Area3D**] の "**body_entered(body: Node3D)**" および "**body_exited(body: Node3D)**" →[右クリック]→[**接続**] から「メソッドにシグナルを接続」し
-**_on_area_3d_startpoint_body_entered(_body)** および **_on_area_3d_startpoint_body_exited(_body)** を作成（参照：[**イベントの接続**](#220703-1)）  
+* スタート地点と同様「**メソッドにシグナルを接続**」する事に加え「**高度な設定**」から int 型の「**呼び出し引数を追加**」して **_on_area_3d_checkpoint_body_entered(_body, _int)** メソッドを作成  
 
 ### 👉 全スクリプト
 
