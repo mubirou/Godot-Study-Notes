@@ -4164,25 +4164,41 @@ func _ready():
   _ball = $Pachinko/Ball
   _startPoint = $Pachinko/StartPoint
 
+#=========================================================
+# 右コントローラーのトリガー量のリセット
+# [XRController3D_Right]-[ノード]-[button_pressed()]で接続
+#=========================================================
 func _on_xr_controller_3d_right_button_pressed(_name):
   if (_name == "trigger_click") or (_name == "trigger_touch"):
     _triggerValue = 0.0
 
-func _on_xr_controller_3d_right_button_released(_name):  
-  if _name == "trigger_click":
-    if !_isPrepared: return
-    _ball.apply_force(Vector3(0, _triggerValue*89.6, 0)) # 微調整
-    _isFall = false
-
+#==============================================================
+# 右コントローラーのトリガー量の取得
+# [XRController3D_Right]-[ノード]-[input_value_changed()]で接続
+#==============================================================
 func _on_xr_controller_3d_right_input_value_changed(name, _value):
   if _triggerValue < _value:
-    _triggerValue = _value
+    _triggerValue = _value # トリガー量の最大値
 
+#==========================================================
+# 右コントローラーのトリガーでボールを打つ
+# [XRController3D_Right]-[ノード]-[button_released()]で接続
+#==========================================================
+func _on_xr_controller_3d_right_button_released(_name):  
+  if _name == "trigger_click":
+    if !_isPrepared: return # ボールを打つ準備ができているか？
+    _ball.apply_force(Vector3(0, _triggerValue*89.6, 0)) # 微調整
+    _isFall = false # ボールは落ちていない
+
+#====================================================
+# スタート地点（Area3D）領域にボールが入った場合の処理
+# [Area3d_startpoint]-[ノード]-[body_entered()]で接続
+#====================================================
 func _on_area_3d_startpoint_body_entered(_body):
   if _body == _ball:
-    _isPrepared = true
+    _isPrepared = true # ボールを打つ準備完了
     _startPoint.get_mesh().material.set_albedo(Color(0.8,0,0,1))
-    if _checkPoint != null:
+    if _checkPoint != null: # まだ一度も打ってない場合を除く
       # Pachinko/Checkpoints/Checkpoint_X を白（不透明度20％）に変更
       _checkPoint.get_mesh().material.set_albedo(Color(1,1,1,0.2))
       # Pachinko/MeshInstance3d_Body/Glass/checkpoint_1X の非表示
@@ -4191,25 +4207,32 @@ func _on_area_3d_startpoint_body_entered(_body):
       var _label_b = get_node(_path + str(_checkPointNum) + "b")
       _label_a.visible = false
       _label_b.visible = false
-  
+
+#===================================================
+# スタート地点（Area3D）領域からボールが出た場合の処理
+# [Area3d_startpoint]-[ノード]-[body_exited()]で接続
+#===================================================
 func _on_area_3d_startpoint_body_exited(_body):
   if _body == _ball:
-    _isPrepared = false
+    _isPrepared = false # ボールを打つ準備はできてない
     _startPoint.get_mesh().material.set_albedo(Color(0.2,0.2,0.2,1))
 
-# Area3d_checkpoint(＝Area3D)の[ノード]-[シグナル]で接続（"高度な設定"）
+#===================================================================
+# チェックポイント（Area3D）の領域に入った（すり抜ける）場合の処理
+# [Area3d_checkpoint]-[ノード]-[body_entered()]（"高度な設定"）で接続
+#===================================================================
 func _on_area_3d_checkpoint_body_entered(_body, _int):
   if _body != _ball: return # 今回はBallしか接触しないが…
   if _isFall: return # バウンドして再度接触した場合は無視
-  _isFall = true
-  _checkPointNum = _int
+  _isFall = true # ボールが落ちた
+  _checkPointNum = _int # 通過した場所（番号）
 
-  # Pachinko/Checkpoints/Checkpoint_X を赤（不透明度50％）に変更
+  # 通過した場所を赤（不透明度50％）で表示
   var _path = "Pachinko/Checkpoints/Checkpoint_" + str(_checkPointNum)
   _checkPoint = get_node(_path)
   _checkPoint.get_mesh().material.set_albedo(Color(1,0,0,0.5))
   
-  # Pachinko/MeshInstance3d_Body/Glass/checkpoint_1X の表示
+  # ガラス状の数字（1～7）の表示
   _path = "Pachinko/MeshInstance3d_Body/Glass/checkpoint_"
   var _label_a = get_node(_path + str(_checkPointNum) + "a")
   var _label_b = get_node(_path + str(_checkPointNum) + "b")
