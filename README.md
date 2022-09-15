@@ -4085,18 +4085,21 @@ func _on_area_3d_body_entered(_body):
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209151551.jpg)
 
+👉 全スクリプト
+
 ```gdscript
 # /root/Main(Main.gd)
 extends Node3D
 
 var _interface:XRInterface
-var _triggerValue:float = 0.0
+
 var _ball:RigidBody3D
-var _isFall = false
-var _isPrepared = true
 var _checkPoint:MeshInstance3D
 var _checkPointNum:int
-var _sp:MeshInstance3D # StartPoint
+var _isFall = false
+var _isPrepared = true
+var _startPoint:MeshInstance3D
+var _triggerValue:float = 0.0
 
 func _ready():
   _interface = XRServer.find_interface("OpenXR")
@@ -4105,6 +4108,7 @@ func _ready():
     _viewport.use_xr = true
   
   _ball = $Pachinko/Ball
+  _startPoint = $Pachinko/StartPoint
 
 func _on_xr_controller_3d_right_button_pressed(_name):
   if (_name == "trigger_click") or (_name == "trigger_touch"):
@@ -4123,7 +4127,7 @@ func _on_xr_controller_3d_right_input_value_changed(name, _value):
 func _on_area_3d_startpoint_body_entered(_body):
   if _body == _ball:
     _isPrepared = true
-    _sp.get_mesh().material.set_albedo(Color(0.8,0,0,1))
+    _startPoint.get_mesh().material.set_albedo(Color(0.8,0,0,1))
     if _checkPoint != null:
       # Pachinko/Checkpoints/Checkpoint_X を白（不透明度20％）に変更
       _checkPoint.get_mesh().material.set_albedo(Color(1,1,1,0.2))
@@ -4137,7 +4141,7 @@ func _on_area_3d_startpoint_body_entered(_body):
 func _on_area_3d_startpoint_body_exited(_body):
   if _body == _ball:
     _isPrepared = false
-    _sp.get_mesh().material.set_albedo(Color(0.2,0.2,0.2,1))
+    _startPoint.get_mesh().material.set_albedo(Color(0.2,0.2,0.2,1))
 
 # Area3d_checkpoint(＝Area3D)の[ノード]-[シグナル]で接続（"高度な設定"）
 func _on_area_3d_checkpoint_body_entered(_body, _int):
