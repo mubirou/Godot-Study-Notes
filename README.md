@@ -4031,8 +4031,8 @@ func _on_area_3d_body_entered(_body):
     print("Charactor...or Rigid...が Area3D に衝突")
 ```
 ***
-
-### 👉 ➂物理エンジンによる移動 x 衝突判定<a id="220612-3"></a>
+<a id="220612-3"></a>
+### 👉 ➂物理エンジンによる移動 x 衝突判定
 
 * [**RigidBody3D.apply_force(Vector3)**](https://bit.ly/3BmO9F0)
 
