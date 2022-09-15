@@ -123,8 +123,8 @@
   # 指定位置に移動
   _ufo.position.x += 1
   _ufo.position += Vector2(1, 0)
-	
-	# 指定した値だけ移動
+  
+  # 指定した値だけ移動
   ufo.translate(Vector2(1, 0))
   ```
 
@@ -301,7 +301,7 @@
               GD.Print(_mouseEvent.Position); //-> (282, 254)
               GD.Print(_mouseEvent.Position.x); //-> 282
               GD.Print(_mouseEvent.Position.y); //-> 254
-            }	
+            }  
           }
         }
       }
@@ -381,18 +381,18 @@
 extends Sprite # 要注意！
 
 var _rotSpeed = 0 # 回転速度
-	
+  
 func _process(_delta): # 繰り返し実行
-	# 回転速度ぶんルーレットを回転させる
-	rotation += _rotSpeed
-	_rotSpeed *= 0.98 # ルーレットを減速させる
+  # 回転速度ぶんルーレットを回転させる
+  rotation += _rotSpeed
+  _rotSpeed *= 0.98 # ルーレットを減速させる
 
 # マウスが押されたら回転速度を設定する
 func _input(_event): # 入力イベント
-	if _event is InputEventMouseButton: # マウスを押したら
-		if _event.button_index == 1: # マウスの左ボタン
-			if _event.pressed: # 押している
-				_rotSpeed = 3;
+  if _event is InputEventMouseButton: # マウスを押したら
+    if _event.button_index == 1: # マウスの左ボタン
+      if _event.pressed: # 押している
+        _rotSpeed = 3;
 ```
 
 ### 【C#版】  
@@ -444,16 +444,16 @@ var _car
 var _flag
 
 func _ready():
-	_car = get_node("Car")
-	_flag = get_node("Flag")
+  _car = get_node("Car")
+  _flag = get_node("Flag")
 
 func _process(_delta):
-	var _distance = _flag.position.x - _car.position.x
-	if _distance > 0 :
-		_distance = "%10.2f" % (round(_distance)/20) # 少数点2桁表示
-		$Label.text = str(_distance) + " m to the GOAL"
-	else:
-		$Label.text = "GAME OVER"
+  var _distance = _flag.position.x - _car.position.x
+  if _distance > 0 :
+    _distance = "%10.2f" % (round(_distance)/20) # 少数点2桁表示
+    $Label.text = str(_distance) + " m to the GOAL"
+  else:
+    $Label.text = "GAME OVER"
 ```
 
 車（Sprite）に以下のスクリプトをアタッチ
@@ -463,20 +463,20 @@ extends Sprite
 
 var _speed = 0
 var _startX
-	
+  
 func _process(_delta):
-	translate(Vector2(_speed, 0))
-	_speed *= 0.98
+  translate(Vector2(_speed, 0))
+  _speed *= 0.98
 
 func _input(_event):
-	if _event is InputEventMouseButton:
-		if _event.button_index == 1:
-			if _event.pressed: # MouseDown
-				_startX = _event.position.x
-			else: # MouseUp
-				var _disX = _event.position.x - _startX
-				_speed = _disX / 20
-				$AudioStreamPlayer2D.play() # 効果音は.wav
+  if _event is InputEventMouseButton:
+    if _event.button_index == 1:
+      if _event.pressed: # MouseDown
+        _startX = _event.position.x
+      else: # MouseUp
+        var _disX = _event.position.x - _startX
+        _speed = _disX / 20
+        $AudioStreamPlayer2D.play() # 効果音は.wav
 ```
 
 ### 【C#版】  
@@ -782,23 +782,23 @@ func RTriggerDownHandler():
 
 ```gdscript
 if is_button_pressed(JOY_VR_TRIGGER): # 15
-	if get_controller_id() == 1:
-		if !_isLTriggerDown:
-			print("左人差し指トリガーを押した")
-			_isLTriggerDown = true
-		else: print("左人差し指トリガーを押し続けている") # 省略すると（downのみ）	
-	if get_controller_id() == 2:
-		if !_isRTriggerDown:
-			print("右人差し指トリガーを押した")
-			_isRTriggerDown = true
-		else: print("右人差し指トリガーを押し続けている") # 省略すると（downのみ）
+  if get_controller_id() == 1:
+    if !_isLTriggerDown:
+      print("左人差し指トリガーを押した")
+      _isLTriggerDown = true
+    else: print("左人差し指トリガーを押し続けている") # 省略すると（downのみ）  
+  if get_controller_id() == 2:
+    if !_isRTriggerDown:
+      print("右人差し指トリガーを押した")
+      _isRTriggerDown = true
+    else: print("右人差し指トリガーを押し続けている") # 省略すると（downのみ）
 else:
-	if _isLTriggerDown:
-		_isLTriggerDown = false
-		print("左人差し指トリガーを離した")
-	if _isRTriggerDown:
-		_isRTriggerDown = false
-		print("右人差し指トリガーを離した")
+  if _isLTriggerDown:
+    _isLTriggerDown = false
+    print("左人差し指トリガーを離した")
+  if _isRTriggerDown:
+    _isRTriggerDown = false
+    print("右人差し指トリガーを離した")
 ```
 
 実行環境：Windows 10、Godot 3.4.4  
@@ -1962,22 +1962,22 @@ func _ready():
 extends Label3D
 
 func _ready():
-	await loop()
+  await loop()
 
 func loop():
-	await get_tree().create_timer(1.0).timeout
-	
-	var _now = Time.get_datetime_dict_from_system()
-	var _h = _now.hour
-	var _m = _now.minute
-	var _s = _now.second
-	if _h < 10: _h = "0" + str(_h)
-	if _m < 10: _m = "0" + str(_m)
-	if _s < 10: _s = "0" + str(_s)
-	var _result = str(_h) + ":" + str(_m) + ":" + str(_s)
-	text = _result
-	
-	await loop()
+  await get_tree().create_timer(1.0).timeout
+  
+  var _now = Time.get_datetime_dict_from_system()
+  var _h = _now.hour
+  var _m = _now.minute
+  var _s = _now.second
+  if _h < 10: _h = "0" + str(_h)
+  if _m < 10: _m = "0" + str(_m)
+  if _s < 10: _s = "0" + str(_s)
+  var _result = str(_h) + ":" + str(_m) + ":" + str(_s)
+  text = _result
+  
+  await loop()
 ```
 
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
@@ -2826,9 +2826,9 @@ _obj.set_surface_override_material(0, _material)
   
   ```gdscript
   var _PhysicsBody3D = get_node("〇〇")
-	var _KinematicCollision3D = _PhysicsBody3D.move_and_collide(Vector3(-0.1, 0, 0))
-	if _KinematicCollision3D != null:
-	  print(_KinematicCollision3D.get_collider().name)
+  var _KinematicCollision3D = _PhysicsBody3D.move_and_collide(Vector3(-0.1, 0, 0))
+  if _KinematicCollision3D != null:
+    print(_KinematicCollision3D.get_collider().name)
   ```
 
 ### **➂力を加える**  
@@ -3014,7 +3014,7 @@ _obj.set_surface_override_material(0, _material)
       _lineCount += _richText.get_visible_line_count() - 1
     __changeLine(_lineCount)
 
-  # 汎用関数	
+  # 汎用関数  
   func __changeLine(arg):
     if arg < 0: _lineCount = 0
     if arg > _richText.get_line_count() - _richText.get_visible_line_count() + 1:
@@ -3202,40 +3202,40 @@ extends Node3D
 ……
 # 外部テキストの「読み込み」用
 func __loadText():
-	var _file = File.new()
-	# ファイルが無い場合は自動的に生成
-	_file.open("res://save_text.dat", File.READ)
-	#_file.open("user://save_text.dat", File.READ)
-	var _text = _file.get_as_text()
-	_file.close()
-	return _text
+  var _file = File.new()
+  # ファイルが無い場合は自動的に生成
+  _file.open("res://save_text.dat", File.READ)
+  #_file.open("user://save_text.dat", File.READ)
+  var _text = _file.get_as_text()
+  _file.close()
+  return _text
 
 # 外部テキストの「書き込み」用
 func __saveText(arg):
-	var _file = File.new()
-	# ファイルが無い場合は自動的に生成
-	_file.open("res://save_text.dat", File.WRITE)
-	#_file.open("user://save_text.dat", File.WRITE)
-	_file.store_string(str(arg))
-	_file.close()
+  var _file = File.new()
+  # ファイルが無い場合は自動的に生成
+  _file.open("res://save_text.dat", File.WRITE)
+  #_file.open("user://save_text.dat", File.WRITE)
+  _file.store_string(str(arg))
+  _file.close()
 
 func _on_xr_controller_3d_button_pressed(_name:String):
-	if _name == "by_button":
-		# 外部テキストの書き込み
-		var _now:Dictionary = Time.get_datetime_dict_from_system()
-		var _h = _now.hour
-		var _m = _now.minute
-		var _s = _now.second
-		if _h < 10: _h = "0" + str(_h)
-		if _m < 10: _m = "0" + str(_m)
-		if _s < 10: _s = "0" + str(_s)
-		var _newText:String = str(_h) + ":" + str(_m) + ":" + str(_s)
-		__saveText(_newText)
-		print("セーブしました")
-	elif _name == "ax_button":
-		# 外部テキストの読み込み
-		var _loadText = __loadText()
-		print("読込データ: " + _loadText) #-> "読込データ: 23:26:31"
+  if _name == "by_button":
+    # 外部テキストの書き込み
+    var _now:Dictionary = Time.get_datetime_dict_from_system()
+    var _h = _now.hour
+    var _m = _now.minute
+    var _s = _now.second
+    if _h < 10: _h = "0" + str(_h)
+    if _m < 10: _m = "0" + str(_m)
+    if _s < 10: _s = "0" + str(_s)
+    var _newText:String = str(_h) + ":" + str(_m) + ":" + str(_s)
+    __saveText(_newText)
+    print("セーブしました")
+  elif _name == "ax_button":
+    # 外部テキストの読み込み
+    var _loadText = __loadText()
+    print("読込データ: " + _loadText) #-> "読込データ: 23:26:31"
 ```
 
 ### 📝 保存場所  
@@ -3272,36 +3272,36 @@ func _on_xr_controller_3d_button_pressed(_name:String):
 extends Node3D
 ……
 func _ready():
-	……
-	#===================
-	# 外部JSONの読み込み
-	#===================
-	var _file = File.new()
-	_file.open("res://sample.json", File.READ)
-	var _load_data:String = _file.get_as_text()
-	_file.close()
-		
-	#=================
-	# JSONデータの解析
-	#=================
-	var _json = JSON.new()
-	_json.parse(_load_data) # JSONの解析
-	var _dic:Dictionary = _json.get_data() # or Array
-	
-	#=============================
-	# 連想配列（Dictionary）の処理
-	#=============================
-	print(_dic["002"]["title"])
-	#-> VRコンテンツ開発ガイド 2017
-	print(_dic["002"]["isbn"])
-	#-> 978-4-8443-6666-9
-	print(_dic["002"]["price"])
-	#-> 2600
-	var _contents = _dic["002"]["contents"]
-	for _tmp in _contents:
-		var _chapter = _tmp["chapter"]
-		print(str(_chapter)+":"+_tmp["content"])
-		#-> 1:近代VRの基礎知識 など 
+  ……
+  #===================
+  # 外部JSONの読み込み
+  #===================
+  var _file = File.new()
+  _file.open("res://sample.json", File.READ)
+  var _load_data:String = _file.get_as_text()
+  _file.close()
+    
+  #=================
+  # JSONデータの解析
+  #=================
+  var _json = JSON.new()
+  _json.parse(_load_data) # JSONの解析
+  var _dic:Dictionary = _json.get_data() # or Array
+  
+  #=============================
+  # 連想配列（Dictionary）の処理
+  #=============================
+  print(_dic["002"]["title"])
+  #-> VRコンテンツ開発ガイド 2017
+  print(_dic["002"]["isbn"])
+  #-> 978-4-8443-6666-9
+  print(_dic["002"]["price"])
+  #-> 2600
+  var _contents = _dic["002"]["contents"]
+  for _tmp in _contents:
+    var _chapter = _tmp["chapter"]
+    print(str(_chapter)+":"+_tmp["content"])
+    #-> 1:近代VRの基礎知識 など 
 ```
 
 参考：[外部テキストの読み書き](#220620)  
@@ -3343,14 +3343,14 @@ func _ready():
 extends Node3D
 ……
 func _ready():
-	……	
-	var _rq = HTTPRequest.new()
-	add_child(_rq)
-	_rq.request_completed.connect(completed)
-	_rq.request("http://127.0.0.1/test.php")
+  ……  
+  var _rq = HTTPRequest.new()
+  add_child(_rq)
+  _rq.request_completed.connect(completed)
+  _rq.request("http://127.0.0.1/test.php")
 
 func completed(arg1, arg2, arg3, arg4):
-	print(arg4.get_string_from_utf8()) #-> 3.36.0
+  print(arg4.get_string_from_utf8()) #-> 3.36.0
 ```
 
 参考：[GODOT DOCS (**HTTPRequest**）](https://docs.godotengine.org/en/latest/classes/class_httprequest.html?highlight=HTTPRequest)  
@@ -3389,14 +3389,14 @@ func completed(arg1, arg2, arg3, arg4):
 extends Node3D
 ……
 func _ready():
-	……
-	var _rq = HTTPRequest.new()
-	add_child(_rq)
-	_rq.request_completed.connect(completed)
-	_rq.request("http://127.0.0.1/test.php")
+  ……
+  var _rq = HTTPRequest.new()
+  add_child(_rq)
+  _rq.request_completed.connect(completed)
+  _rq.request("http://127.0.0.1/test.php")
 
 func completed(arg1, arg2, arg3, arg4):
-	print(arg4.get_string_from_utf8()) #-> 3.36.0
+  print(arg4.get_string_from_utf8()) #-> 3.36.0
 ```
 
 実行環境：Windows 10、Godot 4.0 alpha 14、Apache 2.4.53、**PHP** 8.1.6、**[MariaDB](https://ja.wikipedia.org/wiki/MariaDB)** 10.4.24  
@@ -3587,40 +3587,40 @@ var __start:int
 var __demical:float
 
 func _ready():
-	_interface = XRServer.find_interface("OpenXR")
-	if _interface and _interface.is_initialized():
-		var _viewport:Viewport = get_viewport()
-		_viewport.use_xr = true
-	
-	__short_hand = $clock/clock_board/short_hand_center
-	__long_hand = $clock/clock_board/long_hand_center
-	__second_hand = $clock/clock_board/second_hand_board/second_hand_center
+  _interface = XRServer.find_interface("OpenXR")
+  if _interface and _interface.is_initialized():
+    var _viewport:Viewport = get_viewport()
+    _viewport.use_xr = true
+  
+  __short_hand = $clock/clock_board/short_hand_center
+  __long_hand = $clock/clock_board/long_hand_center
+  __second_hand = $clock/clock_board/second_hand_board/second_hand_center
 
 func _process(_delta):
-	var _now = Time.get_datetime_dict_from_system()
-	
-	# 機械式時計風（約6振動）処理＝力技
-	if (__current_second != null):
-		if (__current_second != _now.second):
-			# 秒が切り替わったタイミングで処理
-			__start = Time.get_unix_time_from_system()
-			__demical = 0
-			__timer.set_wait_time(0.167) # 約6振動
-			__timer.connect("timeout", loop)
-			add_child(__timer)
-			__timer.start()
-	__current_second = _now.second
+  var _now = Time.get_datetime_dict_from_system()
+  
+  # 機械式時計風（約6振動）処理＝力技
+  if (__current_second != null):
+    if (__current_second != _now.second):
+      # 秒が切り替わったタイミングで処理
+      __start = Time.get_unix_time_from_system()
+      __demical = 0
+      __timer.set_wait_time(0.167) # 約6振動
+      __timer.connect("timeout", loop)
+      add_child(__timer)
+      __timer.start()
+  __current_second = _now.second
 
-	__short_hand.rotation.y = - deg_to_rad(_now.hour * 30 + _now.minute * 0.5)
-	__long_hand.rotation.y = - deg_to_rad(_now.minute * 6 + _now.second / 60.0 * 6)
-	__second_hand.rotation.y = - deg_to_rad((_now.second + __demical) * 6.0)
-	
-	#__short_hand.rotation.y = - PI * (_now.hour * 30 + _now.minute * 0.5) / 180
-	#__long_hand.rotation.y = - PI * (_now.minute * 6 + _now.second / 60.0 * 6) / 180
-	#__second_hand.rotation.y = - PI * ((_now.second + __demical) * 6.0) / 180
+  __short_hand.rotation.y = - deg_to_rad(_now.hour * 30 + _now.minute * 0.5)
+  __long_hand.rotation.y = - deg_to_rad(_now.minute * 6 + _now.second / 60.0 * 6)
+  __second_hand.rotation.y = - deg_to_rad((_now.second + __demical) * 6.0)
+  
+  #__short_hand.rotation.y = - PI * (_now.hour * 30 + _now.minute * 0.5) / 180
+  #__long_hand.rotation.y = - PI * (_now.minute * 6 + _now.second / 60.0 * 6) / 180
+  #__second_hand.rotation.y = - PI * ((_now.second + __demical) * 6.0) / 180
 
 func loop():
-	__demical = Time.get_unix_time_from_system() - __start
+  __demical = Time.get_unix_time_from_system() - __start
 ```
 
 デモファイル：[clock.zip](https://github.com/mubirou/Godot/blob/main/zip/clock.zip)  
@@ -3752,43 +3752,43 @@ var _pieceNum = 50
 var _isRTriggerHold = false
 
 func _ready():
-	_interface = XRServer.find_interface("OpenXR")
-	if _interface and _interface.is_initialized():
-		var _viewport : Viewport = get_viewport()
-		_viewport.use_xr = true
-	
-	_rightHand = get_node("XROrigin3D/XRController3D_Right/Controller")
-	_piece0 = get_node("piece")
-	_pieceArray.append(_piece0)
-	for i in range(1, _pieceNum):
-		var _thePiece = _piece0.duplicate()
-		add_child(_thePiece)
-		_pieceArray.append(_thePiece)
-	_piece0.hide()
+  _interface = XRServer.find_interface("OpenXR")
+  if _interface and _interface.is_initialized():
+    var _viewport : Viewport = get_viewport()
+    _viewport.use_xr = true
+  
+  _rightHand = get_node("XROrigin3D/XRController3D_Right/Controller")
+  _piece0 = get_node("piece")
+  _pieceArray.append(_piece0)
+  for i in range(1, _pieceNum):
+    var _thePiece = _piece0.duplicate()
+    add_child(_thePiece)
+    _pieceArray.append(_thePiece)
+  _piece0.hide()
 
 func _process(delta):
-	if !_isRTriggerHold: return
-	_piece0.position = _rightHand.global_transform.origin
-	for i in range(0, _pieceNum):
-		var _thePiece  = _pieceArray[i]
-		var _frontPiece = _pieceArray[i-1]
-		var _disX = _frontPiece.position.x - _thePiece.position.x
-		var _disY = _frontPiece.position.y - _thePiece.position.y
-		var _disZ = _frontPiece.position.z - _thePiece.position.z
-		_thePiece.look_at(_frontPiece.position)
-		var _thePos = _thePiece.position
-		_thePos.x += _disX / 8
-		_thePos.y += _disY / 8
-		_thePos.z += _disZ / 8
-		_thePiece.position = _thePos
+  if !_isRTriggerHold: return
+  _piece0.position = _rightHand.global_transform.origin
+  for i in range(0, _pieceNum):
+    var _thePiece  = _pieceArray[i]
+    var _frontPiece = _pieceArray[i-1]
+    var _disX = _frontPiece.position.x - _thePiece.position.x
+    var _disY = _frontPiece.position.y - _thePiece.position.y
+    var _disZ = _frontPiece.position.z - _thePiece.position.z
+    _thePiece.look_at(_frontPiece.position)
+    var _thePos = _thePiece.position
+    _thePos.x += _disX / 8
+    _thePos.y += _disY / 8
+    _thePos.z += _disZ / 8
+    _thePiece.position = _thePos
 
 func _on_xr_controller_3d_right_button_pressed(name):
-	if name == "trigger_click":
-		_isRTriggerHold = true
-	
+  if name == "trigger_click":
+    _isRTriggerHold = true
+  
 func _on_xr_controller_3d_right_button_released(name):
-	if name == "trigger_click":
-		_isRTriggerHold = false
+  if name == "trigger_click":
+    _isRTriggerHold = false
 ```
 
 デモファイル：[pursuit.zip](https://github.com/mubirou/Godot/blob/main/zip/pursuit.zip)  
@@ -3842,70 +3842,70 @@ var _isLTriggerHold = false # 左の人差し指トリガーを押している�
 var _isRTriggerHold = false # 右の人差し指トリガーを押しているか
 
 func _ready():
-	# 決め打ち（VRに必須）
-	_interface = XRServer.find_interface("OpenXR")
-	if _interface and _interface.is_initialized():
-		var _viewport : Viewport = get_viewport()
-		_viewport.use_xr = true
+  # 決め打ち（VRに必須）
+  _interface = XRServer.find_interface("OpenXR")
+  if _interface and _interface.is_initialized():
+    var _viewport : Viewport = get_viewport()
+    _viewport.use_xr = true
 
-	# 各ノードの取得
-	_leftHand = get_node("XROrigin3D/XrController3d_Left/Controller")
-	_rightHand = get_node("XROrigin3D/XRController3D_Right/Controller")
-	_igaguri = get_node("Igaguri")
-	
-	# 衝突判定用（RigidBody3D.body_entered()と連動）
-	_igaguri.contact_monitor = true 
-	_igaguri.max_contacts_reported = 1
+  # 各ノードの取得
+  _leftHand = get_node("XROrigin3D/XrController3d_Left/Controller")
+  _rightHand = get_node("XROrigin3D/XRController3D_Right/Controller")
+  _igaguri = get_node("Igaguri")
+  
+  # 衝突判定用（RigidBody3D.body_entered()と連動）
+  _igaguri.contact_monitor = true 
+  _igaguri.max_contacts_reported = 1
 
 # 繰り返し実行（フレームレートに依存）
 func _process(delta):
-	if _isRTriggerHold: # 右の人差し指トリガーを押している場合
-		# イガグリを右コントローラーの位置に配置
-		_igaguri.position = _rightHand.global_transform.origin
+  if _isRTriggerHold: # 右の人差し指トリガーを押している場合
+    # イガグリを右コントローラーの位置に配置
+    _igaguri.position = _rightHand.global_transform.origin
 
 # 右の人差し指トリガーを押し込んだ時の処理
 func _on_xr_controller_3d_right_button_pressed(name):
-	if name == "trigger_click":
-		_isRTriggerHold = true
+  if name == "trigger_click":
+    _isRTriggerHold = true
 
 # 右の人差し指トリガーを離した時の処理
 func _on_xr_controller_3d_right_button_released(name):
-	if name == "trigger_click":
-		_isRTriggerHold = false
-		
-		if _isLTriggerHold: # 投てきの際 左の人差し指トリガーを押しているか
-			# 左右のコントローラーの位置の差を調べる
-			var _leftHandPos = _leftHand.global_transform.origin
-			var _rightHandPos = _rightHand.global_transform.origin
-			var _disPos:Vector3 = _leftHandPos - _rightHandPos
-			
-			# 重力のリセット
-			_igaguri.freeze = true
-			_igaguri.freeze = false
-			
-			# 微調整
-			var _powerX:float = _disPos.x * 3000
-			var _powerY:float = _disPos.y * 2500
-			var _powerZ:float = _disPos.z * 2500 
-			
-			# 投てき（イガグリに力を加える）
-			_igaguri.apply_force(Vector3(_powerX, _powerY, _powerZ))
+  if name == "trigger_click":
+    _isRTriggerHold = false
+    
+    if _isLTriggerHold: # 投てきの際 左の人差し指トリガーを押しているか
+      # 左右のコントローラーの位置の差を調べる
+      var _leftHandPos = _leftHand.global_transform.origin
+      var _rightHandPos = _rightHand.global_transform.origin
+      var _disPos:Vector3 = _leftHandPos - _rightHandPos
+      
+      # 重力のリセット
+      _igaguri.freeze = true
+      _igaguri.freeze = false
+      
+      # 微調整
+      var _powerX:float = _disPos.x * 3000
+      var _powerY:float = _disPos.y * 2500
+      var _powerZ:float = _disPos.z * 2500 
+      
+      # 投てき（イガグリに力を加える）
+      _igaguri.apply_force(Vector3(_powerX, _powerY, _powerZ))
 
 # 左の人差し指トリガーを押し込んだ時の処理
 func _on_xr_controller_3d_left_button_pressed(name):
-	if name == "trigger_click":
-		_isLTriggerHold = true
+  if name == "trigger_click":
+    _isLTriggerHold = true
 
 # 左の人差し指トリガーを離した時の処理
 func _on_xr_controller_3d_left_button_released(name):
-	if name == "trigger_click":
-		_isLTriggerHold = false
+  if name == "trigger_click":
+    _isLTriggerHold = false
 
 # イガグリが別のPhysicsBody3Dに衝突した時の処理
 func _on_igaguri_body_entered(_body):
-	# イガグリが的に命中したらくっつける
-	if _body == $Target/StaticBody3d_Stick:
-		_igaguri.freeze = true
+  # イガグリが的に命中したらくっつける
+  if _body == $Target/StaticBody3d_Stick:
+    _igaguri.freeze = true
 ```
 
 デモファイル：[igaguri.zip](https://github.com/mubirou/Godot/blob/main/zip/igaguri.zip)  
@@ -4099,64 +4099,64 @@ var _checkPointNum:int
 var _sp:MeshInstance3D # StartPoint
 
 func _ready():
-	_interface = XRServer.find_interface("OpenXR")
-	if _interface and _interface.is_initialized():
-		var _viewport:Viewport = get_viewport()
-		_viewport.use_xr = true
-	
-	_ball = $Pachinko/Ball
+  _interface = XRServer.find_interface("OpenXR")
+  if _interface and _interface.is_initialized():
+    var _viewport:Viewport = get_viewport()
+    _viewport.use_xr = true
+  
+  _ball = $Pachinko/Ball
 
 func _on_xr_controller_3d_right_button_pressed(_name):
-	if (_name == "trigger_click") or (_name == "trigger_touch"):
-		_triggerValue = 0.0
+  if (_name == "trigger_click") or (_name == "trigger_touch"):
+    _triggerValue = 0.0
 
-func _on_xr_controller_3d_right_button_released(_name):	
-	if _name == "trigger_click":
-		if !_isPrepared: return
-		_ball.apply_force(Vector3(0, _triggerValue*89.6, 0)) # 微調整
-		_isFall = false
+func _on_xr_controller_3d_right_button_released(_name):  
+  if _name == "trigger_click":
+    if !_isPrepared: return
+    _ball.apply_force(Vector3(0, _triggerValue*89.6, 0)) # 微調整
+    _isFall = false
 
 func _on_xr_controller_3d_right_input_value_changed(name, _value):
-	if _triggerValue < _value:
-		_triggerValue = _value
+  if _triggerValue < _value:
+    _triggerValue = _value
 
 func _on_area_3d_startpoint_body_entered(_body):
-	if _body == _ball:
-		_isPrepared = true
-		_sp.get_mesh().material.set_albedo(Color(0.8,0,0,1))
-		if _checkPoint != null:
-			# Pachinko/Checkpoints/Checkpoint_X を白（不透明度20％）に変更
-			_checkPoint.get_mesh().material.set_albedo(Color(1,1,1,0.2))
-			# Pachinko/MeshInstance3d_Body/Glass/checkpoint_1X の非表示
-			var _path = "Pachinko/MeshInstance3d_Body/Glass/checkpoint_"
-			var _label_a = get_node(_path + str(_checkPointNum) + "a")
-			var _label_b = get_node(_path + str(_checkPointNum) + "b")
-			_label_a.visible = false
-			_label_b.visible = false
-	
+  if _body == _ball:
+    _isPrepared = true
+    _sp.get_mesh().material.set_albedo(Color(0.8,0,0,1))
+    if _checkPoint != null:
+      # Pachinko/Checkpoints/Checkpoint_X を白（不透明度20％）に変更
+      _checkPoint.get_mesh().material.set_albedo(Color(1,1,1,0.2))
+      # Pachinko/MeshInstance3d_Body/Glass/checkpoint_1X の非表示
+      var _path = "Pachinko/MeshInstance3d_Body/Glass/checkpoint_"
+      var _label_a = get_node(_path + str(_checkPointNum) + "a")
+      var _label_b = get_node(_path + str(_checkPointNum) + "b")
+      _label_a.visible = false
+      _label_b.visible = false
+  
 func _on_area_3d_startpoint_body_exited(_body):
-	if _body == _ball:
-		_isPrepared = false
-		_sp.get_mesh().material.set_albedo(Color(0.2,0.2,0.2,1))
+  if _body == _ball:
+    _isPrepared = false
+    _sp.get_mesh().material.set_albedo(Color(0.2,0.2,0.2,1))
 
 # Area3d_checkpoint(＝Area3D)の[ノード]-[シグナル]で接続（"高度な設定"）
 func _on_area_3d_checkpoint_body_entered(_body, _int):
-	if _body != _ball: return # 今回はBallしか接触しないが…
-	if _isFall: return # バウンドして再度接触した場合は無視
-	_isFall = true
-	_checkPointNum = _int
+  if _body != _ball: return # 今回はBallしか接触しないが…
+  if _isFall: return # バウンドして再度接触した場合は無視
+  _isFall = true
+  _checkPointNum = _int
 
-	# Pachinko/Checkpoints/Checkpoint_X を赤（不透明度50％）に変更
-	var _path = "Pachinko/Checkpoints/Checkpoint_" + str(_checkPointNum)
-	_checkPoint = get_node(_path)
-	_checkPoint.get_mesh().material.set_albedo(Color(1,0,0,0.5))
-	
-	# Pachinko/MeshInstance3d_Body/Glass/checkpoint_1X の表示
-	_path = "Pachinko/MeshInstance3d_Body/Glass/checkpoint_"
-	var _label_a = get_node(_path + str(_checkPointNum) + "a")
-	var _label_b = get_node(_path + str(_checkPointNum) + "b")
-	_label_a.visible = true
-	_label_b.visible = true
+  # Pachinko/Checkpoints/Checkpoint_X を赤（不透明度50％）に変更
+  var _path = "Pachinko/Checkpoints/Checkpoint_" + str(_checkPointNum)
+  _checkPoint = get_node(_path)
+  _checkPoint.get_mesh().material.set_albedo(Color(1,0,0,0.5))
+  
+  # Pachinko/MeshInstance3d_Body/Glass/checkpoint_1X の表示
+  _path = "Pachinko/MeshInstance3d_Body/Glass/checkpoint_"
+  var _label_a = get_node(_path + str(_checkPointNum) + "a")
+  var _label_b = get_node(_path + str(_checkPointNum) + "b")
+  _label_a.visible = true
+  _label_b.visible = true
 ```
 
 ### 👉 主なポイント  
