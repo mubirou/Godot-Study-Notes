@@ -4103,8 +4103,8 @@ func _on_area_3d_body_entered(_body):
 
 >Pachinko（**Node3D**）  
 >　├ StaticBody3d_WorldBoundary（[**StaticBody3D**](https://bit.ly/3qFSGfW)）  
->　│　├ Top（💡[**WorldBoundaryShape3D**](https://bit.ly/3BFlrQ6)）（衝突判定する面）  
->　│　├ Left（💡[**WorldBoundaryShape3D**](https://bit.ly/3BFlrQ6)）（衝突判定する面）  
+>　│　├ Top（💡[**WorldBoundaryShape3D**](https://bit.ly/3BFlrQ6)）（衝突判定面）  
+>　│　├ Left（💡[**WorldBoundaryShape3D**](https://bit.ly/3BFlrQ6)）（衝突判定面）  
 >　│　│  
 >　├ MeshInstance3d_Body（**Node3D**）  
 >　│　├ Back**（**MeshInstance3D**）  
