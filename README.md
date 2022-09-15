@@ -4083,6 +4083,10 @@ func _on_area_3d_body_entered(_body):
 
 ### この項目は書きかけです
 
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202209151551.jpg)
+
+### 👉 主なポイント  
+
 デモファイル：[pachinko.zip](https://github.com/mubirou/Godot/blob/main/zip/pachinko.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 16、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
