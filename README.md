@@ -4111,14 +4111,14 @@ func _on_area_3d_body_entered(_body):
 >　│　├ Top**（**MeshInstance3D**）  
 >　│　│  
 
-📝 [**RigidBody3D.apply_force(Vector3)**](#220612-3) は薄い壁を通過してしまうため 💡[**WorldBoundaryShape3D**](https://bit.ly/3LhylqL)（無限平面）を利用  
-📝 参考：[各衝突オブジェクトの実用例（階層構造）](#220612-2)  
+* [**RigidBody3D.apply_force(Vector3)**](#220612-3) は薄い壁を通過してしまうため 💡[**WorldBoundaryShape3D**](https://bit.ly/3LhylqL)（無限平面）を利用  
+* 参考：[各衝突オブジェクトの実用例（階層構造）](#220612-2)  
 
 **4. チェックポイント（Checkpoint_X）**  
 
-Checkpoints（**MeshInstance3D**）  
-　└ Area3d_checkpoint（[**Area3D**](https://bit.ly/3KP38Lj)）  
-　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域）  
+>Checkpoints（**MeshInstance3D**）  
+>　└ Area3d_checkpoint（[**Area3D**](https://bit.ly/3KP38Lj)）  
+>　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域）  
 
 ### 👉 全スクリプト
 
