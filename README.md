@@ -4106,7 +4106,7 @@ func _on_area_3d_body_entered(_body):
 >　│　├ Top（💡[**WorldBoundaryShape3D**](https://bit.ly/3BFlrQ6)）  
 >　│　├ Left（💡[**WorldBoundaryShape3D**](https://bit.ly/3BFlrQ6)）  
 >　│　│  
->　├ MeshInstance3d＿Body（**Node3D**）  
+>　├ MeshInstance3d_Body（**Node3D**）  
 >　│　├ Back**（**MeshInstance3D**）  
 >　│　├ Top**（**MeshInstance3D**）  
 >　│　│  
