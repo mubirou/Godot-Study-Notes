@@ -4085,7 +4085,15 @@ func _on_area_3d_body_entered(_body):
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209151551.jpg)
 
-👉 全スクリプト
+### 👉 主な階層構造  
+
+**1. ボール（Ball）**  
+
+>Ball（[**RigidBody3D**](https://bit.ly/3RLyKnj)）  
+>　└ [**CollisionShape3d**](https://bit.ly/3cPefHm)（衝突判定する領域）  
+>　　└ SphereMesh（**MeshInstance3D**）（可視化）  
+
+### 👉 全スクリプト
 
 ```gdscript
 # /root/Main(Main.gd)
@@ -4162,8 +4170,6 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   _label_a.visible = true
   _label_b.visible = true
 ```
-
-### 👉 主なポイント  
 
 デモファイル：[pachinko.zip](https://github.com/mubirou/Godot/blob/main/zip/pachinko.zip)  
 実行環境：Windows 10、Godot 4.0 alpha 16、Meta Quest 43.0、Quest Link、Oculusアプリ  
