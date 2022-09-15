@@ -4092,6 +4092,7 @@ func _on_area_3d_body_entered(_body):
 >Ball（[**RigidBody3D**](https://bit.ly/3RLyKnj)）  
 >　└ [**CollisionShape3d**](https://bit.ly/3cPefHm)（衝突判定する領域）  
 >　　└ SphereMesh（**MeshInstance3D**）（可視化）  
+
 参考：[各衝突オブジェクトの実用例（階層構造）](#220612-2)  
 
 ### 👉 全スクリプト
