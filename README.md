@@ -4115,6 +4115,7 @@ func _on_area_3d_body_entered(_body):
 * 参考：[各衝突オブジェクトの実用例（階層構造）](#220612-2)  
 
 **4. チェックポイント（Checkpoint_X）**  
+Ball が通過すると得点になるエリア（**Area3D**）
 
 >Checkpoints（**MeshInstance3D**）  
 >　└ Area3d_checkpoint（[**Area3D**](https://bit.ly/3KP38Lj)）  
