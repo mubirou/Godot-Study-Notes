@@ -4120,7 +4120,8 @@ func _on_area_3d_body_entered(_body):
 >　└ Area3d_startpoint（[**Area3D**](https://bit.ly/3KP38Lj)）＝💡シグナル接続    
 >　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域） 
 
-* [Area3D]-[ノード]-[シグナル]-[Area3D] の "body_entered(…" および "body_exited(…" →[右クリック]→[接続] から「**メソッドにシグナルを接続**」し **_on_area_3d_startpoint_body_entered(_body)** および **_on_area_3d_startpoint_body_exited(_body)** メソッドを作成（参照：[イベントの接続](#220703-1)）  
+* [Area3D]-[ノード]-[シグナル]-[Area3D] の "body_entered(…" および "body_exited(…" →[右クリック]→[接続] から「**メソッドにシグナルを接続**」して次のメソッドを作成（参照：[イベントの接続](#220703-1)）  **_on_area_3d_startpoint_body_entered(_body)**  
+**_on_area_3d_startpoint_body_exited(_body)**  
 
 **5. チェックポイント（Checkpoint_X）**  
 Ball が通過すると得点になるエリア（[**Area3D**](https://bit.ly/3KP38Lj)）
@@ -4129,7 +4130,7 @@ Ball が通過すると得点になるエリア（[**Area3D**](https://bit.ly/3K
 >　└ Area3d_checkpoint（[**Area3D**](https://bit.ly/3KP38Lj)）＝💡シグナル接続  
 >　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域）  
 
-* スタート地点と同様「**メソッドにシグナルを接続**」する事に加え「**高度な設定**」から int 型の「**呼び出し引数を追加**」して **_on_area_3d_checkpoint_body_entered(_body, _int)** メソッドを作成  
+* スタート地点と同様「**メソッドにシグナルを接続**」する事に加え「**高度な設定**」から int 型の「**呼び出し引数を追加**」して次のメソッド作成   **_on_area_3d_checkpoint_body_entered(_body, _int)**  
 
 ### 👉 全スクリプト
 
