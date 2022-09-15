@@ -4129,7 +4129,7 @@ Ball が通過すると得点になるエリア（[**Area3D**](https://bit.ly/3K
 >　└ Area3d_startpoint（[**Area3D**](https://bit.ly/3KP38Lj)）＝💡シグナル接続    
 >　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域） 
 
-* [**Area3D**]-[**ノード**]-[シグナル]-[**Area3D**] の **body_entered(body: Node3D)** および **body_exited(body: Node3D)** →[右クリック]→[**接続**] からイベントを接続し
+* [**Area3D**]-[**ノード**]-[シグナル]-[**Area3D**] の "**body_entered(body: Node3D)**" および "**body_exited(body: Node3D)**" →[右クリック]→[**接続**] からイベントを接続し
 **_on_area_3d_startpoint_body_entered(_body)** および **_on_area_3d_startpoint_body_exited(_body)** を作成（参照：[**イベントの接続**](#220703-1)）  
 
 ### 👉 全スクリプト
