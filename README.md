@@ -4117,9 +4117,15 @@ func _on_area_3d_body_entered(_body):
 **4. チェックポイント（Checkpoint_X）**  
 Ball が通過すると得点になるエリア（[**Area3D**](https://bit.ly/3KP38Lj)）
 
->Checkpoints（**MeshInstance3D**）  
+>Checkpoint_1（**MeshInstance3D**）  
 >　└ Area3d_checkpoint（[**Area3D**](https://bit.ly/3KP38Lj)）  
 >　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域）  
+
+**5. スタート地点（StartPoint）**  
+
+>StartPoint（**MeshInstance3D**）  
+>　└ Area3d_checkpoint（[**Area3D**](https://bit.ly/3KP38Lj)）  
+>　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域） 
 
 ### 👉 全スクリプト
 
