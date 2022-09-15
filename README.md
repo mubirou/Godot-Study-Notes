@@ -4102,7 +4102,7 @@ func _on_area_3d_body_entered(_body):
 **3. 壁など**  
 
 >Pachinko（**Node3D**）  
->　├ StaticBody3d_WorldBoundary[**StaticBody3D**](https://bit.ly/3qFSGfW)  
+>　├ StaticBody3d_WorldBoundary（[**StaticBody3D**](https://bit.ly/3qFSGfW)）  
 >　│　├ Top（💡[**WorldBoundaryShape3D**](https://bit.ly/3BFlrQ6)）  
 >　│　├ Left（💡[**WorldBoundaryShape3D**](https://bit.ly/3BFlrQ6)）  
 >　│　│  
@@ -4110,11 +4110,6 @@ func _on_area_3d_body_entered(_body):
 >　│　├ Back**（**MeshInstance3D**）  
 >　│　├ Top**（**MeshInstance3D**）  
 >　│　│  
-
-
->01（[**StaticBody3D**](https://bit.ly/3qFSGfW)）  
->　└ [**CollisionShape3d**](https://bit.ly/3cPefHm)（衝突判定する領域）  
->　　└ **MeshInstance3D**（CylinderMesh / 可視化）  
 
 参考：[各衝突オブジェクトの実用例（階層構造）](#220612-2)  
 
