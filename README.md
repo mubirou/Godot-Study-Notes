@@ -4086,6 +4086,7 @@ func _on_area_3d_body_entered(_body):
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209151551.jpg)
 
 ### 👉 主な階層構造  
+参考：[各衝突オブジェクトの実用例（階層構造）](#220612-2)  
 
 **1. ボール（Ball）**  
 
@@ -4112,7 +4113,6 @@ func _on_area_3d_body_entered(_body):
 >　│　│  
 
 * [**RigidBody3D.apply_force(Vector3)**](#220612-3) は薄い壁を通過してしまうため 💡[**WorldBoundaryShape3D**](https://bit.ly/3LhylqL)（無限平面）を利用  
-* 参考：[各衝突オブジェクトの実用例（階層構造）](#220612-2)  
 
 **4. チェックポイント（Checkpoint_X）**  
 Ball が通過すると得点になるエリア（[**Area3D**](#220612-1)）
