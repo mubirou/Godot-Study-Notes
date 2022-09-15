@@ -4111,7 +4111,7 @@ func _on_area_3d_body_entered(_body):
 >　│　├ Top**（**MeshInstance3D**）  
 >　│　│  
 
-📝注意：[**RigidBody3D.apply_force(Vector3)**](#220612-3) は薄い壁を通過してしまうため [**WorldBoundaryShape3D**](https://bit.ly/3LhylqL)（無限平面）を利用  
+📝注意：[**RigidBody3D.apply_force(Vector3)**](#220612-3) は薄い壁を通過してしまうため [**WorldBoundaryShape3D**](https://bit.ly/3LhylqL)（無限平面）を利用。  
 📝参考：[各衝突オブジェクトの実用例（階層構造）](#220612-2)  
 
 ### 👉 全スクリプト
