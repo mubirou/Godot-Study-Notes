@@ -4032,7 +4032,7 @@ func _on_area_3d_body_entered(_body):
 ```
 ***
 
-### 👉 ➂物理エンジンによる移動 x 衝突判定
+### 👉 ➂物理エンジンによる移動 x 衝突判定<a id="220612-3"></a>
 
 * [**RigidBody3D.apply_force(Vector3)**](https://bit.ly/3BmO9F0)
 
@@ -4111,6 +4111,7 @@ func _on_area_3d_body_entered(_body):
 >　│　├ Top**（**MeshInstance3D**）  
 >　│　│  
 
+注意：[**RigidBody3D.apply_force(Vector3)**](#220612-3") による衝突判定の場合は薄い壁は通過してしまうため「無限平面」である [**WorldBoundaryShape3D**](https://bit.ly/3BFlrQ6) を利用
 参考：[各衝突オブジェクトの実用例（階層構造）](#220612-2)  
 
 ### 👉 全スクリプト
