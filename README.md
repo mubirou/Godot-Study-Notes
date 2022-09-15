@@ -4080,7 +4080,7 @@ func _on_area_3d_body_entered(_body):
 
 <a id="220902"></a>
 # <b>Pachinkoゲーム</b>
-右人差し指トリガー（トリガー量で調整）でボールを打つパチンコ  
+右人差し指トリガー（トリガー量で調整）でボールを打つパチンコのサンプル  
 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202209151551.jpg)
 
