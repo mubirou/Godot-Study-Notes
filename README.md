@@ -4115,7 +4115,7 @@ func _on_area_3d_body_entered(_body):
 * [**RigidBody3D.apply_force(Vector3)**](#220612-3) は薄い壁を通過してしまうため 💡[**WorldBoundaryShape3D**](https://bit.ly/3LhylqL)（無限平面）を利用  
 
 **4. チェックポイント（Checkpoint_X）**  
-Ball が通過すると得点になるエリア（[**Area3D**](#220612-1)）
+Ball が通過すると得点になるエリア（[**Area3D**](https://bit.ly/3KP38Lj)）
 
 >Checkpoints（**MeshInstance3D**）  
 >　└ Area3d_checkpoint（[**Area3D**](https://bit.ly/3KP38Lj)）  
