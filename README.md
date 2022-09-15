@@ -4120,8 +4120,11 @@ func _on_area_3d_body_entered(_body):
 >　└ Area3d_startpoint（[**Area3D**](https://bit.ly/3KP38Lj)）＝💡シグナル接続    
 >　　└ [**CollisionShape3D**](https://bit.ly/3cPefHm)（衝突判定する領域） 
 
-* [Area3D]-[ノード]-[シグナル]-[Area3D] の "body_entered(…" および "body_exited(…" →[右クリック]→[接続] から「**メソッドにシグナルを接続**」して次のメソッドを作成（参照：[イベントの接続](#220703-1)）  **_on_area_3d_startpoint_body_entered(_body)**  
-**_on_area_3d_startpoint_body_exited(_body)**  
+* [Area3D]-[ノード]-[シグナル]-[Area3D] の "body_entered(…" および "body_exited(…" →[右クリック]→[接続] から「**メソッドにシグナルを接続**」して次のメソッドを作成（参照：[イベントの接続](#220703-1)）  
+    ```gdscript
+    _on_area_3d_startpoint_body_entered(_body) 
+    _on_area_3d_startpoint_body_exited(_body)
+    ```
 
 **5. チェックポイント（Checkpoint_X）**  
 Ball が通過すると得点になるエリア（[**Area3D**](https://bit.ly/3KP38Lj)）
