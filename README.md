@@ -1,5 +1,5 @@
 # Godot Study Notes 🔰<a id="TOP"></a>
-⌚ 545h15min  
+⌚ 546h15min  
 
 ### **Index（Godot 4.0 C# 対応）**
 [C#基礎文法](https://bit.ly/3BLWWkf) 🔥 | [VR入門（C#版）](#220918) |
