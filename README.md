@@ -1,5 +1,5 @@
 # Godot Study Notes 🔰<a id="TOP"></a>
-⌚ 541h00min  
+⌚ 545h15min  
 
 ### **Index（Godot 4.0 C# 対応）**
 [C#基礎文法](https://bit.ly/3BLWWkf) |
