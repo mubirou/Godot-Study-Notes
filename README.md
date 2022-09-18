@@ -2,7 +2,7 @@
 ⌚ 545h15min  
 
 ### **Index（Godot 4.0 C# 対応）**
-[C#基礎文法](https://bit.ly/3BLWWkf) |
+[C#基礎文法](https://bit.ly/3BLWWkf) 🔥 |
 ***
 
 ### **Index（Godot 4.0 GDScript 対応）**
