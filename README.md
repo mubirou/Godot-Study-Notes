@@ -2,11 +2,11 @@
 ⌚ 545h15min  
 
 ### **Index（Godot 4.0 C# 対応）**
-[C#基礎文法](https://bit.ly/3BLWWkf) 🔥 |
+[C#基礎文法](https://bit.ly/3BLWWkf) 🔥 | [VR入門（C#版）](#220918) |
 ***
 
 ### **Index（Godot 4.0 GDScript 対応）**
-[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [VR入門](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [360°パノラマ](#220710) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [オブジェクト色](#220506) | [移動の基本3種](#220611) | [衝突判定領域](#220801) | [ボーンにアタッチ](#220802) | [テキストのスクロール](#220803) | [シーン遷移](#220804) | [共有データ](#220806) | [他人のメソッドの実行](#220807) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [機械式時計](#220808) | [洋書小説](#220809) | [追跡](#220504) | [Igaguriゲーム](#220901) | [衝突判定](#220612) | [Pachinkoゲーム](#220902) | [ドローン](#220903) |
+[GDScript基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/GDScript/GDScript_reference.md#gdscript-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [VR入門（GDScript版）](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [360°パノラマ](#220710) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [オブジェクト色](#220506) | [移動の基本3種](#220611) | [衝突判定領域](#220801) | [ボーンにアタッチ](#220802) | [テキストのスクロール](#220803) | [シーン遷移](#220804) | [共有データ](#220806) | [他人のメソッドの実行](#220807) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [機械式時計](#220808) | [洋書小説](#220809) | [追跡](#220504) | [Igaguriゲーム](#220901) | [衝突判定](#220612) | [Pachinkoゲーム](#220902) | [ドローン](#220903) |
 ***
 
 ### **Index（Godot 4.0 C# / GDScript 共通）**
@@ -1386,7 +1386,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 
 <a id="220702"></a>
-# <b>VR入門</b>
+# <b>VR入門（GDScript版）</b>
 
 1. [**Quest Link（Oculus Link）の準備**](https://github.com/mubirou/Unity3D/tree/master/study-notes#oculus-link%E3%81%AE%E6%BA%96%E5%82%99) を行う
 1. [新規プロジェクト]（レンダラー：**Vulkan Clustered**）を作成
@@ -1419,6 +1419,40 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月02日  
+[[TOP]](#TOP)
+
+
+<a id="220918"></a>
+# <b>VR入門（C#版）</b>
+
+### この項目は書きかけです（動作せず）
+
+[VR入門（GDScript版）](#220702) のスクリプトの部分のみ以下の通りに変更  
+
+```csharp
+// Main.cs
+using Godot;
+
+public partial class Main : Node3D {
+    private OpenXRInterface _interface;
+    
+    public override void _Ready() {
+        _interface = XRServer.FindInterface("OpenXR") as OpenXRInterface;
+        if ((_interface != null) && _interface.IsInitialized()) {
+            Window _viewport = GetViewport() as Window;
+            _viewport.UseXr = true;
+        }
+        //GD.Print(_interface); //-> <OpenXRInterface#-9223372031871942494>
+        //GD.Print(_interface.IsInitialized()); //-> False
+        //GD.Print(GetViewport()); //-> <Window#24041750959>
+        //GD.Print(GetViewport().UseXr); //-> False
+    }
+}
+```
+
+実行環境：Windows 10、Godot 4.0 beta 1、Meta Quest 43.0、Quest Link、Oculusアプリ  
+作成者：夢寐郎  
+作成日：2022年09月XX日  
 [[TOP]](#TOP)
 
 
