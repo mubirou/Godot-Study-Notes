@@ -1910,10 +1910,10 @@ Main（**Node3D**）
 
 デモファイル：[teleport.zip](https://github.com/mubirou/Godot/blob/main/zip/teleport.zip)  
 参考：[Godot 4 OpenXR demo project](https://github.com/BastiaanOlij/godot4_openxr_demo)  
-実行環境：Windows 10、Godot 4.0 alpha 14、[Godot XR Tools](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd)、Meta Quest 42.0、Quest Link、Oculusアプリ  
+実行環境：Windows 10、Godot 4.0 beta 1、[Godot XR Tools](https://github.com/BastiaanOlij/godot4_openxr_demo/blob/master/addons/godot-xr-tools/functions/Function_Teleport.gd)、Meta Quest 43.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月09日  
-更新日：2022年08月12日 Godot 4.0 alpha 14 に対応  
+更新日：2022年09月12日 デモファイルを Godot 4.0 beta 1 に対応  
 [[TOP]](#TOP)
 
 
