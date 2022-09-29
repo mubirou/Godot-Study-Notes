@@ -4281,6 +4281,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 
 ### この項目は書きかけです
 
+参考：[GODOT DOCS(Normal Map)](https://bit.ly/3frSPky)  
 デモファイル：[NomalMapping.zip](https://github.com/mubirou/Godot/blob/main/zip/NomalMapping.zip)  
 実行環境：Windows 10、Godot 4.0 Beta 1、Meta Quest 43.0、Quest Link、Oculusアプリ   
 作成者：夢寐郎  
