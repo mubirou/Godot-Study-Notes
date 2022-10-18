@@ -4292,7 +4292,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 <a id="221018"></a>
 # <b>三灯照明</b>
 
-![image](https://github.com/mubirou/Godot/blob/main/jpg/202210181507.jpg)
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202210181510.jpg)
 
 デモファイル：[ThreePointLighting.zip](https://github.com/mubirou/Godot/blob/main/zip/ThreePointLighting.zip)  
 実行環境：Windows 10、Godot 4.0 Beta 3、Meta Quest 46.0、Quest Link、Oculusアプリ   
