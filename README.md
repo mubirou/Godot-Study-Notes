@@ -1958,7 +1958,7 @@ func _ready():
 実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月09日  
-更新日：2023年10月13日 Godot 4.1.2、Quest 3 で動作確認＆微調整
+更新日：2023年10月13日 Godot 4.1.2、Quest 3 で動作確認  
 [[TOP]](#TOP)
 
 
@@ -2010,7 +2010,7 @@ func loop():
 実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月04日  
-更新日：2022年07月13日 Godot 4.0 対応    
+更新日：2022年07月13日 Godot 4.0 対応  
 [[TOP]](#TOP)
 
 
