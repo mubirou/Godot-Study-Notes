@@ -1774,6 +1774,7 @@ public partial class Main : Node3D {
           ～テレポート用の青い矢印が動きだす～  
           （"Function_Teleport" には ⚠ がついたまま）  
 
+<a id="220706_yuka"></a>
 📝 [**床の作成**](#220705)  
 
 1. 上記の床（**MeshInstance3D** / **PlaneMesh**）に [**StaticBody3D**](https://docs.godotengine.org/en/latest/classes/class_staticbody3d.html?highlight=StaticBody3D#staticbody3d) を加える 
@@ -1921,7 +1922,7 @@ Main（**Node3D**）
 て [**RayCast3D**](https://docs.godotengine.org/en/latest/classes/class_raycast3d.html?highlight=RayCast3D#raycast3d) が衝突を報告しないように衝突例外を追加します  
 
 1. [**レーザーポインター（RayCast）**](#220704) の作業を行う  
-2. [**床の作成**](#220705) を行う  
+2. [**床の作成**](#220705) を行う（[参照](#220706_yuka)）  
 
 （これまでの作業の階層）  
 Main（Node3D）  
