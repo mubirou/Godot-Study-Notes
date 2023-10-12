@@ -1467,7 +1467,7 @@ public partial class Main : Node3D {
 1. [**XRController3D_Right**] を選択し [**ノード**] タブを選ぶ
 1. [ノード]-[**XRcontroller3D**]-[**button_pressed(name:String)**] を選択し [右クリック]-[**接続**]（下図）  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207040006.jpg)  
-1. [**メソッドにシグナルを接続**] ダイアログが表示されたら [接続] ボタンを選択（下図）  
+1. [**メソッドにシグナルを接続**] ダイアログが表示されたら [**接続**] ボタンを選択（下図）  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207032357.jpg)  
 💡 上記の作業の意味  
 [**XRController3D**_Right] の [**button_pressed(name:String)**] イベントが [**Main**] ノードにアタッチされたスクリプト内に生成される "**_on_xr_controller_3d_right_button_pressed**" という名前（変更可能）のメソッド（イベントハンドラー）で受信される  
