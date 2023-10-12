@@ -1484,17 +1484,16 @@ public partial class Main : Node3D {
     # res://Main.gd
     extends Node3D
 
-    var _interface : XRInterface
+    var _interface: XRInterface
 
     func _ready():
       _interface = XRServer.find_interface("OpenXR")
       if _interface and _interface.is_initialized():
-        var _viewport : Viewport = get_viewport()
-        _viewport.use_xr = true
+        get_viewport().use_xr = true
 
     func _on_xr_controller_3d_right_button_pressed(name):
       print("Pressed: " + name)
-      
+
     func _on_xr_controller_3d_right_button_released(name):
       print("Released: " + name)
     ```
