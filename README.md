@@ -1386,28 +1386,28 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 # <b>VR入門</b>
 
 1. [**Quest Link（Oculus Link）の準備**](https://github.com/mubirou/Unity3D/tree/master/study-notes#oculus-link%E3%81%AE%E6%BA%96%E5%82%99) を行う
-1. [新規プロジェクト]（レンダラー：**Vulkan Clustered**）を作成
-1. シーンに以下のようにノードを追加  
+1. [新規プロジェクト]（レンダラー：**Forward+**）を作成
+1. [プロジェクト]-[プロジェクト設定]-[**XR**] の設定＆再起動  
+    * [**OpenXR**]-[有効]：**✓オン**
+    * [**シェーダー**]-[有効]：**✓オン**
+1. [保存して再起動] する
+1. [3Dシーン] を選択してシーンに以下のようにノードを追加  
     Main（**Node3D**）  
   　  └ **XROrigin3D**  
   　　  └ **XRCamera3D**  
-1. [プロジェクト]-[プロジェクト設定]-[**XR**] の設定＆再起動  
-    * [**OpenXR**]-[Enabled]：**✓オン**
-    * [**シェーダー**]-[Enabled]：**✓オン**
 
-1. 大元の Node3D を選択し以下のスクリプトをアタッチ  
+1. 大元の Node3D（Main）を選択し以下のスクリプトをアタッチ  
 
     ```gdscript
-    # /root/Main(Main.gd)
+    # res://Main.gd
     extends Node3D
 
-    var _interface:XRInterface
+    var _interface: XRInterface
 
     func _ready():
       _interface = XRServer.find_interface("OpenXR")
       if _interface and _interface.is_initialized():
-        var _viewport:Viewport = get_viewport()
-        _viewport.use_xr = true
+        get_viewport().use_xr = true
     ```
 
 参考：C#版（Godot 4.0 beta1 で動作せず）
@@ -1432,13 +1432,13 @@ public partial class Main : Node3D {
 }
 ```
 
-1. [実行] し **Quest** 上で動作確認（何もまだない状態）  
+1. [実行] し **Quest** 上で動作確認（Quest で実行しても真っ暗な状態）  
 
 デモファイル：[vr_start.zip](https://github.com/mubirou/Godot/blob/main/zip/vr_start.zip)  
-実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
+実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月02日  
-更新日：2022年09月20日 C#版追加  
+更新日：2023年10月12日 Quest 4.1.2 対応  
 [[TOP]](#TOP)
 
 
