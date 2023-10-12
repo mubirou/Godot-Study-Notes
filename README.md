@@ -1341,7 +1341,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     1. [**Ricty Diminished Discord（Regular）**](https://github.com/edihbrandon/RictyDiminished/blob/master/RictyDiminishedDiscord-Regular.ttf) をダウンロード＆インストール  
     1. [ファイル（File）]-[ユーザー設定（preferences）]-[設定（Settings）]-[設定の検索（Search settings）] で "**Editor font family**" を検索
     1. [**Editor: Font Family**]-[フォント ファミリを制御します。] に「**'Ricty Diminished Discord Regular'**」と入力し再起動  
-    参考： [M PLUS 1 Code（Regular）](https://github.com/coz-m/MPLUS_FONTS/blob/master/fonts/otf/Mplus1Code-Regular.otf) （設定：'M PLUS 1 Code Regular'）もあり  
+    参考： [M PLUS 1 Code（Regular）](https://github.com/coz-m/MPLUS_FONTS/blob/master/fonts/otf/Mplus1Code-Regular.otf) （'M PLUS 1 Code Regular'）もあり  
 
 参考：[フォント設定](#220715)  
 実行環境：Windows 11、Godot 4.1.2、VSCode 1.83.1  
