@@ -3,7 +3,7 @@
 ### **Index（Godot 4.x 対応）**
 
 ＜プログラミングあり＞  
-| [GDScript基礎文法](https://bit.ly/3qTpnqi)  | [C#基礎文法](https://bit.ly/3BLWWkf) | [**VR入門**](#220702) | [**VRコントローラーの入力イベント**](#220703) | [**レーザーポインター（RayCast）**](#220704) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [360°パノラマ](#220710) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [オブジェクト色](#220506) | [移動の基本3種](#220611) | [衝突判定領域](#220801) | [ボーンにアタッチ](#220802) | [テキストのスクロール](#220803) | [シーン遷移](#220804) | [共有データ](#220806) | [他人のメソッドの実行](#220807) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [機械式時計](#220808) | [洋書小説](#220809) | [追跡](#220504) | [Igaguriゲーム](#220901) | [衝突判定](#220612) | [Pachinkoゲーム](#220902) | [ドローン](#220904) |
+| [GDScript基礎文法](https://bit.ly/3qTpnqi)  | [C#基礎文法](https://bit.ly/3BLWWkf) | [**VR入門**](#220702) | [**VRコントローラーの入力イベント**](#220703) | [**レーザーポインター（RayCast）**](#220704) | [**RayCastからの除外**](#220707) | [デジタル時計](#220708) | [360°パノラマ](#220710) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [オブジェクト色](#220506) | [移動の基本3種](#220611) | [衝突判定領域](#220801) | [ボーンにアタッチ](#220802) | [テキストのスクロール](#220803) | [シーン遷移](#220804) | [共有データ](#220806) | [他人のメソッドの実行](#220807) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [機械式時計](#220808) | [洋書小説](#220809) | [追跡](#220504) | [Igaguriゲーム](#220901) | [衝突判定](#220612) | [Pachinkoゲーム](#220902) | [ドローン](#220904) |
 
 ＜ノンプログラミング＞  
 | [**外部スクリプトエディタ**](#220630) | [プリミティブ](#220701) | [床タイル](#220705) | [パーティクル](#220709) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [背景色](#背景色) | [衝突判定領域](#220801) | [摩擦係数と反発係数](#220805) | [テレポート移動](#220706) | [ノーマルマッピング](#220903) | [三灯照明](#221018) |
@@ -1823,14 +1823,14 @@ Main（**Node3D**）
 　 ├ **XROrigin3D**  
 　 │ ├ **XRCamera3D**  
 　 │ └ **XRController3D**_Left  
-　 │　　├ Controller（左コントローラの視覚化）    
+　 │　　├ Controller（左コントローラの視覚化）  
 　 │　　└ **Function_Teleport**（**CharacterBody3D**）  
-　 │　　　　├ **Teleport**（**PlaneMesh**）    
-　 │　　　　├ **Target**（**PlaneMesh**）    
+　 │　　　　├ **Teleport**（**PlaneMesh**）  
+　 │　　　　├ **Target**（**PlaneMesh**）  
 　 │　　　　└ **CollisionShape3D**（**CapsuleShape3D**）  
 　 ├ Floor（**PlaneMesh**）  
 　 │ └ **StaticBody3D**  
-　 │　　└ **CollisionShape3D**    
+　 │　　└ **CollisionShape3D**  
 　 └ DirecionalLight3D  
 
 📝 **スクリプトのアタッチ**  
@@ -1950,14 +1950,15 @@ func _ready():
   _rayCast_R = _controller_R.get_node("RayCast3D")
   ...
   # RayCast からの除外
-  var _physicsBody  = $Floor/StaticBody3D
-  _rayCast_R.add_exception(_physicsBody)
+  var _physicsBody  = $Floor/StaticBody3D  # ←追加
+  _rayCast_R.add_exception(_physicsBody)  # ←追加
 ```
 
 デモファイル：[teleport.zip](https://github.com/mubirou/Godot/blob/main/zip/teleport.zip)  
-実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
+実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月09日  
+更新日：2023年10月13日 Godot 4.1.2、Quest 3 で動作確認＆微調整
 [[TOP]](#TOP)
 
 
