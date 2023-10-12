@@ -1950,8 +1950,8 @@ func _ready():
   _rayCast_R = _controller_R.get_node("RayCast3D")
   ...
   # RayCast からの除外
-  var _physicsBody  = $Floor/StaticBody3D  # ←追加
-  _rayCast_R.add_exception(_physicsBody)  # ←追加
+  var _physicsBody  = $Floor/StaticBody3D  # 追加
+  _rayCast_R.add_exception(_physicsBody)  # 追加
 ```
 
 デモファイル：[teleport.zip](https://github.com/mubirou/Godot/blob/main/zip/teleport.zip)  
