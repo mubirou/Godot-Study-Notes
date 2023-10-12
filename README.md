@@ -1954,7 +1954,7 @@ func _ready():
   _rayCast_R.add_exception(_physicsBody)  # 追加
 ```
 
-デモファイル：[teleport.zip](https://github.com/mubirou/Godot/blob/main/zip/teleport.zip)  
+デモファイル：[RayCast.zip](https://github.com/mubirou/Godot/blob/main/zip/RayCast.zip)  
 実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月09日  
