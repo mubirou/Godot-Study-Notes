@@ -6,7 +6,7 @@
 | [GDScript基礎文法](https://bit.ly/3qTpnqi)  | [C#基礎文法](https://bit.ly/3BLWWkf) | [**VR入門**](#220702) | [VRコントローラーの入力イベント](#220703) | [レーザーポインター（RayCast）](#220704) | [RayCastからの除外](#220707) | [デジタル時計](#220708) | [360°パノラマ](#220710) | [ボタン](#220716) | [ジョイスティック角度](#220608) | [トリガー量](#220717) | [オブジェクト色](#220506) | [移動の基本3種](#220611) | [衝突判定領域](#220801) | [ボーンにアタッチ](#220802) | [テキストのスクロール](#220803) | [シーン遷移](#220804) | [共有データ](#220806) | [他人のメソッドの実行](#220807) | [外部テキストの読み書き](#220620) | [JSONの解析](#220621) | [PHP+SQLite](#220622) | [PHP+MySQL](#220623) | [Python+SQLite](#220624) | [Python+MySQL](#220625) | [機械式時計](#220808) | [洋書小説](#220809) | [追跡](#220504) | [Igaguriゲーム](#220901) | [衝突判定](#220612) | [Pachinkoゲーム](#220902) | [ドローン](#220904) |
 
 ＜ノンプログラミング＞  
-| [外部スクリプトエディタ](#220630) | [プリミティブ](#220701) | [床タイル](#220705) | [パーティクル](#220709) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [背景色](#背景色) | [衝突判定領域](#220801) | [摩擦係数と反発係数](#220805) | [テレポート移動](#220706) | [ノーマルマッピング](#220903) | [三灯照明](#221018) |
+| [**外部スクリプトエディタ**](#220630) | [プリミティブ](#220701) | [床タイル](#220705) | [パーティクル](#220709) | [鏡面仕上げボール](#220711) | [ライト3種](#220712) | [Mixamo](#220713) | [Mixamoマルチポーズ](#220714) | [フォント設定](#220715) | [Picture-in-Picture](#220613) | [動画再生](#220602) | [Oculus Air Link](#220604) | [Blender to Godot](#220609) | [背景色](#背景色) | [衝突判定領域](#220801) | [摩擦係数と反発係数](#220805) | [テレポート移動](#220706) | [ノーマルマッピング](#220903) | [三灯照明](#221018) |
 ***
 
 ### **Index（Godot 3.4 対応）**
@@ -1335,21 +1335,19 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 1. Visual Studio Code の設定  
     1. VSCode を起動
-    1. [表示]-[外観]-[アクティビティバーを表示する]
-    1. 左側アイコンの一番下を選択
-    1. [Marketplaceで機能拡張を検索] で **Godot** を検索
-    1. **godot-tolls** をインストール
+    1. [アクティビティバー（Activity Bar）] から **godot-tolls** をインストール
 
 1. Visual Studio Code のフォントの設定
-    1. [**Ricty Diminished Discord（Regular）**](https://github.com/edihbrandon/RictyDiminished/blob/master/RictyDiminishedDiscord-Regular.ttf) と [M PLUS 1 Code（Regular）](https://github.com/coz-m/MPLUS_FONTS/blob/master/fonts/otf/Mplus1Code-Regular.otf) をダウンロード＆インストール  
-    1. [ファイル]-[ユーザー設定]-[設定]-[設定の検索] で "Editor font family" を検索
-    1. [Editor: Font Family]-[フォント ファミリを制御します。] に「**'Ricty Diminished Discord Regular', 'M PLUS 1 Code Regular'**」と入力し再起動
+    1. [**Ricty Diminished Discord（Regular）**](https://github.com/edihbrandon/RictyDiminished/blob/master/RictyDiminishedDiscord-Regular.ttf) をダウンロード＆インストール  
+    1. [ファイル（File）]-[ユーザー設定（preferences）]-[設定（Settings）]-[設定の検索（Search settings）] で "**Editor font family**" を検索
+    1. [**Editor: Font Family**]-[フォント ファミリを制御します。] に「**'Ricty Diminished Discord Regular'**」と入力し再起動  
+    （参考） [M PLUS 1 Code（Regular）](https://github.com/coz-m/MPLUS_FONTS/blob/master/fonts/otf/Mplus1Code-Regular.otf) （設定：'M PLUS 1 Code Regular'）もあり  
 
 参考：[フォント設定](#220715)  
-実行環境：Windows 10、Godot 4.0 alpha 12、VSCode 1.69.2  
+実行環境：Windows 11、Godot 4.1.2、VSCode 1.83.1  
 作成者：夢寐郎  
 作成日：2021年12月30日  
-更新日：2022年07月23日 フォントの設定を追加  
+更新日：2023年10月12日 Godot 4.1.2 で動作確認    
 [[TOP]](#TOP)
 
 
