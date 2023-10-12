@@ -1432,7 +1432,8 @@ public partial class Main : Node3D {
 }
 ```
 
-1. [実行] し **Quest** 上で動作確認（Quest で実行しても真っ暗な状態）  
+1. [実行] し **Quest** 上で動作確認  
+（Quest で実行しても真っ暗な状態）  
 
 デモファイル：[vr_start.zip](https://github.com/mubirou/Godot/blob/main/zip/vr_start.zip)  
 実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ  
