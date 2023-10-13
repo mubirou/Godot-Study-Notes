@@ -1977,7 +1977,7 @@ func _ready():
       * [**Font**]：[**Digital Dismay.otf**]((https://www.1001fonts.com/digital+clock-fonts.html))（上記のフォント）
       * [**Font Size**]：400（**表示する4倍**）
     * [**Transform**]
-      * [**Scale**]：**x 0.25**、**y 0.25**、z 1  
+      * [**Scale**]：**x 0.25**、**y 0.25**、z 1（**1/4倍**）  
       
     （階層例は以下の通り）  
     Main（Node3D）  
