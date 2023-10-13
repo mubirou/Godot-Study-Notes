@@ -2101,7 +2101,8 @@ func loop():
           * [**Shading Mode**]：**Unshaded**（元画像の明るさで表示）
         * [**Albedo**]
           * [**Color**]：#ffffff（アルファ値の設定可能）
-          * [**Texture**]：〇〇[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)（360°パノラマ画像） 
+          * [**Texture**]：〇〇[**.exr**](https://docs.godotengine.org/en/latest/classes/class_panoramaskymaterial.html?highlight=PanoramaSkyMaterial#panoramaskymaterial)（360°パノラマ画像）  
+          ※JPEG でも可能
     * [**Transform**]
       * [**Rotation**]：x 0、y XXX（**初期値の水平角**）、z 0  
       * [**Scale**]：**x 500**、**y 500**、**z 500**
