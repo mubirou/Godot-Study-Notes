@@ -1972,7 +1972,7 @@ func _ready():
 1. [Clock] を選択し [インスペクター] を次の通り設定
     * [**Text**]  
       * [**Modulate**]：#ffffff（フォント色）
-      * [**Outline Modulate**]：#000000（フォントのアウトライン色）
+      * [**Outline Modulate**]：#000000（アウトライン色）
       * [**Text**]：**88:88:88**
       * [**Font**]：[**Digital Dismay.otf**]((https://www.1001fonts.com/digital+clock-fonts.html))（上記のフォント）
       * [**Font Size**]：**127**
