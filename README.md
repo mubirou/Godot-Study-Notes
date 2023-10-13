@@ -1980,7 +1980,7 @@ func _ready():
       * [**Position**]：x 0、**y 1.5**、**-3**
       * [**Scale**]：**x 0.25**、**y 0.25**、z 1  
       
-    （階層は以下の通り）  
+    （階層例は以下の通り）  
     Main（Node3D）  
     　 ├ XROrigin3D  
     　 │ └ XRCamera3D  
