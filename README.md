@@ -1982,11 +1982,16 @@ func _ready():
       
     （階層は以下の通り）  
     Main（Node3D）  
-    　  └ Clock（**Label3D**）  
+    　 ├ XROrigin3D  
+    　 │ └ XRCamera3D  
+    　 └ Node3D  
+    　   └ Clock（**Label3D**）  
+
 
 * Clock（**Label3D**）を選択し新規でスクリプト（**Clock.gd**）をアタッチし以下の通り記述  
 
 ```gdscript
+# res://Clock.gd
 extends Label3D
 
 func _ready():
@@ -1994,7 +1999,7 @@ func _ready():
 
 func loop():
   await get_tree().create_timer(1.0).timeout
-  
+
   var _now = Time.get_datetime_dict_from_system()
   var _h = _now.hour
   var _m = _now.minute
@@ -2004,14 +2009,15 @@ func loop():
   if _s < 10: _s = "0" + str(_s)
   var _result = str(_h) + ":" + str(_m) + ":" + str(_s)
   text = _result
-  
+
   await loop()
 ```
 
-実行環境：Windows 10、Godot 4.0 alpha 11、Meta Quest 41.0、Quest Link、Oculusアプリ  
+デモファイル：[DigitalClock.zip](https://github.com/mubirou/Godot/blob/main/zip/DigitalClock.zip)  
+実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年06月04日  
-更新日：2022年07月13日 Godot 4.0 対応  
+更新日：2023年10月13日 Godot 4.1.2、Quest 3 対応  
 [[TOP]](#TOP)
 
 
