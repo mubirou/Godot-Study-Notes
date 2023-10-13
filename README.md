@@ -1971,7 +1971,8 @@ func _ready():
 1. 名前を "Label3D" → "Clock" に変更
 1. [Clock] を選択し [インスペクター] を次の通り設定
     * [**Text**]  
-      * [**Modulate**]：**#ffcc00**（フォント色）
+      * [**Modulate**]：#ffffff（フォント色）
+      * [**Outline Modulate**]：#000000（フォントのアウトライン色）
       * [**Text**]：**88:88:88**
       * [**Font**]：[**Digital Dismay.otf**]((https://www.1001fonts.com/digital+clock-fonts.html))（上記のフォント）
       * [**Font Size**]：**127**
