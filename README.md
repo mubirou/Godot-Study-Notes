@@ -1975,10 +1975,10 @@ func _ready():
       * [**Outline Modulate**]：#000000（アウトライン色）
       * [**Text**]：**88:88:88**
       * [**Font**]：[**Digital Dismay.otf**]((https://www.1001fonts.com/digital+clock-fonts.html))（上記のフォント）
-      * [**Font Size**]：400（**表示する4倍**）
+      * [**Font Size**]：400（**表示する4倍**）  
+      ※[モアレ](https://ja.wikipedia.org/wiki/%E3%83%A2%E3%82%A2%E3%83%AC)が生じる場合は「2倍」にする  
     * [**Transform**]
       * [**Scale**]：**x 0.25**、**y 0.25**、z 1（**1/4倍**）  
-    ※モアレが生じる場合は「2倍」にする  
 
     （階層例は以下の通り）  
     Main（Node3D）  
