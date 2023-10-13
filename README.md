@@ -1975,16 +1975,15 @@ func _ready():
       * [**Outline Modulate**]：#000000（アウトライン色）
       * [**Text**]：**88:88:88**
       * [**Font**]：[**Digital Dismay.otf**]((https://www.1001fonts.com/digital+clock-fonts.html))（上記のフォント）
-      * [**Font Size**]：**127**
+      * [**Font Size**]：400（**表示する4倍**）
     * [**Transform**]
-      * [**Position**]：x 0、**y 1.5**、**-3**
       * [**Scale**]：**x 0.25**、**y 0.25**、z 1  
       
     （階層例は以下の通り）  
     Main（Node3D）  
     　 ├ XROrigin3D  
     　 │ └ XRCamera3D  
-    　 └ Node3D  
+    　 └ Node3D（位置はここで設定）  
 　　      └ Clock（**Label3D**）  
 
 
