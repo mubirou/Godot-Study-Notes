@@ -1985,7 +1985,7 @@ func _ready():
     　 ├ XROrigin3D  
     　 │ └ XRCamera3D  
     　 └ Node3D  
-    　   └ Clock（**Label3D**）  
+　　      └ Clock（**Label3D**）  
 
 
 * Clock（**Label3D**）を選択し新規でスクリプト（**Clock.gd**）をアタッチし以下の通り記述  
