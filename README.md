@@ -2320,7 +2320,7 @@ Main（Node3D）
   1. 再生ヘッドを **0** に移動
   1. [**Idle.Anim**]トラックを選択し（上記のように "Idle.Anim" タイムラインを朱色にフォーカス） [追加]-[**ストリップを追加**]-[**Kick**] を選択、同様に [**Punch**] も追加（下図）
   1. "**NLAトラック〇**"（[Non Linear Animation](https://blender-cg.net/nla-editor/) の略）という名前を "**ポーズ名 + Track**" に変更（判りやすいように）  
-   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211102.jpg)  
+   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310180854.jpg)  
   💡[ドープシート]-[アクション] 等でポーズの確認可  
   1. [シーンコレクション]-[Collection] の [**Idle**] 以外を全て削除  
    ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211106.jpg)  
