@@ -2316,7 +2316,7 @@ Main（Node3D）
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211022.jpg)  
   1. [タイムライン] → [**ノンリニアアニメーション**] に変更
   1. 再生ヘッドを **0** に移動
-  1. [**Idle**]（任意）トラックを選択し [追加]-[**ストリップを追加**]-[**Kich**] を選択、同様に [**Punch**] も追加（下図）
+  1. [**Idle**]（"Idle"の文字を選択）トラックを選択し [追加]-[**ストリップを追加**]-[**Kich**] を選択、同様に [**Punch**] も追加（下図）
   1. "**NlaTrack〇**"（[Non Linear Animation](https://blender-cg.net/nla-editor/) の略）という名前を "**ポーズ名 + Track**" に変更（判りやすいように）  
    ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211102.jpg)  
   💡[ドープシート]-[アクション] 等でポーズの確認可  
