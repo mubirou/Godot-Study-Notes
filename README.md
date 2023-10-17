@@ -2312,8 +2312,8 @@ Main（Node3D）
 
 ### 👉 [Blender](https://www.blender.org/) の作業  
   1. ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx をインポート（Camera、Light、Cube は削除）
-  1. [シーンコレクション]-[Collection]-[**Armature〇**] とその下層の [アニメーション] 内の "**Armature〇|mixamo.com|Layer0**" など３箇所の名前を**ポーズ名**（"Idle"、"Kick"、"Punch"）に変更（下図）  
-  ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310171056.jpg)  
+  1. [シーンコレクション]-[Collection]-[**Armature〇**] とその下層の各所を**ポーズ名**（"Idle"、"Kick"、"Punch"）に合わせて変更（下図）  
+  ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310171146.jpg)  
   1. [タイムライン] → [**ノンリニアアニメーション**] に変更
   1. 再生ヘッドを **0** に移動
   1. [**Idle**]トラックを選択し（"Idle"の文字を選択する） [追加]-[**ストリップを追加**]-[**Kick**] を選択、同様に [**Punch**] も追加（下図）
