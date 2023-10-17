@@ -2254,7 +2254,7 @@ Main（Node3D）
 ### 👉 [Blender](https://www.blender.org/) の作業➀  
   1. [Blender](https://www.blender.org/) で 上記ファイル（[Kyle.blend](https://github.com/mubirou/Godot/blob/main/blend/Kyle.blend)）を開く
   1. キャラクター全体を選択 → [ファイル]-[エクスポート]-[**FBX(.fbx)**] を選択
-  1. [内容]-[Limit to]：**✓選択したオブジェクト** を選択し [FBXをエクスポート] 
+  1. [内容]-[対象]：**✓選択したオブジェクト** を選択し [FBXをエクスポート] 
 
 ### 👉 [Mixamo](https://www.mixamo.com/#/)（ミキサモ）の作業  
   1. [Mixamo](https://www.mixamo.com/#/)（無料･アカウント必須）を開き [**UPLOAD CHARACTER**] を選び上記の **XXX.fbx** をドラッグ＆ドロップ  
@@ -2274,15 +2274,16 @@ Main（Node3D）
   1. [**▽〇〇〇**] を選択した状態で [オブジェクト]-[適用]-[**全トランスフォーム**] を選択  
   1. 上記の **<** で開いた [トランスフォーム]-[**スケール**] が **1.000** になったことを確認
   1. 必要に応じて [Decimate](https://3dcg-school.pro/blender-polygon-reduction/) 機能を使ってポリゴンを削除
-  1. [**Armature**] 以下全体を選択した状態で [ファイル]-[エクスポート]-[**glTF 2.0(.glb/.gltf)**] を選択
+  1. [**Armature**] 以下全体を選択（**要確認**）した状態で [ファイル]-[エクスポート]-[**glTF 2.0(.glb/.gltf)**] を選択
   1. **Godot** のプロジェクトフォルダ内にエクスポート（設定は以下の通り）  
   * [フォーマット]：**glTFバイナリ(.glb)**  
-  * [内容]-[Limit to]：**✓選択したオブジェクト**  
+  * [内容]-[対象]：**✓選択したオブジェクト**  
 
 ### 👉 **Godot** の作業
   1. 上記の **XXX.glb** をシーンに配置
-  1. シーン上の XX を選択し右クリック → [編集可能な子]
-  1. XXX 内の MeshInstance3D を選択
+  1. シーン上の XX を選択し右クリック → [ローカルにする]
+  1. [シーン]-[シーンを保存]（重要）
+  1. XXX 内の MeshInstance3D を探して選択
   1. [インスペクター]-[**Geometry**]
       * [**LOD Bias**]：**20～40** 程度（[Level Of Detail](https://docs.unity3d.com/ja/2018.4/Manual/LevelOfDetail.html)）
   1. マテリアルを設定（オプション）
@@ -2293,10 +2294,10 @@ Main（Node3D）
 デモファイル：[Mixamo.zip](https://github.com/mubirou/Godot/blob/main/zip/Mixamo.zip)  
 参考：[Mixamoマルチポーズ](#220714)  
 参考：[AccuRIG](https://actorcore.reallusion.com/auto-rig)（自動リギング他）  
-実行環境：Windows 10、Godot 4.0 alpha 12、Blender 3.2.1、Meta Quest 42.0、Quest Link、Oculusアプリ   
+実行環境：Windows 11、Godot 4.1.2、Blender 3.6.4、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月20日  
-更新日：2022年07月23日 Decimate 作業を追加  
+更新日：2023年10月17日 Godot 4.1.2、Blender 3.6.4、Quest 3 で動作確認  
 [[TOP]](#TOP)
 
 
