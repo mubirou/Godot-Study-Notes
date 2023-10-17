@@ -2311,7 +2311,7 @@ Main（Node3D）
   [**Mixamo**](#220713) を参考に ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx を作成  
 
 ### 👉 [Blender](https://www.blender.org/) の作業  
-  1. ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx をインポート
+  1. ➀Idle.fbx、➁Kick.fbx、➂Punch.fbx をインポート（Camera、Light、Cube は削除）
   1. [シーンコレクション]-[Collection]-[**Armature〇**] とその下層の [アニメーション] 内の "**Armature〇|mixamo.com|Layer0**" という名前を**ポーズ名**（"Idle"、"Kick"、"Punch"）に変更（下図）  
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207211022.jpg)  
   1. [タイムライン] → [**ノンリニアアニメーション**] に変更
