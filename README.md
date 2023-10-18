@@ -1275,7 +1275,7 @@ VR コンテンツ開発の [諸準備](#220501) をする
     * [**Xfade Time**]：ポーズ遷移の時間（0.3秒程度）
     * [**Input 〇**]-[**Name**]：[Blender で設定したポーズ](https://github.com/mubirou/Unity3D/tree/master/sample#001-%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC9%E3%83%9D%E3%83%BC%E3%82%BA%E5%88%B6%E5%BE%A1)の名前 
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202206251302.jpg)  
-1. [AnimationTree]（ノード設定画面）で右クリック → [**Animation**] を選択
+1. [AnimationTree]（ノード設定画面）で右クリック → [**アニメーション（Animation）**] を選択
 1. 上記の [**AnimationPlayer**] で設定したポーズを指定（下図参照）
 1. 同様にポーズ数だけ繰り返し、各ノードを接続（下図）<a id="220617-1"></a>  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202206261024.jpg)  
