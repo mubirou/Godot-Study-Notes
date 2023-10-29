@@ -4357,7 +4357,8 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   1. 任意のWebXRコンテンツ（.html）を起動
   1. [**ENTER VR**] を選択  
   （非対応の場合 [**VR NOT FOUND**] と表示される） 
-  1. 360°VRコンテンツが再生されたら成功
+  1. 360°VRコンテンツが再生されたら成功  
+  （QuestのCPU･GPUで処理）
 
 👉 **WebXRの再生テスト（開発者向け）**
   1. QuestとWindowsPCをLinkケーブルで接続  
@@ -4369,7 +4370,8 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   1. [**ENTER VR**] を選択  
   （非対応の場合 [**VR NOT FOUND**] と表示される）
   1. [バーチャルリアリティデバイスとデータの使用] を [許可] 
-  1. 360°VRコンテンツが再生されたら成功
+  1. 360°VRコンテンツが再生されたら成功  
+  （WindowsパソコンのCPU･GPUで処理）
 
 👉 **XXX**
     ```gdscript
