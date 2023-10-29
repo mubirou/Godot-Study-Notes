@@ -4344,12 +4344,6 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 <a id="231029"></a>
 # <b>WebXRの基本</b>
 
-> 【[お名前.com](https://www.onamae.com/)】  
-    ・[GMOインターネットグループ(株)](https://www.gmo.jp/)が運営するドメイン登録サービス  
-    ・アジアで初めて認定（現在は19社）を受け1999年からサービス開始された [ICANN](https://www.nic.ad.jp/ja/basics/terms/icann.html) 公認の[レジストラ](https://bit.ly/40mPd6b)  
-    ・世界初のドメイン登録業者は [Network Solutions](https://www.networksolutions.com/)
-
-
 > [**WebXR**](https://developer.mozilla.org/ja/docs/Web/API/WebXR_Device_API/Fundamentals) について  
     ・[WebVR](https://ja.wikipedia.org/wiki/WebVR) を [AR](https://ja.wikipedia.org/wiki/%E6%8B%A1%E5%BC%B5%E7%8F%BE%E5%AE%9F) まで拡張させた API  
     ・[Unity + WebXR](https://tech.framesynthesis.co.jp/unity/webxr/)（フレームシンセス）  
