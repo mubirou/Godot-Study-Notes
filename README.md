@@ -4378,7 +4378,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
     * XXX
     * XXXX
 
-実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome（118.0）  
+実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
 更新日：202X年XX月XX日  
