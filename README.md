@@ -4362,7 +4362,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 👉 **WebXRの再生テスト（開発者版）**
   1. QuestとWindowsPCをLinkケーブルで接続  
   （[純正](https://amzn.to/3MkzzDl)または[Anker製](https://amzn.to/40h9g6H)のCtoCケーブル）を強く推奨）
-  1. 
+  1. [**∞**]-[クイック設定]-[**Quest Link**]-[起動]
 
 
   1. [**Meta Quest Browser**] を起動
