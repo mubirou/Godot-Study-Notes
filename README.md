@@ -4352,8 +4352,8 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 
 👉 **WebXRの再生テスト（一般向け）**
   1. Questを起動
-  1. [**Meta Quest Browser**]（[Chromium](https://ja.wikipedia.org/wiki/Chromium)ベース）を起動
-  1. "WebXR SAMPLE" で検索
+  1. **Meta Quest Browser**（[Chromium](https://ja.wikipedia.org/wiki/Chromium)ベース）を起動
+  1. "WebXR Samples" で検索
   1. 任意のWebXRコンテンツ（.html）を起動
   1. [**ENTER VR**] を選択  
   （非対応の場合 [**VR NOT FOUND**] と表示される） 
@@ -4368,7 +4368,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 
 
   1. [**Meta Quest Browser**] を起動
-  1. "WebXR SAMPLE" で検索
+  1. "WebXR Samples" で検索
   1. 任意のWebXRコンテンツ（.html）を起動
   1. [**ENTER VR**] を選択  
   （非対応の場合 [**VR NOT FOUND**] と表示される） 
