@@ -4360,7 +4360,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   1. 360°VRコンテンツが再生されたら成功
 
 👉 **WebXRの再生テスト（開発者版）**
-  1. QuestとWindows PCを[Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/)接続
+  1. QuestとWindows PCを[Linkケーブル](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/meta-quest-link-compatibility/)（CtoC）で接続
   1. 
 
 
