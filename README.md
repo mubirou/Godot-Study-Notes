@@ -4364,14 +4364,11 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   （[純正](https://amzn.to/3MkzzDl)または[Anker製](https://amzn.to/40h9g6H)のCtoCケーブル）を強く推奨）
   1. [**∞**]-[クイック設定]-[**Quest Link**]-[起動]
   1. [デスクトップパネルを追加] から必要な画面を表示
-  1. Chrome 
-
-
-  1. [**Meta Quest Browser**] を起動
-  1. "WebXR Samples" で検索
+  1. Chrome（79以降）を起動し "WebXR Samples" で検索
   1. 任意のWebXRコンテンツ（.html）を起動
   1. [**ENTER VR**] を選択  
-  （非対応の場合 [**VR NOT FOUND**] と表示される） 
+  （非対応の場合 [**VR NOT FOUND**] と表示される）
+  1. [バーチャルリアリティデバイスとデータの使用] を [許可する] 
   1. 360°VRコンテンツが再生されたら成功
 
 👉 **XXX**
