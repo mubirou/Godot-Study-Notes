@@ -4350,8 +4350,20 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
     ・[Godot + WebXR](https://tech.framesynthesis.co.jp/godot/vr/)（フレームシンセス）  
     ・[Godot XRInterface](https://docs.godotengine.org/ja/4.x/classes/class_webxrinterface.html)（GODOT DOCS）  
 
-👉 **WebXRの再生テスト**
+👉 **WebXRの再生テスト（ユーザー版）**
   1. Questを起動
+  1. [**Meta Quest Browser**] を起動
+  1. "WebXR SAMPLE" で検索
+  1. 任意のWebXRコンテンツ（.html）を起動
+  1. [**ENTER VR**] を選択  
+  （非対応の場合 [**VR NOT FOUND**] と表示される） 
+  1. 360°VRコンテンツが再生されたら成功
+
+👉 **WebXRの再生テスト（開発者版）**
+  1. QuestとWindows PCを[Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/)接続
+  1. 
+
+
   1. [**Meta Quest Browser**] を起動
   1. "WebXR SAMPLE" で検索
   1. 任意のWebXRコンテンツ（.html）を起動
