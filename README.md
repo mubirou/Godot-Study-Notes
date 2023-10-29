@@ -4352,9 +4352,11 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 
 👉 **WebXRの再生テスト**
   1. Questを起動
-  1. [アプリケーションライブラリ]-[**Meta Quest Browser**] を起動
-  1. "WebXR SAMPLE" で検索（任意のWebXRコンテンツを起動）
-  1. [**ENTER VR**] を選択
+  1. [**Meta Quest Browser**] を起動
+  1. "WebXR SAMPLE" で検索
+  1. 任意のWebXRコンテンツ（.html）を起動
+  1. [**ENTER VR**] を選択  
+  （非対応の場合 [**VR NOT FOUND**] と表示される） 
   1. 360°VRコンテンツが再生されたら成功
 
 👉 **XXX**
