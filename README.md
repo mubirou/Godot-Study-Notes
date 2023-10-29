@@ -4377,6 +4377,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   * [LAMP](https://github.com/mubirou/LAMP)を利用する（本番用）
   * [XAMPP](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-)を利用する（ローカルテスト用）
 
+参考：[フレームシンセシス](https://tech.framesynthesis.co.jp/godot/vr/)  
 実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
