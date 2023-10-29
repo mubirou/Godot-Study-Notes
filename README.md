@@ -4371,7 +4371,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   （非対応の場合 [**VR NOT FOUND**] と表示される）
   1. [バーチャルリアリティデバイスとデータの使用] を [許可] 
   1. 360°VRコンテンツが再生されたら成功！  
-  （WindowsパソコンのCPU･GPUで処理）
+  （WindowsパソコンのCPU･GPUで処理＝PCVR）
 
 👉 **Webサーバの準備**
   * [LAMP](https://github.com/mubirou/LAMP)を利用する（本番用）
