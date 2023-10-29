@@ -4344,8 +4344,8 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 <a id="231029"></a>
 # <b>WebXRの基本</b>
 
-* 📝 [WebXR] について
-  * XXX
+* 📝 [WebXR]() について
+  * [WebVR](https://ja.wikipedia.org/wiki/WebVR) を [AR](https://ja.wikipedia.org/wiki/%E6%8B%A1%E5%BC%B5%E7%8F%BE%E5%AE%9F) まで拡張させた API
 
 1. XXX
     ```gdscript
