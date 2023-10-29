@@ -4345,7 +4345,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 # <b>WebXRの基本</b>
 
 * [**WebXR**](https://developer.mozilla.org/ja/docs/Web/API/WebXR_Device_API/Fundamentals) について
-  * [WebVR](https://ja.wikipedia.org/wiki/WebVR) を [AR](https://ja.wikipedia.org/wiki/%E6%8B%A1%E5%BC%B5%E7%8F%BE%E5%AE%9F) まで拡張させた API。
+  * [WebVR](https://ja.wikipedia.org/wiki/WebVR) を [AR](https://ja.wikipedia.org/wiki/%E6%8B%A1%E5%BC%B5%E7%8F%BE%E5%AE%9F) まで拡張させた API
   * [Unity + WebXR](https://tech.framesynthesis.co.jp/unity/webxr/)（フレームシンセス）
   * [Godot + WebXR](https://tech.framesynthesis.co.jp/godot/vr/)（フレームシンセス）
   * [Godot XRInterface](https://docs.godotengine.org/ja/4.x/classes/class_webxrinterface.html)（GODOT DOCS）
