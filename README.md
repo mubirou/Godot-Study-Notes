@@ -4350,14 +4350,18 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
     ・[Godot + WebXR](https://tech.framesynthesis.co.jp/godot/vr/)（フレームシンセス）  
     ・[Godot XRInterface](https://docs.godotengine.org/ja/4.x/classes/class_webxrinterface.html)（GODOT DOCS）  
 
-1. XXX
+👉 **WebXRの再生テスト**
+  1. XXXX
+  1. XXXX 
+
+👉 **XXX**
     ```gdscript
     XXXX
     ```
     * XXX
     * XXXX
 
-実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
+実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
 更新日：202X年XX月XX日  
