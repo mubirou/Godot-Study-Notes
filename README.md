@@ -4378,9 +4378,9 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 👉 **Godot + WebXRの動作テスト**
 
   1. [Godot WebXR Template](https://godotengine.org/asset-library/asset/1128) から [Download]（2023-03-27版）
-  1. 
-
-  https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4
+  1. 解凍し **project.godot** を起動
+  1. XXX
+  参考：[snopekgames.com/](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 
   👉 **Webサーバの準備**
   * [LAMP](https://github.com/mubirou/LAMP)を利用する（本番用）
