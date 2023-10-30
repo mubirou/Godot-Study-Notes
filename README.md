@@ -4379,7 +4379,17 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 
   1. [Godot WebXR Template](https://godotengine.org/asset-library/asset/1128) から [Download]（2023-03-27版）
   1. 解凍し **project.godot** を起動
-  1. XXX  
+  1. [プロジェクト]-[エクスポート]-[追加]-[Web]-[HTML]-[Head Include] に以下を追加  
+  ```
+  <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js"></script>
+  <script>
+  var polyfill = new WebXRPolyfill();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/webxr-layers-polyfill@latest/build/webxr-layers-polyfill.min.js"></script>
+  <script>
+  var layersPolyfill = new WebXRLayersPolyfill();
+  </script>
+  ```
   参考：[snopekgames.com/](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 
   👉 **Webサーバの準備**
