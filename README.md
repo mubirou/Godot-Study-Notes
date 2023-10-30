@@ -4391,6 +4391,8 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   </script>
   ```
   1. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) に接続
+  1. [リモートデバッグ]-[ブラウザで実行]（下図）  
+  ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310310620.jpg)
   
   参考：[snopekgames.com/](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 
