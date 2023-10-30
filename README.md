@@ -4379,8 +4379,13 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   * [LAMP](https://github.com/mubirou/LAMP)を利用する（本番用）
   * [XAMPP](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-)を利用する（ローカルテスト用）
 
-👉 **WebXRコンテンツ制作**
-  1. XXXX
+👉 **Godot WebXR Template**
+  1. https://godotengine.org/asset-library/asset/1128 から [Download]
+  1. 
+
+  https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4
+
+  
 
 参考：[フレームシンセシス（Godot4 VR開発メモ）](https://tech.framesynthesis.co.jp/godot/vr/)  
 実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118  
