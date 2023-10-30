@@ -4390,6 +4390,8 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   var layersPolyfill = new WebXRLayersPolyfill();
   </script>
   ```
+  1. Godot内蔵のWebサーバ（簡易テスト用）の準備
+    1. [エディター]-[エディター設定]-[エクスポート]-[Web]-[**Use TLS**] を [**✓**オン]
   参考：[snopekgames.com/](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 
 参考：[フレームシンセシス（Godot4 VR開発メモ）](https://tech.framesynthesis.co.jp/godot/vr/)  
