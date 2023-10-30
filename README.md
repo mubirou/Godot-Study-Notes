@@ -4392,15 +4392,16 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   ```
   1. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) に接続
   1. [リモートデバッグ]-[ブラウザで実行]（下図）  
-  ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310310620.jpg)
-  
+  ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310310620.jpg)  
+  （Godot内蔵のWebサーバを利用します）  
+  1. Webブラウザ上で [**Enter VR**] を選択
+  1. 360°VRコンテンツが再生されたら成功！（黒い左右のボックスのみ）  
   参考：[snopekgames.com/](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 
 参考：[フレームシンセシス（Godot4 VR開発メモ）](https://tech.framesynthesis.co.jp/godot/vr/)  
 実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2031年10月31日  
 [[TOP]](#TOP)
 
 
