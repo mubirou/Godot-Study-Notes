@@ -4373,7 +4373,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   1. 360°VRコンテンツが再生されたら成功！  
   （WindowsパソコンのCPU･GPUで処理＝PCVR）
 
-👉 **Godot + WebXRの動作テスト**
+👉 **Godot + WebXRの再生テスト（PCVR）**
 
   1. [Godot WebXR Template](https://godotengine.org/asset-library/asset/1128) から [Download]（2023-03-27版）
   1. 解凍し **project.godot** を起動
