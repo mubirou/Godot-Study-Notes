@@ -4396,7 +4396,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   1. 360°VRコンテンツが再生されたら成功！  
   （黒いボックス＝両手のみ）  
   
-参考：[snopekgames.com/](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
+参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118  
 作成者：夢寐郎  
 作成日：2031年10月31日  
