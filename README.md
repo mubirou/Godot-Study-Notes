@@ -4395,8 +4395,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310310620.jpg)  
   （Godot内蔵のWebサーバを利用します）  
   1. Webブラウザ上で [**Enter VR**] を選択
-  1. 360°VRコンテンツが再生されたら成功！  
-  （黒いボックス＝両手のみ）  
+  1. 360°VRコンテンツが再生されたら成功！（黒い箱＝両手のみ）    
   参考：[snopekgames.com/](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 
 参考：[フレームシンセシス（Godot4 VR開発メモ）](https://tech.framesynthesis.co.jp/godot/vr/)  
