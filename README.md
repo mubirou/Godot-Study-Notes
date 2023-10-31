@@ -4400,7 +4400,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 
 👉 **Godot + WebXR + [LAMP](https://github.com/mubirou/LAMP#TOP)**
   1. エラーの解除  
-    1. Webブラウザで以下のエラーが発生  
+    * Webブラウザで以下のエラーが発生  
       ```
       Error
       The following features required to run Godot projects on the Web are missing:
