@@ -4406,6 +4406,9 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   Cross Origin Isolation - Check web server configuration (send correct headers)
   SharedArrayBuffer - Check web server configuration (send correct headers)
   ```
+  **Cross Origin Isolation**：異なるドメイン間の通信を制限する  
+  **SharedArrayBuffer**：マルチスレッドプログラミングの可能化  
+  1. LAMP 
 
 
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
