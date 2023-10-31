@@ -4411,7 +4411,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
       📖**SharedArrayBuffer**：マルチスレッドプログラム可能化  
     (2) [.htaccess](https://github.com/mubirou/LAMP#202302121037-htaccess2) の書き換え
       ```
-      # vi /var/www/.htaccess
+      # vi /var/www/html/.htaccess
       ```
   1. LAMP 
 
