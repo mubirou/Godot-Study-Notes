@@ -4408,7 +4408,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
       SharedArrayBuffer - Check web server configuration (send correct headers)
       ```
       📝**Cross Origin Isolation**：異なるドメイン間の通信制限  
-      📝**SharedArrayBuffer**：マルチスレッドプログラミング可能化  
+      📝**SharedArrayBuffer**：マルチスレッドプログラムの可能化  
   1. LAMP 
 
 
