@@ -4341,6 +4341,8 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 [[TOP]](#TOP)
 
 
+### この項目は書きかけです
+
 <a id="231029"></a>
 # <b>WebXR入門</b>
 
@@ -4373,7 +4375,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   1. 360°VRコンテンツが再生されたら成功！  
   （WindowsパソコンのCPU･GPUで処理＝PCVR）
 
-👉 **Godot + WebXRの再生テスト（PCVR）**
+👉 **Godot + WebXR + 内蔵Webサーバ（PCVR）**
 
   1. [Godot WebXR Template](https://godotengine.org/asset-library/asset/1128) から [Download]（2023-03-27版）
   1. 解凍し **project.godot** を起動
@@ -4395,7 +4397,11 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   1. Webブラウザ上で [**Enter VR**] を選択
   1. 360°VRコンテンツが再生されたら成功！  
   （黒いボックス＝両手のみ）  
-  
+
+👉 **Godot + WebXR + XAMPP（PCVR）**
+
+1. [XAMPP](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-) の準備
+
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118  
 作成者：夢寐郎  
