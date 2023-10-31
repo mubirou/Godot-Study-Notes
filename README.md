@@ -4399,7 +4399,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   （黒いボックス＝両手のみ）  
 
 👉 **Godot + WebXR + [LAMP](https://github.com/mubirou/LAMP#TOP)**
-  1. エラーの解除
+  1. エラーの解除  
     1. Webブラウザで以下のエラーが発生  
       ```
       Error
