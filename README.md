@@ -4412,7 +4412,14 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
     (2) [.htaccess](https://github.com/mubirou/LAMP#202302121037-htaccess2) の書き換え
       ```
       # vi /var/www/html/.htaccess
+      Options -Indexes
+      Header set Cross-Origin-Embedder-Policy "require-corp" ←追加
+      Header set Cross-Origin-Opener-Policy "same-origin" ←追加
       ```
+      ```
+      # systemctl restart httpd ←再起動
+      ```
+      参考：https://worktoolsmith.com/post-66581/
   1. LAMP 
 
 
