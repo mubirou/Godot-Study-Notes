@@ -4424,7 +4424,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 
 
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
-実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118  
+実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118、CentOS Stream 8  
 作成者：夢寐郎  
 作成日：2023年10月31日  
 更新日：2023年11月XX日  
