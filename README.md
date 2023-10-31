@@ -4400,7 +4400,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 
 👉 **Godot + WebXR + [LAMP](https://github.com/mubirou/LAMP#TOP)**
   1. エラーの解除  
-    Webブラウザで以下のエラーが発生  
+    1. Webブラウザで以下のエラーが発生  
       ```
       Error
       The following features required to run Godot projects on the Web are missing:
@@ -4409,6 +4409,10 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
       ```
       📖**Cross Origin Isolation**：異なるドメイン間の通信制限  
       📖**SharedArrayBuffer**：マルチスレッドプログラム可能化  
+    1. [.htaccess](https://github.com/mubirou/LAMP#202302121037-htaccess2) の書き換え
+      ```
+      # vi /var/www/.htaccess
+      ```
   1. LAMP 
 
 
