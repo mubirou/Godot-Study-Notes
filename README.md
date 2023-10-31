@@ -4399,7 +4399,13 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   （黒いボックス＝両手のみ）  
 
 👉 **Godot + WebXR + [LAMP](https://github.com/mubirou/LAMP#TOP)**
-
+  📝通常以下のエラーが発生  
+  ```
+  Error
+  The following features required to run Godot projects on the Web are missing:
+  Cross Origin Isolation - Check web server configuration (send correct headers)
+  SharedArrayBuffer - Check web server configuration (send correct headers)
+  ```
 
 
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
