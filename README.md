@@ -4398,7 +4398,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   1. 360°VRコンテンツが再生されたら成功！  
   （黒いボックス＝両手のみ）  
 
-👉 **Godot + WebXR + XAMPP（PCVR）**
+👉 **Godot + WebXR + XAMPP**
 
 1. [XAMPP](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-) の準備
 
