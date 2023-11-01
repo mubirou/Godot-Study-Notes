@@ -4352,7 +4352,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
     ・[Godot + WebXR](https://tech.framesynthesis.co.jp/godot/vr/)（フレームシンセス）  
     ・[Godot XRInterface](https://docs.godotengine.org/ja/4.x/classes/class_webxrinterface.html)（GODOT DOCS）  
 
-👉 **WebXRの再生テスト（Quest単体）**
+### 👉 **WebXRの再生テスト（Quest単体）**
   1. Questを起動
   1. **Meta Quest Browser**（[Chromium](https://ja.wikipedia.org/wiki/Chromium)ベース）を起動
   1. "WebXR Samples" で検索
@@ -4362,7 +4362,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   1. 360°VRコンテンツが再生されたら成功！  
   （QuestのCPU･GPUで処理）
 
-👉 **WebXRの再生テスト（PCVR）**
+### 👉 **WebXRの再生テスト（PCVR）**
   1. QuestとWindowsPCをLinkケーブルで接続  
   （[純正](https://amzn.to/3MkzzDl)または[Anker製](https://amzn.to/40h9g6H)のCtoCケーブル）を強く推奨）
   1. [**∞**]-[クイック設定]-[**Quest Link**]-[起動]
@@ -4375,7 +4375,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   1. 360°VRコンテンツが再生されたら成功！  
   （WindowsパソコンのCPU･GPUで処理＝PCVR）
 
-👉 **Godot + WebXR + 内蔵Webサーバ（PCVR）**
+### 👉 **Godot + WebXR + 内蔵Webサーバ（PCVR）**
 
   1. [Godot WebXR Template](https://godotengine.org/asset-library/asset/1128) から [Download]（2023-03-27版）
   1. 解凍し **project.godot** を起動
