@@ -4398,7 +4398,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   1. 360°VRコンテンツが再生されたら成功！  
   （黒いボックス＝両手のみ）  
 
-#### 👉 **Godot + WebXR + [LAMP](https://github.com/mubirou/LAMP#TOP)**
+### 👉 **Godot + WebXR + [LAMP](https://github.com/mubirou/LAMP#TOP)**
 
   1. [.htaccess](https://github.com/mubirou/LAMP#202302121037-htaccess2) の書換え（**WebXRコンテンツと同階層に置く**）
   ```
