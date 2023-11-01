@@ -4416,7 +4416,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 4. 〇〇.html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) のローカルディレクトリに保存
 5. FileZilla を使ってサーバにアップロード
 6. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) に接続
-7. [Quest]-[デスクトップ]-[モニター〇]-[Google Chrome] を起動
+7. [Quest]-[デスクトップ]-[モニター〇]-[Chrome] を起動
 8. https://www.mubirou.com/.../〇〇.html 開く
 9. [**Enter VR**] を選択しVRコンテンツが再生されたら成功！
 
