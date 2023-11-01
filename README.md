@@ -4421,6 +4421,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 9. [**Enter VR**] を選択し360°VRコンテンツが再生されたら成功！
 
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
+参考：[フレームシンセシス（Godot4 VR開発メモ）](https://tech.framesynthesis.co.jp/godot/vr/)  
 実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118、CentOS Stream 8、Apache 2.4.37  
 作成者：夢寐郎  
 作成日：2023年10月31日  
@@ -4440,17 +4441,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
     * XXX
     * XXXX
 
-    👉 **Webサーバの準備**
-  * [LAMP](https://github.com/mubirou/LAMP)を利用する（本番用）
-  * [XAMPP](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-)を利用する（ローカルテスト用）  
-======================
-1. [XAMPP](https://github.com/mubirou/HelloWorld/blob/master/languages/SQLite/SQLite_win.md#sqlite-windows-) の準備
-1. XXX
-1. [プロジェクト設定]-[Advanced Settings] を [オン]
-1. [プロジェクト設定]-[レンダリング]-[テクスチャ]-[VRAM圧縮]-[Import ETC2 ASTC] を [**✓**オン]
-
-参考：[フレームシンセシス（Godot4 VR開発メモ）](https://tech.framesynthesis.co.jp/godot/vr/)  
-実行環境：Windows 10、Godot 4.0 alpha 14、Meta Quest 42.0、Quest Link、Oculusアプリ  
+実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0）、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
 更新日：202X年XX月XX日  
