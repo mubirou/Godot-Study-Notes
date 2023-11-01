@@ -4341,8 +4341,6 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 [[TOP]](#TOP)
 
 
-### この項目は書きかけです
-
 <a id="231029"></a>
 # <b>WebXR入門</b>
 
