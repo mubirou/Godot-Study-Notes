@@ -4399,6 +4399,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   （黒いボックス＝両手のみ）  
 
 👉 **Godot + WebXR + [LAMP](https://github.com/mubirou/LAMP#TOP)**
+
   1. [.htaccess](https://github.com/mubirou/LAMP#202302121037-htaccess2) の書換え（**WebXRコンテンツと同階層に置く**）
   ```
   # vi /var/www/html/.htaccess
@@ -4410,15 +4411,6 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   # systemctl reload httpd ←Apache設定のリロード
   ```
   参考：https://worktoolsmith.com/post-66581/  
-
-    ```
-    Error
-    The following features required to run Godot projects on the Web are missing:
-    Cross Origin Isolation - Check web server configuration (send correct headers)
-    SharedArrayBuffer - Check web server configuration (send correct headers)
-    ```
-    📖**Cross Origin Isolation**：異なるドメイン間の通信制限  
-    📖**SharedArrayBuffer**：マルチスレッドプログラム可能化  
       
   1. LAMP 
 
