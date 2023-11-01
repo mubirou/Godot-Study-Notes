@@ -4402,7 +4402,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 
 ### 👉 **Godot + WebXR + [LAMP](https://github.com/mubirou/LAMP#TOP)**
 
-➀ [.htaccess](https://github.com/mubirou/LAMP#202302121037-htaccess2) の書換え（**WebXRコンテンツと同階層に置く**）
+➀ [.htaccess](https://github.com/mubirou/LAMP#202302121037-htaccess2) の書換え  
 ```
 # vi /var/www/html/.htaccess
 Options -Indexes
@@ -4411,7 +4411,8 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 
 # systemctl reload httpd ←Apache設定のリロード
 ```
-（この処理を行わないとエラーが発生し再生不可）  
+（**この処理を行わないとエラーが発生し再生不可**）  
+（**WebXRコンテンツと同階層に置く**）
 ➁ [Godot WebXR Template](#231029-Template) の project.godot を起動  
 ➂ [プロジェクト]-[エクスポート]-[追加]-[Web]-[プロジェクトのエクスポート]  
 ➃ 〇〇.html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) のローカルディレクトリに保存  
