@@ -4418,10 +4418,10 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 6. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続
 7. [Quest]-[デスクトップ]-[モニター〇]-[Chrome] を起動
 8. https://www.mubirou.com/.../〇〇.html 開く
-9. [**Enter VR**] を選択しVRコンテンツが再生されたら成功！
+9. [**Enter VR**] を選択し360°VRコンテンツが再生されたら成功！
 
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
-実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118、CentOS Stream 8  
+実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118、CentOS Stream 8、Apache 2.4.37  
 作成者：夢寐郎  
 作成日：2023年10月31日  
 更新日：2023年11月01日 Godot+WebXR+LAMPを追加  
