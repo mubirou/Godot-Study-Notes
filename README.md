@@ -4379,6 +4379,9 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 
   1. [Godot WebXR Template](https://godotengine.org/asset-library/asset/1128) から [Download]（2023-03-27版）
   2. 解凍し **project.godot** を起動
+
+  <a id="231029-HeadInclude"></a>
+
   3. [プロジェクト]-[エクスポート]-[追加]-[**Web**]-[HTML]-[**Head Include**] に以下を記述し [閉じる]  
   ```
   <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js"></script>
@@ -4413,6 +4416,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 （注意：**この処理を行わないとエラーが発生し再生不可**）  
 （注意：**このファイルをWebXRコンテンツと同階層に置く**）  
 ➁ [Godot WebXR Template](#231029-Template) の project.godot を起動  
+➂ 上記と同じく [**Head Include**](#231029-HeadInclude) に各種 <script>...</script> を記述する（PCVRではなく**Meta Quest Browserから実行時に必要**）  
 ➂ [プロジェクト]-[エクスポート]-[追加]-[Web]-[プロジェクトのエクスポート]  
 ➃ 〇〇.html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリに保存  
 ➄ FileZilla を使ってサーバにアップロード  
@@ -4421,9 +4425,12 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 ➇ https://www.mubirou.com/.../〇〇.html 開く  
 ➈ [**Enter VR**] を選択し360°VRコンテンツが再生されたら成功！  
 
+＜Meta Quest Browserから実行時する場合＞  
+* [プロジェクト]-[エクスポート]...[**Head Include**](#231029-HeadInclude) に追加設定が必要
+
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 参考：[フレームシンセシス（Godot4 VR開発メモ）](https://tech.framesynthesis.co.jp/godot/vr/)  
-実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118、CentOS Stream 8、Apache 2.4.37  
+実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118、CentOS Stream 8、Apache 2.4.37、FileZilla 3.66.0、Meta Quest Browser  
 作成者：夢寐郎  
 作成日：2023年10月31日  
 更新日：2023年11月01日 Godot+WebXR+LAMPを追加  
