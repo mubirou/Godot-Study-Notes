@@ -4409,8 +4409,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
       ```
       📖**Cross Origin Isolation**：異なるドメイン間の通信制限  
       📖**SharedArrayBuffer**：マルチスレッドプログラム可能化  
-    (2) [.htaccess](https://github.com/mubirou/LAMP#202302121037-htaccess2) の書き換え  
-    （**WebXRコンテンツと同じディレクトリに置く**）
+    (2) [.htaccess](https://github.com/mubirou/LAMP#202302121037-htaccess2) の書換え（**WebXRコンテンツと同階層に置く**）  
       ```
       # vi /var/www/html/.htaccess
       Options -Indexes
