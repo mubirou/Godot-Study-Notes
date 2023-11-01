@@ -4352,6 +4352,9 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 
 ### 👉 **WebXRの再生テスト（Quest単体）**
   1. Questを起動
+
+ <a id="231029-MetaQuestBrowser"></a>
+
   1. **Meta Quest Browser**（[Chromium](https://ja.wikipedia.org/wiki/Chromium)ベース）を起動
   1. "WebXR Samples" で検索
   1. 任意のWebXRコンテンツ（.html）を起動
@@ -4425,8 +4428,8 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 ➇ https://www.mubirou.com/.../〇〇.html 開く  
 ➈ [**Enter VR**] を選択し360°VRコンテンツが再生されたら成功！  
 
-＜Meta Quest Browserから実行時する場合＞  
-* [プロジェクト]-[エクスポート]...[**Head Include**](#231029-HeadInclude) に追加設定が必要
+（注意）[Meta Quest Browser](#231029-MetaQuestBrowser)から自宅サーバにアクセスする場合は
+[Windowsのモバイルスポットをオンにする](https://github.com/mubirou/LAMP#androidquest%E3%81%AE%E5%A0%B4%E5%90%88)等の設定が必要です
 
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 参考：[フレームシンセシス（Godot4 VR開発メモ）](https://tech.framesynthesis.co.jp/godot/vr/)  
