@@ -4373,7 +4373,8 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   1. 360°VRコンテンツが再生されたら成功！  
   （WindowsパソコンのCPU･GPUで処理＝PCVR）
 
-### 👉 **Godot + WebXR + 内蔵Webサーバ**（PCVR）  
+### 👉 **Godot + WebXR + 内蔵Webサーバ**
+（PCVRでのみ実行可能）  
 
 <a id="231029-Template"></a>
 
@@ -4399,7 +4400,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   （黒いボックス＝両手のみ）  
 
 ### 👉 **Godot + WebXR + [LAMP](https://github.com/mubirou/LAMP#TOP)**
-（PCVRのほかQuest単体でも可能）  
+（PCVRのほかQuest単体でも実行可能）  
 
 ➀ [.htaccess](https://github.com/mubirou/LAMP#202302121037-htaccess2) の書換え  
 ```
@@ -4410,7 +4411,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 
 # systemctl reload httpd ←Apache設定のリロード
 ```
-（注意：**WebXRはHTTPSサーバでのみ動作**）
+（注意：**WebXRはHTTPSサーバでのみ動作**）  
 （注意：**この処理を行わないとエラーが発生し再生不可**）  
 （注意：**このファイルをWebXRコンテンツと同階層に置く**）  
 ➁ [Godot WebXR Template](#231029-Template) の project.godot を起動  
