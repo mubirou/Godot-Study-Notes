@@ -4411,11 +4411,14 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 
 # systemctl reload httpd ←Apache設定のリロード
 ```
-   
 2. [Godot WebXR Template](#231029-Template) の project.godot を起動
 3. [プロジェクト]-[エクスポート]-[追加]-[Web]-[プロジェクトのエクスポート]
 4. 〇〇.html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) のローカルディレクトリに保存
 5. FileZilla を使ってサーバにアップロード
+6. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) に接続
+7. [Quest]-[デスクトップ]-[モニター〇]-[Google Chrome] を起動
+8. https://www.mubirou.com/.../〇〇.html 開く
+9. [**Enter VR**] を選択しVRコンテンツが再生されたら成功！
 
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118、CentOS Stream 8  
