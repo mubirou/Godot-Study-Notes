@@ -4409,7 +4409,8 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
       ```
       📖**Cross Origin Isolation**：異なるドメイン間の通信制限  
       📖**SharedArrayBuffer**：マルチスレッドプログラム可能化  
-    (2) [.htaccess](https://github.com/mubirou/LAMP#202302121037-htaccess2) の書き換え
+    (2) [.htaccess](https://github.com/mubirou/LAMP#202302121037-htaccess2) の書き換え  
+    （**WebXRコンテンツと同じディレクトリに置く**）
       ```
       # vi /var/www/html/.htaccess
       Options -Indexes
@@ -4417,17 +4418,16 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
       Header set Cross-Origin-Opener-Policy "same-origin" ←追加
       ```
       ```
-      # systemctl restart httpd ←再起動
+      # systemctl reload httpd ←Apache設定のリロード
       ```
       参考：https://worktoolsmith.com/post-66581/
   1. LAMP 
-
 
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118、CentOS Stream 8  
 作成者：夢寐郎  
 作成日：2023年10月31日  
-更新日：2023年11月XX日  
+更新日：2023年11月01日 Godot+WebXR+LAMPを追加  
 [[TOP]](#TOP)
 
 
