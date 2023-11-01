@@ -4415,7 +4415,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 （**WebXRコンテンツと同階層に置く**）  
 ➁ [Godot WebXR Template](#231029-Template) の project.godot を起動  
 ➂ [プロジェクト]-[エクスポート]-[追加]-[Web]-[プロジェクトのエクスポート]  
-➃ 〇〇.html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) のローカルディレクトリに保存  
+➃ 〇〇.html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリに保存  
 ➄ FileZilla を使ってサーバにアップロード  
 ➅ [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続  
 ➆ [Quest]-[デスクトップ]-[モニター〇]-[Chrome] を起動  
