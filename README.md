@@ -4412,14 +4412,14 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 # systemctl reload httpd ←Apache設定のリロード
 ```
 （この処理を行わないとエラーが発生し再生不可）  
-➁ [Godot WebXR Template](#231029-Template) の project.godot を起動
-➂ [プロジェクト]-[エクスポート]-[追加]-[Web]-[プロジェクトのエクスポート]
-➃ 〇〇.html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) のローカルディレクトリに保存
-➄ FileZilla を使ってサーバにアップロード
-➅ [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続
-➆ [Quest]-[デスクトップ]-[モニター〇]-[Chrome] を起動
-➇ https://www.mubirou.com/.../〇〇.html 開く
-➈ [**Enter VR**] を選択し360°VRコンテンツが再生されたら成功！
+➁ [Godot WebXR Template](#231029-Template) の project.godot を起動  
+➂ [プロジェクト]-[エクスポート]-[追加]-[Web]-[プロジェクトのエクスポート]  
+➃ 〇〇.html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) のローカルディレクトリに保存  
+➄ FileZilla を使ってサーバにアップロード  
+➅ [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続  
+➆ [Quest]-[デスクトップ]-[モニター〇]-[Chrome] を起動  
+➇ https://www.mubirou.com/.../〇〇.html 開く  
+➈ [**Enter VR**] を選択し360°VRコンテンツが再生されたら成功！  
 
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 参考：[フレームシンセシス（Godot4 VR開発メモ）](https://tech.framesynthesis.co.jp/godot/vr/)  
