@@ -4409,8 +4409,9 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 
 # systemctl reload httpd ←Apache設定のリロード
 ```
-（**この処理を行わないとエラーが発生し再生不可**）  
-（**WebXRコンテンツと同階層に置く**）  
+（注意：**WebXRはHTTPSサーバでのみ動作**）
+（注意：**この処理を行わないとエラーが発生し再生不可**）  
+（注意：**このファイルをWebXRコンテンツと同階層に置く**）  
 ➁ [Godot WebXR Template](#231029-Template) の project.godot を起動  
 ➂ [プロジェクト]-[エクスポート]-[追加]-[Web]-[プロジェクトのエクスポート]  
 ➃ 〇〇.html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリに保存  
