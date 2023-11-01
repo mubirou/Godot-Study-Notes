@@ -4434,7 +4434,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 参考：[フレームシンセシス（Godot4 VR開発メモ）](https://tech.framesynthesis.co.jp/godot/vr/)  
-実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118、CentOS Stream 8、Apache 2.4.37、FileZilla 3.66.0、Meta Quest Browser  
+実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118、CentOS Stream 8、Apache 2.4.37、FileZilla 3.66.0、Meta Quest Browser 28.4  
 作成者：夢寐郎  
 作成日：2023年10月31日  
 更新日：2023年11月02日 Quest単体+LAMP情報を追加  
