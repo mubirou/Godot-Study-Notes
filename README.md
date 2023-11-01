@@ -4428,7 +4428,8 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 ➇ https://www.mubirou.com/.../〇〇.html 開く  
 ➈ [**Enter VR**] を選択し360°VRコンテンツが再生されたら成功！  
 
-（注意）[Meta Quest Browser](#231029-MetaQuestBrowser)から自宅サーバにアクセスする場合は
+（注意）  
+[Meta Quest Browser](#231029-MetaQuestBrowser)から自宅サーバにアクセスする場合は
 [Windowsのモバイルスポットをオンにする](https://github.com/mubirou/LAMP#androidquest%E3%81%AE%E5%A0%B4%E5%90%88)等の設定が必要です
 
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
