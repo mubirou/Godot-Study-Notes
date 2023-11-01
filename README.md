@@ -4412,7 +4412,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 # systemctl reload httpd ←Apache設定のリロード
 ```
    
-2. [Godot WebXR Template](#231029-Template) を起動
+2. [Godot WebXR Template](#231029-Template) の project.godot を起動
 3. [プロジェクト]-[エクスポート]-[追加]-[Web]-[プロジェクトのエクスポート]
 4. 〇〇.html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) のローカルディレクトリに保存
 5. FileZilla を使ってサーバにアップロード
