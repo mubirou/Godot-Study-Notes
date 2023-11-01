@@ -4378,8 +4378,8 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 ### 👉 **Godot + WebXR + 内蔵Webサーバ（PCVR）**
 
   1. [Godot WebXR Template](https://godotengine.org/asset-library/asset/1128) から [Download]（2023-03-27版）
-  1. 解凍し **project.godot** を起動
-  1. [プロジェクト]-[エクスポート]-[追加]-[**Web**]-[HTML]-[**Head Include**] に以下を記述し [閉じる]  
+  2. 解凍し **project.godot** を起動
+  3. [プロジェクト]-[エクスポート]-[追加]-[**Web**]-[HTML]-[**Head Include**] に以下を記述し [閉じる]  
   ```
   <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js"></script>
   <script>
@@ -4390,12 +4390,12 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   var layersPolyfill = new WebXRLayersPolyfill();
   </script>
   ```
-  1. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) に接続
-  1. [リモートデバッグ]-[ブラウザで実行]（下図）  
+  4. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) に接続
+  5. [リモートデバッグ]-[ブラウザで実行]（下図）  
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310310620.jpg)  
   （Godot内蔵のWebサーバを利用します）  
-  1. Webブラウザ上で [**Enter VR**] を選択
-  1. 360°VRコンテンツが再生されたら成功！  
+  6. Webブラウザ上で [**Enter VR**] を選択
+  7. 360°VRコンテンツが再生されたら成功！  
   （黒いボックス＝両手のみ）  
 
 ### 👉 **Godot + WebXR + [LAMP](https://github.com/mubirou/LAMP#TOP)**
@@ -4409,8 +4409,8 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 
 # systemctl reload httpd ←Apache設定のリロード
 ```
-    
-1. LAMP 
+   
+2. LAMP 
 
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118、CentOS Stream 8  
