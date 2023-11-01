@@ -4415,6 +4415,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 2. [Godot WebXR Template](#231029-Template) を起動
 3. [プロジェクト]-[エクスポート]-[追加]-[Web]-[プロジェクトのエクスポート]
 4. 〇〇.html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) のローカルディレクトリに保存
+5. FileZilla を使ってサーバにアップロード
 
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118、CentOS Stream 8  
