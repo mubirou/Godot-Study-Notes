@@ -4429,15 +4429,15 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 ➈ [**Enter VR**] を選択し360°VRコンテンツが再生されたら成功！  
 
 （注意）  
-[Meta Quest Browser](#231029-MetaQuestBrowser)から自宅サーバにアクセスする場合は
-[Windowsのモバイルスポットをオンにする](https://github.com/mubirou/LAMP#androidquest%E3%81%AE%E5%A0%B4%E5%90%88)等の設定が必要です
+[Meta Quest Browser](#231029-MetaQuestBrowser)を使いルータ内のサーバにアクセスする場合は
+[Windowsのモバイルスポットにアクセス](https://github.com/mubirou/LAMP#androidquest%E3%81%AE%E5%A0%B4%E5%90%88)する必要あり
 
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 参考：[フレームシンセシス（Godot4 VR開発メモ）](https://tech.framesynthesis.co.jp/godot/vr/)  
 実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118、CentOS Stream 8、Apache 2.4.37、FileZilla 3.66.0、Meta Quest Browser  
 作成者：夢寐郎  
 作成日：2023年10月31日  
-更新日：2023年11月01日 Godot+WebXR+LAMPを追加  
+更新日：2023年11月02日 Godot+WebXR+LAMPを追加  
 [[TOP]](#TOP)
 
 
