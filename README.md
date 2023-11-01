@@ -4392,7 +4392,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   var layersPolyfill = new WebXRLayersPolyfill();
   </script>
   ```
-  4. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) に接続
+  4. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続
   5. [リモートデバッグ]-[ブラウザで実行]（下図）  
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310310620.jpg)  
   （Godot内蔵のWebサーバを利用します）  
@@ -4415,7 +4415,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 3. [プロジェクト]-[エクスポート]-[追加]-[Web]-[プロジェクトのエクスポート]
 4. 〇〇.html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) のローカルディレクトリに保存
 5. FileZilla を使ってサーバにアップロード
-6. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) に接続
+6. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続
 7. [Quest]-[デスクトップ]-[モニター〇]-[Chrome] を起動
 8. https://www.mubirou.com/.../〇〇.html 開く
 9. [**Enter VR**] を選択しVRコンテンツが再生されたら成功！
