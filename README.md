@@ -4377,6 +4377,8 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 
 ### 👉 **Godot + WebXR + 内蔵Webサーバ（PCVR）**
 
+<a id="231029-Template"></a>
+
   1. [Godot WebXR Template](https://godotengine.org/asset-library/asset/1128) から [Download]（2023-03-27版）
   2. 解凍し **project.godot** を起動
   3. [プロジェクト]-[エクスポート]-[追加]-[**Web**]-[HTML]-[**Head Include**] に以下を記述し [閉じる]  
@@ -4410,7 +4412,9 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 # systemctl reload httpd ←Apache設定のリロード
 ```
    
-2. LAMP 
+2. [Godot WebXR Template](#231029-Template) を起動
+3. [プロジェクト]-[エクスポート]-[追加]-[Web]-[プロジェクトのエクスポート]
+4. 〇〇.html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) のローカルディレクトリに保存
 
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118、CentOS Stream 8  
