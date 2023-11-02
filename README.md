@@ -4415,7 +4415,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 
 # systemctl reload httpd ←Apache設定のリロード
 ```
-（注意：**HTTPSサーバ上でのみ動作**）  
+（注意：**WebXRはHTTPSサーバ上でのみ動作**）  
 （注意：**この処理を行わないとエラーが発生し再生不可**）  
 （注意：**このファイルをWebXRコンテンツと同階層に置く**）  
 ➁ [Godot WebXR Template](#231029-Template) の project.godot を起動  
