@@ -4426,7 +4426,8 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 ➅ [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続  
 ➆ [Quest]-[デスクトップ]-[モニター〇]-[Chrome] を起動  
 ➇ https://www.mubirou.com/.../〇〇.html 開く  
-➈ [**Enter VR**] を選択し360°VRコンテンツが再生されたら成功！  
+➈「...が次の許可を求めています」と表示されたら [許可する] を選択
+➉ [**Enter VR**] を選択し360°VRコンテンツが再生されたら成功！  
 
 （注意）  
 [Meta Quest Browser](#231029-MetaQuestBrowser)を使ってルータ内のサーバにアクセスする場合は
