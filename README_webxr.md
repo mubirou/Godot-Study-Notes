@@ -104,7 +104,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 <a id="231107"></a>
 # <b>WebXRテンプレート</b>
 
-[Godot WebXR Template](https://godotengine.org/asset-library/asset/1128) の自作  
+[Godot WebXR Template](https://godotengine.org/asset-library/asset/1128) を使わずに自作する方法  
 
 1. Godot を起動し [新規] を選び、各種設定し [作成して編集] を選択  
     * プロジェクト名：webxr_template（任意）
