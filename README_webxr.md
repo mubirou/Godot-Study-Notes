@@ -115,7 +115,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 1. XXXX  
 
 Main（Node3D）  
-└ XROrigin3D  
+  └ XROrigin3D  
     ├ XRCamera3D  
     ├ XRController3D  
     └ XRController3D2  
