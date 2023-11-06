@@ -120,7 +120,8 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
     * Mesh：BoxMesh
     * Size：x 0.1、y 0.1、z 0.1
 1. [CanvasLayer] をルートに追加
-1. [Button] を [CanvasLayer] に追加しインスペクタの [Text] に"Enter VR"と入力
+1. [Button] を [CanvasLayer] に追加しインスペクタの [Text] に"Enter VR"と入力（下図）  
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202311070541.jpg)  
 
 参考：[Snopek Games](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)（How to make a VR game for WebXR）  
 実行環境：Windows 11、Godot 4.2 Beta 4、Meta Quest 3（57.0）、Quest Link、Oculusアプリ、Chrome 118  
