@@ -4452,12 +4452,12 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 
 [Godot WebXR Template](https://godotengine.org/asset-library/asset/1128) の自作  
 
-1. XXX
-    ```gdscript
-    XXXX
-    ```
-    * XXX
-    * XXXX
+1. Godot を起動し [新規] を選び、各種設定し [作成して編集] を選択  
+  * プロジェクト名：webxr_template（任意）
+  * プロジェクトパス：（任意）
+  * レンダラー：互換性（Vulkanが有効か要調査）
+1. [プロジェクト]-[プロジェクト設定]-[XR]-[シェーダー]-[✓オン]
+1. [保存して再起動]
 
 参考：[Snopek Games](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)（How to make a VR game for WebXR）  
 実行環境：Windows 11、Godot 4.2 Beta 4、Meta Quest 3（57.0）、Quest Link、Oculusアプリ、Chrome 118  
