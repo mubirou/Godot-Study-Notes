@@ -117,9 +117,10 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 1. 名前を"XRController3D"→"LeftController"に変更しインスペクタの [Tracker] を [left_hand] にする
 1. 同様に"XRController3D2"→"RightController"に変更しインスペクタの [Tracker] を [right_hand] にする
 1. [MeshInstance3D] を左右のコントローラーに追加（視覚化）し各種設定  
-  * Mesh：BoxMesh
-  * Size：x 0.1、y 0.1、z 0.1
-1. XXX 
+    * Mesh：BoxMesh
+    * Size：x 0.1、y 0.1、z 0.1
+1. [CanvasLayer] をルートに追加
+1. [Button] を [CanvasLayer] に追加しインスペクタの [Text] に"Enter VR"と入力
 
 参考：[Snopek Games](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)（How to make a VR game for WebXR）  
 実行環境：Windows 11、Godot 4.2 Beta 4、Meta Quest 3（57.0）、Quest Link、Oculusアプリ、Chrome 118  
