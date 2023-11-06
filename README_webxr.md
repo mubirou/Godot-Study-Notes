@@ -239,7 +239,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
     func _webxr_on_squeeze_end(input_source_id: int) -> void:
       print("Squeeze End: " + str(input_source_id))
     ```
-1. [プロジェクト]-[エクスポート]-[追加]-[**Web**]-[HTML]-[Head Include] に以下を記述し [閉じる]  
+1. [プロジェクト]-[エクスポート]-[追加]-[Web]-[HTML]-[Head Include] に以下を記述し [閉じる]  
     ```
     <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js"></script>
     <script>
