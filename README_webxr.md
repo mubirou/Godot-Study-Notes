@@ -250,9 +250,12 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
     var layersPolyfill = new WebXRLayersPolyfill();
     </script>
     ```
-1. 引続き [VRAMテクスチャ圧縮]-[モバイル向け]-[✓オン]  
-  （赤い文字がメッセージが表示されたら [Fix Import] を選択）
-1. XXXX
+1. 引続き各種設定して [プロジェクトのエクスポート] をする
+    * 名前：WebXR（任意）
+    * エクスポート先のパス：[FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリに index.html として保存
+    * VRAMテクスチャ圧縮-モバイル向け：✓オン
+      （赤い文字がメッセージが表示されたら [Fix Import] を選択）
+1. XXX
 
 参考：[Snopek Games](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)（How to make a VR game for WebXR）  
 実行環境：Windows 11、Godot 4.2 Beta 4、Meta Quest 3（57.0）、Quest Link、Oculusアプリ、Chrome 118  
