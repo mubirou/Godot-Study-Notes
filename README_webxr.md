@@ -116,9 +116,9 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 
     Main（Node3D）  
   　  └ XROrigin3D  
-  　    ├ XRCamera3D  
-  　    ├ XRController3D  
-  　    └ XRController3D2  
+  　       └ **StaticBody3D**  
+  　  │　　   └ **CollisionShape3D**（反応する領域）  
+  　  └ **DirecionalLight3D**  
 
 
   Main（Node3D）  
