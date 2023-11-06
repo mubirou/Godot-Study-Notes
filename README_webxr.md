@@ -112,7 +112,14 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
   * レンダラー：互換性（Vulkanが有効か要調査）
 1. [プロジェクト]-[プロジェクト設定]-[XR]-[シェーダー]-[✓オン] にして [保存して再起動]
 1. [3Dシーン] を作成（名前を"Node3D"→"Main"に変更）
+1. XXXX  
 
+Main（[**Node3D**]  
+└ XROrigin3D  
+  ├ XRCamera3D  
+  ├ XRController3D  
+  └ XRController3D2  
+  
 参考：[Snopek Games](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)（How to make a VR game for WebXR）  
 実行環境：Windows 11、Godot 4.2 Beta 4、Meta Quest 3（57.0）、Quest Link、Oculusアプリ、Chrome 118  
 作成者：夢寐郎  
