@@ -114,10 +114,11 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 1. [3Dシーン] を作成（名前を"Node3D"→"Main"に変更）
 1. XXXX  
 
-  　  ├ MeshInstance3D（選択するオブジェクト）  
-  　  │     └ **StaticBody3D**  
-  　  │　　   └ **CollisionShape3D**（反応する領域）  
-  　  └ **DirecionalLight3D**  
+    Main（Node3D）  
+  　  └ XROrigin3D  
+  　    ├ XRCamera3D  
+  　    ├ XRController3D  
+  　    └ XRController3D2  
 
 
   Main（Node3D）  
