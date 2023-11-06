@@ -4459,7 +4459,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
     * XXX
     * XXXX
 
-参考：[Snopek Games](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)（How to make a VR game for WebXR with Godot 4）  
+参考：[Snopek Games](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)（How to make a VR game for WebXR）  
 実行環境：Windows 11、Godot 4.2 Beta 4、Meta Quest 3（57.0）、Quest Link、Oculusアプリ、Chrome 118  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
