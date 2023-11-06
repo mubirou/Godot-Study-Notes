@@ -115,7 +115,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 1. [XROrigin3D]、[XRCamera3D]、[XRController3D] 2つを追加（下図）  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202311070520.jpg)  
 1. 名前を"XRController3D"→"LeftController"に変更しインスペクタの [Tracker] を [left_hand] にする
-1. XXX
+1. 同様に"XRController3D2"→"RightController"に変更しインスペクタの [Tracker] を [right_hand] にする
 
 参考：[Snopek Games](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)（How to make a VR game for WebXR）  
 実行環境：Windows 11、Godot 4.2 Beta 4、Meta Quest 3（57.0）、Quest Link、Oculusアプリ、Chrome 118  
