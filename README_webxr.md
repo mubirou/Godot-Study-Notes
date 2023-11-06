@@ -250,6 +250,8 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
     var layersPolyfill = new WebXRLayersPolyfill();
     </script>
     ```
+1. 引続き [VRAMテクスチャ圧縮]-[モバイル向け]-[✓オン]  
+  （赤い文字がメッセージが表示されたら [Fix Import] を選択）
 1. XXXX
 
 参考：[Snopek Games](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)（How to make a VR game for WebXR）  
