@@ -1,5 +1,3 @@
-# Godot Study Notes 🔰
-
 <a id="231029"></a>
 # <b>WebXR入門</b>
 
