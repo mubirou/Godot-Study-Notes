@@ -2,7 +2,7 @@
 
 ### **Index（WebXR 対応）**
 
-| [WebXR入門](#231029) |
+| [WebXR入門](#231029) | [WebXRテンプレート](#231107) |
 
 ### **Index（Godot 4.0 対応）**
 
@@ -4442,6 +4442,26 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 作成者：夢寐郎  
 作成日：2023年10月31日  
 更新日：2023年11月02日 Quest単体+LAMP情報を追加  
+[[TOP]](#TOP)
+
+
+### この項目は書きかけです
+
+<a id="231107"></a>
+# <b>WebXRテンプレート</b>
+
+[Godot WebXR Template](https://godotengine.org/asset-library/asset/1128) の自作  
+
+1. XXX
+    ```gdscript
+    XXXX
+    ```
+    * XXX
+    * XXXX
+
+実行環境：Windows 11、Godot 4.2 Beta 4、Meta Quest 3（57.0）、Quest Link、Oculusアプリ、Chrome 118  
+作成者：夢寐郎  
+作成日：202X年XX月XX日  
 [[TOP]](#TOP)
 
 
