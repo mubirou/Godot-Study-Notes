@@ -250,11 +250,12 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
     var layersPolyfill = new WebXRLayersPolyfill();
     </script>
     ```
-1. 引続き各種設定して [プロジェクトのエクスポート] をする
+1. 引続き各種設定して [プロジェクトのエクスポート]（index.html）をする（下図）
     * 名前：WebXR（任意）
-    * エクスポート先のパス：[FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリに index.html として保存
+    * エクスポート先のパス：[FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリ
     * VRAMテクスチャ圧縮-モバイル向け：✓オン
-      （赤い文字がメッセージが表示されたら [Fix Import] を選択）
+      （赤い文字がメッセージが表示されたら [Fix Import] を選択）  
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202311070606.jpg)  
 1. XXX
 
 参考：[Snopek Games](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)（How to make a VR game for WebXR）  
