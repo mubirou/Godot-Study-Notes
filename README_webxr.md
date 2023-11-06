@@ -107,9 +107,9 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 [Godot WebXR Template](https://godotengine.org/asset-library/asset/1128) の自作  
 
 1. Godot を起動し [新規] を選び、各種設定し [作成して編集] を選択  
-  * プロジェクト名：webxr_template（任意）
-  * プロジェクトパス：（任意）
-  * レンダラー：互換性（Vulkanが有効か要調査）
+    * プロジェクト名：webxr_template（任意）
+    * プロジェクトパス：（任意）
+    * レンダラー：互換性（Vulkanが有効か要調査）
 1. [プロジェクト]-[プロジェクト設定]-[XR]-[シェーダー]-[✓オン] にして [保存して再起動]
 1. [3Dシーン] を作成（名前を"Node3D"→"Main"に変更）
 1. [XROrigin3D]、[XRCamera3D]、[XRController3D] 2つを追加（下図）  
