@@ -241,7 +241,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
     ```
 1. [プロジェクト]-[エクスポート]-[追加]-[**Web**]-[HTML]-[Head Include] に以下を記述し [閉じる]  
     ```
-      <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js"></script>
     <script>
     var polyfill = new WebXRPolyfill();
     </script>
