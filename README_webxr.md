@@ -240,16 +240,17 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
       print("Squeeze End: " + str(input_source_id))
     ```
 1. [プロジェクト]-[エクスポート]-[追加]-[**Web**]-[HTML]-[Head Include] に以下を記述し [閉じる]  
-```
-  <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js"></script>
-<script>
-var polyfill = new WebXRPolyfill();
-</script>
-<script src="https://cdn.jsdelivr.net/npm/webxr-layers-polyfill@latest/build/webxr-layers-polyfill.min.js"></script>
-<script>
-var layersPolyfill = new WebXRLayersPolyfill();
-</script>
-```
+    ```
+      <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js"></script>
+    <script>
+    var polyfill = new WebXRPolyfill();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/webxr-layers-polyfill@latest/build/webxr-layers-polyfill.min.js"></script>
+    <script>
+    var layersPolyfill = new WebXRLayersPolyfill();
+    </script>
+    ```
+1. XXXX
 
 参考：[Snopek Games](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)（How to make a VR game for WebXR）  
 実行環境：Windows 11、Godot 4.2 Beta 4、Meta Quest 3（57.0）、Quest Link、Oculusアプリ、Chrome 118  
