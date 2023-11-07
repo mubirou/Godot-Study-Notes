@@ -264,6 +264,8 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 1. WebサーバにアップロードしてからブラウザでURLを指定して実行するか、画面左上にある [リモートデバッグ]-[ブラウザで実行] で再生
 1. [Enter VR] を選択し360°VRコンテンツが再生されたら成功！  
 
+
+参考ファイル：[webxr_template.zip](https://github.com/mubirou/Godot/blob/main/zip/webxr_template.zip)  
 参考：[Snopek Games](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)（How to make a VR game for WebXR）  
 実行環境：Windows 11、Godot 4.1.3
 、Meta Quest 3（57.0）、Quest Link、Oculusアプリ、Chrome 118  
