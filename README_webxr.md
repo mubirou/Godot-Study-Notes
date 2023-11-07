@@ -87,9 +87,9 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 ➇ https://www.mubirou.com/.../〇〇.html 開く  
 ➈「...が次の許可を求めています」と表示されたら [許可する] を選択
 ➉ [**Enter VR**] を選択し360°VRコンテンツが再生されたら成功！  
-
 （注意）  
-[Meta Quest Browser](#231029-MetaQuestBrowser)を使ってルータ内のサーバにアクセスする場合は
+・WebXRコンテンツを複数開いている場合は砂時計が表示されたまま実行されません
+・[Meta Quest Browser](#231029-MetaQuestBrowser)を使ってルータ内のサーバにアクセスする場合は
 [Windowsのモバイルスポットにアクセス](https://github.com/mubirou/LAMP#androidquest%E3%81%AE%E5%A0%B4%E5%90%88)する必要あり
 
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
@@ -263,6 +263,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
     * Use TLS：✓オン
 1. WebサーバにアップロードしてからブラウザでURLを指定して実行するか、画面左上にある [リモートデバッグ]-[ブラウザで実行] で再生
 1. [Enter VR] を選択し360°VRコンテンツが再生されたら成功！  
+（注意）WebXRコンテンツを複数開いている場合は砂時計が表示されたまま実行されません
 
 
 参考ファイル：[webxr_template.zip](https://github.com/mubirou/Godot/blob/main/zip/webxr_template.zip)  
