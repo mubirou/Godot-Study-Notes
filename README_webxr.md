@@ -265,7 +265,10 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 1. WebサーバにアップロードしてからブラウザでURLを指定して実行するか、画面左上にある [リモートデバッグ]-[ブラウザで実行] で再生
 1. [Enter VR] を選択し360°VRコンテンツが再生されたら成功！  
 
-* 注意：WebXRコンテンツを複数開いている場合は砂時計が表示されたまま実行されません
+* 注意  
+    * WebXRコンテンツを複数開いている場合は砂時計が表示されたまま実行されません
+    * [Meta Quest Browser](#231029-MetaQuestBrowser)を使ってルータ内のサーバにアクセスする場合は
+    [Windowsのモバイルスポットにアクセス](https://github.com/mubirou/LAMP#androidquest%E3%81%AE%E5%A0%B4%E5%90%88)する必要があります
 
 
 参考ファイル：[webxr_template.zip](https://github.com/mubirou/Godot/blob/main/zip/webxr_template.zip)  
