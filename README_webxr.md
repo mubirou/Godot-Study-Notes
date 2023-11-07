@@ -1,4 +1,4 @@
-[Index](https://github.com/mubirou/Godot-Study-Notes#TOP)
+[[Index]](https://github.com/mubirou/Godot-Study-Notes#TOP)
 
 <a id="231029"></a>
 # <b>WebXR入門</b>
