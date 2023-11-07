@@ -239,6 +239,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
     func _webxr_on_squeeze_end(input_source_id: int) -> void:
       print("Squeeze End: " + str(input_source_id))
     ```
+1. [シーン]-[シーンを保存] で main.tscn を指定し [保存]
 1. [プロジェクト]-[エクスポート]-[追加]-[Web]-[HTML]-[Head Include] に以下を記述し [閉じる]  
     ```
     <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js"></script>
@@ -256,16 +257,19 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
     * VRAMテクスチャ圧縮-モバイル向け：✓オン
       （赤い文字がメッセージが表示されたら [Fix Import] を選択）  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202311070606.jpg)  
-1. XXX
+1. [エディター]-[エディター設定]-[エクスポート]-[Web] で以下を確認  
+    * Use TLS：✓オン
+1. サーバにアップロードしてからWebブラウザでURLを指定して実行するか、画面左上にある [リモートデバッグ]-[ブラウザで実行] で再生
 
 参考：[Snopek Games](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)（How to make a VR game for WebXR）  
-実行環境：Windows 11、Godot 4.2 Beta 4、Meta Quest 3（57.0）、Quest Link、Oculusアプリ、Chrome 118  
+実行環境：Windows 11、Godot 4.1.3
+、Meta Quest 3（57.0）、Quest Link、Oculusアプリ、Chrome 118  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
+作成日：2023年11月07日  
 [[TOP]](https://github.com/mubirou/Godot-Study-Notes#TOP)  
 
 
-### この項目は書きかけです
+### この項目は書きかけです  
 
 <a id="XXX"></a>
 # <b>XXXXX</b>
