@@ -88,8 +88,8 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 ➈「...が次の許可を求めています」と表示されたら [許可する] を選択
 ➉ [**Enter VR**] を選択し360°VRコンテンツが再生されたら成功！  
 （注意）  
-・WebXRコンテンツを複数開いている場合は砂時計が表示されたまま実行されません
-・[Meta Quest Browser](#231029-MetaQuestBrowser)を使ってルータ内のサーバにアクセスする場合は
+* WebXRコンテンツを複数開いている場合は砂時計が表示されたまま実行されません
+* [Meta Quest Browser](#231029-MetaQuestBrowser)を使ってルータ内のサーバにアクセスする場合は
 [Windowsのモバイルスポットにアクセス](https://github.com/mubirou/LAMP#androidquest%E3%81%AE%E5%A0%B4%E5%90%88)する必要あり
 
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
