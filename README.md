@@ -1338,7 +1338,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 1. Visual Studio Code の設定  
     1. VSCode を起動
-    1. [アクティビティバー（Activity Bar）] から **godot-tolls** をインストール
+    1. [アクティビティバー（Activity Bar）] から [**godot-tolls**](https://marketplace.visualstudio.com/items?itemName=geequlim.godot-tools) をインストール
 
 1. Visual Studio Code のフォントの設定
     1. [**Ricty Diminished Discord（Regular）**](https://github.com/edihbrandon/RictyDiminished/blob/master/RictyDiminishedDiscord-Regular.ttf) をダウンロード＆インストール  
@@ -1347,10 +1347,10 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
     参考： [M PLUS 1 Code（Regular）](https://github.com/coz-m/MPLUS_FONTS/blob/master/fonts/otf/Mplus1Code-Regular.otf) （'M PLUS 1 Code Regular'）もあり  
 
 参考：[フォント設定](#220715)  
-実行環境：Windows 11、Godot 4.1.2、VSCode 1.83.1  
+実行環境：Windows 11、Godot 4.1.2、VSCode 1.83.1、godot-tools 1.3.1  
 作成者：夢寐郎  
 作成日：2021年12月30日  
-更新日：2023年10月12日 Godot 4.1.2 で動作確認    
+更新日：2023年10月12日 Godot 4.1.2 で動作確認  
 [[TOP]](#TOP)
 
 

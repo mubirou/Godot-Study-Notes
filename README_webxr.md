@@ -102,8 +102,6 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 [[TOP]](https://github.com/mubirou/Godot-Study-Notes#TOP)
 
 
-### この項目は書きかけです
-
 <a id="231107"></a>
 # <b>WebXRテンプレート</b>
 
@@ -274,10 +272,35 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 参考ファイル：[webxr_template.zip](https://github.com/mubirou/Godot/blob/main/zip/webxr_template.zip)  
 参考：[Snopek Games](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)（How to make a VR game for WebXR）  
 実行環境：Windows 11、Godot 4.1.3
-、Meta Quest 3（57.0）、Quest Link、Oculusアプリ、Chrome 118  
+、Meta Quest 3（59.0）、Quest Link、Oculusアプリ、Chrome 118  
 作成者：夢寐郎  
 作成日：2023年11月07日  
 [[TOP]](https://github.com/mubirou/Godot-Study-Notes#TOP)  
+
+
+### この項目は書きかけです  
+
+<a id="XXX"></a>
+# <b>XXXXX</b>
+
+1. [プロジェクト]-[プロジェクト設定] を各種設定→ [保存して再起動]
+    * [レンダリング]-[Renderer]
+      * Rendering Method：forward_plus
+      * Rendering Method.mobile：mobile
+      * Rendering Method.web：gl_compatibility
+    * [XR]
+      * [OpenXR]：（無効）
+      * [シェーダー]：✓オン
+
+1. [Main.gd] の修正
+1. [プロジェクト]-[エクスポート]-[追加]-[web]
+1. 「ターゲットプラットフォームは、'ETC2/ASTC'テクスチャ圧縮を必要とします。プロジェクト設定で'Import ETC2 ASTC'を有効にします」
+
+実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0）、Quest Link、Oculusアプリ  
+作成者：夢寐郎  
+作成日：202X年XX月XX日  
+更新日：202X年XX月XX日  
+[[TOP]](https://github.com/mubirou/Godot-Study-Notes#TOP)
 
 
 ### この項目は書きかけです  
