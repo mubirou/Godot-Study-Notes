@@ -1350,7 +1350,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 実行環境：Windows 11、Godot 4.1.2、VSCode 1.83.1、godot-tools 1.3.1  
 作成者：夢寐郎  
 作成日：2021年12月30日  
-更新日：2023年10月12日 Godot 4.1.2 で動作確認  
+更新日：2023年11月09日 godot-tools関連追記  
 [[TOP]](#TOP)
 
 
