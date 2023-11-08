@@ -1338,7 +1338,7 @@ $AnimationTree["parameters/TimeScale/scale"] = 2
 
 1. Visual Studio Code の設定  
     1. VSCode を起動
-    1. [アクティビティバー（Activity Bar）] から [**godot-tolls**](https://marketplace.visualstudio.com/items?itemName=geequlim.godot-tools) をインストール
+    1. [アクティビティバー（Activity Bar）] から [**godot-tolls**](https://marketplace.visualstudio.com/items?itemName=geequlim.godot-tools) をインストール（基本的に他のGDScript関連はインストールしない）
 
 1. Visual Studio Code のフォントの設定
     1. [**Ricty Diminished Discord（Regular）**](https://github.com/edihbrandon/RictyDiminished/blob/master/RictyDiminishedDiscord-Regular.ttf) をダウンロード＆インストール  
