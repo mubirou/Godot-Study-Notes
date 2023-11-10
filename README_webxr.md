@@ -280,26 +280,112 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 
 ### この項目は書きかけです  
 
-<a id="XXX"></a>
-# <b>XXXXX</b>
+<a id="231110"></a>
+# <b>WebXRManager</b>
 
-1. [プロジェクト]-[プロジェクト設定] を各種設定→ [保存して再起動]
-    * [レンダリング]-[Renderer]
-      * Rendering Method：forward_plus
-      * Rendering Method.mobile：mobile
-      * Rendering Method.web：gl_compatibility
-    * [XR]
-      * [OpenXR]：（無効）
-      * [シェーダー]：✓オン
+> [WebXRInterface](https://docs.godotengine.org/ja/4.x/classes/class_webxrinterface.html#webxrinterface) の初期化はかなり複雑で Main.gd も複雑にします。そこでオブジェクト指向を利用してシンプルな使い勝手を目指します。
 
-1. [Main.gd] の修正
-1. [プロジェクト]-[エクスポート]-[追加]-[web]
-1. 「ターゲットプラットフォームは、'ETC2/ASTC'テクスチャ圧縮を必要とします。プロジェクト設定で'Import ETC2 ASTC'を有効にします」
+### 👉 WebXRManagerクラス（自作）
+```
+# res://WebXRManager.gd
+class_name WebXRManager
+extends Node3D
 
-実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0）、Quest Link、Oculusアプリ  
+const VERSION = "1.0.0"
+const LAST_UPDATE = "2023-11-10T23:40+09:00"
+
+var _webxr_interface
+var _main
+var _canvaslayer
+var _canvaslayer_button
+
+func _init(self_):
+  _main = self_
+  _canvaslayer = _main.get_node("CanvasLayer")
+  _canvaslayer_button = _canvaslayer.get_node("Button")
+  _canvaslayer.visible = false
+  _canvaslayer_button.pressed.connect(self._on_button_pressed)
+  _webxr_interface = XRServer.find_interface("WebXR")
+  if _webxr_interface:
+    _webxr_interface.session_supported.connect(self._webxr_session_supported)
+    _webxr_interface.session_started.connect(self._webxr_session_started)
+    _webxr_interface.session_ended.connect(self._webxr_session_ended)
+    _webxr_interface.session_failed.connect(self._webxr_session_failed)
+    _webxr_interface.select.connect(self._webxr_on_select)
+    _webxr_interface.selectstart.connect(self._webxr_on_select_start)
+    _webxr_interface.selectend.connect(self._webxr_on_select_end)
+    _webxr_interface.squeeze.connect(self._webxr_on_squeeze)
+    _webxr_interface.squeezestart.connect(self._webxr_on_squeeze_start)
+    _webxr_interface.squeezeend.connect(self._webxr_on_squeeze_end)
+    _webxr_interface.is_session_supported("immersive-vr")
+
+func _on_button_pressed() -> void:
+  _webxr_interface.session_mode = 'immersive-vr'
+  _webxr_interface.requested_reference_space_types = 'bounded-floor, local-floor, local'
+  _webxr_interface.required_features = 'local-floor'
+  _webxr_interface.optional_features = 'bounded-floor'
+  if not _webxr_interface.initialize():
+    OS.alert("Failed to initialize WebXR")
+    return
+  
+func _webxr_session_supported(session_mode: String, supported: bool) -> void:
+  if session_mode == 'immersive-vr':
+    if supported:
+      _canvaslayer.visible = true
+    else:
+      OS.alert("Your browser doesn't support VR")
+
+func _webxr_session_started() -> void:
+  _canvaslayer.visible = false
+  _main.get_viewport().use_xr = true
+  print ("Reference space type: " + _webxr_interface.reference_space_type)
+
+func _webxr_session_ended() -> void:
+  _canvaslayer.visible = true
+  _main.get_viewport().use_xr = false
+
+func _webxr_session_failed(message: String) -> void:
+  OS.alert("Failed to initialize: " + message)
+
+func _webxr_on_select(input_source_id: int) -> void:
+  print("Select: " + str(input_source_id))
+
+  var tracker: XRPositionalTracker = _webxr_interface.get_input_source_tracker(input_source_id)
+  var xform = tracker.get_pose('default').transform
+  print (xform.origin)
+
+func _webxr_on_select_start(input_source_id: int) -> void:
+  print("Select Start: " + str(input_source_id))
+
+func _webxr_on_select_end(input_source_id: int) -> void:
+  print("Select End: " + str(input_source_id))
+
+func _webxr_on_squeeze(input_source_id: int) -> void:
+  print("Squeeze: " + str(input_source_id))
+
+func _webxr_on_squeeze_start(input_source_id: int) -> void:
+  print("Squeeze Start: " + str(input_source_id))
+
+func _webxr_on_squeeze_end(input_source_id: int) -> void:
+  print("Squeeze End: " + str(input_source_id))
+```
+
+### 👉 使い方
+
+```
+# res://Main.gd
+extends Node3D
+
+const WebXRManager = preload("res://WebXRManager.gd")
+var webxr_manager: WebXRManager
+
+func _ready() -> void:
+  webxr_manager = WebXRManager.new(self)
+```
+
+実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
+作成日：2023年11月10日  
 [[TOP]](https://github.com/mubirou/Godot-Study-Notes#TOP)
 
 
@@ -315,7 +401,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
     * XXX
     * XXXX
 
-実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0）、Quest Link、Oculusアプリ  
+実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：202X年XX月XX日  
 更新日：202X年XX月XX日  
