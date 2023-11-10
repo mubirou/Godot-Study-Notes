@@ -381,6 +381,7 @@ func _ready() -> void:
   webxr_manager = WebXRManager.new(self)
 ```
 
+参考ファイル：[webxr_manager.zip](https://github.com/mubirou/Godot/blob/main/zip/webxr_manager.zip)  
 実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2023年11月10日  
