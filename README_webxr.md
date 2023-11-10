@@ -284,7 +284,8 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 > [WebXRInterface](https://docs.godotengine.org/ja/4.x/classes/class_webxrinterface.html#webxrinterface) の初期化はかなり複雑でメインクラス（Main.gd）を冗長にしがちです。そこでオブジェクト指向を利用してシンプルな使い勝手を目指します。
 
 ### 👉 WebXRManager クラス（自作）
-```
+
+```python
 # res://WebXRManager.gd
 class_name WebXRManager
 extends Node3D
@@ -370,7 +371,7 @@ func _webxr_on_squeeze_end(input_source_id: int) -> void:
 
 ### 👉 使い方
 
-```
+```python
 # res://Main.gd
 extends Node3D
 
