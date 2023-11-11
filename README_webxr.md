@@ -391,6 +391,27 @@ func _ready() -> void:
 
 ### この項目は書きかけです  
 
+<a id="20231111"></a>
+# <b>WebXR設定</b>
+
+> ２つの実行環境  
+* Quest 3 単体 + Meta Quest Browser + WebXR
+* Windows（RTX2070）+ Google Chrome + WebXR + PCVR（Quest Link）+ Quest 3
+
+### Renderer
+  * [プロジェクト]-[プロジェクト設定]-[一般]-[レンダリング]-[Renderer] で各種設定  
+    * Rendering Method：forward_plus（初期値）
+    * Rendering Method.mobile：mobile（初期値）
+    * Rendering Method.web：**forward_plus**（初期値 gl_compatibility）
+
+実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ、Google Chrome 119  
+作成者：夢寐郎  
+作成日：2023年11月11日  
+[[TOP]](https://github.com/mubirou/Godot-Study-Notes#TOP)
+
+
+### この項目は書きかけです  
+
 <a id="XXX"></a>
 # <b>XXXXX</b>
 
