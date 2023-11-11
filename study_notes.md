@@ -4460,7 +4460,9 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
     * プロジェクト名：webxr_template（任意）
     * プロジェクトパス：（任意）
     * レンダラー：互換性（Vulkanが有効か要調査）
-1. [プロジェクト]-[プロジェクト設定]-[XR]-[シェーダー]-[✓オン] にして [保存して再起動]
+1. [プロジェクト]-[プロジェクト設定]-[**XR**] の設定＆再起動
+    * OpenXR：オフ（**注意：オンの場合 Meta Quest Browser で動作せず**）
+    * シェーダー：✓オン
 1. [3Dシーン] を作成（名前を"Node3D"→"Main"に変更）
 1. [XROrigin3D]、[XRCamera3D]、[XRController3D] 2つを追加（下図）  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202311070520.jpg)  
