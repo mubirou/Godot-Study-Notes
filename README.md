@@ -7,6 +7,6 @@
 ～この間CG-ARTSマイスター･UCアドバイザー資格取得～  
 * 2023年10月10日 Quest3購入･Godotの勉強を再開  
 
-## 👉 [Study Notes](./study_notes.md) 🔰
+## 👉 [Godot Study Notes](./study_notes.md) 🔰
 
 © 2021-2023 夢寐郎
