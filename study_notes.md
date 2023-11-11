@@ -4747,10 +4747,10 @@ func _ready() -> void:
 * Godotで作成したOpenXRコンテンツをWebXRに変換する方法です。  
 
 * 実行環境は次の２種類。  
-  1. Quest スタンドアローン  
-  [Quest 3](https://www.meta.com/jp/quest/quest-3/) 単体 + [Meta Quest Browser](https://www.meta.com/ja-jp/experiences/1916519981771802/) + [LAMP](https://github.com/mubirou/LAMP#TOP) + WebXR  
-  1. PCVR  
-  Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google Chrome + ([LAMP](https://github.com/mubirou/LAMP#TOP)) + WebXR + PCVR（[Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/)）+ [Quest 3](https://www.meta.com/jp/quest/quest-3/)  
+1. Quest スタンドアローン  
+[Quest 3](https://www.meta.com/jp/quest/quest-3/) 単体 + [Meta Quest Browser](https://www.meta.com/ja-jp/experiences/1916519981771802/) + [LAMP](https://github.com/mubirou/LAMP#TOP) + WebXR  
+1. PCVR  
+Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google Chrome + ([LAMP](https://github.com/mubirou/LAMP#TOP)) + WebXR + PCVR（[Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/)）+ [Quest 3](https://www.meta.com/jp/quest/quest-3/)  
 
 * OpenXRコンテンツのプロジェクトファイル（[project.godot](https://docs.godotengine.org/ja/4.x/tutorials/best_practices/project_organization.html)）を開き以下の内容の変更を行います。
 
