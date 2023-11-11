@@ -4746,7 +4746,7 @@ func _ready() -> void:
 
 > ２つの実行環境  
 ・ [Quest 3](https://www.meta.com/jp/quest/quest-3/) 単体 + Meta Quest Browser + WebXR  
-・ Windows（RTX2070）+ Google Chrome + WebXR + PCVR（Quest Link）+ [Quest 3](https://www.meta.com/jp/quest/quest-3/)  
+・ Windows（RTX2070）+ Google Chrome + WebXR + PCVR（[Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/)）+ [Quest 3](https://www.meta.com/jp/quest/quest-3/)  
 
 ### 👉 OpenXR･シェーダー
   * [プロジェクト]-[プロジェクト設定]-[**XR**] で各種設定
