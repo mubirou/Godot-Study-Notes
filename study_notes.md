@@ -4749,12 +4749,12 @@ func _ready() -> void:
 ・ Windows（RTX2070）+ Google Chrome + WebXR + PCVR（Quest Link）+ Quest 3  
 
 ### 👉 OpenXR･シェーダー
-  * [プロジェクト]-[プロジェクト設定]-[XR] で各種設定
-    * [OpenXR]-[有効]：オフ（**注意：オンだとMeta Quest Browserで動作せず**）
-    * [シェーダー]-[有効]：オン
+  * [プロジェクト]-[プロジェクト設定]-[**XR**] で各種設定
+    * [**OpenXR**]-[有効]：**オフ**（**注意：オンだとMeta Quest Browserで動作せず**）
+    * [**シェーダー**]-[有効]：**オン**
 
 ### 👉 Renderer
-  * [プロジェクト]-[プロジェクト設定]-[一般]-[レンダリング]-[Renderer] で各種設定  
+  * [プロジェクト]-[プロジェクト設定]-[一般]-[レンダリング]-[**Renderer**] で各種設定  
     * Rendering Method：forward_plus（初期値）
     * Rendering Method.mobile：mobile（初期値）
     * Rendering Method.web：**forward_plus**（初期値 gl_compatibility）
@@ -4763,8 +4763,8 @@ func _ready() -> void:
   * [プロジェクト]-[エクスポート] で各種設定
     * エクスポート先のパス：[FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリ
     * VRAMテクスチャ圧縮：
-      * デスクトップ向け：✓オン
-      * モバイル向け：✓オン  
+      * デスクトップ向け：✓オン（初期値）
+      * モバイル向け：**✓オン**  
       （[プロジェクト]-[プロジェクト設定]-[レンダリング]-[テクスチャ](Advanced Settings オン)-[VRAM圧縮]-[**Import ETC2 ASTC**] をオンにする必要あり）  
 
 実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ、Google Chrome 119  
