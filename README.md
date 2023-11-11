@@ -2263,7 +2263,7 @@ Main（Node3D）
 
 > Mixamo は Adobe に買収されてから更新が滞っています。
 同様のサービスに [Heat](https://heat.tech/) があります（無料版もあり）。
-Blender のプラグインとしても動作します。
+Blender のプラグインとしても動作します（[YouTube](https://www.youtube.com/watch?v=91vpV0T71bA)）。
 
   1. [Mixamo](https://www.mixamo.com/#/)（無料･アカウント必須）を開き [**UPLOAD CHARACTER**] を選び上記の **XXX.fbx** をドラッグ＆ドロップ  
   1. 指示に従い ➀顎 ➁手首 ➂肘 ➃膝 ➄股間 を指定（画像）  
