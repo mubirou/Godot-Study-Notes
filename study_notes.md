@@ -4755,7 +4755,7 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
 * OpenXRコンテンツ用のプロジェクトファイル（[project.godot](https://docs.godotengine.org/ja/4.x/tutorials/best_practices/project_organization.html)）を開き以下の変更を行います。
 
 ### 👉 OpenXR･シェーダー
-  * [プロジェクト]-[プロジェクト設定]-[**XR**] で各種設定
+  * [プロジェクト]-[プロジェクト設定]-[一般]-[**XR**] で各種設定
     * [**OpenXR**]-[有効]：**オフ**（**注意：オンだと[Meta Quest Browser](https://www.meta.com/ja-jp/experiences/1916519981771802/)で動作せず**）
     * [**シェーダー**]-[有効]：オン
 
