@@ -4763,7 +4763,8 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
   * [プロジェクト]-[プロジェクト設定]-[一般]-[レンダリング]-[**Renderer**] で各種設定  
     * Rendering Method：forward_plus（初期値）
     * Rendering Method.mobile：mobile（初期値）
-    * Rendering Method.web：**forward_plus**（初期値 gl_compatibility）
+    * Rendering Method.web：**forward_plus**（初期値 gl_compatibility）  
+    （PCVR環境でのパフォーマンス向上を目指すため）  
 
 ### 👉 CanvasLayer + Button
   1. [**CanvasLayer**] をルートに追加
