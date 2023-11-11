@@ -4606,7 +4606,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 1. 引続き各種設定して [プロジェクトのエクスポート]（index.html）をする（下図）
     * 名前：WebXR（任意）
     * エクスポート先のパス：[FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリ
-    * VRAMテクスチャ圧縮-モバイル向け：✓オン
+    * VRAMテクスチャ圧縮-モバイル向け：✓オン  
       （赤い文字がメッセージが表示されたら [Fix Import] を選択）  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202311070606.jpg)  
 1. [エディター]-[エディター設定]-[エクスポート]-[Web] で以下を確認  
