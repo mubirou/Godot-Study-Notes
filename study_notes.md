@@ -4752,7 +4752,7 @@ func _ready() -> void:
 1. **PCVR**（Windows PCのCPU･GPUによる処理）  
 Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google Chrome + ([LAMP](https://github.com/mubirou/LAMP#TOP)) + WebXR + PCVR（[Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/)）+ [Quest 3](https://www.meta.com/jp/quest/quest-3/)  
 
-* OpenXRコンテンツのプロジェクトファイル（[project.godot](https://docs.godotengine.org/ja/4.x/tutorials/best_practices/project_organization.html)）を開き以下の内容の変更を行います。
+* OpenXRコンテンツ用のプロジェクトファイル（[project.godot](https://docs.godotengine.org/ja/4.x/tutorials/best_practices/project_organization.html)）を開き以下の変更を行います。
 
 ### 👉 OpenXR･シェーダー
   * [プロジェクト]-[プロジェクト設定]-[**XR**] で各種設定
