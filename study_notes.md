@@ -4766,8 +4766,8 @@ func _ready() -> void:
       * デスクトップ向け：✓オン（初期値）
       * **モバイル向け**：**✓オン**  
       （[プロジェクト]-[プロジェクト設定]-[レンダリング]-[テクスチャ](Advanced Settings オン)-[VRAM圧縮]-[**Import ETC2 ASTC**] をオンにする必要あり）  
-    * [HTML]-[Head Include]  
-      ```
+    * [HTML]-[**Head Include**]  
+      ```html
       <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js"></script>
       <script>
       var polyfill = new WebXRPolyfill();
