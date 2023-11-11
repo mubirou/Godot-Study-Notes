@@ -4766,6 +4766,18 @@ func _ready() -> void:
       * デスクトップ向け：✓オン（初期値）
       * **モバイル向け**：**✓オン**  
       （[プロジェクト]-[プロジェクト設定]-[レンダリング]-[テクスチャ](Advanced Settings オン)-[VRAM圧縮]-[**Import ETC2 ASTC**] をオンにする必要あり）  
+    * [HTML]-[Head Include]  
+      ```
+      <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js"></script>
+      <script>
+      var polyfill = new WebXRPolyfill();
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/webxr-layers-polyfill@latest/build/webxr-layers-polyfill.min.js"></script>
+      <script>
+      var layersPolyfill = new WebXRLayersPolyfill();
+      </script>
+      ```
+    * XXX
 
 実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ、Google Chrome 119  
 作成者：夢寐郎  
