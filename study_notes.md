@@ -4744,6 +4744,8 @@ func _ready() -> void:
 <a id="20231111"></a>
 # <b>OpenXR→WebXR</b>
 
+Godotで作成したOpenXRをWebXRに変換する方法  
+
 > ２つの実行環境  
 ・ [Quest 3](https://www.meta.com/jp/quest/quest-3/) 単体 + [Meta Quest Browser](https://www.meta.com/ja-jp/experiences/1916519981771802/) + WebXR  
 ・ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google Chrome + WebXR + PCVR（[Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/)）+ [Quest 3](https://www.meta.com/jp/quest/quest-3/)  
@@ -4751,7 +4753,7 @@ func _ready() -> void:
 ### 👉 OpenXR･シェーダー
   * [プロジェクト]-[プロジェクト設定]-[**XR**] で各種設定
     * [**OpenXR**]-[有効]：**オフ**（**注意：オンだと[Meta Quest Browser](https://www.meta.com/ja-jp/experiences/1916519981771802/)で動作せず**）
-    * [**シェーダー**]-[有効]：**オン**
+    * [**シェーダー**]-[有効]：オン
 
 ### 👉 Renderer
   * [プロジェクト]-[プロジェクト設定]-[一般]-[レンダリング]-[**Renderer**] で各種設定  
