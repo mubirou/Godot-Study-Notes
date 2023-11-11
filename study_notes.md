@@ -4761,6 +4761,11 @@ Godotで作成したOpenXRをWebXRに変換する方法
     * Rendering Method.mobile：mobile（初期値）
     * Rendering Method.web：**forward_plus**（初期値 gl_compatibility）
 
+### 👉 CanvasLayer + Button
+  1. [CanvasLayer] をルートに追加
+  1. [Button] を [CanvasLayer] に追加しインスペクタの [Text] に"Enter VR"と入力（下図）  
+  ![image](https://github.com/mubirou/Godot/blob/main/jpg/202311070541.jpg)  
+
 ### 👉 Webエクスポート
   * [プロジェクト]-[エクスポート] で各種設定
     * エクスポート先のパス：[FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリ
