@@ -395,8 +395,8 @@ func _ready() -> void:
 # <b>WebXR設定</b>
 
 > ２つの実行環境  
-* Quest 3 単体 + Meta Quest Browser + WebXR
-* Windows（RTX2070）+ Google Chrome + WebXR + PCVR（Quest Link）+ Quest 3
+・ Quest 3 単体 + Meta Quest Browser + WebXR
+・ Windows（RTX2070）+ Google Chrome + WebXR + PCVR（Quest Link）+ Quest 3
 
 ### Renderer
   * [プロジェクト]-[プロジェクト設定]-[一般]-[レンダリング]-[Renderer] で各種設定  
