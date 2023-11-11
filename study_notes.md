@@ -4765,7 +4765,7 @@ func _ready() -> void:
     * VRAMテクスチャ圧縮：
       * デスクトップ向け：✓オン
       * モバイル向け：✓オン  
-      （[プロジェクト]-[プロジェクト設定]-[レンダリング]-[テクスチャ]（Advanced Settings オン）-[VRAM圧縮]-[Import ETC2 ASTC] をオンにする必要あり）  
+      （[プロジェクト]-[プロジェクト設定]-[レンダリング]-[テクスチャ](Advanced Settings オン)-[VRAM圧縮]-[**Import ETC2 ASTC**] をオンにする必要あり）  
 
 実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ、Google Chrome 119  
 作成者：夢寐郎  
