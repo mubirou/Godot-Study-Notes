@@ -6,7 +6,6 @@
 * 2021年12月30日～翌年9月20日 Godotの勉強（500時間）  
 * 2023年10月10日 Quest3購入･Godotの勉強を再開  
 
-### 👉 [Study Notes](./study_notes.md)
-（2021年12月31日～）  
+### 👉 [Study Notes](./study_notes.md)（2021年12月31日～）  
 
 © 2021-2023 夢寐郎
