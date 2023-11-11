@@ -2260,6 +2260,11 @@ Main（Node3D）
   1. [内容]-[対象]：**✓選択したオブジェクト** を選択し [FBXをエクスポート] 
 
 ### 👉 [Mixamo](https://www.mixamo.com/#/)（ミキサモ）の作業  
+
+> Mixamo は Adobe に買収されてから更新が滞っています。
+同様のサービスに [Heat](https://heat.tech/) があります（無料版もあり）。
+
+
   1. [Mixamo](https://www.mixamo.com/#/)（無料･アカウント必須）を開き [**UPLOAD CHARACTER**] を選び上記の **XXX.fbx** をドラッグ＆ドロップ  
   1. 指示に従い ➀顎 ➁手首 ➂肘 ➃膝 ➄股間 を指定（画像）  
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202207191132.jpg)  
@@ -2300,7 +2305,7 @@ Main（Node3D）
 実行環境：Windows 11、Godot 4.1.2、Blender 3.6.4、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2022年07月20日  
-更新日：2023年10月17日 Godot 4.1.2、Blender 3.6.4、Quest 3 で動作確認  
+更新日：2023年11月11日 Heatに関する情報を追加  
 [[TOP]](#TOP)
 
 
