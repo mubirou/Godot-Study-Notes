@@ -2,7 +2,7 @@
 
 ### **Index（WebXR 対応）**
 
-| [WebXR入門](#231029) | [WebXRテンプレート](#231107) | [WebXRManager](#231110) | [WebXR設定](#20231111) |
+| [WebXR入門](#231029) | [WebXRテンプレート](#231107) | [WebXRManager](#231110) | [OpenXR→WebXR](#20231111) |
 
 ### **Index（Godot 4.0 対応）**
 
@@ -4742,7 +4742,7 @@ func _ready() -> void:
 ### この項目は書きかけです  
 
 <a id="20231111"></a>
-# <b>WebXR設定</b>
+# <b>OpenXR→WebXR</b>
 
 > ２つの実行環境  
 ・ [Quest 3](https://www.meta.com/jp/quest/quest-3/) 単体 + [Meta Quest Browser](https://www.meta.com/ja-jp/experiences/1916519981771802/) + WebXR  
