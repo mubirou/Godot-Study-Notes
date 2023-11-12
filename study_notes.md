@@ -4845,7 +4845,8 @@ Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法�
 1. プロジェクトファイル（[project.godot](https://docs.godotengine.org/ja/4.x/tutorials/best_practices/project_organization.html)）を開く
 1. [リモートデバッグ]-[ブラウザで実行]（下図）  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310310620.jpg)  
-1. 「この接続ではプライバシーが保護されません」と表示されたら [詳細設定]-[localhost にアクセスする（安全ではありません）] を選択
+<a id="231112-alert"></a>
+1. 「この接続ではプライバシーが保護されません」と表示されたら [詳細設定]-[localhost にアクセスする（安全ではありません）] を選択（**注意**：文字が小さいので判り難い）
 1. [Enter VR] を選択
 1. 「localhost:8060 が次の許可を求めています（バーチャルリアリティデバイスとデータの使用）」と表示されたら [許可する] を選択
 1. 360°VR コンテンツが再生されたら成功！  
@@ -4865,7 +4866,8 @@ Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法�
         1. Questを起動
         1. [Meta Quest Browser](https://www.meta.com/ja-jp/experiences/1916519981771802/) を起動
         1. WebXRコンテンツが置かれたURL（https://〇〇〇/index.html）を指定する   
-1. [ENTER VR] を選択  
+1. [ENTER VR] を選択
+**[アラート](#231112-alert)  
 
 **注意**：PC（PCVR用）や Quest が Web サーバと同じルータ内にある場合 [ルーター内からドメイン名でアクセスする方法](https://github.com/mubirou/LAMP#202303262200-router) の設定が必要になります  
 
