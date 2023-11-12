@@ -4771,7 +4771,7 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
   1. [**Button**] を [CanvasLayer] に追加しインスペクタの [Text] に"**Enter VR**"と入力（下図）  
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202311111944.jpg)  
 
-### 👉 [WebXRManager](#231110) のインストール
+### 👉 [WebXRManager](#231110)（自作）のインストール
   1. [WebXRManager.gd](https://github.com/mubirou/Godot-Study-Notes/blob/main/gd/WebXRManager.gd) を main.gd と同じ階層にダウンロードする
   1. Godot の [ファイルシステム] に WebXRManager.gd に現れたことを確認
 
