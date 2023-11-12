@@ -4854,10 +4854,10 @@ Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法�
 
 ### 👉 Webサーバにコンテンツを公開する
 1. Webサーバにコンテンツをアップロードする
-  1. [WebXRテンプレート](#231107)や[OpenXR→WebXR](#20231111)参考にWebXRプロジェクトを作成
-  1. [プロジェクト]-[エクスポート]-[Web]-[プロジェクトのエクスポート]
-  1. [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla)を使ってサーバにアップロード
-  * Questスタンドアローンで実行の場合  
+    1. [WebXRテンプレート](#231107)や[OpenXR→WebXR](#20231111)参考にWebXRプロジェクトを作成
+    1. [プロジェクト]-[エクスポート]-[Web]-[プロジェクトのエクスポート]
+    1. [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla)を使ってサーバにアップロード
+    * Questスタンドアローンで実行の場合  
 
 ➅ [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続  
 ➆ [Quest]-[デスクトップ]-[モニター〇]-[Chrome] を起動  
