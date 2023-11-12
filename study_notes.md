@@ -4852,6 +4852,18 @@ Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法�
   1. 360°VRコンテンツが再生されたら成功！  
 注意：WebXRコンテンツを複数開いている場合は砂時計が表示されたまま実行されません。  
 
+### 👉 Webサーバにコンテンツを公開する
+  1. XXX  
+
+➂ [プロジェクト]-[エクスポート]-[追加]-[Web]-[プロジェクトのエクスポート]  
+➃ 〇〇.html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリに保存  
+➄ FileZilla を使ってサーバにアップロード  
+➅ [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続  
+➆ [Quest]-[デスクトップ]-[モニター〇]-[Chrome] を起動  
+➇ https://www.mubirou.com/.../〇〇.html 開く  
+➈「...が次の許可を求めています」と表示されたら [許可する] を選択
+➉ [**Enter VR**] を選択し360°VRコンテンツが再生されたら成功！  
+
 実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ、Google Chrome 119  
 作成者：夢寐郎  
 作成日：2023年11月12日  
