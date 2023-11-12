@@ -4631,7 +4631,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 <a id="231110"></a>
 # <b>WebXRManager</b>
 
-[WebXRInterface](https://docs.godotengine.org/ja/4.x/classes/class_webxrinterface.html#webxrinterface) の初期化はかなり複雑でメインクラス（Main.gd）を冗長にしがちです。そこでオブジェクト指向を利用してシンプルな使い勝手を目指します。
+[WebXRInterface](https://docs.godotengine.org/ja/4.x/classes/class_webxrinterface.html#webxrinterface) の初期化はかなり複雑でメインクラス（Main.gd）を冗長にしがちです。そこでオブジェクト指向を利用してシンプルな使い勝手を目指しました。
 
 ### 👉 [WebXRManager](https://raw.githubusercontent.com/mubirou/Godot-Study-Notes/main/gd/WebXRManager.gd) クラス（自作）
 
