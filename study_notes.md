@@ -4774,7 +4774,7 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
 ### 👉 メインクラス（main.gd）
   1. res://main.gd を開き以下の部分を削除  
       ```gdscript
-      # main.gd
+      # res://main.gd
       extends Node3D
 
       var interface: XRInterface ←削除
