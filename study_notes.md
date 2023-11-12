@@ -4773,17 +4773,18 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
 
 ### 👉 メインクラス（main.gd）
   1. res://main.gd を開き以下の部分を削除  
-  ```gdscript
-  # main.gd
-  extends Node3D
+      ```gdscript
+      # main.gd
+      extends Node3D
 
-  var interface: XRInterface ←削除
+      var interface: XRInterface ←削除
 
-  func _ready() -> void
-    interface = XRServer.find_interface("OpenXR") ←削除
-    if interface and interface.is_initialized(): ←削除
-      get_viewport().use_xr = true ←削除
-  ```
+      func _ready() -> void
+        interface = XRServer.find_interface("OpenXR") ←削除
+        if interface and interface.is_initialized(): ←削除
+          get_viewport().use_xr = true ←削除
+      ```
+  1. XXX
 
 ### 👉 Webエクスポート
   * [プロジェクト]-[エクスポート] で各種設定
