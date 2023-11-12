@@ -4741,7 +4741,7 @@ func _ready() -> void:
 <a id="20231111"></a>
 # <b>OpenXR→WebXR</b>
 
-* Godotで作成したOpenXRコンテンツをWebXRに変換する方法です。  
+* Godotで作成したOpenXRコンテンツをWebXR用に変換する方法です。  
 
 * 実行環境は次の２種類。  
 1. **Quest スタンドアローン**（QuestのCPU･GPUによる処理）  
