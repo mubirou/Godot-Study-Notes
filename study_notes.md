@@ -4801,7 +4801,7 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
       ```
 
 ### 👉 Webエクスポート
-  * [プロジェクト]-[**エクスポート**]-[追加]-[**Web**] を選び各種設定
+  * [プロジェクト]-[**エクスポート**]-[追加]-[**Web**] を選び各種設定（下図）
     * エクスポート先のパス：[FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリ
     * **VRAMテクスチャ圧縮**：
       * デスクトップ向け：✓オン（初期値）
@@ -4818,7 +4818,7 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
       var layersPolyfill = new WebXRLayersPolyfill();
       </script>
       ```
-    * XXX
+  ![image](https://github.com/mubirou/Godot/blob/main/jpg/202311070606.jpg)  
 
 実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ、Google Chrome 119  
 作成者：夢寐郎  
