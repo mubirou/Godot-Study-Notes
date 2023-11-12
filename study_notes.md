@@ -4801,7 +4801,7 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
       ```
 
 ### 👉 Webエクスポート
-  * [プロジェクト]-[エクスポート] で各種設定
+  * [プロジェクト]-[エクスポート]-[追加]-[Web] を選び各種設定
     * エクスポート先のパス：[FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリ
     * **VRAMテクスチャ圧縮**：
       * デスクトップ向け：✓オン（初期値）
