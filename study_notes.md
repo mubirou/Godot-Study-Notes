@@ -4785,7 +4785,7 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
           get_viewport().use_xr = true # 削除
       ```
   1. 引続き以下の部分を追加  
-      ```
+      ```gdscript
       # res://Main.gd
       extends Node3D
 
