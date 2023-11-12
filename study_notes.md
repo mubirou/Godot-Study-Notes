@@ -2,7 +2,7 @@
 
 ### **Index（WebXR 対応）**
 
-| [WebXR入門](#231029) | [WebXRテンプレート](#231107) | [WebXRManager](#231110) | [OpenXR→WebXR](#20231111) |
+| [WebXR入門](#231029) | [WebXRテンプレート](#231107) | [WebXRManager](#231110) | [OpenXR→WebXR](#20231111) | [WebXR実行方法](#231112) |
 
 ### **Index（Godot 4.0 対応）**
 
@@ -4739,8 +4739,6 @@ func _ready() -> void:
 [[TOP]](#TOP)
 
 
-### この項目は書きかけです  
-
 <a id="20231111"></a>
 # <b>OpenXR→WebXR</b>
 
@@ -4807,7 +4805,7 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
   ・Webサイトやサービスで安全な通信を実現  
   * [エディター]-[エディター設定]-[一般]-[エクスポート]-[Web] を開き各種設定
     * Use SSL：オフ（最新の実行環境では不要）
-    * Use TLS：**✓オン**
+    * **Use TLS**：**✓オン**
 
 ### 👉 Webエクスポート
   * [プロジェクト]-[エクスポート]-[追加]-[Web] を選び各種設定（下図）
@@ -4831,7 +4829,26 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
 
 実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ、Google Chrome 119  
 作成者：夢寐郎  
-作成日：2023年11月11日  
+作成日：2023年11月12日  
+[[TOP]](#TOP)
+
+
+### この項目は書きかけです  
+
+<a id="231112"></a>
+# <b>WebXR実行方法</b>
+
+### 👉 Godot の HTTP サーバ機能を利用する
+  1. [OpenXR→WebXR](#20231111)を参考にWebXRプロジェクトを作成
+  1. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続
+  1. [Godot]-[リモートデバッグ]-[ブラウザで実行]（下図）  
+  ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310310620.jpg)  
+  1. 「この接続ではプライバシーが保護されません」と表示されたら [詳細設定]-[localhostにアクセスする（安全ではありません）] を選択
+  1. 「localhost:8060 が次の許可を求めています（バーチャルリアリティデバイスとデータの使用）」と表示されたら [許可する] を選択
+
+実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ、Google Chrome 119  
+作成者：夢寐郎  
+作成日：2023年11月12日  
 [[TOP]](#TOP)
 
 
