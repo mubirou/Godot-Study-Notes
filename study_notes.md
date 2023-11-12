@@ -4832,8 +4832,6 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
 [[TOP]](#TOP)
 
 
-### この項目は書きかけです  
-
 <a id="231112"></a>
 # <b>WebXR実行方法</b>
 
