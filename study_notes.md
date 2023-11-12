@@ -4802,9 +4802,12 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
 
 ### 👉 TLS (Transport Layer Security)
   > TLS の目的  
-  ・TLSは通信を暗号化し保護  
+  ・通信の暗号化と保護  
   ・相手の認証とデータの盗聴･改ざん防止  
   ・Webサイトやサービスで安全な通信を実現  
+  * [エディター]-[エディター設定]-[一般]-[エクスポート]-[Web] を開き各種設定
+    * Use SSL：オフ（最新の実行環境では不要）
+    * Use TLS：✓オン
 
 ### 👉 Webエクスポート
   * [プロジェクト]-[**エクスポート**]-[追加]-[**Web**] を選び各種設定（下図）
