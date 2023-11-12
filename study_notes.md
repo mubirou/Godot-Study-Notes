@@ -4771,8 +4771,22 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
   1. [**Button**] を [CanvasLayer] に追加しインスペクタの [Text] に"**Enter VR**"と入力（下図）  
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202311111944.jpg)  
 
-### 👉 メインクラス（Main.gd）
-  1. XXXX
+### 👉 メインクラス（main.gd）
+  1. res://main.gd を開き以下の内容を削除  
+  ```gdscript
+  # main.gd
+  extends Node3D
+
+  var _interface:XRInterface ←削除
+  ……
+
+  func _ready():
+    _interface = XRServer.find_interface("OpenXR") ←削除
+    if _interface and _interface.is_initialized(): ←削除
+      var _viewport : Viewport = get_viewport() ←削除
+      _viewport.use_xr = true ←削除
+    ……
+  ```
 
 ### 👉 Webエクスポート
   * [プロジェクト]-[エクスポート] で各種設定
