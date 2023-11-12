@@ -4431,7 +4431,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 ➂ [プロジェクト]-[エクスポート]-[追加]-[Web]-[プロジェクトのエクスポート]  
 ➃ 〇〇.html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリに保存  
 ➄ FileZilla を使ってサーバにアップロード  
-➅ [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続  
+➅ [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) で Quest と PC を接続  
 ➆ [Quest]-[デスクトップ]-[モニター〇]-[Chrome] を起動  
 ➇ https://www.mubirou.com/.../〇〇.html 開く  
 ➈「...が次の許可を求めています」と表示されたら [許可する] を選択
