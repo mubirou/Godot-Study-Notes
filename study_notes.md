@@ -4864,7 +4864,7 @@ Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法�
         1. WebXRコンテンツが置かれたURL（https://〇〇〇/index.html）を指定する   
     * **Quest スタンドアローンで実行の場合**  
         1. Questを起動
-        1. [Meta Quest Browser](https://www.meta.com/ja-jp/experiences/1916519981771802/)を起動
+        1. [Meta Quest Browser](https://www.meta.com/ja-jp/experiences/1916519981771802/) を起動
         1. WebXRコンテンツが置かれたURL（https://〇〇〇/index.html）を指定する   
 1. [ENTER VR] を選択  
 
