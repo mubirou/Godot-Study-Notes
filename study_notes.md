@@ -4838,7 +4838,7 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
 <a id="231112"></a>
 # <b>WebXR実行方法</b>
 
-Godotで作成したWebXRプロジェクトの実行方法。  
+Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法。  
 
 ### 👉 Godot の HTTP サーバ機能を利用する
   1. [OpenXR→WebXR](#20231111)を参考にWebXRプロジェクトを作成
