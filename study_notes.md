@@ -4864,6 +4864,7 @@ Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法�
 * Questスタンドアローンで実行の場合  
     1. XXX
     1. XXX  
+
 **注意**：PCやQuestがWebサーバと同じルータ内にある場合 [ルーター内からドメイン名でアクセスする方法](https://github.com/mubirou/LAMP#202303262200-router) の設定が必要になります 
 
 ➅ [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続  
