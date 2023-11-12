@@ -4772,7 +4772,8 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202311111944.jpg)  
 
 ### 👉 [WebXRManager](#231110) のインストール
-  [WebXRManager.gd](https://github.com/mubirou/Godot-Study-Notes/blob/main/gd/WebXRManager.gd) をダウンロードして main.gd と同じ階層に置く
+  1. [WebXRManager.gd](https://github.com/mubirou/Godot-Study-Notes/blob/main/gd/WebXRManager.gd) を main.gd と同じ階層にダウンロードする
+  1. Godot の [ファイルシステム] に WebXRManager.gd に表示されたことを確認
 
 ### 👉 メインクラス（main.gd）
   1. res://main.gd を開き以下の部分を**削除**  
