@@ -4842,27 +4842,27 @@ Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法�
 
 ### 👉 Godot の HTTP サーバ機能を利用する
 1. [OpenXR→WebXR](#20231111) を参考にWebXRプロジェクトを作成
-1. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/)でQuestとPCを接続
+1. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続
 1. プロジェクトファイル（[project.godot](https://docs.godotengine.org/ja/4.x/tutorials/best_practices/project_organization.html)）を開く
 1. [リモートデバッグ]-[ブラウザで実行]（下図）  
 ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310310620.jpg)  
-1. 「この接続ではプライバシーが保護されません」と表示されたら [詳細設定]-[**localhostにアクセスする**（安全ではありません）] を選択
+1. 「この接続ではプライバシーが保護されません」と表示されたら [詳細設定]-[localhost にアクセスする（安全ではありません）] を選択
 1. [**Enter VR**] を選択
-1. 「localhost:8060 が次の許可を求めています（バーチャルリアリティデバイスとデータの使用）」と表示されたら [**許可する**] を選択
-1. 360°VRコンテンツが再生されたら成功！  
-**注意**：WebXRコンテンツを複数開いている場合は砂時計が表示されたまま実行されません。  
+1. 「localhost:8060 が次の許可を求めています（バーチャルリアリティデバイスとデータの使用）」と表示されたら [許可する] を選択
+1. 360°VR コンテンツが再生されたら成功！  
+**注意**：WebXR コンテンツを複数開いている場合は砂時計が表示されたまま実行されません。  
 
 ### 👉 Webサーバにコンテンツを公開する
 1. Webサーバにコンテンツをアップロードする
     1. [WebXRテンプレート](#231107) や [OpenXR→WebXR](#20231111) 参考にWebXRプロジェクトを作成
     1. [プロジェクト]-[エクスポート]-[Web]-[プロジェクトのエクスポート]
     1. [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) を使ってサーバにアップロード
-1. WebブラウザでURLを指定する
-    * **PCVR**で実行する場合
+1. Web ブラウザで URL を指定する
+    * **PCVR で実行する場合**
         1. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/)でQuestとPCを接続
         1. Quest内に映し出されたPC画面でWebブラウザを起動する
         1. WebXRコンテンツが置かれたURL（https://〇〇〇/index.html）を指定する   
-    * **Questスタンドアローン**で実行の場合  
+    * **Quest スタンドアローンで実行の場合**  
         1. Questを起動
         1. [Meta Quest Browser](https://www.meta.com/ja-jp/experiences/1916519981771802/)を起動
         1. WebXRコンテンツが置かれたURL（https://〇〇〇/index.html）を指定する   
