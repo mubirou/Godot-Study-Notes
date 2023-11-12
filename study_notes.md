@@ -4857,13 +4857,15 @@ Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法�
     1. [WebXRテンプレート](#231107) や [OpenXR→WebXR](#20231111) 参考にWebXRプロジェクトを作成
     1. [プロジェクト]-[エクスポート]-[Web]-[プロジェクトのエクスポート]
     1. [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) を使ってサーバにアップロード
-* PCVRで実行する場合
-    1. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/)でQuestとPCを接続
-    1. Quest内に映し出されたPC画面でWebブラウザを起動する
-    1. WebXRコンテンツが置かれたURL（https://〇〇〇/index.html）を指定する   
-* Questスタンドアローンで実行の場合  
-    1. XXX
-    1. XXX  
+1. WebブラウザでURLを指定する
+    * **PCVR**で実行する場合
+        1. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/)でQuestとPCを接続
+        1. Quest内に映し出されたPC画面でWebブラウザを起動する
+        1. WebXRコンテンツが置かれたURL（https://〇〇〇/index.html）を指定する   
+    * **Questスタンドアローン**で実行の場合  
+        1. XXX
+        1. XXX  
+1. XXXX
 
 **注意**：PCやQuestがWebサーバと同じルータ内にある場合 [ルーター内からドメイン名でアクセスする方法](https://github.com/mubirou/LAMP#202303262200-router) の設定が必要になります 
 
