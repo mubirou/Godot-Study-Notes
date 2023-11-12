@@ -4841,22 +4841,22 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
 Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法。  
 
 ### 👉 Godot の HTTP サーバ機能を利用する
-  1. [OpenXR→WebXR](#20231111)を参考にWebXRプロジェクトを作成
-  1. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/)でQuestとPCを接続
-  1. プロジェクトファイル（[project.godot](https://docs.godotengine.org/ja/4.x/tutorials/best_practices/project_organization.html)）を開く
-  1. [リモートデバッグ]-[ブラウザで実行]（下図）  
-  ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310310620.jpg)  
-  1. 「この接続ではプライバシーが保護されません」と表示されたら [詳細設定]-[**localhostにアクセスする**（安全ではありません）] を選択
-  1. [**Enter VR**] を選択
-  1. 「localhost:8060 が次の許可を求めています（バーチャルリアリティデバイスとデータの使用）」と表示されたら [**許可する**] を選択
-  1. 360°VRコンテンツが再生されたら成功！  
+1. [OpenXR→WebXR](#20231111)を参考にWebXRプロジェクトを作成
+1. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/)でQuestとPCを接続
+1. プロジェクトファイル（[project.godot](https://docs.godotengine.org/ja/4.x/tutorials/best_practices/project_organization.html)）を開く
+1. [リモートデバッグ]-[ブラウザで実行]（下図）  
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202310310620.jpg)  
+1. 「この接続ではプライバシーが保護されません」と表示されたら [詳細設定]-[**localhostにアクセスする**（安全ではありません）] を選択
+1. [**Enter VR**] を選択
+1. 「localhost:8060 が次の許可を求めています（バーチャルリアリティデバイスとデータの使用）」と表示されたら [**許可する**] を選択
+1. 360°VRコンテンツが再生されたら成功！  
 注意：WebXRコンテンツを複数開いている場合は砂時計が表示されたまま実行されません。  
 
 ### 👉 Webサーバにコンテンツを公開する
-  1. Webサーバにコンテンツをアップロードする
-    1. [WebXRテンプレート](#231107)や[OpenXR→WebXR](#20231111)参考にWebXRプロジェクトを作成
-    1. [プロジェクト]-[エクスポート]-[Web]-[プロジェクトのエクスポート]
-    1. [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla)を使ってサーバにアップロード
+1. Webサーバにコンテンツをアップロードする
+  1. [WebXRテンプレート](#231107)や[OpenXR→WebXR](#20231111)参考にWebXRプロジェクトを作成
+  1. [プロジェクト]-[エクスポート]-[Web]-[プロジェクトのエクスポート]
+  1. [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla)を使ってサーバにアップロード
   * Questスタンドアローンで実行の場合  
 
 ➅ [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続  
