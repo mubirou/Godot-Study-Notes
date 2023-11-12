@@ -4800,6 +4800,12 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
         webxr_manager = WebXRManager.new(self) # 追加
       ```
 
+### 👉 TLS (Transport Layer Security)
+  > TLS の目的  
+  ・TLSは通信を暗号化し保護  
+  ・相手の認証とデータの盗聴･改ざん防止  
+  ・Webサイトやサービスで安全な通信を実現  
+
 ### 👉 Webエクスポート
   * [プロジェクト]-[**エクスポート**]-[追加]-[**Web**] を選び各種設定（下図）
     * エクスポート先のパス：[FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリ
