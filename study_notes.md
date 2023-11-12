@@ -4772,20 +4772,17 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202311111944.jpg)  
 
 ### 👉 メインクラス（main.gd）
-  1. res://main.gd を開き以下の内容を削除  
+  1. res://main.gd を開き以下の部分を削除  
   ```gdscript
   # main.gd
   extends Node3D
 
-  var _interface:XRInterface ←削除
-  ……
+  var interface: XRInterface ←削除
 
-  func _ready():
-    _interface = XRServer.find_interface("OpenXR") ←削除
-    if _interface and _interface.is_initialized(): ←削除
-      var _viewport : Viewport = get_viewport() ←削除
-      _viewport.use_xr = true ←削除
-    ……
+  func _ready() -> void
+    interface = XRServer.find_interface("OpenXR") ←削除
+    if interface and interface.is_initialized(): ←削除
+      get_viewport().use_xr = true ←削除
   ```
 
 ### 👉 Webエクスポート
