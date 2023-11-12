@@ -4848,6 +4848,7 @@ Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法�
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310310620.jpg)  
   1. 「この接続ではプライバシーが保護されません」と表示されたら [詳細設定]-[localhostにアクセスする（安全ではありません）] を選択
   1. 「localhost:8060 が次の許可を求めています（バーチャルリアリティデバイスとデータの使用）」と表示されたら [許可する] を選択
+  1. [Enter VR] を選択し360°VRコンテンツが再生されたら成功！ 
 
 実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ、Google Chrome 119  
 作成者：夢寐郎  
