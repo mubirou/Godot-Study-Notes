@@ -4777,14 +4777,24 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
       # res://main.gd
       extends Node3D
 
-      var interface: XRInterface ←削除
+      var interface: XRInterface # 削除
 
       func _ready() -> void
-        interface = XRServer.find_interface("OpenXR") ←削除
-        if interface and interface.is_initialized(): ←削除
-          get_viewport().use_xr = true ←削除
+        interface = XRServer.find_interface("OpenXR") # 削除
+        if interface and interface.is_initialized(): # 削除
+          get_viewport().use_xr = true # 削除
       ```
-  1. XXX
+  1. 引続き以下の部分を追加  
+      ```
+      # res://Main.gd
+      extends Node3D
+
+      const WebXRManager = preload("res://WebXRManager.gd") # 追加
+      var webxr_manager: WebXRManager # 追加
+
+      func _ready() -> void:
+        webxr_manager = WebXRManager.new(self) # 追加
+      ```
 
 ### 👉 Webエクスポート
   * [プロジェクト]-[エクスポート] で各種設定
