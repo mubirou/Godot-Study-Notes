@@ -4850,7 +4850,7 @@ Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法�
 1. [**Enter VR**] を選択
 1. 「localhost:8060 が次の許可を求めています（バーチャルリアリティデバイスとデータの使用）」と表示されたら [**許可する**] を選択
 1. 360°VRコンテンツが再生されたら成功！  
-注意：WebXRコンテンツを複数開いている場合は砂時計が表示されたまま実行されません。  
+**注意**：WebXRコンテンツを複数開いている場合は砂時計が表示されたまま実行されません。  
 
 ### 👉 Webサーバにコンテンツを公開する
 1. Webサーバにコンテンツをアップロードする
@@ -4858,8 +4858,11 @@ Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法�
     1. [プロジェクト]-[エクスポート]-[Web]-[プロジェクトのエクスポート]
     1. [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) を使ってサーバにアップロード
 * PCVRで実行する場合
-    1. XXX
-    1. XXX
+    1. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/)でQuestとPCを接続
+    1. Quest内に映し出されたPC画面でWebブラウザを起動する
+    1. WebXRコンテンツが置かれたURL（https://〇〇〇/index.html）を指定する  
+    **注意**：WebサーバがPCと同じルータ内にある場合 [ルーター内からドメイン名でアクセスする方法] 
+    (https://github.com/mubirou/LAMP#windows%E3%81%AE%E5%A0%B4%E5%90%88) の設定が必要になります
 * Questスタンドアローンで実行の場合  
     1. XXX
     1. XXX
