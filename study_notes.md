@@ -4838,9 +4838,11 @@ Windows（[RTX2070](https://www.nvidia.com/ja-jp/geforce/20-series/)）+ Google 
 <a id="231112"></a>
 # <b>WebXR実行方法</b>
 
+Godotで作成したWebXRプロジェクトの実行方法。  
+
 ### 👉 Godot の HTTP サーバ機能を利用する
   1. [OpenXR→WebXR](#20231111)を参考にWebXRプロジェクトを作成
-  1. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続
+  1. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/)でQuestとPCを接続
   1. [Godot]-[リモートデバッグ]-[ブラウザで実行]（下図）  
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310310620.jpg)  
   1. 「この接続ではプライバシーが保護されません」と表示されたら [詳細設定]-[localhostにアクセスする（安全ではありません）] を選択
