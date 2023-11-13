@@ -2,7 +2,7 @@
 
 ### **Index（WebXR 対応）**
 
-| [WebXR入門](#231029) | [WebXRテンプレート](#231107) | [WebXRManager](#231110) | [OpenXR→WebXR](#20231111) | [WebXR実行方法](#231112) |
+| [WebXR入門](#231029) | [WebXRテンプレート](#231107) | [WebXRManager](#231110) | [OpenXR→WebXR](#20231111) | [WebXR実行方法](#231112) | [フレームレート表示](#20231114) |
 
 ### **Index（Godot 4.0 対応）**
 
@@ -4871,6 +4871,38 @@ Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法�
 実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ、Google Chrome 119  
 作成者：夢寐郎  
 作成日：2023年11月12日  
+[[TOP]](#TOP)
+
+
+### この項目は書きかけです  
+
+<a id="20231114"></a>
+# <b>フレームレート表示</b>
+
+1. [XRCamera3D] に
+    ```gdscript
+    XXXX
+    ```
+    * XXX
+    * XXXX
+
+1. XXXX  
+  ```
+  # FrameRate.gd
+  extends Label3D
+
+  func _ready():
+      await loop()
+
+  func loop():
+      await get_tree().create_timer(0.5).timeout
+      text = str(Engine.get_frames_per_second()) + " fps"
+      await loop()
+  ```
+
+実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ  
+作成者：夢寐郎  
+作成日：202X年XX月XX日  
 [[TOP]](#TOP)
 
 
