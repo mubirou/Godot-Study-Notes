@@ -4887,22 +4887,22 @@ Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法�
     * XXXX
 
 1. XXXX  
-  ```
-  # FrameRate.gd
-  extends Label3D
+    ```
+    # FrameRate.gd
+    extends Label3D
 
-  func _ready():
-      await loop()
+    func _ready():
+        await loop()
 
-  func loop():
-      await get_tree().create_timer(0.5).timeout
-      text = str(Engine.get_frames_per_second()) + " fps"
-      await loop()
-  ```
+    func loop():
+        await get_tree().create_timer(0.5).timeout
+        text = str(Engine.get_frames_per_second()) + " fps"
+        await loop()
+    ```
 
 実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：202X年XX月XX日  
+作成日：2023年XX月XX日  
 [[TOP]](#TOP)
 
 
