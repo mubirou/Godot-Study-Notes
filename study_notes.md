@@ -4879,15 +4879,16 @@ Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法�
 <a id="20231114"></a>
 # <b>フレームレート表示</b>
 
-1. [XRCamera3D] に
-    ```gdscript
-    XXXX
-    ```
-    * XXX
-    * XXXX
+1. [XRCamera3D] に [Label3D] を追加（名前を"FrameRate"に変更）
+1. [FrameRate(Label3d)]-[インペクター] を各種設定
+  * Text：888 fps
+  * Transform
+    * Position：x 0m、y 0.15m、z -1m
+    * Scale：x 0.25、y 0.25、z 1
+1. XXXX
 
 1. XXXX  
-    ```
+    ```gdscript
     # FrameRate.gd
     extends Label3D
 
