@@ -4898,6 +4898,7 @@ Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法�
         text = str(Engine.get_frames_per_second()) + " fps"
         await loop()
     ```
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202311140609.jpg)  
 
 実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
