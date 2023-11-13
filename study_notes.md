@@ -4885,9 +4885,7 @@ Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法�
   * Transform
     * Position：x 0m、y 0.15m、z -1m
     * Scale：x 0.25、y 0.25、z 1
-1. XXXX
-
-1. XXXX  
+1. [FrameRate(Label3d)] にスクリプトをアタッチし以下の通り記述
     ```gdscript
     # FrameRate.gd
     extends Label3D
@@ -4896,14 +4894,14 @@ Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法�
         await loop()
 
     func loop():
-        await get_tree().create_timer(0.5).timeout
+        await get_tree().create_timer(0.5).timeout # 0.5秒毎に実行
         text = str(Engine.get_frames_per_second()) + " fps"
         await loop()
     ```
 
 実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
-作成日：2023年XX月XX日  
+作成日：2023年11月14日  
 [[TOP]](#TOP)
 
 
