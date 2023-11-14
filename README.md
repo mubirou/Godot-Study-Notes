@@ -2,6 +2,8 @@
 
 ### 👉 [Godot Study Notes](./study_notes.md)
 
+***
+
 📝 **Godotとの出会い**  
 * 2019年8月6日「#オープンソース の #VR #AR #MR 対応オーサリングツールとか登場してくんないかな。#Unity3D 並にプログラミングできるやつ。とりま Linux, Mac, Win 対応で」とツイート（当時使っていたUnityに不満）  
 * 2021年12月29日「Godot ? [twitter.com/mubirou/status…](https://twitter.com/mubirou/status/1158626565040721921)」とツイート（Godotの存在を知る）  
