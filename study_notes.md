@@ -4918,7 +4918,7 @@ Quest 3 + Quest Link + ノートPC を使ってトリプルモニタ環境を構
     1. [Windows]-[設定]-[システム]-[**ディスプレイ**]-[関連設定]-[**グラフィック**]-[アプリのカスタムオプション]-[**アプリを追加する**]-[参照]-[**OculusClient.exe**]（C:\Program Files\Oculus\Support\oculus-client\OculusClient.exe）を追加
     1. 引続き [オプション]-[**高パフォーマンス**] を選択（OSの再起動が必要）
 
-1. ダミープラグをパソコンに接続  
+1. ダミープラグをパソコンに接続（全て1080x1920表示）  
     * DP1080P60（[Mini DP用](https://amzn.to/3RqWD6m)）
     * 28E850（[HDMI用](https://amzn.to/3T7EZWy))
 
