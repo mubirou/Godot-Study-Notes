@@ -4915,7 +4915,7 @@ Quest 3 + Quest Link + ノートPC を使ってトリプルモニタ環境を構
 1. 事前準備  
     1. [**Quest Link（Oculus Link）の準備**](https://github.com/mubirou/Unity3D/tree/master/study-notes#oculus-link%E3%81%AE%E6%BA%96%E5%82%99)
 
-    1. [Windows]-[設定]-[システム]-[**ディスプレイ**]-[関連設定]-[**グラフィック**]-[アプリのカスタムオプション]-[**アプリを追加する**]-[参照] から以下を追加し [オプション]-[**高パフォーマンス**] を選択する（Windowsの再起動が必要）
+    1. [Windows]-[設定]-[システム]-[**ディスプレイ**]-[関連設定]-[**グラフィック**]-[アプリのカスタムオプション]-[**アプリを追加する**]-[参照] から以下を追加（要調査）し [オプション]-[**高パフォーマンス**] を選択する（Windowsの再起動が必要）
         * **OculusClient.exe**: "C:\Program Files\Oculus\Support\oculus-client\OculusClient.exe"
         * **OculusDash.exe**: "C:\Program Files\Oculus\Support\oculus-dash\dash\bin\OculusDash.exe"
         * **OVRRedir.exe**: "C:\Program Files\Oculus\Support\oculus-runtime\OVRRedir.exe"
