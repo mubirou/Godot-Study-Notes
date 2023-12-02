@@ -4912,15 +4912,18 @@ Godotで作成したWebXRプロジェクト/WebXRコンテンツの実行方法�
 
 Quest 3 + Quest Link + ノートPC を使ってトリプルモニタ環境を構築する  
 
-1. [**Quest Link（Oculus Link）の準備**](https://github.com/mubirou/Unity3D/tree/master/study-notes#oculus-link%E3%81%AE%E6%BA%96%E5%82%99)
+1. 事前準備  
+    1. [**Quest Link（Oculus Link）の準備**](https://github.com/mubirou/Unity3D/tree/master/study-notes#oculus-link%E3%81%AE%E6%BA%96%E5%82%99)
 
-1. GPU の設定（要調査）  
-    1. [Windows]-[設定]-[システム]-[**ディスプレイ**]-[関連設定]-[**グラフィック**]-[アプリのカスタムオプション]-[**アプリを追加する**]-[参照]-[**OculusClient.exe**]（C:\Program Files\Oculus\Support\oculus-client\OculusClient.exe）を追加
-    1. 引続き [オプション]-[**高パフォーマンス**] を選択（OSの再起動が必要）
+    1. GPU の設定（要調査）  
+        1. [Windows]-[設定]-[システム]-[**ディスプレイ**]-[関連設定]-[**グラフィック**]-[アプリのカスタムオプション]-[**アプリを追加する**]-[参照]-[**OculusClient.exe**]（C:\Program Files\Oculus\Support\oculus-client\OculusClient.exe）を追加
+        1. 引続き [オプション]-[**高パフォーマンス**] を選択（OSの再起動が必要）
 
-1. ダミープラグをパソコンに接続（全て1080x1920表示）  
-    * DP1080P60（[Mini DP用](https://amzn.to/3RqWD6m)）
-    * 28E850（[HDMI用](https://amzn.to/3T7EZWy))
+    1. ダミープラグをパソコンに接続（全て1080x1920表示）  
+        * DP1080P60（[Mini DP用](https://amzn.to/3RqWD6m)）
+        * 28E850（[HDMI用](https://amzn.to/3T7EZWy))
+
+1. ノートPCの電源を入れる  
 
 実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ、NVIDIA RTX2070  
 作成者：夢寐郎  
