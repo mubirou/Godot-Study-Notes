@@ -4915,6 +4915,10 @@ Quest 3 + Quest Link + ノートPC を使ってトリプルモニタ環境を構
 1. 事前準備  
     1. [**Quest Link（Oculus Link）の準備**](https://github.com/mubirou/Unity3D/tree/master/study-notes#oculus-link%E3%81%AE%E6%BA%96%E5%82%99)
 
+    1. ダミープラグをパソコンに接続（全て1080x1920表示）  
+        * DP1080P60（[Mini DP用](https://amzn.to/3RqWD6m)）
+        * 28E850（[HDMI用](https://amzn.to/3T7EZWy))
+
     1. [Windows]-[設定]-[システム]-[**ディスプレイ**]-[関連設定]-[**グラフィック**]-[アプリのカスタムオプション]-[**アプリを追加する**]-[参照] から以下を追加（要調査）し [オプション]-[**高パフォーマンス**] を選択する（Windowsの再起動が必要）
         * **OculusClient.exe**: "C:\Program Files\Oculus\Support\oculus-client\OculusClient.exe"
         * **OculusDash.exe**: "C:\Program Files\Oculus\Support\oculus-dash\dash\bin\OculusDash.exe"
@@ -4922,11 +4926,16 @@ Quest 3 + Quest Link + ノートPC を使ってトリプルモニタ環境を構
         * **OVRServiceLauncher.exe**: "C:\Program Files\Oculus\Support\oculus-runtime\OVRServiceLauncher.exe"
         * **OVRServer_x64.exe**: "C:\Program Files\Oculus\Support\oculus-runtime\OVRServer_x64.exe"
 
-    1. ダミープラグをパソコンに接続（全て1080x1920表示）  
-        * DP1080P60（[Mini DP用](https://amzn.to/3RqWD6m)）
-        * 28E850（[HDMI用](https://amzn.to/3T7EZWy))
+1. ノートパソコンの電源を入れる（状況に応じて以下の処理を行う）  
+    * 真っ黒な画面上にカーソルが動くのを確認
+    * [Enter] キーを押してパスワードを入力（ブラインドタッチ）
+    * ノートパソコン画面にアイコンが現れるのを確認
 
-1. ノートPCの電源を入れる  
+1. [Linkケーブル](https://bit.ly/47EAxD0) で Quest とパソコンを接続し Quest を起動
+1. [Quest Linkを有効にする] と表示されたら [オンにする]
+1. [デスクトップ]-[モニター1]～[モニター3] を選択
+・[右中指トリガー] を押しながら下に移動してから位置を調整
+・3つのモニターを並べた後、顔を移動 + [∞] で位置調整
 
 実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ、NVIDIA RTX2070  
 作成者：夢寐郎  
