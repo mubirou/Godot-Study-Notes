@@ -4940,6 +4940,8 @@ Quest 3 + Quest Link + ノートPC を使ってトリプルモニタ環境を構
     * [右中指トリガー] を押しながら下に移動してから位置を調整
     * 3つのモニターを並べた後、顔を移動 + [∞] で位置調整
 
+![image](https://github.com/mubirou/Godot/blob/main/jpg/202312021857.jpg)   
+
 実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ、NVIDIA RTX2070  
 作成者：夢寐郎  
 作成日：2023年12月02日  
