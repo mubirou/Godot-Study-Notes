@@ -4920,14 +4920,14 @@ Quest 3 + Quest Link + ノートPC を使ってトリプルモニタ環境を構
         * 28E850（[HDMI用](https://amzn.to/3T7EZWy))
 
     1. [Windows]-[設定]-[システム]-[**ディスプレイ**] で内部ディスプレイ以外に [**これをメインディスプレイにする**] を設定  
-    （ノートパソコンの内部ディスプレイにはタスクバーが表示されない場合がある）
+    （要調査：ノートパソコンの内部ディスプレイにはタスクバーが表示されない場合がある）
 
     1. [Windows]-[設定]-[システム]-[**ディスプレイ**]-[関連設定]-[**グラフィック**]-[アプリのカスタムオプション]-[**アプリを追加する**]-[参照] から以下を追加（要調査）し [オプション]-[**高パフォーマンス**] を選択する（Windowsの再起動が必要）
-        * **OculusClient.exe**: "C:\Program Files\Oculus\Support\oculus-client\OculusClient.exe"
-        * **OculusDash.exe**: "C:\Program Files\Oculus\Support\oculus-dash\dash\bin\OculusDash.exe"
-        * **OVRRedir.exe**: "C:\Program Files\Oculus\Support\oculus-runtime\OVRRedir.exe"
-        * **OVRServiceLauncher.exe**: "C:\Program Files\Oculus\Support\oculus-runtime\OVRServiceLauncher.exe"
-        * **OVRServer_x64.exe**: "C:\Program Files\Oculus\Support\oculus-runtime\OVRServer_x64.exe"
+        * **OculusClient.exe**："C:\Program Files\Oculus\Support\oculus-client\OculusClient.exe"
+        * **OculusDash.exe**："C:\Program Files\Oculus\Support\oculus-dash\dash\bin\OculusDash.exe"
+        * **OVRRedir.exe**："C:\Program Files\Oculus\Support\oculus-runtime\OVRRedir.exe"
+        * **OVRServiceLauncher.exe**："C:\Program Files\Oculus\Support\oculus-runtime\OVRServiceLauncher.exe"
+        * **OVRServer_x64.exe**："C:\Program Files\Oculus\Support\oculus-runtime\OVRServer_x64.exe"
 
 1. ノートパソコンの電源を入れる（状況に応じて以下の処理を行う）  
     * 真っ黒な画面上にカーソルが動くのを確認
