@@ -9,6 +9,6 @@
 * 2021年12月29日「Godot ?」と[ツイート](https://twitter.com/mubirou/status/1476124608093102083)（Godotの存在を知る）  
 * 2021年12月30日～2022年9月20日 Godotの勉強（500h余）  
 * この間で[CG-ARTSマイスター](https://www.cgarts.or.jp/v1/kentei/meister/)･[UCアドバイザー](https://www.aft.or.jp/pages/feature/uc)資格取得  
-* 2023年10月10日 Quest3購入･Godotの勉強を再開  
+* 2023年10月10日 Quest3購入 
 
 © 2021-2023 夢寐郎
