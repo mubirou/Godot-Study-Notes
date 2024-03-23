@@ -5,6 +5,7 @@
 ***
 
 **Godotとの出会い...✍**  
+* [2019年6月6日](https://twitter.com/mubirou/status/1136580509096644609) 初代Quest購入
 * 2019年8月6日「#オープンソース の #VR #AR #MR 対応オーサリングツールとか登場してくんないかな。#Unity3D 並にプログラミングできるやつ。とりま Linux, Mac, Win 対応で」と[ツイート](https://twitter.com/mubirou/status/1158626565040721921)（当時使っていたUnityに不満）  
 * 2021年12月29日「Godot ?」と[ツイート](https://twitter.com/mubirou/status/1476124608093102083)（Godotの存在を知る）  
 * 2021年12月30日～2022年9月20日 Godotの勉強（500h余）  
