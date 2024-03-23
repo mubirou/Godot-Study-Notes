@@ -10,7 +10,8 @@
 * [2021年12月29日](https://twitter.com/mubirou/status/1476124608093102083)「Godot ?」とツイート（Godotの存在を知る）
 * 2021年12月30日～2022年9月20日 Godotの勉強（500h余）
 * 2022年1月 [上級バーチャルリアリティ技術者](https://vrsj.org/events/seminar/) 資格取得
-* 2023年 [CG-ARTSマイスター](https://www.cgarts.or.jp/v1/kentei/meister/)･[UCアドバイザー](https://www.aft.or.jp/pages/feature/uc) 資格取得  
+* 2023年7月 [UCアドバイザー](https://www.aft.or.jp/pages/feature/uc) 資格取得
+* 2023年8月 [CG-ARTSマイスター](https://www.cgarts.or.jp/v1/kentei/meister/) 資格取得  
 * [2023年10月10日](https://twitter.com/mubirou/status/1711699151879282819) Quest3購入 
 
 © 2021-2024 夢寐郎
