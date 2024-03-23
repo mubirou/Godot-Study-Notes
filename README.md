@@ -11,4 +11,4 @@
 * この間で[CG-ARTSマイスター](https://www.cgarts.or.jp/v1/kentei/meister/)･[UCアドバイザー](https://www.aft.or.jp/pages/feature/uc)資格取得  
 * 2023年10月10日 Quest3購入 
 
-© 2021-2023 夢寐郎
+© 2021-2024 夢寐郎
