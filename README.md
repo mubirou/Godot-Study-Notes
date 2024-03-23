@@ -1,6 +1,6 @@
 # Godot Study Notes<a id="TOP"></a>
 
-### [Godot Study Notes](./study_notes.md) 👈ここから
+### [Godot Study Notes](./study_notes.md) 👈こちらから
 
 ***
 
