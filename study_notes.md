@@ -4405,7 +4405,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   </script>
   ```
   * 注意  
-  赤文字で「エクスポート テンプレートが予期されたパスに見つかりません」と表示されたら「エクスポートテンプレートの管理」を選択し「ダウンロードしてインストール」を選ぶ（赤文字の表示が無くなればオケ）  
+  赤文字で「エクスポート テンプレートが予期されたパスに見つかりません」と表示されたら「エクスポートテンプレートの管理」を選択し「ダウンロードしてインストール」（赤文字の表示が無くなればオケ）  
 
   4. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続
   5. [リモートデバッグ]-[ブラウザで実行]（下図）  
