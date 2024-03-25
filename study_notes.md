@@ -2,7 +2,7 @@
 
 ### **Index（WebXR 対応）**
 
-| [**WebXR入門**](#231029) | [WebXRテンプレート](#231107) | [WebXRManager](#231110) | [OpenXR→WebXR](#20231111) | [WebXR実行方法](#231112) | [フレームレート表示](#20231114) |
+| [**WebXR入門**](#231029) | [WebXRテンプレート](#231107) | [**WebXRManager**](#231110) | [OpenXR→WebXR](#20231111) | [WebXR実行方法](#231112) | [フレームレート表示](#20231114) |
 
 ### **Index（Godot 4.0 対応）**
 
@@ -4735,9 +4735,10 @@ func _ready() -> void:
 ```
 
 参考ファイル：[webxr_manager.zip](https://github.com/mubirou/Godot/blob/main/zip/webxr_manager.zip)  
-実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ  
+実行環境：Windows 11、Godot 4.2.1、Meta Quest 3（62.0）、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
 作成日：2023年11月10日  
+更新日：2024年03月25日 Godot 4.2.1 で動作確認  
 [[TOP]](#TOP)
 
 
