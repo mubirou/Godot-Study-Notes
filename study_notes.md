@@ -4388,7 +4388,7 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
 
 <a id="231029-Template"></a>
 
-  1. [Godot WebXR Template](https://godotengine.org/asset-library/asset/1128) から [Download]（2023-03-27版）
+  1. [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) から [Download]（2023-11-06版）
   2. 解凍し **project.godot** を起動
 
   <a id="231029-HeadInclude"></a>
@@ -4404,6 +4404,9 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   var layersPolyfill = new WebXRLayersPolyfill();
   </script>
   ```
+  * 注意  
+  赤文字で「エクスポート テンプレートが予期されたパスに見つかりません」と表示されたら「エクスポートテンプレートの管理」を選択し「ダウンロードしてインストール」を選ぶ（赤文字の表示が無くなればオケ）  
+
   4. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続
   5. [リモートデバッグ]-[ブラウザで実行]（下図）  
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310310620.jpg)  
@@ -4443,10 +4446,10 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 
 参考：[snopekgames.com](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4)  
 参考：[フレームシンセシス（Godot4 VR開発メモ）](https://tech.framesynthesis.co.jp/godot/vr/)  
-実行環境：Windows 11、Godot 4.1.2、Meta Quest 3（57.0.0）、Quest Link、Oculusアプリ、Google Chrome 118、CentOS Stream 8、Apache 2.4.37、FileZilla 3.66.0、Meta Quest Browser 28.4  
+実行環境：Windows 11、Godot 4.2.1、Meta Quest 3（62.0.0）、Quest Link、Oculusアプリ、Google Chrome 122、CentOS Stream 8、Apache 2.4.37、FileZilla 3.66.0、Meta Quest Browser 28.4  
 作成者：夢寐郎  
 作成日：2023年10月31日  
-更新日：2023年11月02日 Quest単体+LAMP情報を追加  
+更新日：2024年03月25日 [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) 対応  
 [[TOP]](#TOP)
 
 
