@@ -4412,10 +4412,10 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310310620.jpg)  
   （Godot内蔵のWebサーバを利用します）  
   * 注意  
-  「この接続ではプライバシーが保護されません」と表示されたら「詳細設定」を選び「localhostにアクセスする（安全ではありません）」を選択    
+  「この接続ではプライバシーが保護されません」と表示されたら「詳細設定」を選び「localhostにアクセスする（安全ではありません）」を選択（空と地面と右下に [Enter VR] ボタンが表示されたらオケ）    
   6. Webブラウザ上で [**Enter VR**] を選択
   7. 360°VRコンテンツが再生されたら成功！  
-  （黒いボックス＝両手のみ）  
+  （空と地面とボックス＝両手のみ）  
 
 ### 👉 Godot + WebXR + [LAMP](https://github.com/mubirou/LAMP#TOP)
 
