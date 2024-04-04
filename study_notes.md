@@ -4411,6 +4411,8 @@ func _on_area_3d_checkpoint_body_entered(_body, _int):
   5. [リモートデバッグ]-[ブラウザで実行]（下図）  
   ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310310620.jpg)  
   （Godot内蔵のWebサーバを利用します）  
+  * 注意  
+  「この接続ではプライバシーが保護されません」と表示されたら「詳細設定」を選び「localhostにアクセスする（安全ではありません）」を選択    
   6. Webブラウザ上で [**Enter VR**] を選択
   7. 360°VRコンテンツが再生されたら成功！  
   （黒いボックス＝両手のみ）  
@@ -4449,7 +4451,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 実行環境：Windows 11、Godot 4.2.1、Meta Quest 3（62.0.0）、Quest Link、Oculusアプリ、Google Chrome 122、CentOS Stream 8、Apache 2.4.37、FileZilla 3.66.0、Meta Quest Browser 28.4  
 作成者：夢寐郎  
 作成日：2023年10月31日  
-更新日：2024年03月25日 [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) 対応  
+更新日：2024年04月04日 実行時のアラートに対応  
 [[TOP]](#TOP)
 
 
