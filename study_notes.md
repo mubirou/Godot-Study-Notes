@@ -4451,7 +4451,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 実行環境：Windows 11、Godot 4.2.1、Meta Quest 3（62.0.0）、Quest Link、Oculusアプリ、Google Chrome 122、CentOS Stream 8、Apache 2.4.37、FileZilla 3.66.0、Meta Quest Browser 28.4  
 作成者：夢寐郎  
 作成日：2023年10月31日  
-更新日：2024年04月04日 実行時のアラートに対応  
+更新日：2024年04月04日 内蔵サーバを使った実行時のアラートに対応  
 [[TOP]](#TOP)
 
 
