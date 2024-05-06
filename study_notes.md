@@ -24,7 +24,7 @@
 <a id="240506"></a>
 # <b>Hello World</b>
 
-📢 Godot + Quest による WebXR コンテンツ制作の公開第一歩、先ずはここから！  
+📢 Godot + Quest による WebXR コンテンツの公開第一歩、先ずはここから！  
 
 1. Web サーバの準備  
     1. お名前.com などで各種登録設定  
