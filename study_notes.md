@@ -61,6 +61,7 @@
         * [PCVR](https://www.moguravr.com/meta-quest-3-quest-link-air-link/)（Google Chrome）
         * Meta Quest 単体（[Meta Quest Browser](https://developer.oculus.com/documentation/web/browser-intro/)）
 
+参考：[mubirou.com](https://mubirou.com/webxr-lab/20240506/index.html)  
 実行環境：Windows 11、Meta Quest 3（64.0）、Quest Link、Oculusアプリ  
 Godot 4.2.2、[Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128)  
 作成者：夢寐郎  
