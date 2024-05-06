@@ -30,7 +30,7 @@
     (1) お名前.com などで各種登録設定  
       * ドメイン
       * レンタルサーバ
-      * SSL証明書（重要）  
+      * SSL証明書 👈必須！  
     (2) .htaccess に以下を記述  
       ```
       Header set Cross-Origin-Embedder-Policy "require-corp"
