@@ -23,7 +23,7 @@
 
 
 <a id="240506"></a>
-# <b>Hello World![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  </b>
+# <b>[image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)Hello World!</b>
 
 📝 Godot + Quest による WebXR コンテンツの公開第一歩、先ずはここから！  
 
