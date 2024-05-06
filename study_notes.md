@@ -58,8 +58,7 @@
         var layersPolyfill = new WebXRLayersPolyfill();
         </script>
         ```
-    1. [プロジェクト]-[エクスポート]-[追加]-[Web] を選択
-    1. エクスポート先を指定し [プロジェクトのエクスポート] を実行
+    1. 引き続きエクスポート先を指定し [プロジェクトのエクスポート] を実行
 
 1. 公開＆実行
     1. エクスポートした WebXR コンテンツを [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) を使ってサーバにアップロード
