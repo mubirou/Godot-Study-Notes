@@ -26,11 +26,11 @@
 
 📢 Godot + Quest による WebXR コンテンツ制作の公開第一歩、先ずはここから！  
 
-1. Web サーバの準備
+1. Web サーバの準備  
   (1) お名前.com などで各種登録設定
       * ドメイン
       * レンタルサーバ
-      * SSL証明書
+      * SSL証明書  
   (2) .htaccess に以下を記述  
     ```
     Header set Cross-Origin-Embedder-Policy "require-corp"
