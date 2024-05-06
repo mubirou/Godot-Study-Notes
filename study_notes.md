@@ -26,6 +26,17 @@
 
 📢 Godot + Quest による WebXR コンテンツ制作の公開第一歩、先ずはここから！  
 
+1. Web サーバの準備
+    1. お名前.com などで各種登録設定
+      * ドメイン
+      * レンタルサーバ
+      * SSL証明書
+    1. .htaccess に以下を記述  
+    ```
+    Header set Cross-Origin-Embedder-Policy "require-corp"
+    Header set Cross-Origin-Opener-Policy "same-origin"
+    ```
+
 1. WebXR コンテンツの作成
 
     (1) [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) から [Download]（2023-11-06版）
@@ -46,8 +57,7 @@
       * エクスポート先のパス：index.html を任意の場所に保存
     (5) .html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリに保存  *(6) FileZilla を使ってサーバにアップロード  
 
-1. Web サーバの準備
-    1. xxx
+
 
 
   4. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続
