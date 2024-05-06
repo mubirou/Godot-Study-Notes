@@ -29,9 +29,9 @@
 1. WebXR コンテンツの作成
 
     1. [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) から [Download]（2023-11-06版）
-    2. 解凍し **project.godot** を起動
+    2. 展開して project.godot を起動
 
-    3. [プロジェクト]-[エクスポート]-[追加]-[**Web**]-[HTML]-[**Head Include**] に以下を記述し [閉じる]  
+    3. [プロジェクト]-[エクスポート]-[追加]-[Web]-[HTML]-[Head Include] に以下を記述し [閉じる]  
     ```
     <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js"></script>
     <script>
