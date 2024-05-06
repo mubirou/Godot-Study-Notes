@@ -29,9 +29,9 @@
 1. WebXR コンテンツの作成
 
     1. [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) から [Download]（2023-11-06版）
-    2. 展開して project.godot を起動
+    1. 展開して project.godot を起動
 
-    3. [プロジェクト]-[エクスポート]-[追加]-[Web]-[HTML]-[Head Include] に以下を記述し [閉じる]  
+    1. [プロジェクト]-[エクスポート]-[追加]-[Web]-[HTML]-[Head Include] に以下を記述し [閉じる]  
     ```
     <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js"></script>
     <script>
@@ -42,6 +42,7 @@
     var layersPolyfill = new WebXRLayersPolyfill();
     </script>
     ```
+    1.xxx
 
 1. Web サーバの準備
     1. xxx
@@ -73,9 +74,7 @@ Header set Cross-Origin-Opener-Policy "same-origin" ←追加
 （注意：**このファイルをWebXRコンテンツと同階層に置く**）  
 ➁ [Godot WebXR Template](#231029-Template) の project.godot を起動  
 ➂ 上記と同じく [**Head Include**](#231029-HeadInclude) に各種 <script>...</script> を記述する（PCVRではなく**Meta Quest Browserから実行時に必要**）  
-➂ [プロジェクト]-[エクスポート]-[追加]-[Web]-[プロジェクトのエクスポート]  
-➃ 〇〇.html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリに保存  
-➄ FileZilla を使ってサーバにアップロード  
+
 ➅ [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) で Quest と PC を接続  
 ➆ [Quest]-[デスクトップ]-[モニター〇]-[Chrome] を起動  
 ➇ https://www.mubirou.com/.../〇〇.html 開く  
