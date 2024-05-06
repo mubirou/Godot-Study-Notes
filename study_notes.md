@@ -24,6 +24,8 @@
 <a id="240506"></a>
 # <b>Hello World</b>
 
+📖 Godot + WebXR + Quest を使った第一歩です  
+
 1. XXXX
 
 実行環境：Windows 11、Godot 4.2.2、Meta Quest 3（64.0）、Quest Link、Oculusアプリ  
