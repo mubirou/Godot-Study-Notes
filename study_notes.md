@@ -52,11 +52,11 @@
         var layersPolyfill = new WebXRLayersPolyfill();
         </script>
         ```
-    1. [プロジェクト]-[エクスポート]-[追加]-[Web] を選択し各種設定  
-        * エクスポート先のパス：index.html を任意の場所に保存
+    1. [プロジェクト]-[エクスポート]-[追加]-[Web] を選択
+    1. エクスポート先を指定し [プロジェクトのエクスポート] を実行
 
 1. 公開＆実行
-    1. WebXR コンテンツを [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) を使ってサーバにアップロード
+    1. エクスポートした WebXR コンテンツを [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) を使ってサーバにアップロード
     1. 次のいずれかでアクセス
         * [PCVR](https://www.moguravr.com/meta-quest-3-quest-link-air-link/)（Google Chrome）
         * Meta Quest 単体（[Meta Quest Browser](https://developer.oculus.com/documentation/web/browser-intro/)）
