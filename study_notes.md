@@ -67,7 +67,6 @@
         * Meta Quest 単体（[Meta Quest Browser](https://developer.oculus.com/documentation/web/browser-intro/)）
 
 参考：[MUBIROU.COM](https://mubirou.com/webxr-lab/index.html)  
-デモファイル：[240506.zip](https://github.com/mubirou/Godot/blob/main/zip/240506.zip)  
 実行環境：Windows 11、Meta Quest 3（64.0）、Quest Link、Oculusアプリ  
 Godot 4.2.2、[Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128)  
 作成者：夢寐郎  
