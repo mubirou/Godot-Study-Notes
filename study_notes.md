@@ -26,20 +26,22 @@
 
 📖 Godot + Quest による WebXR コンテンツ制作の第一歩、先ずはここから！  
 
-1. [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) から [Download]（2023-11-06版）
-2. 解凍し **project.godot** を起動
+1. WebXR コンテンツの作成
 
-  3. [プロジェクト]-[エクスポート]-[追加]-[**Web**]-[HTML]-[**Head Include**] に以下を記述し [閉じる]  
-  ```
-  <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js"></script>
-  <script>
-  var polyfill = new WebXRPolyfill();
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/webxr-layers-polyfill@latest/build/webxr-layers-polyfill.min.js"></script>
-  <script>
-  var layersPolyfill = new WebXRLayersPolyfill();
-  </script>
-  ```
+    1. [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) から [Download]（2023-11-06版）
+    2. 解凍し **project.godot** を起動
+
+    3. [プロジェクト]-[エクスポート]-[追加]-[**Web**]-[HTML]-[**Head Include**] に以下を記述し [閉じる]  
+    ```
+    <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js"></script>
+    <script>
+    var polyfill = new WebXRPolyfill();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/webxr-layers-polyfill@latest/build/webxr-layers-polyfill.min.js"></script>
+    <script>
+    var layersPolyfill = new WebXRLayersPolyfill();
+    </script>
+    ```
 
   4. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続
   5. [リモートデバッグ]-[ブラウザで実行]（下図）  
