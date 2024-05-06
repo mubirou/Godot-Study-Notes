@@ -1,5 +1,9 @@
 # Godot Study Notes 🔰<a id="TOP"></a>
 
+### [Godot](https://godotengine.org/) + [WebXR](https://immersive-web.github.io/webxr/) + [Quest](https://www.meta.com/jp/quest/quest-3/) の基礎研究
+
+||||||
+
 ### **Index（WebXR 対応）**
 
 | [**WebXR入門**](#231029) | [WebXRテンプレート](#231107) | [**WebXRManager**](#231110) | [OpenXR→WebXR](#20231111) | [WebXR実行方法](#231112) | [フレームレート表示](#20231114) |
