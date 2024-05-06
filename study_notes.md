@@ -4,7 +4,7 @@
 
 * 公開サイト：[MUBIROU.COM](https://mubirou.com/webxr-lab/)  
 * INDEX  
-| [Hello World](#240506) | [Hello World 2]() |
+| [Hello World](#240506) | Hello World 2 |
 ***
 
 ### **Index（WebXR 対応）**
