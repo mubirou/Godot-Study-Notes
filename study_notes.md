@@ -24,7 +24,7 @@
 <a id="240506"></a>
 # <b>Hello World</b>
 
-📖 Godot + Quest による WebXR コンテンツ制作、先ずはここから！  
+📖 Godot + Quest による WebXR コンテンツ制作の第一歩、先ずはここから！  
 
 1. XXXX
 
