@@ -1,6 +1,6 @@
 # Godot Study Notes 🔰<a id="TOP"></a>
 
-### 🔥[Godot](https://godotengine.org/) + [WebXR](https://immersive-web.github.io/webxr/) + [Quest](https://www.meta.com/jp/quest/quest-3/) の基礎研究（[mubirou.com](https://mubirou.com)）
+### 🔥[Godot](https://godotengine.org/) + [WebXR](https://immersive-web.github.io/webxr/) + [Quest](https://www.meta.com/jp/quest/quest-3/) の基礎研究
 
 | [Hello World](#240506) |
 ***
