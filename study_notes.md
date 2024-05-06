@@ -26,7 +26,61 @@
 
 📖 Godot + Quest による WebXR コンテンツ制作の第一歩、先ずはここから！  
 
-1. XXXX
+1. [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) から [Download]（2023-11-06版）
+2. 解凍し **project.godot** を起動
+
+  3. [プロジェクト]-[エクスポート]-[追加]-[**Web**]-[HTML]-[**Head Include**] に以下を記述し [閉じる]  
+  ```
+  <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js"></script>
+  <script>
+  var polyfill = new WebXRPolyfill();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/webxr-layers-polyfill@latest/build/webxr-layers-polyfill.min.js"></script>
+  <script>
+  var layersPolyfill = new WebXRLayersPolyfill();
+  </script>
+  ```
+  * 注意  
+  赤文字で「エクスポート テンプレートが予期されたパスに見つかりません」と表示されたら「エクスポートテンプレートの管理」を選択し「ダウンロードしてインストール」（赤文字の表示が無くなればオケ）  
+
+  4. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続
+  5. [リモートデバッグ]-[ブラウザで実行]（下図）  
+  ![image](https://github.com/mubirou/Godot/blob/main/jpg/202310310620.jpg)  
+  （Godot内蔵のWebサーバを利用します）  
+  * 注意  
+  「この接続ではプライバシーが保護されません」と表示されたら「詳細設定」を選び「localhostにアクセスする（安全ではありません）」を選択（空と地面と右下に [Enter VR] ボタンが表示されたらオケ）    
+  6. Webブラウザ上で [**Enter VR**] を選択
+  7. 360°VRコンテンツが再生されたら成功！  
+  （空と地面とボックス＝両手のみ）  
+
+### 👉 Godot + WebXR + [LAMP](https://github.com/mubirou/LAMP#TOP)
+
+➀ [.htaccess](https://github.com/mubirou/LAMP#202302121037-htaccess2) の書換え  
+```
+# vi /var/www/html/.htaccess
+Options -Indexes
+Header set Cross-Origin-Embedder-Policy "require-corp" ←追加
+Header set Cross-Origin-Opener-Policy "same-origin" ←追加
+
+# systemctl reload httpd ←Apache設定のリロード
+```
+（注意：**WebXRはHTTPSサーバ上でのみ動作**）  
+（注意：**この処理を行わないとエラーが発生し再生不可**）  
+（注意：**このファイルをWebXRコンテンツと同階層に置く**）  
+➁ [Godot WebXR Template](#231029-Template) の project.godot を起動  
+➂ 上記と同じく [**Head Include**](#231029-HeadInclude) に各種 <script>...</script> を記述する（PCVRではなく**Meta Quest Browserから実行時に必要**）  
+➂ [プロジェクト]-[エクスポート]-[追加]-[Web]-[プロジェクトのエクスポート]  
+➃ 〇〇.html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリに保存  
+➄ FileZilla を使ってサーバにアップロード  
+➅ [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) で Quest と PC を接続  
+➆ [Quest]-[デスクトップ]-[モニター〇]-[Chrome] を起動  
+➇ https://www.mubirou.com/.../〇〇.html 開く  
+➈「...が次の許可を求めています」と表示されたら [許可する] を選択
+➉ [**Enter VR**] を選択し360°VRコンテンツが再生されたら成功！  
+
+* 注意  
+    * WebXRコンテンツを複数開いている場合は砂時計が表示されたまま実行されません
+    * [Meta Quest Browser](#231029-MetaQuestBrowser) を使ってルータ内のサーバにアクセスする場合は [Windows のモバイルスポットにアクセス](https://github.com/mubirou/LAMP#androidquest%E3%81%AE%E5%A0%B4%E5%90%88)する必要があります
 
 実行環境：Windows 11、Godot 4.2.2、Meta Quest 3（64.0）、Quest Link、Oculusアプリ  
 作成者：夢寐郎  
