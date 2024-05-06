@@ -28,14 +28,14 @@
 
 1. Web サーバの準備  
     1. お名前.com などで各種登録設定  
-      * ドメイン
-      * レンタルサーバ
-      * SSL証明書 👈必須！  
+        * ドメイン
+        * レンタルサーバ
+        * SSL証明書 👈必須！  
     1. .htaccess に以下を記述  
-      ```
-      Header set Cross-Origin-Embedder-Policy "require-corp"
-      Header set Cross-Origin-Opener-Policy "same-origin"
-      ```
+        ```
+        Header set Cross-Origin-Embedder-Policy "require-corp"
+        Header set Cross-Origin-Opener-Policy "same-origin"
+        ```
 
 1. WebXR コンテンツの作成
 
