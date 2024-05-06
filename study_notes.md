@@ -2,7 +2,8 @@
 
 ### 🔥[Godot](https://godotengine.org/) + [WebXR](https://immersive-web.github.io/webxr/) + [Quest](https://www.meta.com/jp/quest/quest-3/) の基礎研究（[mubirou.com](https://mubirou.com)）
 
-| [Hello World](#240506) |||||
+| [Hello World](#240506) |
+***
 
 ### **Index（WebXR 対応）**
 
