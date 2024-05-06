@@ -58,7 +58,9 @@
 1. 公開＆実行
     1. index.html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリに保存
     1. FileZilla を使ってサーバにアップロード
-    1. [Quest Link](https://www.meta.com/ja-jp/help/quest/articles/headsets-and-accessories/oculus-link/connect-link-with-quest-2/) でQuestとPCを接続
+    1. 次のいずれかからアクセス
+        * [PCVR](https://www.moguravr.com/meta-quest-3-quest-link-air-link/)（Google Chrome）
+        * Meta Quest 単体（[Meta Quest Browser](https://developer.oculus.com/documentation/web/browser-intro/)）
 
 実行環境：Windows 11、Meta Quest 3（64.0）、Quest Link、Oculusアプリ  
 Godot 4.2.2、[Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128)  
