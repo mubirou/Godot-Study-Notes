@@ -28,10 +28,10 @@
 
 1. WebXR コンテンツの作成
 
-    1. [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) から [Download]（2023-11-06版）
-    1. 展開して project.godot を起動
+    (1) [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) から [Download]（2023-11-06版）
+    (2) 展開して project.godot を起動
 
-    1. [プロジェクト]-[エクスポート]-[追加]-[Web]-[HTML]-[Head Include] に以下を記述し [閉じる]  
+    (3) [プロジェクト]-[エクスポート]-[追加]-[Web]-[HTML]-[Head Include] に以下を記述し [閉じる]  
     ```
     <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js"></script>
     <script>
@@ -42,7 +42,8 @@
     var layersPolyfill = new WebXRLayersPolyfill();
     </script>
     ```
-    1.xxx
+    (4) [プロジェクト]-[エクスポート]-[追加]-[Web]-[プロジェクトのエクスポート] で index.html を任意の場所に保存
+    (5) .html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリに保存  *(6) FileZilla を使ってサーバにアップロード  
 
 1. Web サーバの準備
     1. xxx
