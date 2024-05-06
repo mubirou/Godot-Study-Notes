@@ -27,7 +27,7 @@
 <a id="240506"></a>
 # <b>Hello World![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)</b>
 ##### (240506)
-[![image](https://github.com/mubirou/Godot/blob/main/webp/240506.webp)](https://mubirou.com/webxr-lab/240506/index.html)
+[image](https://github.com/mubirou/Godot/blob/main/webp/240506.webp)
 
 💡 [Godot](https://godotengine.org/) + [Quest](https://www.meta.com/jp/quest/quest-3/) による [WebXR](https://immersive-web.github.io/webxr/) コンテンツ公開の最初の一歩！  
 💡 [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) 使用！  
