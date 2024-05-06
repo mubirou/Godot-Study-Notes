@@ -23,6 +23,7 @@
 
 <a id="240506"></a>
 # <b>Hello World</b>
+##### no.240506  
 
 📖 Godot + Quest による WebXR コンテンツ制作の第一歩、先ずはここから！  
 
@@ -42,7 +43,8 @@
     var layersPolyfill = new WebXRLayersPolyfill();
     </script>
     ```
-    (4) [プロジェクト]-[エクスポート]-[追加]-[Web]-[プロジェクトのエクスポート] で index.html を任意の場所に保存
+    (4) [プロジェクト]-[エクスポート]-[追加]-[Web] を選択し各種設定  
+      * エクスポート先のパス：index.html を任意の場所に保存
     (5) .html を [FileZilla](https://github.com/mubirou/LAMP#202302121037-FileZilla) で設定したローカルディレクトリに保存  *(6) FileZilla を使ってサーバにアップロード  
 
 1. Web サーバの準備
