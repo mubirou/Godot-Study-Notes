@@ -24,7 +24,7 @@
 <a id="240506"></a>
 # <b>Hello World</b>
 
-📖 Godot + WebXR + Quest を使った第一歩です  
+📖 Godot + WebXR + Quest を使った第一歩、先ずはここから！  
 
 1. XXXX
 
