@@ -24,7 +24,7 @@
 <a id="240506"></a>
 # <b>Hello World![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  </b>
 
-📢 Godot + Quest による WebXR コンテンツの公開第一歩、先ずはここから！  
+📝 Godot + Quest による WebXR コンテンツの公開第一歩、先ずはここから！  
 
 1. Web サーバの準備  
     1. お名前.com などで各種登録設定  
