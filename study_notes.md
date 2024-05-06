@@ -22,10 +22,9 @@
 
 
 <a id="240506"></a>
-##### no.240506
 # <b>Hello World</b>
 
-📖 Godot + Quest による WebXR コンテンツ制作の第一歩、先ずはここから！  
+NO.240506: Godot + Quest による WebXR コンテンツ制作の第一歩、先ずはここから！  
 
 1. WebXR コンテンツの作成
 
