@@ -25,7 +25,7 @@
 
 
 <a id="240507"></a>
-# <b>Hello World![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)</b>
+# <b>Hello World 2![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)</b>
 
 💡 Mainクラスは超シンプルスタート！  
 ```gdscript
