@@ -27,7 +27,7 @@
 <a id="240507"></a>
 # <b>Hello World![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)</b>
 
-💡 Main クラスはこれだけでスタート！  
+💡 Main クラスは超シンプルスタート！  
 ```gdscript
 # res://Main.gd
 extends Node3D
@@ -39,7 +39,7 @@ func _ready() -> void:
   webxr_manager = WebXRManager.new(self)
 ```
 
-🔒 知る必要のない！エンジン部分（WebXRManager）
+🔒 見る必要がない！エンジン部分（WebXRManager）
 ```gdscript
 # res://WebXRManager.gd
 class_name WebXRManager
