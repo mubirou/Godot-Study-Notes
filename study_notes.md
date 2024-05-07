@@ -28,7 +28,7 @@
 # <b>Hello World![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)</b>
 
 💡 Main クラスをできる限りシンプルに！  
-```gdscript
+```python
 # res://Main.gd
 extends Node3D
 
@@ -69,7 +69,7 @@ func _ready() -> void:
     1. [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) を [Download]（2023-11-06版）
     1. 展開して project.godot を起動
     1. [プロジェクト]-[エクスポート]-[追加]-[Web]-[HTML]-[Head Include] に以下を記述
-        ```
+        ```html
         <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js"></script>
         <script>
         var polyfill = new WebXRPolyfill();
