@@ -27,7 +27,7 @@
 <a id="240507"></a>
 # <b>Hello World![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)</b>
 
-💡 Main クラスをできる限りシンプルに！  
+💡 Main クラスはこれだけでスタート！  
 ```python
 # res://Main.gd
 extends Node3D
