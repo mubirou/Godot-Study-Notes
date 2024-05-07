@@ -26,19 +26,18 @@
 
 <a id="240507"></a>
 # <b>Hello World![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)</b>
-![image](https://github.com/mubirou/Godot/blob/main/webp/240506.webp)
 
 💡 Main クラスをできる限りシンプルに！  
-    ```
-    # res://Main.gd
-    extends Node3D
+```gdscript
+# res://Main.gd
+extends Node3D
 
-    const WebXRManager = preload("res://WebXRManager.gd")
-    var webxr_manager: WebXRManager
+const WebXRManager = preload("res://WebXRManager.gd")
+var webxr_manager: WebXRManager
 
-    func _ready() -> void:
-      webxr_manager = WebXRManager.new(self)
-    ```
+func _ready() -> void:
+  webxr_manager = WebXRManager.new(self)
+```
 
 参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
 実行環境：Windows 11、Meta Quest 3（64.0）、Quest Link、Oculusアプリ、Godot 4.2.2  
