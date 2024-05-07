@@ -2,9 +2,9 @@
 
 ### [Godot](https://godotengine.org/) + [WebXR](https://immersive-web.github.io/webxr/) + [Quest](https://www.meta.com/jp/quest/quest-3/) の基礎研究メモ🔥
 
-* 公開サイト：[MUBIROU.COM](https://mubirou.com/webxr-lab/)  
+* 公開サイト：[mubirou.com](https://mubirou.com/webxr-lab/)  
 * INDEX  
-| [Hello World](#240506) | Hello World 2 |
+| [Hello World](#240506) | [Hello World 2](#240507) |
 ***
 
 ### **Index（WebXR 対応）**
@@ -22,6 +22,29 @@
 ### **Index（Godot 3.4 対応）**
 | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [Questビルド](#220505) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [物理エンジン RigidBodyとStaticBody](#220610) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) |
 ***
+
+
+<a id="240507"></a>
+# <b>Hello World![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)</b>
+![image](https://github.com/mubirou/Godot/blob/main/webp/240506.webp)
+
+💡 Main クラスをできる限りシンプルに！  
+    ```
+    # res://Main.gd
+    extends Node3D
+
+    const WebXRManager = preload("res://WebXRManager.gd")
+    var webxr_manager: WebXRManager
+
+    func _ready() -> void:
+      webxr_manager = WebXRManager.new(self)
+    ```
+
+参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
+実行環境：Windows 11、Meta Quest 3（64.0）、Quest Link、Oculusアプリ、Godot 4.2.2  
+作成者：夢寐郎  
+作成日：2024年05月07日  
+[[TOP]](#TOP)  
 
 
 <a id="240506"></a>
@@ -65,7 +88,7 @@
         * [PCVR](https://www.moguravr.com/meta-quest-3-quest-link-air-link/)（Google Chrome）
         * Meta Quest 単体（[Meta Quest Browser](https://developer.oculus.com/documentation/web/browser-intro/)）
 
-参考：[MUBIROU.COM](https://mubirou.com/webxr-lab/index.html)  
+参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
 実行環境：Windows 11、Meta Quest 3（64.0）、Quest Link、Oculusアプリ  
 Godot 4.2.2、[Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128)  
 作成者：夢寐郎  
