@@ -28,7 +28,7 @@
 # <b>Hello World![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)</b>
 
 💡 Main クラスはこれだけでスタート！  
-```python
+```gdscript
 # res://Main.gd
 extends Node3D
 
