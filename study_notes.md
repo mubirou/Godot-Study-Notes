@@ -26,8 +26,10 @@
 
 <a id="240507"></a>
 # <b>Hello World 2![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)</b>
+![image](https://github.com/mubirou/Godot/blob/main/webp/240507.webp)
 
-💡 Mainクラスが超シンプル！  
+💡 ここからスタートがおすすめ！
+💡 Mainクラスはできるだけ汚さない！  
 ```gdscript
 # res://Main.gd
 extends Node3D
