@@ -28,7 +28,7 @@
 # <b>Hello World 2![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)</b>
 ![image](https://github.com/mubirou/Godot/blob/main/webp/240507.webp)
 
-💡 ここからスタートがおすすめ！
+💡 ここからスタートがおすすめ！  
 💡 Mainクラスはできるだけ汚さない！  
 ```gdscript
 # res://Main.gd
