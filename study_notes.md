@@ -41,7 +41,7 @@ func _ready() -> void:
 	webxr_manager = WebXRManager.new(self)
 ```
 
-🔒 縁の下の力持ちのエンジン（WebXRManagerクラス）
+🔒 陰の立役者「WebXRManagerクラス」
 ```gdscript
 # res://WebXRManager.gd
 class_name WebXRManager
