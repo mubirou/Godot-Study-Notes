@@ -27,6 +27,13 @@
 <a id="240512"></a>
 # <b>Debug</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
 
+〇〇〇 只今作成中です 〇〇〇
+
+実行環境：Windows 11、Meta Quest 3（64.0）、Quest Link、Oculusアプリ、Godot 4.2.2  
+作成者：夢寐郎  
+作成日：2024年05月XX日  
+[[TOP]](#TOP)  
+
 
 <a id="240507"></a>
 # <b>Hello World 2</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
