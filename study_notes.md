@@ -4,7 +4,7 @@
 
 * 公開サイト：[mubirou.com](https://mubirou.com/webxr-lab/)  
 * INDEX  
-| [Hello World](#240506) | [Hello World 2](#240507) |
+| [Hello World](#240506) | [Hello World 2](#240507) | [Debug](#240512) |
 ***
 
 ### **Index（WebXR 対応）**
@@ -24,8 +24,12 @@
 ***
 
 
+<a id="240512"></a>
+# <b>Debug</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
+
+
 <a id="240507"></a>
-# <b>Hello World 2![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)</b>
+# <b>Hello World 2</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
 ![image](https://github.com/mubirou/Godot/blob/main/webp/240507.webp)
 
 💡 ここからスタートがおすすめ！  
@@ -135,7 +139,7 @@ func _webxr_on_squeeze_end(input_source_id: int) -> void:
 
 
 <a id="240506"></a>
-# <b>Hello World![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)</b>
+# <b>Hello World</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
 ![image](https://github.com/mubirou/Godot/blob/main/webp/240506.webp)
 
 💡 [Godot](https://godotengine.org/) + [Quest](https://www.meta.com/jp/quest/quest-3/) による [WebXR](https://immersive-web.github.io/webxr/) コンテンツ公開の最初の一歩！  
