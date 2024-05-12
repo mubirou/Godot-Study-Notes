@@ -37,7 +37,8 @@
 
 <a id="240507"></a>
 # <b>Hello World 2</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
-![image](https://github.com/mubirou/Godot/blob/main/webp/240507.webp)
+
+[![image](https://github.com/mubirou/Godot/blob/main/webp/240507.webp)]
 
 💡 ここからスタートがおすすめ！  
 💡 Mainクラスはできるだけ汚さない！  
