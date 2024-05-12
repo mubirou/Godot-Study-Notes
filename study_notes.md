@@ -38,7 +38,7 @@
 <a id="240507"></a>
 # <b>Hello World 2</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240507.webp)](https://mubirou.com/webxr-lab/240507/index.html)  
-👆[Quest](https://www.meta.com/jp/quest/quest-3/)を着用してください  
+👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
 💡 ここからスタートがおすすめ！  
 💡 Mainクラスはできるだけ汚さない！  
@@ -149,7 +149,7 @@ func _webxr_on_squeeze_end(input_source_id: int) -> void:
 <a id="240506"></a>
 # <b>Hello World</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240506.webp)](https://mubirou.com/webxr-lab/240506/index.html)  
-👆[Quest](https://www.meta.com/jp/quest/quest-3/)を着用してください  
+👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
 💡 [Godot](https://godotengine.org/) + [Quest](https://www.meta.com/jp/quest/quest-3/) による [WebXR](https://immersive-web.github.io/webxr/) コンテンツ公開の最初の一歩！  
 💡 [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) 使用！  
