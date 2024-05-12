@@ -38,7 +38,7 @@
 <a id="240507"></a>
 # <b>Hello World 2</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240507.webp)](https://mubirou.com/webxr-lab/240507/index.html)  
-👆[Quest](https://www.meta.com/jp/quest/quest-3/)を着用してください
+👆[Quest](https://www.meta.com/jp/quest/quest-3/)を着用してください  
 
 💡 ここからスタートがおすすめ！  
 💡 Mainクラスはできるだけ汚さない！  
