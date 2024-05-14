@@ -4,7 +4,7 @@
 
 * 公開サイト：[mubirou.com](https://mubirou.com/webxr-lab/)  
 * INDEX  
-| [Hello World](#240506) | [Hello World 2](#240507) | [Debug](#240512) |
+| [Hello World](#240506) | [Hello World 2](#240507) | [Debugger](#240512) |
 ***
 
 ### **Index（WebXR 対応）**
@@ -25,7 +25,7 @@
 
 
 <a id="240512"></a>
-# <b>Debug</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
+# <b>Debugger</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
 
 〇〇〇 只今作成中です 〇〇〇
 
