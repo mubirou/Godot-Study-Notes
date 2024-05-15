@@ -26,6 +26,8 @@
 
 <a id="240512"></a>
 # <b>Debugger</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
+[![image](https://github.com/mubirou/Godot/blob/main/webp/240512.webp)](https://mubirou.com/webxr-lab/240512/index.html)  
+👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
 〇〇〇 只今作成中です 〇〇〇
 
