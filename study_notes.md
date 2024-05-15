@@ -87,7 +87,7 @@
     ```gdscript
     var _debugger: Label3D = get_node("/root/Main/XROrigin3D/RightController/Debugger")
 
-    # ≒ print() 関数
+    # 文字列を出力（ ≒print() 関数） 
     _debugger.print("Something")
 
     # 出力をクリア
