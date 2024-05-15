@@ -29,9 +29,11 @@
 
 〇〇〇 只今作成中です 〇〇〇
 
+参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
+デモファイル：[240507.zip](https://github.com/mubirou/Godot/blob/main/zip/240512.zip)  
 実行環境：Windows 11、Meta Quest 3（64.0）、Quest Link、Oculusアプリ、Godot 4.2.2  
 作成者：夢寐郎  
-作成日：2024年05月XX日  
+作成日：2024年05月15日  
 [[TOP]](#TOP)  
 
 
