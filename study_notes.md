@@ -29,8 +29,6 @@
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240512.webp)](https://mubirou.com/webxr-lab/240512/index.html)  
 👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
-〇〇〇 只今作成中です 〇〇〇
-
 1. [Label3D](https://docs.godotengine.org/ja/4.x/classes/class_label3d.html) を任意の位置する（階層構造例）  
 
     Main（Node3D）  
