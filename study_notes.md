@@ -82,6 +82,18 @@
       text = _display_text
     ```
 
+1. Debugger.gd の利用法
+
+```gdscript
+var _debugger: Label3D = get_node("/root/Main/XROrigin3D/RightController/Debugger")
+
+# ≒ print() 関数
+_debugger.print("Something")
+
+# 出力をクリア
+_debugger.reset()
+```
+
 参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
 デモファイル：[240507.zip](https://github.com/mubirou/Godot/blob/main/zip/240512.zip)  
 実行環境：Windows 11、Meta Quest 3（64.0）、Quest Link、Oculusアプリ、Godot 4.2.2  
