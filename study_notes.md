@@ -82,17 +82,22 @@
       text = _display_text
     ```
 
-1. Debugger.gd の利用法
+1. Debugger.gd の使用方法
 
-    ```gdscript
-    var _debugger: Label3D = get_node("/root/Main/XROrigin3D/RightController/Debugger")
+    * Debugger オブジェクトの取得
+      ```gdscript
+      var _debugger: Label3D = get_node("/root/Main/XROrigin3D/RightController/Debugger")
+      ```
 
-    # 文字列を出力（ ≒print() 関数） 
-    _debugger.print("Something")
-
-    # 出力をクリア
-    _debugger.reset()
-    ```
+    * Debugger.print() メソッド
+      ```gdscript
+      _debugger.print("Something") # 文字列を出力
+      ```
+  
+    * Debugger.reset() メソッド
+      ```gdscript
+      _debugger.reset() # 出力をクリア
+      ```
 
 参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
 デモファイル：[240507.zip](https://github.com/mubirou/Godot/blob/main/zip/240512.zip)  
