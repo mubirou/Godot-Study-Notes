@@ -89,12 +89,12 @@
       var _debugger: Label3D = get_node("/root/Main/XROrigin3D/RightController/Debugger")
       ```
 
-    * Debugger.print() メソッド
+    ### Debugger.print()
       ```gdscript
       _debugger.print("Something") # 文字列を出力
       ```
   
-    * Debugger.reset() メソッド
+    ### Debugger.reset()
       ```gdscript
       _debugger.reset() # 出力をクリア
       ```
