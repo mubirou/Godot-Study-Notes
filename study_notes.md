@@ -31,6 +31,15 @@
 
 〇〇〇 只今作成中です 〇〇〇
 
+1. [Label3D](https://docs.godotengine.org/ja/4.x/classes/class_label3d.html) を任意の位置する  
+    Main（Node3D）  
+    　  └ XROrigin3D  
+    　　  ├ XRCamera3D  
+    　　  └ RightController  
+    　　  　 ├ MeshInstance3D（右コントローラの視覚化）  
+    　　  　 └ **Debugger**（Label3D）![image](https://github.com/mubirou/Godot-Study-Notes/blob/main/png/script.png)（**Debugger.gd**）  
+
+
 参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
 デモファイル：[240507.zip](https://github.com/mubirou/Godot/blob/main/zip/240512.zip)  
 実行環境：Windows 11、Meta Quest 3（64.0）、Quest Link、Oculusアプリ、Godot 4.2.2  
