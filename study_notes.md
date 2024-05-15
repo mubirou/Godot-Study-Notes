@@ -39,13 +39,13 @@
     　　  　 ├ MeshInstance3D（右コントローラの視覚化）  
     　　  　 └ **Debugger**（Label3D）![image](https://github.com/mubirou/Godot-Study-Notes/blob/main/png/script.png)（**Debugger.gd**）  
 
-1. Label3D の微調整例
-  * Pixel Size：0.0005m（初期値：0.005m）
-  * Font：[NotoSansJP-Bold.ttf](https://fonts.google.com/noto/specimen/Noto+Sans+JP)
-  * Outline Size：8px（初期値：12px）
-  * Horizontal Alignment：Left（初期値：Center）
-  * Vertical Alignment：Buttom（初期値：Center）
-  * Line Spacing：-10px（初期値：0px）
+1. Label3D の調整例
+  * [Pixel Size](https://docs.godotengine.org/ja/4.x/classes/class_label3d.html#class-label3d-property-pixel-size)：0.0005m（初期値：0.005m）
+  * [Font](https://docs.godotengine.org/ja/4.x/classes/class_label3d.html#class-label3d-property-font)：[NotoSansJP-Bold.ttf](https://fonts.google.com/noto/specimen/Noto+Sans+JP)
+  * [Outline Size](https://docs.godotengine.org/ja/4.x/classes/class_label3d.html#class-label3d-property-outline-size)：8px（初期値：12px）
+  * [Horizontal Alignment](https://docs.godotengine.org/ja/4.x/classes/class_label3d.html#class-label3d-property-horizontal-alignment)：Left（初期値：Center）
+  * [Vertical Alignment](https://docs.godotengine.org/ja/4.x/classes/class_label3d.html#class-label3d-property-vertical-alignment)：Buttom（初期値：Center）
+  * [Line Spacing](https://docs.godotengine.org/ja/4.x/classes/class_label3d.html#class-label3d-property-line-spacing)：-10px（初期値：0px）
 
 参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
 デモファイル：[240507.zip](https://github.com/mubirou/Godot/blob/main/zip/240512.zip)  
