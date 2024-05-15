@@ -25,7 +25,7 @@
 
 
 <a id="240516"></a>
-# <b>Debugger</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
+# <b>Bounce</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
 
 〇〇 ただいま作成中 〇〇
 
