@@ -48,6 +48,40 @@
     * [Vertical Alignment](https://docs.godotengine.org/ja/4.x/classes/class_label3d.html#class-label3d-property-vertical-alignment)：Buttom（初期値：Center）
     * [Line Spacing](https://docs.godotengine.org/ja/4.x/classes/class_label3d.html#class-label3d-property-line-spacing)：-10px（初期値：0px）
 
+1. Debugger.gd を Label3D にアタッチ
+
+    ```gdscript
+    # XROrigin3D/RightController/Debugger(Debugger.gd)
+    extends Label3D
+
+    var _content = [] # 内部で保持する内容
+
+    func _ready():
+      pass
+      
+    func reset():
+      _content.clear()
+      _update_display()
+
+    func print(arg: String):
+      _content.append(arg)
+      if _content.size() > 10: # 最大表示行数
+        _content.remove_at(0)
+      _update_display()
+
+    func _update_display():
+      var _display_text = ""
+      for i in range(_content.size()):
+        _display_text += _content[i]
+        if i < _content.size() - 1:
+          _display_text += "\n"
+      
+      if _content.size() > 0:
+        _display_text += " ←" # 最後の行に " ←" を追加
+
+      text = _display_text
+    ```
+
 参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
 デモファイル：[240507.zip](https://github.com/mubirou/Godot/blob/main/zip/240512.zip)  
 実行環境：Windows 11、Meta Quest 3（64.0）、Quest Link、Oculusアプリ、Godot 4.2.2  
