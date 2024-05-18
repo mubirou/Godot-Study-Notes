@@ -3,7 +3,7 @@
 ### [Godot](https://godotengine.org/) + [WebXR](https://immersive-web.github.io/webxr/) + [Quest](https://www.meta.com/jp/quest/quest-3/) の基礎研究メモ🔥
 
 * 公開サイト：[mubirou.com](https://mubirou.com/webxr-lab/)  
-* [Godot WebXR Template by MUBIROU](https://github.com/mubirou/Godot/blob/main/zip/godot_webxr_template_by_mubirou_20240518_1210.zip)（Ver.20240518T1210）  
+* [Godot WebXR Template by MUBIROU](https://github.com/mubirou/Godot/blob/main/zip/godot_webxr_template_by_mubirou_20240518_1210.zip)（2024年05月18日版）  
 * INDEX  
 | [Hello World](#240506) | [Hello World 2](#240507) | [Debugger](#240512) | [Bounce](#240516) |
 ***
