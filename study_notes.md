@@ -44,7 +44,7 @@
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240512.webp)](https://mubirou.com/webxr-lab/240512/index.html)  
 👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
-💡 VR空間上で簡易デバッグするためのツール  
+💡 VR空間上で簡易デバッグが可能  
 
 1. [Label3D](https://docs.godotengine.org/ja/4.x/classes/class_label3d.html) を任意の位置する（階層構造例）  
 
