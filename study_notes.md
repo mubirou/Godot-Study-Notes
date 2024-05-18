@@ -272,8 +272,8 @@ func _webxr_on_squeeze_end(input_source_id: int) -> void:
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240506.webp)](https://mubirou.com/webxr-lab/240506/index.html)  
 👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
-💡 [Godot](https://godotengine.org/) + [Quest](https://www.meta.com/jp/quest/quest-3/) による [WebXR](https://immersive-web.github.io/webxr/) コンテンツ公開の最初の一歩！  
-💡 [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) 使用！  
+💡 [Godot](https://godotengine.org/) + [Quest](https://www.meta.com/jp/quest/quest-3/) による [WebXR](https://immersive-web.github.io/webxr/) コンテンツ公開の最初の一歩  
+💡 [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) 使用  
 
 1. Web サーバの準備  
     1. お名前.com などで各種登録設定  
