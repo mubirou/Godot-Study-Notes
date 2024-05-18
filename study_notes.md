@@ -29,13 +29,56 @@
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240516.webp)](https://mubirou.com/webxr-lab/240516/index.html)  
 👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
-〇〇 ただいま作成中 〇〇
+💡物理エンジンを使わないアニメーション  
+💡三角関数 (sinカーブ) と絶対値を利用
+⚠ 床に着地するタイミングが表現ができない
+
+（サンプルコード）  
+```gdscript
+# Main.gd
+extends Node3D
+
+const WebXRManager = preload("res://WebXRManager.gd")
+var _webxr_manager: WebXRManager
+var _textList = []
+var _originYList = []
+var _countList = []
+
+func _ready() -> void:
+	_webxr_manager = WebXRManager.new(self)
+	
+	# テキストオブジェクトをリストに追加
+	for i in range(1, 8):
+		var _theText = get_node("Text%d" % i)
+		_textList.append(_theText)
+		_originYList.append(_theText.position.y)
+		_countList.append(-PI / 7 * (i - 1))
+		var _debugger: Label3D = get_node("/root/Main/XROrigin3D/RightController/Debugger")
+
+func _process(delta: float) -> void:
+	for i in range(7):
+		var _theText = _textList[i]
+		var _theOriginY = _originYList[i]
+		var _theCount = _countList[i]
+		
+		# カウントを更新
+		_theCount += 0.04
+		_countList[i] = _theCount
+		
+		# 次のY位置を計算
+		var _nextY = abs(sin(_theCount)) * 1.0 + _theOriginY
+		
+		# 位置を更新
+		var _thePos = _theText.position
+		_thePos.y = _nextY
+		_theText.position = _thePos
+```
 
 参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
 デモファイル：[240516.zip](https://github.com/mubirou/Godot/blob/main/zip/240516.zip)  
 実行環境：Windows 11、Meta Quest 3（64.0）、Quest Link、Oculusアプリ、Godot 4.2.2  
 作成者：夢寐郎  
-作成日：2024年05月XX日  
+作成日：2024年05月18日  
 [[TOP]](#TOP)  
 
 
