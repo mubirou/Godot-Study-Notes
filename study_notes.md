@@ -117,7 +117,7 @@ _debugger.reset() # 出力をクリア
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240507.webp)](https://mubirou.com/webxr-lab/240507/index.html)  
 👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
-💡 [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) より便利  
+💡 [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) より便利なテンプレート  
 💡 Mainクラスがシンプルなのが〇  
 
 ```gdscript
