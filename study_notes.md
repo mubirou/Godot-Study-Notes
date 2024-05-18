@@ -44,6 +44,8 @@
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240512.webp)](https://mubirou.com/webxr-lab/240512/index.html)  
 👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
+💡 VR空間上で簡易デバッグするためのツール  
+
 1. [Label3D](https://docs.godotengine.org/ja/4.x/classes/class_label3d.html) を任意の位置する（階層構造例）  
 
     Main（Node3D）  
@@ -115,8 +117,9 @@ _debugger.reset() # 出力をクリア
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240507.webp)](https://mubirou.com/webxr-lab/240507/index.html)  
 👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
-💡 ここからスタートがおすすめ！  
-💡 Mainクラスはできるだけ汚さない！  
+💡 [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) より便利  
+💡 Mainクラスがシンプルなのが〇  
+
 ```gdscript
 # res://Main.gd
 extends Node3D
