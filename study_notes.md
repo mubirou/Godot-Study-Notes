@@ -33,9 +33,73 @@
 👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
 💡物理エンジンを使ったアニメーション  
+💡階層構造のポイント  
+　  │  
+　  ├ [RigidBody3D](https://docs.godotengine.org/en/stable/classes/class_rigidbody3d.html#rigidbody3d)  
+　  │   ├ [CollisionShape3D](https://docs.godotengine.org/en/stable/classes/class_collisionshape3d.html#collisionshape3d)  
+　  │   └ MeshInstance（落下物の可視化）  
+　  │  
+　  └ [StaticBody3D](https://docs.godotengine.org/en/stable/classes/class_staticbody3d.html#staticbody3d)  
+　  　  ├ [CollisionShape3D](https://docs.godotengine.org/en/stable/classes/class_collisionshape3d.html#collisionshape3d)  
+　  　  └ MeshInstance3D（床の可視化）  
 
 （主なコード）  
 ```gdscript
+# Main.gd
+extends Node3D
+
+const WebXRManager = preload("res://WebXRManager.gd")
+var _webxr_manager: WebXRManager
+var _debugger: Label3D # Debugger
+var timer: Timer
+var rigidbody_list = []
+
+func _ready() -> void:
+	_webxr_manager = WebXRManager.new(self)
+	
+	# Debugger
+	_debugger = get_node("/root/Main/XROrigin3D/RightController/Debugger")
+	_debugger.print("Hello World") # Debugger
+	
+	# タイマーの設定
+	timer = Timer.new()
+	add_child(timer)
+	timer.wait_time = 15.0 # 15秒
+	timer.connect("timeout", _on_timer_timeout)
+	timer.start()
+	
+	# RigidBodyノードのリストを動的に生成
+	for i in range(1, 8): # x1からx7までの範囲
+		for j in range(1, 6): # y1からy5までの範囲
+			var node_path = "DotCharacter/x%sy%s" % [i, j]
+			var rigidbody = get_node(node_path)
+			rigidbody_list.append(rigidbody)
+	
+	init()
+
+func init() -> void:	
+	var random = RandomNumberGenerator.new()
+	random.randomize() # シード値の初期化
+	
+	# 各RigidBodyの位置を設定
+	for rigidbody in rigidbody_list:
+		var pos = rigidbody.position
+		pos.y = 1.0 * random.randf()
+		rigidbody.position = pos
+		#rigidbody.sleeping = true # 速度を0にする
+		#rigidbody.gravity_scale = 0.0 # 重力を0にする（初期値1.0）
+
+func _on_timer_timeout() -> void:
+	timer.stop() # タイマーを止める
+	init()
+	timer.start() # タイマーを再スタート
+
+func _process(delta: float) -> void:
+	pass
+
+func _on_right_controller_button_pressed(name):
+	#_debugger.reset() # Debugger（出力をクリア）
+	pass
 ```
 
 参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
