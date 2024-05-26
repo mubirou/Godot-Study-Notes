@@ -42,7 +42,7 @@
 デモファイル：[240526.zip](https://github.com/mubirou/Godot/blob/main/zip/240526.zip)  
 実行環境：Windows 11、Meta Quest 3（65.0）、Quest Link、Oculusアプリ、Godot 4.2.2  
 作成者：夢寐郎  
-作成日：2024年05月28日  
+作成日：2024年05月26日  
 [[TOP]](#TOP)  
 
 
