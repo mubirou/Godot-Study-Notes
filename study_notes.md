@@ -37,11 +37,11 @@
 　  │  
 　  ├ [RigidBody3D](https://docs.godotengine.org/en/stable/classes/class_rigidbody3d.html#rigidbody3d)  
 　  │   ├ [CollisionShape3D](https://docs.godotengine.org/en/stable/classes/class_collisionshape3d.html#collisionshape3d)  
-　  │   └ MeshInstance（落下物の可視化）  
+　  │   └ MeshInstance3D（落下物）  
 　  │  
 　  └ [StaticBody3D](https://docs.godotengine.org/en/stable/classes/class_staticbody3d.html#staticbody3d)  
 　  　  ├ [CollisionShape3D](https://docs.godotengine.org/en/stable/classes/class_collisionshape3d.html#collisionshape3d)  
-　  　  └ MeshInstance3D（床の可視化）  
+　  　  └ MeshInstance3D（床）  
 
 （主なコード）  
 ```gdscript
