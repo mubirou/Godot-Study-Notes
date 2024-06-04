@@ -31,15 +31,6 @@
 
 💡親指スティックの上下左右でオブジェクトを移動
 
-
-
-参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
-デモファイル：[240604.zip](https://github.com/mubirou/Godot/blob/main/zip/240604.zip)  
-実行環境：Windows 11、Meta Quest 3（65.0）、Quest Link、Oculusアプリ、Godot 4.2.2  
-作成者：夢寐郎  
-作成日：2024年06月04日  
-[[TOP]](#TOP)  
-
 （コインにアタッチしたスクリプト）
 ```gdscript
 # Coin.gd
@@ -65,6 +56,86 @@ func move(x: int, z: int) -> void:
 ```
 
 （メインクラス）
+```gdscript
+# Main.gd
+extends Node3D
+
+var _webxr_manager: WebXRManager
+var _debugger: Label3D  # Debugger
+var _coin: Node3D
+var _move_cooldown = 0.2  # 移動のクールダウン時間（秒）
+var _move_timer = 0.0
+
+var _current_direction = Vector2.ZERO
+
+func _ready() -> void:
+	_webxr_manager = WebXRManager.new(self)
+	
+	# Debugger
+	_debugger = $XROrigin3D/RightController/Debugger
+	_debugger.print("Hello World")
+	
+	_coin = $Coin
+
+func _process(delta: float) -> void:
+	_move_timer -= delta
+	
+	if _move_timer <= 0:
+		if _current_direction != Vector2.ZERO:
+			_coin.move(_current_direction.x, _current_direction.y)
+			_move_timer = _move_cooldown
+
+func _on_right_controller_button_pressed(name: String) -> void:
+	# _debugger.reset()  # Debugger（出力をクリア）
+	pass
+
+func _on_right_controller_input_vector_2_changed(name: String, value: Vector2) -> void:
+	# 中央に戻っているかを確認
+	if value.length() == 0:
+		_debugger.print("・")
+		_current_direction = Vector2.ZERO
+		return
+
+	# 弧度法
+	var radian_joystick = atan2(value.x, value.y)
+	# 度数法
+	var degree_joystick = rad_to_deg(radian_joystick)
+
+	# 方向を判断
+	var direction = ""
+	var x_move = 0
+	var z_move = 0
+	if degree_joystick >= -45 and degree_joystick < 45:
+		direction = "↑"
+		z_move = -1
+	elif degree_joystick >= 45 and degree_joystick < 135:
+		direction = "→"
+		x_move = 1
+	elif degree_joystick >= 135 or degree_joystick < -135:
+		direction = "↓"
+		z_move = 1
+	else:
+		direction = "←"
+		x_move = -1
+
+	_debugger.print(direction + " " + str(round(degree_joystick)) + "°")
+	
+	# 新しい方向をセット
+	_current_direction = Vector2(x_move, z_move)
+
+	# タイマーがクールダウン中でない場合、すぐに動かす
+	if _move_timer <= 0:
+		_coin.move(_current_direction.x, _current_direction.y)
+		_move_timer = _move_cooldown
+```
+
+参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
+デモファイル：[240604.zip](https://github.com/mubirou/Godot/blob/main/zip/240604.zip)  
+実行環境：Windows 11、Meta Quest 3（65.0）、Quest Link、Oculusアプリ、Godot 4.2.2  
+作成者：夢寐郎  
+作成日：2024年06月04日  
+[[TOP]](#TOP)  
+
 
 <a id="240526"></a>
 # <b>Bounce 2</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
