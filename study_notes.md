@@ -129,6 +129,7 @@ func _on_right_controller_input_vector_2_changed(name: String, value: Vector2) -
 		_move_timer = _move_cooldown
 ```
 
+参考：[VRコントローラーの入力イベント](https://github.com/mubirou/Godot-Study-Notes/blob/main/study_notes.md#vr%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%81%AE%E5%85%A5%E5%8A%9B%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88)  
 参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
 デモファイル：[240604.zip](https://github.com/mubirou/Godot/blob/main/zip/240604.zip)  
 実行環境：Windows 11、Meta Quest 3（65.0）、Quest Link、Oculusアプリ、Godot 4.2.2  
