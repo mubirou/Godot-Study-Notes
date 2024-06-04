@@ -30,7 +30,7 @@
 👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
 参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
-デモファイル：[240604.zip](https://github.com/mubirou/Godot/blob/main/zip/240526.zip)  
+デモファイル：[240604.zip](https://github.com/mubirou/Godot/blob/main/zip/240604.zip)  
 実行環境：Windows 11、Meta Quest 3（65.0）、Quest Link、Oculusアプリ、Godot 4.2.2  
 作成者：夢寐郎  
 作成日：2024年06月04日  
