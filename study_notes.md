@@ -26,7 +26,7 @@
 
 <a id="240604"></a>
 # <b>Thumbstick Control</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
-[![image](https://github.com/mubirou/Godot/blob/main/webp/240526.webp)](https://mubirou.com/webxr-lab/240526/index.html)  
+[![image](https://github.com/mubirou/Godot/blob/main/webp/240604.webp)](https://mubirou.com/webxr-lab/240604/index.html)  
 👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
 参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
