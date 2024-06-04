@@ -29,6 +29,10 @@
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240604.webp)](https://mubirou.com/webxr-lab/240604/index.html)  
 👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
+💡親指スティックの上下左右でオブジェクトを移動
+
+
+
 参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
 デモファイル：[240604.zip](https://github.com/mubirou/Godot/blob/main/zip/240604.zip)  
 実行環境：Windows 11、Meta Quest 3（65.0）、Quest Link、Oculusアプリ、Godot 4.2.2  
@@ -36,6 +40,31 @@
 作成日：2024年06月04日  
 [[TOP]](#TOP)  
 
+（コインにアタッチしたスクリプト）
+```gdscript
+# Coin.gd
+extends Node3D
+
+var _grid_size = 0.25  # 25cm (0.25m)
+var _adjustX = -0.01 # 微調整
+var _adjustY = -0.01 # 微調整
+
+func move(x: int, z: int) -> void:
+	# 現在の位置を取得して移動量を追加
+	var new_x = position.x + (x * _grid_size)
+	var new_z = position.z + (z * _grid_size)
+
+	# 移動後の位置が床の範囲内か確認
+	if new_x < -1.0 + (_grid_size / 2) + _adjustX or new_x > 1.0 - (_grid_size / 2) - _adjustX or new_z < -2.25 + (_grid_size / 2) + _adjustY or new_z > -0.25 - (_grid_size / 2) - _adjustY:
+		# 範囲外なら何もしない
+		return
+
+	# 格子の中央にスナップ
+	position.x = (floor(new_x / _grid_size) * _grid_size) + (_grid_size / 2) + _adjustX
+	position.z = (floor(new_z / _grid_size) * _grid_size) + (_grid_size / 2) + _adjustY
+```
+
+（メインクラス）
 
 <a id="240526"></a>
 # <b>Bounce 2</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
