@@ -24,6 +24,31 @@
 | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [Questビルド](#220505) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [物理エンジン RigidBodyとStaticBody](#220610) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) |
 ***
 
+<a id="240607"></a>
+# <b>Thumbstick Control</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
+[![image](https://github.com/mubirou/Godot/blob/main/webp/240604.webp)](https://mubirou.com/webxr-lab/240607/index.html)  
+👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
+
+💡親指スティックの動き（360°）でオブジェクトを移動  
+
+（コインにアタッチしたスクリプト）  
+```gdscript
+```
+
+（メインクラス）  
+```gdscript
+```
+
+参考：[VRコントローラーの入力イベント](https://github.com/mubirou/Godot-Study-Notes/blob/main/study_notes.md#vr%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%81%AE%E5%85%A5%E5%8A%9B%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88)  
+参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
+デモファイル：[240607.zip](https://github.com/mubirou/Godot/blob/main/zip/240607.zip)  
+実行環境：Windows 11、Meta Quest 3（65.0）、Quest Link、Oculusアプリ、Godot 4.2.2  
+作成者：夢寐郎  
+作成日：2024年06月08日  
+[[TOP]](#TOP)  
+
+
+
 <a id="240604"></a>
 # <b>Thumbstick Control</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240604.webp)](https://mubirou.com/webxr-lab/240604/index.html)  
