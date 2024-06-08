@@ -26,7 +26,7 @@
 
 <a id="240607"></a>
 # <b>Thumbstick Control 2</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
-[![image](https://github.com/mubirou/Godot/blob/main/webp/240604.webp)](https://mubirou.com/webxr-lab/240607/index.html)  
+[![image](https://github.com/mubirou/Godot/blob/main/webp/240607.webp)](https://mubirou.com/webxr-lab/240607/index.html)  
 👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
 💡親指スティックの動き（360°）でオブジェクトを移動  
