@@ -31,12 +31,84 @@
 
 💡親指スティックの動き（360°）でオブジェクトを移動  
 
-（コインにアタッチしたスクリプト）  
+（移動するオブジェクトにアタッチしたスクリプト）  
 ```gdscript
+# Eye.gd
+extends Node3D
+
+var _speed = 2 # コインの移動速度
+var _floor_size = 6.0  # 6m x 6mの床
+var _eye_radius = 0.15  # 移動オブジェクトの半径
+var _floor: Node3D  # 床のノード
+
+func _ready() -> void:
+	_floor = get_parent().get_node("Floor")  # 床のノードを取得
+
+func move(x: float, z: float) -> void:
+	# 現在の位置を取得して移動量を追加
+	var new_x = position.x + (x * _speed)
+	var new_z = position.z + (z * _speed)
+
+	# 床の境界計算（グローバル座標）
+	var half_floor_size = _floor_size / 2.0
+	var floor_global_pos = _floor.global_transform.origin
+
+	var min_x = floor_global_pos.x - half_floor_size + _eye_radius
+	var max_x = floor_global_pos.x + half_floor_size - _eye_radius
+	var min_z = floor_global_pos.z - half_floor_size + _eye_radius
+	var max_z = floor_global_pos.z + half_floor_size - _eye_radius
+
+	# 移動後の位置が床の範囲内か確認
+	if new_x < min_x or new_x > max_x or new_z < min_z or new_z > max_z:
+		# 範囲外なら何もしない
+		return
+
+	# 新しい位置を設定
+	position.x = new_x
+	position.z = new_z
 ```
 
 （メインクラス）  
 ```gdscript
+# Main.gd
+extends Node3D
+
+var _webxr_manager: WebXRManager
+var _debugger: Label3D  # Debugger
+var _eye: Node3D
+var _move_cooldown = 0.2  # 移動のクールダウン時間（秒）
+var _move_timer = 0.0
+
+var _current_direction = Vector2.ZERO
+
+func _ready() -> void:
+	_webxr_manager = WebXRManager.new(self)
+	
+	# Debugger
+	_debugger = $XROrigin3D/RightController/Debugger
+	_debugger.print("Hello World")
+	
+	_eye = $Eye
+
+func _process(delta: float) -> void:
+	if _current_direction != Vector2.ZERO:
+		_eye.move(_current_direction.x * delta, -_current_direction.y * delta)  # 上下反転
+
+func _on_right_controller_button_pressed(name: String) -> void:
+	# _debugger.reset()  # Debugger（出力をクリア）
+	pass
+
+func _on_right_controller_input_vector_2_changed(name: String, value: Vector2) -> void:
+	# 中央に戻っているかを確認
+	if value.length() == 0:
+		_debugger.print("・")
+		_current_direction = Vector2.ZERO
+		return
+
+	# 方向を判断
+	_current_direction = value
+
+	_debugger.print("方向: " + str(value))
 ```
 
 参考：[VRコントローラーの入力イベント](https://github.com/mubirou/Godot-Study-Notes/blob/main/study_notes.md#vr%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%81%AE%E5%85%A5%E5%8A%9B%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88)  
