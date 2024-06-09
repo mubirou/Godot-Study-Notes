@@ -1,25 +1,14 @@
 # [Godot](https://godotengine.org/) + [WebXR](https://immersive-web.github.io/webxr/) + [Quest](https://www.meta.com/jp/quest/quest-3/) の基礎研究メモ<a id="TOP"></a> 🔥
 
 * 公開サイト：[**mubirou.com**](https://mubirou.com/webxr-lab/)（[Quest 3](https://www.meta.com/jp/quest/quest-3/) 対応）  
-* 自作テンプレート：[**webxr_template_240527.zip**](https://github.com/mubirou/Godot/blob/main/zip/webxr_template_240527.zip)（[Godot 4.2.2](https://godotengine.org/download/archive/4.2.2-stable/) 対応）  
+* 自作テンプレート：[**webxr_template_240527.zip**](https://github.com/mubirou/Godot/blob/main/zip/webxr_template_240527.zip)（[Godot 4.2.2](https://godotengine.org/download/archive/4.2.2-stable/) 対応） 
+* Godotとの出会い...✍ 
 
 ***
 ### **Index（WebXR + Quest 3 対応）**
 | [Hello World](#240506) | [Hello World 2](#240507) | [Debugger](#240512) | [Bounce](#240516) | [Bounce 2](#240526) | [Thumbstick Control](#240604) | [Thumbstick Control 2](#240607) | [Thumbstick Control 3](#240608) |
-#### [📝 Godot Study Notes（2021-2023）](./study_notes.md) 👈過去の検証はこちら
+#### [📝 Godot Study Notes（2021-2023）](#encounter) 👈過去の検証はこちら
 ***
-
-**Godotとの出会い...✍**  
-* [2019年6月6日](https://twitter.com/mubirou/status/1136580509096644609) 初代Quest購入
-* [2019年8月6日](https://twitter.com/mubirou/status/1158626565040721921)「#オープンソース の #VR #AR #MR 対応オーサリングツールとか登場してくんないかな。#Unity3D 並にプログラミングできるやつ。とりま Linux, Mac, Win 対応で」とツイート（当時使っていたUnityに不満）  
-* [2021年12月29日](https://twitter.com/mubirou/status/1476124608093102083)「Godot ?」とツイート（Godotの存在を知る）
-* 2022年1月 [上級バーチャルリアリティ技術者](https://vrsj.org/events/seminar/) 資格取得
-* 2021年12月30日～2022年9月20日 Godotの勉強（500h余）
-* 2023年7月 [UCアドバイザー](https://www.aft.or.jp/pages/feature/uc) 資格取得
-* 2023年8月 [CG-ARTSマイスター](https://www.cgarts.or.jp/v1/kentei/meister/) 資格取得  
-* [2023年10月10日](https://twitter.com/mubirou/status/1711699151879282819) Quest3購入 
-***
-
 
 
 <a id="240608"></a>
@@ -713,6 +702,20 @@ Godot 4.2.2、[Godot WebXR Template 3.0](https://godotengine.org/asset-library/a
 作成者：夢寐郎  
 作成日：2024年05月06日  
 [[TOP]](#TOP)  
+
+
+
+***
+<a id="encounter"></a>
+**Godotとの出会い...✍**  
+* [2019年6月6日](https://twitter.com/mubirou/status/1136580509096644609) 初代Quest購入
+* [2019年8月6日](https://twitter.com/mubirou/status/1158626565040721921)「#オープンソース の #VR #AR #MR 対応オーサリングツールとか登場してくんないかな。#Unity3D 並にプログラミングできるやつ。とりま Linux, Mac, Win 対応で」とツイート（当時使っていたUnityに不満）  
+* [2021年12月29日](https://twitter.com/mubirou/status/1476124608093102083)「Godot ?」とツイート（Godotの存在を知る）
+* 2022年1月 [上級バーチャルリアリティ技術者](https://vrsj.org/events/seminar/) 資格取得
+* 2021年12月30日～2022年9月20日 Godotの勉強（500h余）
+* 2023年7月 [UCアドバイザー](https://www.aft.or.jp/pages/feature/uc) 資格取得
+* 2023年8月 [CG-ARTSマイスター](https://www.cgarts.or.jp/v1/kentei/meister/) 資格取得  
+* [2023年10月10日](https://twitter.com/mubirou/status/1711699151879282819) Quest3購入 
 
 
 
