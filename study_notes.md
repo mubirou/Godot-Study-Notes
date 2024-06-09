@@ -4954,22 +4954,4 @@ Quest 3 + Quest Link + ノートPC を使ってクアッドモニター環境を
 [[TOP]](#TOP)
 
 
-### この項目は書きかけです  
-
-<a id="XXX"></a>
-# <b>XXXXX</b>
-
-1. XXX
-    ```gdscript
-    XXXX
-    ```
-    * XXX
-    * XXXX
-
-実行環境：Windows 11、Godot 4.1.3、Meta Quest 3（59.0）、Quest Link、Oculusアプリ  
-作成者：夢寐郎  
-作成日：202X年XX月XX日  
-更新日：202X年XX月XX日  
-[[TOP]](#TOP)
-
 © 2021-2024 夢寐郎
