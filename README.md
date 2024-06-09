@@ -1,15 +1,14 @@
 # [Godot](https://godotengine.org/) + [WebXR](https://immersive-web.github.io/webxr/) + [Quest](https://www.meta.com/jp/quest/quest-3/) の基礎研究メモ<a id="TOP"></a> 🔥
 
 * 公開サイト：[**mubirou.com**](https://mubirou.com/webxr-lab/)（[Quest 3](https://www.meta.com/jp/quest/quest-3/) 対応）  
-* 自作テンプレート：[**webxr_template_240527.zip**](https://github.com/mubirou/Godot/blob/main/zip/webxr_template_240527.zip)（[Godot 4.2.2](https://godotengine.org/download/archive/4.2.2-stable/) 対応） 
-* Godotとの出会い...✍ 
+* 自作テンプレート：[**webxr_template_240527.zip**](https://github.com/mubirou/Godot/blob/main/zip/webxr_template_240527.zip)（[Godot 4.2.2](https://godotengine.org/download/archive/4.2.2-stable/) 対応）  
+* [Godotとの出会い](#encounter)...✍  
 
 ***
 ### **Index（WebXR + Quest 3 対応）**
 | [Hello World](#240506) | [Hello World 2](#240507) | [Debugger](#240512) | [Bounce](#240516) | [Bounce 2](#240526) | [Thumbstick Control](#240604) | [Thumbstick Control 2](#240607) | [Thumbstick Control 3](#240608) |
-#### [📝 Godot Study Notes（2021-2023）](#encounter) 👈過去の検証はこちら
+#### [📝 Godot Study Notes（2021-2023）](./study_notes.md) 👈過去の検証はこちら
 ***
-
 
 <a id="240608"></a>
 ## <b>Thumbstick Control 3</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
