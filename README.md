@@ -2,7 +2,7 @@
 
 * 公開サイト：[**mubirou.com**](https://mubirou.com/webxr-lab/)（[Quest 3](https://www.meta.com/jp/quest/quest-3/) 対応）  
 * 自作テンプレート：[**webxr_template_240527.zip**](https://github.com/mubirou/Godot/blob/main/zip/webxr_template_240527.zip)（[Godot 4.2.2](https://godotengine.org/download/archive/4.2.2-stable/) 対応）  
-* [Godotとの出会い](#encounter)...✍  
+* [Godotとの出会い…](#encounter)  
 
 ***
 ### **Index（WebXR + Quest 3 対応）**
@@ -707,7 +707,7 @@ Godot 4.2.2、[Godot WebXR Template 3.0](https://godotengine.org/asset-library/a
 ***
 <a id="encounter"></a>
 
-## <b>Godotとの出会い...✍</b>
+## <b>Godotとの出会い...</b>
 
 * [2019年6月6日](https://twitter.com/mubirou/status/1136580509096644609) 初代Quest購入
 * [2019年8月6日](https://twitter.com/mubirou/status/1158626565040721921)「#オープンソース の #VR #AR #MR 対応オーサリングツールとか登場してくんないかな。#Unity3D 並にプログラミングできるやつ。とりま Linux, Mac, Win 対応で」とツイート  
