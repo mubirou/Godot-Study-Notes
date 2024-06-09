@@ -707,7 +707,8 @@ Godot 4.2.2、[Godot WebXR Template 3.0](https://godotengine.org/asset-library/a
 ***
 <a id="encounter"></a>
 
-**Godotとの出会い...✍**  
+## Godotとの出会い...✍
+
 * [2019年6月6日](https://twitter.com/mubirou/status/1136580509096644609) 初代Quest購入
 * [2019年8月6日](https://twitter.com/mubirou/status/1158626565040721921)「#オープンソース の #VR #AR #MR 対応オーサリングツールとか登場してくんないかな。#Unity3D 並にプログラミングできるやつ。とりま Linux, Mac, Win 対応で」とツイート  
 （当時使っていたUnityに不満）  
