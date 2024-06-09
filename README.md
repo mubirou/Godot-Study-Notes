@@ -1,6 +1,4 @@
-# Godot Study Notes<a id="TOP"></a>
-
-### [Godot](https://godotengine.org/) + [WebXR](https://immersive-web.github.io/webxr/) + [Quest](https://www.meta.com/jp/quest/quest-3/) の基礎研究メモ
+# [Godot](https://godotengine.org/) + [WebXR](https://immersive-web.github.io/webxr/) + [Quest](https://www.meta.com/jp/quest/quest-3/) の基礎研究メモ<a id="TOP"></a>
 
 * 公開サイト：[mubirou.com](https://mubirou.com/webxr-lab/)  
 * 自作テンプレート：[WebXR Template](https://github.com/mubirou/Godot/blob/main/zip/webxr_template_240527.zip) (2024年05月27日版)  
