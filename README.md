@@ -2,7 +2,7 @@
 
 * 公開サイト：[mubirou.com](https://mubirou.com/webxr-lab/)  
 * 自作テンプレート：[WebXR Template](https://github.com/mubirou/Godot/blob/main/zip/webxr_template_240527.zip) (2024年05月27日版)  
-### **Index（WebXR + Quest 対応）**
+### **Index（WebXR + Quest 3 対応）**
 | [Hello World](#240506) | [Hello World 2](#240507) | [Debugger](#240512) | [Bounce](#240516) | [Bounce 2](#240526) | [Thumbstick Control](#240604) | [Thumbstick Control 2](#240607) | [Thumbstick Control 3](#240608) |
 ***
 
