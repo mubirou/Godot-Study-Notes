@@ -5,7 +5,7 @@
 * [Godotとの出会い…](#encounter)  
 
 ***
-### **Index（WebXR + Quest 3 対応）**
+### **目次（WebXR + Quest 3 対応）**
 | [Hello World](#240506) | [Hello World 2](#240507) | [Debugger](#240512) | [Bounce](#240516) | [Bounce 2](#240526) | [Thumbstick Control](#240604) | [Thumbstick Control 2](#240607) | [Thumbstick Control 3](#240608) |
 #### [📝 Godot Study Notes（2021-2023）](./study_notes.md) 👈過去の検証はこちら
 ***
