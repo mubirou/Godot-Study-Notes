@@ -718,6 +718,7 @@ Godot 4.2.2、[Godot WebXR Template 3.0](https://godotengine.org/asset-library/a
 * 2023年7月 [UCアドバイザー](https://www.aft.or.jp/pages/feature/uc) 資格取得
 * 2023年8月 [CG-ARTSマイスター](https://www.cgarts.or.jp/v1/kentei/meister/) 資格取得  
 * [2023年10月10日](https://twitter.com/mubirou/status/1711699151879282819) [Quest 3](https://www.meta.com/jp/quest/quest-3/) 購入  
+[[TOP]](https://bit.ly/4eiaG7p)  
 
 
 
