@@ -1,7 +1,7 @@
 # [Godot](https://godotengine.org/) + [WebXR](https://immersive-web.github.io/webxr/) + [Quest](https://www.meta.com/jp/quest/quest-3/) の基礎研究メモ<a id="TOP"></a>
 
 * 公開サイト：[**mubirou.com**](https://mubirou.com/webxr-lab/)（[Quest](https://www.meta.com/jp/quest/quest-3/) 対応）  
-* 自作テンプレート：[**WebXR Template Ver.240527**](https://github.com/mubirou/Godot/blob/main/zip/webxr_template_240527.zip)（Godot 4.2.2 対応）  
+* 自作テンプレート：[**WebXR Template Ver.240527**](https://github.com/mubirou/Godot/blob/main/zip/webxr_template_240527.zip)（[Godot 4.2.2](https://godotengine.org/download/archive/4.2.2-stable/) 対応）  
 ### **Index（WebXR + Quest 3 対応）**
 | [Hello World](#240506) | [Hello World 2](#240507) | [Debugger](#240512) | [Bounce](#240516) | [Bounce 2](#240526) | [Thumbstick Control](#240604) | [Thumbstick Control 2](#240607) | [Thumbstick Control 3](#240608) |
 ***
