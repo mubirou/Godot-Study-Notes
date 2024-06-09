@@ -5,7 +5,7 @@
 * 公開サイト：[mubirou.com](https://mubirou.com/webxr-lab/)  
 * [WebXR Template](https://github.com/mubirou/Godot/blob/main/zip/webxr_template_240527.zip) by MUBIROU (2024年05月27日版)🔥  
 * INDEX  
-| [Hello World](#240506) | [Hello World 2](#240507) | [Debugger](#240512) | [Bounce](#240516) | [Bounce 2](#240526) | [Thumbstick Control](#240604) | [Thumbstick Control 2](#240607) |
+| [Hello World](#240506) | [Hello World 2](#240507) | [Debugger](#240512) | [Bounce](#240516) | [Bounce 2](#240526) | [Thumbstick Control](#240604) | [Thumbstick Control 2](#240607) | [Thumbstick Control 3](#240608) |
 ***
 
 ### **Index（WebXR 対応）**
@@ -23,6 +23,33 @@
 ### **Index（Godot 3.4 対応）**
 | [C#基礎文法](https://github.com/mubirou/HelloWorld/blob/master/languages/C%23Godot/C%23Godot_reference.md#c-with-godot-%E5%9F%BA%E7%A4%8E%E6%96%87%E6%B3%95) | [Androidビルド](#Androidビルド) | [ノードの移動](#ノードの移動) | [マウス座標](#マウス座標) | [画面サイズ](#画面サイズ) | [Rouletteゲーム](#Rouletteゲーム) | [SwipeCarゲーム](#SwipeCarゲーム) | [~~Quest + Oculus Link~~](#220501) | [Questコントローラー表示](#220502) | [is_button_pressed()](#220503) | [Questビルド](#220505) | [~~RayCastボタン~~](#220601) | [VR空間に2Dシーンを表示](#220605) | [~~360°パノラマ~~](#220606) | [~~鏡面仕上げボール~~](#220607) | [物理エンジン RigidBodyとStaticBody](#220610) | [BGM･SE](#220614) | [Blender(階層構造) to Godot](#220615) | [アニメーション遷移](#220617) | [アニメーション速度変更](#220618) |
 ***
+
+
+
+<a id="240608"></a>
+# <b>Thumbstick Control 2</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
+[![image](#)](https://mubirou.com/webxr-lab/240608/index.html)  
+👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
+
+💡親指スティックの動き（360°）に合わせて車の角度も変更しながら移動  
+
+（移動する車にアタッチしたスクリプト）  
+```gdscript
+```
+
+（メインクラス）  
+```gdscript
+```
+
+参考：[VRコントローラーの入力イベント](https://github.com/mubirou/Godot-Study-Notes/blob/main/study_notes.md#vr%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%81%AE%E5%85%A5%E5%8A%9B%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88)  
+参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
+デモファイル：[GitHub(Godot-Demo-Project/Godot/240608)](https://github.com/mubirou/Godot-Demo-Projects/tree/master/godot/240608)  
+実行環境：Windows 11、Meta Quest 3（65.0）、Quest Link、Oculusアプリ、Godot 4.2.2  
+作成者：夢寐郎  
+作成日：2024年06月08日  
+[[TOP]](#TOP)  
+
+
 
 <a id="240607"></a>
 # <b>Thumbstick Control 2</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
