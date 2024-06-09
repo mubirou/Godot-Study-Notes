@@ -717,7 +717,7 @@ Godot 4.2.2、[Godot WebXR Template 3.0](https://godotengine.org/asset-library/a
 * 2022年1月 [上級バーチャルリアリティ技術者](https://vrsj.org/events/seminar/) 資格取得
 * 2023年7月 [UCアドバイザー](https://www.aft.or.jp/pages/feature/uc) 資格取得
 * 2023年8月 [CG-ARTSマイスター](https://www.cgarts.or.jp/v1/kentei/meister/) 資格取得  
-* [2023年10月10日](https://twitter.com/mubirou/status/1711699151879282819) Quest 3購入  
+* [2023年10月10日](https://twitter.com/mubirou/status/1711699151879282819) Quest3購入  
 
 
 
