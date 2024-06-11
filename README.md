@@ -1,7 +1,7 @@
 # [Godot](https://godotengine.org/) + [WebXR](https://immersive-web.github.io/webxr/) + [Quest](https://www.meta.com/jp/quest/quest-3/) の基礎研究メモ 🔥<a id="TOP"></a>
 
 * 公開サイト：[**mubirou.com**](https://mubirou.com/webxr-lab/)（[Quest 3](https://www.meta.com/jp/quest/quest-3/) 対応）  
-* 自作テンプレート：[**webxr_template_240527.zip**](https://github.com/mubirou/Godot/blob/main/zip/webxr_template_240527.zip)（[Godot 4.2.2](https://godotengine.org/download/archive/4.2.2-stable/) 対応）  
+* 自作テンプレート：<span style="font-size: 1.2em;">[**webxr_template_240612.zip**](https://github.com/mubirou/Godot/blob/main/zip/webxr_template_240612.zip)</span>（[Godot 4.2.2](https://godotengine.org/download/archive/4.2.2-stable/) 対応）  
 * [Godotとの出会い](#encounter)  
 
 ***
@@ -730,4 +730,4 @@ Godot 4.2.2、[Godot WebXR Template 3.0](https://godotengine.org/asset-library/a
 
 
 
-© 2021-2024 夢寐郎
+© 2021-PRESENT 夢寐郎  
