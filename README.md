@@ -2,7 +2,7 @@
 
 * 公開サイト：[**mubirou.com**](https://mubirou.com/webxr-lab/)（[Quest 3](https://www.meta.com/jp/quest/quest-3/) 対応）  
 * 自作テンプレート（[Godot 4.2.2](https://godotengine.org/download/archive/4.2.2-stable/) 対応）：  
-[**webxr_template_240626.zip**](https://github.com/mubirou/Godot/blob/main/zip/webxr_template_240626.zip)🔥
+### [webxr_template_240626.zip](https://github.com/mubirou/Godot/blob/main/zip/webxr_template_240626.zip)🔥
 * [Godotとの出会い](#encounter)  
 
 ***
