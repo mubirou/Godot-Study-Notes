@@ -51,7 +51,7 @@ func _process(delta: float) -> void:
 
 （メインクラス）  
 ```gdscript
-# Main.gd (Last update : 2024-08-14T21:54)
+# Main.gd
 extends Node3D
 
 var _car: Node3D
