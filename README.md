@@ -3,7 +3,7 @@
 ### [mubirou.com](https://mubirou.com/webxr-lab/) 👈公開サイト（Quest3対応）
 ### [webxr_template_240815.zip](https://github.com/mubirou/Godot/blob/main/zip/webxr_template_240815.zip) 👈自作テンプレート（4.2.2対応）
 ### [Godot Study Notes (2021-2023)](./study_notes.md) 👈過去の検証はこちら
-* [Godotとの出会い](#encounter)  
+📝 [Godotとの出会い](#encounter)  
 
 ***
 ## **目次（WebXR + Quest 3 対応）**
