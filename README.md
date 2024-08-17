@@ -7,7 +7,7 @@
 
 ***
 ## **目次（WebXR + Quest 3 対応）**
-| [Hello World](#240506) | [Hello World 2](#240507) | [Debugger](#240512) | [Bounce](#240516) | [Bounce 2](#240526) | [Thumbstick Control](#240604) | [Thumbstick Control 2](#240607) | [Thumbstick Control 3](#240608) |  
+| [Thumbstick Control 3](#240608) | [Thumbstick Control 2](#240607) | [Thumbstick Control](#240604) | [Bounce 2](#240526) | [Bounce](#240516) | [Debugger](#240512) | [Hello World 2](#240507) | [Hello World](#240506) |  
 ***
 
 <a id="240608"></a>
