@@ -16,7 +16,7 @@
 ## <b>FPV Car</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
 
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240815.webp)](https://mubirou.com/webxr-lab/240815/index.html)  
-👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
+👆[Quest 3](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
 💡右手親指スティックの動きに合わせて一人称視点（実際には車のやや後方）で移動。  
 右手中指トリガー＋右手親指スティックで後退。  
@@ -172,7 +172,7 @@ func _set_camera_position() -> void:
 ## <b>Thumbstick Control 3</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)
 
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240608.webp)](https://mubirou.com/webxr-lab/240608/index.html)  
-👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
+👆[Quest 3](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
 💡右手親指スティックの動き（360°）に合わせて車の角度も変更しながら移動  
 
@@ -274,7 +274,7 @@ func _on_right_controller_input_vector_2_changed(name: String, value: Vector2) -
 
 ## <b>Thumbstick Control 2</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240607.webp)](https://mubirou.com/webxr-lab/240607/index.html)  
-👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
+👆[Quest 3](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
 💡親指スティックの動き（360°）でオブジェクトを移動  
 
@@ -372,7 +372,7 @@ func _on_right_controller_input_vector_2_changed(name: String, value: Vector2) -
 
 ## <b>Thumbstick Control</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240604.webp)](https://mubirou.com/webxr-lab/240604/index.html)  
-👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
+👆[Quest 3](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
 💡親指スティックの上下左右でオブジェクトを移動
 
@@ -488,7 +488,7 @@ func _on_right_controller_input_vector_2_changed(name: String, value: Vector2) -
 
 ## <b>Bounce 2</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240526.webp)](https://mubirou.com/webxr-lab/240526/index.html)  
-👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
+👆[Quest 3](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
 💡物理エンジンを使ったアニメーション  
 💡階層構造のポイント  
@@ -573,7 +573,7 @@ func _on_right_controller_button_pressed(name):
 
 ## <b>Bounce</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240516.webp)](https://mubirou.com/webxr-lab/240516/index.html)  
-👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
+👆[Quest 3](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
 💡物理エンジンを使わないアニメーション  
 💡三角関数 (sinカーブ) と絶対値を利用  
@@ -633,7 +633,7 @@ func _process(delta: float) -> void:
 
 ## <b>Debugger</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240512.webp)](https://mubirou.com/webxr-lab/240512/index.html)  
-👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
+👆[Quest 3](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
 💡 VR空間上で簡易デバッグが可能  
 
@@ -708,7 +708,7 @@ _debugger.reset() # 出力をクリア
 
 ## <b>Hello World 2</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240507.webp)](https://mubirou.com/webxr-lab/240507/index.html)  
-👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
+👆[Quest 3](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
 💡 [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) より便利なテンプレート  
 💡 Mainクラスがシンプルなのが〇  
@@ -822,7 +822,7 @@ func _webxr_on_squeeze_end(input_source_id: int) -> void:
 
 ## <b>Hello World</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240506.webp)](https://mubirou.com/webxr-lab/240506/index.html)  
-👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
+👆[Quest 3](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
 💡 [Godot](https://godotengine.org/) + [Quest](https://www.meta.com/jp/quest/quest-3/) による [WebXR](https://immersive-web.github.io/webxr/) コンテンツ公開の最初の一歩  
 💡 [Godot WebXR Template 3.0](https://godotengine.org/asset-library/asset/1128) 使用  
