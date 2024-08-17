@@ -10,6 +10,19 @@
 | [FPV Car](#240815) | [Thumbstick Control 3](#240608) | [Thumbstick Control 2](#240607) | [Thumbstick Control](#240604) | [Bounce 2](#240526) | [Bounce](#240516) | [Debugger](#240512) | [Hello World 2](#240507) | [Hello World](#240506) |  
 ***
 
+
+<a id="240815"></a>
+
+### この項目は編集中です。
+
+参考：[mubirou.com](https://mubirou.com/webxr-lab/index.html)  
+デモファイル：[GitHub（Godot-Demo-Project/Godot/240815）](https://github.com/mubirou/Godot-Demo-Projects/tree/master/godot/240815)  
+実行環境：Windows 11、Meta Quest 3（68.0）、Quest Link、Oculusアプリ、Godot 4.2.2  
+作成者：夢寐郎  
+作成日：2024年08月17日  
+[[TOP]](https://bit.ly/4eiaG7p)  
+
+
 <a id="240608"></a>
 
 ## <b>Thumbstick Control 3</b>![image](https://github.com/mubirou/Godot/blob/main/webp/webxr_logo.webp)  
