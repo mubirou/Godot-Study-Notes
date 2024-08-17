@@ -18,7 +18,8 @@
 [![image](https://github.com/mubirou/Godot/blob/main/webp/240815.webp)](https://mubirou.com/webxr-lab/240815/index.html)  
 👆[Quest](https://www.meta.com/jp/quest/quest-3/)で実行して下さい  
 
-💡右手親指スティックの動きに合わせて一人称視点（実際には車のやや後方）で移動。右手中指トリガー＋右手親指スティックで後退。  
+💡右手親指スティックの動きに合わせて一人称視点（実際には車のやや後方）で移動。  
+右手中指トリガー＋右手親指スティックで後退。  
 
 （移動する車にアタッチしたスクリプト）  
 ```gdscript
